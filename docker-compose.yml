@@ -1,0 +1,48 @@
+services:
+  showdown:
+    build: ./docker/showdown
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 5s
+      retries: 10
+
+  trainer:
+    build: ./docker/trainer
+    depends_on:
+      showdown:
+        condition: service_healthy
+    environment:
+      - SHOWDOWN_URL=ws://showdown:8000/showdown/websocket
+      - WANDB_API_KEY=${WANDB_API_KEY:-}
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src:/app/src
+      - ./model_outputs:/app/model_outputs
+      - ./logs:/app/logs
+      - ./data:/app/data
+    # Override with: docker-compose run trainer python src/train.py <subcommand> [args]
+    # Subcommands: baseline | train | evaluate | mutate | league
+    command: python src/train.py train
+
+  tensorboard:
+    build: ./docker/trainer
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./logs:/app/logs
+    command: tensorboard --logdir=/app/logs --host=0.0.0.0
+
+  scraper:
+    build: ./docker/scraper
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=/app/src
+    command: python src/scraper/scrape.py
+
+# Named volumes are not used — all mounts above are explicit bind mounts.
+# Keeping this block empty intentionally.

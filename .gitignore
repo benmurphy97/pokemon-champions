@@ -1,0 +1,14 @@
+showdown/
+__pycache__/
+*.pyc
+*.pyo
+.env
+wandb/
+.DS_Store
+.claude/
+*.log
+
+# Generated artifacts
+model_outputs/
+logs/
+data/

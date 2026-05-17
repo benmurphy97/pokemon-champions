@@ -1,0 +1,5230 @@
+{
+  "source": "https://www.smogon.com/dex/champions/pokemon/",
+  "notes": "Filtered to champions_pokemon.json (by dex number) and champions_megas.json. Mega keys use Showdown hyphenated form (e.g. Venusaur-Mega). IGN typos corrected: Abomnasnow\u2192Abomasnow, Manetric\u2192Manectric. Meowstic mega split into M/F forms.",
+  "pokemon": {
+    "Sinistcha": {
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "abilities": [
+        "Hospitality",
+        "Heatproof"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 71,
+        "atk": 60,
+        "def": 106,
+        "spa": 121,
+        "spd": 80,
+        "spe": 70
+      }
+    },
+    "Sinistcha-Masterpiece": {
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "abilities": [
+        "Hospitality",
+        "Heatproof"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 71,
+        "atk": 60,
+        "def": 106,
+        "spa": 121,
+        "spd": 80,
+        "spe": 70
+      }
+    },
+    "Archaludon": {
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "abilities": [
+        "Stamina",
+        "Sturdy",
+        "Stalwart"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 105,
+        "def": 130,
+        "spa": 125,
+        "spd": 65,
+        "spe": 85
+      }
+    },
+    "Hydrapple": {
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "abilities": [
+        "Supersweet Syrup",
+        "Regenerator",
+        "Sticky Hold"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 106,
+        "atk": 80,
+        "def": 110,
+        "spa": 120,
+        "spd": 80,
+        "spe": 44
+      }
+    },
+    "Kangaskhan": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Early Bird",
+        "Scrappy",
+        "Inner Focus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 105,
+        "atk": 95,
+        "def": 80,
+        "spa": 40,
+        "spd": 80,
+        "spe": 90
+      }
+    },
+    "Starmie": {
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "abilities": [
+        "Illuminate",
+        "Natural Cure",
+        "Analytic"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 75,
+        "def": 85,
+        "spa": 100,
+        "spd": 85,
+        "spe": 115
+      }
+    },
+    "Pinsir": {
+      "types": [
+        "Bug"
+      ],
+      "abilities": [
+        "Hyper Cutter",
+        "Mold Breaker",
+        "Moxie"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 125,
+        "def": 100,
+        "spa": 55,
+        "spd": 70,
+        "spe": 85
+      }
+    },
+    "Tauros": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Anger Point",
+        "Sheer Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 100,
+        "def": 95,
+        "spa": 40,
+        "spd": 70,
+        "spe": 110
+      }
+    },
+    "Tauros-Paldea-Aqua": {
+      "types": [
+        "Fighting",
+        "Water"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Anger Point",
+        "Cud Chew"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 110,
+        "def": 105,
+        "spa": 30,
+        "spd": 70,
+        "spe": 100
+      }
+    },
+    "Tauros-Paldea-Blaze": {
+      "types": [
+        "Fighting",
+        "Fire"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Anger Point",
+        "Cud Chew"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 110,
+        "def": 105,
+        "spa": 30,
+        "spd": 70,
+        "spe": 100
+      }
+    },
+    "Tauros-Paldea-Combat": {
+      "types": [
+        "Fighting"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Anger Point",
+        "Cud Chew"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 110,
+        "def": 105,
+        "spa": 30,
+        "spd": 70,
+        "spe": 100
+      }
+    },
+    "Gyarados": {
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Moxie"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 125,
+        "def": 79,
+        "spa": 60,
+        "spd": 100,
+        "spe": 81
+      }
+    },
+    "Ditto": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Limber",
+        "Imposter"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 48,
+        "atk": 48,
+        "def": 48,
+        "spa": 48,
+        "spd": 48,
+        "spe": 48
+      }
+    },
+    "Vaporeon": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Water Absorb",
+        "Hydration"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 130,
+        "atk": 65,
+        "def": 60,
+        "spa": 110,
+        "spd": 95,
+        "spe": 65
+      }
+    },
+    "Jolteon": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Volt Absorb",
+        "Quick Feet"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 65,
+        "def": 60,
+        "spa": 110,
+        "spd": 95,
+        "spe": 130
+      }
+    },
+    "Flareon": {
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        "Flash Fire",
+        "Guts"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 130,
+        "def": 60,
+        "spa": 95,
+        "spd": 110,
+        "spe": 65
+      }
+    },
+    "Aerodactyl": {
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "abilities": [
+        "Rock Head",
+        "Pressure",
+        "Unnerve"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 105,
+        "def": 65,
+        "spa": 60,
+        "spd": 75,
+        "spe": 130
+      }
+    },
+    "Snorlax": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Immunity",
+        "Thick Fat",
+        "Gluttony"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 160,
+        "atk": 110,
+        "def": 65,
+        "spa": 65,
+        "spd": 110,
+        "spe": 30
+      }
+    },
+    "Dragonite": {
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "abilities": [
+        "Inner Focus",
+        "Multiscale"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 91,
+        "atk": 134,
+        "def": 95,
+        "spa": 100,
+        "spd": 100,
+        "spe": 80
+      }
+    },
+    "Beedrill": {
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "abilities": [
+        "Swarm",
+        "Sniper"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 90,
+        "def": 40,
+        "spa": 45,
+        "spd": 80,
+        "spe": 75
+      }
+    },
+    "Meganium": {
+      "types": [
+        "Grass"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Leaf Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 82,
+        "def": 100,
+        "spa": 83,
+        "spd": 100,
+        "spe": 80
+      }
+    },
+    "Typhlosion": {
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        "Blaze",
+        "Flash Fire"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 84,
+        "def": 78,
+        "spa": 109,
+        "spd": 85,
+        "spe": 100
+      }
+    },
+    "Typhlosion-Hisui": {
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "abilities": [
+        "Blaze",
+        "Frisk"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 73,
+        "atk": 84,
+        "def": 78,
+        "spa": 119,
+        "spd": 85,
+        "spe": 95
+      }
+    },
+    "Feraligatr": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Torrent",
+        "Sheer Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 105,
+        "def": 100,
+        "spa": 79,
+        "spd": 83,
+        "spe": 78
+      }
+    },
+    "Ariados": {
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "abilities": [
+        "Swarm",
+        "Insomnia",
+        "Sniper"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 90,
+        "def": 70,
+        "spa": 60,
+        "spd": 70,
+        "spe": 40
+      }
+    },
+    "Pidgeot": {
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Tangled Feet",
+        "Big Pecks"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 83,
+        "atk": 80,
+        "def": 75,
+        "spa": 70,
+        "spd": 70,
+        "spe": 101
+      }
+    },
+    "Ampharos": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Static",
+        "Plus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 75,
+        "def": 85,
+        "spa": 115,
+        "spd": 90,
+        "spe": 55
+      }
+    },
+    "Azumarill": {
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "abilities": [
+        "Thick Fat",
+        "Huge Power",
+        "Sap Sipper"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 50,
+        "def": 80,
+        "spa": 60,
+        "spd": 80,
+        "spe": 50
+      }
+    },
+    "Politoed": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Water Absorb",
+        "Damp",
+        "Drizzle"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 75,
+        "def": 75,
+        "spa": 90,
+        "spd": 100,
+        "spe": 70
+      }
+    },
+    "Espeon": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Synchronize",
+        "Magic Bounce"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 65,
+        "def": 60,
+        "spa": 130,
+        "spd": 95,
+        "spe": 110
+      }
+    },
+    "Umbreon": {
+      "types": [
+        "Dark"
+      ],
+      "abilities": [
+        "Synchronize",
+        "Inner Focus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 65,
+        "def": 110,
+        "spa": 60,
+        "spd": 130,
+        "spe": 65
+      }
+    },
+    "Slowking": {
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "abilities": [
+        "Oblivious",
+        "Own Tempo",
+        "Regenerator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 75,
+        "def": 80,
+        "spa": 100,
+        "spd": 110,
+        "spe": 30
+      }
+    },
+    "Slowking-Galar": {
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "abilities": [
+        "Curious Medicine",
+        "Own Tempo",
+        "Regenerator"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 65,
+        "def": 80,
+        "spa": 110,
+        "spd": 110,
+        "spe": 30
+      }
+    },
+    "Forretress": {
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "abilities": [
+        "Sturdy",
+        "Overcoat"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 90,
+        "def": 140,
+        "spa": 60,
+        "spd": 60,
+        "spe": 40
+      }
+    },
+    "Steelix": {
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "abilities": [
+        "Rock Head",
+        "Sturdy",
+        "Sheer Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 85,
+        "def": 200,
+        "spa": 55,
+        "spd": 65,
+        "spe": 30
+      }
+    },
+    "Scizor": {
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "abilities": [
+        "Swarm",
+        "Technician",
+        "Light Metal"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 130,
+        "def": 100,
+        "spa": 55,
+        "spd": 80,
+        "spe": 65
+      }
+    },
+    "Heracross": {
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "abilities": [
+        "Swarm",
+        "Guts",
+        "Moxie"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 125,
+        "def": 75,
+        "spa": 40,
+        "spd": 95,
+        "spe": 85
+      }
+    },
+    "Skarmory": {
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Sturdy",
+        "Weak Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 80,
+        "def": 140,
+        "spa": 40,
+        "spd": 70,
+        "spe": 70
+      }
+    },
+    "Houndoom": {
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "abilities": [
+        "Early Bird",
+        "Flash Fire",
+        "Unnerve"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 90,
+        "def": 50,
+        "spa": 110,
+        "spd": 80,
+        "spe": 95
+      }
+    },
+    "Arbok": {
+      "types": [
+        "Poison"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Shed Skin",
+        "Unnerve"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 95,
+        "def": 69,
+        "spa": 65,
+        "spd": 79,
+        "spe": 80
+      }
+    },
+    "Tyranitar": {
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "abilities": [
+        "Sand Stream",
+        "Unnerve"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 134,
+        "def": 110,
+        "spa": 95,
+        "spd": 100,
+        "spe": 61
+      }
+    },
+    "Pikachu": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Static",
+        "Lightning Rod"
+      ],
+      "usage_tier": "NFE",
+      "base_stats": {
+        "hp": 35,
+        "atk": 55,
+        "def": 40,
+        "spa": 50,
+        "spd": 50,
+        "spe": 90
+      }
+    },
+    "Raichu": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Static",
+        "Lightning Rod"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 90,
+        "def": 55,
+        "spa": 90,
+        "spd": 80,
+        "spe": 110
+      }
+    },
+    "Raichu-Alola": {
+      "types": [
+        "Electric",
+        "Psychic"
+      ],
+      "abilities": [
+        "Surge Surfer"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 85,
+        "def": 50,
+        "spa": 95,
+        "spd": 85,
+        "spe": 110
+      }
+    },
+    "Pelipper": {
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Drizzle",
+        "Rain Dish"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 50,
+        "def": 100,
+        "spa": 95,
+        "spd": 70,
+        "spe": 65
+      }
+    },
+    "Gardevoir": {
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "abilities": [
+        "Synchronize",
+        "Trace",
+        "Telepathy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 68,
+        "atk": 65,
+        "def": 65,
+        "spa": 125,
+        "spd": 115,
+        "spe": 80
+      }
+    },
+    "Venusaur": {
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Chlorophyll"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 82,
+        "def": 83,
+        "spa": 100,
+        "spd": 100,
+        "spe": 80
+      }
+    },
+    "Sableye": {
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Stall",
+        "Prankster"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 75,
+        "def": 75,
+        "spa": 65,
+        "spd": 65,
+        "spe": 50
+      }
+    },
+    "Aggron": {
+      "types": [
+        "Steel",
+        "Rock"
+      ],
+      "abilities": [
+        "Sturdy",
+        "Rock Head",
+        "Heavy Metal"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 110,
+        "def": 180,
+        "spa": 60,
+        "spd": 60,
+        "spe": 50
+      }
+    },
+    "Medicham": {
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "abilities": [
+        "Pure Power",
+        "Telepathy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 60,
+        "def": 75,
+        "spa": 60,
+        "spd": 75,
+        "spe": 80
+      }
+    },
+    "Manectric": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Static",
+        "Lightning Rod",
+        "Minus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 75,
+        "def": 60,
+        "spa": 105,
+        "spd": 60,
+        "spe": 105
+      }
+    },
+    "Sharpedo": {
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "abilities": [
+        "Rough Skin",
+        "Speed Boost"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 120,
+        "def": 40,
+        "spa": 95,
+        "spd": 40,
+        "spe": 95
+      }
+    },
+    "Camerupt": {
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "abilities": [
+        "Magma Armor",
+        "Solid Rock",
+        "Anger Point"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 100,
+        "def": 70,
+        "spa": 105,
+        "spd": 75,
+        "spe": 40
+      }
+    },
+    "Torkoal": {
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        "White Smoke",
+        "Drought",
+        "Shell Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 85,
+        "def": 140,
+        "spa": 85,
+        "spd": 70,
+        "spe": 20
+      }
+    },
+    "Altaria": {
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "abilities": [
+        "Natural Cure",
+        "Cloud Nine"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 70,
+        "def": 90,
+        "spa": 70,
+        "spd": 105,
+        "spe": 80
+      }
+    },
+    "Milotic": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Marvel Scale",
+        "Competitive",
+        "Cute Charm"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 60,
+        "def": 79,
+        "spa": 100,
+        "spd": 125,
+        "spe": 81
+      }
+    },
+    "Castform": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Forecast"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 70,
+        "def": 70,
+        "spa": 70,
+        "spd": 70,
+        "spe": 70
+      }
+    },
+    "Banette": {
+      "types": [
+        "Ghost"
+      ],
+      "abilities": [
+        "Insomnia",
+        "Frisk",
+        "Cursed Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 64,
+        "atk": 115,
+        "def": 65,
+        "spa": 83,
+        "spd": 63,
+        "spe": 65
+      }
+    },
+    "Chimecho": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 50,
+        "def": 80,
+        "spa": 95,
+        "spd": 90,
+        "spe": 65
+      }
+    },
+    "Absol": {
+      "types": [
+        "Dark"
+      ],
+      "abilities": [
+        "Pressure",
+        "Super Luck",
+        "Justified"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 130,
+        "def": 60,
+        "spa": 75,
+        "spd": 60,
+        "spe": 75
+      }
+    },
+    "Clefable": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Cute Charm",
+        "Magic Guard",
+        "Unaware"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 70,
+        "def": 73,
+        "spa": 95,
+        "spd": 90,
+        "spe": 60
+      }
+    },
+    "Glalie": {
+      "types": [
+        "Ice"
+      ],
+      "abilities": [
+        "Inner Focus",
+        "Ice Body",
+        "Moody"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 80,
+        "def": 80,
+        "spa": 80,
+        "spd": 80,
+        "spe": 80
+      }
+    },
+    "Ninetales": {
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        "Flash Fire",
+        "Drought"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 73,
+        "atk": 76,
+        "def": 75,
+        "spa": 81,
+        "spd": 100,
+        "spe": 100
+      }
+    },
+    "Ninetales-Alola": {
+      "types": [
+        "Ice",
+        "Fairy"
+      ],
+      "abilities": [
+        "Snow Cloak",
+        "Snow Warning"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 73,
+        "atk": 67,
+        "def": 75,
+        "spa": 81,
+        "spd": 100,
+        "spe": 109
+      }
+    },
+    "Torterra": {
+      "types": [
+        "Grass",
+        "Ground"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Shell Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 109,
+        "def": 105,
+        "spa": 75,
+        "spd": 85,
+        "spe": 56
+      }
+    },
+    "Infernape": {
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "abilities": [
+        "Blaze",
+        "Iron Fist"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 76,
+        "atk": 104,
+        "def": 71,
+        "spa": 104,
+        "spd": 71,
+        "spe": 108
+      }
+    },
+    "Empoleon": {
+      "types": [
+        "Water",
+        "Steel"
+      ],
+      "abilities": [
+        "Torrent",
+        "Competitive"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 84,
+        "atk": 86,
+        "def": 88,
+        "spa": 111,
+        "spd": 101,
+        "spe": 60
+      }
+    },
+    "Luxray": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Rivalry",
+        "Intimidate",
+        "Guts"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 120,
+        "def": 79,
+        "spa": 95,
+        "spd": 79,
+        "spe": 70
+      }
+    },
+    "Roserade": {
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "abilities": [
+        "Natural Cure",
+        "Poison Point",
+        "Technician"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 70,
+        "def": 65,
+        "spa": 125,
+        "spd": 105,
+        "spe": 90
+      }
+    },
+    "Rampardos": {
+      "types": [
+        "Rock"
+      ],
+      "abilities": [
+        "Mold Breaker",
+        "Sheer Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 97,
+        "atk": 165,
+        "def": 60,
+        "spa": 65,
+        "spd": 50,
+        "spe": 58
+      }
+    },
+    "Bastiodon": {
+      "types": [
+        "Rock",
+        "Steel"
+      ],
+      "abilities": [
+        "Sturdy",
+        "Soundproof"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 52,
+        "def": 168,
+        "spa": 47,
+        "spd": 138,
+        "spe": 30
+      }
+    },
+    "Lopunny": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Cute Charm",
+        "Klutz",
+        "Limber"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 76,
+        "def": 84,
+        "spa": 54,
+        "spd": 96,
+        "spe": 105
+      }
+    },
+    "Spiritomb": {
+      "types": [
+        "Ghost",
+        "Dark"
+      ],
+      "abilities": [
+        "Pressure",
+        "Infiltrator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 92,
+        "def": 108,
+        "spa": 92,
+        "spd": 108,
+        "spe": 35
+      }
+    },
+    "Garchomp": {
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "abilities": [
+        "Sand Veil",
+        "Rough Skin"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 108,
+        "atk": 130,
+        "def": 95,
+        "spa": 80,
+        "spd": 85,
+        "spe": 102
+      }
+    },
+    "Lucario": {
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "abilities": [
+        "Steadfast",
+        "Inner Focus",
+        "Justified"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 110,
+        "def": 70,
+        "spa": 115,
+        "spd": 70,
+        "spe": 90
+      }
+    },
+    "Hippowdon": {
+      "types": [
+        "Ground"
+      ],
+      "abilities": [
+        "Sand Stream",
+        "Sand Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 108,
+        "atk": 112,
+        "def": 118,
+        "spa": 68,
+        "spd": 72,
+        "spe": 47
+      }
+    },
+    "Toxicroak": {
+      "types": [
+        "Poison",
+        "Fighting"
+      ],
+      "abilities": [
+        "Anticipation",
+        "Dry Skin",
+        "Poison Touch"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 83,
+        "atk": 106,
+        "def": 65,
+        "spa": 86,
+        "spd": 65,
+        "spe": 85
+      }
+    },
+    "Abomasnow": {
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "abilities": [
+        "Snow Warning",
+        "Soundproof"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 92,
+        "def": 75,
+        "spa": 92,
+        "spd": 85,
+        "spe": 60
+      }
+    },
+    "Weavile": {
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "abilities": [
+        "Pressure",
+        "Pickpocket"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 120,
+        "def": 65,
+        "spa": 45,
+        "spd": 85,
+        "spe": 125
+      }
+    },
+    "Rhyperior": {
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "abilities": [
+        "Lightning Rod",
+        "Solid Rock",
+        "Reckless"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 115,
+        "atk": 140,
+        "def": 130,
+        "spa": 55,
+        "spd": 55,
+        "spe": 40
+      }
+    },
+    "Leafeon": {
+      "types": [
+        "Grass"
+      ],
+      "abilities": [
+        "Leaf Guard",
+        "Chlorophyll"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 110,
+        "def": 130,
+        "spa": 60,
+        "spd": 65,
+        "spe": 95
+      }
+    },
+    "Glaceon": {
+      "types": [
+        "Ice"
+      ],
+      "abilities": [
+        "Snow Cloak",
+        "Ice Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 60,
+        "def": 110,
+        "spa": 130,
+        "spd": 95,
+        "spe": 65
+      }
+    },
+    "Gliscor": {
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "abilities": [
+        "Hyper Cutter",
+        "Sand Veil",
+        "Poison Heal"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 95,
+        "def": 125,
+        "spa": 45,
+        "spd": 75,
+        "spe": 95
+      }
+    },
+    "Mamoswine": {
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "abilities": [
+        "Oblivious",
+        "Snow Cloak",
+        "Thick Fat"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 130,
+        "def": 80,
+        "spa": 70,
+        "spd": 60,
+        "spe": 80
+      }
+    },
+    "Gallade": {
+      "types": [
+        "Psychic",
+        "Fighting"
+      ],
+      "abilities": [
+        "Steadfast",
+        "Sharpness",
+        "Justified"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 68,
+        "atk": 125,
+        "def": 65,
+        "spa": 65,
+        "spd": 115,
+        "spe": 80
+      }
+    },
+    "Froslass": {
+      "types": [
+        "Ice",
+        "Ghost"
+      ],
+      "abilities": [
+        "Snow Cloak",
+        "Cursed Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 80,
+        "def": 70,
+        "spa": 80,
+        "spd": 70,
+        "spe": 110
+      }
+    },
+    "Rotom": {
+      "types": [
+        "Electric",
+        "Ghost"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 50,
+        "def": 77,
+        "spa": 95,
+        "spd": 77,
+        "spe": 91
+      }
+    },
+    "Rotom-Fan": {
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      }
+    },
+    "Rotom-Frost": {
+      "types": [
+        "Electric",
+        "Ice"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      }
+    },
+    "Rotom-Heat": {
+      "types": [
+        "Electric",
+        "Fire"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      }
+    },
+    "Rotom-Mow": {
+      "types": [
+        "Electric",
+        "Grass"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      }
+    },
+    "Rotom-Wash": {
+      "types": [
+        "Electric",
+        "Water"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      }
+    },
+    "Serperior": {
+      "types": [
+        "Grass"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Contrary"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 75,
+        "def": 95,
+        "spa": 75,
+        "spd": 95,
+        "spe": 113
+      }
+    },
+    "Emboar": {
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "abilities": [
+        "Blaze",
+        "Reckless"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 123,
+        "def": 65,
+        "spa": 100,
+        "spd": 65,
+        "spe": 65
+      }
+    },
+    "Samurott": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Torrent",
+        "Shell Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 100,
+        "def": 85,
+        "spa": 108,
+        "spd": 70,
+        "spe": 70
+      }
+    },
+    "Samurott-Hisui": {
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "abilities": [
+        "Torrent",
+        "Sharpness"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 108,
+        "def": 80,
+        "spa": 100,
+        "spd": 65,
+        "spe": 85
+      }
+    },
+    "Watchog": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Illuminate",
+        "Keen Eye",
+        "Analytic"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 85,
+        "def": 69,
+        "spa": 60,
+        "spd": 69,
+        "spe": 77
+      }
+    },
+    "Liepard": {
+      "types": [
+        "Dark"
+      ],
+      "abilities": [
+        "Limber",
+        "Unburden",
+        "Prankster"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 64,
+        "atk": 88,
+        "def": 50,
+        "spa": 88,
+        "spd": 50,
+        "spe": 106
+      }
+    },
+    "Simisage": {
+      "types": [
+        "Grass"
+      ],
+      "abilities": [
+        "Gluttony",
+        "Overgrow"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 98,
+        "def": 63,
+        "spa": 98,
+        "spd": 63,
+        "spe": 101
+      }
+    },
+    "Simisear": {
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        "Gluttony",
+        "Blaze"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 98,
+        "def": 63,
+        "spa": 98,
+        "spd": 63,
+        "spe": 101
+      }
+    },
+    "Simipour": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Gluttony",
+        "Torrent"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 98,
+        "def": 63,
+        "spa": 98,
+        "spd": 63,
+        "spe": 101
+      }
+    },
+    "Excadrill": {
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "abilities": [
+        "Sand Rush",
+        "Sand Force",
+        "Mold Breaker"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 135,
+        "def": 60,
+        "spa": 50,
+        "spd": 65,
+        "spe": 88
+      }
+    },
+    "Audino": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Healer",
+        "Regenerator",
+        "Klutz"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 103,
+        "atk": 60,
+        "def": 86,
+        "spa": 60,
+        "spd": 86,
+        "spe": 50
+      }
+    },
+    "Conkeldurr": {
+      "types": [
+        "Fighting"
+      ],
+      "abilities": [
+        "Guts",
+        "Sheer Force",
+        "Iron Fist"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 105,
+        "atk": 140,
+        "def": 95,
+        "spa": 55,
+        "spd": 65,
+        "spe": 45
+      }
+    },
+    "Whimsicott": {
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "abilities": [
+        "Prankster",
+        "Infiltrator",
+        "Chlorophyll"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 67,
+        "def": 85,
+        "spa": 77,
+        "spd": 75,
+        "spe": 116
+      }
+    },
+    "Krookodile": {
+      "types": [
+        "Ground",
+        "Dark"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Moxie",
+        "Anger Point"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 117,
+        "def": 80,
+        "spa": 65,
+        "spd": 70,
+        "spe": 92
+      }
+    },
+    "Cofagrigus": {
+      "types": [
+        "Ghost"
+      ],
+      "abilities": [
+        "Mummy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 58,
+        "atk": 50,
+        "def": 145,
+        "spa": 95,
+        "spd": 105,
+        "spe": 30
+      }
+    },
+    "Garbodor": {
+      "types": [
+        "Poison"
+      ],
+      "abilities": [
+        "Stench",
+        "Weak Armor",
+        "Aftermath"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 95,
+        "def": 82,
+        "spa": 60,
+        "spd": 82,
+        "spe": 75
+      }
+    },
+    "Zoroark": {
+      "types": [
+        "Dark"
+      ],
+      "abilities": [
+        "Illusion"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 105,
+        "def": 60,
+        "spa": 120,
+        "spd": 60,
+        "spe": 105
+      }
+    },
+    "Zoroark-Hisui": {
+      "types": [
+        "Normal",
+        "Ghost"
+      ],
+      "abilities": [
+        "Illusion"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 55,
+        "atk": 100,
+        "def": 60,
+        "spa": 125,
+        "spd": 60,
+        "spe": 110
+      }
+    },
+    "Reuniclus": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Overcoat",
+        "Magic Guard",
+        "Regenerator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 65,
+        "def": 75,
+        "spa": 125,
+        "spd": 85,
+        "spe": 30
+      }
+    },
+    "Vanilluxe": {
+      "types": [
+        "Ice"
+      ],
+      "abilities": [
+        "Ice Body",
+        "Snow Warning",
+        "Weak Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 71,
+        "atk": 95,
+        "def": 85,
+        "spa": 110,
+        "spd": 95,
+        "spe": 79
+      }
+    },
+    "Emolga": {
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "abilities": [
+        "Static",
+        "Motor Drive"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 55,
+        "atk": 75,
+        "def": 60,
+        "spa": 75,
+        "spd": 60,
+        "spe": 103
+      }
+    },
+    "Arcanine": {
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Flash Fire",
+        "Justified"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 110,
+        "def": 80,
+        "spa": 100,
+        "spd": 80,
+        "spe": 95
+      }
+    },
+    "Arcanine-Hisui": {
+      "types": [
+        "Fire",
+        "Rock"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Flash Fire",
+        "Rock Head"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 115,
+        "def": 80,
+        "spa": 95,
+        "spd": 80,
+        "spe": 90
+      }
+    },
+    "Charizard": {
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "abilities": [
+        "Blaze",
+        "Solar Power"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 84,
+        "def": 78,
+        "spa": 109,
+        "spd": 85,
+        "spe": 100
+      }
+    },
+    "Chandelure": {
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "abilities": [
+        "Flash Fire",
+        "Flame Body",
+        "Infiltrator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 55,
+        "def": 90,
+        "spa": 145,
+        "spd": 90,
+        "spe": 80
+      }
+    },
+    "Beartic": {
+      "types": [
+        "Ice"
+      ],
+      "abilities": [
+        "Snow Cloak",
+        "Slush Rush",
+        "Swift Swim"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 130,
+        "def": 80,
+        "spa": 70,
+        "spd": 80,
+        "spe": 50
+      }
+    },
+    "Stunfisk": {
+      "types": [
+        "Ground",
+        "Electric"
+      ],
+      "abilities": [
+        "Static",
+        "Limber",
+        "Sand Veil"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 109,
+        "atk": 66,
+        "def": 84,
+        "spa": 81,
+        "spd": 99,
+        "spe": 32
+      }
+    },
+    "Stunfisk-Galar": {
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "abilities": [
+        "Mimicry"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 109,
+        "atk": 81,
+        "def": 99,
+        "spa": 66,
+        "spd": 84,
+        "spe": 32
+      }
+    },
+    "Golurk": {
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "abilities": [
+        "Iron Fist",
+        "Klutz",
+        "No Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 89,
+        "atk": 124,
+        "def": 80,
+        "spa": 55,
+        "spd": 80,
+        "spe": 55
+      }
+    },
+    "Hydreigon": {
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 92,
+        "atk": 105,
+        "def": 90,
+        "spa": 125,
+        "spd": 90,
+        "spe": 98
+      }
+    },
+    "Volcarona": {
+      "types": [
+        "Bug",
+        "Fire"
+      ],
+      "abilities": [
+        "Flame Body",
+        "Swarm"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 60,
+        "def": 65,
+        "spa": 135,
+        "spd": 105,
+        "spe": 100
+      }
+    },
+    "Alakazam": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Synchronize",
+        "Inner Focus",
+        "Magic Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 55,
+        "atk": 50,
+        "def": 45,
+        "spa": 135,
+        "spd": 95,
+        "spe": 120
+      }
+    },
+    "Chesnaught": {
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Bulletproof"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 88,
+        "atk": 107,
+        "def": 122,
+        "spa": 74,
+        "spd": 75,
+        "spe": 64
+      }
+    },
+    "Delphox": {
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "abilities": [
+        "Blaze",
+        "Magician"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 69,
+        "def": 72,
+        "spa": 114,
+        "spd": 100,
+        "spe": 104
+      }
+    },
+    "Greninja": {
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "abilities": [
+        "Torrent",
+        "Protean",
+        "Battle Bond"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 72,
+        "atk": 95,
+        "def": 67,
+        "spa": 103,
+        "spd": 71,
+        "spe": 122
+      }
+    },
+    "Diggersby": {
+      "types": [
+        "Normal",
+        "Ground"
+      ],
+      "abilities": [
+        "Pickup",
+        "Cheek Pouch",
+        "Huge Power"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 56,
+        "def": 77,
+        "spa": 50,
+        "spd": 77,
+        "spe": 78
+      }
+    },
+    "Talonflame": {
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "abilities": [
+        "Flame Body",
+        "Gale Wings"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 81,
+        "def": 71,
+        "spa": 74,
+        "spd": 69,
+        "spe": 126
+      }
+    },
+    "Vivillon": {
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "abilities": [
+        "Shield Dust",
+        "Compound Eyes",
+        "Friend Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 52,
+        "def": 50,
+        "spa": 90,
+        "spd": 50,
+        "spe": 89
+      }
+    },
+    "Vivillon-Fancy": {
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "abilities": [
+        "Shield Dust",
+        "Compound Eyes",
+        "Friend Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 52,
+        "def": 50,
+        "spa": 90,
+        "spd": 50,
+        "spe": 89
+      }
+    },
+    "Vivillon-Pokeball": {
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "abilities": [
+        "Shield Dust",
+        "Compound Eyes",
+        "Friend Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 52,
+        "def": 50,
+        "spa": 90,
+        "spd": 50,
+        "spe": 89
+      }
+    },
+    "Floette-Eternal": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Flower Veil",
+        "Symbiosis"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 65,
+        "def": 67,
+        "spa": 125,
+        "spd": 128,
+        "spe": 92
+      }
+    },
+    "Florges": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Flower Veil",
+        "Symbiosis"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 65,
+        "def": 68,
+        "spa": 112,
+        "spd": 154,
+        "spe": 75
+      }
+    },
+    "Pangoro": {
+      "types": [
+        "Fighting",
+        "Dark"
+      ],
+      "abilities": [
+        "Iron Fist",
+        "Mold Breaker",
+        "Scrappy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 124,
+        "def": 78,
+        "spa": 69,
+        "spd": 71,
+        "spe": 58
+      }
+    },
+    "Furfrou": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Fur Coat"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 80,
+        "def": 60,
+        "spa": 65,
+        "spd": 90,
+        "spe": 102
+      }
+    },
+    "Meowstic-F": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Infiltrator",
+        "Competitive"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 48,
+        "def": 76,
+        "spa": 83,
+        "spd": 81,
+        "spe": 104
+      }
+    },
+    "Meowstic-M": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Infiltrator",
+        "Prankster"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 48,
+        "def": 76,
+        "spa": 83,
+        "spd": 81,
+        "spe": 104
+      }
+    },
+    "Machamp": {
+      "types": [
+        "Fighting"
+      ],
+      "abilities": [
+        "Guts",
+        "No Guard",
+        "Steadfast"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 130,
+        "def": 80,
+        "spa": 65,
+        "spd": 85,
+        "spe": 55
+      }
+    },
+    "Aegislash": {
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "abilities": [
+        "Stance Change"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 50,
+        "def": 140,
+        "spa": 50,
+        "spd": 140,
+        "spe": 60
+      }
+    },
+    "Aromatisse": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Healer",
+        "Aroma Veil"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 101,
+        "atk": 72,
+        "def": 72,
+        "spa": 99,
+        "spd": 89,
+        "spe": 29
+      }
+    },
+    "Slurpuff": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Sweet Veil",
+        "Unburden"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 82,
+        "atk": 80,
+        "def": 86,
+        "spa": 85,
+        "spd": 75,
+        "spe": 72
+      }
+    },
+    "Clawitzer": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Mega Launcher"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 71,
+        "atk": 73,
+        "def": 88,
+        "spa": 120,
+        "spd": 89,
+        "spe": 59
+      }
+    },
+    "Heliolisk": {
+      "types": [
+        "Electric",
+        "Normal"
+      ],
+      "abilities": [
+        "Dry Skin",
+        "Sand Veil",
+        "Solar Power"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 62,
+        "atk": 55,
+        "def": 52,
+        "spa": 109,
+        "spd": 94,
+        "spe": 109
+      }
+    },
+    "Tyrantrum": {
+      "types": [
+        "Rock",
+        "Dragon"
+      ],
+      "abilities": [
+        "Strong Jaw",
+        "Rock Head"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 82,
+        "atk": 121,
+        "def": 119,
+        "spa": 69,
+        "spd": 59,
+        "spe": 71
+      }
+    },
+    "Aurorus": {
+      "types": [
+        "Rock",
+        "Ice"
+      ],
+      "abilities": [
+        "Refrigerate",
+        "Snow Warning"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 123,
+        "atk": 77,
+        "def": 72,
+        "spa": 99,
+        "spd": 92,
+        "spe": 58
+      }
+    },
+    "Sylveon": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Cute Charm",
+        "Pixilate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 65,
+        "def": 65,
+        "spa": 110,
+        "spd": 130,
+        "spe": 60
+      }
+    },
+    "Hawlucha": {
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "abilities": [
+        "Limber",
+        "Unburden",
+        "Mold Breaker"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 92,
+        "def": 75,
+        "spa": 74,
+        "spd": 63,
+        "spe": 118
+      }
+    },
+    "Dedenne": {
+      "types": [
+        "Electric",
+        "Fairy"
+      ],
+      "abilities": [
+        "Cheek Pouch",
+        "Pickup",
+        "Plus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 67,
+        "atk": 58,
+        "def": 57,
+        "spa": 81,
+        "spd": 67,
+        "spe": 101
+      }
+    },
+    "Goodra": {
+      "types": [
+        "Dragon"
+      ],
+      "abilities": [
+        "Sap Sipper",
+        "Hydration",
+        "Gooey"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 100,
+        "def": 70,
+        "spa": 110,
+        "spd": 150,
+        "spe": 80
+      }
+    },
+    "Goodra-Hisui": {
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "abilities": [
+        "Sap Sipper",
+        "Shell Armor",
+        "Gooey"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 100,
+        "def": 100,
+        "spa": 110,
+        "spd": 150,
+        "spe": 60
+      }
+    },
+    "Klefki": {
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "abilities": [
+        "Prankster",
+        "Magician"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 57,
+        "atk": 80,
+        "def": 91,
+        "spa": 80,
+        "spd": 87,
+        "spe": 75
+      }
+    },
+    "Trevenant": {
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "abilities": [
+        "Natural Cure",
+        "Frisk",
+        "Harvest"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 110,
+        "def": 76,
+        "spa": 65,
+        "spd": 82,
+        "spe": 56
+      }
+    },
+    "Victreebel": {
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "abilities": [
+        "Chlorophyll",
+        "Gluttony"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 105,
+        "def": 65,
+        "spa": 100,
+        "spd": 70,
+        "spe": 70
+      }
+    },
+    "Gourgeist": {
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "abilities": [
+        "Pickup",
+        "Frisk",
+        "Insomnia"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 90,
+        "def": 122,
+        "spa": 58,
+        "spd": 75,
+        "spe": 84
+      }
+    },
+    "Gourgeist-Large": {
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "abilities": [
+        "Pickup",
+        "Frisk",
+        "Insomnia"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 95,
+        "def": 122,
+        "spa": 58,
+        "spd": 75,
+        "spe": 69
+      }
+    },
+    "Gourgeist-Small": {
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "abilities": [
+        "Pickup",
+        "Frisk",
+        "Insomnia"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 55,
+        "atk": 85,
+        "def": 122,
+        "spa": 58,
+        "spd": 75,
+        "spe": 99
+      }
+    },
+    "Gourgeist-Super": {
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "abilities": [
+        "Pickup",
+        "Frisk",
+        "Insomnia"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 100,
+        "def": 122,
+        "spa": 58,
+        "spd": 75,
+        "spe": 54
+      }
+    },
+    "Avalugg": {
+      "types": [
+        "Ice"
+      ],
+      "abilities": [
+        "Own Tempo",
+        "Ice Body",
+        "Sturdy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 117,
+        "def": 184,
+        "spa": 44,
+        "spd": 46,
+        "spe": 28
+      }
+    },
+    "Avalugg-Hisui": {
+      "types": [
+        "Ice",
+        "Rock"
+      ],
+      "abilities": [
+        "Strong Jaw",
+        "Ice Body",
+        "Sturdy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 127,
+        "def": 184,
+        "spa": 34,
+        "spd": 36,
+        "spe": 38
+      }
+    },
+    "Noivern": {
+      "types": [
+        "Flying",
+        "Dragon"
+      ],
+      "abilities": [
+        "Frisk",
+        "Infiltrator",
+        "Telepathy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 70,
+        "def": 80,
+        "spa": 97,
+        "spd": 80,
+        "spe": 123
+      }
+    },
+    "Decidueye": {
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Long Reach"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 107,
+        "def": 75,
+        "spa": 100,
+        "spd": 100,
+        "spe": 70
+      }
+    },
+    "Decidueye-Hisui": {
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Scrappy"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 88,
+        "atk": 112,
+        "def": 80,
+        "spa": 95,
+        "spd": 95,
+        "spe": 60
+      }
+    },
+    "Incineroar": {
+      "types": [
+        "Fire",
+        "Dark"
+      ],
+      "abilities": [
+        "Blaze",
+        "Intimidate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 115,
+        "def": 90,
+        "spa": 80,
+        "spd": 90,
+        "spe": 60
+      }
+    },
+    "Primarina": {
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "abilities": [
+        "Torrent",
+        "Liquid Voice"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 74,
+        "def": 74,
+        "spa": 126,
+        "spd": 116,
+        "spe": 60
+      }
+    },
+    "Toucannon": {
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Skill Link",
+        "Sheer Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 120,
+        "def": 75,
+        "spa": 75,
+        "spd": 75,
+        "spe": 60
+      }
+    },
+    "Crabominable": {
+      "types": [
+        "Fighting",
+        "Ice"
+      ],
+      "abilities": [
+        "Hyper Cutter",
+        "Iron Fist",
+        "Anger Point"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 97,
+        "atk": 132,
+        "def": 77,
+        "spa": 62,
+        "spd": 67,
+        "spe": 43
+      }
+    },
+    "Lycanroc": {
+      "types": [
+        "Rock"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Sand Rush",
+        "Steadfast"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 115,
+        "def": 65,
+        "spa": 55,
+        "spd": 65,
+        "spe": 112
+      }
+    },
+    "Lycanroc-Dusk": {
+      "types": [
+        "Rock"
+      ],
+      "abilities": [
+        "Tough Claws"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 117,
+        "def": 65,
+        "spa": 55,
+        "spd": 65,
+        "spe": 110
+      }
+    },
+    "Lycanroc-Midnight": {
+      "types": [
+        "Rock"
+      ],
+      "abilities": [
+        "Keen Eye",
+        "Vital Spirit",
+        "No Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 115,
+        "def": 75,
+        "spa": 55,
+        "spd": 75,
+        "spe": 82
+      }
+    },
+    "Toxapex": {
+      "types": [
+        "Poison",
+        "Water"
+      ],
+      "abilities": [
+        "Merciless",
+        "Limber",
+        "Regenerator"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 63,
+        "def": 152,
+        "spa": 53,
+        "spd": 142,
+        "spe": 35
+      }
+    },
+    "Mudsdale": {
+      "types": [
+        "Ground"
+      ],
+      "abilities": [
+        "Own Tempo",
+        "Stamina",
+        "Inner Focus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 125,
+        "def": 100,
+        "spa": 55,
+        "spd": 85,
+        "spe": 35
+      }
+    },
+    "Araquanid": {
+      "types": [
+        "Water",
+        "Bug"
+      ],
+      "abilities": [
+        "Water Bubble",
+        "Water Absorb"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 68,
+        "atk": 70,
+        "def": 92,
+        "spa": 50,
+        "spd": 132,
+        "spe": 42
+      }
+    },
+    "Salazzle": {
+      "types": [
+        "Poison",
+        "Fire"
+      ],
+      "abilities": [
+        "Corrosion",
+        "Oblivious"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 68,
+        "atk": 64,
+        "def": 60,
+        "spa": 111,
+        "spd": 60,
+        "spe": 117
+      }
+    },
+    "Tsareena": {
+      "types": [
+        "Grass"
+      ],
+      "abilities": [
+        "Leaf Guard",
+        "Queenly Majesty",
+        "Sweet Veil"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 72,
+        "atk": 120,
+        "def": 98,
+        "spa": 50,
+        "spd": 98,
+        "spe": 72
+      }
+    },
+    "Oranguru": {
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "abilities": [
+        "Inner Focus",
+        "Telepathy",
+        "Symbiosis"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 60,
+        "def": 80,
+        "spa": 90,
+        "spd": 110,
+        "spe": 60
+      }
+    },
+    "Passimian": {
+      "types": [
+        "Fighting"
+      ],
+      "abilities": [
+        "Receiver",
+        "Defiant"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 120,
+        "def": 90,
+        "spa": 40,
+        "spd": 60,
+        "spe": 80
+      }
+    },
+    "Mimikyu": {
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "abilities": [
+        "Disguise"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 55,
+        "atk": 90,
+        "def": 80,
+        "spa": 50,
+        "spd": 105,
+        "spe": 96
+      }
+    },
+    "Drampa": {
+      "types": [
+        "Normal",
+        "Dragon"
+      ],
+      "abilities": [
+        "Berserk",
+        "Sap Sipper",
+        "Cloud Nine"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 60,
+        "def": 85,
+        "spa": 135,
+        "spd": 91,
+        "spe": 36
+      }
+    },
+    "Kommo-o": {
+      "types": [
+        "Dragon",
+        "Fighting"
+      ],
+      "abilities": [
+        "Bulletproof",
+        "Soundproof",
+        "Overcoat"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 110,
+        "def": 125,
+        "spa": 100,
+        "spd": 105,
+        "spe": 85
+      }
+    },
+    "Slowbro": {
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "abilities": [
+        "Oblivious",
+        "Own Tempo",
+        "Regenerator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 75,
+        "def": 110,
+        "spa": 100,
+        "spd": 80,
+        "spe": 30
+      }
+    },
+    "Slowbro-Galar": {
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "abilities": [
+        "Quick Draw",
+        "Own Tempo",
+        "Regenerator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 100,
+        "def": 95,
+        "spa": 100,
+        "spd": 70,
+        "spe": 30
+      }
+    },
+    "Corviknight": {
+      "types": [
+        "Flying",
+        "Steel"
+      ],
+      "abilities": [
+        "Pressure",
+        "Unnerve",
+        "Mirror Armor"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 98,
+        "atk": 87,
+        "def": 105,
+        "spa": 53,
+        "spd": 85,
+        "spe": 67
+      }
+    },
+    "Flapple": {
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "abilities": [
+        "Ripen",
+        "Gluttony",
+        "Hustle"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 110,
+        "def": 80,
+        "spa": 95,
+        "spd": 60,
+        "spe": 70
+      }
+    },
+    "Appletun": {
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "abilities": [
+        "Ripen",
+        "Gluttony",
+        "Thick Fat"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 85,
+        "def": 80,
+        "spa": 100,
+        "spd": 80,
+        "spe": 30
+      }
+    },
+    "Sandaconda": {
+      "types": [
+        "Ground"
+      ],
+      "abilities": [
+        "Sand Spit",
+        "Shed Skin",
+        "Sand Veil"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 72,
+        "atk": 107,
+        "def": 125,
+        "spa": 65,
+        "spd": 70,
+        "spe": 71
+      }
+    },
+    "Polteageist": {
+      "types": [
+        "Ghost"
+      ],
+      "abilities": [
+        "Weak Armor",
+        "Cursed Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 65,
+        "spa": 134,
+        "spd": 114,
+        "spe": 70
+      }
+    },
+    "Polteageist-Antique": {
+      "types": [
+        "Ghost"
+      ],
+      "abilities": [
+        "Weak Armor",
+        "Cursed Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 65,
+        "spa": 134,
+        "spd": 114,
+        "spe": 70
+      }
+    },
+    "Hatterene": {
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "abilities": [
+        "Healer",
+        "Anticipation",
+        "Magic Bounce"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 57,
+        "atk": 90,
+        "def": 95,
+        "spa": 136,
+        "spd": 103,
+        "spe": 29
+      }
+    },
+    "Mr. Rime": {
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "abilities": [
+        "Tangled Feet",
+        "Screen Cleaner",
+        "Ice Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 85,
+        "def": 75,
+        "spa": 110,
+        "spd": 100,
+        "spe": 70
+      }
+    },
+    "Runerigus": {
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "abilities": [
+        "Wandering Spirit"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 58,
+        "atk": 95,
+        "def": 145,
+        "spa": 50,
+        "spd": 105,
+        "spe": 30
+      }
+    },
+    "Alcremie": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Sweet Veil",
+        "Aroma Veil"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 60,
+        "def": 75,
+        "spa": 110,
+        "spd": 121,
+        "spe": 64
+      }
+    },
+    "Morpeko": {
+      "types": [
+        "Electric",
+        "Dark"
+      ],
+      "abilities": [
+        "Hunger Switch"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 58,
+        "atk": 95,
+        "def": 58,
+        "spa": 70,
+        "spd": 58,
+        "spe": 97
+      }
+    },
+    "Dragapult": {
+      "types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "abilities": [
+        "Clear Body",
+        "Infiltrator",
+        "Cursed Body"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 88,
+        "atk": 120,
+        "def": 75,
+        "spa": 100,
+        "spd": 75,
+        "spe": 142
+      }
+    },
+    "Wyrdeer": {
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "abilities": [
+        "Intimidate",
+        "Frisk",
+        "Sap Sipper"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 103,
+        "atk": 105,
+        "def": 72,
+        "spa": 105,
+        "spd": 75,
+        "spe": 65
+      }
+    },
+    "Blastoise": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Torrent",
+        "Rain Dish"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 79,
+        "atk": 83,
+        "def": 100,
+        "spa": 85,
+        "spd": 105,
+        "spe": 78
+      }
+    },
+    "Kleavor": {
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "abilities": [
+        "Swarm",
+        "Sheer Force",
+        "Sharpness"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 135,
+        "def": 95,
+        "spa": 45,
+        "spd": 70,
+        "spe": 85
+      }
+    },
+    "Basculegion": {
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "abilities": [
+        "Swift Swim",
+        "Adaptability",
+        "Mold Breaker"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 120,
+        "atk": 112,
+        "def": 65,
+        "spa": 80,
+        "spd": 75,
+        "spe": 78
+      }
+    },
+    "Basculegion-F": {
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "abilities": [
+        "Swift Swim",
+        "Adaptability",
+        "Mold Breaker"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 120,
+        "atk": 92,
+        "def": 65,
+        "spa": 100,
+        "spd": 75,
+        "spe": 78
+      }
+    },
+    "Sneasler": {
+      "types": [
+        "Fighting",
+        "Poison"
+      ],
+      "abilities": [
+        "Pressure",
+        "Unburden",
+        "Poison Touch"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 130,
+        "def": 60,
+        "spa": 40,
+        "spd": 80,
+        "spe": 120
+      }
+    },
+    "Meowscarada": {
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "abilities": [
+        "Overgrow",
+        "Protean"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 76,
+        "atk": 110,
+        "def": 70,
+        "spa": 81,
+        "spd": 70,
+        "spe": 123
+      }
+    },
+    "Skeledirge": {
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "abilities": [
+        "Blaze",
+        "Unaware"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 104,
+        "atk": 75,
+        "def": 100,
+        "spa": 110,
+        "spd": 75,
+        "spe": 66
+      }
+    },
+    "Quaquaval": {
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "abilities": [
+        "Torrent",
+        "Moxie"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 120,
+        "def": 80,
+        "spa": 85,
+        "spd": 75,
+        "spe": 85
+      }
+    },
+    "Maushold": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Friend Guard",
+        "Cheek Pouch",
+        "Technician"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 75,
+        "def": 70,
+        "spa": 65,
+        "spd": 75,
+        "spe": 111
+      }
+    },
+    "Maushold-Four": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Friend Guard",
+        "Cheek Pouch",
+        "Technician"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 75,
+        "def": 70,
+        "spa": 65,
+        "spd": 75,
+        "spe": 111
+      }
+    },
+    "Garganacl": {
+      "types": [
+        "Rock"
+      ],
+      "abilities": [
+        "Purifying Salt",
+        "Sturdy",
+        "Clear Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 100,
+        "def": 130,
+        "spa": 45,
+        "spd": 90,
+        "spe": 35
+      }
+    },
+    "Armarouge": {
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "abilities": [
+        "Flash Fire",
+        "Weak Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 60,
+        "def": 100,
+        "spa": 125,
+        "spd": 80,
+        "spe": 75
+      }
+    },
+    "Ceruledge": {
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "abilities": [
+        "Flash Fire",
+        "Weak Armor"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 125,
+        "def": 80,
+        "spa": 60,
+        "spd": 100,
+        "spe": 85
+      }
+    },
+    "Bellibolt": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Electromorphosis",
+        "Static",
+        "Damp"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 109,
+        "atk": 64,
+        "def": 91,
+        "spa": 103,
+        "spd": 83,
+        "spe": 45
+      }
+    },
+    "Gengar": {
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "abilities": [
+        "Cursed Body"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 60,
+        "spa": 130,
+        "spd": 75,
+        "spe": 110
+      }
+    },
+    "Scovillain": {
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "abilities": [
+        "Chlorophyll",
+        "Insomnia",
+        "Moody"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 108,
+        "def": 65,
+        "spa": 108,
+        "spd": 65,
+        "spe": 75
+      }
+    },
+    "Espathra": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Opportunist",
+        "Frisk",
+        "Speed Boost"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 60,
+        "def": 60,
+        "spa": 101,
+        "spd": 60,
+        "spe": 105
+      }
+    },
+    "Tinkaton": {
+      "types": [
+        "Fairy",
+        "Steel"
+      ],
+      "abilities": [
+        "Mold Breaker",
+        "Own Tempo",
+        "Pickpocket"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 75,
+        "def": 77,
+        "spa": 70,
+        "spd": 105,
+        "spe": 94
+      }
+    },
+    "Palafin": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Zero to Hero"
+      ],
+      "usage_tier": "Uber",
+      "base_stats": {
+        "hp": 100,
+        "atk": 70,
+        "def": 72,
+        "spa": 53,
+        "spd": 62,
+        "spe": 100
+      }
+    },
+    "Orthworm": {
+      "types": [
+        "Steel"
+      ],
+      "abilities": [
+        "Earth Eater",
+        "Sand Veil"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 85,
+        "def": 145,
+        "spa": 60,
+        "spd": 55,
+        "spe": 65
+      }
+    },
+    "Glimmora": {
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "abilities": [
+        "Toxic Debris",
+        "Corrosion"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 83,
+        "atk": 55,
+        "def": 90,
+        "spa": 130,
+        "spd": 81,
+        "spe": 86
+      }
+    },
+    "Farigiraf": {
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "abilities": [
+        "Cud Chew",
+        "Armor Tail",
+        "Sap Sipper"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 120,
+        "atk": 90,
+        "def": 70,
+        "spa": 110,
+        "spd": 70,
+        "spe": 60
+      }
+    },
+    "Kingambit": {
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "abilities": [
+        "Defiant",
+        "Supreme Overlord",
+        "Pressure"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 135,
+        "def": 120,
+        "spa": 60,
+        "spd": 85,
+        "spe": 50
+      }
+    }
+  },
+  "megas": {
+    "Lopunny-Mega": {
+      "types": [
+        "Normal",
+        "Fighting"
+      ],
+      "abilities": [
+        "Scrappy"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 136,
+        "def": 94,
+        "spa": 54,
+        "spd": 96,
+        "spe": 135
+      }
+    },
+    "Venusaur-Mega": {
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "abilities": [
+        "Thick Fat"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 100,
+        "def": 123,
+        "spa": 122,
+        "spd": 120,
+        "spe": 80
+      }
+    },
+    "Medicham-Mega": {
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "abilities": [
+        "Pure Power"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 100,
+        "def": 85,
+        "spa": 80,
+        "spd": 85,
+        "spe": 100
+      }
+    },
+    "Gardevoir-Mega": {
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "abilities": [
+        "Pixilate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 68,
+        "atk": 85,
+        "def": 65,
+        "spa": 165,
+        "spd": 135,
+        "spe": 100
+      }
+    },
+    "Alakazam-Mega": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Trace"
+      ],
+      "usage_tier": "UUBL",
+      "base_stats": {
+        "hp": 55,
+        "atk": 50,
+        "def": 65,
+        "spa": 175,
+        "spd": 105,
+        "spe": 150
+      }
+    },
+    "Garchomp-Mega": {
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "abilities": [
+        "Sand Force"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 108,
+        "atk": 170,
+        "def": 115,
+        "spa": 120,
+        "spd": 95,
+        "spe": 92
+      }
+    },
+    "Drampa-Mega": {
+      "types": [
+        "Normal",
+        "Dragon"
+      ],
+      "abilities": [
+        "Berserk"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 85,
+        "def": 110,
+        "spa": 160,
+        "spd": 116,
+        "spe": 36
+      }
+    },
+    "Floette-Mega": {
+      "types": [
+        "Fairy"
+      ],
+      "abilities": [
+        "Fairy Aura"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 85,
+        "def": 87,
+        "spa": 155,
+        "spd": 148,
+        "spe": 102
+      }
+    },
+    "Glalie-Mega": {
+      "types": [
+        "Ice"
+      ],
+      "abilities": [
+        "Refrigerate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 120,
+        "def": 80,
+        "spa": 120,
+        "spd": 80,
+        "spe": 100
+      }
+    },
+    "Clefable-Mega": {
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "abilities": [
+        "Magic Bounce"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 80,
+        "def": 93,
+        "spa": 135,
+        "spd": 110,
+        "spe": 70
+      }
+    },
+    "Tyranitar-Mega": {
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "abilities": [
+        "Sand Stream"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 100,
+        "atk": 164,
+        "def": 150,
+        "spa": 95,
+        "spd": 120,
+        "spe": 71
+      }
+    },
+    "Greninja-Mega": {
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "abilities": [
+        "Protean"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 72,
+        "atk": 125,
+        "def": 77,
+        "spa": 133,
+        "spd": 81,
+        "spe": 142
+      }
+    },
+    "Chesnaught-Mega": {
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "abilities": [
+        "Bulletproof"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 88,
+        "atk": 137,
+        "def": 172,
+        "spa": 74,
+        "spd": 115,
+        "spe": 44
+      }
+    },
+    "Meowstic-M-Mega": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Trace"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 48,
+        "def": 76,
+        "spa": 143,
+        "spd": 101,
+        "spe": 124
+      }
+    },
+    "Chimecho-Mega": {
+      "types": [
+        "Psychic",
+        "Steel"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 50,
+        "def": 110,
+        "spa": 135,
+        "spd": 120,
+        "spe": 65
+      }
+    },
+    "Gyarados-Mega": {
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "abilities": [
+        "Mold Breaker"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 155,
+        "def": 109,
+        "spa": 70,
+        "spd": 130,
+        "spe": 81
+      }
+    },
+    "Gengar-Mega": {
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "abilities": [
+        "Shadow Tag"
+      ],
+      "usage_tier": "Uber",
+      "base_stats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 80,
+        "spa": 170,
+        "spd": 95,
+        "spe": 130
+      }
+    },
+    "Scizor-Mega": {
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "abilities": [
+        "Technician"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 150,
+        "def": 140,
+        "spa": 65,
+        "spd": 100,
+        "spe": 75
+      }
+    },
+    "Emboar-Mega": {
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "abilities": [
+        "Mold Breaker"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 148,
+        "def": 75,
+        "spa": 110,
+        "spd": 110,
+        "spe": 75
+      }
+    },
+    "Excadrill-Mega": {
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "abilities": [
+        "Piercing Drill"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 110,
+        "atk": 165,
+        "def": 100,
+        "spa": 65,
+        "spd": 65,
+        "spe": 103
+      }
+    },
+    "Banette-Mega": {
+      "types": [
+        "Ghost"
+      ],
+      "abilities": [
+        "Prankster"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 64,
+        "atk": 165,
+        "def": 75,
+        "spa": 93,
+        "spd": 83,
+        "spe": 75
+      }
+    },
+    "Altaria-Mega": {
+      "types": [
+        "Dragon",
+        "Fairy"
+      ],
+      "abilities": [
+        "Pixilate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 110,
+        "def": 110,
+        "spa": 110,
+        "spd": 105,
+        "spe": 80
+      }
+    },
+    "Chandelure-Mega": {
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "abilities": [
+        "Infiltrator"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 60,
+        "atk": 75,
+        "def": 110,
+        "spa": 175,
+        "spd": 110,
+        "spe": 90
+      }
+    },
+    "Starmie-Mega": {
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "abilities": [
+        "Huge Power"
+      ],
+      "usage_tier": "Uber",
+      "base_stats": {
+        "hp": 60,
+        "atk": 100,
+        "def": 105,
+        "spa": 130,
+        "spd": 105,
+        "spe": 120
+      }
+    },
+    "Glimmora-Mega": {
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "abilities": [
+        "Adaptability"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 83,
+        "atk": 90,
+        "def": 105,
+        "spa": 150,
+        "spd": 96,
+        "spe": 101
+      }
+    },
+    "Lucario-Mega": {
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "abilities": [
+        "Adaptability"
+      ],
+      "usage_tier": "Uber",
+      "base_stats": {
+        "hp": 70,
+        "atk": 145,
+        "def": 88,
+        "spa": 140,
+        "spd": 70,
+        "spe": 112
+      }
+    },
+    "Pinsir-Mega": {
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "abilities": [
+        "Aerilate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 155,
+        "def": 120,
+        "spa": 65,
+        "spd": 90,
+        "spe": 105
+      }
+    },
+    "Scovillain-Mega": {
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "abilities": [
+        "Spicy Spray"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 138,
+        "def": 85,
+        "spa": 138,
+        "spd": 85,
+        "spe": 75
+      }
+    },
+    "Audino-Mega": {
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "abilities": [
+        "Healer"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 103,
+        "atk": 60,
+        "def": 126,
+        "spa": 80,
+        "spd": 126,
+        "spe": 50
+      }
+    },
+    "Hawlucha-Mega": {
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "abilities": [
+        "No Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 137,
+        "def": 100,
+        "spa": 74,
+        "spd": 93,
+        "spe": 118
+      }
+    },
+    "Feraligatr-Mega": {
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "abilities": [
+        "Dragonize"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 85,
+        "atk": 160,
+        "def": 125,
+        "spa": 89,
+        "spd": 93,
+        "spe": 78
+      }
+    },
+    "Houndoom-Mega": {
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "abilities": [
+        "Solar Power"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 90,
+        "def": 90,
+        "spa": 140,
+        "spd": 90,
+        "spe": 115
+      }
+    },
+    "Pidgeot-Mega": {
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "abilities": [
+        "No Guard"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 83,
+        "atk": 80,
+        "def": 80,
+        "spa": 135,
+        "spd": 80,
+        "spe": 121
+      }
+    },
+    "Charizard-Mega-Y": {
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "abilities": [
+        "Drought"
+      ],
+      "usage_tier": "UUBL",
+      "base_stats": {
+        "hp": 78,
+        "atk": 104,
+        "def": 78,
+        "spa": 159,
+        "spd": 115,
+        "spe": 100
+      }
+    },
+    "Ampharos-Mega": {
+      "types": [
+        "Electric",
+        "Dragon"
+      ],
+      "abilities": [
+        "Mold Breaker"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 95,
+        "def": 105,
+        "spa": 165,
+        "spd": 110,
+        "spe": 45
+      }
+    },
+    "Heracross-Mega": {
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "abilities": [
+        "Skill Link"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 185,
+        "def": 115,
+        "spa": 40,
+        "spd": 105,
+        "spe": 75
+      }
+    },
+    "Victreebel-Mega": {
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "abilities": [
+        "Innards Out"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 125,
+        "def": 85,
+        "spa": 135,
+        "spd": 95,
+        "spe": 70
+      }
+    },
+    "Aerodactyl-Mega": {
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "abilities": [
+        "Tough Claws"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 135,
+        "def": 85,
+        "spa": 70,
+        "spd": 95,
+        "spe": 150
+      }
+    },
+    "Steelix-Mega": {
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "abilities": [
+        "Sand Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 125,
+        "def": 230,
+        "spa": 55,
+        "spd": 95,
+        "spe": 30
+      }
+    },
+    "Crabominable-Mega": {
+      "types": [
+        "Fighting",
+        "Ice"
+      ],
+      "abilities": [
+        "Iron Fist"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 97,
+        "atk": 157,
+        "def": 122,
+        "spa": 62,
+        "spd": 107,
+        "spe": 33
+      }
+    },
+    "Dragonite-Mega": {
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "abilities": [
+        "Multiscale"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 91,
+        "atk": 124,
+        "def": 115,
+        "spa": 145,
+        "spd": 125,
+        "spe": 100
+      }
+    },
+    "Absol-Mega": {
+      "types": [
+        "Dark"
+      ],
+      "abilities": [
+        "Magic Bounce"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 150,
+        "def": 60,
+        "spa": 115,
+        "spd": 60,
+        "spe": 115
+      }
+    },
+    "Sableye-Mega": {
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "abilities": [
+        "Magic Bounce"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 50,
+        "atk": 85,
+        "def": 125,
+        "spa": 85,
+        "spd": 115,
+        "spe": 20
+      }
+    },
+    "Froslass-Mega": {
+      "types": [
+        "Ice",
+        "Ghost"
+      ],
+      "abilities": [
+        "Snow Warning"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 80,
+        "def": 70,
+        "spa": 140,
+        "spd": 100,
+        "spe": 120
+      }
+    },
+    "Gallade-Mega": {
+      "types": [
+        "Psychic",
+        "Fighting"
+      ],
+      "abilities": [
+        "Inner Focus"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 68,
+        "atk": 165,
+        "def": 95,
+        "spa": 65,
+        "spd": 115,
+        "spe": 110
+      }
+    },
+    "Meganium-Mega": {
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "abilities": [
+        "Mega Sol"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 80,
+        "atk": 92,
+        "def": 115,
+        "spa": 143,
+        "spd": 115,
+        "spe": 80
+      }
+    },
+    "Aggron-Mega": {
+      "types": [
+        "Steel"
+      ],
+      "abilities": [
+        "Filter"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 140,
+        "def": 230,
+        "spa": 60,
+        "spd": 80,
+        "spe": 50
+      }
+    },
+    "Beedrill-Mega": {
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "abilities": [
+        "Adaptability"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 150,
+        "def": 40,
+        "spa": 15,
+        "spd": 80,
+        "spe": 145
+      }
+    },
+    "Camerupt-Mega": {
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "abilities": [
+        "Sheer Force"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 120,
+        "def": 100,
+        "spa": 145,
+        "spd": 105,
+        "spe": 20
+      }
+    },
+    "Blastoise-Mega": {
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        "Mega Launcher"
+      ],
+      "usage_tier": "Uber",
+      "base_stats": {
+        "hp": 79,
+        "atk": 103,
+        "def": 120,
+        "spa": 135,
+        "spd": 115,
+        "spe": 78
+      }
+    },
+    "Skarmory-Mega": {
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "abilities": [
+        "Stalwart"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 65,
+        "atk": 140,
+        "def": 110,
+        "spa": 40,
+        "spd": 100,
+        "spe": 110
+      }
+    },
+    "Slowbro-Mega": {
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "abilities": [
+        "Shell Armor"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 95,
+        "atk": 75,
+        "def": 180,
+        "spa": 130,
+        "spd": 80,
+        "spe": 30
+      }
+    },
+    "Delphox-Mega": {
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "abilities": [
+        "Levitate"
+      ],
+      "usage_tier": "OU",
+      "base_stats": {
+        "hp": 75,
+        "atk": 69,
+        "def": 72,
+        "spa": 159,
+        "spd": 125,
+        "spe": 134
+      }
+    },
+    "Sharpedo-Mega": {
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "abilities": [
+        "Strong Jaw"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 140,
+        "def": 70,
+        "spa": 110,
+        "spd": 65,
+        "spe": 105
+      }
+    },
+    "Charizard-Mega-X": {
+      "types": [
+        "Fire",
+        "Dragon"
+      ],
+      "abilities": [
+        "Tough Claws"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 78,
+        "atk": 130,
+        "def": 111,
+        "spa": 130,
+        "spd": 85,
+        "spe": 100
+      }
+    },
+    "Meowstic-F-Mega": {
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        "Trace"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 74,
+        "atk": 48,
+        "def": 76,
+        "spa": 143,
+        "spd": 101,
+        "spe": 124
+      }
+    },
+    "Golurk-Mega": {
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "abilities": [
+        "Unseen Fist"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 89,
+        "atk": 159,
+        "def": 105,
+        "spa": 70,
+        "spd": 105,
+        "spe": 55
+      }
+    },
+    "Manectric-Mega": {
+      "types": [
+        "Electric"
+      ],
+      "abilities": [
+        "Intimidate"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 70,
+        "atk": 75,
+        "def": 80,
+        "spa": 135,
+        "spd": 80,
+        "spe": 135
+      }
+    },
+    "Abomasnow-Mega": {
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "abilities": [
+        "Snow Warning"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 90,
+        "atk": 132,
+        "def": 105,
+        "spa": 132,
+        "spd": 105,
+        "spe": 30
+      }
+    },
+    "Kangaskhan-Mega": {
+      "types": [
+        "Normal"
+      ],
+      "abilities": [
+        "Parental Bond"
+      ],
+      "usage_tier": "UU",
+      "base_stats": {
+        "hp": 105,
+        "atk": 125,
+        "def": 100,
+        "spa": 60,
+        "spd": 100,
+        "spe": 100
+      }
+    }
+  }
+}

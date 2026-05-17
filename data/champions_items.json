@@ -1,0 +1,45 @@
+{ "categories": {
+    "mega_stones": [
+      "Abomasite", "Absolite", "Aerodactylite", "Aggronite", "Alakazite",
+      "Altarianite", "Ampharosite", "Audinite", "Banettite", "Beedrillite",
+      "Blastoisinite", "Cameruptite", "Chandelurite", "Charizardite X", "Charizardite Y",
+      "Chesnaughtite", "Chimechite", "Clefablite", "Crabominite", "Delphoxite",
+      "Dragoninite", "Drampanite", "Emboarite", "Excadrite", "Feraligite",
+      "Floettite", "Froslassite", "Galladite", "Garchompite", "Gardevoirite",
+      "Gengarite", "Glalitite", "Glimmoranite", "Golurkite", "Greninjite",
+      "Gyaradosite", "Hawluchanite", "Heracronite", "Houndoominite", "Kangaskhanite",
+      "Lopunnite", "Lucarionite", "Manectite", "Medichamite", "Meganiumite",
+      "Meowsticite", "Pidgeotite", "Pinsirite", "Sablenite", "Scizorite",
+      "Scovillainite", "Sharpedonite", "Skarmorite", "Slowbronite", "Starminite",
+      "Steelixite", "Tyranitarite", "Venusaurite", "Victreebelite"
+    ],
+    "stat_boost": [
+      "Choice Scarf",
+      "Focus Sash",
+      "White Herb"
+    ],
+    "power_boost": [
+      "Charcoal", "Black Belt", "Black Glasses", "Soft Sand", "Mystic Water",
+      "Never-Melt Ice", "Silk Scarf", "Silver Powder", "Miracle Seed",
+      "Hard Stone", "Magnet", "Metal Coat", "Poison Barb", "Sharp Beak",
+      "Twisted Spoon", "Dragon Fang", "Fairy Feather"
+    ],
+    "recovery": [
+      "Sitrus Berry", "Lum Berry", "Leftovers", "Shell Bell",
+      "Oran Berry", "Persim Berry", "Leppa Berry", "Aspear Berry",
+      "Rawst Berry", "Pecha Berry", "Chesto Berry", "Cheri Berry",
+      "Focus Band", "Mental Herb"
+    ],
+    "defense_berries": [
+      "Chople Berry", "Occa Berry", "Passho Berry", "Wacan Berry",
+      "Rindo Berry", "Yache Berry", "Charti Berry", "Coba Berry",
+      "Payapa Berry", "Tanga Berry", "Haban Berry", "Colbur Berry",
+      "Babiri Berry", "Chilan Berry", "Roseli Berry", "Shuca Berry",
+      "Kebia Berry", "Kasib Berry"
+    ],
+    "other": [
+      "King's Rock", "Bright Powder", "Scope Lens", "Quick Claw",
+      "Light Ball", "Spell Tag"
+    ]
+  }
+}

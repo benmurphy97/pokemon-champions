@@ -1,14 +1,25 @@
 showdown/
-__pycache__/
-*.pyc
-*.pyo
 .env
 wandb/
 .DS_Store
 .claude/
-*.log
 
-# Generated artifacts
+# Python cache
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Generated artifacts — not tracked in git
 model_outputs/
 logs/
-data/
+checkpoints/
+data/replays/
+data/experiment_results.jsonl
+data/bc_dataset.npz
+data/cache/
+
+# Keep data source files (teams, JSON references) but not generated outputs
+!data/teams/
+!data/*.json
+!data/pikalytics_roster.json
+!data/raw_data_files/

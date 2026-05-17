@@ -1,0 +1,242 @@
+{
+  "source": "https://www.ign.com/wikis/pokemon-champions/All_Pokemon_in_Champions_List",
+  "count": 59,
+  "megas": [
+    {
+      "mega": "Mega Venusaur",
+      "base_pokemon": "Venusaur"
+    },
+    {
+      "mega": "Mega Charizard X",
+      "base_pokemon": "Charizard"
+    },
+    {
+      "mega": "Mega Charizard Y",
+      "base_pokemon": "Charizard"
+    },
+    {
+      "mega": "Mega Blastoise",
+      "base_pokemon": "Blastoise"
+    },
+    {
+      "mega": "Mega Beedrill",
+      "base_pokemon": "Beedrill"
+    },
+    {
+      "mega": "Mega Pidgeot",
+      "base_pokemon": "Pidgeot"
+    },
+    {
+      "mega": "Mega Clefable",
+      "base_pokemon": "Clefable"
+    },
+    {
+      "mega": "Mega Alakazam",
+      "base_pokemon": "Alakazam"
+    },
+    {
+      "mega": "Mega Victreebel",
+      "base_pokemon": "Victreebel"
+    },
+    {
+      "mega": "Mega Slowbro",
+      "base_pokemon": "Slowbro"
+    },
+    {
+      "mega": "Mega Gengar",
+      "base_pokemon": "Gengar"
+    },
+    {
+      "mega": "Mega Kangaskhan",
+      "base_pokemon": "Kangaskhan"
+    },
+    {
+      "mega": "Mega Starmie",
+      "base_pokemon": "Starmie"
+    },
+    {
+      "mega": "Mega Pinsir",
+      "base_pokemon": "Pinsir"
+    },
+    {
+      "mega": "Mega Gyarados",
+      "base_pokemon": "Gyarados"
+    },
+    {
+      "mega": "Mega Aerodactyl",
+      "base_pokemon": "Aerodactyl"
+    },
+    {
+      "mega": "Mega Dragonite",
+      "base_pokemon": "Dragonite"
+    },
+    {
+      "mega": "Mega Meganium",
+      "base_pokemon": "Meganium"
+    },
+    {
+      "mega": "Mega Feraligatr",
+      "base_pokemon": "Feraligatr"
+    },
+    {
+      "mega": "Mega Ampharos",
+      "base_pokemon": "Ampharos"
+    },
+    {
+      "mega": "Mega Steelix",
+      "base_pokemon": "Steelix"
+    },
+    {
+      "mega": "Mega Scizor",
+      "base_pokemon": "Scizor"
+    },
+    {
+      "mega": "Mega Heracross",
+      "base_pokemon": "Heracross"
+    },
+    {
+      "mega": "Mega Skarmory",
+      "base_pokemon": "Skarmory"
+    },
+    {
+      "mega": "Mega Houndoom",
+      "base_pokemon": "Houndoom"
+    },
+    {
+      "mega": "Mega Tyranitar",
+      "base_pokemon": "Tyranitar"
+    },
+    {
+      "mega": "Mega Gardevoir",
+      "base_pokemon": "Gardevoir"
+    },
+    {
+      "mega": "Mega Sableye",
+      "base_pokemon": "Sableye"
+    },
+    {
+      "mega": "Mega Aggron",
+      "base_pokemon": "Aggron"
+    },
+    {
+      "mega": "Mega Medicham",
+      "base_pokemon": "Medicham"
+    },
+    {
+      "mega": "Mega Manetric",
+      "base_pokemon": "Manetric"
+    },
+    {
+      "mega": "Mega Sharpedo",
+      "base_pokemon": "Sharpedo"
+    },
+    {
+      "mega": "Mega Camerupt",
+      "base_pokemon": "Camerupt"
+    },
+    {
+      "mega": "Mega Altaria",
+      "base_pokemon": "Altaria"
+    },
+    {
+      "mega": "Mega Banette",
+      "base_pokemon": "Banette"
+    },
+    {
+      "mega": "Mega Chimecho",
+      "base_pokemon": "Chimecho"
+    },
+    {
+      "mega": "Mega Absol",
+      "base_pokemon": "Absol"
+    },
+    {
+      "mega": "Mega Glalie",
+      "base_pokemon": "Glalie"
+    },
+    {
+      "mega": "Mega Lopunny",
+      "base_pokemon": "Lopunny"
+    },
+    {
+      "mega": "Mega Garchomp",
+      "base_pokemon": "Garchomp"
+    },
+    {
+      "mega": "Mega Lucario",
+      "base_pokemon": "Lucario"
+    },
+    {
+      "mega": "Mega Abomnasnow",
+      "base_pokemon": "Abomnasnow"
+    },
+    {
+      "mega": "Mega Gallade",
+      "base_pokemon": "Gallade"
+    },
+    {
+      "mega": "Mega Froslass",
+      "base_pokemon": "Froslass"
+    },
+    {
+      "mega": "Mega Emboar",
+      "base_pokemon": "Emboar"
+    },
+    {
+      "mega": "Mega Excadrill",
+      "base_pokemon": "Excadrill"
+    },
+    {
+      "mega": "Mega Audino",
+      "base_pokemon": "Audino"
+    },
+    {
+      "mega": "Mega Chandelure",
+      "base_pokemon": "Chandelure"
+    },
+    {
+      "mega": "Mega Golurk",
+      "base_pokemon": "Golurk"
+    },
+    {
+      "mega": "Mega Chesnaught",
+      "base_pokemon": "Chesnaught"
+    },
+    {
+      "mega": "Mega Delphox",
+      "base_pokemon": "Delphox"
+    },
+    {
+      "mega": "Mega Greninja",
+      "base_pokemon": "Greninja"
+    },
+    {
+      "mega": "Mega Floette",
+      "base_pokemon": "Floette"
+    },
+    {
+      "mega": "Mega Meowstic",
+      "base_pokemon": "Meowstic"
+    },
+    {
+      "mega": "Mega Hawlucha",
+      "base_pokemon": "Hawlucha"
+    },
+    {
+      "mega": "Mega Crabominable",
+      "base_pokemon": "Crabominable"
+    },
+    {
+      "mega": "Mega Drampa",
+      "base_pokemon": "Drampa"
+    },
+    {
+      "mega": "Mega Scovillain",
+      "base_pokemon": "Scovillain"
+    },
+    {
+      "mega": "Mega Glimmora",
+      "base_pokemon": "Glimmora"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ services:
       - ./model_outputs:/app/model_outputs
       - ./logs:/app/logs
       - ./data:/app/data
-    # Override with: docker-compose run trainer python src/train.py <subcommand> [args]
+    # Override with: docker-compose run --rm trainer python src/train.py <subcommand> [args]
     # Subcommands: baseline | train | evaluate | mutate | league
     command: python src/train.py train
 
@@ -42,7 +42,7 @@ services:
       - ./data:/app/data
     environment:
       - PYTHONPATH=/app/src
-    command: python src/scraper/scrape.py
+    command: python src/stage1_scraper/scrape.py
 
 # Named volumes are not used — all mounts above are explicit bind mounts.
 # Keeping this block empty intentionally.

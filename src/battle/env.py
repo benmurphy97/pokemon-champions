@@ -6,7 +6,8 @@ from poke_env.environment.doubles_env import DoublesEnv
 from poke_env.environment.single_agent_wrapper import SingleAgentWrapper
 
 from config import BATTLE_FORMAT
-from battle.encoder import encode_battle, STATE_SIZE
+from state_encoder import EncoderV2, STATE_DIM
+from state_encoder.battle_adapter import battle_to_game_state
 
 
 # Pokemon that should prioritise leading — Fake Out users and weather setters
@@ -21,7 +22,8 @@ class PokemonEnv(DoublesEnv):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        obs_space = spaces.Box(low=0.0, high=1.0, shape=(STATE_SIZE,), dtype=np.float32)
+        self._encoder = EncoderV2.from_data_dir("data/")
+        obs_space = spaces.Box(low=0.0, high=1.0, shape=(STATE_DIM,), dtype=np.float32)
         # Setting observation_spaces triggers PokeEnv.__setattr__ which wraps each
         # raw space into Dict({"observation": raw, "action_mask": Box(...)})
         self.observation_spaces = {agent: obs_space for agent in self.possible_agents}
@@ -95,7 +97,7 @@ class PokemonEnv(DoublesEnv):
         return score
 
     def embed_battle(self, battle) -> np.ndarray:
-        return encode_battle(battle)
+        return self._encoder.encode(battle_to_game_state(battle))
 
     def calc_reward(self, battle) -> float:
         if battle.finished:

@@ -5,7 +5,7 @@ from poke_env.environment.doubles_env import DoublesEnv
 from battle.agents.base import BaseAgent
 from battle.env import _resolve_switch_conflicts
 from battle.encoder import encode_battle
-from battle_decisions.extractor import BattleExtractor  # noqa: F401 — must be importable for SB3 checkpoint load
+from stage3_battle_decisions.architecture.extractor import BattleStateEncoder  # noqa: F401 — must be importable for SB3 checkpoint load
 
 log = logging.getLogger(__name__)
 

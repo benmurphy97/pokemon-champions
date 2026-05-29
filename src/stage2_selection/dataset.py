@@ -14,8 +14,8 @@ from pathlib import Path
 import torch
 from torch.utils.data import Dataset
 
-from selection.encoder import PokemonEncoder
-from selection.pokemon import load_all_teams
+from stage2_selection.encoder import PokemonEncoder
+from stage2_selection.pokemon import load_all_teams
 
 
 def _load_jsonl(path: Path) -> list[dict]:

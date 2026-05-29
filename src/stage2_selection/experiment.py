@@ -25,7 +25,7 @@ from itertools import combinations
 from pathlib import Path
 
 from config import SHOWDOWN_URL
-from selection.client import run_battle
+from stage2_selection.client import run_battle
 
 log = logging.getLogger(__name__)
 

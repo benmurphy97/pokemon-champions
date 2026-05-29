@@ -166,7 +166,7 @@ def predict_best(
 
 def _train(args) -> None:
     """Train SelectionMLP on experiment JSONL data; saves best val-loss checkpoint."""
-    from selection.dataset import SelectionDataset
+    from stage2_selection.dataset import SelectionDataset
 
     _CKPT_DIR.mkdir(parents=True, exist_ok=True)
 

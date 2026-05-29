@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scraper.pikalytics import scrape_usage_list, scrape_pokemon_detail
+from stage1_scraper.pikalytics import scrape_usage_list, scrape_pokemon_detail
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s — %(message)s")
 log = logging.getLogger(__name__)

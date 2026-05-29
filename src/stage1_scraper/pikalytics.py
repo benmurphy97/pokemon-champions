@@ -4,8 +4,8 @@ import re
 import logging
 from pathlib import Path
 from bs4 import BeautifulSoup
-from scraper.models import PokemonUsage
-from scraper.session import make_session, polite_get
+from stage1_scraper.models import PokemonUsage
+from stage1_scraper.session import make_session, polite_get
 
 log = logging.getLogger(__name__)
 

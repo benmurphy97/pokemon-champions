@@ -1,16 +1,18 @@
 import argparse
 import asyncio
+import json
 import logging
 import os
 import shutil
 import time
+from datetime import datetime
 
 from poke_env import AccountConfiguration, ServerConfiguration
 
 from battle.agents.random import RandomAgent
 from battle.agents.heuristic import HeuristicAgent
 from battle.agents.self_play import SelfPlayAgent
-from battle_decisions.extractor import BattleExtractor
+from stage3_battle_decisions.architecture.extractor import BattleStateEncoder
 from config import BATTLE_FORMAT, SHOWDOWN_URL, MAX_CONCURRENT_BATTLES, CHECKPOINT_DIR, LOG_DIR
 from battle.teams import (
     TEAM_TR_ALPHA, TEAM_WOLFE, TEAM_CYBERTRON,
@@ -76,12 +78,47 @@ async def run_baseline(n_battles: int, verbose: bool = False):
 # PPO training
 # ---------------------------------------------------------------------------
 
-def _make_opponent(run_id: int, checkpoint: str | None):
+def _load_or_init_model(checkpoint_path: str, env, selfplay: bool):
+    """Load checkpoint if compatible, otherwise init fresh. Returns model."""
     from sb3_contrib import MaskablePPO
 
+    policy_kwargs = dict(
+        features_extractor_class=BattleStateEncoder,
+        features_extractor_kwargs=dict(features_dim=288),
+        net_arch=[128],
+    )
+
+    if os.path.exists(checkpoint_path + ".zip"):
+        try:
+            log.info("Resuming from checkpoint %s", checkpoint_path)
+            return MaskablePPO.load(checkpoint_path, env=env, tensorboard_log=LOG_DIR)
+        except Exception as exc:
+            log.warning(
+                "Checkpoint load failed (%s) — starting fresh. "
+                "This usually means the obs space changed (e.g. encoder upgrade).",
+                exc,
+            )
+
+    log.info("No compatible checkpoint found, starting fresh")
+    return MaskablePPO(
+        "MlpPolicy",
+        env,
+        n_steps=512,
+        batch_size=64,
+        n_epochs=4,
+        learning_rate=3e-4,
+        gamma=0.99,
+        policy_kwargs=policy_kwargs,
+        tensorboard_log=LOG_DIR,
+        verbose=1,
+    )
+
+
+def _make_opponent(run_id: int, checkpoint: str | None, selfplay: bool):
     team = RotatingTeambuilder(*ALL_OPPONENT_TEAMS)
 
-    if checkpoint and os.path.exists(checkpoint + ".zip"):
+    if selfplay and checkpoint and os.path.exists(checkpoint + ".zip"):
+        from sb3_contrib import MaskablePPO
         log.info("Self-play opponent: loading %s", checkpoint)
         model = MaskablePPO.load(checkpoint)
         return SelfPlayAgent(
@@ -107,7 +144,6 @@ def _make_opponent(run_id: int, checkpoint: str | None):
 
 def run_ppo(total_steps: int, checkpoint_dir: str = CHECKPOINT_DIR,
             selfplay: bool = False, round_steps: int = 5000):
-    from sb3_contrib import MaskablePPO
     from battle.env import make_env
 
     checkpoint_path = os.path.join(checkpoint_dir, "ppo_latest")
@@ -120,50 +156,22 @@ def run_ppo(total_steps: int, checkpoint_dir: str = CHECKPOINT_DIR,
         steps_this_round = min(round_steps, total_steps - steps_done)
         run_id = int(time.time()) % 100000
 
-        opponent = (
-            _make_opponent(run_id, checkpoint_path if steps_done > 0 else None)
-            if selfplay
-            else HeuristicAgent(
-                account_configuration=AccountConfiguration(f"Opp_{run_id}", None),
-                battle_format=BATTLE_FORMAT,
-                server_configuration=_server_cfg,
-                team=RotatingTeambuilder(*ALL_OPPONENT_TEAMS),
-                log_level=logging.WARNING,
-                start_listening=False,
-            )
+        opponent = _make_opponent(
+            run_id,
+            checkpoint_path if steps_done > 0 else None,
+            selfplay,
         )
 
         log.info("Building environment (round %d/%d)...",
                  steps_done // round_steps + 1, -(-total_steps // round_steps))
 
-        # Close the previous env before creating a new one to avoid websocket leaks
         if env is not None:
             env.close()
         env = make_env(_server_cfg, TEAM_TR_ALPHA, opponent)
 
         if model is None:
             log.info("obs_space=%s  action_space=%s", env.observation_space, env.action_space)
-            if os.path.exists(checkpoint_path + ".zip"):
-                log.info("Resuming from checkpoint %s", checkpoint_path)
-                model = MaskablePPO.load(checkpoint_path, env=env, tensorboard_log=LOG_DIR)
-            else:
-                log.info("No checkpoint found, starting fresh")
-                model = MaskablePPO(
-                    "MlpPolicy",
-                    env,
-                    n_steps=512,
-                    batch_size=64,
-                    n_epochs=4,
-                    learning_rate=3e-4,
-                    gamma=0.99,
-                    policy_kwargs=dict(
-                        features_extractor_class=BattleExtractor,
-                        features_extractor_kwargs=dict(features_dim=288),
-                        net_arch=[128],
-                    ),
-                    tensorboard_log=LOG_DIR,
-                    verbose=1,
-                )
+            model = _load_or_init_model(checkpoint_path, env, selfplay)
         else:
             model.set_env(env)
 
@@ -264,7 +272,6 @@ def run_evaluate(checkpoint: str, n_battles: int = 20,
 # ---------------------------------------------------------------------------
 
 def _make_train_env(server_cfg, team: str):
-    """Build a fresh training env with a rotating HeuristicAgent opponent."""
     from battle.env import make_env
     run_id = int(time.time()) % 100000
     opponent = HeuristicAgent(
@@ -278,14 +285,30 @@ def _make_train_env(server_cfg, team: str):
     return make_env(server_cfg, team, opponent)
 
 
-def run_mutate(n_rounds: int, checkpoint_dir: str, train_steps: int, eval_battles: int):
+def _append_history(path: str, entry: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "a") as f:
+        f.write(json.dumps(entry) + "\n")
+
+
+def run_mutate(n_rounds: int, checkpoint_dir: str, eval_battles: int):
+    """
+    Evolve the team using the current frozen policy as the fitness signal.
+    The policy is never updated here — use 'train' for that.
+
+    Intended workflow:
+      1. train  — improve in-battle decision-making
+      2. mutate — find a structurally better team (policy unchanged)
+      3. train  — adapt policy to the new team
+      4. repeat
+    """
     from sb3_contrib import MaskablePPO
-    from genetic_algorithm.chromosome import mutate
-    from genetic_algorithm.fitness import evaluate_team
+    from stage4_team_evolution.chromosome import mutate
+    from stage4_team_evolution.fitness import evaluate_team
 
     checkpoint_path = os.path.join(checkpoint_dir, "ppo_latest")
-    temp_path = os.path.join(checkpoint_dir, "ppo_temp")
     best_team_path = os.path.join(checkpoint_dir, "best_team.txt")
+    history_path = os.path.join(checkpoint_dir, "evolution_log.jsonl")
 
     if not os.path.exists(checkpoint_path + ".zip"):
         log.info("No checkpoint — run 'train' first to get a baseline model")
@@ -299,13 +322,14 @@ def run_mutate(n_rounds: int, checkpoint_dir: str, train_steps: int, eval_battle
         current_team = TEAM_TR_ALPHA
         log.info("Starting from TEAM_TR_ALPHA")
 
+    # Load the model once and keep it frozen throughout — no training here
     env = _make_train_env(_server_cfg, current_team)
     try:
-        model = MaskablePPO.load(checkpoint_path, env=env, tensorboard_log=LOG_DIR)
+        model = MaskablePPO.load(checkpoint_path, env=env)
     finally:
         env.close()
 
-    log.info("Evaluating baseline team fitness...")
+    log.info("Evaluating baseline team fitness (policy frozen)...")
     best_fitness, best_breakdown = evaluate_team(model, _server_cfg, current_team, n_battles=eval_battles)
     log.info("Baseline weighted win rate: %.1f%%", best_fitness * 100)
 
@@ -314,45 +338,38 @@ def run_mutate(n_rounds: int, checkpoint_dir: str, train_steps: int, eval_battle
 
         candidate_team = mutate(current_team)
 
-        model.save(temp_path)
-
-        env = _make_train_env(_server_cfg, candidate_team)
-        try:
-            model.set_env(env)
-            log.info("Retraining for %d steps with candidate team...", train_steps)
-            model.learn(total_timesteps=train_steps, reset_num_timesteps=False)
-        finally:
-            env.close()
-
-        log.info("Evaluating candidate team...")
+        log.info("Evaluating candidate team (policy frozen)...")
         candidate_fitness, candidate_breakdown = evaluate_team(
             model, _server_cfg, candidate_team, n_battles=eval_battles
         )
         log.info("Candidate: %.1f%%  Baseline: %.1f%%",
                  candidate_fitness * 100, best_fitness * 100)
 
-        if candidate_fitness > best_fitness:
+        accepted = candidate_fitness > best_fitness
+        _append_history(history_path, {
+            "ts":             datetime.utcnow().isoformat(timespec="seconds"),
+            "event":          "mutation_accepted" if accepted else "mutation_rejected",
+            "generation":     round_num,
+            "fitness_before": best_fitness,
+            "fitness_after":  candidate_fitness,
+            "team_before":    current_team,
+            "team_after":     candidate_team,
+        })
+
+        if accepted:
             log.info("Accepted — +%.1f%%", (candidate_fitness - best_fitness) * 100)
             current_team = candidate_team
             best_fitness = candidate_fitness
             best_breakdown = candidate_breakdown
-            model.save(checkpoint_path)
             with open(best_team_path, "w") as f:
                 f.write(current_team)
-            versioned_ckpt = os.path.join(
-                checkpoint_dir, f"accepted_r{round_num:03d}_{int(time.time())}"
+            versioned = os.path.join(
+                checkpoint_dir, f"accepted_r{round_num:03d}_{int(time.time())}_team.txt"
             )
-            shutil.copy2(checkpoint_path + ".zip", versioned_ckpt + ".zip")
-            with open(f"{versioned_ckpt}_team.txt", "w") as f:
-                f.write(current_team)
-            log.info("Versioned checkpoint → %s.zip", versioned_ckpt)
+            shutil.copy2(best_team_path, versioned)
+            log.info("Team snapshot → %s", versioned)
         else:
-            log.info("Rejected — reverting")
-            env = _make_train_env(_server_cfg, current_team)
-            try:
-                model = MaskablePPO.load(temp_path, env=env, tensorboard_log=LOG_DIR)
-            finally:
-                env.close()
+            log.info("Rejected")
 
     log.info("=== Mutation complete — best weighted win rate: %.1f%% ===", best_fitness * 100)
     log.info("Breakdown:")
@@ -360,64 +377,7 @@ def run_mutate(n_rounds: int, checkpoint_dir: str, train_steps: int, eval_battle
         bar = "█" * int(wr * 20) + "░" * (20 - int(wr * 20))
         log.info("  %-12s %s %.0f%%", name, bar, wr * 100)
     log.info("Best team saved to %s", best_team_path)
-
-
-# ---------------------------------------------------------------------------
-# Imitation learning pretrain
-# ---------------------------------------------------------------------------
-
-def run_pretrain(
-    replay_dir: str,
-    dataset_path: str,
-    checkpoint_dir: str,
-    epochs: int,
-    batch_size: int,
-    lr: float,
-    fetch_pages: int,
-    player: int,
-    device: str,
-):
-    from pathlib import Path
-    from battle_decisions.imitation.parse_replay import BCDataset, parse_replay_dir
-    from battle_decisions.imitation.bc_train import run_bc
-
-    replay_path  = Path(replay_dir)
-    dataset_file = Path(dataset_path)
-
-    if fetch_pages > 0:
-        from battle_decisions.imitation.fetch_replays import download_replays
-        log.info("Fetching up to %d pages of replays into %s ...", fetch_pages, replay_path)
-        download_replays(out_dir=replay_path, n_pages=fetch_pages)
-
-    if dataset_file.exists():
-        log.info("Loading cached dataset from %s", dataset_file)
-        dataset = BCDataset.load(dataset_file)
-    else:
-        log.info("Parsing replays in %s ...", replay_path)
-        if not replay_path.exists() or not list(replay_path.glob("*.log")):
-            log.error(
-                "No .log files found in %s.\n"
-                "  • To fetch automatically:  --fetch-pages 20\n"
-                "  • To fetch manually: python src/data/imitation/fetch_replays.py --out-dir data/replays",
-                replay_path,
-            )
-            return
-        dataset = parse_replay_dir(replay_path, player=player, save_path=dataset_file)
-
-    if len(dataset) == 0:
-        log.error("Dataset is empty — check replay logs and player index.")
-        return
-
-    log.info("Dataset ready: %d samples", len(dataset))
-
-    run_bc(
-        dataset_path=dataset_file,
-        checkpoint_dir=checkpoint_dir,
-        epochs=epochs,
-        batch_size=batch_size,
-        lr=lr,
-        device_str=device,
-    )
+    log.info("Evolution log → %s", history_path)
 
 
 # ---------------------------------------------------------------------------
@@ -444,22 +404,13 @@ def main():
     evaluate.add_argument("--team", default=None, help="path to team.txt (defaults to TEAM_TR_ALPHA)")
     evaluate.add_argument("--selfplay", action="store_true")
 
-    mutate_p = subparsers.add_parser("mutate", help="team mutation loop")
+    mutate_p = subparsers.add_parser(
+        "mutate",
+        help="evolve team composition using the frozen policy — no gradient updates",
+    )
     mutate_p.add_argument("--rounds", type=int, default=10)
     mutate_p.add_argument("--checkpoint-dir", default=CHECKPOINT_DIR)
-    mutate_p.add_argument("--train-steps", type=int, default=2000)
     mutate_p.add_argument("--eval-battles", type=int, default=10)
-
-    pretrain_p = subparsers.add_parser("pretrain", help="BC pretrain from Showdown replays")
-    pretrain_p.add_argument("--replay-dir",     default="data/replays")
-    pretrain_p.add_argument("--dataset",        default="data/bc_dataset.npz")
-    pretrain_p.add_argument("--checkpoint-dir", default=CHECKPOINT_DIR)
-    pretrain_p.add_argument("--epochs",         type=int,   default=20)
-    pretrain_p.add_argument("--batch-size",     type=int,   default=256)
-    pretrain_p.add_argument("--lr",             type=float, default=1e-3)
-    pretrain_p.add_argument("--fetch-pages",    type=int,   default=0)
-    pretrain_p.add_argument("--player",         type=int,   default=1, choices=[1, 2])
-    pretrain_p.add_argument("--device",         default="auto")
 
     league_p = subparsers.add_parser("league", help="PBT league — multiple agents, exploit/explore")
     league_p.add_argument("--generations", type=int, default=10)
@@ -481,21 +432,9 @@ def main():
                      team_file=args.team, selfplay=args.selfplay)
     elif args.mode == "mutate":
         run_mutate(args.rounds, checkpoint_dir=args.checkpoint_dir,
-                   train_steps=args.train_steps, eval_battles=args.eval_battles)
-    elif args.mode == "pretrain":
-        run_pretrain(
-            replay_dir=args.replay_dir,
-            dataset_path=args.dataset,
-            checkpoint_dir=args.checkpoint_dir,
-            epochs=args.epochs,
-            batch_size=args.batch_size,
-            lr=args.lr,
-            fetch_pages=args.fetch_pages,
-            player=args.player,
-            device=args.device,
-        )
+                   eval_battles=args.eval_battles)
     elif args.mode == "league":
-        from battle_decisions.league.runner import run_league
+        from stage3_battle_decisions.league.runner import run_league
         run_league(
             n_generations=args.generations,
             checkpoint_dir=args.checkpoint_dir,

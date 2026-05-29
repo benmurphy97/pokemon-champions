@@ -18,7 +18,7 @@ from dataclasses import dataclass
 from poke_env import AccountConfiguration, ServerConfiguration
 
 from config import BATTLE_FORMAT, SHOWDOWN_URL
-from selection.heuristic_agent import SelectionAgent
+from stage2_selection.heuristic_agent import SelectionAgent
 
 log = logging.getLogger(__name__)
 

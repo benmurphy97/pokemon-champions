@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
-from selection.pokemon import NATURES, NATURE_INDEX, STAT_NAMES, Pokemon, Team
+from stage2_selection.pokemon import NATURES, NATURE_INDEX, STAT_NAMES, Pokemon, Team
 
 # ── Types ────────────────────────────────────────────────────────────────────
 
@@ -315,7 +315,7 @@ class PokemonEncoder:
         Load all data from standard directory layout and return an encoder.
         Builds (or loads) vocab automatically.
         """
-        from selection.pokemon import load_all_teams
+        from stage2_selection.pokemon import load_all_teams
 
         data_dir = Path(data_dir)
 

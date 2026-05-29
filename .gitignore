@@ -1,13 +1,28 @@
 showdown/
 .env
+.env.*
 wandb/
 .DS_Store
 .claude/
+*.log
 
 # Python cache
 **/__pycache__/
 *.pyc
 *.pyo
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Binary model and data artifacts — never commit these regardless of location
+*.pt
+*.pth
+*.pkl
+*.zip
+*.npz
+*.ckpt
 
 # Generated artifacts — not tracked in git
 model_outputs/
@@ -15,11 +30,9 @@ logs/
 checkpoints/
 data/replays/
 data/experiment_results.jsonl
-data/bc_dataset.npz
 data/cache/
 
 # Keep data source files (teams, JSON references) but not generated outputs
 !data/teams/
 !data/*.json
-!data/pikalytics_roster.json
 !data/raw_data_files/

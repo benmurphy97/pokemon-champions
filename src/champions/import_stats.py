@@ -22,7 +22,7 @@ CACHE_DIR = ROOT / "cache"
 OUT_DIR = ROOT / "data" / "meta" / REGULATION.lower()
 USER_AGENT = "champions-team-research/0.1 (personal project)"
 
-MIN_USAGE = 0.01    # drop Pokémon used by under 1% of teams
+MIN_USAGE = 0.002   # drop Pokémon used by under 0.2% of teams
 KEEP = {"abilities": 5, "items": 8, "moves": 14, "spreads": 5, "teammates": 14}
 STAT_ORDER = ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]
 
@@ -110,7 +110,7 @@ def main():
         "format": FORMAT_ID, "month": month, "cutoff": args.cutoff,
         "battles": raw["info"].get("number of battles"), "pokemon": pokemon,
     }, indent=1) + "\n")
-    print(f"{len(pokemon)} Pokémon (usage ≥ {MIN_USAGE:.0%}) from {month}, cutoff {args.cutoff} → {out}")
+    print(f"{len(pokemon)} Pokémon (usage ≥ {MIN_USAGE:.1%}) from {month}, cutoff {args.cutoff} → {out}")
 
 
 if __name__ == "__main__":

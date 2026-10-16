@@ -15017,6 +15017,14308 @@
      0.0783
     ]
    ]
+  },
+  "Staraptor": {
+   "usage": 0.0097,
+   "abilities": [
+    [
+     "Intimidate",
+     0.9791
+    ],
+    [
+     "Reckless",
+     0.0209
+    ]
+   ],
+   "items": [
+    [
+     "Choice Scarf",
+     0.9916
+    ],
+    [
+     "Life Orb",
+     0.002
+    ],
+    [
+     "Focus Sash",
+     0.0012
+    ],
+    [
+     "Red Card",
+     0.0011
+    ],
+    [
+     "White Herb",
+     0.0009
+    ],
+    [
+     "Eject Button",
+     0.0006
+    ],
+    [
+     "Bright Powder",
+     0.0004
+    ],
+    [
+     "Sablenite",
+     0.0004
+    ]
+   ],
+   "moves": [
+    [
+     "Final Gambit",
+     0.9874
+    ],
+    [
+     "Close Combat",
+     0.9292
+    ],
+    [
+     "U-turn",
+     0.9108
+    ],
+    [
+     "Dual Wingbeat",
+     0.5779
+    ],
+    [
+     "Brave Bird",
+     0.4258
+    ],
+    [
+     "Tailwind",
+     0.0749
+    ],
+    [
+     "Double-Edge",
+     0.0445
+    ],
+    [
+     "Protect",
+     0.0161
+    ],
+    [
+     "Whirlwind",
+     0.0057
+    ],
+    [
+     "Endeavor",
+     0.0035
+    ],
+    [
+     "Steel Wing",
+     0.0034
+    ],
+    [
+     "Quick Attack",
+     0.0033
+    ],
+    [
+     "Blaze Kick",
+     0.0033
+    ],
+    [
+     "Sunny Day",
+     0.0025
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 4,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 30
+     },
+     0.4006
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 32,
+      "Atk": 2,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2511
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 32,
+      "Atk": 17,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 17
+     },
+     0.1037
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 32,
+      "Atk": 14,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 20
+     },
+     0.0589
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0329
+    ]
+   ],
+   "teammates": [
+    [
+     "Farigiraf",
+     0.6398
+    ],
+    [
+     "Kingambit",
+     0.555
+    ],
+    [
+     "Golisopod-Mega",
+     0.524
+    ],
+    [
+     "Politoed",
+     0.4585
+    ],
+    [
+     "Pawmot",
+     0.4501
+    ],
+    [
+     "Indeedee-F",
+     0.1888
+    ],
+    [
+     "Camerupt-Mega",
+     0.1768
+    ],
+    [
+     "Hatterene",
+     0.0836
+    ],
+    [
+     "Incineroar",
+     0.079
+    ],
+    [
+     "Rillaboom",
+     0.0755
+    ],
+    [
+     "Torkoal",
+     0.0754
+    ],
+    [
+     "Blastoise-Mega",
+     0.0558
+    ],
+    [
+     "Pelipper",
+     0.0538
+    ],
+    [
+     "Grapploct",
+     0.0499
+    ]
+   ]
+  },
+  "Lycanroc-Dusk": {
+   "usage": 0.0095,
+   "abilities": [
+    [
+     "Tough Claws",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.9579
+    ],
+    [
+     "Life Orb",
+     0.0229
+    ],
+    [
+     "Hard Stone",
+     0.0057
+    ],
+    [
+     "Expert Belt",
+     0.0054
+    ],
+    [
+     "Wide Lens",
+     0.0033
+    ],
+    [
+     "Choice Scarf",
+     0.003
+    ],
+    [
+     "Muscle Band",
+     0.0005
+    ],
+    [
+     "Sitrus Berry",
+     0.0005
+    ]
+   ],
+   "moves": [
+    [
+     "Accelerock",
+     0.986
+    ],
+    [
+     "Rock Slide",
+     0.9726
+    ],
+    [
+     "Protect",
+     0.9709
+    ],
+    [
+     "Close Combat",
+     0.9485
+    ],
+    [
+     "Psychic Fangs",
+     0.0519
+    ],
+    [
+     "Crunch",
+     0.0107
+    ],
+    [
+     "Drill Run",
+     0.0089
+    ],
+    [
+     "Howl",
+     0.0053
+    ],
+    [
+     "Rock Tomb",
+     0.0052
+    ],
+    [
+     "Play Rough",
+     0.005
+    ],
+    [
+     "Taunt",
+     0.005
+    ],
+    [
+     "Brick Break",
+     0.0042
+    ],
+    [
+     "Iron Head",
+     0.0033
+    ],
+    [
+     "Fire Fang",
+     0.0032
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.3311
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1864
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.168
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0992
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0746
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5875
+    ],
+    [
+     "Sneasler",
+     0.448
+    ],
+    [
+     "Froslass-Mega",
+     0.4347
+    ],
+    [
+     "Kingambit",
+     0.3968
+    ],
+    [
+     "Incineroar",
+     0.3203
+    ],
+    [
+     "Basculegion",
+     0.3186
+    ],
+    [
+     "Salamence-Mega",
+     0.2406
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.2108
+    ],
+    [
+     "Volcarona",
+     0.2095
+    ],
+    [
+     "Scovillain-Mega",
+     0.1781
+    ],
+    [
+     "Lucario-Mega-Z",
+     0.178
+    ],
+    [
+     "Golisopod-Mega",
+     0.1342
+    ],
+    [
+     "Floette-Mega",
+     0.1025
+    ],
+    [
+     "Archaludon",
+     0.0753
+    ]
+   ]
+  },
+  "Pyroar-Mega": {
+   "usage": 0.0094,
+   "abilities": [
+    [
+     "Fire Mane",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Pyroarite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.9989
+    ],
+    [
+     "Heat Wave",
+     0.9987
+    ],
+    [
+     "Overheat",
+     0.9492
+    ],
+    [
+     "Scorching Sands",
+     0.3533
+    ],
+    [
+     "Solar Beam",
+     0.259
+    ],
+    [
+     "Dark Pulse",
+     0.2479
+    ],
+    [
+     "Hyper Voice",
+     0.0636
+    ],
+    [
+     "Flamethrower",
+     0.0305
+    ],
+    [
+     "Sunny Day",
+     0.0279
+    ],
+    [
+     "Snarl",
+     0.0248
+    ],
+    [
+     "Taunt",
+     0.0095
+    ],
+    [
+     "Yawn",
+     0.0077
+    ],
+    [
+     "Hyper Beam",
+     0.0068
+    ],
+    [
+     "Roar",
+     0.0054
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.8468
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0556
+    ],
+    [
+     "Timid",
+     {
+      "HP": 6,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 28
+     },
+     0.0179
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0165
+    ],
+    [
+     "Timid",
+     {
+      "HP": 7,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 27
+     },
+     0.0146
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.7321
+    ],
+    [
+     "Whimsicott",
+     0.4529
+    ],
+    [
+     "Basculegion",
+     0.4344
+    ],
+    [
+     "Gardevoir-Mega",
+     0.3965
+    ],
+    [
+     "Milotic",
+     0.245
+    ],
+    [
+     "Espathra",
+     0.2359
+    ],
+    [
+     "Gholdengo",
+     0.234
+    ],
+    [
+     "Kommo-o",
+     0.2185
+    ],
+    [
+     "Torkoal",
+     0.2164
+    ],
+    [
+     "Sneasler",
+     0.1452
+    ],
+    [
+     "Ninetales",
+     0.1351
+    ],
+    [
+     "Staraptor-Mega",
+     0.128
+    ],
+    [
+     "Farigiraf",
+     0.1266
+    ],
+    [
+     "Rillaboom",
+     0.0959
+    ]
+   ]
+  },
+  "Toxapex": {
+   "usage": 0.009,
+   "abilities": [
+    [
+     "Regenerator",
+     0.9876
+    ],
+    [
+     "Merciless",
+     0.0123
+    ],
+    [
+     "Limber",
+     0.0001
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.8905
+    ],
+    [
+     "Binding Band",
+     0.0377
+    ],
+    [
+     "Rocky Helmet",
+     0.0262
+    ],
+    [
+     "Sitrus Berry",
+     0.019
+    ],
+    [
+     "Eject Button",
+     0.011
+    ],
+    [
+     "Shuca Berry",
+     0.0035
+    ],
+    [
+     "Grassy Seed",
+     0.0032
+    ],
+    [
+     "Red Card",
+     0.002
+    ]
+   ],
+   "moves": [
+    [
+     "Infestation",
+     0.975
+    ],
+    [
+     "Baneful Bunker",
+     0.9528
+    ],
+    [
+     "Toxic",
+     0.9266
+    ],
+    [
+     "Wide Guard",
+     0.7108
+    ],
+    [
+     "Recover",
+     0.294
+    ],
+    [
+     "Stockpile",
+     0.043
+    ],
+    [
+     "Haze",
+     0.0169
+    ],
+    [
+     "Protect",
+     0.0135
+    ],
+    [
+     "Chilling Water",
+     0.009
+    ],
+    [
+     "Toxic Spikes",
+     0.008
+    ],
+    [
+     "Liquidation",
+     0.0074
+    ],
+    [
+     "Icy Wind",
+     0.0066
+    ],
+    [
+     "Venoshock",
+     0.0048
+    ],
+    [
+     "Muddy Water",
+     0.0045
+    ]
+   ],
+   "spreads": [
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 18,
+      "SpA": 0,
+      "SpD": 16,
+      "Spe": 0
+     },
+     0.2027
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 16,
+      "SpA": 0,
+      "SpD": 18,
+      "Spe": 0
+     },
+     0.1577
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 16,
+      "SpA": 0,
+      "SpD": 18,
+      "Spe": 0
+     },
+     0.0529
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 18,
+      "SpA": 0,
+      "SpD": 16,
+      "Spe": 0
+     },
+     0.0467
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 15,
+      "SpA": 0,
+      "SpD": 19,
+      "Spe": 0
+     },
+     0.0456
+    ]
+   ],
+   "teammates": [
+    [
+     "Incineroar",
+     0.5562
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.3979
+    ],
+    [
+     "Garchomp",
+     0.3689
+    ],
+    [
+     "Rillaboom",
+     0.3541
+    ],
+    [
+     "Sylveon",
+     0.3212
+    ],
+    [
+     "Venusaur",
+     0.2504
+    ],
+    [
+     "Kingambit",
+     0.1364
+    ],
+    [
+     "Floette-Mega",
+     0.127
+    ],
+    [
+     "Salamence-Mega",
+     0.1251
+    ],
+    [
+     "Sneasler",
+     0.107
+    ],
+    [
+     "Golisopod-Mega",
+     0.1051
+    ],
+    [
+     "Sinistcha",
+     0.0719
+    ],
+    [
+     "Grimmsnarl",
+     0.07
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.0606
+    ]
+   ]
+  },
+  "Gallade": {
+   "usage": 0.009,
+   "abilities": [
+    [
+     "Sharpness",
+     0.9909
+    ],
+    [
+     "Steadfast",
+     0.008
+    ],
+    [
+     "Justified",
+     0.0011
+    ]
+   ],
+   "items": [
+    [
+     "White Herb",
+     0.1977
+    ],
+    [
+     "Focus Sash",
+     0.1744
+    ],
+    [
+     "Life Orb",
+     0.1563
+    ],
+    [
+     "Sitrus Berry",
+     0.1423
+    ],
+    [
+     "Iron Ball",
+     0.1022
+    ],
+    [
+     "Expert Belt",
+     0.0579
+    ],
+    [
+     "Psychic Seed",
+     0.0568
+    ],
+    [
+     "Scope Lens",
+     0.0434
+    ]
+   ],
+   "moves": [
+    [
+     "Sacred Sword",
+     0.9931
+    ],
+    [
+     "Psycho Cut",
+     0.8788
+    ],
+    [
+     "Trick Room",
+     0.643
+    ],
+    [
+     "Wide Guard",
+     0.5765
+    ],
+    [
+     "Leaf Blade",
+     0.2862
+    ],
+    [
+     "Protect",
+     0.262
+    ],
+    [
+     "Night Slash",
+     0.168
+    ],
+    [
+     "Shadow Sneak",
+     0.0187
+    ],
+    [
+     "Solar Blade",
+     0.0185
+    ],
+    [
+     "Triple Axel",
+     0.0167
+    ],
+    [
+     "Coaching",
+     0.0132
+    ],
+    [
+     "Shadow Claw",
+     0.0128
+    ],
+    [
+     "Aqua Cutter",
+     0.012
+    ],
+    [
+     "Quick Guard",
+     0.0116
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.2314
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1357
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1229
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1125
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0977
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.5542
+    ],
+    [
+     "Hatterene",
+     0.2857
+    ],
+    [
+     "Armarouge",
+     0.2723
+    ],
+    [
+     "Camerupt-Mega",
+     0.2714
+    ],
+    [
+     "Torkoal",
+     0.2661
+    ],
+    [
+     "Kingambit",
+     0.2359
+    ],
+    [
+     "Farigiraf",
+     0.2003
+    ],
+    [
+     "Golisopod-Mega",
+     0.154
+    ],
+    [
+     "Salamence-Mega",
+     0.1339
+    ],
+    [
+     "Incineroar",
+     0.127
+    ],
+    [
+     "Mawile-Mega",
+     0.1153
+    ],
+    [
+     "Crabominable-Mega",
+     0.1053
+    ],
+    [
+     "Basculegion",
+     0.0929
+    ],
+    [
+     "Gardevoir-Mega",
+     0.0918
+    ]
+   ]
+  },
+  "Dragonite": {
+   "usage": 0.0087,
+   "abilities": [
+    [
+     "Inner Focus",
+     0.739
+    ],
+    [
+     "Multiscale",
+     0.261
+    ]
+   ],
+   "items": [
+    [
+     "Life Orb",
+     0.5768
+    ],
+    [
+     "Dragon Fang",
+     0.1081
+    ],
+    [
+     "Leftovers",
+     0.0499
+    ],
+    [
+     "Haban Berry",
+     0.0353
+    ],
+    [
+     "Expert Belt",
+     0.03
+    ],
+    [
+     "White Herb",
+     0.0299
+    ],
+    [
+     "Yache Berry",
+     0.0275
+    ],
+    [
+     "Lum Berry",
+     0.0251
+    ]
+   ],
+   "moves": [
+    [
+     "Extreme Speed",
+     0.6654
+    ],
+    [
+     "Protect",
+     0.6418
+    ],
+    [
+     "Dragon Claw",
+     0.6367
+    ],
+    [
+     "Low Kick",
+     0.3352
+    ],
+    [
+     "Stomping Tantrum",
+     0.2387
+    ],
+    [
+     "Superpower",
+     0.2099
+    ],
+    [
+     "Tailwind",
+     0.1987
+    ],
+    [
+     "Scale Shot",
+     0.1826
+    ],
+    [
+     "Rock Slide",
+     0.1788
+    ],
+    [
+     "Dragon Dance",
+     0.1656
+    ],
+    [
+     "Ice Spinner",
+     0.1585
+    ],
+    [
+     "Fire Punch",
+     0.0429
+    ],
+    [
+     "Outrage",
+     0.034
+    ],
+    [
+     "Earthquake",
+     0.0321
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1131
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 7,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 27
+     },
+     0.0998
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 29,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 5
+     },
+     0.0625
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 31,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 3
+     },
+     0.0582
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0452
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.339
+    ],
+    [
+     "Sneasler",
+     0.3136
+    ],
+    [
+     "Incineroar",
+     0.2855
+    ],
+    [
+     "Indeedee-F",
+     0.2828
+    ],
+    [
+     "Kingambit",
+     0.1844
+    ],
+    [
+     "Metagross-Mega",
+     0.1554
+    ],
+    [
+     "Gardevoir-Mega",
+     0.1458
+    ],
+    [
+     "Gengar-Mega",
+     0.1397
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.13
+    ],
+    [
+     "Froslass-Mega",
+     0.1033
+    ],
+    [
+     "Ceruledge",
+     0.1012
+    ],
+    [
+     "Lopunny-Mega",
+     0.0972
+    ],
+    [
+     "Basculegion",
+     0.0924
+    ],
+    [
+     "Gholdengo",
+     0.0922
+    ]
+   ]
+  },
+  "Aegislash": {
+   "usage": 0.0086,
+   "abilities": [
+    [
+     "Stance Change",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.316
+    ],
+    [
+     "Leftovers",
+     0.19
+    ],
+    [
+     "Life Orb",
+     0.1792
+    ],
+    [
+     "Colbur Berry",
+     0.1183
+    ],
+    [
+     "Spell Tag",
+     0.0763
+    ],
+    [
+     "White Herb",
+     0.0294
+    ],
+    [
+     "Sitrus Berry",
+     0.0146
+    ],
+    [
+     "Rocky Helmet",
+     0.014
+    ]
+   ],
+   "moves": [
+    [
+     "Wide Guard",
+     0.6601
+    ],
+    [
+     "Iron Head",
+     0.5939
+    ],
+    [
+     "Poltergeist",
+     0.5896
+    ],
+    [
+     "King's Shield",
+     0.5788
+    ],
+    [
+     "Shadow Sneak",
+     0.51
+    ],
+    [
+     "Sacred Sword",
+     0.3067
+    ],
+    [
+     "Close Combat",
+     0.2761
+    ],
+    [
+     "Shadow Ball",
+     0.1885
+    ],
+    [
+     "Flash Cannon",
+     0.1723
+    ],
+    [
+     "Swords Dance",
+     0.0638
+    ],
+    [
+     "Shadow Claw",
+     0.0148
+    ],
+    [
+     "Substitute",
+     0.0129
+    ],
+    [
+     "Protect",
+     0.0052
+    ],
+    [
+     "Steel Beam",
+     0.0051
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2132
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.106
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 26,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 8
+     },
+     0.0904
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0779
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0433
+    ]
+   ],
+   "teammates": [
+    [
+     "Charizard-Mega-Y",
+     0.3077
+    ],
+    [
+     "Garchomp",
+     0.3012
+    ],
+    [
+     "Incineroar",
+     0.2883
+    ],
+    [
+     "Rillaboom",
+     0.2865
+    ],
+    [
+     "Sneasler",
+     0.2474
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.2326
+    ],
+    [
+     "Hydreigon",
+     0.1996
+    ],
+    [
+     "Farigiraf",
+     0.1808
+    ],
+    [
+     "Salamence-Mega",
+     0.1638
+    ],
+    [
+     "Sylveon",
+     0.1259
+    ],
+    [
+     "Kingambit",
+     0.1201
+    ],
+    [
+     "Milotic",
+     0.1127
+    ],
+    [
+     "Venusaur",
+     0.1008
+    ],
+    [
+     "Primarina",
+     0.0979
+    ]
+   ]
+  },
+  "Tsareena": {
+   "usage": 0.0085,
+   "abilities": [
+    [
+     "Queenly Majesty",
+     0.9954
+    ],
+    [
+     "Leaf Guard",
+     0.0041
+    ],
+    [
+     "Sweet Veil",
+     0.0004
+    ]
+   ],
+   "items": [
+    [
+     "Wide Lens",
+     0.5174
+    ],
+    [
+     "Focus Sash",
+     0.1647
+    ],
+    [
+     "Choice Scarf",
+     0.1438
+    ],
+    [
+     "Sitrus Berry",
+     0.0563
+    ],
+    [
+     "Life Orb",
+     0.0492
+    ],
+    [
+     "Miracle Seed",
+     0.0188
+    ],
+    [
+     "White Herb",
+     0.0086
+    ],
+    [
+     "Occa Berry",
+     0.0077
+    ]
+   ],
+   "moves": [
+    [
+     "Triple Axel",
+     0.9396
+    ],
+    [
+     "Power Whip",
+     0.7849
+    ],
+    [
+     "Protect",
+     0.6824
+    ],
+    [
+     "Low Kick",
+     0.4974
+    ],
+    [
+     "High Jump Kick",
+     0.3326
+    ],
+    [
+     "Trop Kick",
+     0.1983
+    ],
+    [
+     "U-turn",
+     0.1716
+    ],
+    [
+     "Taunt",
+     0.1276
+    ],
+    [
+     "Helping Hand",
+     0.1
+    ],
+    [
+     "Zen Headbutt",
+     0.0536
+    ],
+    [
+     "Knock Off",
+     0.031
+    ],
+    [
+     "Grassy Glide",
+     0.0171
+    ],
+    [
+     "Aromatic Mist",
+     0.0131
+    ],
+    [
+     "Petal Blizzard",
+     0.0126
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2833
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1659
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 4,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 30
+     },
+     0.0451
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0379
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 10,
+      "Atk": 23,
+      "Def": 7,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 26
+     },
+     0.0241
+    ]
+   ],
+   "teammates": [
+    [
+     "Pelipper",
+     0.3105
+    ],
+    [
+     "Archaludon",
+     0.2627
+    ],
+    [
+     "Basculegion-F",
+     0.237
+    ],
+    [
+     "Salamence-Mega",
+     0.2148
+    ],
+    [
+     "Sneasler",
+     0.1859
+    ],
+    [
+     "Metagross-Mega",
+     0.1818
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1643
+    ],
+    [
+     "Sylveon",
+     0.1388
+    ],
+    [
+     "Kingambit",
+     0.1378
+    ],
+    [
+     "Milotic",
+     0.1328
+    ],
+    [
+     "Gholdengo",
+     0.1307
+    ],
+    [
+     "Basculegion",
+     0.1192
+    ],
+    [
+     "Golisopod-Mega",
+     0.1024
+    ],
+    [
+     "Incineroar",
+     0.0928
+    ]
+   ]
+  },
+  "Mamoswine": {
+   "usage": 0.0077,
+   "abilities": [
+    [
+     "Oblivious",
+     0.9488
+    ],
+    [
+     "Thick Fat",
+     0.0474
+    ],
+    [
+     "Snow Cloak",
+     0.0038
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.4196
+    ],
+    [
+     "Life Orb",
+     0.2812
+    ],
+    [
+     "Choice Scarf",
+     0.2456
+    ],
+    [
+     "Never-Melt Ice",
+     0.0198
+    ],
+    [
+     "Expert Belt",
+     0.0133
+    ],
+    [
+     "Leftovers",
+     0.007
+    ],
+    [
+     "Chople Berry",
+     0.0039
+    ],
+    [
+     "Iron Ball",
+     0.0019
+    ]
+   ],
+   "moves": [
+    [
+     "Ice Shard",
+     0.8685
+    ],
+    [
+     "High Horsepower",
+     0.8406
+    ],
+    [
+     "Icicle Crash",
+     0.7653
+    ],
+    [
+     "Protect",
+     0.7196
+    ],
+    [
+     "Earthquake",
+     0.4123
+    ],
+    [
+     "Rock Slide",
+     0.1775
+    ],
+    [
+     "Knock Off",
+     0.0566
+    ],
+    [
+     "Icicle Spear",
+     0.0436
+    ],
+    [
+     "Stomping Tantrum",
+     0.0208
+    ],
+    [
+     "Superpower",
+     0.0201
+    ],
+    [
+     "Heavy Slam",
+     0.0198
+    ],
+    [
+     "Freeze-Dry",
+     0.009
+    ],
+    [
+     "Iron Head",
+     0.0075
+    ],
+    [
+     "Rock Tomb",
+     0.0054
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.3153
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1775
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.13
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0361
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0352
+    ]
+   ],
+   "teammates": [
+    [
+     "Salamence-Mega",
+     0.4053
+    ],
+    [
+     "Sneasler",
+     0.3144
+    ],
+    [
+     "Rillaboom",
+     0.3073
+    ],
+    [
+     "Indeedee-F",
+     0.2212
+    ],
+    [
+     "Incineroar",
+     0.2114
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1831
+    ],
+    [
+     "Gholdengo",
+     0.174
+    ],
+    [
+     "Gardevoir-Mega",
+     0.1619
+    ],
+    [
+     "Armarouge",
+     0.1501
+    ],
+    [
+     "Kingambit",
+     0.121
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.0989
+    ],
+    [
+     "Whimsicott",
+     0.0905
+    ],
+    [
+     "Farigiraf",
+     0.0887
+    ],
+    [
+     "Basculegion",
+     0.0878
+    ]
+   ]
+  },
+  "Liepard": {
+   "usage": 0.0074,
+   "abilities": [
+    [
+     "Prankster",
+     0.9943
+    ],
+    [
+     "Unburden",
+     0.0038
+    ],
+    [
+     "Limber",
+     0.0019
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.983
+    ],
+    [
+     "Psychic Seed",
+     0.006
+    ],
+    [
+     "Sitrus Berry",
+     0.0035
+    ],
+    [
+     "Normal Gem",
+     0.0019
+    ],
+    [
+     "Eject Button",
+     0.0012
+    ],
+    [
+     "Rocky Helmet",
+     0.0011
+    ],
+    [
+     "Roseli Berry",
+     0.001
+    ],
+    [
+     "Wide Lens",
+     0.0009
+    ]
+   ],
+   "moves": [
+    [
+     "Encore",
+     0.9869
+    ],
+    [
+     "Knock Off",
+     0.971
+    ],
+    [
+     "Rain Dance",
+     0.9684
+    ],
+    [
+     "Fake Out",
+     0.8736
+    ],
+    [
+     "Fake Tears",
+     0.1288
+    ],
+    [
+     "Copycat",
+     0.0136
+    ],
+    [
+     "Foul Play",
+     0.0111
+    ],
+    [
+     "Taunt",
+     0.0093
+    ],
+    [
+     "Thunder Wave",
+     0.0073
+    ],
+    [
+     "Snarl",
+     0.0068
+    ],
+    [
+     "Sunny Day",
+     0.0066
+    ],
+    [
+     "Protect",
+     0.0026
+    ],
+    [
+     "Screech",
+     0.0026
+    ],
+    [
+     "Charm",
+     0.0021
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.8124
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1327
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 0,
+      "Atk": 13,
+      "Def": 21,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0244
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0059
+    ],
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0053
+    ]
+   ],
+   "teammates": [
+    [
+     "Gardevoir-Mega",
+     0.8727
+    ],
+    [
+     "Indeedee-F",
+     0.8708
+    ],
+    [
+     "Archaludon",
+     0.8697
+    ],
+    [
+     "Basculegion-F",
+     0.8697
+    ],
+    [
+     "Pelipper",
+     0.869
+    ],
+    [
+     "Staraptor-Mega",
+     0.0093
+    ],
+    [
+     "Rillaboom",
+     0.0067
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.0051
+    ],
+    [
+     "Swampert-Mega",
+     0.005
+    ],
+    [
+     "Farigiraf",
+     0.0046
+    ],
+    [
+     "Incineroar",
+     0.0044
+    ],
+    [
+     "Grimmsnarl",
+     0.0042
+    ],
+    [
+     "Greninja",
+     0.0042
+    ],
+    [
+     "Raichu",
+     0.0042
+    ]
+   ]
+  },
+  "Typhlosion-Hisui": {
+   "usage": 0.0074,
+   "abilities": [
+    [
+     "Frisk",
+     0.6608
+    ],
+    [
+     "Blaze",
+     0.3392
+    ]
+   ],
+   "items": [
+    [
+     "Choice Scarf",
+     0.7895
+    ],
+    [
+     "Charcoal",
+     0.122
+    ],
+    [
+     "Life Orb",
+     0.0458
+    ],
+    [
+     "Focus Sash",
+     0.0273
+    ],
+    [
+     "Iron Ball",
+     0.0111
+    ],
+    [
+     "Air Balloon",
+     0.0009
+    ],
+    [
+     "Colbur Berry",
+     0.0005
+    ],
+    [
+     "Wise Glasses",
+     0.0005
+    ]
+   ],
+   "moves": [
+    [
+     "Eruption",
+     0.9923
+    ],
+    [
+     "Shadow Ball",
+     0.9749
+    ],
+    [
+     "Heat Wave",
+     0.7867
+    ],
+    [
+     "Overheat",
+     0.4783
+    ],
+    [
+     "Protect",
+     0.199
+    ],
+    [
+     "Flamethrower",
+     0.1473
+    ],
+    [
+     "Solar Beam",
+     0.0921
+    ],
+    [
+     "Focus Blast",
+     0.0754
+    ],
+    [
+     "Extrasensory",
+     0.0506
+    ],
+    [
+     "Lava Plume",
+     0.0442
+    ],
+    [
+     "Will-O-Wisp",
+     0.031
+    ],
+    [
+     "Burn Up",
+     0.0302
+    ],
+    [
+     "Infernal Parade",
+     0.0253
+    ],
+    [
+     "Blast Burn",
+     0.0153
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2754
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2215
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1492
+    ],
+    [
+     "Modest",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1
+    ],
+    [
+     "Modest",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0525
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.3907
+    ],
+    [
+     "Whimsicott",
+     0.3731
+    ],
+    [
+     "Indeedee-F",
+     0.2955
+    ],
+    [
+     "Gardevoir-Mega",
+     0.2006
+    ],
+    [
+     "Rillaboom",
+     0.2005
+    ],
+    [
+     "Salamence-Mega",
+     0.178
+    ],
+    [
+     "Farigiraf",
+     0.1752
+    ],
+    [
+     "Indeedee",
+     0.1653
+    ],
+    [
+     "Kingambit",
+     0.1637
+    ],
+    [
+     "Basculegion",
+     0.1593
+    ],
+    [
+     "Torkoal",
+     0.1533
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.1278
+    ],
+    [
+     "Metagross-Mega",
+     0.114
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1131
+    ]
+   ]
+  },
+  "Grapploct": {
+   "usage": 0.0069,
+   "abilities": [
+    [
+     "Technician",
+     0.9969
+    ],
+    [
+     "Limber",
+     0.0031
+    ]
+   ],
+   "items": [
+    [
+     "Black Belt",
+     0.4446
+    ],
+    [
+     "Life Orb",
+     0.2813
+    ],
+    [
+     "Psychic Seed",
+     0.0749
+    ],
+    [
+     "Focus Sash",
+     0.0675
+    ],
+    [
+     "Sitrus Berry",
+     0.046
+    ],
+    [
+     "Expert Belt",
+     0.0253
+    ],
+    [
+     "Leftovers",
+     0.0217
+    ],
+    [
+     "Coba Berry",
+     0.0079
+    ]
+   ],
+   "moves": [
+    [
+     "Storm Throw",
+     0.9817
+    ],
+    [
+     "Mach Punch",
+     0.6218
+    ],
+    [
+     "Protect",
+     0.4614
+    ],
+    [
+     "Detect",
+     0.4346
+    ],
+    [
+     "Ice Punch",
+     0.2959
+    ],
+    [
+     "Payback",
+     0.2639
+    ],
+    [
+     "Feint",
+     0.1948
+    ],
+    [
+     "Topsy-Turvy",
+     0.1215
+    ],
+    [
+     "Octolock",
+     0.1082
+    ],
+    [
+     "Coaching",
+     0.0838
+    ],
+    [
+     "Stomping Tantrum",
+     0.0811
+    ],
+    [
+     "Brutal Swing",
+     0.0729
+    ],
+    [
+     "Sucker Punch",
+     0.0677
+    ],
+    [
+     "Liquidation",
+     0.0676
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.5898
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1084
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0462
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 22,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 10,
+      "Spe": 2
+     },
+     0.0227
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0166
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.4856
+    ],
+    [
+     "Farigiraf",
+     0.3392
+    ],
+    [
+     "Incineroar",
+     0.2953
+    ],
+    [
+     "Golisopod-Mega",
+     0.2543
+    ],
+    [
+     "Armarouge",
+     0.1862
+    ],
+    [
+     "Hatterene",
+     0.1812
+    ],
+    [
+     "Camerupt-Mega",
+     0.1646
+    ],
+    [
+     "Rillaboom",
+     0.163
+    ],
+    [
+     "Kingambit",
+     0.1327
+    ],
+    [
+     "Salamence-Mega",
+     0.1166
+    ],
+    [
+     "Gardevoir-Mega",
+     0.1109
+    ],
+    [
+     "Torkoal",
+     0.1102
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.0949
+    ],
+    [
+     "Basculegion",
+     0.0913
+    ]
+   ]
+  },
+  "Meowstic-F-Mega": {
+   "usage": 0.0069,
+   "abilities": [
+    [
+     "Trace",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Meowsticite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.9895
+    ],
+    [
+     "Expanding Force",
+     0.983
+    ],
+    [
+     "Thunderbolt",
+     0.8406
+    ],
+    [
+     "Fake Out",
+     0.7515
+    ],
+    [
+     "Dark Pulse",
+     0.1369
+    ],
+    [
+     "Alluring Voice",
+     0.1181
+    ],
+    [
+     "Nasty Plot",
+     0.0743
+    ],
+    [
+     "Shadow Ball",
+     0.0388
+    ],
+    [
+     "Calm Mind",
+     0.0229
+    ],
+    [
+     "Psychic",
+     0.0181
+    ],
+    [
+     "Energy Ball",
+     0.0077
+    ],
+    [
+     "Baton Pass",
+     0.0068
+    ],
+    [
+     "Charm",
+     0.0027
+    ],
+    [
+     "Yawn",
+     0.0014
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.5522
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 29,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.1087
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0667
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0565
+    ],
+    [
+     "Hasty",
+     {
+      "HP": 0,
+      "Atk": 2,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0419
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.6045
+    ],
+    [
+     "Indeedee",
+     0.5397
+    ],
+    [
+     "Kingambit",
+     0.5033
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.426
+    ],
+    [
+     "Kommo-o",
+     0.4183
+    ],
+    [
+     "Indeedee-F",
+     0.3176
+    ],
+    [
+     "Blaziken-Mega",
+     0.2086
+    ],
+    [
+     "Torkoal",
+     0.1504
+    ],
+    [
+     "Gholdengo",
+     0.1395
+    ],
+    [
+     "Meowscarada",
+     0.1369
+    ],
+    [
+     "Incineroar",
+     0.0793
+    ],
+    [
+     "Basculegion",
+     0.0724
+    ],
+    [
+     "Salamence-Mega",
+     0.0687
+    ],
+    [
+     "Garchomp",
+     0.0616
+    ]
+   ]
+  },
+  "Meganium-Mega": {
+   "usage": 0.0062,
+   "abilities": [
+    [
+     "Mega Sol",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Meganiumite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Weather Ball",
+     0.9838
+    ],
+    [
+     "Solar Beam",
+     0.9777
+    ],
+    [
+     "Dazzling Gleam",
+     0.9244
+    ],
+    [
+     "Protect",
+     0.9107
+    ],
+    [
+     "Synthesis",
+     0.1032
+    ],
+    [
+     "Earth Power",
+     0.0672
+    ],
+    [
+     "Giga Drain",
+     0.0094
+    ],
+    [
+     "Energy Ball",
+     0.0087
+    ],
+    [
+     "Ancient Power",
+     0.006
+    ],
+    [
+     "Leaf Storm",
+     0.0047
+    ],
+    [
+     "Trailblaze",
+     0.0016
+    ],
+    [
+     "Leech Seed",
+     0.0008
+    ],
+    [
+     "Pollen Puff",
+     0.0005
+    ],
+    [
+     "Body Press",
+     0.0003
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.086
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0776
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0703
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0642
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0547
+    ]
+   ],
+   "teammates": [
+    [
+     "Pelipper",
+     0.291
+    ],
+    [
+     "Archaludon",
+     0.2438
+    ],
+    [
+     "Incineroar",
+     0.2261
+    ],
+    [
+     "Sneasler",
+     0.2193
+    ],
+    [
+     "Indeedee-F",
+     0.2096
+    ],
+    [
+     "Farigiraf",
+     0.189
+    ],
+    [
+     "Basculegion",
+     0.1495
+    ],
+    [
+     "Kingambit",
+     0.1366
+    ],
+    [
+     "Gholdengo",
+     0.1332
+    ],
+    [
+     "Salamence-Mega",
+     0.12
+    ],
+    [
+     "Golisopod-Mega",
+     0.1181
+    ],
+    [
+     "Rillaboom",
+     0.0949
+    ],
+    [
+     "Glimmora-Mega",
+     0.0923
+    ],
+    [
+     "Tyranitar",
+     0.0902
+    ]
+   ]
+  },
+  "Kleavor": {
+   "usage": 0.0061,
+   "abilities": [
+    [
+     "Sharpness",
+     0.9839
+    ],
+    [
+     "Sheer Force",
+     0.0083
+    ],
+    [
+     "Swarm",
+     0.0077
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.4485
+    ],
+    [
+     "Choice Scarf",
+     0.4337
+    ],
+    [
+     "Wide Lens",
+     0.0324
+    ],
+    [
+     "Life Orb",
+     0.0297
+    ],
+    [
+     "White Herb",
+     0.0296
+    ],
+    [
+     "Sitrus Berry",
+     0.0072
+    ],
+    [
+     "Silver Powder",
+     0.0058
+    ],
+    [
+     "Charti Berry",
+     0.0032
+    ]
+   ],
+   "moves": [
+    [
+     "Stone Axe",
+     0.9829
+    ],
+    [
+     "X-Scissor",
+     0.8825
+    ],
+    [
+     "Protect",
+     0.4729
+    ],
+    [
+     "Close Combat",
+     0.3968
+    ],
+    [
+     "Rock Slide",
+     0.2965
+    ],
+    [
+     "Feint",
+     0.2833
+    ],
+    [
+     "U-turn",
+     0.281
+    ],
+    [
+     "Tailwind",
+     0.1886
+    ],
+    [
+     "Night Slash",
+     0.0913
+    ],
+    [
+     "Aerial Ace",
+     0.0756
+    ],
+    [
+     "Lunge",
+     0.0168
+    ],
+    [
+     "Dual Wingbeat",
+     0.0132
+    ],
+    [
+     "Brick Break",
+     0.008
+    ],
+    [
+     "Defog",
+     0.0021
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.4803
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2143
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1279
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0275
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0264
+    ]
+   ],
+   "teammates": [
+    [
+     "Kingambit",
+     0.2607
+    ],
+    [
+     "Whimsicott",
+     0.2465
+    ],
+    [
+     "Metagross-Mega",
+     0.2231
+    ],
+    [
+     "Salamence-Mega",
+     0.2136
+    ],
+    [
+     "Basculegion",
+     0.2124
+    ],
+    [
+     "Sneasler",
+     0.2046
+    ],
+    [
+     "Rillaboom",
+     0.1832
+    ],
+    [
+     "Incineroar",
+     0.1789
+    ],
+    [
+     "Indeedee-F",
+     0.152
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1132
+    ],
+    [
+     "Farigiraf",
+     0.1017
+    ],
+    [
+     "Torkoal",
+     0.0895
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.0893
+    ],
+    [
+     "Archaludon",
+     0.0812
+    ]
+   ]
+  },
+  "Baxcalibur": {
+   "usage": 0.006,
+   "abilities": [
+    [
+     "Thermal Exchange",
+     0.9359
+    ],
+    [
+     "Ice Body",
+     0.0641
+    ]
+   ],
+   "items": [
+    [
+     "Life Orb",
+     0.4817
+    ],
+    [
+     "Choice Scarf",
+     0.1727
+    ],
+    [
+     "Never-Melt Ice",
+     0.1301
+    ],
+    [
+     "Leftovers",
+     0.0954
+    ],
+    [
+     "Roseli Berry",
+     0.0203
+    ],
+    [
+     "White Herb",
+     0.0183
+    ],
+    [
+     "Chople Berry",
+     0.0161
+    ],
+    [
+     "Grassy Seed",
+     0.0149
+    ]
+   ],
+   "moves": [
+    [
+     "Glaive Rush",
+     0.9575
+    ],
+    [
+     "Protect",
+     0.7827
+    ],
+    [
+     "Ice Shard",
+     0.7694
+    ],
+    [
+     "Icicle Crash",
+     0.504
+    ],
+    [
+     "High Horsepower",
+     0.4079
+    ],
+    [
+     "Dragon Dance",
+     0.1402
+    ],
+    [
+     "Swords Dance",
+     0.1307
+    ],
+    [
+     "Icicle Spear",
+     0.0484
+    ],
+    [
+     "Iron Head",
+     0.0429
+    ],
+    [
+     "Scale Shot",
+     0.0427
+    ],
+    [
+     "Icy Wind",
+     0.0427
+    ],
+    [
+     "Earthquake",
+     0.031
+    ],
+    [
+     "Dragon Claw",
+     0.0298
+    ],
+    [
+     "Breaking Swipe",
+     0.0254
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 15,
+      "Atk": 32,
+      "Def": 8,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 11
+     },
+     0.087
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0824
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0808
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0702
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 19,
+      "Atk": 32,
+      "Def": 4,
+      "SpA": 0,
+      "SpD": 4,
+      "Spe": 7
+     },
+     0.0556
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5347
+    ],
+    [
+     "Froslass-Mega",
+     0.3009
+    ],
+    [
+     "Sneasler",
+     0.2683
+    ],
+    [
+     "Incineroar",
+     0.2367
+    ],
+    [
+     "Volcarona",
+     0.1879
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1779
+    ],
+    [
+     "Basculegion",
+     0.1691
+    ],
+    [
+     "Kingambit",
+     0.1551
+    ],
+    [
+     "Salamence-Mega",
+     0.1374
+    ],
+    [
+     "Golisopod-Mega",
+     0.1267
+    ],
+    [
+     "Glimmora-Mega",
+     0.1232
+    ],
+    [
+     "Gholdengo",
+     0.1184
+    ],
+    [
+     "Arcanine-Hisui",
+     0.1062
+    ],
+    [
+     "Lucario-Mega-Z",
+     0.1
+    ]
+   ]
+  },
+  "Meowscarada": {
+   "usage": 0.0056,
+   "abilities": [
+    [
+     "Protean",
+     0.918
+    ],
+    [
+     "Overgrow",
+     0.082
+    ]
+   ],
+   "items": [
+    [
+     "Choice Scarf",
+     0.567
+    ],
+    [
+     "Life Orb",
+     0.1884
+    ],
+    [
+     "Focus Sash",
+     0.1382
+    ],
+    [
+     "Expert Belt",
+     0.0524
+    ],
+    [
+     "Wide Lens",
+     0.0391
+    ],
+    [
+     "Black Glasses",
+     0.0024
+    ],
+    [
+     "Red Card",
+     0.002
+    ],
+    [
+     "Chople Berry",
+     0.0016
+    ]
+   ],
+   "moves": [
+    [
+     "Flower Trick",
+     0.9906
+    ],
+    [
+     "Knock Off",
+     0.8271
+    ],
+    [
+     "Triple Axel",
+     0.8198
+    ],
+    [
+     "U-turn",
+     0.5505
+    ],
+    [
+     "Protect",
+     0.2752
+    ],
+    [
+     "Low Kick",
+     0.1962
+    ],
+    [
+     "Play Rough",
+     0.07
+    ],
+    [
+     "Brick Break",
+     0.0608
+    ],
+    [
+     "Sucker Punch",
+     0.0497
+    ],
+    [
+     "Trick",
+     0.0231
+    ],
+    [
+     "Taunt",
+     0.0197
+    ],
+    [
+     "Throat Chop",
+     0.0187
+    ],
+    [
+     "Trick Room",
+     0.0187
+    ],
+    [
+     "Power Gem",
+     0.0131
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.4893
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1305
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 8,
+      "Atk": 26,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1163
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.074
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 4,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 30
+     },
+     0.0235
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.3378
+    ],
+    [
+     "Gholdengo",
+     0.2606
+    ],
+    [
+     "Torkoal",
+     0.2062
+    ],
+    [
+     "Blaziken-Mega",
+     0.1939
+    ],
+    [
+     "Sneasler",
+     0.1787
+    ],
+    [
+     "Meowstic-F-Mega",
+     0.1729
+    ],
+    [
+     "Salamence-Mega",
+     0.1512
+    ],
+    [
+     "Basculegion",
+     0.1477
+    ],
+    [
+     "Sylveon",
+     0.1456
+    ],
+    [
+     "Whimsicott",
+     0.1329
+    ],
+    [
+     "Gardevoir-Mega",
+     0.1153
+    ],
+    [
+     "Incineroar",
+     0.1078
+    ],
+    [
+     "Volcarona",
+     0.1019
+    ],
+    [
+     "Farigiraf",
+     0.099
+    ]
+   ]
+  },
+  "Rotom-Heat": {
+   "usage": 0.0055,
+   "abilities": [
+    [
+     "Levitate",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Sitrus Berry",
+     0.429
+    ],
+    [
+     "Choice Scarf",
+     0.3228
+    ],
+    [
+     "Leftovers",
+     0.1181
+    ],
+    [
+     "Magnet",
+     0.0348
+    ],
+    [
+     "Life Orb",
+     0.0236
+    ],
+    [
+     "Wide Lens",
+     0.0161
+    ],
+    [
+     "Passho Berry",
+     0.0103
+    ],
+    [
+     "Rocky Helmet",
+     0.008
+    ]
+   ],
+   "moves": [
+    [
+     "Overheat",
+     0.9972
+    ],
+    [
+     "Thunderbolt",
+     0.7357
+    ],
+    [
+     "Will-O-Wisp",
+     0.5977
+    ],
+    [
+     "Volt Switch",
+     0.4035
+    ],
+    [
+     "Electroweb",
+     0.3388
+    ],
+    [
+     "Protect",
+     0.3366
+    ],
+    [
+     "Light Screen",
+     0.1806
+    ],
+    [
+     "Discharge",
+     0.1506
+    ],
+    [
+     "Trick",
+     0.1405
+    ],
+    [
+     "Thunder Wave",
+     0.0308
+    ],
+    [
+     "Nasty Plot",
+     0.0162
+    ],
+    [
+     "Helping Hand",
+     0.0152
+    ],
+    [
+     "Shadow Ball",
+     0.0124
+    ],
+    [
+     "Rising Voltage",
+     0.0122
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1625
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 17,
+      "SpA": 17,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0851
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0811
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 6,
+      "SpA": 15,
+      "SpD": 0,
+      "Spe": 13
+     },
+     0.0622
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0484
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.3459
+    ],
+    [
+     "Salamence-Mega",
+     0.3394
+    ],
+    [
+     "Basculegion",
+     0.3007
+    ],
+    [
+     "Rillaboom",
+     0.2643
+    ],
+    [
+     "Tyranitar-Mega",
+     0.2476
+    ],
+    [
+     "Excadrill",
+     0.235
+    ],
+    [
+     "Kingambit",
+     0.2314
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.1276
+    ],
+    [
+     "Corviknight",
+     0.1266
+    ],
+    [
+     "Milotic",
+     0.1179
+    ],
+    [
+     "Golisopod-Mega",
+     0.1156
+    ],
+    [
+     "Floette-Mega",
+     0.1154
+    ],
+    [
+     "Sceptile-Mega",
+     0.0981
+    ],
+    [
+     "Sinistcha",
+     0.0975
+    ]
+   ]
+  },
+  "Alakazam-Mega": {
+   "usage": 0.0054,
+   "abilities": [
+    [
+     "Trace",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Alakazite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Expanding Force",
+     0.9946
+    ],
+    [
+     "Protect",
+     0.9009
+    ],
+    [
+     "Focus Blast",
+     0.508
+    ],
+    [
+     "Dazzling Gleam",
+     0.4329
+    ],
+    [
+     "Nasty Plot",
+     0.3141
+    ],
+    [
+     "Shadow Ball",
+     0.2679
+    ],
+    [
+     "Encore",
+     0.1233
+    ],
+    [
+     "Speed Swap",
+     0.1085
+    ],
+    [
+     "Energy Ball",
+     0.0628
+    ],
+    [
+     "Psychic",
+     0.0555
+    ],
+    [
+     "Disable",
+     0.0461
+    ],
+    [
+     "Psyshock",
+     0.0361
+    ],
+    [
+     "Calm Mind",
+     0.033
+    ],
+    [
+     "Taunt",
+     0.0242
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.4435
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1924
+    ],
+    [
+     "Modest",
+     {
+      "HP": 30,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 15,
+      "SpD": 0,
+      "Spe": 21
+     },
+     0.0398
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0348
+    ],
+    [
+     "Modest",
+     {
+      "HP": 3,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 31
+     },
+     0.0189
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.7588
+    ],
+    [
+     "Sneasler",
+     0.4755
+    ],
+    [
+     "Torkoal",
+     0.1864
+    ],
+    [
+     "Incineroar",
+     0.175
+    ],
+    [
+     "Kingambit",
+     0.165
+    ],
+    [
+     "Basculegion",
+     0.1433
+    ],
+    [
+     "Armarouge",
+     0.1428
+    ],
+    [
+     "Golisopod-Mega",
+     0.133
+    ],
+    [
+     "Indeedee",
+     0.1098
+    ],
+    [
+     "Garchomp",
+     0.0833
+    ],
+    [
+     "Hatterene",
+     0.082
+    ],
+    [
+     "Whimsicott",
+     0.0753
+    ],
+    [
+     "Salamence-Mega",
+     0.0737
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.0641
+    ]
+   ]
+  },
+  "Pincurchin": {
+   "usage": 0.0052,
+   "abilities": [
+    [
+     "Electric Surge",
+     0.7519
+    ],
+    [
+     "Lightning Rod",
+     0.2481
+    ]
+   ],
+   "items": [
+    [
+     "Sitrus Berry",
+     0.2671
+    ],
+    [
+     "Life Orb",
+     0.2126
+    ],
+    [
+     "Magnet",
+     0.194
+    ],
+    [
+     "Electric Seed",
+     0.1149
+    ],
+    [
+     "Air Balloon",
+     0.0566
+    ],
+    [
+     "Terrain Extender",
+     0.05
+    ],
+    [
+     "Rocky Helmet",
+     0.0248
+    ],
+    [
+     "Eject Button",
+     0.0182
+    ]
+   ],
+   "moves": [
+    [
+     "Rising Voltage",
+     0.6852
+    ],
+    [
+     "Scald",
+     0.6825
+    ],
+    [
+     "Protect",
+     0.5802
+    ],
+    [
+     "Sucker Punch",
+     0.3563
+    ],
+    [
+     "Thunderbolt",
+     0.2722
+    ],
+    [
+     "Rain Dance",
+     0.2596
+    ],
+    [
+     "Pain Split",
+     0.196
+    ],
+    [
+     "Thunder Wave",
+     0.1191
+    ],
+    [
+     "Recover",
+     0.1137
+    ],
+    [
+     "Electric Terrain",
+     0.0904
+    ],
+    [
+     "Acupressure",
+     0.0892
+    ],
+    [
+     "Electroweb",
+     0.0836
+    ],
+    [
+     "Memento",
+     0.0686
+    ],
+    [
+     "Discharge",
+     0.0673
+    ]
+   ],
+   "spreads": [
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 2,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1591
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1224
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 2,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1152
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 5,
+      "SpA": 0,
+      "SpD": 29,
+      "Spe": 0
+     },
+     0.1043
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0993
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.3495
+    ],
+    [
+     "Kingambit",
+     0.2667
+    ],
+    [
+     "Basculegion",
+     0.2589
+    ],
+    [
+     "Farigiraf",
+     0.2478
+    ],
+    [
+     "Froslass-Mega",
+     0.2413
+    ],
+    [
+     "Armarouge",
+     0.233
+    ],
+    [
+     "Golisopod-Mega",
+     0.2045
+    ],
+    [
+     "Raichu-Alola",
+     0.179
+    ],
+    [
+     "Indeedee-F",
+     0.1663
+    ],
+    [
+     "Incineroar",
+     0.1215
+    ],
+    [
+     "Ampharos-Mega",
+     0.1093
+    ],
+    [
+     "Rillaboom",
+     0.0909
+    ],
+    [
+     "Blastoise-Mega",
+     0.0863
+    ],
+    [
+     "Pelipper",
+     0.0808
+    ]
+   ]
+  },
+  "Toxtricity": {
+   "usage": 0.0052,
+   "abilities": [
+    [
+     "Punk Rock",
+     0.9624
+    ],
+    [
+     "Technician",
+     0.029
+    ],
+    [
+     "Minus",
+     0.006
+    ],
+    [
+     "Plus",
+     0.0026
+    ]
+   ],
+   "items": [
+    [
+     "Life Orb",
+     0.4972
+    ],
+    [
+     "Choice Scarf",
+     0.2486
+    ],
+    [
+     "Focus Sash",
+     0.0924
+    ],
+    [
+     "Air Balloon",
+     0.0678
+    ],
+    [
+     "Sitrus Berry",
+     0.0227
+    ],
+    [
+     "Magnet",
+     0.0201
+    ],
+    [
+     "Expert Belt",
+     0.0113
+    ],
+    [
+     "Silk Scarf",
+     0.0103
+    ]
+   ],
+   "moves": [
+    [
+     "Overdrive",
+     0.9348
+    ],
+    [
+     "Sludge Bomb",
+     0.8026
+    ],
+    [
+     "Protect",
+     0.7201
+    ],
+    [
+     "Boomburst",
+     0.6256
+    ],
+    [
+     "Volt Switch",
+     0.2292
+    ],
+    [
+     "Snarl",
+     0.1642
+    ],
+    [
+     "Sludge Wave",
+     0.1202
+    ],
+    [
+     "Electroweb",
+     0.0566
+    ],
+    [
+     "Psychic Noise",
+     0.0497
+    ],
+    [
+     "Acid Spray",
+     0.0468
+    ],
+    [
+     "Hyper Voice",
+     0.0347
+    ],
+    [
+     "Rising Voltage",
+     0.0342
+    ],
+    [
+     "Toxic Spikes",
+     0.0264
+    ],
+    [
+     "Encore",
+     0.0256
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1218
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1151
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1141
+    ],
+    [
+     "Modest",
+     {
+      "HP": 19,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 26,
+      "SpD": 0,
+      "Spe": 21
+     },
+     0.0886
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.061
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.3193
+    ],
+    [
+     "Incineroar",
+     0.1942
+    ],
+    [
+     "Kingambit",
+     0.1664
+    ],
+    [
+     "Sneasler",
+     0.1605
+    ],
+    [
+     "Golisopod-Mega",
+     0.1564
+    ],
+    [
+     "Farigiraf",
+     0.1441
+    ],
+    [
+     "Salamence-Mega",
+     0.1257
+    ],
+    [
+     "Aerodactyl-Mega",
+     0.1233
+    ],
+    [
+     "Indeedee-F",
+     0.1181
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.1141
+    ],
+    [
+     "Whimsicott",
+     0.1135
+    ],
+    [
+     "Indeedee",
+     0.1069
+    ],
+    [
+     "Sylveon",
+     0.1038
+    ],
+    [
+     "Froslass-Mega",
+     0.1
+    ]
+   ]
+  },
+  "Sirfetch'd": {
+   "usage": 0.0049,
+   "abilities": [
+    [
+     "Scrappy",
+     0.989
+    ],
+    [
+     "Steadfast",
+     0.011
+    ]
+   ],
+   "items": [
+    [
+     "Leek",
+     0.8423
+    ],
+    [
+     "Black Belt",
+     0.0422
+    ],
+    [
+     "Life Orb",
+     0.0405
+    ],
+    [
+     "Focus Sash",
+     0.0404
+    ],
+    [
+     "Choice Scarf",
+     0.018
+    ],
+    [
+     "Expert Belt",
+     0.0062
+    ],
+    [
+     "Psychic Seed",
+     0.0024
+    ],
+    [
+     "Iron Ball",
+     0.0021
+    ]
+   ],
+   "moves": [
+    [
+     "Close Combat",
+     0.802
+    ],
+    [
+     "Meteor Assault",
+     0.6875
+    ],
+    [
+     "Detect",
+     0.5242
+    ],
+    [
+     "Protect",
+     0.3263
+    ],
+    [
+     "Leaf Blade",
+     0.3138
+    ],
+    [
+     "Feint",
+     0.3061
+    ],
+    [
+     "Brave Bird",
+     0.172
+    ],
+    [
+     "First Impression",
+     0.1515
+    ],
+    [
+     "Knock Off",
+     0.1249
+    ],
+    [
+     "Night Slash",
+     0.1011
+    ],
+    [
+     "Poison Jab",
+     0.0816
+    ],
+    [
+     "Quick Guard",
+     0.0516
+    ],
+    [
+     "Swords Dance",
+     0.0428
+    ],
+    [
+     "Coaching",
+     0.028
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.2302
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1511
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 22,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 12
+     },
+     0.0986
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0442
+    ],
+    [
+     "Hardy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.03
+    ]
+   ],
+   "teammates": [
+    [
+     "Golisopod-Mega",
+     0.4462
+    ],
+    [
+     "Farigiraf",
+     0.3121
+    ],
+    [
+     "Indeedee-F",
+     0.2886
+    ],
+    [
+     "Incineroar",
+     0.2212
+    ],
+    [
+     "Rillaboom",
+     0.1696
+    ],
+    [
+     "Salamence-Mega",
+     0.154
+    ],
+    [
+     "Pelipper",
+     0.1429
+    ],
+    [
+     "Whimsicott",
+     0.1417
+    ],
+    [
+     "Hatterene",
+     0.129
+    ],
+    [
+     "Sinistcha",
+     0.1139
+    ],
+    [
+     "Glimmora-Mega",
+     0.102
+    ],
+    [
+     "Basculegion",
+     0.101
+    ],
+    [
+     "Torkoal",
+     0.0947
+    ],
+    [
+     "Archaludon",
+     0.0906
+    ]
+   ]
+  },
+  "Vanilluxe": {
+   "usage": 0.0048,
+   "abilities": [
+    [
+     "Snow Warning",
+     0.9966
+    ],
+    [
+     "Ice Body",
+     0.0034
+    ],
+    [
+     "Weak Armor",
+     0.0
+    ]
+   ],
+   "items": [
+    [
+     "Choice Scarf",
+     0.6544
+    ],
+    [
+     "Never-Melt Ice",
+     0.2737
+    ],
+    [
+     "Light Clay",
+     0.0327
+    ],
+    [
+     "Life Orb",
+     0.0113
+    ],
+    [
+     "Focus Sash",
+     0.0078
+    ],
+    [
+     "Babiri Berry",
+     0.0053
+    ],
+    [
+     "Shell Bell",
+     0.0045
+    ],
+    [
+     "Icy Rock",
+     0.0032
+    ]
+   ],
+   "moves": [
+    [
+     "Blizzard",
+     0.9878
+    ],
+    [
+     "Freeze-Dry",
+     0.9645
+    ],
+    [
+     "Icy Wind",
+     0.5689
+    ],
+    [
+     "Sheer Cold",
+     0.4801
+    ],
+    [
+     "Protect",
+     0.2965
+    ],
+    [
+     "Aurora Veil",
+     0.2742
+    ],
+    [
+     "Ice Shard",
+     0.1801
+    ],
+    [
+     "Weather Ball",
+     0.0908
+    ],
+    [
+     "Ally Switch",
+     0.0484
+    ],
+    [
+     "Taunt",
+     0.0338
+    ],
+    [
+     "Flash Cannon",
+     0.0232
+    ],
+    [
+     "Ice Spinner",
+     0.0133
+    ],
+    [
+     "Ice Beam",
+     0.0128
+    ],
+    [
+     "Chilling Water",
+     0.0123
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2965
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1855
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1557
+    ],
+    [
+     "Timid",
+     {
+      "HP": 8,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 25,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0675
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0273
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.3819
+    ],
+    [
+     "Kingambit",
+     0.3396
+    ],
+    [
+     "Indeedee-F",
+     0.3191
+    ],
+    [
+     "Salamence-Mega",
+     0.2636
+    ],
+    [
+     "Armarouge",
+     0.253
+    ],
+    [
+     "Farigiraf",
+     0.2389
+    ],
+    [
+     "Rillaboom",
+     0.2279
+    ],
+    [
+     "Whimsicott",
+     0.1686
+    ],
+    [
+     "Golisopod-Mega",
+     0.1612
+    ],
+    [
+     "Incineroar",
+     0.1355
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1086
+    ],
+    [
+     "Camerupt-Mega",
+     0.1059
+    ],
+    [
+     "Annihilape",
+     0.0983
+    ],
+    [
+     "Garchomp",
+     0.0808
+    ]
+   ]
+  },
+  "Manectric-Mega": {
+   "usage": 0.0048,
+   "abilities": [
+    [
+     "Intimidate",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Manectite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.947
+    ],
+    [
+     "Snarl",
+     0.9263
+    ],
+    [
+     "Volt Switch",
+     0.7274
+    ],
+    [
+     "Overheat",
+     0.5339
+    ],
+    [
+     "Thunderbolt",
+     0.386
+    ],
+    [
+     "Eerie Impulse",
+     0.2241
+    ],
+    [
+     "Thunder",
+     0.1095
+    ],
+    [
+     "Flamethrower",
+     0.0646
+    ],
+    [
+     "Rising Voltage",
+     0.0198
+    ],
+    [
+     "Round",
+     0.0148
+    ],
+    [
+     "Discharge",
+     0.0129
+    ],
+    [
+     "Rain Dance",
+     0.0103
+    ],
+    [
+     "Roar",
+     0.0073
+    ],
+    [
+     "Electro Ball",
+     0.0059
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2821
+    ],
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2147
+    ],
+    [
+     "Timid",
+     {
+      "HP": 11,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 16,
+      "SpD": 7,
+      "Spe": 32
+     },
+     0.2041
+    ],
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0618
+    ],
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0501
+    ]
+   ],
+   "teammates": [
+    [
+     "Archaludon",
+     0.5777
+    ],
+    [
+     "Pelipper",
+     0.5064
+    ],
+    [
+     "Incineroar",
+     0.3618
+    ],
+    [
+     "Rillaboom",
+     0.2637
+    ],
+    [
+     "Basculegion",
+     0.2554
+    ],
+    [
+     "Indeedee",
+     0.2015
+    ],
+    [
+     "Sylveon",
+     0.1986
+    ],
+    [
+     "Espathra",
+     0.195
+    ],
+    [
+     "Garchomp",
+     0.1907
+    ],
+    [
+     "Farigiraf",
+     0.1868
+    ],
+    [
+     "Lucario-Mega-Z",
+     0.1828
+    ],
+    [
+     "Golisopod-Mega",
+     0.1743
+    ],
+    [
+     "Sinistcha",
+     0.1072
+    ],
+    [
+     "Floette-Mega",
+     0.1059
+    ]
+   ]
+  },
+  "Empoleon": {
+   "usage": 0.0048,
+   "abilities": [
+    [
+     "Competitive",
+     0.9978
+    ],
+    [
+     "Torrent",
+     0.0022
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.2534
+    ],
+    [
+     "Life Orb",
+     0.2135
+    ],
+    [
+     "Chople Berry",
+     0.1915
+    ],
+    [
+     "Sitrus Berry",
+     0.1143
+    ],
+    [
+     "Grassy Seed",
+     0.0574
+    ],
+    [
+     "Rocky Helmet",
+     0.0299
+    ],
+    [
+     "Expert Belt",
+     0.0287
+    ],
+    [
+     "Shuca Berry",
+     0.0251
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.8906
+    ],
+    [
+     "Flash Cannon",
+     0.7504
+    ],
+    [
+     "Hydro Pump",
+     0.7174
+    ],
+    [
+     "Ice Beam",
+     0.6301
+    ],
+    [
+     "Icy Wind",
+     0.1748
+    ],
+    [
+     "Yawn",
+     0.1526
+    ],
+    [
+     "Vacuum Wave",
+     0.1338
+    ],
+    [
+     "Roost",
+     0.0819
+    ],
+    [
+     "Water Pulse",
+     0.0712
+    ],
+    [
+     "Chilling Water",
+     0.0637
+    ],
+    [
+     "Surf",
+     0.061
+    ],
+    [
+     "Weather Ball",
+     0.0605
+    ],
+    [
+     "Grass Knot",
+     0.05
+    ],
+    [
+     "Flip Turn",
+     0.0296
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1362
+    ],
+    [
+     "Modest",
+     {
+      "HP": 30,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 31,
+      "SpD": 0,
+      "Spe": 5
+     },
+     0.0711
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0605
+    ],
+    [
+     "Modest",
+     {
+      "HP": 30,
+      "Atk": 0,
+      "Def": 5,
+      "SpA": 19,
+      "SpD": 5,
+      "Spe": 7
+     },
+     0.0448
+    ],
+    [
+     "Modest",
+     {
+      "HP": 29,
+      "Atk": 0,
+      "Def": 3,
+      "SpA": 19,
+      "SpD": 0,
+      "Spe": 15
+     },
+     0.0417
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.3912
+    ],
+    [
+     "Indeedee-F",
+     0.2868
+    ],
+    [
+     "Sneasler",
+     0.2828
+    ],
+    [
+     "Salamence-Mega",
+     0.1848
+    ],
+    [
+     "Golisopod-Mega",
+     0.149
+    ],
+    [
+     "Incineroar",
+     0.1454
+    ],
+    [
+     "Farigiraf",
+     0.1281
+    ],
+    [
+     "Armarouge",
+     0.1107
+    ],
+    [
+     "Pelipper",
+     0.1077
+    ],
+    [
+     "Absol-Mega-Z",
+     0.1038
+    ],
+    [
+     "Garchomp",
+     0.0927
+    ],
+    [
+     "Volcarona",
+     0.0919
+    ],
+    [
+     "Staraptor-Mega",
+     0.0803
+    ],
+    [
+     "Tyranitar-Mega",
+     0.08
+    ]
+   ]
+  },
+  "Lopunny-Mega": {
+   "usage": 0.0047,
+   "abilities": [
+    [
+     "Scrappy",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Lopunnite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Close Combat",
+     0.9678
+    ],
+    [
+     "Fake Out",
+     0.9487
+    ],
+    [
+     "Triple Axel",
+     0.624
+    ],
+    [
+     "Protect",
+     0.3575
+    ],
+    [
+     "Thunder Punch",
+     0.2478
+    ],
+    [
+     "U-turn",
+     0.1927
+    ],
+    [
+     "Encore",
+     0.1713
+    ],
+    [
+     "Facade",
+     0.1279
+    ],
+    [
+     "Mach Punch",
+     0.0841
+    ],
+    [
+     "Rain Dance",
+     0.0727
+    ],
+    [
+     "After You",
+     0.0508
+    ],
+    [
+     "Drain Punch",
+     0.0433
+    ],
+    [
+     "Play Rough",
+     0.0344
+    ],
+    [
+     "Ice Punch",
+     0.0202
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.6489
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0747
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0449
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0313
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 6,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 28
+     },
+     0.0303
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.3884
+    ],
+    [
+     "Indeedee-F",
+     0.3765
+    ],
+    [
+     "Sneasler",
+     0.3027
+    ],
+    [
+     "Gardevoir-Mega",
+     0.253
+    ],
+    [
+     "Ceruledge",
+     0.2452
+    ],
+    [
+     "Salamence-Mega",
+     0.2391
+    ],
+    [
+     "Gholdengo",
+     0.2139
+    ],
+    [
+     "Arcanine-Hisui",
+     0.1834
+    ],
+    [
+     "Kingambit",
+     0.183
+    ],
+    [
+     "Dragonite",
+     0.1781
+    ],
+    [
+     "Ninetales-Alola",
+     0.1418
+    ],
+    [
+     "Milotic",
+     0.1245
+    ],
+    [
+     "Pelipper",
+     0.1062
+    ],
+    [
+     "Armarouge",
+     0.1003
+    ]
+   ]
+  },
+  "Clefable": {
+   "usage": 0.0047,
+   "abilities": [
+    [
+     "Unaware",
+     0.727
+    ],
+    [
+     "Magic Guard",
+     0.2448
+    ],
+    [
+     "Cute Charm",
+     0.0282
+    ]
+   ],
+   "items": [
+    [
+     "Sitrus Berry",
+     0.3485
+    ],
+    [
+     "Leftovers",
+     0.2349
+    ],
+    [
+     "Rocky Helmet",
+     0.1945
+    ],
+    [
+     "Babiri Berry",
+     0.0358
+    ],
+    [
+     "Kebia Berry",
+     0.0293
+    ],
+    [
+     "Life Orb",
+     0.0292
+    ],
+    [
+     "Mental Herb",
+     0.0224
+    ],
+    [
+     "Light Clay",
+     0.0219
+    ]
+   ],
+   "moves": [
+    [
+     "Follow Me",
+     0.9368
+    ],
+    [
+     "Moonblast",
+     0.7938
+    ],
+    [
+     "Protect",
+     0.6829
+    ],
+    [
+     "Helping Hand",
+     0.32
+    ],
+    [
+     "Life Dew",
+     0.2892
+    ],
+    [
+     "Skill Swap",
+     0.0924
+    ],
+    [
+     "Flamethrower",
+     0.0882
+    ],
+    [
+     "Thunder Wave",
+     0.0861
+    ],
+    [
+     "Icy Wind",
+     0.0827
+    ],
+    [
+     "Heal Pulse",
+     0.0781
+    ],
+    [
+     "Dazzling Gleam",
+     0.072
+    ],
+    [
+     "Encore",
+     0.0533
+    ],
+    [
+     "Light Screen",
+     0.0429
+    ],
+    [
+     "Psych Up",
+     0.0412
+    ]
+   ],
+   "spreads": [
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.2199
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0924
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 27,
+      "SpA": 0,
+      "SpD": 7,
+      "Spe": 0
+     },
+     0.0556
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0441
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0372
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5161
+    ],
+    [
+     "Incineroar",
+     0.2453
+    ],
+    [
+     "Sneasler",
+     0.2225
+    ],
+    [
+     "Salamence-Mega",
+     0.1729
+    ],
+    [
+     "Kingambit",
+     0.1697
+    ],
+    [
+     "Gholdengo",
+     0.1695
+    ],
+    [
+     "Lucario-Mega-Z",
+     0.1552
+    ],
+    [
+     "Delphox-Mega",
+     0.1434
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.1336
+    ],
+    [
+     "Basculegion",
+     0.114
+    ],
+    [
+     "Golisopod-Mega",
+     0.0889
+    ],
+    [
+     "Arcanine-Hisui",
+     0.0771
+    ],
+    [
+     "Milotic",
+     0.0752
+    ],
+    [
+     "Baxcalibur-Mega",
+     0.0694
+    ]
+   ]
+  },
+  "Araquanid": {
+   "usage": 0.0047,
+   "abilities": [
+    [
+     "Water Bubble",
+     0.9962
+    ],
+    [
+     "Water Absorb",
+     0.0038
+    ]
+   ],
+   "items": [
+    [
+     "Mystic Water",
+     0.3275
+    ],
+    [
+     "Leftovers",
+     0.2678
+    ],
+    [
+     "Sitrus Berry",
+     0.0951
+    ],
+    [
+     "Life Orb",
+     0.0847
+    ],
+    [
+     "White Herb",
+     0.0443
+    ],
+    [
+     "Psychic Seed",
+     0.0314
+    ],
+    [
+     "Quick Claw",
+     0.0238
+    ],
+    [
+     "Rocky Helmet",
+     0.0188
+    ]
+   ],
+   "moves": [
+    [
+     "Wide Guard",
+     0.8758
+    ],
+    [
+     "Liquidation",
+     0.8519
+    ],
+    [
+     "Protect",
+     0.6079
+    ],
+    [
+     "Leech Life",
+     0.5379
+    ],
+    [
+     "Infestation",
+     0.2293
+    ],
+    [
+     "Entrainment",
+     0.1274
+    ],
+    [
+     "Lunge",
+     0.1027
+    ],
+    [
+     "Icy Wind",
+     0.0846
+    ],
+    [
+     "Waterfall",
+     0.0823
+    ],
+    [
+     "Rain Dance",
+     0.0665
+    ],
+    [
+     "Mirror Coat",
+     0.0652
+    ],
+    [
+     "Hydro Pump",
+     0.0542
+    ],
+    [
+     "Sticky Web",
+     0.053
+    ],
+    [
+     "Soak",
+     0.0427
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1656
+    ],
+    [
+     "Careful",
+     {
+      "HP": 32,
+      "Atk": 1,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 0
+     },
+     0.1233
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1047
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0673
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0526
+    ]
+   ],
+   "teammates": [
+    [
+     "Golisopod-Mega",
+     0.2945
+    ],
+    [
+     "Indeedee-F",
+     0.2515
+    ],
+    [
+     "Farigiraf",
+     0.2111
+    ],
+    [
+     "Rillaboom",
+     0.1971
+    ],
+    [
+     "Metagross-Mega",
+     0.1799
+    ],
+    [
+     "Incineroar",
+     0.1668
+    ],
+    [
+     "Sneasler",
+     0.1438
+    ],
+    [
+     "Pelipper",
+     0.1433
+    ],
+    [
+     "Arcanine",
+     0.1428
+    ],
+    [
+     "Grimmsnarl",
+     0.1376
+    ],
+    [
+     "Bellibolt",
+     0.1282
+    ],
+    [
+     "Sinistcha",
+     0.1191
+    ],
+    [
+     "Tyranitar",
+     0.1052
+    ],
+    [
+     "Kingambit",
+     0.0925
+    ]
+   ]
+  },
+  "Venusaur-Mega": {
+   "usage": 0.0045,
+   "abilities": [
+    [
+     "Thick Fat",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Venusaurite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Sludge Bomb",
+     0.9427
+    ],
+    [
+     "Protect",
+     0.8512
+    ],
+    [
+     "Earth Power",
+     0.8231
+    ],
+    [
+     "Giga Drain",
+     0.7579
+    ],
+    [
+     "Sleep Powder",
+     0.2183
+    ],
+    [
+     "Leech Seed",
+     0.1469
+    ],
+    [
+     "Leaf Storm",
+     0.0807
+    ],
+    [
+     "Energy Ball",
+     0.0628
+    ],
+    [
+     "Growth",
+     0.0208
+    ],
+    [
+     "Weather Ball",
+     0.0177
+    ],
+    [
+     "Solar Beam",
+     0.0157
+    ],
+    [
+     "Sludge Wave",
+     0.0146
+    ],
+    [
+     "Acid Spray",
+     0.0141
+    ],
+    [
+     "Synthesis",
+     0.0129
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 7,
+      "SpA": 20,
+      "SpD": 6,
+      "Spe": 1
+     },
+     0.0701
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 7,
+      "SpA": 18,
+      "SpD": 0,
+      "Spe": 9
+     },
+     0.0541
+    ],
+    [
+     "Modest",
+     {
+      "HP": 17,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 28,
+      "SpD": 0,
+      "Spe": 21
+     },
+     0.0537
+    ],
+    [
+     "Modest",
+     {
+      "HP": 25,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 26,
+      "SpD": 5,
+      "Spe": 10
+     },
+     0.0488
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 20,
+      "SpD": 0,
+      "Spe": 14
+     },
+     0.0441
+    ]
+   ],
+   "teammates": [
+    [
+     "Archaludon",
+     0.4736
+    ],
+    [
+     "Pelipper",
+     0.3681
+    ],
+    [
+     "Basculegion",
+     0.2672
+    ],
+    [
+     "Grimmsnarl",
+     0.1959
+    ],
+    [
+     "Sableye",
+     0.15
+    ],
+    [
+     "Torkoal",
+     0.1457
+    ],
+    [
+     "Farigiraf",
+     0.1448
+    ],
+    [
+     "Incineroar",
+     0.1419
+    ],
+    [
+     "Indeedee-F",
+     0.1341
+    ],
+    [
+     "Kingambit",
+     0.1338
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1319
+    ],
+    [
+     "Swampert-Mega",
+     0.1294
+    ],
+    [
+     "Salamence-Mega",
+     0.1017
+    ],
+    [
+     "Milotic",
+     0.0859
+    ]
+   ]
+  },
+  "Zoroark-Hisui": {
+   "usage": 0.0044,
+   "abilities": [
+    [
+     "Illusion",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.4698
+    ],
+    [
+     "Choice Scarf",
+     0.3097
+    ],
+    [
+     "Life Orb",
+     0.1343
+    ],
+    [
+     "Colbur Berry",
+     0.0262
+    ],
+    [
+     "Spell Tag",
+     0.0154
+    ],
+    [
+     "Expert Belt",
+     0.01
+    ],
+    [
+     "King's Rock",
+     0.0081
+    ],
+    [
+     "Sitrus Berry",
+     0.0054
+    ]
+   ],
+   "moves": [
+    [
+     "Hyper Voice",
+     0.5335
+    ],
+    [
+     "Icy Wind",
+     0.5094
+    ],
+    [
+     "Bitter Malice",
+     0.4803
+    ],
+    [
+     "Shadow Ball",
+     0.3992
+    ],
+    [
+     "Taunt",
+     0.3168
+    ],
+    [
+     "Will-O-Wisp",
+     0.3012
+    ],
+    [
+     "Protect",
+     0.2928
+    ],
+    [
+     "Memento",
+     0.2032
+    ],
+    [
+     "Flamethrower",
+     0.1664
+    ],
+    [
+     "Rain Dance",
+     0.1028
+    ],
+    [
+     "Fake Tears",
+     0.0995
+    ],
+    [
+     "Psychic",
+     0.0866
+    ],
+    [
+     "U-turn",
+     0.0742
+    ],
+    [
+     "Focus Blast",
+     0.0605
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.5101
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1149
+    ],
+    [
+     "Hasty",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0708
+    ],
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0327
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0276
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.1929
+    ],
+    [
+     "Incineroar",
+     0.1874
+    ],
+    [
+     "Whimsicott",
+     0.1787
+    ],
+    [
+     "Sneasler",
+     0.1637
+    ],
+    [
+     "Overqwil",
+     0.159
+    ],
+    [
+     "Gholdengo",
+     0.1458
+    ],
+    [
+     "Farigiraf",
+     0.1405
+    ],
+    [
+     "Audino",
+     0.1351
+    ],
+    [
+     "Golisopod-Mega",
+     0.1337
+    ],
+    [
+     "Rillaboom",
+     0.1291
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1207
+    ],
+    [
+     "Kingambit",
+     0.1146
+    ],
+    [
+     "Gardevoir-Mega",
+     0.0976
+    ],
+    [
+     "Sylveon",
+     0.0962
+    ]
+   ]
+  },
+  "Samurott-Hisui": {
+   "usage": 0.0043,
+   "abilities": [
+    [
+     "Sharpness",
+     0.9958
+    ],
+    [
+     "Torrent",
+     0.0042
+    ]
+   ],
+   "items": [
+    [
+     "Choice Scarf",
+     0.4174
+    ],
+    [
+     "Life Orb",
+     0.282
+    ],
+    [
+     "Focus Sash",
+     0.108
+    ],
+    [
+     "Black Glasses",
+     0.0407
+    ],
+    [
+     "Scope Lens",
+     0.0398
+    ],
+    [
+     "Chople Berry",
+     0.0347
+    ],
+    [
+     "Expert Belt",
+     0.0324
+    ],
+    [
+     "Sitrus Berry",
+     0.0127
+    ]
+   ],
+   "moves": [
+    [
+     "Sacred Sword",
+     0.8591
+    ],
+    [
+     "Aqua Cutter",
+     0.6349
+    ],
+    [
+     "Night Slash",
+     0.4997
+    ],
+    [
+     "Ceaseless Edge",
+     0.4594
+    ],
+    [
+     "Protect",
+     0.3364
+    ],
+    [
+     "Sucker Punch",
+     0.3231
+    ],
+    [
+     "Flip Turn",
+     0.2929
+    ],
+    [
+     "Razor Shell",
+     0.2316
+    ],
+    [
+     "Detect",
+     0.1258
+    ],
+    [
+     "Icy Wind",
+     0.1173
+    ],
+    [
+     "Knock Off",
+     0.0349
+    ],
+    [
+     "X-Scissor",
+     0.0277
+    ],
+    [
+     "Aqua Jet",
+     0.0162
+    ],
+    [
+     "Taunt",
+     0.0067
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.5151
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1971
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 15,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 19
+     },
+     0.0307
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 26,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 8
+     },
+     0.0276
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.0192
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.4927
+    ],
+    [
+     "Salamence-Mega",
+     0.4028
+    ],
+    [
+     "Indeedee-F",
+     0.3041
+    ],
+    [
+     "Gardevoir-Mega",
+     0.2911
+    ],
+    [
+     "Rillaboom",
+     0.2088
+    ],
+    [
+     "Armarouge",
+     0.1872
+    ],
+    [
+     "Volcarona",
+     0.1637
+    ],
+    [
+     "Gholdengo",
+     0.1599
+    ],
+    [
+     "Indeedee",
+     0.1506
+    ],
+    [
+     "Incineroar",
+     0.0952
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.0895
+    ],
+    [
+     "Arcanine-Hisui",
+     0.0839
+    ],
+    [
+     "Farigiraf",
+     0.0816
+    ],
+    [
+     "Whimsicott",
+     0.0719
+    ]
+   ]
+  },
+  "Palafin": {
+   "usage": 0.0043,
+   "abilities": [
+    [
+     "Zero to Hero",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Mystic Water",
+     0.4586
+    ],
+    [
+     "Life Orb",
+     0.2073
+    ],
+    [
+     "Choice Scarf",
+     0.1344
+    ],
+    [
+     "Leftovers",
+     0.1275
+    ],
+    [
+     "Eject Button",
+     0.0167
+    ],
+    [
+     "Air Balloon",
+     0.0162
+    ],
+    [
+     "Sitrus Berry",
+     0.0134
+    ],
+    [
+     "Rindo Berry",
+     0.0039
+    ]
+   ],
+   "moves": [
+    [
+     "Wave Crash",
+     0.8979
+    ],
+    [
+     "Jet Punch",
+     0.849
+    ],
+    [
+     "Protect",
+     0.7465
+    ],
+    [
+     "Flip Turn",
+     0.4011
+    ],
+    [
+     "Close Combat",
+     0.3968
+    ],
+    [
+     "Ice Punch",
+     0.214
+    ],
+    [
+     "Bulk Up",
+     0.1862
+    ],
+    [
+     "Drain Punch",
+     0.1711
+    ],
+    [
+     "Liquidation",
+     0.0206
+    ],
+    [
+     "Throat Chop",
+     0.0201
+    ],
+    [
+     "Aura Sphere",
+     0.018
+    ],
+    [
+     "Aqua Jet",
+     0.0106
+    ],
+    [
+     "Acrobatics",
+     0.0075
+    ],
+    [
+     "Waterfall",
+     0.0064
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2102
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 2
+     },
+     0.1537
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0782
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 26,
+      "Atk": 10,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 30
+     },
+     0.0418
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0411
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5587
+    ],
+    [
+     "Incineroar",
+     0.5206
+    ],
+    [
+     "Salamence-Mega",
+     0.2092
+    ],
+    [
+     "Froslass-Mega",
+     0.1994
+    ],
+    [
+     "Sneasler",
+     0.1769
+    ],
+    [
+     "Kingambit",
+     0.1561
+    ],
+    [
+     "Golisopod-Mega",
+     0.1486
+    ],
+    [
+     "Gholdengo",
+     0.1442
+    ],
+    [
+     "Pelipper",
+     0.1321
+    ],
+    [
+     "Archaludon",
+     0.1266
+    ],
+    [
+     "Floette-Mega",
+     0.1244
+    ],
+    [
+     "Farigiraf",
+     0.108
+    ],
+    [
+     "Gengar-Mega",
+     0.0948
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.0801
+    ]
+   ]
+  },
+  "Weavile": {
+   "usage": 0.0043,
+   "abilities": [
+    [
+     "Pickpocket",
+     0.7088
+    ],
+    [
+     "Pressure",
+     0.2912
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.768
+    ],
+    [
+     "Life Orb",
+     0.1029
+    ],
+    [
+     "Wide Lens",
+     0.0354
+    ],
+    [
+     "White Herb",
+     0.0289
+    ],
+    [
+     "Expert Belt",
+     0.0179
+    ],
+    [
+     "King's Rock",
+     0.0158
+    ],
+    [
+     "Chople Berry",
+     0.0074
+    ],
+    [
+     "Never-Melt Ice",
+     0.0053
+    ]
+   ],
+   "moves": [
+    [
+     "Fake Out",
+     0.9312
+    ],
+    [
+     "Knock Off",
+     0.7438
+    ],
+    [
+     "Triple Axel",
+     0.4693
+    ],
+    [
+     "Ice Spinner",
+     0.4542
+    ],
+    [
+     "Protect",
+     0.3064
+    ],
+    [
+     "Feint",
+     0.2707
+    ],
+    [
+     "Low Kick",
+     0.1987
+    ],
+    [
+     "Upper Hand",
+     0.1761
+    ],
+    [
+     "Ice Shard",
+     0.1306
+    ],
+    [
+     "Throat Chop",
+     0.0794
+    ],
+    [
+     "Icicle Crash",
+     0.0594
+    ],
+    [
+     "Icy Wind",
+     0.0315
+    ],
+    [
+     "Brick Break",
+     0.0247
+    ],
+    [
+     "Taunt",
+     0.0234
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.6747
+    ],
+    [
+     "Hardy",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1018
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 23,
+      "Atk": 20,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 23
+     },
+     0.0464
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.026
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0167
+    ]
+   ],
+   "teammates": [
+    [
+     "Sinistcha",
+     0.2521
+    ],
+    [
+     "Salamence-Mega",
+     0.2281
+    ],
+    [
+     "Rillaboom",
+     0.2265
+    ],
+    [
+     "Incineroar",
+     0.1968
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1917
+    ],
+    [
+     "Blastoise-Mega",
+     0.1608
+    ],
+    [
+     "Venusaur",
+     0.1549
+    ],
+    [
+     "Whimsicott",
+     0.1444
+    ],
+    [
+     "Milotic",
+     0.1281
+    ],
+    [
+     "Gholdengo",
+     0.1256
+    ],
+    [
+     "Archaludon",
+     0.1254
+    ],
+    [
+     "Garchomp",
+     0.1046
+    ],
+    [
+     "Floette-Mega",
+     0.0899
+    ],
+    [
+     "Politoed",
+     0.0891
+    ]
+   ]
+  },
+  "Klefki": {
+   "usage": 0.0041,
+   "abilities": [
+    [
+     "Prankster",
+     0.9994
+    ],
+    [
+     "Magician",
+     0.0006
+    ]
+   ],
+   "items": [
+    [
+     "Light Clay",
+     0.7055
+    ],
+    [
+     "Sitrus Berry",
+     0.1106
+    ],
+    [
+     "Mental Herb",
+     0.0621
+    ],
+    [
+     "Leftovers",
+     0.0242
+    ],
+    [
+     "Grassy Seed",
+     0.0207
+    ],
+    [
+     "Occa Berry",
+     0.0196
+    ],
+    [
+     "Eject Button",
+     0.0137
+    ],
+    [
+     "Rocky Helmet",
+     0.0127
+    ]
+   ],
+   "moves": [
+    [
+     "Light Screen",
+     0.7951
+    ],
+    [
+     "Reflect",
+     0.7567
+    ],
+    [
+     "Rain Dance",
+     0.5899
+    ],
+    [
+     "Dazzling Gleam",
+     0.4599
+    ],
+    [
+     "Thunder Wave",
+     0.3849
+    ],
+    [
+     "Trick Room",
+     0.1339
+    ],
+    [
+     "Draining Kiss",
+     0.1307
+    ],
+    [
+     "Calm Mind",
+     0.1304
+    ],
+    [
+     "Psych Up",
+     0.1159
+    ],
+    [
+     "Substitute",
+     0.1008
+    ],
+    [
+     "Foul Play",
+     0.0931
+    ],
+    [
+     "Protect",
+     0.0461
+    ],
+    [
+     "Sandstorm",
+     0.0405
+    ],
+    [
+     "Misty Terrain",
+     0.0329
+    ]
+   ],
+   "spreads": [
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 21,
+      "SpA": 0,
+      "SpD": 13,
+      "Spe": 0
+     },
+     0.1527
+    ],
+    [
+     "Bold",
+     {
+      "HP": 29,
+      "Atk": 0,
+      "Def": 19,
+      "SpA": 0,
+      "SpD": 18,
+      "Spe": 0
+     },
+     0.0796
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 9,
+      "SpA": 0,
+      "SpD": 25,
+      "Spe": 0
+     },
+     0.0625
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0617
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 29,
+      "SpA": 0,
+      "SpD": 5,
+      "Spe": 0
+     },
+     0.058
+    ]
+   ],
+   "teammates": [
+    [
+     "Archaludon",
+     0.504
+    ],
+    [
+     "Salamence-Mega",
+     0.4163
+    ],
+    [
+     "Volcarona",
+     0.3622
+    ],
+    [
+     "Glimmora-Mega",
+     0.2859
+    ],
+    [
+     "Garchomp",
+     0.2711
+    ],
+    [
+     "Rillaboom",
+     0.1683
+    ],
+    [
+     "Sneasler",
+     0.1425
+    ],
+    [
+     "Pelipper",
+     0.123
+    ],
+    [
+     "Incineroar",
+     0.1214
+    ],
+    [
+     "Basculegion",
+     0.1027
+    ],
+    [
+     "Overqwil",
+     0.1003
+    ],
+    [
+     "Golisopod-Mega",
+     0.0931
+    ],
+    [
+     "Floette-Mega",
+     0.0895
+    ],
+    [
+     "Maushold",
+     0.088
+    ]
+   ]
+  },
+  "Goodra-Hisui": {
+   "usage": 0.004,
+   "abilities": [
+    [
+     "Shell Armor",
+     0.5474
+    ],
+    [
+     "Sap Sipper",
+     0.396
+    ],
+    [
+     "Gooey",
+     0.0566
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.7911
+    ],
+    [
+     "Sitrus Berry",
+     0.0409
+    ],
+    [
+     "Iron Ball",
+     0.0312
+    ],
+    [
+     "Grassy Seed",
+     0.0259
+    ],
+    [
+     "Life Orb",
+     0.0247
+    ],
+    [
+     "Rocky Helmet",
+     0.0211
+    ],
+    [
+     "Psychic Seed",
+     0.0133
+    ],
+    [
+     "Scope Lens",
+     0.0091
+    ]
+   ],
+   "moves": [
+    [
+     "Body Press",
+     0.5886
+    ],
+    [
+     "Protect",
+     0.5831
+    ],
+    [
+     "Shelter",
+     0.5652
+    ],
+    [
+     "Heavy Slam",
+     0.48
+    ],
+    [
+     "Life Dew",
+     0.3541
+    ],
+    [
+     "Draco Meteor",
+     0.2697
+    ],
+    [
+     "Rock Tomb",
+     0.1972
+    ],
+    [
+     "Flamethrower",
+     0.1851
+    ],
+    [
+     "Flash Cannon",
+     0.1837
+    ],
+    [
+     "Dragon Pulse",
+     0.1241
+    ],
+    [
+     "Curse",
+     0.0543
+    ],
+    [
+     "Thunderbolt",
+     0.0531
+    ],
+    [
+     "Gyro Ball",
+     0.0448
+    ],
+    [
+     "Acid Spray",
+     0.0434
+    ]
+   ],
+   "spreads": [
+    [
+     "Relaxed",
+     {
+      "HP": 22,
+      "Atk": 10,
+      "Def": 30,
+      "SpA": 1,
+      "SpD": 3,
+      "Spe": 0
+     },
+     0.1652
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 31,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 2
+     },
+     0.0499
+    ],
+    [
+     "Careful",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0491
+    ],
+    [
+     "Impish",
+     {
+      "HP": 26,
+      "Atk": 10,
+      "Def": 30,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0465
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 24,
+      "SpA": 0,
+      "SpD": 10,
+      "Spe": 0
+     },
+     0.0438
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5894
+    ],
+    [
+     "Incineroar",
+     0.4436
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.2722
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.2534
+    ],
+    [
+     "Annihilape",
+     0.2489
+    ],
+    [
+     "Salamence-Mega",
+     0.2021
+    ],
+    [
+     "Indeedee-F",
+     0.1514
+    ],
+    [
+     "Grimmsnarl",
+     0.13
+    ],
+    [
+     "Espathra",
+     0.0963
+    ],
+    [
+     "Floette-Mega",
+     0.0899
+    ],
+    [
+     "Milotic",
+     0.086
+    ],
+    [
+     "Golisopod-Mega",
+     0.0853
+    ],
+    [
+     "Armarouge",
+     0.0835
+    ],
+    [
+     "Sinistcha",
+     0.0801
+    ]
+   ]
+  },
+  "Swampert": {
+   "usage": 0.0038,
+   "abilities": [
+    [
+     "Torrent",
+     0.852
+    ],
+    [
+     "Damp",
+     0.148
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.3632
+    ],
+    [
+     "Sitrus Berry",
+     0.2512
+    ],
+    [
+     "Life Orb",
+     0.184
+    ],
+    [
+     "Rindo Berry",
+     0.083
+    ],
+    [
+     "Expert Belt",
+     0.0596
+    ],
+    [
+     "Rocky Helmet",
+     0.0175
+    ],
+    [
+     "Soft Sand",
+     0.0124
+    ],
+    [
+     "Bright Powder",
+     0.0111
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.7223
+    ],
+    [
+     "High Horsepower",
+     0.6015
+    ],
+    [
+     "Yawn",
+     0.5431
+    ],
+    [
+     "Wave Crash",
+     0.5081
+    ],
+    [
+     "Wide Guard",
+     0.4612
+    ],
+    [
+     "Flip Turn",
+     0.2555
+    ],
+    [
+     "Earth Power",
+     0.1904
+    ],
+    [
+     "Earthquake",
+     0.1881
+    ],
+    [
+     "Ice Punch",
+     0.0957
+    ],
+    [
+     "Muddy Water",
+     0.095
+    ],
+    [
+     "Ice Beam",
+     0.0862
+    ],
+    [
+     "Rock Slide",
+     0.0681
+    ],
+    [
+     "Liquidation",
+     0.0411
+    ],
+    [
+     "Icy Wind",
+     0.0386
+    ]
+   ],
+   "spreads": [
+    [
+     "Relaxed",
+     {
+      "HP": 31,
+      "Atk": 2,
+      "Def": 20,
+      "SpA": 0,
+      "SpD": 13,
+      "Spe": 0
+     },
+     0.1331
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1202
+    ],
+    [
+     "Careful",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 15,
+      "SpA": 0,
+      "SpD": 20,
+      "Spe": 0
+     },
+     0.0475
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 0
+     },
+     0.044
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 14,
+      "SpA": 0,
+      "SpD": 20,
+      "Spe": 0
+     },
+     0.0388
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.4729
+    ],
+    [
+     "Gholdengo",
+     0.2465
+    ],
+    [
+     "Salamence-Mega",
+     0.2155
+    ],
+    [
+     "Gengar-Mega",
+     0.2143
+    ],
+    [
+     "Incineroar",
+     0.2092
+    ],
+    [
+     "Sneasler",
+     0.1969
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1479
+    ],
+    [
+     "Staraptor-Mega",
+     0.1372
+    ],
+    [
+     "Whimsicott",
+     0.132
+    ],
+    [
+     "Volcarona",
+     0.1296
+    ],
+    [
+     "Dragapult",
+     0.1175
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.1173
+    ],
+    [
+     "Glimmora-Mega",
+     0.1138
+    ],
+    [
+     "Glimmora",
+     0.1082
+    ]
+   ]
+  },
+  "Crabominable-Mega": {
+   "usage": 0.0036,
+   "abilities": [
+    [
+     "Iron Fist",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Crabominite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Ice Hammer",
+     0.8919
+    ],
+    [
+     "Protect",
+     0.89
+    ],
+    [
+     "Drain Punch",
+     0.7773
+    ],
+    [
+     "Rock Slide",
+     0.3061
+    ],
+    [
+     "Close Combat",
+     0.2243
+    ],
+    [
+     "Thunder Punch",
+     0.2165
+    ],
+    [
+     "Mach Punch",
+     0.1728
+    ],
+    [
+     "Ice Punch",
+     0.115
+    ],
+    [
+     "Wide Guard",
+     0.1062
+    ],
+    [
+     "Knock Off",
+     0.0823
+    ],
+    [
+     "Crabhammer",
+     0.0573
+    ],
+    [
+     "Bulk Up",
+     0.0503
+    ],
+    [
+     "Hard Press",
+     0.0456
+    ],
+    [
+     "Iron Head",
+     0.0227
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.6782
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0782
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0573
+    ],
+    [
+     "Brave",
+     {
+      "HP": 31,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 3,
+      "Spe": 0
+     },
+     0.0407
+    ],
+    [
+     "Brave",
+     {
+      "HP": 18,
+      "Atk": 13,
+      "Def": 3,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0224
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.7916
+    ],
+    [
+     "Armarouge",
+     0.5016
+    ],
+    [
+     "Hatterene",
+     0.4518
+    ],
+    [
+     "Torkoal",
+     0.4479
+    ],
+    [
+     "Gallade",
+     0.2563
+    ],
+    [
+     "Camerupt-Mega",
+     0.2327
+    ],
+    [
+     "Basculegion",
+     0.1096
+    ],
+    [
+     "Farigiraf",
+     0.1065
+    ],
+    [
+     "Kingambit",
+     0.1019
+    ],
+    [
+     "Sneasler",
+     0.0947
+    ],
+    [
+     "Golisopod-Mega",
+     0.0853
+    ],
+    [
+     "Sinistcha",
+     0.0826
+    ],
+    [
+     "Incineroar",
+     0.0743
+    ],
+    [
+     "Gardevoir-Mega",
+     0.0729
+    ]
+   ]
+  },
+  "Slowbro-Mega": {
+   "usage": 0.0036,
+   "abilities": [
+    [
+     "Shell Armor",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Slowbronite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Trick Room",
+     0.7696
+    ],
+    [
+     "Expanding Force",
+     0.6932
+    ],
+    [
+     "Slack Off",
+     0.5508
+    ],
+    [
+     "Body Press",
+     0.3461
+    ],
+    [
+     "Scald",
+     0.3074
+    ],
+    [
+     "Protect",
+     0.2703
+    ],
+    [
+     "Psych Up",
+     0.2049
+    ],
+    [
+     "Stored Power",
+     0.2031
+    ],
+    [
+     "Weather Ball",
+     0.1502
+    ],
+    [
+     "Calm Mind",
+     0.0964
+    ],
+    [
+     "Iron Defense",
+     0.0824
+    ],
+    [
+     "Ice Beam",
+     0.0611
+    ],
+    [
+     "Nasty Plot",
+     0.0554
+    ],
+    [
+     "Muddy Water",
+     0.0482
+    ]
+   ],
+   "spreads": [
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.2101
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 3,
+      "Spe": 0
+     },
+     0.1568
+    ],
+    [
+     "Calm",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 20,
+      "Spe": 15
+     },
+     0.1474
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 26,
+      "Atk": 0,
+      "Def": 10,
+      "SpA": 26,
+      "SpD": 4,
+      "Spe": 0
+     },
+     0.0767
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0375
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.6589
+    ],
+    [
+     "Torkoal",
+     0.4182
+    ],
+    [
+     "Pelipper",
+     0.2403
+    ],
+    [
+     "Sneasler",
+     0.21
+    ],
+    [
+     "Kingambit",
+     0.2067
+    ],
+    [
+     "Gardevoir-Mega",
+     0.1809
+    ],
+    [
+     "Audino",
+     0.1802
+    ],
+    [
+     "Snorlax",
+     0.1573
+    ],
+    [
+     "Farigiraf",
+     0.1523
+    ],
+    [
+     "Sableye",
+     0.151
+    ],
+    [
+     "Maushold",
+     0.1464
+    ],
+    [
+     "Hatterene",
+     0.1206
+    ],
+    [
+     "Tyranitar",
+     0.1203
+    ],
+    [
+     "Incineroar",
+     0.1197
+    ]
+   ]
+  },
+  "Altaria": {
+   "usage": 0.0035,
+   "abilities": [
+    [
+     "Cloud Nine",
+     0.978
+    ],
+    [
+     "Natural Cure",
+     0.022
+    ]
+   ],
+   "items": [
+    [
+     "Haban Berry",
+     0.8097
+    ],
+    [
+     "Sitrus Berry",
+     0.058
+    ],
+    [
+     "Leftovers",
+     0.0422
+    ],
+    [
+     "Grassy Seed",
+     0.0264
+    ],
+    [
+     "Focus Sash",
+     0.0201
+    ],
+    [
+     "Roseli Berry",
+     0.0177
+    ],
+    [
+     "Rocky Helmet",
+     0.0137
+    ],
+    [
+     "Life Orb",
+     0.0017
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.9604
+    ],
+    [
+     "Will-O-Wisp",
+     0.838
+    ],
+    [
+     "Tailwind",
+     0.5649
+    ],
+    [
+     "Ice Beam",
+     0.5042
+    ],
+    [
+     "Perish Song",
+     0.422
+    ],
+    [
+     "Roost",
+     0.3395
+    ],
+    [
+     "Fire Spin",
+     0.1134
+    ],
+    [
+     "Flamethrower",
+     0.028
+    ],
+    [
+     "Roar",
+     0.0267
+    ],
+    [
+     "Dragon Pulse",
+     0.023
+    ],
+    [
+     "Acrobatics",
+     0.023
+    ],
+    [
+     "Helping Hand",
+     0.0227
+    ],
+    [
+     "Brave Bird",
+     0.02
+    ],
+    [
+     "Cotton Guard",
+     0.0179
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 5,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 29
+     },
+     0.4326
+    ],
+    [
+     "Bold",
+     {
+      "HP": 30,
+      "Atk": 0,
+      "Def": 27,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 8
+     },
+     0.2399
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 19,
+      "SpA": 0,
+      "SpD": 15,
+      "Spe": 0
+     },
+     0.051
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0261
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 12,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 21
+     },
+     0.0237
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.4522
+    ],
+    [
+     "Milotic",
+     0.4384
+    ],
+    [
+     "Metagross-Mega",
+     0.4237
+    ],
+    [
+     "Arcanine-Hisui",
+     0.4227
+    ],
+    [
+     "Dragapult",
+     0.3994
+    ],
+    [
+     "Incineroar",
+     0.364
+    ],
+    [
+     "Gengar-Mega",
+     0.3435
+    ],
+    [
+     "Rillaboom",
+     0.3264
+    ],
+    [
+     "Annihilape",
+     0.223
+    ],
+    [
+     "Vaporeon",
+     0.189
+    ],
+    [
+     "Swampert",
+     0.0608
+    ],
+    [
+     "Sinistcha",
+     0.0475
+    ],
+    [
+     "Kingambit",
+     0.0371
+    ],
+    [
+     "Kommo-o",
+     0.0345
+    ]
+   ]
+  },
+  "Overqwil": {
+   "usage": 0.0035,
+   "abilities": [
+    [
+     "Intimidate",
+     0.5016
+    ],
+    [
+     "Swift Swim",
+     0.2984
+    ],
+    [
+     "Poison Point",
+     0.2
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.5338
+    ],
+    [
+     "Life Orb",
+     0.2919
+    ],
+    [
+     "Sitrus Berry",
+     0.0777
+    ],
+    [
+     "Black Glasses",
+     0.0217
+    ],
+    [
+     "Rocky Helmet",
+     0.0202
+    ],
+    [
+     "Focus Sash",
+     0.0146
+    ],
+    [
+     "White Herb",
+     0.0096
+    ],
+    [
+     "Expert Belt",
+     0.008
+    ]
+   ],
+   "moves": [
+    [
+     "Throat Chop",
+     0.6729
+    ],
+    [
+     "Minimize",
+     0.5552
+    ],
+    [
+     "Stockpile",
+     0.5464
+    ],
+    [
+     "Protect",
+     0.5253
+    ],
+    [
+     "Swords Dance",
+     0.3665
+    ],
+    [
+     "Barb Barrage",
+     0.2571
+    ],
+    [
+     "Poison Jab",
+     0.1976
+    ],
+    [
+     "Liquidation",
+     0.185
+    ],
+    [
+     "Gunk Shot",
+     0.1576
+    ],
+    [
+     "Crunch",
+     0.1448
+    ],
+    [
+     "Taunt",
+     0.0824
+    ],
+    [
+     "Haze",
+     0.0441
+    ],
+    [
+     "Toxic",
+     0.0418
+    ],
+    [
+     "Toxic Spikes",
+     0.0386
+    ]
+   ],
+   "spreads": [
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.153
+    ],
+    [
+     "Impish",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 5,
+      "SpA": 0,
+      "SpD": 29,
+      "Spe": 0
+     },
+     0.1436
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0745
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0605
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0441
+    ]
+   ],
+   "teammates": [
+    [
+     "Pelipper",
+     0.2949
+    ],
+    [
+     "Audino",
+     0.2258
+    ],
+    [
+     "Rillaboom",
+     0.204
+    ],
+    [
+     "Archaludon",
+     0.2019
+    ],
+    [
+     "Zoroark-Hisui",
+     0.2017
+    ],
+    [
+     "Sneasler",
+     0.1945
+    ],
+    [
+     "Indeedee-F",
+     0.1909
+    ],
+    [
+     "Swampert-Mega",
+     0.1681
+    ],
+    [
+     "Sableye-Mega",
+     0.1611
+    ],
+    [
+     "Audino-Mega",
+     0.1339
+    ],
+    [
+     "Golisopod-Mega",
+     0.1223
+    ],
+    [
+     "Sableye",
+     0.1217
+    ],
+    [
+     "Dragapult",
+     0.1169
+    ],
+    [
+     "Klefki",
+     0.1138
+    ]
+   ]
+  },
+  "Blaziken": {
+   "usage": 0.0035,
+   "abilities": [
+    [
+     "Speed Boost",
+     0.9954
+    ],
+    [
+     "Blaze",
+     0.0046
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.5993
+    ],
+    [
+     "Life Orb",
+     0.3266
+    ],
+    [
+     "Expert Belt",
+     0.019
+    ],
+    [
+     "Muscle Band",
+     0.0117
+    ],
+    [
+     "Psychic Seed",
+     0.0058
+    ],
+    [
+     "Leftovers",
+     0.0054
+    ],
+    [
+     "White Herb",
+     0.0044
+    ],
+    [
+     "Charcoal",
+     0.0041
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.588
+    ],
+    [
+     "Aura Sphere",
+     0.5789
+    ],
+    [
+     "Heat Wave",
+     0.5683
+    ],
+    [
+     "Coaching",
+     0.5005
+    ],
+    [
+     "Detect",
+     0.3982
+    ],
+    [
+     "Close Combat",
+     0.3715
+    ],
+    [
+     "Flare Blitz",
+     0.3017
+    ],
+    [
+     "Rock Slide",
+     0.2252
+    ],
+    [
+     "Overheat",
+     0.1343
+    ],
+    [
+     "Swords Dance",
+     0.0589
+    ],
+    [
+     "Will-O-Wisp",
+     0.0486
+    ],
+    [
+     "Blaze Kick",
+     0.0389
+    ],
+    [
+     "Knock Off",
+     0.0306
+    ],
+    [
+     "Baton Pass",
+     0.0244
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.3564
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1499
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0932
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0558
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0541
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5677
+    ],
+    [
+     "Kingambit",
+     0.2968
+    ],
+    [
+     "Metagross-Mega",
+     0.2358
+    ],
+    [
+     "Salamence-Mega",
+     0.2354
+    ],
+    [
+     "Indeedee-F",
+     0.2325
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1546
+    ],
+    [
+     "Baxcalibur-Mega",
+     0.1469
+    ],
+    [
+     "Basculegion",
+     0.1345
+    ],
+    [
+     "Primarina",
+     0.1315
+    ],
+    [
+     "Dragonite",
+     0.1215
+    ],
+    [
+     "Milotic",
+     0.1132
+    ],
+    [
+     "Farigiraf",
+     0.0998
+    ],
+    [
+     "Gholdengo",
+     0.0859
+    ],
+    [
+     "Froslass-Mega",
+     0.0827
+    ]
+   ]
+  },
+  "Salamence": {
+   "usage": 0.0033,
+   "abilities": [
+    [
+     "Intimidate",
+     0.99
+    ],
+    [
+     "Moxie",
+     0.01
+    ]
+   ],
+   "items": [
+    [
+     "Life Orb",
+     0.2942
+    ],
+    [
+     "Choice Scarf",
+     0.2725
+    ],
+    [
+     "Haban Berry",
+     0.1835
+    ],
+    [
+     "Focus Sash",
+     0.0977
+    ],
+    [
+     "Sitrus Berry",
+     0.0325
+    ],
+    [
+     "Rocky Helmet",
+     0.0322
+    ],
+    [
+     "Roseli Berry",
+     0.0188
+    ],
+    [
+     "Leftovers",
+     0.0146
+    ]
+   ],
+   "moves": [
+    [
+     "Draco Meteor",
+     0.775
+    ],
+    [
+     "Tailwind",
+     0.7114
+    ],
+    [
+     "Protect",
+     0.6151
+    ],
+    [
+     "Flamethrower",
+     0.3585
+    ],
+    [
+     "Air Slash",
+     0.2818
+    ],
+    [
+     "Heat Wave",
+     0.2637
+    ],
+    [
+     "Breaking Swipe",
+     0.177
+    ],
+    [
+     "Dual Wingbeat",
+     0.1541
+    ],
+    [
+     "Dragon Pulse",
+     0.1252
+    ],
+    [
+     "Dragon Claw",
+     0.1149
+    ],
+    [
+     "Rock Slide",
+     0.0956
+    ],
+    [
+     "Hurricane",
+     0.0865
+    ],
+    [
+     "Roost",
+     0.0475
+    ],
+    [
+     "Iron Head",
+     0.0227
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1638
+    ],
+    [
+     "Timid",
+     {
+      "HP": 9,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 23
+     },
+     0.1074
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1031
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0745
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 18,
+      "Atk": 16,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0565
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.4466
+    ],
+    [
+     "Golisopod-Mega",
+     0.2336
+    ],
+    [
+     "Floette-Mega",
+     0.2122
+    ],
+    [
+     "Gholdengo",
+     0.1814
+    ],
+    [
+     "Sneasler",
+     0.1813
+    ],
+    [
+     "Sinistcha",
+     0.1684
+    ],
+    [
+     "Arcanine-Hisui",
+     0.1648
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1593
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.154
+    ],
+    [
+     "Kingambit",
+     0.1422
+    ],
+    [
+     "Grimmsnarl",
+     0.1379
+    ],
+    [
+     "Incineroar",
+     0.1186
+    ],
+    [
+     "Sylveon",
+     0.1095
+    ],
+    [
+     "Indeedee-F",
+     0.1055
+    ]
+   ]
+  },
+  "Garchomp-Mega": {
+   "usage": 0.0032,
+   "abilities": [
+    [
+     "Sand Force",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Garchompite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.9512
+    ],
+    [
+     "Earthquake",
+     0.4154
+    ],
+    [
+     "Earth Power",
+     0.3979
+    ],
+    [
+     "Rock Slide",
+     0.3831
+    ],
+    [
+     "Dragon Claw",
+     0.3736
+    ],
+    [
+     "Draco Meteor",
+     0.3261
+    ],
+    [
+     "Power Gem",
+     0.315
+    ],
+    [
+     "Stomping Tantrum",
+     0.2353
+    ],
+    [
+     "Swords Dance",
+     0.1783
+    ],
+    [
+     "Scale Shot",
+     0.1631
+    ],
+    [
+     "Dragon Pulse",
+     0.0694
+    ],
+    [
+     "Flamethrower",
+     0.0554
+    ],
+    [
+     "Fire Blast",
+     0.055
+    ],
+    [
+     "Iron Head",
+     0.0303
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0987
+    ],
+    [
+     "Modest",
+     {
+      "HP": 9,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 30,
+      "SpD": 0,
+      "Spe": 27
+     },
+     0.0944
+    ],
+    [
+     "Modest",
+     {
+      "HP": 10,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 30,
+      "SpD": 0,
+      "Spe": 26
+     },
+     0.0941
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0746
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0619
+    ]
+   ],
+   "teammates": [
+    [
+     "Incineroar",
+     0.3537
+    ],
+    [
+     "Sneasler",
+     0.3387
+    ],
+    [
+     "Tyranitar",
+     0.304
+    ],
+    [
+     "Corviknight",
+     0.2933
+    ],
+    [
+     "Rillaboom",
+     0.1998
+    ],
+    [
+     "Tyranitar-Mega",
+     0.1951
+    ],
+    [
+     "Volcarona",
+     0.1904
+    ],
+    [
+     "Basculegion",
+     0.1861
+    ],
+    [
+     "Kingambit",
+     0.1534
+    ],
+    [
+     "Floette-Mega",
+     0.1196
+    ],
+    [
+     "Indeedee-F",
+     0.1187
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1137
+    ],
+    [
+     "Farigiraf",
+     0.1135
+    ],
+    [
+     "Maushold",
+     0.1008
+    ]
+   ]
+  },
+  "Snorlax": {
+   "usage": 0.0031,
+   "abilities": [
+    [
+     "Thick Fat",
+     0.9836
+    ],
+    [
+     "Gluttony",
+     0.0107
+    ],
+    [
+     "Immunity",
+     0.0057
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.7045
+    ],
+    [
+     "Sitrus Berry",
+     0.214
+    ],
+    [
+     "Chesto Berry",
+     0.0264
+    ],
+    [
+     "Chople Berry",
+     0.0217
+    ],
+    [
+     "Lum Berry",
+     0.0074
+    ],
+    [
+     "Normal Gem",
+     0.0065
+    ],
+    [
+     "Silk Scarf",
+     0.0053
+    ],
+    [
+     "Life Orb",
+     0.0047
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.9167
+    ],
+    [
+     "Fissure",
+     0.5878
+    ],
+    [
+     "Stockpile",
+     0.4038
+    ],
+    [
+     "Body Press",
+     0.2793
+    ],
+    [
+     "Yawn",
+     0.2564
+    ],
+    [
+     "Belly Drum",
+     0.2421
+    ],
+    [
+     "Body Slam",
+     0.1703
+    ],
+    [
+     "Encore",
+     0.1651
+    ],
+    [
+     "Smack Down",
+     0.1297
+    ],
+    [
+     "Facade",
+     0.1193
+    ],
+    [
+     "Crunch",
+     0.1187
+    ],
+    [
+     "High Horsepower",
+     0.1156
+    ],
+    [
+     "Double-Edge",
+     0.0963
+    ],
+    [
+     "Rock Slide",
+     0.0829
+    ]
+   ],
+   "spreads": [
+    [
+     "Bold",
+     {
+      "HP": 21,
+      "Atk": 0,
+      "Def": 31,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 14
+     },
+     0.1718
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1291
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 6,
+      "Atk": 0,
+      "Def": 30,
+      "SpA": 0,
+      "SpD": 30,
+      "Spe": 0
+     },
+     0.0804
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 6,
+      "Atk": 31,
+      "Def": 29,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.059
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 10,
+      "Def": 24,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0503
+    ]
+   ],
+   "teammates": [
+    [
+     "Incineroar",
+     0.4156
+    ],
+    [
+     "Rillaboom",
+     0.3757
+    ],
+    [
+     "Indeedee-F",
+     0.2786
+    ],
+    [
+     "Gengar-Mega",
+     0.245
+    ],
+    [
+     "Salamence-Mega",
+     0.2228
+    ],
+    [
+     "Hawlucha-Mega",
+     0.2183
+    ],
+    [
+     "Farigiraf",
+     0.1933
+    ],
+    [
+     "Slowbro-Mega",
+     0.1871
+    ],
+    [
+     "Audino",
+     0.1795
+    ],
+    [
+     "Sableye",
+     0.1749
+    ],
+    [
+     "Sinistcha",
+     0.1693
+    ],
+    [
+     "Maushold",
+     0.1649
+    ],
+    [
+     "Dragonite",
+     0.1374
+    ],
+    [
+     "Scrafty",
+     0.1304
+    ]
+   ]
+  },
+  "Mimikyu": {
+   "usage": 0.003,
+   "abilities": [
+    [
+     "Disguise",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Life Orb",
+     0.5254
+    ],
+    [
+     "Mental Herb",
+     0.1379
+    ],
+    [
+     "White Herb",
+     0.0661
+    ],
+    [
+     "Wide Lens",
+     0.0601
+    ],
+    [
+     "Sitrus Berry",
+     0.036
+    ],
+    [
+     "Red Card",
+     0.0314
+    ],
+    [
+     "Fairy Feather",
+     0.0186
+    ],
+    [
+     "Spell Tag",
+     0.016
+    ]
+   ],
+   "moves": [
+    [
+     "Play Rough",
+     0.9624
+    ],
+    [
+     "Shadow Sneak",
+     0.6904
+    ],
+    [
+     "Trick Room",
+     0.4614
+    ],
+    [
+     "Wood Hammer",
+     0.3166
+    ],
+    [
+     "Sunny Day",
+     0.2951
+    ],
+    [
+     "Shadow Claw",
+     0.2369
+    ],
+    [
+     "Protect",
+     0.2106
+    ],
+    [
+     "Will-O-Wisp",
+     0.2039
+    ],
+    [
+     "Swords Dance",
+     0.1939
+    ],
+    [
+     "Destiny Bond",
+     0.1179
+    ],
+    [
+     "Phantom Force",
+     0.0593
+    ],
+    [
+     "Rain Dance",
+     0.05
+    ],
+    [
+     "Curse",
+     0.0459
+    ],
+    [
+     "Taunt",
+     0.0369
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2725
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1222
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 11,
+      "Atk": 30,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 25
+     },
+     0.0862
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0775
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0648
+    ]
+   ],
+   "teammates": [
+    [
+     "Kingambit",
+     0.3857
+    ],
+    [
+     "Salamence-Mega",
+     0.322
+    ],
+    [
+     "Farigiraf",
+     0.3182
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.2991
+    ],
+    [
+     "Golisopod-Mega",
+     0.222
+    ],
+    [
+     "Rillaboom",
+     0.1602
+    ],
+    [
+     "Garchomp",
+     0.1549
+    ],
+    [
+     "Sneasler",
+     0.1472
+    ],
+    [
+     "Annihilape",
+     0.1329
+    ],
+    [
+     "Incineroar",
+     0.1305
+    ],
+    [
+     "Basculegion",
+     0.118
+    ],
+    [
+     "Indeedee-F",
+     0.1058
+    ],
+    [
+     "Dragonite-Mega",
+     0.0903
+    ],
+    [
+     "Chesnaught-Mega",
+     0.0874
+    ]
+   ]
+  },
+  "Charizard-Mega-X": {
+   "usage": 0.003,
+   "abilities": [
+    [
+     "Tough Claws",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Charizardite X",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.9772
+    ],
+    [
+     "Flare Blitz",
+     0.742
+    ],
+    [
+     "Dragon Claw",
+     0.6711
+    ],
+    [
+     "Dragon Dance",
+     0.6536
+    ],
+    [
+     "Breaking Swipe",
+     0.282
+    ],
+    [
+     "Flame Charge",
+     0.2179
+    ],
+    [
+     "Belly Drum",
+     0.1661
+    ],
+    [
+     "Temper Flare",
+     0.0889
+    ],
+    [
+     "Roost",
+     0.0577
+    ],
+    [
+     "Swords Dance",
+     0.0269
+    ],
+    [
+     "Will-O-Wisp",
+     0.0246
+    ],
+    [
+     "Rock Slide",
+     0.0225
+    ],
+    [
+     "Brick Break",
+     0.0162
+    ],
+    [
+     "Thunder Punch",
+     0.0121
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0836
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 32,
+      "Atk": 2,
+      "Def": 8,
+      "SpA": 0,
+      "SpD": 8,
+      "Spe": 16
+     },
+     0.0687
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 23,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 11
+     },
+     0.063
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 17,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 17
+     },
+     0.0462
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 30,
+      "Atk": 6,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 28
+     },
+     0.0447
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.5187
+    ],
+    [
+     "Sneasler",
+     0.4304
+    ],
+    [
+     "Milotic",
+     0.4068
+    ],
+    [
+     "Incineroar",
+     0.2644
+    ],
+    [
+     "Sinistcha",
+     0.1821
+    ],
+    [
+     "Kingambit",
+     0.164
+    ],
+    [
+     "Floette-Mega",
+     0.1465
+    ],
+    [
+     "Farigiraf",
+     0.1399
+    ],
+    [
+     "Sylveon",
+     0.1034
+    ],
+    [
+     "Indeedee-F",
+     0.0988
+    ],
+    [
+     "Gholdengo",
+     0.0987
+    ],
+    [
+     "Basculegion",
+     0.0979
+    ],
+    [
+     "Grimmsnarl",
+     0.0904
+    ],
+    [
+     "Whimsicott",
+     0.0893
+    ]
+   ]
+  },
+  "Tinkaton": {
+   "usage": 0.003,
+   "abilities": [
+    [
+     "Mold Breaker",
+     0.7907
+    ],
+    [
+     "Own Tempo",
+     0.2006
+    ],
+    [
+     "Pickpocket",
+     0.0087
+    ]
+   ],
+   "items": [
+    [
+     "Metal Coat",
+     0.2161
+    ],
+    [
+     "Occa Berry",
+     0.1468
+    ],
+    [
+     "Focus Sash",
+     0.1421
+    ],
+    [
+     "Eject Button",
+     0.1117
+    ],
+    [
+     "Psychic Seed",
+     0.088
+    ],
+    [
+     "Leftovers",
+     0.0597
+    ],
+    [
+     "Sitrus Berry",
+     0.0561
+    ],
+    [
+     "Life Orb",
+     0.0396
+    ]
+   ],
+   "moves": [
+    [
+     "Gigaton Hammer",
+     0.9789
+    ],
+    [
+     "Fake Out",
+     0.8792
+    ],
+    [
+     "Protect",
+     0.7126
+    ],
+    [
+     "Encore",
+     0.4321
+    ],
+    [
+     "Play Rough",
+     0.3455
+    ],
+    [
+     "Feint",
+     0.1944
+    ],
+    [
+     "Rock Tomb",
+     0.1236
+    ],
+    [
+     "Helping Hand",
+     0.1086
+    ],
+    [
+     "Brick Break",
+     0.035
+    ],
+    [
+     "Thunder Wave",
+     0.0339
+    ],
+    [
+     "Swords Dance",
+     0.0322
+    ],
+    [
+     "Ice Hammer",
+     0.0308
+    ],
+    [
+     "Knock Off",
+     0.0222
+    ],
+    [
+     "Rock Slide",
+     0.0162
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 3,
+      "Atk": 26,
+      "Def": 6,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 31
+     },
+     0.1193
+    ],
+    [
+     "Brave",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0878
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 1,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0843
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 23,
+      "Atk": 15,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 28
+     },
+     0.06
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0567
+    ]
+   ],
+   "teammates": [
+    [
+     "Incineroar",
+     0.4388
+    ],
+    [
+     "Rillaboom",
+     0.3695
+    ],
+    [
+     "Gengar-Mega",
+     0.2931
+    ],
+    [
+     "Pelipper",
+     0.2165
+    ],
+    [
+     "Archaludon",
+     0.2096
+    ],
+    [
+     "Ninetales-Alola",
+     0.1695
+    ],
+    [
+     "Indeedee-F",
+     0.1381
+    ],
+    [
+     "Kommo-o",
+     0.1339
+    ],
+    [
+     "Salamence-Mega",
+     0.1218
+    ],
+    [
+     "Hydreigon",
+     0.1183
+    ],
+    [
+     "Politoed",
+     0.1063
+    ],
+    [
+     "Swampert-Mega",
+     0.1042
+    ],
+    [
+     "Gardevoir-Mega",
+     0.0859
+    ],
+    [
+     "Sinistcha",
+     0.0819
+    ]
+   ]
+  },
+  "Starmie-Mega": {
+   "usage": 0.003,
+   "abilities": [
+    [
+     "Huge Power",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Starminite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.8829
+    ],
+    [
+     "Liquidation",
+     0.7817
+    ],
+    [
+     "Expanding Force",
+     0.5377
+    ],
+    [
+     "Flip Turn",
+     0.3945
+    ],
+    [
+     "Ice Spinner",
+     0.3664
+    ],
+    [
+     "Zen Headbutt",
+     0.2156
+    ],
+    [
+     "Aqua Jet",
+     0.2044
+    ],
+    [
+     "Psycho Cut",
+     0.1588
+    ],
+    [
+     "Ice Beam",
+     0.1366
+    ],
+    [
+     "Skill Swap",
+     0.0817
+    ],
+    [
+     "Bulk Up",
+     0.0402
+    ],
+    [
+     "Waterfall",
+     0.0378
+    ],
+    [
+     "Hydro Pump",
+     0.0353
+    ],
+    [
+     "Scald",
+     0.0348
+    ]
+   ],
+   "spreads": [
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.2098
+    ],
+    [
+     "Naive",
+     {
+      "HP": 0,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1731
+    ],
+    [
+     "Naive",
+     {
+      "HP": 0,
+      "Atk": 2,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0902
+    ],
+    [
+     "Naughty",
+     {
+      "HP": 17,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 17
+     },
+     0.0876
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0591
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.627
+    ],
+    [
+     "Sneasler",
+     0.5267
+    ],
+    [
+     "Archaludon",
+     0.4742
+    ],
+    [
+     "Pelipper",
+     0.4437
+    ],
+    [
+     "Golisopod-Mega",
+     0.2035
+    ],
+    [
+     "Kingambit",
+     0.1727
+    ],
+    [
+     "Absol-Mega-Z",
+     0.1465
+    ],
+    [
+     "Incineroar",
+     0.1142
+    ],
+    [
+     "Pawmot",
+     0.1088
+    ],
+    [
+     "Rillaboom",
+     0.1034
+    ],
+    [
+     "Politoed",
+     0.1025
+    ],
+    [
+     "Salamence-Mega",
+     0.0663
+    ],
+    [
+     "Whimsicott",
+     0.062
+    ],
+    [
+     "Garchomp",
+     0.0607
+    ]
+   ]
+  },
+  "Scrafty-Mega": {
+   "usage": 0.0028,
+   "abilities": [
+    [
+     "Intimidate",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Scraftinite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Knock Off",
+     0.9118
+    ],
+    [
+     "Fake Out",
+     0.7898
+    ],
+    [
+     "Close Combat",
+     0.5378
+    ],
+    [
+     "Drain Punch",
+     0.5194
+    ],
+    [
+     "Protect",
+     0.3258
+    ],
+    [
+     "Ice Punch",
+     0.1584
+    ],
+    [
+     "Detect",
+     0.1543
+    ],
+    [
+     "Poison Jab",
+     0.0969
+    ],
+    [
+     "Rock Slide",
+     0.0919
+    ],
+    [
+     "Iron Head",
+     0.0701
+    ],
+    [
+     "Throat Chop",
+     0.0693
+    ],
+    [
+     "Swords Dance",
+     0.0615
+    ],
+    [
+     "Dragon Dance",
+     0.0322
+    ],
+    [
+     "Bulk Up",
+     0.031
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1775
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1522
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 14,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 20,
+      "Spe": 0
+     },
+     0.065
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 31,
+      "Atk": 30,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 4
+     },
+     0.0623
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 28,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 5,
+      "Spe": 0
+     },
+     0.0612
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.3173
+    ],
+    [
+     "Rillaboom",
+     0.3144
+    ],
+    [
+     "Torkoal",
+     0.3106
+    ],
+    [
+     "Farigiraf",
+     0.2577
+    ],
+    [
+     "Hatterene",
+     0.1814
+    ],
+    [
+     "Sinistcha",
+     0.1561
+    ],
+    [
+     "Golisopod-Mega",
+     0.1474
+    ],
+    [
+     "Gholdengo",
+     0.1447
+    ],
+    [
+     "Toxapex",
+     0.1318
+    ],
+    [
+     "Grimmsnarl",
+     0.1263
+    ],
+    [
+     "Armarouge",
+     0.124
+    ],
+    [
+     "Bellibolt",
+     0.1232
+    ],
+    [
+     "Pelipper",
+     0.0967
+    ],
+    [
+     "Milotic",
+     0.0883
+    ]
+   ]
+  },
+  "Ninetales": {
+   "usage": 0.0027,
+   "abilities": [
+    [
+     "Drought",
+     0.9972
+    ],
+    [
+     "Flash Fire",
+     0.0028
+    ]
+   ],
+   "items": [
+    [
+     "Choice Scarf",
+     0.5263
+    ],
+    [
+     "Charcoal",
+     0.2424
+    ],
+    [
+     "Life Orb",
+     0.0974
+    ],
+    [
+     "Focus Sash",
+     0.0476
+    ],
+    [
+     "Sitrus Berry",
+     0.0304
+    ],
+    [
+     "Heat Rock",
+     0.016
+    ],
+    [
+     "Air Balloon",
+     0.014
+    ],
+    [
+     "Shuca Berry",
+     0.0112
+    ]
+   ],
+   "moves": [
+    [
+     "Heat Wave",
+     0.9212
+    ],
+    [
+     "Solar Beam",
+     0.6208
+    ],
+    [
+     "Overheat",
+     0.5167
+    ],
+    [
+     "Fake Tears",
+     0.5121
+    ],
+    [
+     "Protect",
+     0.447
+    ],
+    [
+     "Weather Ball",
+     0.1696
+    ],
+    [
+     "Flamethrower",
+     0.1293
+    ],
+    [
+     "Will-O-Wisp",
+     0.1198
+    ],
+    [
+     "Hypnosis",
+     0.1094
+    ],
+    [
+     "Helping Hand",
+     0.0711
+    ],
+    [
+     "Snarl",
+     0.0666
+    ],
+    [
+     "Encore",
+     0.0647
+    ],
+    [
+     "Sunny Day",
+     0.0586
+    ],
+    [
+     "Scorching Sands",
+     0.046
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.2456
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1344
+    ],
+    [
+     "Modest",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1274
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1103
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.072
+    ]
+   ],
+   "teammates": [
+    [
+     "Whimsicott",
+     0.4876
+    ],
+    [
+     "Pyroar-Mega",
+     0.457
+    ],
+    [
+     "Basculegion",
+     0.4509
+    ],
+    [
+     "Indeedee-F",
+     0.4156
+    ],
+    [
+     "Gardevoir-Mega",
+     0.3692
+    ],
+    [
+     "Milotic",
+     0.1571
+    ],
+    [
+     "Farigiraf",
+     0.1516
+    ],
+    [
+     "Indeedee",
+     0.1308
+    ],
+    [
+     "Sableye",
+     0.1243
+    ],
+    [
+     "Sneasler",
+     0.1218
+    ],
+    [
+     "Kingambit",
+     0.1218
+    ],
+    [
+     "Delphox-Mega",
+     0.1028
+    ],
+    [
+     "Salamence-Mega",
+     0.1018
+    ],
+    [
+     "Rillaboom",
+     0.1002
+    ]
+   ]
+  },
+  "Bellibolt": {
+   "usage": 0.0026,
+   "abilities": [
+    [
+     "Electromorphosis",
+     0.9992
+    ],
+    [
+     "Damp",
+     0.0006
+    ],
+    [
+     "Static",
+     0.0002
+    ]
+   ],
+   "items": [
+    [
+     "Sitrus Berry",
+     0.4787
+    ],
+    [
+     "Magnet",
+     0.3151
+    ],
+    [
+     "Leftovers",
+     0.1268
+    ],
+    [
+     "Electric Seed",
+     0.0327
+    ],
+    [
+     "Shuca Berry",
+     0.0155
+    ],
+    [
+     "Big Root",
+     0.0074
+    ],
+    [
+     "Rocky Helmet",
+     0.0066
+    ],
+    [
+     "Life Orb",
+     0.0035
+    ]
+   ],
+   "moves": [
+    [
+     "Parabolic Charge",
+     0.8823
+    ],
+    [
+     "Thunderbolt",
+     0.8301
+    ],
+    [
+     "Protect",
+     0.7873
+    ],
+    [
+     "Soak",
+     0.6605
+    ],
+    [
+     "Toxic",
+     0.3662
+    ],
+    [
+     "Slack Off",
+     0.1199
+    ],
+    [
+     "Thunder",
+     0.0835
+    ],
+    [
+     "Chilling Water",
+     0.0503
+    ],
+    [
+     "Muddy Water",
+     0.0449
+    ],
+    [
+     "Volt Switch",
+     0.0284
+    ],
+    [
+     "Charge",
+     0.0244
+    ],
+    [
+     "Reflect",
+     0.0233
+    ],
+    [
+     "Discharge",
+     0.0169
+    ],
+    [
+     "Substitute",
+     0.0165
+    ]
+   ],
+   "spreads": [
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 15,
+      "SpA": 17,
+      "SpD": 1,
+      "Spe": 1
+     },
+     0.2169
+    ],
+    [
+     "Bold",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 16,
+      "SpA": 0,
+      "SpD": 19,
+      "Spe": 0
+     },
+     0.1209
+    ],
+    [
+     "Bold",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 16,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0891
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 16,
+      "SpD": 18,
+      "Spe": 0
+     },
+     0.0721
+    ],
+    [
+     "Bold",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 6,
+      "SpA": 4,
+      "SpD": 25,
+      "Spe": 0
+     },
+     0.0556
+    ]
+   ],
+   "teammates": [
+    [
+     "Grimmsnarl",
+     0.3808
+    ],
+    [
+     "Sinistcha",
+     0.2711
+    ],
+    [
+     "Rillaboom",
+     0.2401
+    ],
+    [
+     "Araquanid",
+     0.2364
+    ],
+    [
+     "Golisopod-Mega",
+     0.2258
+    ],
+    [
+     "Arcanine",
+     0.2213
+    ],
+    [
+     "Metagross-Mega",
+     0.2199
+    ],
+    [
+     "Tyranitar",
+     0.1732
+    ],
+    [
+     "Farigiraf",
+     0.1586
+    ],
+    [
+     "Charizard-Mega-Y",
+     0.1457
+    ],
+    [
+     "Baxcalibur-Mega",
+     0.1412
+    ],
+    [
+     "Krookodile",
+     0.1391
+    ],
+    [
+     "Glimmora",
+     0.1381
+    ],
+    [
+     "Scrafty-Mega",
+     0.1367
+    ]
+   ]
+  },
+  "Kangaskhan-Mega": {
+   "usage": 0.0026,
+   "abilities": [
+    [
+     "Parental Bond",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Kangaskhanite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Fake Out",
+     0.9863
+    ],
+    [
+     "Double-Edge",
+     0.957
+    ],
+    [
+     "Ice Punch",
+     0.4476
+    ],
+    [
+     "Sucker Punch",
+     0.4041
+    ],
+    [
+     "Hammer Arm",
+     0.3723
+    ],
+    [
+     "Low Kick",
+     0.2217
+    ],
+    [
+     "Brick Break",
+     0.1962
+    ],
+    [
+     "Crunch",
+     0.1023
+    ],
+    [
+     "Drain Punch",
+     0.0985
+    ],
+    [
+     "Protect",
+     0.0984
+    ],
+    [
+     "Fire Punch",
+     0.0425
+    ],
+    [
+     "Body Slam",
+     0.0198
+    ],
+    [
+     "Last Resort",
+     0.0103
+    ],
+    [
+     "Outrage",
+     0.0072
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 0
+     },
+     0.2061
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1928
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1707
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 14,
+      "Atk": 32,
+      "Def": 12,
+      "SpA": 0,
+      "SpD": 8,
+      "Spe": 0
+     },
+     0.0575
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0541
+    ]
+   ],
+   "teammates": [
+    [
+     "Farigiraf",
+     0.4856
+    ],
+    [
+     "Torkoal",
+     0.3412
+    ],
+    [
+     "Kingambit",
+     0.33
+    ],
+    [
+     "Chandelure",
+     0.2269
+    ],
+    [
+     "Kommo-o",
+     0.1974
+    ],
+    [
+     "Basculegion",
+     0.1952
+    ],
+    [
+     "Indeedee-F",
+     0.1944
+    ],
+    [
+     "Gallade",
+     0.1634
+    ],
+    [
+     "Rillaboom",
+     0.149
+    ],
+    [
+     "Hatterene",
+     0.132
+    ],
+    [
+     "Incineroar",
+     0.1253
+    ],
+    [
+     "Gholdengo",
+     0.1182
+    ],
+    [
+     "Whimsicott",
+     0.1012
+    ],
+    [
+     "Sylveon",
+     0.0976
+    ]
+   ]
+  },
+  "Oranguru": {
+   "usage": 0.0025,
+   "abilities": [
+    [
+     "Inner Focus",
+     0.7701
+    ],
+    [
+     "Telepathy",
+     0.2169
+    ],
+    [
+     "Symbiosis",
+     0.013
+    ]
+   ],
+   "items": [
+    [
+     "Mental Herb",
+     0.3993
+    ],
+    [
+     "Colbur Berry",
+     0.2155
+    ],
+    [
+     "Sitrus Berry",
+     0.1414
+    ],
+    [
+     "Rocky Helmet",
+     0.0727
+    ],
+    [
+     "Focus Sash",
+     0.0475
+    ],
+    [
+     "Grassy Seed",
+     0.0473
+    ],
+    [
+     "Leftovers",
+     0.0407
+    ],
+    [
+     "Tanga Berry",
+     0.0106
+    ]
+   ],
+   "moves": [
+    [
+     "Trick Room",
+     0.9619
+    ],
+    [
+     "Instruct",
+     0.9595
+    ],
+    [
+     "Psychic",
+     0.5456
+    ],
+    [
+     "Protect",
+     0.4382
+    ],
+    [
+     "Encore",
+     0.2704
+    ],
+    [
+     "Expanding Force",
+     0.1623
+    ],
+    [
+     "Imprison",
+     0.1553
+    ],
+    [
+     "Foul Play",
+     0.0881
+    ],
+    [
+     "Yawn",
+     0.0787
+    ],
+    [
+     "Psychic Noise",
+     0.0508
+    ],
+    [
+     "Hyper Voice",
+     0.0491
+    ],
+    [
+     "Thunderbolt",
+     0.0358
+    ],
+    [
+     "Light Screen",
+     0.0341
+    ],
+    [
+     "After You",
+     0.0262
+    ]
+   ],
+   "spreads": [
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1153
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.1092
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 1,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.08
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 2
+     },
+     0.0625
+    ],
+    [
+     "Bold",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 32,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0526
+    ]
+   ],
+   "teammates": [
+    [
+     "Torkoal",
+     0.3606
+    ],
+    [
+     "Rillaboom",
+     0.3233
+    ],
+    [
+     "Golisopod-Mega",
+     0.2487
+    ],
+    [
+     "Incineroar",
+     0.2052
+    ],
+    [
+     "Kingambit",
+     0.1628
+    ],
+    [
+     "Sneasler",
+     0.1505
+    ],
+    [
+     "Indeedee-F",
+     0.1424
+    ],
+    [
+     "Basculegion",
+     0.1293
+    ],
+    [
+     "Pelipper",
+     0.1192
+    ],
+    [
+     "Salamence-Mega",
+     0.1106
+    ],
+    [
+     "Sylveon",
+     0.1076
+    ],
+    [
+     "Archaludon",
+     0.101
+    ],
+    [
+     "Lucario-Mega-Z",
+     0.086
+    ],
+    [
+     "Camerupt-Mega",
+     0.0854
+    ]
+   ]
+  },
+  "Inteleon": {
+   "usage": 0.0025,
+   "abilities": [
+    [
+     "Sniper",
+     0.9395
+    ],
+    [
+     "Torrent",
+     0.0605
+    ]
+   ],
+   "items": [
+    [
+     "Scope Lens",
+     0.6209
+    ],
+    [
+     "Focus Sash",
+     0.2253
+    ],
+    [
+     "Life Orb",
+     0.077
+    ],
+    [
+     "Mystic Water",
+     0.0413
+    ],
+    [
+     "Rindo Berry",
+     0.0157
+    ],
+    [
+     "Choice Scarf",
+     0.0137
+    ],
+    [
+     "Iron Ball",
+     0.0019
+    ],
+    [
+     "Chesto Berry",
+     0.0009
+    ]
+   ],
+   "moves": [
+    [
+     "Snipe Shot",
+     0.9633
+    ],
+    [
+     "Protect",
+     0.9091
+    ],
+    [
+     "Ice Beam",
+     0.6104
+    ],
+    [
+     "Focus Energy",
+     0.4374
+    ],
+    [
+     "Dark Pulse",
+     0.1809
+    ],
+    [
+     "Icy Wind",
+     0.1692
+    ],
+    [
+     "Vacuum Wave",
+     0.1464
+    ],
+    [
+     "Air Cutter",
+     0.0959
+    ],
+    [
+     "Soak",
+     0.0944
+    ],
+    [
+     "Weather Ball",
+     0.0449
+    ],
+    [
+     "Muddy Water",
+     0.0444
+    ],
+    [
+     "Taunt",
+     0.044
+    ],
+    [
+     "Air Slash",
+     0.0392
+    ],
+    [
+     "Blizzard",
+     0.032
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.595
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1332
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0509
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.044
+    ],
+    [
+     "Modest",
+     {
+      "HP": 10,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 24
+     },
+     0.0399
+    ]
+   ],
+   "teammates": [
+    [
+     "Pelipper",
+     0.2887
+    ],
+    [
+     "Rillaboom",
+     0.2517
+    ],
+    [
+     "Indeedee-F",
+     0.2465
+    ],
+    [
+     "Golisopod-Mega",
+     0.221
+    ],
+    [
+     "Salamence-Mega",
+     0.2001
+    ],
+    [
+     "Sneasler",
+     0.1923
+    ],
+    [
+     "Incineroar",
+     0.163
+    ],
+    [
+     "Kingambit",
+     0.147
+    ],
+    [
+     "Farigiraf",
+     0.1338
+    ],
+    [
+     "Archaludon",
+     0.1241
+    ],
+    [
+     "Whimsicott",
+     0.1004
+    ],
+    [
+     "Gholdengo",
+     0.0889
+    ],
+    [
+     "Absol-Mega-Z",
+     0.0847
+    ],
+    [
+     "Raichu-Mega-X",
+     0.0809
+    ]
+   ]
+  },
+  "Chandelure": {
+   "usage": 0.0025,
+   "abilities": [
+    [
+     "Flash Fire",
+     0.8452
+    ],
+    [
+     "Flame Body",
+     0.1397
+    ],
+    [
+     "Infiltrator",
+     0.015
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.6668
+    ],
+    [
+     "Choice Scarf",
+     0.0954
+    ],
+    [
+     "Colbur Berry",
+     0.0743
+    ],
+    [
+     "Charcoal",
+     0.031
+    ],
+    [
+     "Life Orb",
+     0.0305
+    ],
+    [
+     "Iron Ball",
+     0.0297
+    ],
+    [
+     "Kasib Berry",
+     0.0207
+    ],
+    [
+     "Grassy Seed",
+     0.0115
+    ]
+   ],
+   "moves": [
+    [
+     "Shadow Ball",
+     0.9278
+    ],
+    [
+     "Heat Wave",
+     0.872
+    ],
+    [
+     "Trick Room",
+     0.7867
+    ],
+    [
+     "Protect",
+     0.6254
+    ],
+    [
+     "Overheat",
+     0.1925
+    ],
+    [
+     "Flamethrower",
+     0.1366
+    ],
+    [
+     "Energy Ball",
+     0.0819
+    ],
+    [
+     "Trick",
+     0.0701
+    ],
+    [
+     "Imprison",
+     0.0607
+    ],
+    [
+     "Will-O-Wisp",
+     0.0596
+    ],
+    [
+     "Taunt",
+     0.0538
+    ],
+    [
+     "Psychic",
+     0.04
+    ],
+    [
+     "Calm Mind",
+     0.0171
+    ],
+    [
+     "Minimize",
+     0.0136
+    ]
+   ],
+   "spreads": [
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 0
+     },
+     0.2119
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1554
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1047
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0901
+    ],
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0624
+    ]
+   ],
+   "teammates": [
+    [
+     "Kingambit",
+     0.3042
+    ],
+    [
+     "Kommo-o",
+     0.2886
+    ],
+    [
+     "Rillaboom",
+     0.2884
+    ],
+    [
+     "Kangaskhan-Mega",
+     0.2387
+    ],
+    [
+     "Golisopod-Mega",
+     0.2295
+    ],
+    [
+     "Basculegion",
+     0.1786
+    ],
+    [
+     "Gallade",
+     0.1761
+    ],
+    [
+     "Whimsicott",
+     0.1742
+    ],
+    [
+     "Salamence-Mega",
+     0.1616
+    ],
+    [
+     "Milotic",
+     0.1366
+    ],
+    [
+     "Indeedee-F",
+     0.1286
+    ],
+    [
+     "Mawile-Mega",
+     0.128
+    ],
+    [
+     "Weavile",
+     0.1218
+    ],
+    [
+     "Kangaskhan",
+     0.1139
+    ]
+   ]
+  },
+  "Vileplume": {
+   "usage": 0.0024,
+   "abilities": [
+    [
+     "Chlorophyll",
+     0.9774
+    ],
+    [
+     "Effect Spore",
+     0.0226
+    ]
+   ],
+   "items": [
+    [
+     "Focus Sash",
+     0.7894
+    ],
+    [
+     "Wide Lens",
+     0.0864
+    ],
+    [
+     "Life Orb",
+     0.0438
+    ],
+    [
+     "Sitrus Berry",
+     0.0208
+    ],
+    [
+     "Big Root",
+     0.0164
+    ],
+    [
+     "Rocky Helmet",
+     0.0162
+    ],
+    [
+     "Eject Button",
+     0.0092
+    ],
+    [
+     "Leftovers",
+     0.006
+    ]
+   ],
+   "moves": [
+    [
+     "After You",
+     0.9371
+    ],
+    [
+     "Sleep Powder",
+     0.8555
+    ],
+    [
+     "Sludge Bomb",
+     0.777
+    ],
+    [
+     "Protect",
+     0.4049
+    ],
+    [
+     "Leaf Storm",
+     0.3361
+    ],
+    [
+     "Solar Beam",
+     0.3229
+    ],
+    [
+     "Energy Ball",
+     0.1201
+    ],
+    [
+     "Strength Sap",
+     0.0475
+    ],
+    [
+     "Weather Ball",
+     0.0393
+    ],
+    [
+     "Acid Spray",
+     0.0379
+    ],
+    [
+     "Giga Drain",
+     0.0373
+    ],
+    [
+     "Leech Seed",
+     0.0212
+    ],
+    [
+     "Pollen Puff",
+     0.0137
+    ],
+    [
+     "Grass Knot",
+     0.0118
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.5064
+    ],
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1484
+    ],
+    [
+     "Timid",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.1045
+    ],
+    [
+     "Modest",
+     {
+      "HP": 1,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 32
+     },
+     0.0858
+    ],
+    [
+     "Timid",
+     {
+      "HP": 0,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0497
+    ]
+   ],
+   "teammates": [
+    [
+     "Torkoal",
+     0.8527
+    ],
+    [
+     "Indeedee-F",
+     0.709
+    ],
+    [
+     "Hatterene",
+     0.2886
+    ],
+    [
+     "Armarouge",
+     0.2071
+    ],
+    [
+     "Gardevoir-Mega",
+     0.2034
+    ],
+    [
+     "Gallade",
+     0.1901
+    ],
+    [
+     "Pyroar-Mega",
+     0.1731
+    ],
+    [
+     "Sneasler",
+     0.1476
+    ],
+    [
+     "Farigiraf",
+     0.1434
+    ],
+    [
+     "Golisopod-Mega",
+     0.1101
+    ],
+    [
+     "Crabominable-Mega",
+     0.0967
+    ],
+    [
+     "Absol-Mega-Z",
+     0.091
+    ],
+    [
+     "Kingambit",
+     0.0818
+    ],
+    [
+     "Mawile-Mega",
+     0.0636
+    ]
+   ]
+  },
+  "Kangaskhan": {
+   "usage": 0.0024,
+   "abilities": [
+    [
+     "Scrappy",
+     0.9796
+    ],
+    [
+     "Inner Focus",
+     0.0203
+    ],
+    [
+     "Early Bird",
+     0.0001
+    ]
+   ],
+   "items": [
+    [
+     "Silk Scarf",
+     0.6945
+    ],
+    [
+     "Life Orb",
+     0.2377
+    ],
+    [
+     "Eject Button",
+     0.0225
+    ],
+    [
+     "Leftovers",
+     0.0088
+    ],
+    [
+     "King's Rock",
+     0.0083
+    ],
+    [
+     "Chople Berry",
+     0.0063
+    ],
+    [
+     "Sitrus Berry",
+     0.0054
+    ],
+    [
+     "Wide Lens",
+     0.0046
+    ]
+   ],
+   "moves": [
+    [
+     "Fake Out",
+     0.9881
+    ],
+    [
+     "Last Resort",
+     0.7066
+    ],
+    [
+     "Double-Edge",
+     0.21
+    ],
+    [
+     "Hammer Arm",
+     0.206
+    ],
+    [
+     "Ice Punch",
+     0.1336
+    ],
+    [
+     "Protect",
+     0.0718
+    ],
+    [
+     "Sucker Punch",
+     0.0448
+    ],
+    [
+     "Thunder Punch",
+     0.0353
+    ],
+    [
+     "Disable",
+     0.0305
+    ],
+    [
+     "Body Slam",
+     0.026
+    ],
+    [
+     "Brick Break",
+     0.0252
+    ],
+    [
+     "Rock Slide",
+     0.0214
+    ],
+    [
+     "Low Kick",
+     0.0196
+    ],
+    [
+     "Drain Punch",
+     0.0182
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1668
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1628
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1458
+    ],
+    [
+     "Brave",
+     {
+      "HP": 31,
+      "Atk": 32,
+      "Def": 3,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0938
+    ],
+    [
+     "Brave",
+     {
+      "HP": 29,
+      "Atk": 32,
+      "Def": 5,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.0766
+    ]
+   ],
+   "teammates": [
+    [
+     "Farigiraf",
+     0.5707
+    ],
+    [
+     "Camerupt-Mega",
+     0.2706
+    ],
+    [
+     "Mawile-Mega",
+     0.2344
+    ],
+    [
+     "Kingambit",
+     0.2328
+    ],
+    [
+     "Sylveon",
+     0.2189
+    ],
+    [
+     "Staraptor",
+     0.1682
+    ],
+    [
+     "Whimsicott",
+     0.1476
+    ],
+    [
+     "Garchomp-Mega-Z",
+     0.1171
+    ],
+    [
+     "Chandelure",
+     0.1164
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1114
+    ],
+    [
+     "Conkeldurr",
+     0.1072
+    ],
+    [
+     "Aegislash",
+     0.106
+    ],
+    [
+     "Hydreigon",
+     0.1046
+    ],
+    [
+     "Torkoal",
+     0.0982
+    ]
+   ]
+  },
+  "Ampharos-Mega": {
+   "usage": 0.0023,
+   "abilities": [
+    [
+     "Mold Breaker",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Ampharosite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Dragon Pulse",
+     0.9766
+    ],
+    [
+     "Protect",
+     0.9702
+    ],
+    [
+     "Parabolic Charge",
+     0.501
+    ],
+    [
+     "Thunderbolt",
+     0.4901
+    ],
+    [
+     "Cotton Guard",
+     0.363
+    ],
+    [
+     "Rising Voltage",
+     0.2168
+    ],
+    [
+     "Focus Blast",
+     0.1515
+    ],
+    [
+     "Power Gem",
+     0.0974
+    ],
+    [
+     "Volt Switch",
+     0.0605
+    ],
+    [
+     "Thunder",
+     0.0545
+    ],
+    [
+     "Dazzling Gleam",
+     0.0532
+    ],
+    [
+     "Discharge",
+     0.0423
+    ],
+    [
+     "After You",
+     0.0071
+    ],
+    [
+     "Electric Terrain",
+     0.0026
+    ]
+   ],
+   "spreads": [
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 25,
+      "SpD": 9,
+      "Spe": 0
+     },
+     0.2784
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.2177
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.1569
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0668
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0451
+    ]
+   ],
+   "teammates": [
+    [
+     "Golisopod-Mega",
+     0.4738
+    ],
+    [
+     "Indeedee-F",
+     0.408
+    ],
+    [
+     "Farigiraf",
+     0.3424
+    ],
+    [
+     "Armarouge",
+     0.3002
+    ],
+    [
+     "Pincurchin",
+     0.2467
+    ],
+    [
+     "Mudsdale",
+     0.2351
+    ],
+    [
+     "Incineroar",
+     0.2346
+    ],
+    [
+     "Squawkabilly",
+     0.2231
+    ],
+    [
+     "Rillaboom",
+     0.1488
+    ],
+    [
+     "Ninetales-Alola",
+     0.0984
+    ],
+    [
+     "Basculegion",
+     0.0892
+    ],
+    [
+     "Hatterene",
+     0.0889
+    ],
+    [
+     "Torkoal",
+     0.0875
+    ],
+    [
+     "Sylveon",
+     0.0812
+    ]
+   ]
+  },
+  "Gyarados-Mega": {
+   "usage": 0.0023,
+   "abilities": [
+    [
+     "Mold Breaker",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Gyaradosite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.966
+    ],
+    [
+     "Waterfall",
+     0.9625
+    ],
+    [
+     "Dragon Dance",
+     0.8656
+    ],
+    [
+     "Crunch",
+     0.6028
+    ],
+    [
+     "Lash Out",
+     0.3165
+    ],
+    [
+     "Earthquake",
+     0.1087
+    ],
+    [
+     "Ice Fang",
+     0.0782
+    ],
+    [
+     "Power Whip",
+     0.0217
+    ],
+    [
+     "Iron Head",
+     0.0152
+    ],
+    [
+     "Avalanche",
+     0.0148
+    ],
+    [
+     "Temper Flare",
+     0.0116
+    ],
+    [
+     "Thunder Wave",
+     0.0112
+    ],
+    [
+     "Aqua Tail",
+     0.011
+    ],
+    [
+     "Taunt",
+     0.0057
+    ]
+   ],
+   "spreads": [
+    [
+     "Adamant",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0931
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.081
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 9,
+      "Atk": 25,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0804
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 19,
+      "Atk": 15,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 1,
+      "Spe": 30
+     },
+     0.0791
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 26,
+      "Atk": 22,
+      "Def": 5,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 13
+     },
+     0.0727
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.3367
+    ],
+    [
+     "Sneasler",
+     0.3026
+    ],
+    [
+     "Volcarona",
+     0.2689
+    ],
+    [
+     "Gholdengo",
+     0.2382
+    ],
+    [
+     "Farigiraf",
+     0.1615
+    ],
+    [
+     "Froslass-Mega",
+     0.1595
+    ],
+    [
+     "Corviknight",
+     0.0981
+    ],
+    [
+     "Kingambit",
+     0.0947
+    ],
+    [
+     "Indeedee-F",
+     0.0909
+    ],
+    [
+     "Sinistcha",
+     0.0892
+    ],
+    [
+     "Incineroar",
+     0.0873
+    ],
+    [
+     "Indeedee",
+     0.0852
+    ],
+    [
+     "Ninetales-Alola",
+     0.0816
+    ],
+    [
+     "Talonflame",
+     0.0772
+    ]
+   ]
+  },
+  "Slowking-Galar": {
+   "usage": 0.0023,
+   "abilities": [
+    [
+     "Regenerator",
+     0.8808
+    ],
+    [
+     "Curious Medicine",
+     0.1189
+    ],
+    [
+     "Own Tempo",
+     0.0003
+    ]
+   ],
+   "items": [
+    [
+     "Colbur Berry",
+     0.2188
+    ],
+    [
+     "Sitrus Berry",
+     0.1948
+    ],
+    [
+     "Leftovers",
+     0.1771
+    ],
+    [
+     "Life Orb",
+     0.1349
+    ],
+    [
+     "Eject Button",
+     0.0813
+    ],
+    [
+     "Mental Herb",
+     0.0628
+    ],
+    [
+     "Rocky Helmet",
+     0.0457
+    ],
+    [
+     "Air Balloon",
+     0.0185
+    ]
+   ],
+   "moves": [
+    [
+     "Trick Room",
+     0.7227
+    ],
+    [
+     "Sludge Bomb",
+     0.5869
+    ],
+    [
+     "Chilly Reception",
+     0.5512
+    ],
+    [
+     "Protect",
+     0.4339
+    ],
+    [
+     "Psychic",
+     0.3126
+    ],
+    [
+     "Expanding Force",
+     0.2094
+    ],
+    [
+     "Psychic Noise",
+     0.1298
+    ],
+    [
+     "Power Gem",
+     0.1142
+    ],
+    [
+     "Flamethrower",
+     0.0919
+    ],
+    [
+     "Acid Spray",
+     0.0868
+    ],
+    [
+     "Toxic",
+     0.0867
+    ],
+    [
+     "Yawn",
+     0.0829
+    ],
+    [
+     "Eerie Spell",
+     0.0767
+    ],
+    [
+     "Heal Pulse",
+     0.067
+    ]
+   ],
+   "spreads": [
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 5,
+      "SpA": 19,
+      "SpD": 10,
+      "Spe": 0
+     },
+     0.0819
+    ],
+    [
+     "Calm",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 21,
+      "SpA": 0,
+      "SpD": 13,
+      "Spe": 0
+     },
+     0.0791
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 2,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0754
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0735
+    ],
+    [
+     "Sassy",
+     {
+      "HP": 29,
+      "Atk": 0,
+      "Def": 26,
+      "SpA": 1,
+      "SpD": 10,
+      "Spe": 0
+     },
+     0.0506
+    ]
+   ],
+   "teammates": [
+    [
+     "Incineroar",
+     0.3474
+    ],
+    [
+     "Rillaboom",
+     0.3424
+    ],
+    [
+     "Golisopod-Mega",
+     0.3367
+    ],
+    [
+     "Politoed",
+     0.1855
+    ],
+    [
+     "Gengar-Mega",
+     0.1714
+    ],
+    [
+     "Baxcalibur-Mega",
+     0.1582
+    ],
+    [
+     "Kingambit",
+     0.1338
+    ],
+    [
+     "Pawmot",
+     0.1238
+    ],
+    [
+     "Primarina",
+     0.1056
+    ],
+    [
+     "Hydreigon",
+     0.0938
+    ],
+    [
+     "Indeedee-F",
+     0.0916
+    ],
+    [
+     "Floette-Mega",
+     0.0864
+    ],
+    [
+     "Sinistcha",
+     0.0861
+    ],
+    [
+     "Sneasler",
+     0.0815
+    ]
+   ]
+  },
+  "Drampa-Mega": {
+   "usage": 0.0022,
+   "abilities": [
+    [
+     "Berserk",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Drampanite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Protect",
+     0.7972
+    ],
+    [
+     "Hyper Voice",
+     0.787
+    ],
+    [
+     "Earth Power",
+     0.567
+    ],
+    [
+     "Dragon Pulse",
+     0.5312
+    ],
+    [
+     "Draco Meteor",
+     0.3015
+    ],
+    [
+     "Heat Wave",
+     0.2244
+    ],
+    [
+     "Calm Mind",
+     0.2193
+    ],
+    [
+     "Thunderbolt",
+     0.2094
+    ],
+    [
+     "Flamethrower",
+     0.1125
+    ],
+    [
+     "Roost",
+     0.0413
+    ],
+    [
+     "Fire Blast",
+     0.038
+    ],
+    [
+     "Energy Ball",
+     0.0286
+    ],
+    [
+     "Ice Beam",
+     0.0283
+    ],
+    [
+     "Thunder",
+     0.0218
+    ]
+   ],
+   "spreads": [
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.3648
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.2405
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0989
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 0
+     },
+     0.0488
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 30,
+      "SpD": 0,
+      "Spe": 4
+     },
+     0.0242
+    ]
+   ],
+   "teammates": [
+    [
+     "Farigiraf",
+     0.5219
+    ],
+    [
+     "Indeedee-F",
+     0.3702
+    ],
+    [
+     "Golisopod-Mega",
+     0.3418
+    ],
+    [
+     "Torkoal",
+     0.2587
+    ],
+    [
+     "Hatterene",
+     0.1991
+    ],
+    [
+     "Incineroar",
+     0.1909
+    ],
+    [
+     "Kingambit",
+     0.1699
+    ],
+    [
+     "Primarina",
+     0.1281
+    ],
+    [
+     "Gholdengo",
+     0.1276
+    ],
+    [
+     "Sinistcha",
+     0.1252
+    ],
+    [
+     "Rillaboom",
+     0.0932
+    ],
+    [
+     "Perrserker",
+     0.091
+    ],
+    [
+     "Aerodactyl-Mega",
+     0.091
+    ],
+    [
+     "Oranguru",
+     0.0906
+    ]
+   ]
+  },
+  "Hippowdon": {
+   "usage": 0.0022,
+   "abilities": [
+    [
+     "Sand Stream",
+     0.9981
+    ],
+    [
+     "Sand Force",
+     0.0019
+    ]
+   ],
+   "items": [
+    [
+     "Leftovers",
+     0.5993
+    ],
+    [
+     "Sitrus Berry",
+     0.3012
+    ],
+    [
+     "Rocky Helmet",
+     0.0411
+    ],
+    [
+     "Passho Berry",
+     0.0279
+    ],
+    [
+     "Life Orb",
+     0.0104
+    ],
+    [
+     "Iron Ball",
+     0.0059
+    ],
+    [
+     "Soft Sand",
+     0.0036
+    ],
+    [
+     "Psychic Seed",
+     0.0034
+    ]
+   ],
+   "moves": [
+    [
+     "High Horsepower",
+     0.8275
+    ],
+    [
+     "Protect",
+     0.7527
+    ],
+    [
+     "Yawn",
+     0.6626
+    ],
+    [
+     "Slack Off",
+     0.3521
+    ],
+    [
+     "Stealth Rock",
+     0.3103
+    ],
+    [
+     "Ice Fang",
+     0.262
+    ],
+    [
+     "Rock Slide",
+     0.2066
+    ],
+    [
+     "Stone Edge",
+     0.1535
+    ],
+    [
+     "Helping Hand",
+     0.0889
+    ],
+    [
+     "Earthquake",
+     0.0866
+    ],
+    [
+     "Sand Tomb",
+     0.085
+    ],
+    [
+     "Heavy Slam",
+     0.0512
+    ],
+    [
+     "Roar",
+     0.0364
+    ],
+    [
+     "Rock Tomb",
+     0.0326
+    ]
+   ],
+   "spreads": [
+    [
+     "Careful",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.2891
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0885
+    ],
+    [
+     "Careful",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 16,
+      "SpA": 0,
+      "SpD": 18,
+      "Spe": 0
+     },
+     0.0873
+    ],
+    [
+     "Relaxed",
+     {
+      "HP": 32,
+      "Atk": 4,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 28,
+      "Spe": 0
+     },
+     0.0725
+    ],
+    [
+     "Brave",
+     {
+      "HP": 25,
+      "Atk": 8,
+      "Def": 1,
+      "SpA": 0,
+      "SpD": 32,
+      "Spe": 0
+     },
+     0.0516
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.4913
+    ],
+    [
+     "Incineroar",
+     0.4039
+    ],
+    [
+     "Salamence-Mega",
+     0.2809
+    ],
+    [
+     "Glimmora",
+     0.2471
+    ],
+    [
+     "Kingambit",
+     0.2214
+    ],
+    [
+     "Gengar-Mega",
+     0.2166
+    ],
+    [
+     "Gholdengo",
+     0.164
+    ],
+    [
+     "Glimmora-Mega",
+     0.1637
+    ],
+    [
+     "Staraptor-Mega",
+     0.1613
+    ],
+    [
+     "Volcarona",
+     0.1462
+    ],
+    [
+     "Meganium-Mega",
+     0.1362
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.1284
+    ],
+    [
+     "Golisopod-Mega",
+     0.1203
+    ],
+    [
+     "Milotic",
+     0.1192
+    ]
+   ]
+  },
+  "Arcanine": {
+   "usage": 0.0022,
+   "abilities": [
+    [
+     "Intimidate",
+     0.9044
+    ],
+    [
+     "Justified",
+     0.0863
+    ],
+    [
+     "Flash Fire",
+     0.0093
+    ]
+   ],
+   "items": [
+    [
+     "Sitrus Berry",
+     0.5057
+    ],
+    [
+     "Passho Berry",
+     0.2787
+    ],
+    [
+     "Leftovers",
+     0.0607
+    ],
+    [
+     "Rocky Helmet",
+     0.0402
+    ],
+    [
+     "Focus Sash",
+     0.0247
+    ],
+    [
+     "Choice Scarf",
+     0.018
+    ],
+    [
+     "Air Balloon",
+     0.0143
+    ],
+    [
+     "Wide Lens",
+     0.0126
+    ]
+   ],
+   "moves": [
+    [
+     "Extreme Speed",
+     0.7775
+    ],
+    [
+     "Will-O-Wisp",
+     0.5544
+    ],
+    [
+     "Flare Blitz",
+     0.5433
+    ],
+    [
+     "Protect",
+     0.5098
+    ],
+    [
+     "Snarl",
+     0.4854
+    ],
+    [
+     "Howl",
+     0.3135
+    ],
+    [
+     "Burn Up",
+     0.3053
+    ],
+    [
+     "Morning Sun",
+     0.0765
+    ],
+    [
+     "Close Combat",
+     0.072
+    ],
+    [
+     "Helping Hand",
+     0.0539
+    ],
+    [
+     "Temper Flare",
+     0.0523
+    ],
+    [
+     "Wild Charge",
+     0.042
+    ],
+    [
+     "Heat Wave",
+     0.0375
+    ],
+    [
+     "Flamethrower",
+     0.0346
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 32
+     },
+     0.2829
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 31,
+      "Atk": 3,
+      "Def": 3,
+      "SpA": 0,
+      "SpD": 29,
+      "Spe": 0
+     },
+     0.1563
+    ],
+    [
+     "Careful",
+     {
+      "HP": 31,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 0,
+      "SpD": 10,
+      "Spe": 23
+     },
+     0.0331
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 28,
+      "Def": 4,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0296
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0278
+    ]
+   ],
+   "teammates": [
+    [
+     "Rillaboom",
+     0.3784
+    ],
+    [
+     "Metagross-Mega",
+     0.3412
+    ],
+    [
+     "Araquanid",
+     0.3105
+    ],
+    [
+     "Grimmsnarl",
+     0.3085
+    ],
+    [
+     "Kingambit",
+     0.2816
+    ],
+    [
+     "Sneasler",
+     0.2792
+    ],
+    [
+     "Bellibolt",
+     0.261
+    ],
+    [
+     "Raichu-Mega-Y",
+     0.2324
+    ],
+    [
+     "Tyranitar",
+     0.2217
+    ],
+    [
+     "Baxcalibur-Mega",
+     0.1992
+    ],
+    [
+     "Basculegion",
+     0.1052
+    ],
+    [
+     "Indeedee-F",
+     0.0962
+    ],
+    [
+     "Whimsicott",
+     0.0872
+    ],
+    [
+     "Salamence-Mega",
+     0.0855
+    ]
+   ]
+  },
+  "Abomasnow-Mega": {
+   "usage": 0.0022,
+   "abilities": [
+    [
+     "Snow Warning",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Abomasite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Blizzard",
+     0.9854
+    ],
+    [
+     "Earth Power",
+     0.8494
+    ],
+    [
+     "Energy Ball",
+     0.567
+    ],
+    [
+     "Ice Shard",
+     0.4929
+    ],
+    [
+     "Protect",
+     0.4024
+    ],
+    [
+     "Giga Drain",
+     0.1846
+    ],
+    [
+     "Low Kick",
+     0.1607
+    ],
+    [
+     "Wood Hammer",
+     0.1265
+    ],
+    [
+     "Aurora Veil",
+     0.0875
+    ],
+    [
+     "Leaf Storm",
+     0.0613
+    ],
+    [
+     "Grassy Glide",
+     0.0347
+    ],
+    [
+     "Grass Knot",
+     0.0122
+    ],
+    [
+     "Ice Hammer",
+     0.0087
+    ],
+    [
+     "Curse",
+     0.0048
+    ]
+   ],
+   "spreads": [
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.2657
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 2,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.2091
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 1,
+      "Spe": 0
+     },
+     0.1836
+    ],
+    [
+     "Quiet",
+     {
+      "HP": 32,
+      "Atk": 2,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.1502
+    ],
+    [
+     "Modest",
+     {
+      "HP": 32,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0279
+    ]
+   ],
+   "teammates": [
+    [
+     "Farigiraf",
+     0.4224
+    ],
+    [
+     "Indeedee-F",
+     0.3997
+    ],
+    [
+     "Camerupt-Mega",
+     0.368
+    ],
+    [
+     "Maushold",
+     0.3345
+    ],
+    [
+     "Incineroar",
+     0.3136
+    ],
+    [
+     "Basculegion",
+     0.2557
+    ],
+    [
+     "Armarouge",
+     0.2447
+    ],
+    [
+     "Kingambit",
+     0.2333
+    ],
+    [
+     "Salamence-Mega",
+     0.1812
+    ],
+    [
+     "Sylveon",
+     0.1688
+    ],
+    [
+     "Hatterene",
+     0.1616
+    ],
+    [
+     "Annihilape",
+     0.1179
+    ],
+    [
+     "Primarina",
+     0.0915
+    ],
+    [
+     "Volcarona",
+     0.088
+    ]
+   ]
+  },
+  "Sceptile-Mega": {
+   "usage": 0.002,
+   "abilities": [
+    [
+     "Lightning Rod",
+     1.0
+    ]
+   ],
+   "items": [
+    [
+     "Sceptilite",
+     1.0
+    ]
+   ],
+   "moves": [
+    [
+     "Dragon Pulse",
+     0.9815
+    ],
+    [
+     "Earth Power",
+     0.916
+    ],
+    [
+     "Protect",
+     0.75
+    ],
+    [
+     "Energy Ball",
+     0.3638
+    ],
+    [
+     "Shed Tail",
+     0.3308
+    ],
+    [
+     "Leaf Storm",
+     0.2567
+    ],
+    [
+     "Detect",
+     0.2323
+    ],
+    [
+     "Giga Drain",
+     0.083
+    ],
+    [
+     "Vacuum Wave",
+     0.0134
+    ],
+    [
+     "Grass Knot",
+     0.0115
+    ],
+    [
+     "Leaf Blade",
+     0.0073
+    ],
+    [
+     "Substitute",
+     0.0069
+    ],
+    [
+     "Trailblaze",
+     0.0053
+    ],
+    [
+     "Dragon Claw",
+     0.0049
+    ]
+   ],
+   "spreads": [
+    [
+     "Timid",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.5276
+    ],
+    [
+     "Modest",
+     {
+      "HP": 2,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.1107
+    ],
+    [
+     "Modest",
+     {
+      "HP": 10,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 31,
+      "SpD": 0,
+      "Spe": 25
+     },
+     0.0588
+    ],
+    [
+     "Timid",
+     {
+      "HP": 11,
+      "Atk": 0,
+      "Def": 0,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 23
+     },
+     0.0248
+    ],
+    [
+     "Timid",
+     {
+      "HP": 10,
+      "Atk": 0,
+      "Def": 1,
+      "SpA": 32,
+      "SpD": 0,
+      "Spe": 23
+     },
+     0.0222
+    ]
+   ],
+   "teammates": [
+    [
+     "Sneasler",
+     0.4326
+    ],
+    [
+     "Indeedee-F",
+     0.3868
+    ],
+    [
+     "Kingambit",
+     0.3244
+    ],
+    [
+     "Delphox-Mega",
+     0.2907
+    ],
+    [
+     "Kommo-o",
+     0.2794
+    ],
+    [
+     "Rotom-Heat",
+     0.2629
+    ],
+    [
+     "Incineroar",
+     0.1818
+    ],
+    [
+     "Farigiraf",
+     0.1102
+    ],
+    [
+     "Milotic",
+     0.1066
+    ],
+    [
+     "Rotom-Wash",
+     0.098
+    ],
+    [
+     "Garchomp",
+     0.0886
+    ],
+    [
+     "Pelipper",
+     0.0798
+    ],
+    [
+     "Rillaboom",
+     0.0773
+    ],
+    [
+     "Metagross-Mega",
+     0.0679
+    ]
+   ]
+  },
+  "Mudsdale": {
+   "usage": 0.002,
+   "abilities": [
+    [
+     "Inner Focus",
+     0.7613
+    ],
+    [
+     "Stamina",
+     0.197
+    ],
+    [
+     "Own Tempo",
+     0.0417
+    ]
+   ],
+   "items": [
+    [
+     "Life Orb",
+     0.7264
+    ],
+    [
+     "Leftovers",
+     0.1332
+    ],
+    [
+     "Soft Sand",
+     0.0424
+    ],
+    [
+     "Expert Belt",
+     0.028
+    ],
+    [
+     "Lum Berry",
+     0.0194
+    ],
+    [
+     "Sitrus Berry",
+     0.0141
+    ],
+    [
+     "Rocky Helmet",
+     0.0085
+    ],
+    [
+     "Rindo Berry",
+     0.0084
+    ]
+   ],
+   "moves": [
+    [
+     "High Horsepower",
+     0.9596
+    ],
+    [
+     "Protect",
+     0.9003
+    ],
+    [
+     "Rock Slide",
+     0.8176
+    ],
+    [
+     "Heavy Slam",
+     0.8139
+    ],
+    [
+     "Earthquake",
+     0.2054
+    ],
+    [
+     "Body Press",
+     0.16
+    ],
+    [
+     "Close Combat",
+     0.03
+    ],
+    [
+     "Low Kick",
+     0.0264
+    ],
+    [
+     "Curse",
+     0.0185
+    ],
+    [
+     "Smack Down",
+     0.0124
+    ],
+    [
+     "Iron Defense",
+     0.0108
+    ],
+    [
+     "Roar",
+     0.0095
+    ],
+    [
+     "Fissure",
+     0.0062
+    ],
+    [
+     "Stone Edge",
+     0.006
+    ]
+   ],
+   "spreads": [
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.4089
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 0
+     },
+     0.2279
+    ],
+    [
+     "Jolly",
+     {
+      "HP": 2,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 0,
+      "Spe": 32
+     },
+     0.0476
+    ],
+    [
+     "Brave",
+     {
+      "HP": 32,
+      "Atk": 6,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 28,
+      "Spe": 0
+     },
+     0.045
+    ],
+    [
+     "Adamant",
+     {
+      "HP": 32,
+      "Atk": 32,
+      "Def": 0,
+      "SpA": 0,
+      "SpD": 2,
+      "Spe": 0
+     },
+     0.0364
+    ]
+   ],
+   "teammates": [
+    [
+     "Indeedee-F",
+     0.4648
+    ],
+    [
+     "Golisopod-Mega",
+     0.4032
+    ],
+    [
+     "Armarouge",
+     0.3228
+    ],
+    [
+     "Sneasler",
+     0.2859
+    ],
+    [
+     "Ampharos-Mega",
+     0.271
+    ],
+    [
+     "Squawkabilly",
+     0.2604
+    ],
+    [
+     "Farigiraf",
+     0.2284
+    ],
+    [
+     "Incineroar",
+     0.221
+    ],
+    [
+     "Basculegion",
+     0.1527
+    ],
+    [
+     "Salamence-Mega",
+     0.1504
+    ],
+    [
+     "Gardevoir-Mega",
+     0.1369
+    ],
+    [
+     "Araquanid",
+     0.1309
+    ],
+    [
+     "Torkoal",
+     0.1196
+    ],
+    [
+     "Dragonite-Mega",
+     0.0835
+    ]
+   ]
   }
  }
 }

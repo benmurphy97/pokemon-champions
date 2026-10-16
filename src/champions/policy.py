@@ -13,9 +13,10 @@ from torch import nn
 
 from champions.encoding import GLOBAL_NUM, MON_NUM, N_MOVE_SLOTS, N_TOKENS, N_ACTIONS, SWITCH_BASE
 from champions.vocab import (ABILITIES, ITEMS, MOVE_CATS, MOVE_NUM, MOVES, NUM_ABILITIES, NUM_ITEMS,
-                             NUM_MOVES, NUM_SPECIES, SPECIES_STATS, SPECIES_TYPES, TARGETS, TYPES)
+                             NUM_MOVES, NUM_SPECIES, SPECIES_STATS, SPECIES_TYPES, TARGETS, TYPES, TYPE_CHART)
 
 N_TARGET_CLASSES = 4
+DAMAGE_FEATURES = 9
 
 
 class PolicyNet(nn.Module):
@@ -27,6 +28,7 @@ class PolicyNet(nn.Module):
         self.register_buffer("species_stats", torch.as_tensor(SPECIES_STATS))
         self.register_buffer("move_cats", torch.as_tensor(MOVE_CATS))
         self.register_buffer("move_num", torch.as_tensor(MOVE_NUM))
+        self.register_buffer("type_chart", torch.as_tensor(TYPE_CHART))
 
         self.species_emb = nn.Embedding(NUM_SPECIES, dim)
         self.item_emb = nn.Embedding(NUM_ITEMS, dim)
@@ -52,6 +54,10 @@ class PolicyNet(nn.Module):
         self.move_out = nn.Embedding(NUM_MOVES, dim, padding_idx=0)
         self.move_query = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, dim))
         self.switch_query = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, dim))
+        # Damage-awareness: facts about each move against each foe (type effectiveness, same-type
+        # bonus, attack-vs-defence ratio) are inputs; what to do with them is learned.
+        self.damage_scalar = nn.Sequential(nn.Linear(DAMAGE_FEATURES, 32), nn.GELU(), nn.Linear(32, 1))
+        self.damage_context = nn.Linear(DAMAGE_FEATURES, dim)
         self.target_head = nn.Sequential(nn.Linear(2 * dim, dim), nn.GELU(), nn.Linear(dim, N_TARGET_CLASSES))
 
     def move_table(self) -> torch.Tensor:
@@ -84,6 +90,37 @@ class PolicyNet(nn.Module):
         marker[rows, actor[rows]] = self.actor_emb
         return x + marker
 
+    def damage_features(self, b: dict) -> torch.Tensor:
+        """[B, NUM_MOVES, DAMAGE_FEATURES]: how each move would fare against the two foes on the field."""
+        species, numbers = b["species"], b["numbers"]
+        rows = torch.arange(species.shape[0], device=species.device)
+        actor = b["actor"].clamp(min=0)
+        a_types, a_stats = self.species_types[species[rows, actor]], self.species_stats[species[rows, actor]]
+        has_actor = (b["actor"] >= 0).float()
+
+        move_type, category = self.move_cats[:, 0], self.move_cats[:, 1]      # [M]
+        power = self.move_num[:, 0]
+        attacking = (category <= 2).float()                                   # physical or special
+        special = (category == 2).long()
+        stab = ((move_type[None, :] == a_types[:, :1]) | (move_type[None, :] == a_types[:, 1:])) & (move_type[None, :] > 0)
+
+        feats = []
+        for flag in (2, 3):                                                   # foe in slot a, then slot b
+            flags = numbers[:, 6:, flag] * (1 - numbers[:, 6:, 1])            # on the field and not fainted
+            present, which = flags.max(dim=1)
+            foe = species[rows, 6 + which]
+            f_types, f_stats = self.species_types[foe], self.species_stats[foe]
+            eff = (self.type_chart[move_type[None, :, None], f_types[:, None, :]]).prod(-1)       # [B, M]
+            atk = torch.where(special[None, :] == 1, a_stats[:, 3:4], a_stats[:, 1:2])           # [B, M]
+            dfn = torch.where(special[None, :] == 1, f_stats[:, 4:5], f_stats[:, 2:3])
+            ratio = (atk / dfn.clamp(min=0.05)).clamp(0.2, 4.0)
+            damage = power[None, :] * (1 + 0.5 * stab.float()) * eff * ratio * attacking[None, :]
+            on = (present > 0.5).float()[:, None] * has_actor[:, None]
+            feats += [eff * on, ratio * on / 4, damage * on]
+        feats += [stab.float() * has_actor[:, None], power[None, :].expand(species.shape[0], -1) * attacking[None, :],
+                  (1 - attacking)[None, :].expand(species.shape[0], -1)]
+        return torch.stack(feats, dim=-1)
+
     def forward(self, b: dict, target_for_move: torch.Tensor | None = None):
         """Return (action logits [B, N_ACTIONS], target logits [B, 4]).
 
@@ -97,7 +134,10 @@ class PolicyNet(nn.Module):
         out = self.out_norm(self.encoder(seq, src_key_padding_mask=pad))
         q, own = out[:, 0], out[:, 2:8]
 
-        move_logits = self.move_query(q) @ self.move_table().T                           # [B, NUM_MOVES]
+        damage = self.damage_features(b)
+        move_logits = (self.move_query(q) @ self.move_table().T                           # [B, NUM_MOVES]
+                       + self.damage_scalar(damage).squeeze(-1)
+                       + torch.einsum("bmd,bd->bm", self.damage_context(damage), q) / self.dim ** 0.5)
         switch_logits = torch.einsum("bd,bkd->bk", self.switch_query(q), own)             # [B, 6]
         logits = torch.cat([move_logits, switch_logits], dim=-1).masked_fill(~b["mask"], -1e9)
 

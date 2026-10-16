@@ -28,6 +28,21 @@ Showdown replays ──import_replays──► cache/raw/*.json.gz        full l
 
 A Pokémon that flinched, slept or was fully paralysed shows no move, so that choice is skipped. Moves triggered by other effects (Sleep Talk, Dancer, a locked-in Outrage) were not chosen that turn. Pivot switches (U-turn) and replacements after a faint are recorded as separate "replacement" decisions.
 
+## Results so far
+
+Trained on 1,486 ladder games (41,000 decisions, rating 1300+), 8 epochs, about 1 minute on CPU. Win rates are from the arena over 600 paired games.
+
+| Model | Top-1 accuracy | Top-3 | vs random | vs greedy |
+|---|---|---|---|---|
+| Most-common-action baseline | 15.0% | | | |
+| 300 games | 26.0% | 52% | ~50% | 11% |
+| 1,486 games | 37.0% | 73% | 51.5% (47.5–55.5) | 14.8% (12.2–17.9) |
+| 1,486 games + damage features | 39.5% | 74% | 63.2% (59.2–66.9) | 18.5% (15.6–21.8) |
+
+- **Accuracy at copying humans is not the same as playing well.** The policy copies the ladder's mix (about 52% attacks, 36% status and Protect, 4% switches) but picks attacks worse than the greedy agent, which beats random 95%+.
+- **Damage features** (type effectiveness, same-type bonus, attack/defence ratio of each move against each foe) are inputs, not rules: the network still learns what to do with them. They gave the largest single gain.
+- **Imitation alone is unlikely to beat greedy at this data size.** More data helps gradually; reinforcement learning in the simulator, using the win/loss result, is the route to going beyond what the replays show.
+
 ## Running it
 
 ```bash

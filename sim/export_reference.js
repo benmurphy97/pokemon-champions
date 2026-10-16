@@ -56,11 +56,22 @@ for (const i of legalItems) {
 	items[i.name] = i.megaStone ? {megaStone: true, megaEvolves: i.megaEvolves} : {};
 }
 
+// Type chart: typeChart[attacking][defending] = damage multiplier (0, 0.5, 1 or 2).
+const typeChart = {};
+const MULTIPLIER = [1, 2, 0.5, 0]; // damageTaken codes: 0 neutral, 1 weak, 2 resists, 3 immune
+for (const attacker of dex.types.all()) {
+	typeChart[attacker.name] = {};
+	for (const defender of dex.types.all()) {
+		typeChart[attacker.name][defender.name] = MULTIPLIER[defender.damageTaken[attacker.name] || 0];
+	}
+}
+
 fs.mkdirSync(OUT, {recursive: true});
 const write = (name, data) => fs.writeFileSync(path.join(OUT, name), JSON.stringify(data, null, 1) + '\n');
 write('pokemon.json', pokemon);
 write('moves.json', moves);
 write('items.json', items);
+write('typechart.json', typeChart);
 write('meta.json', {format: FORMAT_ID, mod: format.mod, species: Object.keys(pokemon).length,
 	moves: Object.keys(moves).length, items: Object.keys(items).length});
 console.log(`pokemon ${Object.keys(pokemon).length}, moves ${Object.keys(moves).length}, items ${Object.keys(items).length}`);

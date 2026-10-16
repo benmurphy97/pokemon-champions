@@ -48,3 +48,22 @@ class PolicyTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+@unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
+class DamageFeatureTest(unittest.TestCase):
+    def test_type_effectiveness_features_match_the_type_chart(self):
+        from champions.decisions import extract
+        from champions.policy import PolicyNet
+        from champions.train_il import KEYS
+        from champions.vocab import MOVE_ID, SPECIES
+        examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
+        batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in examples])) for k in KEYS}
+        features = PolicyNet(dim=32, layers=1, heads=2).damage_features(batch)
+        # Raichu (Electric) facing Indeedee-F (Psychic/Normal) and Meowstic-F (Psychic) on turn 1
+        i = next(n for n, e in enumerate(examples)
+                 if SPECIES[int(e["arrays"]["species"][int(e["arrays"]["actor"])])] == "Raichu")
+        focus_blast, protect = features[i, MOVE_ID["Focus Blast"]], features[i, MOVE_ID["Protect"]]
+        self.assertAlmostEqual(float(focus_blast[0]), 1.0)   # Fighting vs Psychic/Normal: 0.5 * 2
+        self.assertAlmostEqual(float(focus_blast[3]), 0.5)   # Fighting vs Psychic
+        self.assertEqual(float(protect[2]), 0.0)             # a status move deals no damage

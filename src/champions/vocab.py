@@ -66,4 +66,11 @@ for _name, _mon in _pokemon.items():
         if _m in MOVE_ID:
             LEARNABLE[SPECIES_ID[_name], MOVE_ID[_m]] = True
 
+# TYPE_CHART[attacking id, defending id] = damage multiplier; id 0 (no type) is neutral both ways.
+_chart = _load("typechart.json")
+TYPE_CHART = np.ones((len(TYPES) + 1, len(TYPES) + 1), dtype=np.float32)
+for _a in TYPES:
+    for _d in TYPES:
+        TYPE_CHART[_type_id(_a), _type_id(_d)] = _chart[_a][_d]
+
 NUM_SPECIES, NUM_MOVES, NUM_ITEMS, NUM_ABILITIES = len(SPECIES), len(MOVES), len(ITEMS), len(ABILITIES)

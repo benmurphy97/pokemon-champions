@@ -7,10 +7,14 @@ minutes of play, so we sample pages spread evenly over the last N days rather th
 backwards from now. For each game we keep the six Pokémon on each side, the leads, which were
 brought, Mega Evolutions, moves seen and the winner. Player names are not stored.
 
-Output: cache/replays-<regulation>.jsonl (one game per line; re-runs skip games already saved).
+Output:
+  cache/replays-<regulation>.jsonl   one compact record per game (used by replay_check)
+  cache/raw/<id>.json.gz             the full log, needed to learn from the players' decisions
+Re-runs skip games already saved.
 """
 
 import argparse
+import gzip
 import json
 import re
 import time
@@ -21,9 +25,10 @@ from champions.config import FORMAT_ID, REGULATION
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "cache" / f"replays-{REGULATION.lower()}.jsonl"
+RAW_DIR = ROOT / "cache" / "raw"
 SITE = "https://replay.pokemonshowdown.com"
 USER_AGENT = "champions-team-research/0.1 (personal project; 1 request/second)"
-DELAY_SECONDS = 1.0
+DELAY_SECONDS = 1.0  # overridden by --delay
 
 MEGA_SUFFIX = re.compile(r"-Mega(-[XYZ])?$")
 
@@ -106,24 +111,33 @@ def main():
     parser.add_argument("--step-hours", type=float, default=2.0, help="gap between sampled search pages")
     parser.add_argument("--min-rating", type=int, default=1300)
     parser.add_argument("--max-games", type=int, default=1500)
+    parser.add_argument("--delay", type=float, default=1.0, help="seconds between requests")
     args = parser.parse_args()
 
+    global DELAY_SECONDS
+    DELAY_SECONDS = args.delay
     OUT.parent.mkdir(exist_ok=True)
-    have = {json.loads(line)["id"] for line in OUT.read_text().splitlines()} if OUT.exists() else set()
+    RAW_DIR.mkdir(exist_ok=True)
+    have_record = {json.loads(line)["id"] for line in OUT.read_text().splitlines()} if OUT.exists() else set()
+    have_raw = {p.name.removesuffix(".json.gz") for p in RAW_DIR.glob("*.json.gz")}
 
-    games = [g for g in list_games(args.days, args.step_hours, args.min_rating) if g["id"] not in have]
+    games = [g for g in list_games(args.days, args.step_hours, args.min_rating) if g["id"] not in have_raw]
     games = games[: args.max_games]
-    print(f"{len(games)} new games to download (rating ≥ {args.min_rating}, {len(have)} already saved)", flush=True)
+    print(f"{len(games)} games to download (rating ≥ {args.min_rating}; "
+          f"{len(have_raw)} full logs already saved)", flush=True)
 
     for i, game in enumerate(games, 1):
         try:
-            record = parse_replay(fetch_json(f"{SITE}/{game['id']}.json"))
+            replay = fetch_json(f"{SITE}/{game['id']}.json")
+            record = parse_replay(replay)
         except (OSError, ValueError, KeyError) as err:
             print(f"  skip {game['id']}: {err}", flush=True)
             continue
         finally:
             time.sleep(DELAY_SECONDS)
-        if record:
+        with gzip.open(RAW_DIR / f"{game['id']}.json.gz", "wt") as f:
+            json.dump({k: replay[k] for k in ("id", "log", "rating", "uploadtime")}, f)
+        if record and game["id"] not in have_record:
             with OUT.open("a") as f:
                 f.write(json.dumps(record) + "\n")
         if i % 100 == 0:

@@ -25,6 +25,11 @@ src/champions/      Python package: team format, config, (later) search and anal
   config.py         Regulation, format ID, stat-point rules — the one place to edit per regulation
   teams.py          Read/write Showdown team text, check structural rules
   simulate.py       Python wrapper: run_battles(), validate_team()
+  battle_state.py   Reads battle protocol lines (replays or live sim) into what a player can see
+  vocab.py / encoding.py   Names -> ids, and a battle state -> arrays for the network
+  decisions.py      Pulls each player's choices out of a replay log (training examples)
+  policy.py         The policy network (small transformer; scores moves and switches)
+  train_il.py       Imitation learning: train the policy on replay decisions
   import_stats.py   Download Smogon ladder stats into data/meta/ (usage, sets, spreads, teammates)
   meta.py           Build realistic opponent teams from those stats
   calibrate.py      Compare simulated strength with ladder popularity
@@ -49,7 +54,8 @@ Needs Node and Python 3.
 
 ```bash
 ./scripts/setup_showdown.sh                      # once: fetch and build the engine
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+python3 -m venv .venv && .venv/bin/pip install torch numpy   # once: for the learned agent
+PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v
 
 # play 1,000 battles between two teams (greedy agent by default; --agent-a/--agent-b random|greedy)
 PYTHONPATH=src python3 -m champions.simulate tests/fixtures/team_tr_alpha.txt tests/fixtures/team_cybertron.txt --battles 1000
@@ -63,7 +69,8 @@ Speed on the Mac mini M5: about 5,800 battles per minute on one core.
 |---|---|---|
 | 0 | Clean out the old RL code, new layout | done |
 | 1 | Local Showdown simulator, M-C data refresh | done (ladder stats from Smogon; MetaVGC tournament import parked) |
-| 2 | Scripted battle agent (damage calc + shallow search) | greedy agent done (beats random 95%+); first calibration inconclusive, see docs/calibration.md |
+| 2 | Baseline agent | greedy rule-based agent kept only as a yardstick to beat; its predictions did not match real results (docs/calibration.md) |
+| 2b | Learned agent, imitation learning | in progress: tracker, encoding, network and trainer built; training on replays next |
 | 3 | Team search with confidence intervals | |
 | 4 | Static website | |
 | 5 | Learned play from replays (optional) | |

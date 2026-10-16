@@ -17,3 +17,4 @@ results/
 
 # Local clone of the Showdown engine (Phase 1)
 vendor/
+cache/

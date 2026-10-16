@@ -52,6 +52,18 @@ const ABILITY_IMMUNITY = {levitate: 'Ground', voltabsorb: 'Electric', lightningr
 
 const alive = mon => mon && !mon.fainted && mon.hp > 0;
 
+// Effective stat from stored stats, boosts and the common stat items. Deliberately avoids
+// Pokemon.getStat(), which fires ability events that expect a move in progress.
+function stat(mon, name) {
+	const boost = mon.boosts[name] || 0;
+	let value = mon.storedStats[name] * (boost >= 0 ? (2 + boost) / 2 : 2 / (2 - boost));
+	if (mon.item === 'choicescarf' && name === 'spe') value *= 1.5;
+	if (mon.item === 'choiceband' && name === 'atk') value *= 1.5;
+	if (mon.item === 'choicespecs' && name === 'spa') value *= 1.5;
+	if (mon.item === 'assaultvest' && name === 'spd') value *= 1.5;
+	return value;
+}
+
 class GreedyPlayer extends RandomPlayerAI {
 	constructor(stream, options, getBattle) {
 		super(stream, {...options, mega: 1});
@@ -81,8 +93,8 @@ class GreedyPlayer extends RandomPlayerAI {
 		let power = move.basePower || 60; // variable-power moves: assume a middling 60
 		if (move.multihit) power *= Array.isArray(move.multihit) ? 3.1 : move.multihit;
 		const physical = move.category === 'Physical';
-		const attack = attacker.getStat(move.id === 'bodypress' ? 'def' : physical ? 'atk' : 'spa');
-		const defense = defender.getStat(physical ? 'def' : 'spd');
+		const attack = stat(attacker, move.id === 'bodypress' ? 'def' : physical ? 'atk' : 'spa');
+		const defense = stat(defender, physical ? 'def' : 'spd');
 		let damage = Math.floor(Math.floor(22 * power * attack / defense) / 50) + 2;
 
 		if (attacker.hasType(move.type)) damage *= attacker.ability === 'adaptability' ? 2 : 1.5;
@@ -196,8 +208,8 @@ class GreedyPlayer extends RandomPlayerAI {
 			return mon.lastMove && PROTECT_MOVES.has(mon.lastMove.id) ? -1 : SCORES.protect;
 		}
 		if (id === 'trickroom') {
-			const mine = this.me.active.filter(alive).map(p => p.getStat('spe'));
-			const theirs = this.foe.active.filter(alive).map(p => p.getStat('spe'));
+			const mine = this.me.active.filter(alive).map(p => stat(p, 'spe'));
+			const theirs = this.foe.active.filter(alive).map(p => stat(p, 'spe'));
 			const avg = a => a.reduce((x, y) => x + y, 0) / (a.length || 1);
 			const wantsRoom = avg(mine) < avg(theirs);
 			const active = !!field.pseudoWeather.trickroom;

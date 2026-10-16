@@ -25,13 +25,18 @@ src/champions/      Python package: team format, config, (later) search and anal
   config.py         Regulation, format ID, stat-point rules — the one place to edit per regulation
   teams.py          Read/write Showdown team text, check structural rules
   simulate.py       Python wrapper: run_battles(), validate_team()
-  import_teams.py   Collect real tournament teams (MetaVGC + pokepast.es) into data/teams/
+  import_stats.py   Download Smogon ladder stats into data/meta/ (usage, sets, spreads, teammates)
+  meta.py           Build realistic opponent teams from those stats
+  calibrate.py      Compare simulated strength with ladder popularity
+  import_teams.py   Collect tournament teams from MetaVGC (parked: site is slow to crawl)
 sim/run.js          Node runner: plays battles on Showdown's engine in-process
 sim/agents/greedy.js   Scripted player: damage estimates, support-move rules, bring/lead choice
+sim/tournament.js   Round-robin between many teams, in-process (~9,700 games/min)
 sim/export_reference.js   Writes data/reference/ from the engine's own data
 scripts/            setup_showdown.sh clones and builds the pinned engine into vendor/
 data/reference/     Pokémon, moves, items for M-C, generated from Showdown
-data/teams/m-c/     Real tournament teams as Showdown pastes, plus index.json with sources
+data/meta/m-c/      Ladder usage summary (Smogon stats): sets, spreads, teammates per Pokémon
+results/            Generated pools and tournament output (gitignored)
 tests/              Unit tests; tests/fixtures holds sample teams
 docs/               Notes and source links
 ```
@@ -57,8 +62,8 @@ Speed on the Mac mini M5: about 5,800 battles per minute on one core.
 | Phase | What | Status |
 |---|---|---|
 | 0 | Clean out the old RL code, new layout | done |
-| 1 | Local Showdown simulator, M-C data refresh | simulator and reference data done; team import written, full run + usage stats to revisit |
-| 2 | Scripted battle agent (damage calc + shallow search) | greedy agent done (beats random 95%+); lookahead and calibration to do |
+| 1 | Local Showdown simulator, M-C data refresh | done (ladder stats from Smogon; MetaVGC tournament import parked) |
+| 2 | Scripted battle agent (damage calc + shallow search) | greedy agent done (beats random 95%+); first calibration inconclusive, see docs/calibration.md |
 | 3 | Team search with confidence intervals | |
 | 4 | Static website | |
 | 5 | Learned play from replays (optional) | |

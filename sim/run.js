@@ -108,4 +108,8 @@ async function main() {
 	console.log(JSON.stringify(result, null, 2));
 }
 
-main().catch(err => { console.error(err.message); process.exit(2); });
+if (require.main === module) {
+	main().catch(err => { console.error(err.message); process.exit(2); });
+}
+
+module.exports = {playOne, validate, DEFAULT_FORMAT};

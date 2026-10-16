@@ -1,45 +1,330 @@
-{ "categories": {
-    "mega_stones": [
-      "Abomasite", "Absolite", "Aerodactylite", "Aggronite", "Alakazite",
-      "Altarianite", "Ampharosite", "Audinite", "Banettite", "Beedrillite",
-      "Blastoisinite", "Cameruptite", "Chandelurite", "Charizardite X", "Charizardite Y",
-      "Chesnaughtite", "Chimechite", "Clefablite", "Crabominite", "Delphoxite",
-      "Dragoninite", "Drampanite", "Emboarite", "Excadrite", "Feraligite",
-      "Floettite", "Froslassite", "Galladite", "Garchompite", "Gardevoirite",
-      "Gengarite", "Glalitite", "Glimmoranite", "Golurkite", "Greninjite",
-      "Gyaradosite", "Hawluchanite", "Heracronite", "Houndoominite", "Kangaskhanite",
-      "Lopunnite", "Lucarionite", "Manectite", "Medichamite", "Meganiumite",
-      "Meowsticite", "Pidgeotite", "Pinsirite", "Sablenite", "Scizorite",
-      "Scovillainite", "Sharpedonite", "Skarmorite", "Slowbronite", "Starminite",
-      "Steelixite", "Tyranitarite", "Venusaurite", "Victreebelite"
-    ],
-    "stat_boost": [
-      "Choice Scarf",
-      "Focus Sash",
-      "White Herb"
-    ],
-    "power_boost": [
-      "Charcoal", "Black Belt", "Black Glasses", "Soft Sand", "Mystic Water",
-      "Never-Melt Ice", "Silk Scarf", "Silver Powder", "Miracle Seed",
-      "Hard Stone", "Magnet", "Metal Coat", "Poison Barb", "Sharp Beak",
-      "Twisted Spoon", "Dragon Fang", "Fairy Feather"
-    ],
-    "recovery": [
-      "Sitrus Berry", "Lum Berry", "Leftovers", "Shell Bell",
-      "Oran Berry", "Persim Berry", "Leppa Berry", "Aspear Berry",
-      "Rawst Berry", "Pecha Berry", "Chesto Berry", "Cheri Berry",
-      "Focus Band", "Mental Herb"
-    ],
-    "defense_berries": [
-      "Chople Berry", "Occa Berry", "Passho Berry", "Wacan Berry",
-      "Rindo Berry", "Yache Berry", "Charti Berry", "Coba Berry",
-      "Payapa Berry", "Tanga Berry", "Haban Berry", "Colbur Berry",
-      "Babiri Berry", "Chilan Berry", "Roseli Berry", "Shuca Berry",
-      "Kebia Berry", "Kasib Berry"
-    ],
-    "other": [
-      "King's Rock", "Bright Powder", "Scope Lens", "Quick Claw",
-      "Light Ball", "Spell Tag"
-    ]
-  }
+{
+ "Abomasite": {
+  "megaStone": true
+ },
+ "Absolite": {
+  "megaStone": true
+ },
+ "Absolite Z": {
+  "megaStone": true
+ },
+ "Aerodactylite": {
+  "megaStone": true
+ },
+ "Aggronite": {
+  "megaStone": true
+ },
+ "Alakazite": {
+  "megaStone": true
+ },
+ "Altarianite": {
+  "megaStone": true
+ },
+ "Ampharosite": {
+  "megaStone": true
+ },
+ "Audinite": {
+  "megaStone": true
+ },
+ "Banettite": {
+  "megaStone": true
+ },
+ "Barbaracite": {
+  "megaStone": true
+ },
+ "Baxcalibrite": {
+  "megaStone": true
+ },
+ "Beedrillite": {
+  "megaStone": true
+ },
+ "Blastoisinite": {
+  "megaStone": true
+ },
+ "Blazikenite": {
+  "megaStone": true
+ },
+ "Cameruptite": {
+  "megaStone": true
+ },
+ "Chandelurite": {
+  "megaStone": true
+ },
+ "Charizardite X": {
+  "megaStone": true
+ },
+ "Charizardite Y": {
+  "megaStone": true
+ },
+ "Chesnaughtite": {
+  "megaStone": true
+ },
+ "Chimechite": {
+  "megaStone": true
+ },
+ "Clefablite": {
+  "megaStone": true
+ },
+ "Crabominite": {
+  "megaStone": true
+ },
+ "Delphoxite": {
+  "megaStone": true
+ },
+ "Dragalgite": {
+  "megaStone": true
+ },
+ "Dragoninite": {
+  "megaStone": true
+ },
+ "Drampanite": {
+  "megaStone": true
+ },
+ "Eelektrossite": {
+  "megaStone": true
+ },
+ "Eject Button": {},
+ "Emboarite": {
+  "megaStone": true
+ },
+ "Excadrite": {
+  "megaStone": true
+ },
+ "Falinksite": {
+  "megaStone": true
+ },
+ "Feraligite": {
+  "megaStone": true
+ },
+ "Floettite": {
+  "megaStone": true
+ },
+ "Froslassite": {
+  "megaStone": true
+ },
+ "Galladite": {
+  "megaStone": true
+ },
+ "Garchompite": {
+  "megaStone": true
+ },
+ "Garchompite Z": {
+  "megaStone": true
+ },
+ "Gardevoirite": {
+  "megaStone": true
+ },
+ "Gengarite": {
+  "megaStone": true
+ },
+ "Glalitite": {
+  "megaStone": true
+ },
+ "Glimmoranite": {
+  "megaStone": true
+ },
+ "Golisopite": {
+  "megaStone": true
+ },
+ "Golurkite": {
+  "megaStone": true
+ },
+ "Greninjite": {
+  "megaStone": true
+ },
+ "Gyaradosite": {
+  "megaStone": true
+ },
+ "Hawluchanite": {
+  "megaStone": true
+ },
+ "Heracronite": {
+  "megaStone": true
+ },
+ "Houndoominite": {
+  "megaStone": true
+ },
+ "Kangaskhanite": {
+  "megaStone": true
+ },
+ "Leek": {},
+ "Lopunnite": {
+  "megaStone": true
+ },
+ "Lucarionite": {
+  "megaStone": true
+ },
+ "Lucarionite Z": {
+  "megaStone": true
+ },
+ "Malamarite": {
+  "megaStone": true
+ },
+ "Manectite": {
+  "megaStone": true
+ },
+ "Mawilite": {
+  "megaStone": true
+ },
+ "Medichamite": {
+  "megaStone": true
+ },
+ "Meganiumite": {
+  "megaStone": true
+ },
+ "Meowsticite": {
+  "megaStone": true
+ },
+ "Metagrossite": {
+  "megaStone": true
+ },
+ "Pidgeotite": {
+  "megaStone": true
+ },
+ "Pinsirite": {
+  "megaStone": true
+ },
+ "Pyroarite": {
+  "megaStone": true
+ },
+ "Raichunite X": {
+  "megaStone": true
+ },
+ "Raichunite Y": {
+  "megaStone": true
+ },
+ "Sablenite": {
+  "megaStone": true
+ },
+ "Salamencite": {
+  "megaStone": true
+ },
+ "Sceptilite": {
+  "megaStone": true
+ },
+ "Scizorite": {
+  "megaStone": true
+ },
+ "Scolipite": {
+  "megaStone": true
+ },
+ "Scovillainite": {
+  "megaStone": true
+ },
+ "Scraftinite": {
+  "megaStone": true
+ },
+ "Sharpedonite": {
+  "megaStone": true
+ },
+ "Skarmorite": {
+  "megaStone": true
+ },
+ "Slowbronite": {
+  "megaStone": true
+ },
+ "Spell Tag": {},
+ "Staraptite": {
+  "megaStone": true
+ },
+ "Starminite": {
+  "megaStone": true
+ },
+ "Steelixite": {
+  "megaStone": true
+ },
+ "Swampertite": {
+  "megaStone": true
+ },
+ "Tyranitarite": {
+  "megaStone": true
+ },
+ "Venusaurite": {
+  "megaStone": true
+ },
+ "Victreebelite": {
+  "megaStone": true
+ },
+ "Air Balloon": {},
+ "Aspear Berry": {},
+ "Babiri Berry": {},
+ "Big Root": {},
+ "Binding Band": {},
+ "Black Belt": {},
+ "Black Glasses": {},
+ "Bright Powder": {},
+ "Charcoal": {},
+ "Charti Berry": {},
+ "Cheri Berry": {},
+ "Chesto Berry": {},
+ "Chilan Berry": {},
+ "Choice Scarf": {},
+ "Chople Berry": {},
+ "Coba Berry": {},
+ "Colbur Berry": {},
+ "Damp Rock": {},
+ "Dragon Fang": {},
+ "Electric Seed": {},
+ "Expert Belt": {},
+ "Fairy Feather": {},
+ "Focus Band": {},
+ "Focus Sash": {},
+ "Grassy Seed": {},
+ "Haban Berry": {},
+ "Hard Stone": {},
+ "Heat Rock": {},
+ "Icy Rock": {},
+ "Iron Ball": {},
+ "Kasib Berry": {},
+ "Kebia Berry": {},
+ "King's Rock": {},
+ "Leftovers": {},
+ "Leppa Berry": {},
+ "Life Orb": {},
+ "Light Ball": {},
+ "Light Clay": {},
+ "Lum Berry": {},
+ "Magnet": {},
+ "Mental Herb": {},
+ "Metal Coat": {},
+ "Metronome": {},
+ "Miracle Seed": {},
+ "Misty Seed": {},
+ "Muscle Band": {},
+ "Mystic Water": {},
+ "Never-Melt Ice": {},
+ "Normal Gem": {},
+ "Occa Berry": {},
+ "Oran Berry": {},
+ "Passho Berry": {},
+ "Payapa Berry": {},
+ "Pecha Berry": {},
+ "Persim Berry": {},
+ "Poison Barb": {},
+ "Psychic Seed": {},
+ "Quick Claw": {},
+ "Rawst Berry": {},
+ "Red Card": {},
+ "Rindo Berry": {},
+ "Rocky Helmet": {},
+ "Roseli Berry": {},
+ "Scope Lens": {},
+ "Sharp Beak": {},
+ "Shed Shell": {},
+ "Shell Bell": {},
+ "Shuca Berry": {},
+ "Silk Scarf": {},
+ "Silver Powder": {},
+ "Sitrus Berry": {},
+ "Smooth Rock": {},
+ "Soft Sand": {},
+ "Tanga Berry": {},
+ "Terrain Extender": {},
+ "Twisted Spoon": {},
+ "Wacan Berry": {},
+ "White Herb": {},
+ "Wide Lens": {},
+ "Wise Glasses": {},
+ "Yache Berry": {},
+ "Zoom Lens": {}
 }

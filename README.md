@@ -23,26 +23,37 @@ No paid APIs. No GPU needed.
 ```
 src/champions/      Python package: team format, config, (later) search and analysis
   config.py         Regulation, format ID, stat-point rules — the one place to edit per regulation
-  teams.py          Read/write Showdown team text, check legality
+  teams.py          Read/write Showdown team text, check structural rules
+  simulate.py       Python wrapper: run_battles(), validate_team()
+sim/run.js          Node runner: plays battles on Showdown's engine in-process
+scripts/            setup_showdown.sh clones and builds the pinned engine into vendor/
 data/reference/     Pokémon, moves, items (M-A era; refreshed in Phase 1)
 tests/              Unit tests; tests/fixtures holds sample teams
 docs/               Notes and source links
 ```
 
-Planned, not yet created: `sim/` (Node, Showdown engine), `web/` (static site).
+Planned, not yet created: `web/` (static site).
 
-## Run the tests
+## Setup and tests
+
+Needs Node and Python 3.
 
 ```bash
+./scripts/setup_showdown.sh                      # once: fetch and build the engine
 PYTHONPATH=src python3 -m unittest discover -s tests -v
+
+# play 1,000 battles between two teams (random moves for now)
+PYTHONPATH=src python3 -m champions.simulate tests/fixtures/team_tr_alpha.txt tests/fixtures/team_cybertron.txt --battles 1000
 ```
+
+Speed on the Mac mini M5: about 5,800 battles per minute on one core.
 
 ## Roadmap
 
 | Phase | What | Status |
 |---|---|---|
-| 0 | Clean out the old RL code, new layout | in progress |
-| 1 | Local Showdown simulator, M-C data refresh | next |
+| 0 | Clean out the old RL code, new layout | done |
+| 1 | Local Showdown simulator, M-C data refresh | simulator done; data refresh in progress |
 | 2 | Scripted battle agent (damage calc + shallow search) | |
 | 3 | Team search with confidence intervals | |
 | 4 | Static website | |

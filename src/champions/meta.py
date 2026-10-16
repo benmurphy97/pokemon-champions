@@ -87,7 +87,8 @@ def build_team(rng: random.Random, usage: dict, reference: dict) -> list[dict]:
 
 
 def generate_pool(count: int, seed: int = 1, max_attempts: int = 20) -> list[dict]:
-    usage, reference = load_usage(), json.loads(REFERENCE.read_text())
+    reference = json.loads(REFERENCE.read_text())
+    usage = {name: entry for name, entry in load_usage().items() if name in reference}   # species the engine knows
     rng = random.Random(seed)
     pool, rejected = [], 0
     while len(pool) < count and rejected < count * max_attempts:
@@ -106,11 +107,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--teams", type=int, default=50)
     parser.add_argument("--seed", type=int, default=1)
+    parser.add_argument("--out", default=str(OUT), help="where to write the pool")
     args = parser.parse_args()
     pool = generate_pool(args.teams, args.seed)
-    OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps(pool, indent=1) + "\n")
-    print(f"→ {OUT}")
+    out = Path(args.out)
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(json.dumps(pool, indent=1) + "\n")
+    print(f"→ {out}")
 
 
 if __name__ == "__main__":

@@ -46,21 +46,48 @@ def own_team_info(state: BattleState, side: str, request: dict, team_index: list
 
 
 class NeuralAgent:
+    """Chooses actions with a trained policy.
+
+    temperature 0 plays the single most likely legal action (for evaluation); temperature 1 samples
+    from the policy (for reinforcement learning). Pass `record=[]` to `decide` to keep every
+    choice that had alternatives, with the log-probability it was taken with, for training.
+    """
+
     def __init__(self, net, temperature: float = 0.0, seed: int = 0):
         self.usage = load_usage()
         self.net = net.eval()
         self.temperature = temperature
         self.rng = np.random.default_rng(seed)
 
-    def pick(self, logits: torch.Tensor, legal: np.ndarray) -> int:
+    def pick(self, logits: torch.Tensor, legal: np.ndarray) -> tuple[int, float]:
+        """(chosen action, its log-probability under the policy at temperature 1)."""
         scores = logits[0].clone()
         scores[~torch.as_tensor(legal)] = -1e9
+        log_probs = torch.log_softmax(scores, dim=-1)
         if self.temperature <= 0:
-            return int(scores.argmax())
-        probs = torch.softmax(scores / self.temperature, dim=-1).numpy().astype(np.float64)
-        return int(self.rng.choice(len(probs), p=probs / probs.sum()))
+            action = int(scores.argmax())
+        else:
+            probs = torch.softmax(scores / self.temperature, dim=-1).numpy().astype(np.float64)
+            action = int(self.rng.choice(len(probs), p=probs / probs.sum()))
+        return action, float(log_probs[action])
 
-    def decide(self, state: BattleState, side: str, request: dict) -> str:
+    def pick_target(self, target_logits: torch.Tensor, allowed: np.ndarray) -> tuple[int, float]:
+        scores = target_logits[0].clone()
+        scores[~torch.as_tensor(allowed)] = -1e9
+        log_probs = torch.log_softmax(scores, dim=-1)
+        if self.temperature <= 0:
+            target = int(scores.argmax())
+        else:
+            probs = torch.softmax(scores / self.temperature, dim=-1).numpy().astype(np.float64)
+            target = int(self.rng.choice(len(probs), p=probs / probs.sum()))
+        return target, float(log_probs[target])
+
+    @staticmethod
+    def note(record, arrays, legal, action, logp, target=-1, target_mask=None):
+        record.append({"arrays": dict(arrays), "action": action, "logp": logp, "target": target,
+                       "target_mask": np.zeros(4, dtype=bool) if target_mask is None else target_mask})
+
+    def decide(self, state: BattleState, side: str, request: dict, record: list | None = None) -> str:
         pokemon = request["side"]["pokemon"]
         team_index = [state._index_of(side, base_species(p["details"])) for p in pokemon]
         position_of = {ti: j + 1 for j, ti in enumerate(team_index)}
@@ -81,7 +108,10 @@ class NeuralAgent:
                     legal[[SWITCH_BASE + ti for ti in options]] = True
                     arrays["mask"] = legal
                     logits, _ = self.net(to_tensors(arrays))
-                    chosen = self.pick(logits, legal) - SWITCH_BASE
+                    action, logp = self.pick(logits, legal)
+                    if record is not None and len(options) > 1:
+                        self.note(record, arrays, legal, action, logp)
+                    chosen = action - SWITCH_BASE
                     taken.add(chosen)
                     choices.append(f"switch {position_of[chosen]}")
                 return ", ".join(choices)
@@ -112,24 +142,34 @@ class NeuralAgent:
 
                 arrays["mask"] = legal
                 logits, _ = self.net(to_tensors(arrays))
-                action = self.pick(logits, legal)
+                action, logp = self.pick(logits, legal)
                 if action >= SWITCH_BASE:
+                    if record is not None and legal.sum() > 1:
+                        self.note(record, arrays, legal, action, logp)
                     taken.add(action - SWITCH_BASE)
                     choices.append(f"switch {position_of[action - SWITCH_BASE]}")
                     continue
 
                 move_slot, target_type = slot_of_move[action]
                 choice = f"move {move_slot}"
+                target, target_mask = -1, None
                 if target_type in SINGLE_TARGET:
                     _, target_logits = self.net(to_tensors(arrays), target_for_move=torch.tensor([action]))
                     foes = state.sides["p2" if side == "p1" else "p1"].active
-                    alive = [(cls, foe_slot + 1) for cls, foe_slot in ((TARGET_FOE_A, 0), (TARGET_FOE_B, 1))
-                             if foes[foe_slot] is not None] or [(TARGET_FOE_A, 1)]
-                    choice += f" {max(alive, key=lambda c: float(target_logits[0, c[0]]))[1]}"
+                    target_mask = np.zeros(4, dtype=bool)
+                    for cls, foe_slot in ((TARGET_FOE_A, 0), (TARGET_FOE_B, 1)):
+                        target_mask[cls] = foes[foe_slot] is not None
+                    if not target_mask.any():
+                        target_mask[TARGET_FOE_A] = True
+                    target, target_logp = self.pick_target(target_logits, target_mask)
+                    logp += target_logp
+                    choice += f" {target + 1}"
                 elif target_type == "adjacentAlly":
                     choice += f" -{(slot ^ 1) + 1}"
                 elif target_type == "adjacentAllyOrSelf":
                     choice += f" -{slot + 1}"
+                if record is not None and (legal.sum() > 1 or (target_mask is not None and target_mask.sum() > 1)):
+                    self.note(record, arrays, legal, action, logp, target, target_mask)
                 if active.get("canMegaEvo") and not mega_used:
                     choice += " mega"
                     mega_used = True

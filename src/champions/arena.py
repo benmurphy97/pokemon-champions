@@ -30,12 +30,16 @@ MODEL = ROOT / "models" / "il_policy.pt"
 def load_policy(path: Path = MODEL) -> PolicyNet:
     saved = torch.load(path, map_location="cpu")
     net = PolicyNet(dim=saved["dim"], layers=saved["layers"])
-    net.load_state_dict(saved["state"])
+    net.load_state_dict(saved["state"], strict=False)   # older checkpoints have no value head
     return net.eval()
 
 
-def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_flight: int = 4) -> list[dict]:
-    """Run battles across worker processes; neural decisions are answered by `agent`."""
+def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_flight: int = 4,
+             trajectories: dict | None = None) -> list[dict]:
+    """Run battles across worker processes; neural decisions are answered by `agent`.
+
+    If `trajectories` is a dict, each neural decision is recorded into it under (job id, side).
+    """
     todo: queue.Queue = queue.Queue()
     for job in jobs:
         todo.put(job)
@@ -74,7 +78,8 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
                 state = states.setdefault((message["id"], message["side"]), BattleState())
                 for line in message["lines"]:
                     state.update(line)
-                choice = agent.decide(state, message["side"], message["request"])
+                record = trajectories.setdefault((message["id"], message["side"]), []) if trajectories is not None else None
+                choice = agent.decide(state, message["side"], message["request"], record=record)
                 proc.stdin.write(json.dumps({"t": "act", "key": message["key"], "choice": choice}) + "\n")
                 proc.stdin.flush()
             elif message["t"] == "result":
@@ -92,6 +97,7 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
                 break
         proc.stdin.close()
         proc.wait()
+        proc.stdout.close()
 
     procs = [subprocess.Popen(["node", str(WORKER)], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                               text=True, bufsize=1) for _ in range(min(workers, len(jobs)))]

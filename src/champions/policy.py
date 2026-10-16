@@ -60,6 +60,7 @@ class PolicyNet(nn.Module):
         # bonus, attack-vs-defence ratio) are inputs; what to do with them is learned.
         self.damage_scalar = nn.Sequential(nn.Linear(DAMAGE_FEATURES, 32), nn.GELU(), nn.Linear(32, 1))
         self.damage_context = nn.Linear(DAMAGE_FEATURES, dim)
+        self.value_head = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, 1))   # used by reinforcement learning
         self.target_head = nn.Sequential(nn.Linear(2 * dim, dim), nn.GELU(), nn.Linear(dim, N_TARGET_CLASSES))
 
     def move_table(self) -> torch.Tensor:
@@ -160,28 +161,53 @@ class PolicyNet(nn.Module):
                   (1 - attacking)[None, :].expand(species.shape[0], -1)]
         return torch.stack(feats, dim=-1)
 
-    def forward(self, b: dict, target_for_move: torch.Tensor | None = None):
-        """Return (action logits [B, N_ACTIONS], target logits [B, 4]).
-
-        Target logits are conditioned on `target_for_move` (the move taken, or being considered).
-        """
+    def trunk(self, b: dict):
+        """Run the transformer; returns the decision token (B, D) and the own-team tokens (B, 6, D)."""
         mons = self.tokens(b)
         query = (self.kind_emb(b["kind"]) + self.slot_emb(b["slot"]) + self.speed_proj(self.speed_features(b))).unsqueeze(1)
         field = self.field(b["globals"]).unsqueeze(1)
         seq = torch.cat([query, field, mons], dim=1)
         pad = torch.cat([torch.zeros(seq.shape[0], 2, dtype=torch.bool, device=seq.device), ~b["present"]], dim=1)
         out = self.out_norm(self.encoder(seq, src_key_padding_mask=pad))
-        q, own = out[:, 0], out[:, 2:8]
+        return out[:, 0], out[:, 2:8]
 
+    def action_logits(self, b: dict, q: torch.Tensor, own: torch.Tensor) -> torch.Tensor:
         damage = self.damage_features(b)
         move_logits = (self.move_query(q) @ self.move_table().T                           # [B, NUM_MOVES]
                        + self.damage_scalar(damage).squeeze(-1)
                        + torch.einsum("bmd,bd->bm", self.damage_context(damage), q) / self.dim ** 0.5)
         switch_logits = torch.einsum("bd,bkd->bk", self.switch_query(q), own)             # [B, 6]
-        logits = torch.cat([move_logits, switch_logits], dim=-1).masked_fill(~b["mask"], -1e9)
+        return torch.cat([move_logits, switch_logits], dim=-1).masked_fill(~b["mask"], -1e9)
 
-        target_logits = None
-        if target_for_move is not None:
-            moves = target_for_move.clamp(min=0, max=NUM_MOVES - 1)
-            target_logits = self.target_head(torch.cat([q, self.move_table()[moves]], dim=-1))
+    def target_logits_for(self, q: torch.Tensor, moves: torch.Tensor) -> torch.Tensor:
+        moves = moves.clamp(min=0, max=NUM_MOVES - 1)
+        return self.target_head(torch.cat([q, self.move_table()[moves]], dim=-1))
+
+    def forward(self, b: dict, target_for_move: torch.Tensor | None = None):
+        """Return (action logits [B, N_ACTIONS], target logits [B, 4]).
+
+        Target logits are conditioned on `target_for_move` (the move taken, or being considered).
+        """
+        q, own = self.trunk(b)
+        logits = self.action_logits(b, q, own)
+        target_logits = None if target_for_move is None else self.target_logits_for(q, target_for_move)
         return logits, target_logits
+
+    def evaluate(self, b: dict, action: torch.Tensor, target: torch.Tensor, target_mask: torch.Tensor):
+        """Re-score recorded decisions for reinforcement learning.
+
+        Returns (log-probability of the whole decision, entropy of the action choice, value estimate,
+        full action log-distribution). A decision's probability is that of the action times, for
+        single-target moves (target >= 0), that of the target among the allowed ones.
+        """
+        q, own = self.trunk(b)
+        log_probs = torch.log_softmax(self.action_logits(b, q, own), dim=-1)
+        logp = log_probs.gather(1, action[:, None]).squeeze(1)
+        entropy = -(log_probs.exp() * log_probs.clamp(min=-30)).sum(-1)
+
+        has_target = target >= 0
+        if has_target.any():
+            tl = self.target_logits_for(q, action).masked_fill(~target_mask, -1e9)
+            tlp = torch.log_softmax(tl, dim=-1).gather(1, target.clamp(min=0)[:, None]).squeeze(1)
+            logp = logp + torch.where(has_target, tlp, torch.zeros_like(tlp))
+        return logp, entropy, self.value_head(q).squeeze(-1), log_probs

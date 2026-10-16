@@ -1,38 +1,19 @@
-showdown/
 .env
 .env.*
-wandb/
 .DS_Store
 .claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+
+# Generated output
+results/
 *.log
 
-# Python cache
-**/__pycache__/
-*.pyc
-*.pyo
-
-# Python virtual environments
-venv/
-.venv/
-env/
-
-# Binary model and data artifacts — never commit these regardless of location
-*.pt
-*.pth
-*.pkl
-*.zip
-*.npz
-*.ckpt
-
-# Generated artifacts — not tracked in git
-model_outputs/
-logs/
-checkpoints/
-data/replays/
-data/experiment_results.jsonl
-data/cache/
-
-# Keep data source files (teams, JSON references) but not generated outputs
-!data/teams/
-!data/*.json
-!data/raw_data_files/
+# Local clone of the Showdown engine (Phase 1)
+vendor/

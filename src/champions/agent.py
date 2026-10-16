@@ -76,14 +76,15 @@ class NeuralAgent:
                     move_id = MOVE_ID.get(move["move"], 0)
                     if not move.get("disabled") and move_id:
                         legal[move_id] = True
-                        slot_of_move[move_id] = (k + 1, move["target"])
+                        slot_of_move[move_id] = (k + 1, move.get("target"))
+                if not slot_of_move:
+                    # Forced: recharging, locked into a move, or Struggle. The engine decides the details.
+                    choices.append("move 1")
+                    continue
                 if not active.get("trapped"):
                     for ti in bench:
                         if ti not in taken:
                             legal[SWITCH_BASE + ti] = True
-                if not legal.any():
-                    choices.append("move 1")
-                    continue
 
                 arrays["mask"] = legal
                 logits, _ = self.net(to_tensors(arrays))

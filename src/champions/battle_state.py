@@ -95,10 +95,14 @@ class BattleState:
         return self.sides[side].team[index] if index is not None else None
 
     def _index_of(self, side: str, species: str) -> int:
+        """Team index for a species, tolerating form changes (Floette-Eternal -> Floette, Mimikyu-Busted)."""
         team = self.sides[side].team
         for i, mon in enumerate(team):
             if mon.species == species:
                 return i
+        family = [i for i, mon in enumerate(team) if mon.species.split("-")[0] == species.split("-")[0]]
+        if len(family) == 1:
+            return family[0]
         team.append(Mon(species=species))   # not announced at preview (e.g. Illusion): add it
         return len(team) - 1
 

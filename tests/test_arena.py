@@ -32,3 +32,20 @@ class ArenaTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+@unittest.skipUnless(HAVE_TORCH, "needs torch (.venv)")
+class ForcedMoveTest(unittest.TestCase):
+    def test_locked_or_recharging_pokemon_just_plays_move_1(self):
+        from champions.agent import NeuralAgent
+        from champions.battle_state import BattleState
+        from champions.policy import PolicyNet
+        state = BattleState()
+        for line in ["|poke|p1|Rillaboom, L50, M|", "|poke|p1|Incineroar, L50, M|", "|poke|p2|Sneasler, L50, M|",
+                     "|switch|p1a: R|Rillaboom, L50, M|100/100", "|switch|p2a: S|Sneasler, L50, M|100/100", "|turn|2"]:
+            state.update(line)
+        request = {"active": [{"moves": [{"move": "Recharge", "id": "recharge"}]}],
+                   "side": {"pokemon": [{"details": "Rillaboom, L50, M", "condition": "100/100", "active": True},
+                                        {"details": "Incineroar, L50, M", "condition": "100/100", "active": False}]}}
+        agent = NeuralAgent(PolicyNet(dim=32, layers=1, heads=2))
+        self.assertEqual(agent.decide(state, "p1", request), "move 1")

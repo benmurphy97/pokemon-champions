@@ -39,6 +39,7 @@ class NeuralPlayer extends GreedyPlayer {
 		this.side = side;
 		this.lines = [];
 		this.fallbacks = 0;
+		this.requestSeq = 0;
 	}
 
 	receiveLine(line) {
@@ -49,14 +50,31 @@ class NeuralPlayer extends GreedyPlayer {
 	receiveRequest(request) {
 		if (request.wait) return;
 		if (request.teamPreview) return super.receiveRequest(request); // greedy team preview
+		this.lastRequest = request;
+		const seq = ++this.requestSeq;
 		const lines = this.lines;
 		this.lines = [];
-		ask(this.id, this.side, lines, request).then(choice => this.choose(choice));
+		// Ignore an answer if a newer request has arrived since (the engine re-asks after some errors).
+		ask(this.id, this.side, lines, request).then(choice => { if (seq === this.requestSeq) this.choose(choice); });
 	}
 
-	// An invalid choice from Python must not stall the battle: fall back to the engine default.
+	// A genuinely invalid choice from Python must not stall the battle: fall back to the engine default.
+	choose(choice) {
+		this.lastChoice = choice;
+		super.choose(choice);
+	}
+
 	receiveError(error) {
+		// "Unavailable choice" (e.g. the Pokémon turned out to be trapped): the engine sends a corrected
+		// request, which we will answer. Replying here too would leave every later answer one request behind.
+		if (error.message.startsWith('[Unavailable choice]')) return;
 		this.fallbacks++;
+		if (process.env.ARENA_DEBUG) {
+			const r = this.lastRequest || {};
+			console.error(`invalid choice "${this.lastChoice}": ${error.message}\n   forceSwitch=${JSON.stringify(r.forceSwitch)} ` +
+				`active=${JSON.stringify((r.active || []).map(a => a && a.moves.map(m => m.move + ':' + (m.target || '-'))))}\n   ` +
+				`side=${JSON.stringify((r.side ? r.side.pokemon : []).map(p => p.details.split(',')[0] + ' ' + p.condition + (p.active ? ' A' : '')))}`);
+		}
 		this.choose('default');
 	}
 }

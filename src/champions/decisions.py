@@ -78,6 +78,9 @@ def extract(lines: list[str]) -> list[dict]:
                 side, slot, _ = parse_position(parts[2])
                 own = state.sides[side]
                 incoming = state._index_of(side, base_species(parts[3]))
+                if incoming >= 6:   # a Pokémon we cannot place in the team of six
+                    state.update(line)
+                    continue
                 key = (side, slot)
                 if upkeep_seen:                      # forced replacement after a faint
                     add(replace_state, side, slot, REPLACEMENT, SWITCH_BASE + incoming, TARGET_NONE)

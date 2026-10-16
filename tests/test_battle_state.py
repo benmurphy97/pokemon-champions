@@ -56,6 +56,14 @@ class SmallBattleTest(unittest.TestCase):
         self.assertEqual(state.sides["p1"].team[0].moves, [])
 
 
+class FormChangeTest(unittest.TestCase):
+    def test_form_names_that_differ_from_preview_still_find_the_same_pokemon(self):
+        state = play(["|poke|p1|Floette-Eternal, L50, F|", "|poke|p1|Mimikyu, L50|",
+                      "|switch|p1a: F|Floette, L50, F|100/100", "|switch|p1b: M|Mimikyu-Busted, L50|100/100"])
+        self.assertEqual(len(state.sides["p1"].team), 2)
+        self.assertEqual(state.sides["p1"].active, [0, 1])
+
+
 class ReplayFixtureTest(unittest.TestCase):
     def setUp(self):
         self.state = play(json.loads(FIXTURE.read_text())["log"].split("\n"))

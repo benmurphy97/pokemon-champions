@@ -44,6 +44,14 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
     errors: list[str] = []
 
     def serve(proc):
+        try:
+            serve_worker(proc)
+        except Exception as err:   # never let a dead worker pass for missing results
+            with lock:
+                errors.append(f"worker thread failed: {err!r}")
+            proc.kill()
+
+    def serve_worker(proc):
         states: dict = {}
         sent = 0
 
@@ -93,7 +101,9 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
     for t in threads:
         t.join()
     if errors:
-        raise RuntimeError(f"{len(errors)} games crashed; first error:\n{errors[0]}")
+        raise RuntimeError(f"{len(errors)} problems; first:\n{errors[0]}")
+    if len(results) != len(jobs):
+        raise RuntimeError(f"only {len(results)} of {len(jobs)} games finished")
     return results
 
 

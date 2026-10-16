@@ -37,14 +37,19 @@ def _with_team_files(team_a: str, team_b: str, fn):
 
 
 def run_battles(team_a: str, team_b: str, battles: int = 100, seed: int = 1,
-                format_id: str = FORMAT_ID) -> dict:
-    """Play `battles` games between two Showdown team texts (random move choices).
+                format_id: str = FORMAT_ID, agent_a: str = "greedy", agent_b: str = "greedy") -> dict:
+    """Play `battles` games between two Showdown team texts.
+
+    Agents are "greedy" (damage-estimating) or "random". Same seed gives the same results, and
+    swapping the teams between seats with the same seed mirrors the games exactly, so use
+    different seeds when you want independent samples from each seat.
 
     Returns {"winsA", "winsB", "ties", "meanTurns", "seconds", "battlesPerMinute", ...}.
     Raises SimError if either team is illegal in the format.
     """
     return _with_team_files(team_a, team_b, lambda a, b: _run(
-        [a, b, "--battles", str(battles), "--seed", str(seed), "--format", format_id]))
+        [a, b, "--battles", str(battles), "--seed", str(seed), "--format", format_id,
+         "--agent-a", agent_a, "--agent-b", agent_b]))
 
 
 def validate_team(team: str, format_id: str = FORMAT_ID) -> list[str]:
@@ -62,9 +67,12 @@ def main():
     parser.add_argument("team_b")
     parser.add_argument("--battles", type=int, default=100)
     parser.add_argument("--seed", type=int, default=1)
+    parser.add_argument("--agent-a", default="greedy", choices=["greedy", "random"])
+    parser.add_argument("--agent-b", default="greedy", choices=["greedy", "random"])
     args = parser.parse_args()
     result = run_battles(Path(args.team_a).read_text(), Path(args.team_b).read_text(),
-                         battles=args.battles, seed=args.seed)
+                         battles=args.battles, seed=args.seed,
+                         agent_a=args.agent_a, agent_b=args.agent_b)
     print(json.dumps(result, indent=2))
 
 

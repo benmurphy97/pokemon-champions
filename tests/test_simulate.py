@@ -14,14 +14,22 @@ class SimulateTest(unittest.TestCase):
         self.b = (FIXTURES / "team_cybertron.txt").read_text()
 
     def test_every_battle_finishes(self):
-        result = run_battles(self.a, self.b, battles=20)
+        result = run_battles(self.a, self.b, battles=20, agent_a="random", agent_b="random")
         self.assertEqual(result["winsA"] + result["winsB"] + result["ties"], 20)
         self.assertEqual(result["noResult"], 0)
 
     def test_same_seed_gives_same_result(self):
-        first = run_battles(self.a, self.b, battles=20, seed=5)
-        second = run_battles(self.a, self.b, battles=20, seed=5)
+        first = run_battles(self.a, self.b, battles=20, seed=5, agent_a="random", agent_b="random")
+        second = run_battles(self.a, self.b, battles=20, seed=5, agent_a="random", agent_b="random")
         self.assertEqual((first["winsA"], first["winsB"]), (second["winsA"], second["winsB"]))
+
+    def test_greedy_agent_beats_random(self):
+        result = run_battles(self.a, self.b, battles=100, agent_a="greedy", agent_b="random")
+        self.assertGreater(result["winsA"], 80)
+
+    def test_mirror_match_has_no_seat_bias(self):
+        result = run_battles(self.a, self.a, battles=300, agent_a="greedy", agent_b="greedy")
+        self.assertTrue(110 <= result["winsA"] <= 190, result)
 
     def test_legal_team_has_no_problems(self):
         self.assertEqual(validate_team(self.a), [])

@@ -27,6 +27,7 @@ src/champions/      Python package: team format, config, (later) search and anal
   simulate.py       Python wrapper: run_battles(), validate_team()
   import_teams.py   Collect real tournament teams (MetaVGC + pokepast.es) into data/teams/
 sim/run.js          Node runner: plays battles on Showdown's engine in-process
+sim/agents/greedy.js   Scripted player: damage estimates, support-move rules, bring/lead choice
 sim/export_reference.js   Writes data/reference/ from the engine's own data
 scripts/            setup_showdown.sh clones and builds the pinned engine into vendor/
 data/reference/     Pokémon, moves, items for M-C, generated from Showdown
@@ -45,7 +46,7 @@ Needs Node and Python 3.
 ./scripts/setup_showdown.sh                      # once: fetch and build the engine
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 
-# play 1,000 battles between two teams (random moves for now)
+# play 1,000 battles between two teams (greedy agent by default; --agent-a/--agent-b random|greedy)
 PYTHONPATH=src python3 -m champions.simulate tests/fixtures/team_tr_alpha.txt tests/fixtures/team_cybertron.txt --battles 1000
 ```
 
@@ -57,7 +58,7 @@ Speed on the Mac mini M5: about 5,800 battles per minute on one core.
 |---|---|---|
 | 0 | Clean out the old RL code, new layout | done |
 | 1 | Local Showdown simulator, M-C data refresh | simulator and reference data done; team import written, full run + usage stats to revisit |
-| 2 | Scripted battle agent (damage calc + shallow search) | |
+| 2 | Scripted battle agent (damage calc + shallow search) | greedy agent done (beats random 95%+); lookahead and calibration to do |
 | 3 | Team search with confidence intervals | |
 | 4 | Static website | |
 | 5 | Learned play from replays (optional) | |

@@ -28,6 +28,21 @@ def load_usage() -> dict:
     return json.loads(USAGE.read_text())["pokemon"]
 
 
+def usage_key(species: str, mega: bool, usage: dict) -> str | None:
+    """The usage entry for a team slot.
+
+    Replays list the base species even for Pokémon that Mega Evolve on the ladder, so use the
+    Mega form if the player Mega Evolved it, or if it is far more common than the base form.
+    """
+    family = species.split("-")[0]  # replays say Floette-Eternal; the ladder lists Floette-Mega
+    forms = [name for name in usage if name.startswith((f"{species}-Mega", f"{family}-Mega"))]
+    best_mega = max(forms, key=lambda n: usage[n]["usage"]) if forms else None
+    base_usage = usage[species]["usage"] if species in usage else 0.0
+    if best_mega and (mega or usage[best_mega]["usage"] > base_usage):
+        return best_mega
+    return species if species in usage else None
+
+
 def build_set(species: str, entry: dict, reference: dict, taken_items: set[str]) -> dict:
     """The most common set for a species, using the best item not already on the team."""
     stone = reference[species].get("megaStone")

@@ -16,9 +16,16 @@ Showdown replays ──import_replays──► cache/raw/*.json.gz        full l
               arena ◄── agent.NeuralAgent ◄─┘      plays in the simulator via sim/arena_worker.js
 ```
 
+## Information model (closed team sheets)
+
+- **Your own six: everything.** Moves, item, ability, stats. In live play these come from the simulator's request. Replays do not contain them, so in training each player's sets are reconstructed from the whole match (`hindsight.py`): moves used, items shown or consumed, abilities triggered, the Mega Stone, with unrevealed slots filled from the most common ladder choice and the stats computed from the most common ladder spread (`stats.py`, checked against the engine).
+- **The opponent: their six species** from team preview (so types and base stats), then only what is revealed: HP percentage, status, boosts, moves/items/abilities once shown. Not their stats or sets, and not which four they bring.
+- The simulator's `Open Team Sheets` rule only adds an opt-in prompt and reveals nothing by default, so the in-game information is already closed. Human ladder players may have opted in, which the logs do not show.
+- The greedy yardstick comes in two forms: `greedy` reads the engine and sees everything, `greedy-blind` plays under the same closed rules (opponent stats guessed from base stats, opponent moves assumed to be strong attacks of their types). Use `greedy-blind` for fair comparisons.
+
 ## What the policy sees and does
 
-- **Input:** public information only. Both teams (species, types, base stats), HP, status, stat boosts, revealed moves/items/abilities, Mega state, weather, terrain, Trick Room, Tailwind and similar side conditions, the turn number. It never sees its own unrevealed moves, because replays do not contain them.
+- **Input:** both teams (species, types, base stats), HP, status, stat boosts, Mega state, weather, terrain, Trick Room, Tailwind and similar side conditions, the turn number; your own full sets and real stats; the opponent's revealed moves/items/abilities. Plus per-move damage features against each foe and a speed comparison.
 - **Same code for training and play.** `BattleState` reads Showdown protocol lines. Replay logs and the live simulator stream use the same format, so the policy sees identical inputs in both.
 - **Output:** a score for every move (a learned embedding per move, plus its type/power/accuracy) and for switching to each of the six own Pokémon, restricted at play time to the actions the simulator says are legal. A second head picks the target for single-target moves.
 - **Decisions are made one Pokémon at a time.** The two slots are not modelled jointly, and the second slot only avoids switching to the same Pokémon as the first.
@@ -41,6 +48,19 @@ Trained on 1,486 ladder games (41,000 decisions, rating 1300+), 8 epochs, about 
 
 - **Accuracy at copying humans is not the same as playing well.** The policy copies the ladder's mix (about 52% attacks, 36% status and Protect, 4% switches) but picks attacks worse than the greedy agent, which beats random 95%+.
 - **Damage features** (type effectiveness, same-type bonus, attack/defence ratio of each move against each foe) are inputs, not rules: the network still learns what to do with them. They gave the largest single gain.
+### Later runs (2,900–3,200 games)
+
+| Change | Games | Top-1 | vs random | vs greedy (full info) | vs greedy-blind |
+|---|---|---|---|---|---|
+| Know own moves/items/abilities (hindsight); training moves restricted to the real four | 2,894 | 49.0% | 76.2% | 26.5% (23.1–30.2) | |
+| + own real stats and speed comparison | 3,220 | 49.8% | 76.2% (72.6–79.4) | 25.7% (22.3–29.3) | 28.3% (24.9–32.1) |
+
+- Top-1 accuracy is not comparable with the first table: the candidate moves are now the player's real four, not every move the species could learn.
+- Knowing its own sets was the biggest step, but it is mixed up with doubling the data, so the two effects are not separated.
+- Own stats made no measurable difference yet. In training they are the typical ladder spread, in play the real ones.
+- The blind yardstick is only slightly weaker than the all-seeing one, so the information gap is not what separates the agents; play quality is.
+- The 3–4 invalid choices per 600 games (down from dozens) have not been traced.
+
 - **Imitation alone is unlikely to beat greedy at this data size.** More data helps gradually; reinforcement learning in the simulator, using the win/loss result, is the route to going beyond what the replays show.
 
 ## Running it

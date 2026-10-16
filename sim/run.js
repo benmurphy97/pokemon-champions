@@ -15,7 +15,7 @@ const {RandomPlayerAI} = require(path.join(SHOWDOWN, 'tools', 'random-player-ai'
 
 const {GreedyPlayer} = require('./agents/greedy');
 
-const AGENTS = ['random', 'greedy'];
+const AGENTS = ['random', 'greedy', 'greedy-blind'];
 const DEFAULT_FORMAT = 'gen9championsvgc2026regmc';
 
 function parseArgs(argv) {
@@ -49,7 +49,8 @@ function validate(format, sets) {
 }
 
 function makeAgent(kind, stream, seed, getBattle) {
-	return kind === 'greedy' ? new GreedyPlayer(stream, {seed}, getBattle) : new RandomPlayerAI(stream, {seed});
+	if (kind === 'greedy' || kind === 'greedy-blind') return new GreedyPlayer(stream, {seed, blind: kind === 'greedy-blind'}, getBattle);
+	return new RandomPlayerAI(stream, {seed});
 }
 
 async function playOne(format, sets1, sets2, seed, agents) {

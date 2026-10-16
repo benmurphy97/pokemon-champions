@@ -11,7 +11,7 @@ network handles any team.
 import torch
 from torch import nn
 
-from champions.encoding import GLOBAL_NUM, MON_NUM, N_MOVE_SLOTS, N_TOKENS, N_ACTIONS, SWITCH_BASE
+from champions.encoding import GLOBAL_NUM, MON_NUM, N_MOVE_SLOTS, N_TOKENS, N_ACTIONS, STAT_SCALE, SWITCH_BASE
 from champions.vocab import (ABILITIES, ITEMS, MOVE_CATS, MOVE_NUM, MOVES, NUM_ABILITIES, NUM_ITEMS,
                              NUM_MOVES, NUM_SPECIES, SPECIES_STATS, SPECIES_TYPES, TARGETS, TYPES, TYPE_CHART)
 
@@ -40,6 +40,8 @@ class PolicyNet(nn.Module):
         self.move_static = nn.Linear(16 + 8 + 8 + 3, dim)
         self.move_in = nn.Embedding(NUM_MOVES, dim, padding_idx=0)
         self.mon_numbers = nn.Linear(MON_NUM, dim)
+        self.stats_proj = nn.Linear(6, dim)      # your own Pokémon's real stats
+        self.speed_proj = nn.Linear(2, dim)      # who outspeeds the two foes on the field
         self.side_emb = nn.Embedding(2, dim)
         self.position_emb = nn.Embedding(6, dim)
         self.actor_emb = nn.Parameter(torch.zeros(dim))
@@ -81,7 +83,7 @@ class PolicyNet(nn.Module):
         known = (b["moves"] > 0).unsqueeze(-1).float()
         move_bag = (moves * known).sum(2) / known.sum(2).clamp(min=1)
         x = (self.species_emb(species) + static + self.item_emb(b["items"]) + self.ability_emb(b["abilities"])
-             + move_bag + self.mon_numbers(b["numbers"]))
+             + move_bag + self.mon_numbers(b["numbers"]) + self.stats_proj(b["stats"]))
         side = torch.arange(N_TOKENS, device=species.device) // 6
         x = x + self.side_emb(side) + self.position_emb(torch.arange(N_TOKENS, device=species.device) % 6)
         actor = b["actor"]
@@ -90,13 +92,53 @@ class PolicyNet(nn.Module):
         marker[rows, actor[rows]] = self.actor_emb
         return x + marker
 
-    def damage_features(self, b: dict) -> torch.Tensor:
-        """[B, NUM_MOVES, DAMAGE_FEATURES]: how each move would fare against the two foes on the field."""
+    @staticmethod
+    def estimate_stats(base: torch.Tensor) -> torch.Tensor:
+        """Guess a Pokémon's real stats from its base stats alone (about half the stat points, neutral nature).
+
+        Used for the opponent, whose spread is unknown, and as a fallback for your own team.
+        """
+        return base + torch.tensor([91.0, 36, 36, 36, 36, 36], device=base.device)
+
+    def actor_and_foes(self, b: dict):
+        """Real-or-estimated stats of the acting Pokémon, and the foe in each field slot (a, b)."""
         species, numbers = b["species"], b["numbers"]
         rows = torch.arange(species.shape[0], device=species.device)
         actor = b["actor"].clamp(min=0)
-        a_types, a_stats = self.species_types[species[rows, actor]], self.species_stats[species[rows, actor]]
         has_actor = (b["actor"] >= 0).float()
+        a_species = species[rows, actor]
+        a_true = b["stats"][rows, actor] * STAT_SCALE
+        a_stats = torch.where(a_true[:, 1:2] > 0, a_true, self.estimate_stats(self.species_stats[a_species] * 255))
+        a_boosts = numbers[rows, actor, 13:20] * 6
+        foes = []
+        for flag in (2, 3):                                                   # foe in slot a, then slot b
+            flags = numbers[:, 6:, flag] * (1 - numbers[:, 6:, 1])            # on the field and not fainted
+            present, which = flags.max(dim=1)
+            foe = species[rows, 6 + which]
+            foes.append({"present": (present > 0.5).float() * has_actor, "species": foe,
+                         "stats": self.estimate_stats(self.species_stats[foe] * 255),
+                         "boosts": numbers[rows, 6 + which, 13:20] * 6})
+        return a_species, a_stats, a_boosts, has_actor, foes
+
+    @staticmethod
+    def boost_multiplier(stage: torch.Tensor) -> torch.Tensor:
+        return torch.where(stage >= 0, (2 + stage) / 2, 2 / (2 - stage))
+
+    def speed_features(self, b: dict) -> torch.Tensor:
+        """[B, 2]: log of (our speed / their speed) against the foe in slot a and slot b, boosts included."""
+        _, a_stats, a_boosts, _, foes = self.actor_and_foes(b)
+        ours = a_stats[:, 5] * self.boost_multiplier(a_boosts[:, 4])
+        out = []
+        for foe in foes:
+            theirs = foe["stats"][:, 5] * self.boost_multiplier(foe["boosts"][:, 4])
+            out.append(torch.log(ours / theirs) * foe["present"])
+        return torch.stack(out, dim=-1)
+
+    def damage_features(self, b: dict) -> torch.Tensor:
+        """[B, NUM_MOVES, DAMAGE_FEATURES]: how each move would fare against the two foes on the field."""
+        species = b["species"]
+        a_species, a_stats, _, has_actor, foes = self.actor_and_foes(b)
+        a_types = self.species_types[a_species]
 
         move_type, category = self.move_cats[:, 0], self.move_cats[:, 1]      # [M]
         power = self.move_num[:, 0]
@@ -105,17 +147,14 @@ class PolicyNet(nn.Module):
         stab = ((move_type[None, :] == a_types[:, :1]) | (move_type[None, :] == a_types[:, 1:])) & (move_type[None, :] > 0)
 
         feats = []
-        for flag in (2, 3):                                                   # foe in slot a, then slot b
-            flags = numbers[:, 6:, flag] * (1 - numbers[:, 6:, 1])            # on the field and not fainted
-            present, which = flags.max(dim=1)
-            foe = species[rows, 6 + which]
-            f_types, f_stats = self.species_types[foe], self.species_stats[foe]
+        for foe in foes:
+            f_types, f_stats = self.species_types[foe["species"]], foe["stats"]
             eff = (self.type_chart[move_type[None, :, None], f_types[:, None, :]]).prod(-1)       # [B, M]
             atk = torch.where(special[None, :] == 1, a_stats[:, 3:4], a_stats[:, 1:2])           # [B, M]
             dfn = torch.where(special[None, :] == 1, f_stats[:, 4:5], f_stats[:, 2:3])
-            ratio = (atk / dfn.clamp(min=0.05)).clamp(0.2, 4.0)
+            ratio = (atk / dfn.clamp(min=1.0)).clamp(0.2, 4.0)
             damage = power[None, :] * (1 + 0.5 * stab.float()) * eff * ratio * attacking[None, :]
-            on = (present > 0.5).float()[:, None] * has_actor[:, None]
+            on = foe["present"][:, None]
             feats += [eff * on, ratio * on / 4, damage * on]
         feats += [stab.float() * has_actor[:, None], power[None, :].expand(species.shape[0], -1) * attacking[None, :],
                   (1 - attacking)[None, :].expand(species.shape[0], -1)]
@@ -127,7 +166,7 @@ class PolicyNet(nn.Module):
         Target logits are conditioned on `target_for_move` (the move taken, or being considered).
         """
         mons = self.tokens(b)
-        query = (self.kind_emb(b["kind"]) + self.slot_emb(b["slot"])).unsqueeze(1)
+        query = (self.kind_emb(b["kind"]) + self.slot_emb(b["slot"]) + self.speed_proj(self.speed_features(b))).unsqueeze(1)
         field = self.field(b["globals"]).unsqueeze(1)
         seq = torch.cat([query, field, mons], dim=1)
         pad = torch.cat([torch.zeros(seq.shape[0], 2, dtype=torch.bool, device=seq.device), ~b["present"]], dim=1)

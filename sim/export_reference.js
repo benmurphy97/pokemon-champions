@@ -66,12 +66,16 @@ for (const attacker of dex.types.all()) {
 	}
 }
 
+const natures = {};
+for (const n of dex.natures.all()) natures[n.name] = {plus: n.plus || null, minus: n.minus || null};
+
 fs.mkdirSync(OUT, {recursive: true});
 const write = (name, data) => fs.writeFileSync(path.join(OUT, name), JSON.stringify(data, null, 1) + '\n');
 write('pokemon.json', pokemon);
 write('moves.json', moves);
 write('items.json', items);
 write('typechart.json', typeChart);
+write('natures.json', natures);
 write('meta.json', {format: FORMAT_ID, mod: format.mod, species: Object.keys(pokemon).length,
 	moves: Object.keys(moves).length, items: Object.keys(items).length});
 console.log(`pokemon ${Object.keys(pokemon).length}, moves ${Object.keys(moves).length}, items ${Object.keys(items).length}`);

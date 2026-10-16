@@ -14,6 +14,7 @@ import copy
 from champions.battle_state import BattleState, base_species, parse_position
 from champions.encoding import (MOVE_PHASE, REPLACEMENT, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A,
                                 TARGET_FOE_B, TARGET_NONE, encode)
+from champions.hindsight import complete_sets
 from champions.vocab import MOVE_ID
 
 
@@ -28,8 +29,19 @@ def target_class(mover_side: str, mover_slot: int, target_text: str | None, tags
     return TARGET_ALLY if slot != mover_slot else TARGET_NONE
 
 
-def extract(lines: list[str]) -> list[dict]:
-    """All recoverable decisions in a log, in order."""
+def extract(lines: list[str], usage: dict | None = None) -> list[dict]:
+    """All recoverable decisions in a log, in order.
+
+    With `usage` (ladder stats), each player's own six are reconstructed from the whole game
+    and given to the encoder, as a real player knows their own team (see hindsight.py).
+    """
+    own_sets = {}
+    if usage is not None:
+        final = BattleState()
+        for line in lines:
+            final.update(line)
+        own_sets = {side: complete_sets(final, side, usage) for side in ("p1", "p2")}
+
     state = BattleState()
     examples: list[dict] = []
 
@@ -40,7 +52,7 @@ def extract(lines: list[str]) -> list[dict]:
     upkeep_seen = move_seen = False
 
     def add(snapshot, side, slot, kind, action, target):
-        arrays = encode(snapshot, side, slot, kind)
+        arrays = encode(snapshot, side, slot, kind, own_info=own_sets.get(side))
         if arrays["actor"] < 0 and kind == MOVE_PHASE:
             return
         examples.append({"arrays": arrays, "action": action, "target": target, "side": side, "kind": kind})

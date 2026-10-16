@@ -1,8 +1,10 @@
 // Greedy VGC agent: scores every legal action with a damage estimate plus a few support-move rules.
 //
-// It reads the live Battle object, so it knows the opponent's full team and sets. That matches
-// Open Team Sheets, but it also means it can see which of the opponent's Pokémon are in the back;
-// both sides get the same treatment, so team comparisons stay fair.
+// By default it reads the live Battle object, so it knows the opponent's true stats, abilities and
+// moves. With `blind: true` it plays under closed-team rules: your own team in full, but for the
+// opponent only species (hence types and base stats), visible HP percentage, boosts and status.
+// Unknown opponent stats are guessed from base stats, and an opposing Pokémon is assumed to carry
+// a 80-power attack of each of its types.
 //
 // Everything is tunable in the SCORES table at the top.
 
@@ -64,10 +66,28 @@ function stat(mon, name) {
 	return value;
 }
 
+const GUESS_BONUS = 36, GUESS_HP_BONUS = 91; // a mid-level stat-point investment for unknown stats
+
 class GreedyPlayer extends RandomPlayerAI {
 	constructor(stream, options, getBattle) {
 		super(stream, {...options, mega: 1});
 		this.getBattle = getBattle;
+		this.blind = !!(options && options.blind);
+	}
+
+	// Does the closed-team rule hide this Pokémon's real stats from us?
+	hidden(mon) { return this.blind && mon.side !== this.me; }
+
+	statOf(mon, name) {
+		if (!this.hidden(mon)) return stat(mon, name);
+		const boost = mon.boosts[name] || 0;
+		const guess = mon.species.baseStats[name] + GUESS_BONUS;
+		return guess * (boost >= 0 ? (2 + boost) / 2 : 2 / (2 - boost));
+	}
+
+	hpOf(mon) {
+		if (!this.hidden(mon)) return mon.hp;
+		return (mon.hp / mon.maxhp) * (mon.species.baseStats.hp + GUESS_HP_BONUS);
 	}
 
 	receiveRequest(request) {
@@ -87,21 +107,20 @@ class GreedyPlayer extends RandomPlayerAI {
 		if (move.category === 'Status' || !alive(defender)) return 0;
 		const dex = this.battle.dex;
 		if (!dex.getImmunity(move.type, defender)) return 0;
-		const abilityImmune = ABILITY_IMMUNITY[defender.ability];
-		if (abilityImmune === move.type) return 0;
+		if (!this.hidden(defender) && ABILITY_IMMUNITY[defender.ability] === move.type) return 0;
 
 		let power = move.basePower || 60; // variable-power moves: assume a middling 60
 		if (move.multihit) power *= Array.isArray(move.multihit) ? 3.1 : move.multihit;
 		const physical = move.category === 'Physical';
-		const attack = stat(attacker, move.id === 'bodypress' ? 'def' : physical ? 'atk' : 'spa');
-		const defense = stat(defender, physical ? 'def' : 'spd');
+		const attack = this.statOf(attacker, move.id === 'bodypress' ? 'def' : physical ? 'atk' : 'spa');
+		const defense = this.statOf(defender, physical ? 'def' : 'spd');
 		let damage = Math.floor(Math.floor(22 * power * attack / defense) / 50) + 2;
 
 		if (attacker.hasType(move.type)) damage *= attacker.ability === 'adaptability' ? 2 : 1.5;
 		damage *= 2 ** dex.getEffectiveness(move.type, defender);
 		if (move.target === 'allAdjacentFoes' || move.target === 'allAdjacent') damage *= 0.75;
 		if (attacker.status === 'brn' && physical && attacker.ability !== 'guts') damage *= 0.5;
-		if (attacker.item === 'lifeorb') damage *= 1.3;
+		if (!this.hidden(attacker) && attacker.item === 'lifeorb') damage *= 1.3;
 
 		const weather = this.battle.field.effectiveWeather();
 		if (weather === 'sunnyday' || weather === 'desolateland') {
@@ -112,11 +131,20 @@ class GreedyPlayer extends RandomPlayerAI {
 			if (move.type === 'Fire') damage *= 0.5;
 		}
 		damage *= 0.925; // average of the random roll
-		return damage / defender.hp;
+		return damage / this.hpOf(defender);
 	}
 
 	bestDamage(attacker, defender) {
 		let best = 0;
+		if (this.hidden(attacker)) {
+			// Their moves are unknown: assume a strong attack of each of their types.
+			const physical = attacker.species.baseStats.atk >= attacker.species.baseStats.spa;
+			for (const type of attacker.getTypes()) {
+				const threat = {id: 'threat', type, category: physical ? 'Physical' : 'Special', basePower: 80, target: 'normal'};
+				best = Math.max(best, this.estimate(attacker, defender, threat));
+			}
+			return best;
+		}
 		for (const slot of attacker.moveSlots) {
 			best = Math.max(best, this.estimate(attacker, defender, this.battle.dex.moves.get(slot.id)));
 		}
@@ -208,8 +236,8 @@ class GreedyPlayer extends RandomPlayerAI {
 			return mon.lastMove && PROTECT_MOVES.has(mon.lastMove.id) ? -1 : SCORES.protect;
 		}
 		if (id === 'trickroom') {
-			const mine = this.me.active.filter(alive).map(p => stat(p, 'spe'));
-			const theirs = this.foe.active.filter(alive).map(p => stat(p, 'spe'));
+			const mine = this.me.active.filter(alive).map(p => this.statOf(p, 'spe'));
+			const theirs = this.foe.active.filter(alive).map(p => this.statOf(p, 'spe'));
 			const avg = a => a.reduce((x, y) => x + y, 0) / (a.length || 1);
 			const wantsRoom = avg(mine) < avg(theirs);
 			const active = !!field.pseudoWeather.trickroom;

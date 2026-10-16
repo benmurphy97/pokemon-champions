@@ -19,28 +19,13 @@ import random
 import subprocess
 from pathlib import Path
 
-from champions.meta import REFERENCE, build_set, load_usage
+from champions.meta import REFERENCE, build_set, load_usage, usage_key
 from champions.teams import serialise_team
 
 ROOT = Path(__file__).resolve().parents[2]
 REPLAYS = ROOT / "cache" / "replays-m-c.jsonl"
 RESULTS = ROOT / "results"
 TEAM_SIZE = 6
-
-
-def usage_key(species: str, mega: bool, usage: dict) -> str | None:
-    """The usage entry for a team slot.
-
-    Replays list the base species even for Pokémon that Mega Evolve on the ladder, so use the
-    Mega form if the player Mega Evolved it, or if it is far more common than the base form.
-    """
-    family = species.split("-")[0]  # replays say Floette-Eternal; the ladder lists Floette-Mega
-    forms = [name for name in usage if name.startswith((f"{species}-Mega", f"{family}-Mega"))]
-    best_mega = max(forms, key=lambda n: usage[n]["usage"]) if forms else None
-    base_usage = usage[species]["usage"] if species in usage else 0.0
-    if best_mega and (mega or usage[best_mega]["usage"] > base_usage):
-        return best_mega
-    return species if species in usage else None
 
 
 def team_text(side: dict, usage: dict, reference: dict) -> str | None:

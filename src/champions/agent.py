@@ -13,9 +13,11 @@ import torch
 from champions.battle_state import BattleState, base_species
 from champions.encoding import (MOVE_PHASE, N_ACTIONS, REPLACEMENT, SWITCH_BASE, TARGET_FOE_A, TARGET_FOE_B,
                                 encode)
-from champions.vocab import MOVE_ID
+from champions.hindsight import complete_sets
+from champions.meta import load_usage
+from champions.vocab import MOVE_ID, NAME_BY_ID
 
-KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "globals", "slot", "kind", "actor", "mask"]
+KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask"]
 SINGLE_TARGET = {"normal", "any", "adjacentFoe"}
 
 
@@ -23,8 +25,29 @@ def to_tensors(arrays: dict) -> dict:
     return {k: torch.as_tensor(np.asarray(arrays[k]))[None] for k in KEYS}
 
 
+def own_team_info(state: BattleState, side: str, request: dict, team_index: list[int], usage: dict) -> dict:
+    """What the player knows about their own six: real sets from the request for the four brought,
+    and reconstructed ones for the two left behind (which can never be switched in)."""
+    info = complete_sets(state, side, usage)
+    for ti in info:
+        info[ti]["brought"] = False
+    for ti, mon in zip(team_index, request["side"]["pokemon"]):
+        stats = dict(mon.get("stats") or {})
+        max_hp = mon["condition"].split(" ")[0].split("/")
+        stats["hp"] = int(max_hp[1]) if len(max_hp) == 2 else (info[ti].get("stats") or {}).get("hp", 0)
+        info[ti] = {
+            "stats": stats if stats.get("atk") else info[ti].get("stats"),
+            "moves": [NAME_BY_ID.get(m, m) for m in mon.get("moves", [])],
+            "item": NAME_BY_ID.get(mon.get("item", ""), None),
+            "ability": NAME_BY_ID.get(mon.get("baseAbility") or mon.get("ability", ""), None),
+            "brought": True,
+        }
+    return info
+
+
 class NeuralAgent:
     def __init__(self, net, temperature: float = 0.0, seed: int = 0):
+        self.usage = load_usage()
         self.net = net.eval()
         self.temperature = temperature
         self.rng = np.random.default_rng(seed)
@@ -42,6 +65,7 @@ class NeuralAgent:
         team_index = [state._index_of(side, base_species(p["details"])) for p in pokemon]
         position_of = {ti: j + 1 for j, ti in enumerate(team_index)}
         bench = [ti for ti, p in zip(team_index, pokemon) if not p["active"] and not p["condition"].endswith(" fnt")]
+        own = own_team_info(state, side, request, team_index, self.usage)
         taken: set[int] = set()
         choices = []
 
@@ -52,7 +76,7 @@ class NeuralAgent:
                     if not needed or not options:
                         choices.append("pass")
                         continue
-                    arrays = encode(state, side, slot, REPLACEMENT)
+                    arrays = encode(state, side, slot, REPLACEMENT, own_info=own)
                     legal = np.zeros(N_ACTIONS, dtype=bool)
                     legal[[SWITCH_BASE + ti for ti in options]] = True
                     arrays["mask"] = legal
@@ -69,7 +93,7 @@ class NeuralAgent:
                     choices.append("pass")
                     continue
 
-                arrays = encode(state, side, slot, MOVE_PHASE)
+                arrays = encode(state, side, slot, MOVE_PHASE, own_info=own)
                 legal = np.zeros(N_ACTIONS, dtype=bool)
                 slot_of_move = {}
                 for k, move in enumerate(active["moves"]):

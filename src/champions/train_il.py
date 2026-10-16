@@ -20,6 +20,7 @@ import torch.nn.functional as F
 
 from champions.decisions import extract
 from champions.encoding import SWITCH_BASE
+from champions.meta import load_usage
 from champions.policy import PolicyNet
 from champions.vocab import NUM_MOVES
 
@@ -27,11 +28,12 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "cache" / "raw"
 CACHE = ROOT / "cache" / "il_examples.npz"
 MODEL_PATH = ROOT / "models" / "il_policy.pt"
-KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "globals", "slot", "kind", "actor", "mask"]
+KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask"]
 
 
 def build_examples(min_rating: int, limit: int | None) -> dict:
     """Extract every recoverable decision from the raw logs into stacked arrays."""
+    usage = load_usage()
     files = sorted(RAW_DIR.glob("*.json.gz"))[:limit]
     arrays: dict[str, list] = {k: [] for k in KEYS}
     meta = {"action": [], "target": [], "game": [], "won": [], "rating": []}
@@ -42,7 +44,7 @@ def build_examples(min_rating: int, limit: int | None) -> dict:
         lines = replay["log"].split("\n")
         winner = next((l.split("|")[2] for l in lines if l.startswith("|win|")), None)
         names = {l.split("|")[2]: l.split("|")[3] for l in lines if l.startswith("|player|") and l.split("|")[3:4] != [""]}
-        for example in extract(lines):
+        for example in extract(lines, usage):
             for k in KEYS:
                 arrays[k].append(example["arrays"][k])
             meta["action"].append(example["action"])

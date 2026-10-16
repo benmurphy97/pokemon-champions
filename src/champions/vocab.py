@@ -73,4 +73,11 @@ for _a in TYPES:
     for _d in TYPES:
         TYPE_CHART[_type_id(_a), _type_id(_d)] = _chart[_a][_d]
 
+def to_id(name: str) -> str:
+    """Showdown's id form of a name: 'Close Combat' -> 'closecombat'."""
+    return "".join(c for c in name.lower() if c.isalnum())
+
+
+NAME_BY_ID = {to_id(n): n for n in MOVES[1:] + ITEMS[2:] + ABILITIES[1:]}
+
 NUM_SPECIES, NUM_MOVES, NUM_ITEMS, NUM_ABILITIES = len(SPECIES), len(MOVES), len(ITEMS), len(ABILITIES)

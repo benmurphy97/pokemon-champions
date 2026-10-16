@@ -140,7 +140,7 @@ def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--vs", default="greedy", choices=["greedy", "random"])
+    parser.add_argument("--vs", default="greedy", choices=["greedy", "greedy-blind", "random"])
     parser.add_argument("--games", type=int, default=400)
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--model", default=str(MODEL))

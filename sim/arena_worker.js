@@ -82,6 +82,7 @@ class NeuralPlayer extends GreedyPlayer {
 function makeAgent(kind, stream, seed, getBattle, id, side) {
 	if (kind === 'neural') return new NeuralPlayer(stream, {seed}, getBattle, id, side);
 	if (kind === 'greedy') return new GreedyPlayer(stream, {seed}, getBattle);
+	if (kind === 'greedy-blind') return new GreedyPlayer(stream, {seed, blind: true}, getBattle);
 	return new RandomPlayerAI(stream, {seed});
 }
 

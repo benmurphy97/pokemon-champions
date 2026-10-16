@@ -91,3 +91,16 @@ class HpColourTest(unittest.TestCase):
     def test_replay_colour_suffix(self):
         self.assertEqual(parse_hp("100/100g"), (1.0, None))
         self.assertAlmostEqual(parse_hp("45/100y par")[0], 0.45)
+
+
+class HindsightTest(unittest.TestCase):
+    def test_sets_are_rebuilt_from_the_whole_game(self):
+        from champions.hindsight import complete_sets
+        from champions.meta import load_usage
+        state = play(json.loads(FIXTURE.read_text())["log"].split("\n"))
+        info = complete_sets(state, "p1", load_usage())
+        raichu = info[3]
+        self.assertEqual(raichu["item"], "Raichunite Y")                 # shown when it Mega Evolved
+        self.assertTrue({"Zap Cannon", "Protect", "Focus Blast", "Fake Out"} <= set(raichu["moves"]))
+        self.assertEqual(len(info[2]["moves"]), 4)                        # Milotic never moved: filled from ladder stats
+        self.assertEqual([info[i]["brought"] for i in range(6)], [False, True, True, True, True, False])

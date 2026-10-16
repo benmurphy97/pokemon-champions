@@ -35,5 +35,23 @@ class GeneratePoolTest(unittest.TestCase):
         self.assertEqual([t["species"] for t in pool], [t["species"] for t in generate_pool(4, seed=3)])
 
 
+
+@unittest.skipUnless(SHOWDOWN_BUILT, "run scripts/setup_showdown.sh first")
+class TrickRoomPoolTest(unittest.TestCase):
+    def test_every_team_has_exactly_two_trick_room_setters(self):
+        from champions.meta import SETTER_MIN_SHARE, TRICK_ROOM, trick_room_share
+        from champions.teams import parse_team
+        usage = load_usage()
+        pool = generate_pool(8, seed=2, setters=2)
+        self.assertEqual(len(pool), 8)
+        for team in pool:
+            mons = parse_team(team["text"])
+            carriers = [m["name"] for m in mons if TRICK_ROOM in m["moves"]]
+            self.assertEqual(len(carriers), 2, team["species"])
+            for name in carriers:
+                self.assertGreaterEqual(trick_room_share(usage[name]), SETTER_MIN_SHARE, name)
+            self.assertEqual(len({m["name"] for m in mons}), 6)
+
+
 if __name__ == "__main__":
     unittest.main()

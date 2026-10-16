@@ -36,7 +36,7 @@ def build_examples(min_rating: int, limit: int | None) -> dict:
     usage = load_usage()
     files = sorted(RAW_DIR.glob("*.json.gz"))[:limit]
     arrays: dict[str, list] = {k: [] for k in KEYS}
-    meta = {"action": [], "target": [], "game": [], "won": [], "rating": []}
+    meta = {"action": [], "target": [], "game": [], "won": [], "rating": [], "own_tr": []}
     for g, path in enumerate(files):
         replay = json.load(gzip.open(path, "rt"))
         if (replay.get("rating") or 0) < min_rating:
@@ -52,6 +52,7 @@ def build_examples(min_rating: int, limit: int | None) -> dict:
             meta["game"].append(g)
             meta["won"].append(int(names.get(example["side"]) == winner))
             meta["rating"].append(replay.get("rating") or 0)
+            meta["own_tr"].append(example["own_tr"])
         if (g + 1) % 500 == 0:
             print(f"  extracted {g + 1}/{len(files)} games, {len(meta['action'])} decisions", flush=True)
     return {**{k: np.stack(v) for k, v in arrays.items()}, **{k: np.array(v) for k, v in meta.items()}}
@@ -110,6 +111,8 @@ def main():
     parser.add_argument("--limit", type=int, default=None, help="max games to read")
     parser.add_argument("--rebuild", action="store_true", help="re-extract examples from the raw logs")
     parser.add_argument("--winners-only", action="store_true", help="learn only from the winning player's decisions")
+    parser.add_argument("--tr-weight", type=int, default=1, help="train this many times on decisions by players with a Trick Room team")
+    parser.add_argument("--out", default=str(MODEL_PATH), help="where to save the model")
     parser.add_argument("--dim", type=int, default=128)
     parser.add_argument("--layers", type=int, default=3)
     args = parser.parse_args()
@@ -123,6 +126,10 @@ def main():
     is_val = np.array([g in held_out for g in data["game"]])
     train_idx = np.flatnonzero(~is_val & ((data["won"] == 1) if args.winners_only else True))
     val_idx = np.flatnonzero(is_val)
+    if args.tr_weight > 1:
+        extra = train_idx[data["own_tr"][train_idx].astype(bool)]
+        train_idx = np.concatenate([train_idx] + [extra] * (args.tr_weight - 1))
+        print(f"Trick Room decisions: {len(extra)} ({len(extra) / max(len(train_idx) - (args.tr_weight - 1) * len(extra), 1):.0%} of training), weighted x{args.tr_weight}")
     print(f"{n} decisions from {len(games)} games: {len(train_idx)} train, {len(val_idx)} validation")
 
     device = torch.device("cpu")
@@ -157,8 +164,8 @@ def main():
               f"({time.time() - start:.0f}s)", flush=True)
         if m["top1"] > best:
             best = m["top1"]
-            MODEL_PATH.parent.mkdir(exist_ok=True)
-            torch.save({"state": net.state_dict(), "dim": args.dim, "layers": args.layers, "metrics": m}, MODEL_PATH)
+            Path(args.out).parent.mkdir(exist_ok=True)
+            torch.save({"state": net.state_dict(), "dim": args.dim, "layers": args.layers, "metrics": m}, args.out)
 
     # Baseline for context: always predict the most common legal action seen in training.
     counts = np.bincount(data["action"][train_idx], minlength=NUM_MOVES + 6)

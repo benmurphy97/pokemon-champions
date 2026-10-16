@@ -13,8 +13,9 @@ Details that keep it stable:
   * a penalty for drifting far from the imitation policy keeps it from forgetting human play;
   * training teams (results/train_pool.json) are different from the evaluation teams
     (results/opponent_pool.json).
-Every few iterations the policy is played against greedy-blind with fixed settings and the
-best-scoring version is saved to models/rl_policy.pt.
+Our teams each carry two Trick Room setters; the opponents' teams are mostly real ladder teams of
+every kind of strategy, plus Trick Room teams and random meta teams. Every few iterations the
+policy is tested on held-out teams and the best-scoring version is saved to models/rl_policy.pt.
 """
 
 import argparse
@@ -31,19 +32,31 @@ from champions.agent import KEYS, NeuralAgent
 from champions.arena import challenger_wins, load_policy, paired_jobs, run_jobs, wilson
 
 ROOT = Path(__file__).resolve().parents[2]
-TRAIN_POOL = ROOT / "results" / "train_pool.json"
-EVAL_POOL = ROOT / "results" / "opponent_pool.json"
-IL_MODEL = ROOT / "models" / "il_policy.pt"
+TRAIN_POOL = ROOT / "results" / "train_pool_tr.json"          # our teams: each carries two Trick Room setters
+EVAL_POOL = ROOT / "results" / "eval_pool_tr.json"
+LADDER_TRAIN = ROOT / "results" / "ladder_teams_train.json"   # real teams of every kind, used as opponents
+LADDER_EVAL = ROOT / "results" / "ladder_teams_eval.json"
+GENERAL_POOL = ROOT / "results" / "train_pool.json"
+WEB_TEAMS = ROOT / "results" / "web_teams.json"               # good tournament teams from the web, Trick Room and otherwise
+IL_MODEL = ROOT / "models" / "il_policy_tr.pt"
 RL_MODEL = ROOT / "models" / "rl_policy.pt"
 LOG = ROOT / "results" / "rl_log.jsonl"
 
 
-def training_jobs(pool: list[dict], count: int, mix: dict, rng: random.Random, tag: str) -> list[dict]:
-    """Random team pairs; the policy takes a random seat against an opponent drawn from `mix`."""
+def training_jobs(pool: list[dict], count: int, mix: dict, rng: random.Random, tag: str,
+                  opp_pools: list[tuple[list[dict], float]] | None = None) -> list[dict]:
+    """The policy plays a team from `pool` against a team drawn from `opp_pools` (default: `pool` itself).
+
+    It takes a random seat against an opponent agent drawn from `mix`.
+    """
     kinds, weights = list(mix), list(mix.values())
     jobs = []
     for i in range(count):
-        t1, t2 = rng.sample(pool, 2)
+        if opp_pools:
+            t1 = rng.choice(pool)
+            t2 = rng.choice(rng.choices([p for p, _ in opp_pools], [w for _, w in opp_pools])[0])
+        else:
+            t1, t2 = rng.sample(pool, 2)
         opponent = rng.choices(kinds, weights)[0]
         neural_first = rng.random() < 0.5
         jobs.append({"id": f"{tag}-{i}", "a": t1["text"], "b": t2["text"], "seed": rng.randrange(10**6),
@@ -120,12 +133,39 @@ def ppo_update(net, reference, optimiser, batch: dict, args, value_only: bool) -
     return {k: v / max(passes, 1) for k, v in stats.items()}
 
 
-def evaluate(net, games: int, workers: int, opponent: str, seed: int) -> tuple[float, tuple[float, float], int]:
-    """Win rate when playing the most likely move each time, in paired games on the evaluation teams."""
-    pool = json.loads(EVAL_POOL.read_text())
-    results = run_jobs(paired_jobs(pool, games, "neural", opponent, seed), NeuralAgent(net, temperature=0.0), workers)
-    wins, decided, fallbacks = challenger_wins(results)
-    return wins / decided, wilson(wins, decided), fallbacks
+def evaluate(net, games: int, workers: int, seed: int) -> dict:
+    """How well the policy pilots Trick Room teams against real teams of every kind.
+
+    Each of our evaluation teams meets a held-out real ladder team. The same pairing is played with
+    the policy and, as a baseline, with greedy-blind piloting our team, so the difference is the
+    pilot. Each condition is played from both seats. Everything is deterministic (most likely move).
+    """
+    ours, theirs = json.loads(EVAL_POOL.read_text()), json.loads(LADDER_EVAL.read_text())
+    rng = random.Random(seed)
+    jobs = []
+    for n in range(games // 4):
+        t, o = rng.choice(ours), rng.choice(theirs)
+        base = rng.randrange(10**6)
+        for cond, pilot in (("policy", "neural"), ("baseline", "greedy-blind")):
+            jobs.append({"id": f"{n}-{cond}-a", "a": t["text"], "b": o["text"], "seed": base, "agentA": pilot,
+                         "agentB": "greedy-blind", "cond": cond, "t_side": "A", "o_tr": o["trick_room"]})
+            jobs.append({"id": f"{n}-{cond}-b", "a": o["text"], "b": t["text"], "seed": base, "agentA": "greedy-blind",
+                         "agentB": pilot, "cond": cond, "t_side": "B", "o_tr": o["trick_room"]})
+    results = run_jobs(jobs, NeuralAgent(net, temperature=0.0), workers)
+    by_id = {j["id"]: j for j in jobs}
+    tally: dict = {}
+    fallbacks = 0
+    for r in results:
+        job = by_id[r["id"]]
+        fallbacks += r["fallbacks"]
+        for key in (job["cond"], f"{job['cond']}_vs_{'tr' if job['o_tr'] else 'other'}"):
+            wins, played = tally.get(key, (0, 0))
+            tally[key] = (wins + (r["winner"] == job["t_side"]), played + (r["winner"] in ("A", "B")))
+    rates = {k: round(w / p, 3) for k, (w, p) in tally.items() if p}
+    wins, played = tally["policy"]
+    low, high = wilson(wins, played)
+    return {"policy": rates["policy"], "interval": [round(low, 3), round(high, 3)], "baseline": rates["baseline"],
+            "by_opponent": {k: v for k, v in rates.items() if "_vs_" in k}, "invalid_choices": fallbacks}
 
 
 def main():
@@ -141,7 +181,10 @@ def main():
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--minibatch", type=int, default=512)
     parser.add_argument("--value-warmup", type=int, default=1, help="iterations that train only the value estimate")
-    parser.add_argument("--mix", default="greedy-blind:0.6,random:0.25,greedy:0.15")
+    parser.add_argument("--mix", default="greedy-blind:0.6,random:0.25,greedy:0.15", help="opponent agents")
+    parser.add_argument("--opp-pools", default=f"{LADDER_TRAIN}:0.5,{WEB_TEAMS}:0.3,{TRAIN_POOL}:0.1,{GENERAL_POOL}:0.1",
+                        help="opponent teams: path:weight,... (real ladder teams, then tournament teams, by default)")
+    parser.add_argument("--pool", default=str(TRAIN_POOL), help="the policy's own teams")
     parser.add_argument("--eval-every", type=int, default=5)
     parser.add_argument("--eval-games", type=int, default=400)
     parser.add_argument("--seed", type=int, default=0)
@@ -151,7 +194,9 @@ def main():
     torch.manual_seed(args.seed)
     rng = random.Random(args.seed)
     mix = {k: float(v) for k, v in (item.split(":") for item in args.mix.split(","))}
-    pool = json.loads(TRAIN_POOL.read_text())
+    pool = json.loads(Path(args.pool).read_text())
+    opp_pools = [(json.loads(Path(path).read_text()), float(w)) for path, w in
+                 (item.rsplit(":", 1) for item in args.opp_pools.split(","))]
 
     net = load_policy(Path(args.init))
     reference = copy.deepcopy(net).eval()
@@ -164,7 +209,7 @@ def main():
     start = time.time()
     for it in range(1, args.iterations + 1):
         t0 = time.time()
-        jobs = training_jobs(pool, args.games, mix, rng, f"i{it}")
+        jobs = training_jobs(pool, args.games, mix, rng, f"i{it}", opp_pools)
         steps, record = play_batch(net, jobs, args.workers, seed=args.seed * 1000 + it)
         t1 = time.time()
         stats = ppo_update(net, reference, optimiser, to_batch(steps), args, value_only=it <= args.value_warmup)
@@ -173,19 +218,18 @@ def main():
                  "win_rate": {k: round(w / g, 3) for k, (w, g) in record.items()}, **{k: round(v, 4) for k, v in stats.items()}}
 
         if it % args.eval_every == 0 or it == args.iterations:
-            rate, (low, high), fallbacks = evaluate(net, args.eval_games, args.workers, "greedy-blind", seed=7)
-            entry["eval_vs_greedy_blind"] = {"win_rate": round(rate, 3), "interval": [round(low, 3), round(high, 3)],
-                                             "invalid_choices": fallbacks}
-            torch.save({"state": net.state_dict(), "dim": net.dim, "layers": len(net.encoder.layers), "iteration": it,
-                        "eval": entry["eval_vs_greedy_blind"]}, RL_MODEL.with_name("rl_latest.pt"))
-            if rate > best:
-                best = rate
-                torch.save({"state": net.state_dict(), "dim": net.dim, "layers": len(net.encoder.layers), "iteration": it,
-                            "eval": entry["eval_vs_greedy_blind"]}, RL_MODEL)
+            result = evaluate(net, args.eval_games, args.workers, seed=7)
+            entry["eval"] = result
+            checkpoint = {"state": net.state_dict(), "dim": net.dim, "layers": len(net.encoder.layers),
+                          "iteration": it, "eval": result}
+            torch.save(checkpoint, RL_MODEL.with_name("rl_latest.pt"))
+            if result["policy"] > best:
+                best = result["policy"]
+                torch.save(checkpoint, RL_MODEL)
         with LOG.open("a") as f:
             f.write(json.dumps(entry) + "\n")
         print(json.dumps(entry), flush=True)
-    print(f"done in {(time.time() - start) / 60:.1f} min; best evaluation win rate vs greedy-blind {best:.1%}")
+    print(f"done in {(time.time() - start) / 60:.1f} min; best evaluation win rate {best:.1%}")
 
 
 if __name__ == "__main__":

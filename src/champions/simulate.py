@@ -61,6 +61,18 @@ def validate_team(team: str, format_id: str = FORMAT_ID) -> list[str]:
     return []
 
 
+def validate_many(texts: list[str]) -> list[list[str]]:
+    """Rule violations for each team text (empty list = legal), checked in one pass."""
+    with tempfile.TemporaryDirectory() as tmp:
+        inp, out = Path(tmp, "in.json"), Path(tmp, "out.json")
+        inp.write_text(json.dumps(texts))
+        run = subprocess.run(["node", str(RUNNER.with_name("validate_many.js")), str(inp), str(out)],
+                             capture_output=True, text=True)
+        if run.returncode:
+            raise SimError(run.stderr.strip() or "validation failed")
+        return json.loads(out.read_text())
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("team_a")

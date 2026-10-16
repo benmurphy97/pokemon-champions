@@ -55,7 +55,9 @@ def extract(lines: list[str], usage: dict | None = None) -> list[dict]:
         arrays = encode(snapshot, side, slot, kind, own_info=own_sets.get(side))
         if arrays["actor"] < 0 and kind == MOVE_PHASE:
             return
-        examples.append({"arrays": arrays, "action": action, "target": target, "side": side, "kind": kind})
+        own_tr = any("Trick Room" in info["moves"] for info in own_sets.get(side, {}).values())
+        examples.append({"arrays": arrays, "action": action, "target": target, "side": side, "kind": kind,
+                         "own_tr": own_tr})
 
     for line in lines:
         parts = line.split("|")

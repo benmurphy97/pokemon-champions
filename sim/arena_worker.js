@@ -108,7 +108,8 @@ async function play(job) {
 			else if (line === '|tie') winner = 'tie';
 		}
 	}
-	send({t: 'result', id: job.id, winner, turns, fallbacks: (p1.fallbacks || 0) + (p2.fallbacks || 0)});
+	send({t: 'result', id: job.id, winner, turns, fallbacks: (p1.fallbacks || 0) + (p2.fallbacks || 0),
+		tail: p1.lines || []});   // log lines after player A's last decision (the match viewer shows them)
 }
 
 const input = readline.createInterface({input: process.stdin});

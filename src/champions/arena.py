@@ -35,10 +35,11 @@ def load_policy(path: Path = MODEL) -> PolicyNet:
 
 
 def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_flight: int = 4,
-             trajectories: dict | None = None) -> list[dict]:
+             trajectories: dict | None = None, observer=None) -> list[dict]:
     """Run battles across worker processes; neural decisions are answered by `agent`.
 
     If `trajectories` is a dict, each neural decision is recorded into it under (job id, side).
+    `observer(job id, side, lines)` is called with the new log lines before each neural decision.
     """
     todo: queue.Queue = queue.Queue()
     for job in jobs:
@@ -78,6 +79,8 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
                 state = states.setdefault((message["id"], message["side"]), BattleState())
                 for line in message["lines"]:
                     state.update(line)
+                if observer:
+                    observer(message["id"], message["side"], message["lines"])
                 record = trajectories.setdefault((message["id"], message["side"]), []) if trajectories is not None else None
                 choice = agent.decide(state, message["side"], message["request"], record=record)
                 proc.stdin.write(json.dumps({"t": "act", "key": message["key"], "choice": choice}) + "\n")

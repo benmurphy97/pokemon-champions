@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Chart, rolling } from './charts.jsx'
+import Match from './Match.jsx'
 import Sprite from './Sprite.jsx'
 import { winRate } from './rating.js'
 import './ops.css'
@@ -167,6 +168,7 @@ function Theatre({ jobs, load, cores }) {
 export default function Ops() {
   const { data, offline } = usePoll('/api/ops', 4000)
   const [picked, setPicked] = useState(null)
+  const [view, setView] = useState('vitals')
 
   if (offline && !data) {
     return <section className="ops"><div className="panel"><h3>Feed offline</h3><p>Start the monitor feed from the repo root:</p><code>PYTHONPATH=src python3 -m champions.ops_server</code></div></section>
@@ -197,6 +199,11 @@ export default function Ops() {
         <Heartbeat running={live} stalled={stalled} />
       </div>
 
+      <div className="tabs views">
+        <button className={view === 'vitals' ? 'on' : ''} onClick={() => setView('vitals')}>Vitals & monitors</button>
+        <button className={view === 'surgery' ? 'on' : ''} onClick={() => setView('surgery')}>Live surgery (match viewer)</button>
+      </div>
+      {view === 'surgery' ? <Match /> : <>
       <div className="tabs">
         {data.runs.map((r) => (
           <button key={r.name} className={r.name === run.name ? 'on' : ''} onClick={() => setPicked(r.name)}>
@@ -229,6 +236,7 @@ export default function Ops() {
       <Compare runs={data.runs} />
       <Roster roster={data.roster} />
       <Theatre jobs={data.jobs} load={data.load} cores={data.cores} />
+      </>}
     </section>
   )
 }

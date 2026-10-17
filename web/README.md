@@ -15,8 +15,10 @@ The site reads only the JSON files in `public/data/`, so any static host works. 
 The first tab is a live monitor for training. It polls a small feed that reads the logs in `results/` and the running processes:
 
 ```bash
-PYTHONPATH=src python3 -m champions.ops_server   # serves http://localhost:8765/api/ops
+PYTHONPATH=src .venv/bin/python -m champions.ops_server   # serves http://localhost:8765/api/ops (venv: the match viewer uses PyTorch)
 cd web && npm run dev                            # the dev server forwards /api to it
 ```
 
 It shows the training pulse (a heartbeat that goes flat when nothing is running), iteration and time left, win rates by opponent, the held-out checks against the rule-based player, drift and randomness of the policy, every past run side by side, the known-good teams in training, and alerts (stalled run, ahead of or behind the baseline, drifting too far).
+
+**Live surgery** (second view inside the operating room) plays one match with the learned player against the rule-based player and lets you step through it: the board, what just happened, and for each Pokémon's decision the probability the policy gave every legal action, the damage numbers it was shown for each move, its target preference, the threat it saw, and its estimated chance of winning. Arrow keys step through.

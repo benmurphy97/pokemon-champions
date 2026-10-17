@@ -45,3 +45,41 @@
 .job { display: grid; grid-template-columns: auto 1fr 90px; gap: 10px; align-items: center; padding: 6px 0; border-top: 1px solid var(--o-line); font-size: 0.82rem; }
 .job .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--o-good); animation: pulse 1.2s infinite; }
 .cpu { height: 6px; background: var(--o-line); border-radius: 3px; overflow: hidden; } .cpu i { display: block; height: 100%; background: var(--o-warn); }
+.tabs.views button { font-size: 0.85rem; padding: 6px 14px; }
+.controls label { display: block; font-size: 0.78rem; color: var(--o-dim); margin: 8px 0; }
+.controls select, .controls input[type=number] { display: block; width: 100%; margin-top: 4px; padding: 6px; background: var(--o-bg); color: var(--o-text); border: 1px solid var(--o-line); border-radius: 6px; font: inherit; font-size: 0.8rem; }
+.controls input[type=number] { width: 110px; } .controls input[type=checkbox] { display: inline; width: auto; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 6px 0; }
+.ops button { font: inherit; }
+.ops .row button, .stepper button { background: var(--o-panel); color: var(--o-text); border: 1px solid var(--o-line); border-radius: 6px; padding: 5px 12px; cursor: pointer; }
+.ops .row button:disabled { opacity: .4; cursor: default; }
+.ops button.go { background: var(--o-good); color: var(--o-bg); border-color: var(--o-good); font-weight: 700; }
+.bad { color: var(--o-bad); font-size: .8rem; }
+.stepper input[type=range] { width: 100%; accent-color: var(--o-good); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+.chip { font-size: .72rem; padding: 2px 9px; border-radius: 10px; border: 1px solid var(--o-line); color: var(--o-dim); background: transparent; }
+.chip.tr { color: var(--o-bg); background: var(--o-good); border-color: var(--o-good); font-weight: 700; }
+.chip.clickable { cursor: pointer; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
+.side h4 { margin: 4px 0; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--o-dim); }
+.mons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.mon { border: 1px solid var(--o-line); border-radius: 6px; padding: 4px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.mon.active { border-color: var(--o-good); box-shadow: 0 0 8px rgba(77,212,172,.35); }
+.mon.down { opacity: .35; filter: grayscale(1); }
+.mon small { font-size: .62rem; color: var(--o-dim); } .mon .boosts { color: var(--o-warn); }
+.hp { width: 100%; height: 5px; background: var(--o-line); border-radius: 3px; overflow: hidden; } .hp i { display: block; height: 100%; }
+.events { list-style: none; padding: 0; margin: 0; font-size: .8rem; }
+.events li { padding: 2px 8px; border-left: 3px solid var(--o-line); margin: 2px 0; }
+.events li.ours { border-color: var(--o-good); } .events li.foe { border-color: var(--o-bad); } .events li.field { border-color: var(--o-warn); color: var(--o-dim); }
+.events li.turn { border-color: var(--o-text); font-weight: 700; }
+.thought { border-top: 1px solid var(--o-line); padding: 8px 0; }
+.thought-head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: center; }
+.win { position: relative; font-size: .72rem; color: var(--o-dim); padding-bottom: 6px; min-width: 130px; } .win i { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--o-good); }
+.option button { display: grid; grid-template-columns: 170px 1fr 56px; gap: 8px; align-items: center; width: 100%; background: none; border: 0; color: var(--o-text); text-align: left; padding: 3px 0; cursor: pointer; font-size: .8rem; }
+.option.chosen .label { color: var(--o-good); font-weight: 700; }
+.barwrap { height: 8px; background: var(--o-line); border-radius: 4px; overflow: hidden; } .barwrap i { display: block; height: 100%; background: var(--o-dim); }
+.option.chosen .barwrap i { background: var(--o-good); }
+.prob { text-align: right; font-size: .75rem; color: var(--o-dim); }
+.dmg { width: 100%; font-size: .72rem; margin: 2px 0 6px; } .dmg th, .dmg td { padding: 2px 6px; border-bottom: 1px solid var(--o-line); color: var(--o-dim); }
+.target, .threat { font-size: .78rem; color: var(--o-dim); } .threat { padding-left: 16px; }
+.thought summary { cursor: pointer; font-size: .75rem; color: var(--o-dim); margin-top: 6px; }

@@ -104,10 +104,11 @@ class Viewer(NeuralAgent):
 
     def decide(self, state, side, request, record=None, thoughts=None):
         thoughts = []
+        plans = self.plan(state, side, request)
         choice = super().decide(state, side, request, record, thoughts=thoughts)
         brought = [state._index_of(side, base_species(p["details"])) for p in request["side"]["pokemon"]]
         self.steps.append({"turn": state.turn, "events": describe(self.lines), "board": snapshot(state, side, brought),
-                           "thoughts": thoughts, "choice": choice})
+                           "thoughts": thoughts, "plans": plans, "choice": choice})
         self.lines = []
         return choice
 

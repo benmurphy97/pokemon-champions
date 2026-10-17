@@ -103,3 +103,39 @@ class DamageCalcTest(unittest.TestCase):
         self.assertGreater(self.hit(atk_over={"boosts": torch.tensor([[2.0, 0, 0, 0, 0, 0, 0]])}), 1.9 * self.hit() * 0.9)
         levitate = torch.tensor([ABILITY_ID["Levitate"]])
         self.assertEqual(self.hit(move_type="Ground", dfn_over={"ability": levitate}), 0.0)
+
+
+@unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
+class PartnerTest(unittest.TestCase):
+    def setUp(self):
+        from champions.decisions import extract
+        from champions.train_il import KEYS
+        torch.manual_seed(0)
+        self.examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
+        self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in self.examples])) for k in KEYS}
+
+    def test_second_slot_examples_carry_the_first_slots_action(self):
+        from champions.encoding import SWITCH_BASE
+        linked = [e for e in self.examples if e["arrays"]["partner_action"] > 0]
+        self.assertTrue(linked)
+        for e in linked:
+            self.assertEqual(int(e["arrays"]["slot"]), 1)
+            mate = next(m for m in self.examples if m["turn"] == e["turn"] and m["side"] == e["side"] and m["arrays"]["slot"] == 0)
+            self.assertEqual(int(e["arrays"]["partner_action"]), mate["action"])
+            if mate["action"] >= SWITCH_BASE:
+                self.assertFalse(e["arrays"]["mask"][mate["action"]])   # cannot switch in the same teammate
+
+    def test_partner_input_starts_inert_then_matters_once_trained(self):
+        from champions.policy import PolicyNet
+        net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0).eval()
+        other = dict(self.batch)
+        other["partner_action"] = torch.zeros_like(self.batch["partner_action"])
+        other["partner_target"] = torch.zeros_like(self.batch["partner_target"])
+        with torch.no_grad():
+            same = torch.allclose(net(self.batch)[0], net(other)[0])
+            for p in (net.partner_move, net.partner_switch, net.partner_target):
+                for w in p.parameters():
+                    w.normal_()
+            differs = not torch.allclose(net(self.batch)[0], net(other)[0])
+        self.assertTrue(same)
+        self.assertTrue(differs)

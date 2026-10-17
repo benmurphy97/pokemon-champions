@@ -50,6 +50,7 @@ def extract(lines: list[str], usage: dict | None = None) -> list[dict]:
     acted: set = set()                       # (side, slot) already labelled this turn
     blocked: set = set()                     # (side, slot) whose choice is hidden this turn
     upkeep_seen = move_seen = False
+    turn_no = 0
 
     def add(snapshot, side, slot, kind, action, target):
         arrays = encode(snapshot, side, slot, kind, own_info=own_sets.get(side))
@@ -57,7 +58,7 @@ def extract(lines: list[str], usage: dict | None = None) -> list[dict]:
             return
         own_tr = any("Trick Room" in info["moves"] for info in own_sets.get(side, {}).values())
         examples.append({"arrays": arrays, "action": action, "target": target, "side": side, "kind": kind,
-                         "own_tr": own_tr})
+                         "own_tr": own_tr, "turn": turn_no})
 
     for line in lines:
         parts = line.split("|")
@@ -65,6 +66,7 @@ def extract(lines: list[str], usage: dict | None = None) -> list[dict]:
 
         if kind == "turn":
             state.update(line)
+            turn_no += 1
             turn_state, replace_state = copy.deepcopy(state), None
             acted.clear(); blocked.clear()
             upkeep_seen = move_seen = False
@@ -106,4 +108,24 @@ def extract(lines: list[str], usage: dict | None = None) -> list[dict]:
 
         state.update(line)
 
+    link_partners(examples)
     return examples
+
+
+def link_partners(examples: list[dict]) -> None:
+    """Tell each side's second slot what its first slot did that turn, so the pair is learned together.
+
+    Both choices are made before either acts, whatever order they show in the log. The first slot
+    never sees the second's choice; the second sees the first's, so together they cover every pair.
+    """
+    first = {(e["turn"], e["side"]): e for e in examples if e["kind"] == MOVE_PHASE and e["arrays"]["slot"] == 0}
+    for e in examples:
+        if e["kind"] != MOVE_PHASE or e["arrays"]["slot"] != 1:
+            continue
+        mate = first.get((e["turn"], e["side"]))
+        if mate is None:
+            continue
+        e["arrays"]["partner_action"] = type(e["arrays"]["partner_action"])(mate["action"])
+        e["arrays"]["partner_target"] = type(e["arrays"]["partner_target"])(mate["target"] + 1)
+        if mate["action"] >= SWITCH_BASE:
+            e["arrays"]["mask"][mate["action"]] = False

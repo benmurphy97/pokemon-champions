@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "cache" / "raw"
 CACHE = ROOT / "cache" / "il_examples.npz"
 MODEL_PATH = ROOT / "models" / "il_policy.pt"
-KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask"]
+KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask", "partner_action", "partner_target"]
 
 
 def build_examples(min_rating: int, limit: int | None) -> dict:

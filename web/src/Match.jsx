@@ -55,6 +55,27 @@ function Option({ option, chosen, max }) {
   )
 }
 
+function Plans({ plans, thoughts }) {
+  if (!plans || !plans.length) return null
+  const max = Math.max(...plans.map((p) => p.prob), 0.01)
+  const [t0, t1] = thoughts
+  const picked = (p) => t0 && t1 && (p.first.includes(t0.chosen) || p.first === t0.chosen) && p.second.includes(t1.chosen)
+  return (
+    <div className="plans">
+      <h3>Joint plans <small>(both Pokémon choose together: chance of the first × chance of the second given the first)</small></h3>
+      {plans.map((p, i) => (
+        <div key={i} className={`option ${picked(p) ? 'chosen' : ''}`}>
+          <div className="plan-row">
+            <span className="label">{picked(p) ? '▶ ' : ''}{p.first} <b>+</b> {p.second}</span>
+            <span className="barwrap"><i style={{ width: pct(p.prob / max) }} /></span>
+            <span className="prob">{(p.prob * 100).toFixed(1)}%</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 function Thought({ t }) {
   const max = Math.max(...t.options.map((o) => o.prob), 0.01)
   const damaging = t.options.filter((o) => o.damage).length
@@ -64,6 +85,7 @@ function Thought({ t }) {
         <strong>{t.kind === 'replacement' ? 'Choosing a replacement' : `${t.actor} (slot ${'AB'[t.slot]})`}</strong>
         <span className="win" title="The value head's estimate of our chance to win from here">win chance {pct(t.winChance)}<i style={{ width: pct(t.winChance) }} /></span>
       </div>
+      {t.givenPartner && <p className="note given">Scored knowing its partner chose: <strong>{t.givenPartner}</strong></p>}
       <p className="note">Foes on the field: {t.foes.filter(Boolean).join(' and ') || 'none'}. Scores are the policy's probabilities over legal actions{damaging ? '; click a move for the damage numbers it was shown' : ''}.</p>
       {t.options.map((o) => <Option key={o.label} option={o} chosen={o.label === t.chosen} max={max} />)}
       {t.target && (
@@ -191,6 +213,7 @@ export default function Match() {
               )}
               <div className="panel">
                 <h3>What the model is thinking <small>(chose: {current.choice})</small></h3>
+                <Plans plans={current.plans} thoughts={current.thoughts} />
                 {current.thoughts.map((t, i) => <Thought key={i} t={t} />)}
                 {!current.thoughts.length && <p className="note">Nothing to decide (forced moves).</p>}
               </div>

@@ -94,3 +94,7 @@
 .side.theirs .mons { grid-template-columns: repeat(6, 1fr); }
 @media (max-width: 640px) { .side.theirs .mons { grid-template-columns: repeat(3, 1fr); } .side.ours .mons { grid-template-columns: repeat(2, 1fr); } }
 .side.theirs .mon small { font-size: .58rem; }
+.plans { margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--o-line); }
+.plan-row { display: grid; grid-template-columns: minmax(200px, 1.6fr) 1fr 56px; gap: 8px; align-items: center; font-size: .8rem; padding: 3px 0; }
+.plan-row b { color: var(--o-dim); font-weight: 400; margin: 0 4px; }
+.note.given { color: var(--o-warn); }

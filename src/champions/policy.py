@@ -51,6 +51,14 @@ class PolicyNet(nn.Module):
         self.stats_proj = nn.Linear(6, dim)      # your own Pokémon's real stats
         self.speed_proj = nn.Linear(2, dim)      # who outspeeds the two foes on the field
         self.threat_proj = nn.Linear(THREAT_FEATURES, dim)   # how hard the foes can hit our two active Pokémon
+        # What the partner Pokémon has already been told to do this turn (see encoding.encode). Starts at
+        # zero, so a network trained without it behaves the same.
+        self.partner_move = nn.Linear(dim, dim)
+        self.partner_switch = nn.Embedding(7, dim)
+        self.partner_target = nn.Embedding(5, dim)
+        for module in (self.partner_move, self.partner_switch, self.partner_target):
+            for weight in module.parameters():
+                nn.init.zeros_(weight)
         self.side_emb = nn.Embedding(2, dim)
         self.position_emb = nn.Embedding(6, dim)
         self.actor_emb = nn.Parameter(torch.zeros(dim))
@@ -224,11 +232,19 @@ class PolicyNet(nn.Module):
                     out.append((hit / current).max(dim=1).values.clamp(max=3.0) / 3 * foe["present"] * here)
         return torch.stack(out, dim=-1)
 
+    def partner_plan(self, b: dict) -> torch.Tensor:
+        """[B, D]: the partner's already-chosen action (a move and its target, or a switch), zero if none."""
+        action = b["partner_action"]
+        is_move = ((action > 0) & (action < SWITCH_BASE)).unsqueeze(-1)
+        move = self.partner_move(self.encode_moves(action.clamp(0, NUM_MOVES - 1))) * is_move
+        switch = self.partner_switch(torch.where(action >= SWITCH_BASE, action - SWITCH_BASE + 1, torch.zeros_like(action)))
+        return move + switch + self.partner_target(b["partner_target"])
+
     def trunk(self, b: dict):
         """Run the transformer; returns the decision token (B, D) and the own-team tokens (B, 6, D)."""
         mons = self.tokens(b)
         query = (self.kind_emb(b["kind"]) + self.slot_emb(b["slot"]) + self.speed_proj(self.speed_features(b))
-                 + self.threat_proj(self.threat_features(b))).unsqueeze(1)
+                 + self.threat_proj(self.threat_features(b)) + self.partner_plan(b)).unsqueeze(1)
         field = self.field(b["globals"]).unsqueeze(1)
         seq = torch.cat([query, field, mons], dim=1)
         pad = torch.cat([torch.zeros(seq.shape[0], 2, dtype=torch.bool, device=seq.device), ~b["present"]], dim=1)

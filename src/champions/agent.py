@@ -11,13 +11,13 @@ import numpy as np
 import torch
 
 from champions.battle_state import BattleState, base_species
-from champions.encoding import (MOVE_PHASE, N_ACTIONS, REPLACEMENT, SWITCH_BASE, TARGET_FOE_A, TARGET_FOE_B,
-                                encode)
+from champions.encoding import (MOVE_PHASE, N_ACTIONS, REPLACEMENT, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A,
+                                TARGET_FOE_B, TARGET_NONE, encode)
 from champions.hindsight import complete_sets
 from champions.meta import load_usage
 from champions.vocab import MOVE_ID, MOVES, NAME_BY_ID
 
-KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask"]
+KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask", "partner_action", "partner_target"]
 SINGLE_TARGET = {"normal", "any", "adjacentFoe"}
 
 
@@ -93,6 +93,78 @@ class NeuralAgent:
         record.append({"arrays": dict(arrays), "action": action, "logp": logp, "target": target, "lead": lead,
                        "target_mask": np.zeros(4, dtype=bool) if target_mask is None else target_mask})
 
+    @staticmethod
+    def slot_legal(active: dict, bench: list[int], taken: set[int]) -> tuple[np.ndarray, dict]:
+        """Legal action mask for one active Pokémon, and {move id: (move slot, target type)}."""
+        legal = np.zeros(N_ACTIONS, dtype=bool)
+        slot_of_move = {}
+        for k, move in enumerate(active["moves"]):
+            move_id = MOVE_ID.get(move["move"], 0)
+            if not move.get("disabled") and move_id:
+                legal[move_id] = True
+                slot_of_move[move_id] = (k + 1, move.get("target"))
+        if slot_of_move and not active.get("trapped"):
+            for ti in bench:
+                if ti not in taken:
+                    legal[SWITCH_BASE + ti] = True
+        return legal, slot_of_move
+
+    def plan(self, state: BattleState, side: str, request: dict, combos: int = 8) -> list[dict]:
+        """The most likely joint plans for both active Pokémon: P(first slot) x P(second slot | first).
+
+        The first slot's most likely target is assumed when it picks a single-target move; the second
+        slot's target is not enumerated. Empty unless both Pokémon have a real decision.
+        """
+        pokemon = request["side"]["pokemon"]
+        if request.get("forceSwitch") or len(request.get("active", [])) < 2:
+            return []
+        team_index = [state._index_of(side, base_species(p["details"])) for p in pokemon]
+        bench = [ti for ti, p in zip(team_index, pokemon) if not p["active"] and not p["condition"].endswith(" fnt")]
+        own = own_team_info(state, side, request, team_index, self.usage)
+        foes = state.sides["p2" if side == "p1" else "p1"].active
+        name = lambda s, i: s.team[i].form or s.team[i].species
+        first, second = request["active"]
+        if any(pokemon[i]["condition"].endswith(" fnt") or pokemon[i].get("commanding") for i in (0, 1)):
+            return []
+
+        def scores(slot, active, partner, taken):
+            legal, slot_of_move = self.slot_legal(active, bench, taken)
+            arrays = encode(state, side, slot, MOVE_PHASE, own_info=own, partner=partner)
+            arrays["mask"] = legal
+            with torch.no_grad():
+                logits, _ = self.net(to_tensors(arrays))
+            probs = torch.softmax(logits[0].masked_fill(~torch.as_tensor(legal), -1e9), dim=-1)
+            return probs, slot_of_move, arrays
+
+        def label(slot, action, target=None):
+            if action >= SWITCH_BASE:
+                return f"Switch to {name(state.sides[side], action - SWITCH_BASE)}"
+            mon = name(state.sides[side], state.sides[side].active[slot])
+            return f"{mon}: {MOVES[action]}" + (f" → {name(state.sides[other], foes[target]) }" if target is not None and foes[target] is not None else "")
+
+        other = "p2" if side == "p1" else "p1"
+        if not (scores(0, first, None, set())[1] and scores(1, second, None, set())[1]):
+            return []
+        p0, moves0, arrays0 = scores(0, first, None, set())
+        out = []
+        for a0 in torch.argsort(p0, descending=True)[:4].tolist():
+            if p0[a0] < 0.01:
+                break
+            target0 = None
+            if a0 < SWITCH_BASE and moves0[a0][1] in SINGLE_TARGET:
+                with torch.no_grad():
+                    _, tl = self.net(to_tensors(arrays0), target_for_move=torch.tensor([a0]))
+                allowed = np.array([foes[0] is not None, foes[1] is not None, False, False])
+                target0 = int(tl[0].masked_fill(~torch.as_tensor(allowed), -1e9).argmax()) if allowed.any() else None
+            partner = (a0, target0 if target0 is not None else TARGET_NONE)
+            taken = {a0 - SWITCH_BASE} if a0 >= SWITCH_BASE else set()
+            p1, _, _ = scores(1, second, partner, taken)
+            for a1 in torch.argsort(p1, descending=True)[:3].tolist():
+                if p1[a1] < 0.01:
+                    break
+                out.append({"first": label(0, a0, target0), "second": label(1, a1), "prob": float(p0[a0] * p1[a1])})
+        return sorted(out, key=lambda o: -o["prob"])[:combos]
+
     def think(self, state: BattleState, side: str, arrays: dict, legal: np.ndarray, logits: torch.Tensor,
               action: int, slot: int, kind: int, target: tuple | None = None) -> dict:
         """Everything the network 'saw' and 'felt' for one decision, for the match viewer.
@@ -133,6 +205,9 @@ class NeuralAgent:
                    "threat": [{"foe": foes[fi], "target": name(mine, mine.active[ti]), "revealedMove": threat[fi * 4 + ti * 2].item() * 3,
                                "guess": threat[fi * 4 + ti * 2 + 1].item() * 3}
                               for fi in (0, 1) for ti in (0, 1) if foes[fi] and mine.active[ti] is not None]}
+        pa, pt = int(arrays["partner_action"]), int(arrays["partner_target"])
+        if pa > 0:      # this slot was scored knowing what its partner had already chosen
+            thought["givenPartner"] = label(pa) + (f" on {foes[pt - 1]}" if pt in (1, 2) and foes[pt - 1] else "")
         if target is not None:
             allowed, target_logits, chosen = target
             tp = torch.softmax(target_logits[0].masked_fill(~torch.as_tensor(allowed), -1e9), dim=-1)
@@ -174,28 +249,21 @@ class NeuralAgent:
                 return ", ".join(choices)
 
             mega_used = False
+            partner = None      # what the first slot decided, which the second slot is told
             for slot, active in enumerate(request["active"]):
                 mon = pokemon[slot]
                 if mon["condition"].endswith(" fnt") or mon.get("commanding"):
                     choices.append("pass")
                     continue
 
-                arrays = encode(state, side, slot, MOVE_PHASE, own_info=own)
-                legal = np.zeros(N_ACTIONS, dtype=bool)
-                slot_of_move = {}
-                for k, move in enumerate(active["moves"]):
-                    move_id = MOVE_ID.get(move["move"], 0)
-                    if not move.get("disabled") and move_id:
-                        legal[move_id] = True
-                        slot_of_move[move_id] = (k + 1, move.get("target"))
+                arrays = encode(state, side, slot, MOVE_PHASE, own_info=own, partner=partner)
+                legal, slot_of_move = self.slot_legal(active, bench, taken)
                 if not slot_of_move:
                     # Forced: recharging, locked into a move, or Struggle. The engine decides the details.
                     choices.append("move 1")
+                    forced = MOVE_ID.get(active["moves"][0]["move"], 0) if active["moves"] else 0
+                    partner = (forced, TARGET_NONE) if forced else partner
                     continue
-                if not active.get("trapped"):
-                    for ti in bench:
-                        if ti not in taken:
-                            legal[SWITCH_BASE + ti] = True
 
                 arrays["mask"] = legal
                 logits, _ = self.net(to_tensors(arrays))
@@ -207,6 +275,7 @@ class NeuralAgent:
                         self.note(record, arrays, legal, action, logp, lead=ahead)
                     taken.add(action - SWITCH_BASE)
                     choices.append(f"switch {position_of[action - SWITCH_BASE]}")
+                    partner = (action, TARGET_NONE)
                     continue
 
                 move_slot, target_type = slot_of_move[action]
@@ -228,6 +297,7 @@ class NeuralAgent:
                     choice += f" -{(slot ^ 1) + 1}"
                 elif target_type == "adjacentAllyOrSelf":
                     choice += f" -{slot + 1}"
+                partner = (action, target if target >= 0 else TARGET_ALLY if target_type == "adjacentAlly" else TARGET_NONE)
                 if thoughts is not None:
                     thoughts.append(self.think(state, side, arrays, legal, logits, action, slot, MOVE_PHASE, target_view))
                 if record is not None and (legal.sum() > 1 or (target_mask is not None and target_mask.sum() > 1)):

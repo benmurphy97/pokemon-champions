@@ -48,8 +48,13 @@ def learnable_moves(mon: Mon) -> np.ndarray:
     return mask
 
 
-def encode(state: BattleState, side: str, slot: int, kind: int, own_info: dict | None = None) -> dict:
+def encode(state: BattleState, side: str, slot: int, kind: int, own_info: dict | None = None,
+           partner: tuple[int, int] | None = None) -> dict:
     """Arrays for the decision of `side`'s Pokémon in `slot`, from that side's point of view.
+
+    `partner` is what the other active Pokémon has already been told to do this turn, as
+    (action index, target class), so the two choices are made together: the second slot is scored
+    knowing the first's plan. None for the first slot, and for replacements.
 
     `own_info` is what the player knows about their own six ({team index: moves/item/ability/brought}):
     the real sets in live play, or sets reconstructed from the whole replay in training
@@ -109,7 +114,12 @@ def encode(state: BattleState, side: str, slot: int, kind: int, own_info: dict |
         if brought and not mon.fainted and i not in own.active:
             move_mask[SWITCH_BASE + i] = True
 
+    partner_action, partner_target = (0, 0) if partner is None else (partner[0], partner[1] + 1)
+    if partner_action >= SWITCH_BASE:       # the partner is bringing that teammate in, so this slot cannot
+        move_mask[partner_action] = False
+
     return {
+        "partner_action": np.int64(partner_action), "partner_target": np.int64(partner_target),
         "species": species, "items": items, "abilities": abilities, "moves": moves, "numbers": numbers,
         "present": present, "stats": stats, "globals": globals_, "slot": np.int64(slot), "kind": np.int64(kind),
         "actor": np.int64(-1 if actor_index is None else actor_index), "mask": move_mask,

@@ -109,3 +109,7 @@ The arena plays every sampled pair of teams twice, so each agent pilots both tea
 ### Run 4: health-lead reward (`--shaping 0.25 --gae-lambda 0.9`), same start as run 3
 
 Held-out checks at iterations 10 to 60: 51.3 / 49.0 / 50.0 / 48.5 / 48.3 / 48.3% against the 49.3% baseline (interval about ±4). On good tournament Trick Room teams 70.7–72.3% (baseline 69%); on generated ones 25–31% (baseline 30%). Training-game win rate against greedy-blind stayed at 39–51%. The denser reward made no measurable difference: reinforcement learning from this start is at parity with the rule-based player however it is rewarded.
+
+### Run 5: 10 known-good Trick Room teams against strong tournament teams (stopped at iteration 51)
+
+Own teams: only the 10 known-good Trick Room teams (`known_teams.py`); opponents 80% the 317 best-rated tournament teams, 20% ladder. Held-out checks against held-out strong teams (baseline greedy-blind piloting the same teams, 57.0%): 51.8 / 50.7 / 47.8 / 59.2 / 57.8% at iterations 10 to 50 (interval about ±4). Mixed: ahead at iterations 40 and 50, behind at 20 and 30, so about level. Stopped early because the network inputs changed (joint two-Pokémon choice); this run used the older inputs.

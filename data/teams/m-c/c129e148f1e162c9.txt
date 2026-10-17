@@ -1,0 +1,53 @@
+Absol @ Absolite Z
+Ability: Pressure
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Night Slash
+- Shadow Claw
+- Close Combat
+- Protect
+
+Lucario @ Lucarionite Z
+Ability: Inner Focus
+EVs: 10 HP / 32 SpA / 24 Spe
+Modest Nature
+- Aura Sphere
+- Flash Cannon
+- Vacuum Wave
+- Detect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Aqua Jet
+- Last Respects
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Quick Attack
+- Yawn
+- Detect
+
+Aerodactyl @ Hard Stone
+Ability: Unnerve
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dual Wingbeat
+- Tailwind
+- Protect
+
+Tsareena @ Focus Sash
+Ability: Queenly Majesty
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Power Whip
+- Triple Axel
+- Low Kick
+- Protect

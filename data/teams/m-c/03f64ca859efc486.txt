@@ -1,0 +1,53 @@
+Politoed @ Damp Rock
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Quiet Nature
+- Weather Ball
+- Protect
+- Muddy Water
+- Psychic
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Sucker Punch
+- Protect
+- Leech Life
+- Iron Head
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Hyper Voice
+- Dragon Pulse
+- Protect
+- Double-Edge
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Protect
+- Haze
+
+Armarouge @ Focus Sash
+Ability: Weak Armor
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Armor Cannon
+- Expanding Force
+- Aura Sphere
+- Energy Ball
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Trick Room
+- Protect
+- Psychic
+- Helping Hand

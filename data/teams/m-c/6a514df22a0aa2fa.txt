@@ -1,0 +1,52 @@
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Protect
+- Blizzard
+- Aurora Veil
+- Thunderbolt
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dragon Claw
+- Fire Fang
+- Rock Slide
+- Stomping Tantrum
+
+Sableye @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Bold Nature
+- Encore
+- Light Screen
+- Reflect
+
+Dragonite @ Wide Lens
+Ability: Multiscale
+EVs: 29 HP / 32 Atk / 5 Spe
+Rash Nature
+- Fire Blast
+- Ice Beam
+- Draco Meteor
+- Extreme Speed
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Dire Claw
+- Close Combat
+- Protect
+
+Rillaboom @ Leftovers
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Stomping Tantrum
+- U-turn
+- Drum Beating

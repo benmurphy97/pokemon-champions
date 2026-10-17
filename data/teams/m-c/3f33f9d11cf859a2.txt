@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Garchomp @ Life Orb
+Ability: Sand Veil
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Earthquake
+- Dragon Claw
+- Rock Slide
+- Protect
+
+Gholdengo @ Air Balloon
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Charm
+- Moonblast
+- Tailwind
+- Encore
+
+Pawmot @ Leppa Berry
+Ability: Volt Absorb
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Nuzzle
+- Revival Blessing
+- Helping Hand
+- Fake Out
+
+Incineroar @ Leftovers
+Ability: Blaze
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Flare Blitz
+- Taunt
+- Protect
+- Parting Shot

@@ -1,0 +1,53 @@
+Lucario @ Lucarionite Z
+Ability: Inner Focus
+EVs: 10 HP / 32 SpA / 24 Spe
+Modest Nature
+- Aura Sphere
+- Calm Mind
+- Flash Cannon
+- Protect
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Swords Dance
+- Throat Chop
+- Low Kick
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Swords Dance
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Grassy Glide
+- U-turn
+- Fake Out
+- Wood Hammer
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Moonblast
+- Psyshock
+- Shadow Ball
+- Protect
+
+Whimsicott @ Leftovers
+Ability: Prankster
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Tailwind
+- Helping Hand
+- Fake Tears
+- Grassy Glide

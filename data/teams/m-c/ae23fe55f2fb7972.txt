@@ -1,0 +1,53 @@
+Skarmory-Mega @ Skarmorite
+Ability: Stalwart
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Brave Bird
+- Iron Head
+- Assurance
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dragon Claw
+- Rock Slide
+- Stomping Tantrum
+- Protect
+
+Talonflame @ Sharp Beak
+Ability: Gale Wings
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Dual Wingbeat
+- Flare Blitz
+- Tailwind
+- Quick Guard
+
+Annihilape @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Rage Fist
+- Taunt
+- Coaching
+- Close Combat
+
+Ninetales-Alola @ Choice Scarf
+Ability: Snow Warning
+EVs: 1 Def / 32 SpA / 1 SpD / 32 Spe
+Modest Nature
+- Blizzard
+- Freeze-Dry
+- Icy Wind
+- Extrasensory
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect

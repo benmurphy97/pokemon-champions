@@ -1,0 +1,53 @@
+Mimikyu @ Red Card
+Ability: Disguise
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Trick Room
+- Will-O-Wisp
+- Light Screen
+- Shadow Sneak
+
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Play Rough
+- Iron Head
+- Sucker Punch
+- Protect
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Psyshock
+- Nasty Plot
+- Protect
+
+Kommo-o @ Leftovers
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Clanging Scales
+- Clangorous Soul
+- Aura Sphere
+- Protect
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Timid Nature
+- Struggle Bug
+- Overheat
+- Rage Powder
+- Tailwind
+
+Weavile @ Wide Lens
+Ability: Pressure
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Triple Axel
+- Snarl
+- Upper Hand
+- Fake Out

@@ -1,0 +1,53 @@
+Absol @ Absolite Z
+Ability: Justified
+EVs: 32 Atk / 28 Def / 6 Spe
+Adamant Nature
+- Night Slash
+- Sucker Punch
+- Close Combat
+- Detect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Tailwind
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Dire Claw
+- Rock Tomb
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Helping Hand
+- Follow Me
+- Trick Room
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Heat Wave
+- Expanding Force
+- Aura Sphere
+- Protect
+
+Gholdengo @ Sitrus Berry
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect

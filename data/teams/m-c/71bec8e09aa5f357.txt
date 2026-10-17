@@ -1,0 +1,53 @@
+Scolipede @ Life Orb
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Leech Life
+- Protect
+- Steel Roller
+- Poison Jab
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect
+
+Toxtricity-Low-Key @ Air Balloon
+Ability: Punk Rock
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Overdrive
+- Sludge Bomb
+- Protect
+- Boomburst
+
+Lucario @ Lucarionite Z
+Ability: Inner Focus
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Aura Sphere
+- Vacuum Wave
+- Nasty Plot
+- Flash Cannon
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Light Screen
+- Reflect
+- Parting Shot
+- Spirit Break
+
+Zoroark-Hisui @ Silk Scarf
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Hyper Voice
+- Protect
+- Bitter Malice
+- Dark Pulse

@@ -1,0 +1,53 @@
+Indeedee @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Mystical Fire
+- Encore
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Timid Nature
+- Weather Ball
+- Hurricane
+- Wide Guard
+- Protect
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Wave Crash
+- Ice Punch
+- Earth Power
+- Protect
+
+Lucario @ Lucarionite Z
+Ability: Inner Focus
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Aura Sphere
+- Flash Cannon
+- Calm Mind
+- Protect
+
+Incineroar @ Wide Lens
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Timid Nature
+- Fake Out
+- Overheat
+- Snarl
+- Will-O-Wisp
+
+Salamence @ Leftovers
+Ability: Intimidate
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Breaking Swipe
+- Rock Slide
+- Tailwind
+- Protect

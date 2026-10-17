@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Aqua Jet
+- Last Respects
+- Protect
+- Wave Crash
+
+Sableye @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Careful Nature
+- Light Screen
+- Reflect
+- Encore
+- Quash
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Weather Ball
+- Heat Wave
+- Protect
+
+Rillaboom @ Grassy Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Modest Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Protect

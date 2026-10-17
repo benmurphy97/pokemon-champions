@@ -1,0 +1,53 @@
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Heat Wave
+- Solar Beam
+- Eruption
+- Earth Power
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Sassy Nature
+- Expanding Force
+- Trick Room
+- Thunderbolt
+- Helping Hand
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Psychic
+- Healing Wish
+- Trick Room
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Calm Mind
+- Protect
+- Hyper Voice
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Snarl
+
+Sirfetchd @ Leek
+Ability: Scrappy
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Meteor Assault
+- feint
+- close combat
+- Protect

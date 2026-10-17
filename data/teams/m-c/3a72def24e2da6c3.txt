@@ -1,0 +1,53 @@
+Tyranitar @ Sitrus Berry
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Rock Slide
+- Knock Off
+- Low Kick
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Light of Ruin
+- Dazzling Gleam
+- Protect
+
+Pidgeot-Mega @ Pidgeotite
+Ability: No Guard
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Heat Wave
+- Hurricane
+- Tailwind
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Iron Head
+- Protect
+- High Horsepower
+- Rock Slide
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Aura Sphere
+- Flamethrower
+- Clanging Scales
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Trick Room
+- Follow Me
+- Helping Hand
+- Psychic

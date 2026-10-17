@@ -1,0 +1,53 @@
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Protect
+- Hyper Voice
+- Aura Sphere
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Helping Hand
+- Expanding Force
+- Trick
+- Mystical Fire
+
+Arcanine @ Eject Button
+Ability: Intimidate
+EVs: 31 HP / 20 Def / 5 SpD / 10 Spe
+Jolly Nature
+- Flare Blitz
+- Will-O-Wisp
+- Extreme Speed
+- Protect
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Dragon Cheer
+- Scald
+- Icy Wind
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Slash
+- Protect
+- Dragon Claw
+- Tailwind
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Calm Nature
+- Shadow Ball
+- Make It Rain
+- Protect
+- Nasty Plot

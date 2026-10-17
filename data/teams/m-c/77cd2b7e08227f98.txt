@@ -1,0 +1,53 @@
+Scrafty-Mega @ Scraftinite
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Ice Punch
+- Drain Punch
+- Knock Off
+- Fake Out
+
+Pyroar-Mega @ Pyroarite
+Ability: Fire Mane
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Overheat
+- Solar Beam
+- Protect
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Sassy Nature
+- Grassy Glide
+- High Horsepower
+- Protect
+- Fake Out
+
+Sneasler @ Life Orb
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Rock Slide
+- Fake Out
+- Close Combat
+- Dire Claw
+
+Torkoal @ Leftovers
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Relaxed Nature
+- Overheat
+- Yawn
+- Helping Hand
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Trick Room
+- Helping Hand
+- Thunderbolt
+- Sunny Day

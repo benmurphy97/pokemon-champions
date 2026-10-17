@@ -18,6 +18,13 @@ data  →  simulate battles  →  search for teams  →  analyse  →  website
 
 No paid APIs. No GPU needed.
 
+## Setup
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # numpy + PyTorch (training only; most tools need just the standard library)
+bash scripts/setup_showdown.sh                                        # builds the battle engine into vendor/
+```
+
 ## Layout
 
 ```

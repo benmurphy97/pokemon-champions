@@ -1,0 +1,53 @@
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Dazzling Gleam
+- Helping Hand
+- Trick Room
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Dazzling Gleam
+- Skill Swap
+- Trick Room
+
+Gallade @ White Herb
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Sacred Sword
+- Psycho Cut
+- Wide Guard
+- Trick Room
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Eruption
+- Weather Ball
+- Earth Power
+- Protect
+
+Golurk-Mega @ Golurkite
+Ability: Unseen Fist
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Headlong Rush
+- Poltergeist
+- Ice Punch
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Iron Head
+- Leech Life
+- Swords Dance
+- Protect

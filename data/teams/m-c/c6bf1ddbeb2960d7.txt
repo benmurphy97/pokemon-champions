@@ -1,0 +1,53 @@
+Alcremie @ Sitrus Berry
+Ability: Aroma Veil
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Decorate
+- Protect
+- Imprison
+- Dazzling Gleam
+
+Zoroark-Hisui @ Focus Sash
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Bitter Malice
+- Hyper Voice
+- Burning Jealousy
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Hyper Voice
+- Protect
+- Heat Wave
+- Draco Meteor
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Iron Head
+- Sucker Punch
+- Leech Life
+
+Gallade @ Life Orb
+Ability: Sharpness
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Protect
+- Sacred Sword
+- Psycho Cut
+- Shadow Claw
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Modest Nature
+- Coil
+- Hydro Pump
+- Muddy Water
+- Ice Beam

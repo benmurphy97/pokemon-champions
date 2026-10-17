@@ -2,20 +2,26 @@
 .env.*
 .DS_Store
 .claude/
+.vscode/
+.idea/
 
 # Python
 __pycache__/
 *.pyc
 .venv/
+*.egg-info/
+.pytest_cache/
 
 # Node
 node_modules/
 
-# Generated output
-results/
-*.log
-
-# Local clone of the Showdown engine (Phase 1)
+# Local clone of the Showdown engine (scripts/setup_showdown.sh rebuilds it)
 vendor/
+
+# Generated, rebuildable: downloaded replays and training examples, trained models, team pools and run logs
 cache/
 models/
+results/
+*.log
+*.pt
+*.npz

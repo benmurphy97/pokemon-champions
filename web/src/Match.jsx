@@ -4,16 +4,17 @@ import Sprite from './Sprite.jsx'
 const pct = (x) => `${Math.round(x * 100)}%`
 const NO_FEED = 'The match feed needs the venv Python: PYTHONPATH=src .venv/bin/python -m champions.ops_server'
 
-function Side({ title, mons }) {
+function Side({ title, mons, hidden }) {
   return (
     <div className="side">
       <h4>{title}</h4>
       <div className="mons">
         {mons.map((m, i) => (
-          <div key={i} className={`mon ${m.fainted ? 'down' : ''} ${m.active != null ? 'active' : ''}`} title={[m.item, m.ability, ...m.moves].filter(Boolean).join(' · ')}>
+          <div key={i} className={`mon ${m.fainted ? 'down' : ''} ${m.active != null ? 'active' : ''} ${hidden && !m.seen ? 'unseen' : ''}`} title={[m.item, m.ability, ...m.moves].filter(Boolean).join(' · ')}>
             <Sprite name={m.name} />
-            <div className="hp"><i style={{ width: pct(m.hp), background: m.hp > 0.5 ? 'var(--o-good)' : m.hp > 0.2 ? 'var(--o-warn)' : 'var(--o-bad)' }} /></div>
-            <small>{m.fainted ? 'KO' : pct(m.hp)}{m.status ? ` ${m.status}` : ''}{m.active != null ? ` · slot ${'AB'[m.active]}` : ''}</small>
+            {hidden && !m.seen && <small>{m.name}: not seen yet</small>}
+            {!(hidden && !m.seen) && <div className="hp"><i style={{ width: pct(m.hp), background: m.hp > 0.5 ? 'var(--o-good)' : m.hp > 0.2 ? 'var(--o-warn)' : 'var(--o-bad)' }} /></div>}
+            {!(hidden && !m.seen) && <small>{m.fainted ? 'KO' : pct(m.hp)}{m.status ? ` ${m.status}` : ''}{m.active != null ? ` · slot ${'AB'[m.active]}` : ''}</small>}
             {Object.keys(m.boosts).length > 0 && <small className="boosts">{Object.entries(m.boosts).map(([k, v]) => `${k}${v > 0 ? '+' : ''}${v}`).join(' ')}</small>}
           </div>
         ))}
@@ -177,8 +178,8 @@ export default function Match() {
               <div className="panel">
                 <Field board={current.board} />
                 <div className="board">
-                  <Side title="Our side" mons={current.board.ours} />
-                  <Side title="Their side" mons={current.board.foe} />
+                  <Side title="Our four" mons={current.board.ours} />
+                  <Side title="Their six (four will come)" mons={current.board.foe} hidden />
                 </div>
               </div>
               {current.events.length > 0 && (

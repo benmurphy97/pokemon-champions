@@ -13,7 +13,7 @@ from pathlib import Path
 
 from champions.agent import NeuralAgent
 from champions.arena import load_policy, run_jobs
-from champions.battle_state import BattleState
+from champions.battle_state import BattleState, base_species
 
 ROOT = Path(__file__).resolve().parents[2]
 MODEL_CANDIDATES = [ROOT / "models" / "rl_policy.pt", ROOT / "models" / "il_policy_v2.pt"]
@@ -80,16 +80,17 @@ def describe(lines: list[str], me: str = "p1") -> list[dict]:
     return out
 
 
-def snapshot(state: BattleState, side: str) -> dict:
+def snapshot(state: BattleState, side: str, brought: list[int]) -> dict:
+    """The board. Our side is only the four we brought; theirs is their six, with `seen` marking who has appeared."""
     other = "p2" if side == "p1" else "p1"
 
-    def team(s):
-        return [{"name": m.form or m.species, "hp": round(m.hp, 3), "fainted": m.fainted, "status": m.status,
+    def team(s, only=None):
+        return [{"name": m.form or m.species, "hp": round(m.hp, 3), "fainted": m.fainted, "status": m.status, "seen": m.revealed,
                  "active": s.active.index(i) if i in s.active else None,
                  "boosts": {k: v for k, v in m.boosts.items() if v}, "item": m.item, "ability": m.ability,
-                 "moves": m.moves} for i, m in enumerate(s.team[:6])]
+                 "moves": m.moves} for i, m in enumerate(s.team[:6]) if only is None or i in only]
     return {"turn": state.turn, "weather": state.weather, "terrain": state.terrain, "trickRoom": state.trick_room,
-            "ours": team(state.sides[side]), "foe": team(state.sides[other]),
+            "ours": team(state.sides[side], set(brought)), "foe": team(state.sides[other]),
             "ourConditions": sorted(state.sides[side].conditions), "foeConditions": sorted(state.sides[other].conditions)}
 
 
@@ -104,7 +105,8 @@ class Viewer(NeuralAgent):
     def decide(self, state, side, request, record=None, thoughts=None):
         thoughts = []
         choice = super().decide(state, side, request, record, thoughts=thoughts)
-        self.steps.append({"turn": state.turn, "events": describe(self.lines), "board": snapshot(state, side),
+        brought = [state._index_of(side, base_species(p["details"])) for p in request["side"]["pokemon"]]
+        self.steps.append({"turn": state.turn, "events": describe(self.lines), "board": snapshot(state, side, brought),
                            "thoughts": thoughts, "choice": choice})
         self.lines = []
         return choice

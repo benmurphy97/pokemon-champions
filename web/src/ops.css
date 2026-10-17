@@ -83,3 +83,5 @@
 .dmg { width: 100%; font-size: .72rem; margin: 2px 0 6px; } .dmg th, .dmg td { padding: 2px 6px; border-bottom: 1px solid var(--o-line); color: var(--o-dim); }
 .target, .threat { font-size: .78rem; color: var(--o-dim); } .threat { padding-left: 16px; }
 .thought summary { cursor: pointer; font-size: .75rem; color: var(--o-dim); margin-top: 6px; }
+.mon.unseen { opacity: .5; } .mon.unseen .sprite { filter: brightness(0) opacity(.6); }
+.mons { grid-template-columns: repeat(2, 1fr); }

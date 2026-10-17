@@ -53,7 +53,7 @@ tests/              Unit tests; tests/fixtures holds sample teams
 docs/               Notes and source links
 ```
 
-`web/` is the static React site (see [web/README.md](web/README.md)); `src/champions/export_site.py` writes the JSON it reads.
+`web/` is the static React site (see [web/README.md](web/README.md)); `src/champions/export_site.py` writes the JSON it reads, and `src/champions/ops_server.py` feeds its live operating-room tab.
 
 ## Setup and tests
 

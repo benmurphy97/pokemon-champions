@@ -1,0 +1,182 @@
+[
+ {
+  "id": "web-f60548851f52d7d8",
+  "species": [
+   "Farigiraf",
+   "Sneasler",
+   "Delphox-Mega",
+   "Torkoal",
+   "Staraptor-Mega",
+   "Kingambit"
+  ],
+  "text": "Farigiraf @ Sitrus Berry\nAbility: Armor Tail\nEVs: 31 HP / 21 Def / 14 SpD\nBold Nature\n- Helping Hand\n- Psychic\n- Trick Room\n- Protect\n\nSneasler @ Focus Sash\nAbility: Poison Touch\nEVs: 32 Atk / 2 SpD / 32 Spe\nJolly Nature\n- Poison Jab\n- Close Combat\n- Rock Slide\n- Fake Out\n\nDelphox-Mega @ Delphoxite\nAbility: Levitate\nEVs: 11 HP / 4 Def / 19 SpA / 32 Spe\nTimid Nature\n- Heat Wave\n- Psychic\n- Nasty Plot\n- Protect\n\nTorkoal @ Charcoal\nAbility: Drought\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Eruption\n- Weather Ball\n- Earth Power\n- Protect\n\nStaraptor-Mega @ Staraptite\nAbility: Contrary\nEVs: 29 HP / 1 Atk / 4 SpD / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Tailwind\n- Protect\n\nKingambit @ Life Orb\nAbility: Defiant\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect",
+  "trick_room": true,
+  "tournament": "WARTORTLE WEDNESDAYS #68 REG M-C BO3 OTS",
+  "placement": "1st",
+  "date": "2026-10-15",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-4e55f21fbe0d761e",
+  "species": [
+   "Archaludon",
+   "Garchomp-Mega-Z",
+   "Pelipper",
+   "Golisopod-Mega",
+   "Basculegion",
+   "Farigiraf"
+  ],
+  "text": "Archaludon @ Leftovers\nAbility: Stamina\nEVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe\nModest Nature\n- Electro Shot\n- Dragon Pulse\n- Flash Cannon\n- Protect\n\nGarchomp-Mega-Z @ Garchompite Z\nAbility: Levitate\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Earth Power\n- Dragon Pulse\n- Power Gem\n- Protect\n\nPelipper @ Focus Sash\nAbility: Drizzle\nEVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Protect\n\nGolisopod-Mega @ Golisopite\nAbility: Tough Claws\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Leech Life\n- Iron Head\n- Sucker Punch\n- Protect\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nEVs: 32 Atk / 2 SpD / 32 Spe\nJolly Nature\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n- Last Respects\n\nFarigiraf @ Sitrus Berry\nAbility: Armor Tail\nEVs: 25 HP / 26 Def / 15 SpD\nBold Nature\n- Twin Beam\n- Shadow Ball\n- Protect\n- Trick Room",
+  "trick_room": true,
+  "tournament": "Tenki's Cart Weekly #120 - Reg M-C",
+  "placement": "8th",
+  "date": "2026-10-01",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-3aa2fd7c0fd817ea",
+  "species": [
+   "Indeedee-F",
+   "Gardevoir-Mega",
+   "Sneasler",
+   "Excadrill",
+   "Tyranitar-Mega",
+   "Hydreigon"
+  ],
+  "text": "Indeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Helping Hand\n- Follow Me\n- Psychic\n- Trick Room\n\nGardevoir-Mega @ Gardevoirite\nAbility: Pixilate\nEVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe\nModest Nature\n- Hyper Voice\n- Expanding Force\n- Thunderbolt\n- Protect\n\nSneasler @ Psychic Seed\nAbility: Unburden\nEVs: 32 Atk / 2 SpD / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Rock Slide\n- Protect\n\nExcadrill @ Focus Sash\nAbility: Sand Rush\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- High Horsepower\n- Rock Slide\n- Iron Head\n- Protect\n\nTyranitar-Mega @ Tyranitarite\nAbility: Sand Stream\nEVs: 16 HP / 18 Atk / 32 Spe\nJolly Nature\n- Rock Slide\n- Knock Off\n- Low Kick\n- Protect\n\nHydreigon @ Choice Scarf\nAbility: Levitate\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Draco Meteor\n- Dark Pulse\n- Snarl\n- Flamethrower",
+  "trick_room": true,
+  "tournament": "Tenki's Cart Weekly #122 - Reg M-C",
+  "placement": "1st",
+  "date": "2026-10-15",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-692c6c1c7f22994c",
+  "species": [
+   "Aerodactyl-Mega",
+   "Garchomp",
+   "Charizard-Mega-Y",
+   "Sylveon",
+   "Kingambit",
+   "Farigiraf"
+  ],
+  "text": "Aerodactyl-Mega @ Aerodactylite\nAbility: Tough Claws\nEVs: 16 HP / 18 Atk / 32 Spe\nJolly Nature\n- Rock Slide\n- Dual Wingbeat\n- Tailwind\n- Protect\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Earthquake\n- Stomping Tantrum\n- Dragon Claw\n- Rock Slide\n\nCharizard-Mega-Y @ Charizardite Y\nAbility: Drought\nEVs: 15 HP / 18 Def / 1 SpA / 32 Spe\nModest Nature\n- Heat Wave\n- Weather Ball\n- Solar Beam\n- Protect\n\nSylveon @ Fairy Feather\nAbility: Pixilate\nEVs: 9 HP / 22 Def / 20 SpA / 15 Spe\nModest Nature\n- Hyper Voice\n- Hyper Beam\n- Quick Attack\n- Detect\n\nKingambit @ Focus Sash\nAbility: Defiant\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Iron Head\n- Sucker Punch\n- Low Kick\n\nFarigiraf @ Sitrus Berry\nAbility: Armor Tail\nEVs: 25 HP / 26 Def / 15 SpD\nBold Nature\n- Psychic\n- Thunderbolt\n- Helping Hand\n- Trick Room",
+  "trick_room": true,
+  "tournament": "Talon's FIGHT CLUB #104 POKEMON CHAMPIONS REG M-C",
+  "placement": "7th",
+  "date": "2026-10-01",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-4ba31bb11e8b479b",
+  "species": [
+   "Froslass-Mega",
+   "Floette-Mega",
+   "Incineroar",
+   "Indeedee",
+   "Delphox",
+   "Garchomp"
+  ],
+  "text": "Froslass-Mega @ Froslassite\nAbility: Snow Warning\nEVs: 25 HP / 26 SpD / 15 Spe\nTimid Nature\n- Protect\n- Aurora Veil\n- Shadow Ball\n- Blizzard\n\nFloette-Mega @ Floettite\nAbility: Fairy Aura\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Draining Kiss\n- Dazzling Gleam\n- Calm Mind\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nEVs: 32 HP / 2 Def / 32 SpD\nCareful Nature\n- Fake Out\n- Darkest Lariat\n- Flare Blitz\n- Parting Shot\n\nIndeedee @ Focus Sash\nAbility: Psychic Surge\nEVs: 32 SpA / 2 SpD / 32 Spe\nTimid Nature\n- Protect\n- Expanding Force\n- Mystical Fire\n- Trick Room\n\nDelphox @ Psychic Seed\nAbility: Magician\nEVs: 11 HP / 4 Def / 19 SpA / 32 Spe\nTimid Nature\n- Mystical Fire\n- Protect\n- Expanding Force\n- Calm Mind\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Dragon Claw\n- Rock Slide\n- Stomping Tantrum\n- Earthquake",
+  "trick_room": true,
+  "tournament": "Intimidators Champions Challenge #50 REG M-C",
+  "placement": "7th",
+  "date": "2026-10-12",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-4fd8d087bc9e79d4",
+  "species": [
+   "Sneasler",
+   "Incineroar",
+   "Sinistcha",
+   "Kommo-o",
+   "Kingambit",
+   "Delphox-Mega"
+  ],
+  "text": "Sneasler @ Focus Sash\nAbility: Poison Touch\nEVs: 32 Atk / 2 SpD / 32 Spe\nJolly Nature\n- Close Combat\n- Poison Jab\n- Rock Tomb\n- Fake Out\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nEVs: 32 HP / 25 Def / 9 SpD\nRelaxed Nature\n- Fake Out\n- Flare Blitz\n- Darkest Lariat\n- Parting Shot\n\nSinistcha @ Rocky Helmet\nAbility: Hospitality\nEVs: 32 HP / 32 Def / 2 SpA\nBold Nature\n- Protect\n- Matcha Gotcha\n- Trick Room\n- Rage Powder\n\nKommo-o @ Leftovers\nAbility: Soundproof\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Clangorous Soul\n- Aura Sphere\n- Clanging Scales\n\nKingambit @ Chople Berry\nAbility: Defiant\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Iron Head\n- Sucker Punch\n- Low Kick\n\nDelphox-Mega @ Delphoxite\nAbility: Levitate\nEVs: 11 HP / 4 Def / 19 SpA / 32 Spe\nTimid Nature\n- Protect\n- Heat Wave\n- Psychic\n- Nasty Plot",
+  "trick_room": true,
+  "tournament": "Intimidators Champions Challenge #50 REG M-C",
+  "placement": "4th",
+  "date": "2026-10-12",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-01111b9ae295d1dd",
+  "species": [
+   "Archaludon",
+   "Pelipper",
+   "Sinistcha",
+   "Gholdengo",
+   "Staraptor-Mega",
+   "Swampert-Mega"
+  ],
+  "text": "Archaludon @ Leftovers\nAbility: Stamina\nEVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe\nCalm Nature\n- Electro Shot\n- Flash Cannon\n- Dragon Pulse\n- Protect\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nEVs: 31 HP / 25 SpD / 10 Spe\nBold Nature\n- Wide Guard\n- Weather Ball\n- Hurricane\n- Tailwind\n\nSinistcha @ Colbur Berry\nAbility: Hospitality\nEVs: 32 HP / 32 Def / 2 SpA\nBold Nature\n- Matcha Gotcha\n- Protect\n- Rage Powder\n- Trick Room\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nEVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe\nTimid Nature\n- Protect\n- Make It Rain\n- Shadow Ball\n- Power Gem\n\nStaraptor-Mega @ Staraptite\nAbility: Contrary\nEVs: 29 HP / 1 Atk / 4 SpD / 32 Spe\nJolly Nature\n- Brave Bird\n- Close Combat\n- Tailwind\n- Protect\n\nSwampert-Mega @ Swampertite\nAbility: Swift Swim\nEVs: 32 HP / 32 Atk / 2 Def\nAdamant Nature\n- Earthquake\n- Wave Crash\n- Ice Punch\n- Protect",
+  "trick_room": true,
+  "tournament": "Intimidators Champions Challenge #50 REG M-C",
+  "placement": "8th",
+  "date": "2026-10-12",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-29e888ee1e8bc5d0",
+  "species": [
+   "Farigiraf",
+   "Rillaboom",
+   "Azumarill",
+   "Dragapult",
+   "Camerupt-Mega",
+   "Sneasler"
+  ],
+  "text": "Farigiraf @ Colbur Berry\nAbility: Armor Tail\nEVs: 31 HP / 24 Def / 11 SpD\nRelaxed Nature\n- Expanding Force\n- Sunny Day\n- Trick Room\n- Protect\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nEVs: 32 Atk / 2 SpD / 32 Spe\nBrave Nature\n- Wood Hammer\n- Grassy Glide\n- Fake Out\n- U-turn\n\nAzumarill @ Mystic Water\nAbility: Huge Power\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Liquidation\n- Aqua Jet\n- Play Rough\n- Protect\n\nDragapult @ Life Orb\nAbility: Infiltrator\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Draco Meteor\n- Shadow Ball\n- Flamethrower\n- Thunderbolt\n\nCamerupt-Mega @ Cameruptite\nAbility: Sheer Force\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Heat Wave\n- Ancient Power\n- Earth Power\n- Protect\n\nSneasler @ White Herb\nAbility: Poison Touch\nEVs: 32 Atk / 2 SpD / 32 Spe\nAdamant Nature\n- Dire Claw\n- Close Combat\n- Fake Out\n- U-turn",
+  "trick_room": true,
+  "tournament": "Pokepal Smackdown #160 (Champions) (Reg M-C)",
+  "placement": "1st",
+  "date": "2026-09-28",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-91b5b246e1d5631d",
+  "species": [
+   "Excadrill",
+   "Tyranitar-Mega",
+   "Sneasler",
+   "Milotic",
+   "Indeedee",
+   "Salamence-Mega"
+  ],
+  "text": "Excadrill @ Focus Sash\nAbility: Sand Rush\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- High Horsepower\n- Iron Head\n- Protect\n- Rock Slide\n\nTyranitar-Mega @ Tyranitarite\nAbility: Sand Stream\nEVs: 25 HP / 16 Atk / 25 Spe\nAdamant Nature\n- Knock Off\n- Low Kick\n- Protect\n- Rock Slide\n\nSneasler @ White Herb\nAbility: Unburden\nEVs: 32 Atk / 2 SpD / 32 Spe\nAdamant Nature\n- Close Combat\n- Fake Out\n- Gunk Shot\n- Protect\n\nMilotic @ Sitrus Berry\nAbility: Competitive\nEVs: 32 HP / 21 Def / 11 SpA / 2 Spe\nModest Nature\n- Icy Wind\n- Life Dew\n- Protect\n- Scald\n\nIndeedee @ Choice Scarf\nAbility: Psychic Surge\nEVs: 32 HP / 32 SpA / 2 SpD\nModest Nature\n- Dazzling Gleam\n- Expanding Force\n- Trick\n- Trick Room\n\nSalamence-Mega @ Salamencite\nAbility: Aerilate\nEVs: 32 HP / 2 Def / 32 Spe\nTimid Nature\n- Draco Meteor\n- Heat Wave\n- Hyper Voice\n- Protect",
+  "trick_room": true,
+  "tournament": "Talon's FIGHT CLUB #103 POKEMON CHAMPIONS REG M-C",
+  "placement": "2nd",
+  "date": "2026-09-24",
+  "good": true,
+  "split": "train"
+ },
+ {
+  "id": "web-6bb53f669b9acbe0",
+  "species": [
+   "Indeedee-F",
+   "Sharpedo-Mega",
+   "Gardevoir-Mega",
+   "Sneasler",
+   "Arcanine-Hisui",
+   "Ninetales"
+  ],
+  "text": "Indeedee-F @ Colbur Berry\nAbility: Psychic Surge\nEVs: 32 HP / 32 Def / 2 SpD\nBold Nature\n- Psychic\n- Imprison\n- Trick Room\n- Follow Me\n\nSharpedo-Mega @ Sharpedonite\nAbility: Strong Jaw\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Crunch\n- Liquidation\n- Ice Fang\n- Protect\n\nGardevoir-Mega @ Gardevoirite\nAbility: Pixilate\nEVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe\nModest Nature\n- Hyper Voice\n- Expanding Force\n- Aura Sphere\n- Protect\n\nSneasler @ Psychic Seed\nAbility: Unburden\nEVs: 32 Atk / 2 SpD / 32 Spe\nAdamant Nature\n- Dire Claw\n- Close Combat\n- Protect\n- Swords Dance\n\nArcanine-Hisui @ Focus Sash\nAbility: Rock Head\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Head Smash\n- Flare Blitz\n- Protect\n- Extreme Speed\n\nNinetales @ Life Orb\nAbility: Drought\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Heat Wave\n- Solar Beam\n- Protect\n- Encore",
+  "trick_room": true,
+  "tournament": "X1 Remote Battle League 11\u00aa Edi\u00e7\u00e3o - Reg M-C",
+  "placement": "1st",
+  "date": "2026-10-02",
+  "good": true,
+  "split": "train"
+ }
+]

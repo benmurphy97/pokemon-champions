@@ -29,6 +29,7 @@ import numpy as np
 import torch
 
 from champions.agent import KEYS, NeuralAgent
+from champions.rate_teams import RATINGS
 from champions.arena import challenger_wins, load_policy, paired_jobs, run_jobs, wilson
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -38,14 +39,27 @@ LADDER_TRAIN = ROOT / "results" / "ladder_teams_train.json"   # real teams of ev
 LADDER_EVAL = ROOT / "results" / "ladder_teams_eval.json"
 GENERAL_POOL = ROOT / "results" / "train_pool.json"
 WEB_TEAMS = ROOT / "results" / "web_teams.json"               # good tournament teams from the web, Trick Room and otherwise
+KNOWN_TEAMS = ROOT / "data" / "teams" / "m-c" / "known_good_tr.json"   # see known_teams.py
 IL_MODEL = ROOT / "models" / "il_policy_tr.pt"
 RL_MODEL = ROOT / "models" / "rl_policy.pt"
 LOG = ROOT / "results" / "rl_log.jsonl"
 
 
+DEFAULT_OPP_POOLS = "ladder:0.45,web:0.2,webgood:0.15,gentr:0.1,general:0.1"
+
+
 def load_pool(path: Path, **filters) -> list[dict]:
     """Teams from a pool file, optionally only those whose fields match, e.g. split="train"."""
     return [t for t in json.loads(path.read_text()) if all(t.get(k) == v for k, v in filters.items())]
+
+
+def strong_teams(count: int = 400) -> list[dict]:
+    """The tournament teams with the best simulated records (rate_teams.py): the hard opponents."""
+    from champions.arena import wilson
+    ratings = json.loads(RATINGS.read_text())["teams"]
+    teams = [t for t in load_pool(WEB_TEAMS) if t["id"] in ratings]
+    teams.sort(key=lambda t: -wilson(ratings[t["id"]]["wins"], ratings[t["id"]]["games"])[0])
+    return teams[:count]
 
 
 def named_pools() -> dict[str, list[dict]]:
@@ -55,7 +69,8 @@ def named_pools() -> dict[str, list[dict]]:
         "web": load_pool(WEB_TEAMS, split="train"),              # tournament teams
         "webgood": load_pool(WEB_TEAMS, split="train", good=True),   # tournament teams that placed well
         "gentr": load_pool(TRAIN_POOL),                          # generated Trick Room teams
-        "general": load_pool(GENERAL_POOL),                      # generated meta teams
+        "general": load_pool(GENERAL_POOL),
+        "strong": [t for t in strong_teams() if t["split"] == "train"],   # the best-performing tournament teams                      # generated meta teams
     }
 
 
@@ -173,7 +188,7 @@ def ppo_update(net, reference, optimiser, batch: dict, args, value_only: bool) -
     return {k: v / max(passes, 1) for k, v in stats.items()}
 
 
-def evaluate(net, games: int, workers: int, seed: int) -> dict:
+def evaluate(net, games: int, workers: int, seed: int, known: list[dict] | None = None) -> dict:
     """How well the policy pilots Trick Room teams against real teams of every kind.
 
     Each of our evaluation teams meets a held-out real ladder team. The same pairing is played with
@@ -182,10 +197,14 @@ def evaluate(net, games: int, workers: int, seed: int) -> dict:
     """
     own_pools = {"generated": load_pool(EVAL_POOL), "tournament": load_pool(WEB_TEAMS, split="eval", good=True, trick_room=True)}
     opp_pools = [load_pool(LADDER_EVAL), load_pool(WEB_TEAMS, split="eval")]
+    if known:   # the known-good teams are the ones being tested, against opponents that are not among them
+        ids = {t["id"] for t in known}
+        own_pools = {"known": known}
+        opp_pools = [[t for t in strong_teams() if t["split"] == "eval" and t["id"] not in ids]]
     rng = random.Random(seed)
     jobs = []
     for n in range(games // 4):
-        source = "generated" if n % 2 == 0 else "tournament"
+        source = list(own_pools)[n % len(own_pools)]
         t, o = rng.choice(own_pools[source]), rng.choice(rng.choice(opp_pools))
         base = rng.randrange(10**6)
         for cond, pilot in (("policy", "neural"), ("baseline", "greedy-blind")):
@@ -223,14 +242,16 @@ def main():
     parser.add_argument("--kl", type=float, default=0.1, help="penalty for drifting from the imitation policy")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--minibatch", type=int, default=512)
+    parser.add_argument("--known", action="store_true",
+                        help="train to pilot only the known-good Trick Room teams (known_teams.py) and test on them")
     parser.add_argument("--shaping", type=float, default=0.0,
                         help="extra reward per unit of health lead gained (0 = only the game result counts)")
     parser.add_argument("--gae-lambda", type=float, default=1.0,
                         help="1 = credit decisions with the whole game's result; lower leans on the value estimate")
     parser.add_argument("--value-warmup", type=int, default=1, help="iterations that train only the value estimate")
     parser.add_argument("--mix", default="greedy-blind:0.6,random:0.25,greedy:0.15", help="opponent agents")
-    parser.add_argument("--opp-pools", default="ladder:0.45,web:0.2,webgood:0.15,gentr:0.1,general:0.1",
-                        help="opponent teams, name:weight,... from: ladder, web, webgood, gentr, general")
+    parser.add_argument("--opp-pools", default=DEFAULT_OPP_POOLS,
+                        help="opponent teams, name:weight,... from: ladder, web, webgood, gentr, general, strong")
     parser.add_argument("--web-own-weight", type=int, default=3,
                         help="how many times good tournament Trick Room teams are repeated in the policy's own teams")
     parser.add_argument("--eval-every", type=int, default=10)
@@ -245,6 +266,13 @@ def main():
     named = named_pools()
     web_tr = load_pool(WEB_TEAMS, split="train", good=True, trick_room=True)
     pool = load_pool(TRAIN_POOL) + web_tr * args.web_own_weight       # our teams: generated, plus good tournament ones
+    known = load_pool(KNOWN_TEAMS) if args.known else None
+    if known and args.opp_pools == DEFAULT_OPP_POOLS:
+        args.opp_pools = "strong:0.8,ladder:0.2"
+    if known:
+        ids = {t["id"] for t in known}
+        pool = known
+        named = {name: [t for t in teams if t["id"] not in ids] for name, teams in named.items()}
     opp_pools = [(named[name], float(w)) for name, w in (item.split(":") for item in args.opp_pools.split(","))]
     print(f"own teams: {len(pool)} entries ({len(web_tr)} good tournament Trick Room teams x{args.web_own_weight}); "
           f"opponent pools: {', '.join(f'{n} {len(named[n])}' for n, _ in (i.split(':') for i in args.opp_pools.split(',')))}", flush=True)
@@ -269,7 +297,7 @@ def main():
                  "win_rate": {k: round(w / g, 3) for k, (w, g) in record.items()}, **{k: round(v, 4) for k, v in stats.items()}}
 
         if it % args.eval_every == 0 or it == args.iterations:
-            result = evaluate(net, args.eval_games, args.workers, seed=7)
+            result = evaluate(net, args.eval_games, args.workers, seed=7, known=known)
             entry["eval"] = result
             checkpoint = {"state": net.state_dict(), "dim": net.dim, "layers": len(net.encoder.layers),
                           "iteration": it, "eval": result}

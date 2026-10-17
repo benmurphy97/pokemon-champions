@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Best from './Best.jsx'
 import Model from './Model.jsx'
+import Ops from './Ops.jsx'
 import Strategies from './Strategies.jsx'
 import Teams from './Teams.jsx'
 import Usage from './Usage.jsx'
@@ -10,7 +11,7 @@ const load = (name) => fetch(`./data/${name}.json`).then((r) => r.json())
 export default function App() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
-  const [tab, setTab] = useState('best')
+  const [tab, setTab] = useState('ops')
 
   useEffect(() => {
     Promise.all([load('meta'), load('teams'), load('usage'), load('strategies'), load('model')])
@@ -27,6 +28,7 @@ export default function App() {
         <h1>Pokémon Champions teams</h1>
         <p className="muted">Regulation {data.meta.regulation} · {data.meta.teams} tournament teams</p>
         <nav>
+          <button className={tab === 'ops' ? 'on' : ''} onClick={() => setTab('ops')}>Operating room</button>
           <button className={tab === 'best' ? 'on' : ''} onClick={() => setTab('best')}>Best teams</button>
           <button className={tab === 'teams' ? 'on' : ''} onClick={() => setTab('teams')}>All teams</button>
           <button className={tab === 'strategies' ? 'on' : ''} onClick={() => setTab('strategies')}>Strategies</button>
@@ -34,6 +36,7 @@ export default function App() {
           <button className={tab === 'usage' ? 'on' : ''} onClick={() => setTab('usage')}>Pokémon</button>
         </nav>
       </header>
+      {tab === 'ops' && <Ops />}
       {tab === 'best' && <Best teams={data.teams} />}
       {tab === 'teams' && <Teams teams={data.teams} />}
       {tab === 'strategies' && <Strategies strategies={data.strategies} />}

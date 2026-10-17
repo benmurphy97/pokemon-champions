@@ -85,3 +85,12 @@
 .thought summary { cursor: pointer; font-size: .75rem; color: var(--o-dim); margin-top: 6px; }
 .mon.unseen { opacity: .5; } .mon.unseen .sprite { filter: brightness(0) opacity(.6); }
 .mons { grid-template-columns: repeat(2, 1fr); }
+.board { display: flex; flex-direction: column; gap: 6px; }
+.vs { text-align: center; font-weight: 700; letter-spacing: .3em; color: var(--o-dim); font-size: .8rem; }
+.side { border-radius: 8px; padding: 8px 10px; border: 1px solid var(--o-line); }
+.side.ours { background: rgba(77,212,172,.06); border-color: rgba(77,212,172,.35); }
+.side.theirs { background: rgba(255,107,107,.05); border-color: rgba(255,107,107,.3); }
+.side.ours .mons { grid-template-columns: repeat(4, 1fr); }
+.side.theirs .mons { grid-template-columns: repeat(6, 1fr); }
+@media (max-width: 640px) { .side.theirs .mons { grid-template-columns: repeat(3, 1fr); } .side.ours .mons { grid-template-columns: repeat(2, 1fr); } }
+.side.theirs .mon small { font-size: .58rem; }

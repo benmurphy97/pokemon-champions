@@ -6,7 +6,7 @@ const NO_FEED = 'The match feed needs the venv Python: PYTHONPATH=src .venv/bin/
 
 function Side({ title, mons, hidden }) {
   return (
-    <div className="side">
+    <div className={`side ${hidden ? 'theirs' : 'ours'}`}>
       <h4>{title}</h4>
       <div className="mons">
         {mons.map((m, i) => (
@@ -179,6 +179,7 @@ export default function Match() {
                 <Field board={current.board} />
                 <div className="board">
                   <Side title="Our four" mons={current.board.ours} />
+                  <div className="vs">VS</div>
                   <Side title="Their six (four will come)" mons={current.board.foe} hidden />
                 </div>
               </div>

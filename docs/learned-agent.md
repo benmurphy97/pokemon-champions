@@ -105,3 +105,7 @@ The arena plays every sampled pair of teams twice, so each agent pilots both tea
 - A request for a Pokémon locked into a move (Recharge, Struggle) has no `target` field. Treat any request with no usable move as "move 1".
 - When the engine says "[Unavailable choice] ... trapped" it re-sends a corrected request. Answering both the error and the new request leaves every later answer one request behind, and produces a cascade of "invalid choice" errors.
 - Replay HP strings carry a colour letter (`45/100y`), and some form names differ between team preview and battle (Floette-Eternal/Floette, Mimikyu-Busted).
+
+### Run 4: health-lead reward (`--shaping 0.25 --gae-lambda 0.9`), same start as run 3
+
+Held-out checks at iterations 10 to 60: 51.3 / 49.0 / 50.0 / 48.5 / 48.3 / 48.3% against the 49.3% baseline (interval about ±4). On good tournament Trick Room teams 70.7–72.3% (baseline 69%); on generated ones 25–31% (baseline 30%). Training-game win rate against greedy-blind stayed at 39–51%. The denser reward made no measurable difference: reinforcement learning from this start is at parity with the rule-based player however it is rewarded.

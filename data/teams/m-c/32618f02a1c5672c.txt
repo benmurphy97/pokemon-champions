@@ -1,0 +1,53 @@
+Arboliva @ Leftovers
+Ability: Seed Sower
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Energy Ball
+- Protect
+- Earth Power
+- Hyper Voice
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 26 HP / 3 Def / 11 SpA / 26 Spe
+Modest Nature
+- Heat Wave
+- Protect
+- Psyshock
+- Scorching Sands
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Helping Hand
+- Trick Room
+- Follow Me
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Protect
+- Power Gem
+- Flamethrower
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Last Respects
+- Psychic Fangs
+- Wave Crash
+- Aqua Jet
+
+Pawmot @ Focus Sash
+Ability: Volt Absorb
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Double Shock
+- Close Combat
+- Fake Out
+- Revival Blessing

@@ -1,0 +1,53 @@
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Spiky Shield
+- Power Gem
+- Sludge Bomb
+- Earth Power
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Protect
+- Blizzard
+- Shadow Ball
+- Aurora Veil
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Flip Turn
+- Aqua Jet
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- High Horsepower
+- Grassy Glide
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Earthquake
+- Dragon Claw
+- Stomping Tantrum
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Protect
+- Struggle Bug
+- Overheat
+- Rage Powder

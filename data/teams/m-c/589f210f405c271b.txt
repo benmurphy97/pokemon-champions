@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Trick Room
+- Helping Hand
+
+Milotic @ Psychic Seed
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Muddy Water
+- Coil
+- Hypnosis
+- Recover
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Armor Cannon
+- Expanding Force
+- Wide Guard
+- Protect
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 20 HP / 4 Def / 10 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Sludge Bomb
+- Focus Blast
+- Protect
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Shadow Claw
+- Close Combat
+- Rock Tomb
+- Ice Punch

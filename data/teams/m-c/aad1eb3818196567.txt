@@ -1,0 +1,53 @@
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Rock Tomb
+- Dire Claw
+- Close Combat
+
+Armarouge @ Focus Sash
+Ability: Weak Armor
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Timid Nature
+- Armor Cannon
+- Expanding Force
+- Wide Guard
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Shadow Ball
+- Hyper Voice
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psyshock
+- Follow Me
+- Helping Hand
+- Protect
+
+Kommo-o @ Life Orb
+Ability: Bulletproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Clanging Scales
+- Aura Sphere
+- Flamethrower
+- Protect
+
+Talonflame @ Expert Belt
+Ability: Gale Wings
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Brave Bird
+- Protect
+- Flare Blitz
+- Tailwind

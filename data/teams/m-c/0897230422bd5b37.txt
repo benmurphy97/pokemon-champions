@@ -1,0 +1,53 @@
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Yawn
+- Quick Attack
+- Protect
+
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 5 Def / 29 SpD
+Relaxed Nature
+- Infestation
+- Toxic
+- Wide Guard
+- Baneful Bunker
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Dragon Claw
+- Rock Slide
+- Stomping Tantrum
+
+Venusaur @ Life Orb
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Leaf Storm
+- Sludge Bomb
+- Earth Power
+- Protect
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Flare Blitz
+- Parting Shot
+- Throat Chop

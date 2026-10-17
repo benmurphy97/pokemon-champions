@@ -1,0 +1,53 @@
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Tailwind
+- Wide Guard
+- Weather Ball
+- Hurricane
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- First Impression
+- Leech Life
+- Iron Head
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Trick Room
+- Protect
+- Imprison
+- Expanding Force
+
+Basculegion @ Mystic Water
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Aqua Jet
+- Wave Crash
+- Protect
+- Last Respects
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Spirit Break
+- Reflect
+- Light Screen
+- Parting Shot

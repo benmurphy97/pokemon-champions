@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Protect
+- Sludge Bomb
+- Shadow Ball
+- Perish Song
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Relaxed Nature
+- Protect
+- Flare Blitz
+- Fake Out
+- Parting Shot
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Sassy Nature
+- Protect
+- Grassy Glide
+- Fake Out
+- U-turn
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Close Combat
+- Poison Jab
+- Fake Out
+
+Altaria-Mega @ Altarianite
+Ability: Pixilate
+EVs: 27 HP / 18 Def / 1 SpA / 20 SpD
+Calm Nature
+- Protect
+- Hyper Voice
+- Draco Meteor
+- Perish Song

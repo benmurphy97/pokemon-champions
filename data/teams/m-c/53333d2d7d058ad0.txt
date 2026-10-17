@@ -1,0 +1,53 @@
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Dazzling Gleam
+- Expanding Force
+- Trick
+- After You
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Blizzard
+- Shadow Ball
+- Protect
+- Ice Beam
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Make It Rain
+- Shadow Ball
+- Power Gem
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 Atk / 32 Spe
+Timid Nature
+- Earth Power
+- Flamethrower
+- Protect
+- Dragon Pulse
+
+Talonflame @ Sharp Beak
+Ability: Gale Wings
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Brave Bird
+- Tailwind
+- Flare Blitz
+- Quick Guard
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Taunt
+- Protect
+- Dire Claw

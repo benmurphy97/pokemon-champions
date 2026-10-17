@@ -1,0 +1,53 @@
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Psyshock
+- Nasty Plot
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Encore
+- Tailwind
+- Moonblast
+- Sunny Day
+
+Farigiraf @ Leftovers
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Trick Room
+- Helping Hand
+- Twin Beam
+- Roar
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draining Kiss
+- Dazzling Gleam
+- Calm Mind
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Blaze
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Flare Blitz
+- Parting Shot
+- Taunt
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- U-turn

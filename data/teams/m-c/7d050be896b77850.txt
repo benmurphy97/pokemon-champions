@@ -1,0 +1,53 @@
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Dazzling Gleam
+- Expanding Force
+- Protect
+- Trick Room
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Trick Room
+- Follow Me
+- Helping Hand
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Expanding Force
+- Wide Guard
+- Trick Room
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Ancient Power
+- Heat Wave
+- Protect
+
+Tsareena @ Wide Lens
+Ability: Queenly Majesty
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- High Jump Kick
+- Power Whip
+- Protect
+- Triple Axel
+
+Primarina @ Mystic Water
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Quiet Nature
+- Hyper Voice
+- Hydro Cannon
+- Moonblast
+- Protect

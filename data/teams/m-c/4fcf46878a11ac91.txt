@@ -1,0 +1,53 @@
+Slowking @ Sitrus Berry
+Ability: Regenerator
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Scald
+- Expanding Force
+- Trick Room
+- Flamethrower
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Sassy Nature
+- Fake Out
+- Parting Shot
+- Throat Chop
+- Flare Blitz
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Protect
+- Liquidation
+- Leech Life
+- Iron Head
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Sucker Punch
+- Protect
+- Iron Head
+
+Spiritomb @ Roseli Berry
+Ability: Infiltrator
+EVs: 32 HP / 17 Def / 17 SpD
+Sassy Nature
+- Foul Play
+- Trick Room
+- Protect
+- Pain Split

@@ -1,0 +1,53 @@
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Serious Nature
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+- Detect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Fake Out
+- Dire Claw
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Helping Hand
+- Follow Me
+- Trick Room
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Power Gem
+- Flamethrower
+- Draco Meteor
+- Protect
+
+Aerodactyl-Mega @ Aerodactylite
+Ability: Tough Claws
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dual Wingbeat
+- Tailwind
+- Wide Guard

@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Calm Mind
+- Moonblast
+- Dazzling Gleam
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Rock Slide
+- Stomping Tantrum
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Flare Blitz
+- Snarl
+- Parting Shot
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Encore
+- Moonblast
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Throat Chop
+- Protect

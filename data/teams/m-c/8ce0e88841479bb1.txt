@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Sucker Punch
+- Swords Dance
+- Leech Life
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Swords Dance
+- Iron Head
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Tailwind
+- Weather Ball
+- Wide Guard
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Reflect
+- Light Screen
+- Parting Shot
+- Spirit Break
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Focus Blast
+- Zap Cannon
+- Protect
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Protect
+- Electro Shot
+- Snarl
+- Dragon Pulse

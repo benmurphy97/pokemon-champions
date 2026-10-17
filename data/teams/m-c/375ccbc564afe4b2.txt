@@ -1,0 +1,53 @@
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Dragon Claw
+- Rock Slide
+- Stomping Tantrum
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Aqua Jet
+- Wave Crash
+- Flip Turn
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Moonblast
+- Taunt
+- Encore
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Protect
+- Weather Ball
+- Heat Wave
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Expanding Force
+- Protect
+- Mystical Fire

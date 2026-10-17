@@ -1,0 +1,52 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Iron Head
+- Sucker Punch
+- Leech Life
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 30 HP / 21 Def / 15 SpD
+Relaxed Nature
+- Psychic
+- Trick Room
+- Helping Hand
+- Thunderbolt
+
+Pelipper @ Mystic Water
+Ability: Drizzle
+Sassy Nature
+- Hurricane
+- Muddy Water
+- Weather Ball
+- Wide Guard
+
+Perrserker @ Chople Berry
+Ability: Steely Spirit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Iron Head
+- Close Combat
+- Fake Out
+- Helping Hand
+
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Aura Sphere
+- Water Spout
+- Ice Beam
+- Protect
+
+Pawmot @ Focus Sash
+Ability: Iron Fist
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Revival Blessing
+- Close Combat
+- Double Shock
+- Fake Out

@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Protect
+- Heat Wave
+- Solar Beam
+- Weather Ball
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Darkest Lariat
+- Flare Blitz
+- Fake Out
+- Parting Shot
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Aqua Jet
+- Flip Turn
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Spirit Break
+- Parting Shot
+- Reflect
+- Light Screen
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Earthquake
+- Dragon Claw
+- Rock Slide
+- Protect
+
+Sinistcha @ Leftovers
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Rage Powder
+- Trick Room
+- Life Dew

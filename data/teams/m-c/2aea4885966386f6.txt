@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Timid Nature
+- Protect
+- Quiver Dance
+- Giga Drain
+- Heat Wave
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Protect
+- Draco Meteor
+- Hyper Voice
+- Heat Wave
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Wide Guard
+- Tailwind
+- Muddy Water
+- Hurricane
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Protect
+- Flash Cannon
+- Dragon Pulse
+- Electro Shot
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Swords Dance
+- Leech Life
+- Iron Head
+- Liquidation

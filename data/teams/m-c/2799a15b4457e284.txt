@@ -1,0 +1,53 @@
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Iron Head
+- Psychic Fangs
+- Stomping Tantrum
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dazzling Gleam
+- Moonblast
+- Calm Mind
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Weather Ball
+- Hurricane
+- Tailwind
+- Wide Guard
+
+Indeedee-F @ Psychic Seed
+Ability: Own Tempo
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Helping Hand
+- Psychic
+- Trick Room
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 29 HP / 5 SpA / 32 Spe
+Timid Nature
+- Overheat
+- Struggle Bug
+- Rage Powder
+- Tailwind
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Dragon Pulse
+- Aura Sphere
+- Protect

@@ -1,0 +1,53 @@
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Detect
+- Moonblast
+- Hyper Beam
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Dazzling Gleam
+- Moonblast
+- Calm Mind
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Helping Hand
+- Expanding Force
+- Protect
+- Trick Room
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Protect
+- Iron Head
+
+Arcanine-Hisui @ Sitrus Berry
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Protect
+- Extreme Speed
+- Head Smash
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Fake Out
+- Dire Claw
+- Close Combat

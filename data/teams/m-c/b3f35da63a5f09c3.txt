@@ -1,0 +1,53 @@
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Fake Out
+- Quick Guard
+- Dire Claw
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Protect
+- Psychic
+- Heat Wave
+- Nasty Plot
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Kowtow Cleave
+- Swords Dance
+- Sucker Punch
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Dazzling Gleam
+- Protect
+- Calm Mind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Parting Shot
+- Flare Blitz
+- Helping Hand
+
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Protect
+- Rage Powder
+- Matcha Gotcha
+- Trick Room

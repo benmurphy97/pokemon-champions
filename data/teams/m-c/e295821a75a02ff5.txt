@@ -1,0 +1,53 @@
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Psyshock
+- Nasty Plot
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Calm Mind
+- Draining Kiss
+- Dazzling Gleam
+- Protect
+
+Sinistcha @ Kasib Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Rage Powder
+- Life Dew
+- Protect
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Flare Blitz
+- Darkest Lariat
+- Parting Shot
+
+Vivillon @ Choice Scarf
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Sleep Powder
+- Rage Powder
+- Pollen Puff
+
+Pawmot @ Focus Sash
+Ability: Iron Fist
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Double Shock
+- Close Combat
+- Protect

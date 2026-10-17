@@ -1,0 +1,53 @@
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Mystical Fire
+- Helping Hand
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Rock Slide
+- Dire Claw
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Dragon Pulse
+- Tailwind
+- Protect
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Steel Roller
+- Psychic Fangs
+- Stomping Tantrum
+- Protect
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Scald
+- Icy Wind
+- Ice Beam
+- Protect
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Eruption
+- Heat Wave
+- Overheat
+- Shadow Ball

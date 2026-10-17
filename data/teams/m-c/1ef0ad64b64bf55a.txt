@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Solar Beam
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Dazzling Gleam
+- Light of Ruin
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Iron Head
+- Kowtow Cleave
+- Sucker Punch
+- Low Kick
+
+Garchomp @ Sitrus Berry
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Encore
+- Tailwind
+- Protect

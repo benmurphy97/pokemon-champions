@@ -1,0 +1,53 @@
+Vivillon @ Focus Sash
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sleep Powder
+- Hurricane
+- Rage Powder
+- Tailwind
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+- Protect
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 20 HP / 4 Def / 10 SpA / 32 Spe
+Calm Nature
+- Perish Song
+- Sludge Bomb
+- Shadow Ball
+- Protect
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Sassy Nature
+- Protect
+- Parting Shot
+- Fake Out
+- Flare Blitz
+
+Lopunny-Mega @ Lopunnite
+Ability: Scrappy
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Close Combat
+- Triple Axel
+- U-turn
+
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Hypnosis
+- Helping Hand
+- Protect
+- Weather Ball

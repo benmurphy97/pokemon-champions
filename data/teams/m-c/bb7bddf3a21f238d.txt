@@ -1,0 +1,53 @@
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dark Pulse
+- Protect
+- Shell Smash
+- Water Spout
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+- Fake Out
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Nasty Plot
+- Expanding Force
+- Protect
+
+Sinistcha @ Rocky Helmet
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Rage Powder
+- Trick Room
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Rock Slide
+- Dire Claw
+- Close Combat
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Helping Hand
+- Trick Room
+- Dazzling Gleam

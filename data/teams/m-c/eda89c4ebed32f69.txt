@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Draco Meteor
+- Hyper Voice
+- Protect
+- Tailwind
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Swords Dance
+- Dire Claw
+- Close Combat
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Low Kick
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Dazzling Gleam
+- Light of Ruin
+- Protect
+
+Gallade @ Life Orb
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Sacred Sword
+- Psycho Cut
+- Night Slash
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- U-turn
+- Fake Out

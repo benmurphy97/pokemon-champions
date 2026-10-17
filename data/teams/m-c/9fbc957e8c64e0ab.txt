@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Draco Meteor
+- Hyper Voice
+- Tailwind
+- Protect
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+- Detect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Head Smash
+- Extreme Speed
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Fake Out
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Psychic
+- Thunderbolt
+- Protect
+- Trick Room

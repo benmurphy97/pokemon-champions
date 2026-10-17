@@ -1,0 +1,53 @@
+Cinderace @ Life Orb
+Ability: Libero
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- High Jump Kick
+- Pyro Ball
+- Sucker Punch
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Light of Ruin
+- Moonblast
+- Dazzling Gleam
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Earthquake
+- Stomping Tantrum
+- Rock Slide
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Encore
+- Protect
+- Tailwind
+
+Gholdengo @ Metal Coat
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Power Gem
+- Protect
+
+Basculegion @ Mystic Water
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Aqua Jet
+- Last Respects
+- Protect

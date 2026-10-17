@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Protect
+- Ancient Power
+- Weather Ball
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Tailwind
+- Draco Meteor
+- Protect
+- Hyper Voice
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Superpower
+- Grassy Glide
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Rock Slide
+- Dragon Claw
+- Stomping Tantrum
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Fake Out
+- Protect
+- Dire Claw
+
+Kingambit @ Occa Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect

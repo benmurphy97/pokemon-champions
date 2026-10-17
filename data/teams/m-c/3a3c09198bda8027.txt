@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Superpower
+- Grassy Glide
+- Fake Out
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Darkest Lariat
+- Parting Shot
+- Flare Blitz
+- Fake Out
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 2 HP / 32 Atk / 32 Spe
+Lonely Nature
+- Double-Edge
+- Protect
+- Draco Meteor
+- Tailwind
+
+Primarina @ Leftovers
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Protect
+- Calm Mind
+
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Play Rough
+- Sucker Punch
+- Iron Head
+
+Farigiraf @ Mental Herb
+Ability: Armor Tail
+EVs: 31 HP / 21 Def / 14 SpD
+Bold Nature
+- Psychic
+- Protect
+- Trick Room
+- Helping Hand

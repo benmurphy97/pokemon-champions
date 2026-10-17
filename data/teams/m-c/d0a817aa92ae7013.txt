@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Charm
+- Tailwind
+- Moonblast
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Fake Out
+- Parting Shot
+- Throat Chop
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 Atk / 12 Def / 22 Spe
+Jolly Nature
+- Body Press
+- Protect
+- Iron Head
+- Psychic Fangs
+
+Dragapult @ Life Orb
+Ability: Clear Body
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Shadow Ball
+- Draco Meteor
+- Light Screen
+- Protect
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Trick Room

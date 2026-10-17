@@ -1,0 +1,53 @@
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Protect
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+
+Sirfetchd @ Leek
+Ability: Scrappy
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Close Combat
+- Detect
+- Leaf Blade
+- Brave Bird
+
+Primarina @ Mystic Water
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Protect
+- Hyper Voice
+- Ice Beam
+- Moonblast
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Leech Life
+- Iron Head
+- Liquidation
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Armor Cannon
+- Protect
+- Expanding Force
+- Trick Room
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Trick
+- Protect
+- Dazzling Gleam
+- Expanding Force

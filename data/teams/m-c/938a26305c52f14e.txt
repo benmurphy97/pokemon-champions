@@ -1,0 +1,53 @@
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 29 HP / 5 SpA / 32 Spe
+Timid Nature
+- Overheat
+- Struggle Bug
+- Rage Powder
+- Tailwind
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Earth Power
+- Power Gem
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Darkest Lariat
+- Parting Shot
+- Fake Out
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- U-turn
+- Fake Out
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect

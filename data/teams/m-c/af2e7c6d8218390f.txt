@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Bold Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Scovillain-Mega @ Scovillainite
+Ability: Spicy Spray
+EVs: 31 HP / 13 Def / 1 SpA / 20 SpD / 1 Spe
+Calm Nature
+- Giga Drain
+- Overheat
+- Rage Powder
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dragon Claw
+- Earthquake
+- Rock Slide
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Protect
+
+Rillaboom @ Sitrus Berry
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+- U-turn
+
+Aerodactyl @ Focus Sash
+Ability: Unnerve
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Dual Wingbeat
+- Tailwind
+- Taunt
+- Wide Guard

@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Hyper Voice
+- Draco Meteor
+- Tailwind
+- Protect
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Low Kick
+
+Indeedee-F @ Sitrus Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Trick Room
+- Helping Hand
+- Psychic
+
+Armarouge @ Electric Seed
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Expanding Force
+- Heat Wave
+- Calm Mind
+- Protect
+
+Raichu-Mega-X @ Raichunite X
+Ability: Electric Surge
+EVs: 27 HP / 32 SpA / 7 Spe
+Modest Nature
+- Fake Out
+- Volt Switch
+- Rising Voltage
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dire Claw
+- Close Combat
+- Protect

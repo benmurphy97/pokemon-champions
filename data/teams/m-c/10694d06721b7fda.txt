@@ -1,0 +1,53 @@
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Steel Roller
+- Psychic Fangs
+- Body Press
+- Protect
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Mystical Fire
+- Trick
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Throat Chop
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Head Smash
+- Extreme Speed
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draco Meteor
+- Earth Power
+- Power Gem
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Scald
+- Icy Wind
+- Ice Beam
+- Protect

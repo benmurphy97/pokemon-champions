@@ -1,0 +1,53 @@
+Hatterene @ Focus Sash
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Protect
+- Dazzling Gleam
+- Trick Room
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Throat Chop
+- Flare Blitz
+- Fake Out
+- Close Combat
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Ancient Power
+- Earth Power
+- Protect
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Protect
+- Iron Head
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Trick Room
+- Psychic
+- Helping Hand
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Expanding Force
+- Helping Hand
+- Protect
+- Trick Room

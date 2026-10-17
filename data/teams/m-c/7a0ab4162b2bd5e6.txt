@@ -1,0 +1,53 @@
+Sceptile-Mega @ Sceptilite
+Ability: Lightning Rod
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Earth Power
+- Giga Drain
+- Detect
+
+Toxtricity @ Choice Scarf
+Ability: Punk Rock
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Discharge
+- Overdrive
+- Boomburst
+- Sludge Bomb
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Wide Guard
+- Tailwind
+- Weather Ball
+- Hurricane
+
+Aegislash @ Focus Sash
+Ability: Stance Change
+EVs: 24 HP / 30 Atk / 12 Spe
+Adamant Nature
+- King's Shield
+- Iron Head
+- Poltergeist
+- Close Combat
+
+Incineroar @ Leftovers
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Sassy Nature
+- Fake Out
+- Parting Shot
+- Will-O-Wisp
+- Snarl
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Protect
+- Bulk Up
+- Wave Crash
+- High Horsepower

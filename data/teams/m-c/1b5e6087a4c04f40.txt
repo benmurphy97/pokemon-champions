@@ -1,0 +1,53 @@
+Blaziken-Mega @ Blazikenite
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Detect
+- Flare Blitz
+- Close Combat
+- Rock Slide
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- U-turn
+- High Horsepower
+- Fake Out
+- Wood Hammer
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Protect
+- Helping Hand
+- Weather Ball
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Protect
+- Psychic
+- Thunderbolt
+- Trick Room
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Hyper Voice
+- Aqua Jet
+- Protect
+- Moonblast
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Protect

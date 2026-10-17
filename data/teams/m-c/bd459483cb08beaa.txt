@@ -1,0 +1,53 @@
+Houndoom-Mega @ Houndoominite
+Ability: Solar Power
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Heat Wave
+- Dark Pulse
+- Overheat
+- Protect
+
+Venusaur @ Life Orb
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Sludge Bomb
+- Earth Power
+- Protect
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Close Combat
+- Ice Punch
+- Rock Slide
+- Shadow Claw
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Helping Hand
+- Protect
+
+Kangaskhan-Mega @ Kangaskhanite
+Ability: Parental Bond
+EVs: 32 HP / 32 Atk / 1 Def / 1 SpD
+Adamant Nature
+- Double-Edge
+- Ice Punch
+- Hammer Arm
+- Fake Out
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Psychic
+- Thunderbolt
+- Helping Hand
+- Trick Room

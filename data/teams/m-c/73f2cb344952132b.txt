@@ -1,0 +1,53 @@
+Froslass @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Blizzard
+- Shadow Ball
+- Aurora Veil
+- Protect
+
+Dragonite-Mega @ Dragoninite
+Ability: Multiscale
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draco Meteor
+- Flamethrower
+- Protect
+- Tailwind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Aqua Jet
+- Flip Turn
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Fake Out
+- Quick Guard
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Swords Dance
+- Protect

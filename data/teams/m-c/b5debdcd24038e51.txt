@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 20 HP / 4 Def / 10 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Sludge Bomb
+- Perish Song
+- Protect
+
+Clefable @ Leftovers
+Ability: Unaware
+EVs: 32 HP / 32 Def / 2 SpD
+Calm Nature
+- Moonblast
+- Follow Me
+- Protect
+- Helping Hand
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Wave Crash
+- Ice Punch
+- Protect
+- High Horsepower
+
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 21 Def / 13 SpD
+Bold Nature
+- Weather Ball
+- Ice Beam
+- Protect
+- Perish Song
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Darkest Lariat
+- Parting Shot
+- Protect
+- Fake Out
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- U-turn
+- Fake Out
+- Protect

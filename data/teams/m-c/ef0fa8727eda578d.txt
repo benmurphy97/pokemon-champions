@@ -1,0 +1,53 @@
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Hurricane
+- Wide Guard
+- Weather Ball
+- Protect
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Burn Up
+- Trick Room
+- Aura Sphere
+- Protect
+
+Mimikyu @ Life Orb
+Ability: Disguise
+EVs: 9 HP / 30 Atk / 2 Def / 25 Spe
+Adamant Nature
+- Will-O-Wisp
+- Shadow Sneak
+- Trick Room
+- Play Rough
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 31 HP / 25 Def / 10 SpA
+Quiet Nature
+- Protect
+- Quick Attack
+- Hyper Voice
+- Hyper Beam
+
+Heracross-Mega @ Heracronite
+Ability: Skill Link
+EVs: 32 HP / 18 Atk / 16 SpD
+Impish Nature
+- Rock Blast
+- Skitter Smack
+- Detect
+- Brick Break

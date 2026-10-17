@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Grass Knot
+- Protect
+
+Corviknight @ Psychic Seed
+Ability: Mirror Armor
+EVs: 32 HP / 15 Atk / 19 SpD
+Careful Nature
+- Iron Head
+- Bulk Up
+- Roost
+- Power Trip
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Rock Slide
+- Stomping Tantrum
+- Dragon Claw
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Expanding Force
+- Protect
+- Hyper Voice
+- Mystical Fire
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Trick Room
+
+Sneasler @ Focus Sash
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Coaching
+- Fake Out
+- Close Combat

@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Tailwind
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Head Smash
+- Flare Blitz
+- Extreme Speed
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- High Horsepower
+- Grassy Glide
+- Wood Hammer
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Protect
+- Shadow Ball
+- Nasty Plot
+
+Primarina @ Leftovers
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Calm Mind
+- Protect
+- Moonblast
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Protect
+- Zap Cannon
+- Focus Blast

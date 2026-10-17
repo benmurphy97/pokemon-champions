@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Iron Head
+- Close Combat
+- Protect
+- Leech Life
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Wide Guard
+- Expanding Force
+- Trick Room
+- Armor Cannon
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Earth Power
+- Protect
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Terrain Pulse
+- Follow Me
+- Trick Room
+- Protect
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Low Kick
+
+Medicham-Mega @ Medichamite
+Ability: Pure Power
+EVs: 25 HP / 32 Atk / 4 Def / 5 Spe
+Adamant Nature
+- Fake Out
+- Close Combat
+- Rock Slide
+- Poison Jab

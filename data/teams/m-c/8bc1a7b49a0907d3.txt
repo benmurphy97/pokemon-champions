@@ -1,0 +1,53 @@
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 SpA / 32 SpD / 2 Spe
+Calm Nature
+- Protect
+- Tailwind
+- Weather Ball
+- Hurricane
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Swords Dance
+- Leech Life
+- Drill Run
+- Protect
+
+Scovillain-Mega @ Scovillainite
+Ability: Spicy Spray
+EVs: 32 HP / 15 Def / 15 SpD / 4 Spe
+Bold Nature
+- Overheat
+- Leech Seed
+- Rage Powder
+- Protect
+
+Klefki @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 14 Def / 20 SpD
+Careful Nature
+- Reflect
+- Light Screen
+- Rain Dance
+- Foul Play
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Aqua Jet
+- Flip Turn

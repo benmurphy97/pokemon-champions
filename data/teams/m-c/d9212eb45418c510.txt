@@ -1,0 +1,53 @@
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Psyshock
+- Hyper Voice
+- Expanding Force
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 13 Def / 21 SpD
+Sassy Nature
+- Fake Out
+- Throat Chop
+- Flare Blitz
+- Parting Shot
+
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 25 Def / 9 SpD
+Careful Nature
+- Baneful Bunker
+- Infestation
+- Toxic
+- Wide Guard
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Dire Claw
+- Rock Slide
+- Close Combat
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 2 SpA / 32 SpD
+Sassy Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Trick Room
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Earth Power
+- Dragon Pulse
+- Flamethrower

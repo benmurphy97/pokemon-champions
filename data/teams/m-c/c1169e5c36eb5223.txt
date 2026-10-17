@@ -1,0 +1,53 @@
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Quiver Dance
+- Heat Wave
+- Giga Drain
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- U-turn
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Protect
+- Zap Cannon
+- Focus Blast
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Power Gem
+- Protect
+- Earth Power
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Quick Attack
+- Yawn
+- Protect
+- Hyper Voice
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 30 HP / 21 Def / 15 SpD
+Relaxed Nature
+- Trick Room
+- Expanding Force
+- Dazzling Gleam
+- Ally Switch

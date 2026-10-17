@@ -1,0 +1,53 @@
+Blaziken-Mega @ Blazikenite
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Detect
+- Rock Slide
+- Close Combat
+- Temper Flare
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 12 Def / 25 SpD
+Sassy Nature
+- Protect
+- Trick Room
+- Thunderbolt
+- Psychic
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Protect
+- Helping Hand
+- Weather Ball
+- Eruption
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Modest Nature
+- Spiky Shield
+- Earth Power
+- Power Gem
+- Sludge Bomb
+
+Sylveon @ Life Orb
+Ability: Pixilate
+EVs: 31 HP / 25 Def / 10 SpA
+Quiet Nature
+- Hyper Voice
+- Quick Attack
+- Hyper Beam
+- Protect

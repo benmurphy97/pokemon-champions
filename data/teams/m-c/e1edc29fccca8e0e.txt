@@ -1,0 +1,53 @@
+Absol-Mega-Z @ Absolite Z
+Ability: Sharpness
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Close Combat
+- Protect
+- Shadow Claw
+- Sucker Punch
+
+Rillaboom @ Sitrus Berry
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Fake Out
+- High Horsepower
+- Grassy Glide
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dragon Pulse
+- Protect
+- Earth Power
+- Power Gem
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Fake Out
+- Close Combat
+- Dire Claw
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Protect
+- Head Smash
+- Extreme Speed
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Nasty Plot
+- Shadow Ball
+- Protect
+- Make It Rain

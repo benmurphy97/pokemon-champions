@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- U-turn
+- Fake Out
+- Grassy Glide
+
+Lopunny-Mega @ Lopunnite
+Ability: Scrappy
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Close Combat
+- Fake Out
+- Triple Axel
+- Protect
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Expanding Force
+- Trick Room
+- Hyper Voice
+- Imprison
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Power Gem
+- Dragon Pulse
+- Flamethrower
+- Protect
+
+Aerodactyl @ Focus Sash
+Ability: Unnerve
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dual Wingbeat
+- Tailwind
+- Protect

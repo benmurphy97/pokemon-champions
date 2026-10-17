@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Rock Slide
+- Knock Off
+- Low Kick
+- Protect
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- High Horsepower
+- Swords Dance
+- Iron Head
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Flamethrower
+- Tailwind
+- Protect
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Matcha Gotcha
+- Rage Powder
+- Trick Room
+- Protect
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Moonblast
+- Hyper Voice
+- Dazzling Gleam
+- Protect
+
+Gholdengo @ Leftovers
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect

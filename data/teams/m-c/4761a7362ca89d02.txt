@@ -1,0 +1,53 @@
+Absol-Mega-Z @ Absolite Z
+Ability: Sharpness
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Night Slash
+- Shadow Claw
+- Detect
+- Icy Wind
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Clanging Scales
+- Aura Sphere
+- Protect
+- Vacuum Wave
+
+Armarouge @ Focus Sash
+Ability: Weak Armor
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Expanding Force
+- Armor Cannon
+- Protect
+- Aura Sphere
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Trick Room
+
+Drampa @ Sitrus Berry
+Ability: Cloud Nine
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Draco Meteor
+- Heat Wave
+- Protect
+- Energy Ball
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 Atk / 12 Def / 22 Spe
+Jolly Nature
+- Iron Head
+- Psychic Fangs
+- Steel Roller
+- Brick Break

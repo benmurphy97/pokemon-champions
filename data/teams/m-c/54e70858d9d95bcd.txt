@@ -1,0 +1,53 @@
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Aura Sphere
+- Dark Pulse
+- Steel Beam
+- Protect
+
+Garchomp @ Life Orb
+Ability: Sand Veil
+EVs: 32 Atk / 2 SpA / 32 Spe
+Naive Nature
+- Earthquake
+- Dragon Claw
+- Iron Tail
+- Thrash
+
+Primarina @ Mystic Water
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Aqua Jet
+- Protect
+
+Tsareena @ Wide Lens
+Ability: Queenly Majesty
+EVs: 10 HP / 23 Atk / 7 Def / 26 Spe
+Adamant Nature
+- Power Whip
+- Triple Axel
+- Zen Headbutt
+- Protect
+
+Talonflame @ Sharp Beak
+Ability: Gale Wings
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Brave Bird
+- Tailwind
+- Protect
+
+Delphox @ Psychic Seed
+Ability: Magician
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Expanding Force
+- Imprison
+- Trick Room

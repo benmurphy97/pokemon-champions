@@ -1,0 +1,53 @@
+Meowstic-F @ Meowsticite
+Ability: Trace
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Expanding Force
+- Thunderbolt
+- Fake Out
+- Protect
+
+Blaziken-Mega @ Blazikenite
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Flare Blitz
+- Close Combat
+- Rock Slide
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Trick Room
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Shadow Claw
+- Close Combat
+- Coaching
+- U-turn
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Protect
+- Earth Power
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Protect
+- Dazzling Gleam
+- Trick Room

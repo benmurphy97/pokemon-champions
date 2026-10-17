@@ -1,0 +1,53 @@
+Dragapult @ Life Orb
+Ability: Clear Body
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Dragon Darts
+- Phantom Force
+- U-turn
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Leech Life
+- Iron Head
+- Liquidation
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Coaching
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Hurricane
+- Tailwind
+- Protect
+
+Inteleon @ Scope Lens
+Ability: Sniper
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Snipe Shot
+- Air Cutter
+- Ice Beam
+- Protect
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Follow Me
+- Trick Room
+- Helping Hand

@@ -1,0 +1,53 @@
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Weather Ball
+- Ice Beam
+- Protect
+- Helping Hand
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Leech Life
+- Swords Dance
+- Sucker Punch
+- Protect
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Twin Beam
+- Protect
+- Helping Hand
+- Trick Room
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- U-turn
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Tailwind
+- Protect

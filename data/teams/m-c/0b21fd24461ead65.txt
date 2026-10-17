@@ -1,0 +1,53 @@
+Ampharos-Mega @ Ampharosite
+Ability: Mold Breaker
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Thunderbolt
+- Dragon Pulse
+- Power Gem
+- Protect
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Heat Wave
+- Earth Power
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 21 Def / 14 SpD
+Bold Nature
+- Psychic
+- Thunderbolt
+- Trick Room
+- Helping Hand
+
+Incineroar @ Shuca Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Grapploct @ Life Orb
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Storm Throw
+- Ice Punch
+- Protect
+- Mach Punch
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+- Fake Out

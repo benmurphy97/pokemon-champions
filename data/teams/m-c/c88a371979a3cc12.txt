@@ -1,0 +1,53 @@
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draco Meteor
+- Flamethrower
+- Power Gem
+- Protect
+
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Quiver Dance
+- Heat Wave
+- Bug Buzz
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Clefable @ Rocky Helmet
+Ability: Unaware
+EVs: 32 HP / 32 Def / 2 SpD
+Calm Nature
+- Moonblast
+- Follow Me
+- Helping Hand
+- Protect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Zap Cannon
+- Focus Blast
+- Protect

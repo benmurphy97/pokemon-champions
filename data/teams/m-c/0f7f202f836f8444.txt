@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Solar Beam
+- Weather Ball
+- Protect
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Jolly Nature
+- Spirit Break
+- Reflect
+- Light Screen
+- Parting Shot
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Wave Crash
+- Protect
+- Ice Punch
+- High Horsepower
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Modest Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Venusaur @ Life Orb
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Leaf Storm
+- Sludge Bomb
+- Earth Power
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Wide Guard
+- Weather Ball
+- Tailwind

@@ -1,0 +1,53 @@
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Low Kick
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Earthquake
+
+Sylveon @ Life Orb
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Quick Attack
+- Hyper Beam
+- Detect
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Protect
+- Weather Ball
+- Solar Beam
+
+Aerodactyl-Mega @ Aerodactylite
+Ability: Tough Claws
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Tailwind
+- Dual Wingbeat
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 21 Def / 14 SpD
+Bold Nature
+- Trick Room
+- Twin Beam
+- Thunderbolt
+- Helping Hand

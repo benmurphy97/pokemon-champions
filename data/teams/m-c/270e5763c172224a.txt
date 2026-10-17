@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Flamethrower
+- Protect
+
+Rillaboom @ Occa Berry
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Gholdengo @ Grassy Seed
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Head Smash
+- Protect
+- Extreme Speed
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Hyper Voice
+- Thunderbolt
+- Protect
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Trick Room
+- Psychic
+- Helping Hand

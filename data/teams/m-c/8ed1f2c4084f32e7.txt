@@ -1,0 +1,53 @@
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Wave Crash
+- Earthquake
+- Protect
+- Rock Slide
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Flash Cannon
+- Electro Shot
+- Draco Meteor
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Muddy Water
+- Hurricane
+- Tailwind
+- Protect
+
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 26 Def / 25 SpA / 15 SpD
+Modest Nature
+- Matcha Gotcha
+- Life Dew
+- Rage Powder
+- Imprison
+
+Sableye @ Kasib Berry
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Sassy Nature
+- Reflect
+- Light Screen
+- Quash
+- Rain Dance
+
+Raichu-Mega-X @ Raichunite X
+Ability: Electric Surge
+EVs: 9 HP / 32 SpA / 25 Spe
+Timid Nature
+- Fake Out
+- Protect
+- Rising Voltage
+- Volt Switch

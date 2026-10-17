@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Flare Blitz
+- Snarl
+- Parting Shot
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Earthquake
+- Stomping Tantrum
+- Rock Slide
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Leaf Storm
+- Sludge Bomb
+- Sleep Powder
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- U-turn
+
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 18 Def / 16 SpD
+Bold Nature
+- Toxic
+- Infestation
+- Wide Guard
+- Baneful Bunker

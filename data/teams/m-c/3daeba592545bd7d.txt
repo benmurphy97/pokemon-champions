@@ -1,0 +1,53 @@
+Basculegion-F @ Focus Sash
+Ability: Swift Swim
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Muddy Water
+- Shadow Ball
+- Ice Beam
+- Protect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Iron Head
+- Sucker Punch
+- Protect
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Weather Ball
+- Hurricane
+- Helping Hand
+- Wide Guard
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Rock Slide
+- Protect

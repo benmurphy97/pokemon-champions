@@ -1,0 +1,53 @@
+Wigglytuff @ Grassy Seed
+Ability: Competitive
+EVs: 32 HP / 16 Def / 18 SpD
+Bold Nature
+- Moonblast
+- Stored Power
+- Calm Mind
+- Protect
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Blizzard
+- Shadow Ball
+- Aurora Veil
+- Protect
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Darkest Lariat
+- Parting Shot
+- Fake Out
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+- Fake Out
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dire Claw
+- Close Combat
+- Coaching
+- Fake Out
+
+Sinistcha @ Occa Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Trick Room
+- Rage Powder
+- Life Dew

@@ -1,0 +1,53 @@
+Krookodile @ Focus Sash
+Ability: Moxie
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- High Horsepower
+- Knock Off
+- Rock Slide
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Drum Beating
+- Grassy Glide
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Helping Hand
+- Weather Ball
+- Earth Power
+- Protect
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Dazzling Gleam
+- Psyshock
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Modest Nature
+- Scald
+- Icy Wind
+- Ice Beam
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Make It Rain
+- Nasty Plot
+- Protect

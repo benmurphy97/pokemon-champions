@@ -1,0 +1,53 @@
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Flamethrower
+- Power Gem
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 31 HP / 25 Def / 10 SpA
+Quiet Nature
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+- Detect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Zap Cannon
+- Focus Blast
+- Protect
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Sucker Punch
+- Kowtow Cleave
+- Protect
+- Iron Head
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Trick Room
+- Psychic
+- Helping Hand
+- Thunderbolt
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Fake Out
+- Grassy Glide
+- High Horsepower

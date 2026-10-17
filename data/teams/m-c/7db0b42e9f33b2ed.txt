@@ -1,0 +1,53 @@
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Darkest Lariat
+- Parting Shot
+- Fake Out
+- Flare Blitz
+
+Alakazam-Mega @ Alakazite
+Ability: Trace
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dazzling Gleam
+- Expanding Force
+- Nasty Plot
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 2 SpA / 32 SpD
+Sassy Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Trick Room
+
+Espathra @ Colbur Berry
+Ability: Speed Boost
+EVs: 32 HP / 9 Def / 6 SpD / 19 Spe
+Timid Nature
+- Stored Power
+- Dazzling Gleam
+- Psych Up
+- Protect
+
+Overqwil @ Leftovers
+Ability: Intimidate
+EVs: 32 HP / 1 Atk / 5 Def / 15 SpD / 13 Spe
+Careful Nature
+- Poison Jab
+- Swords Dance
+- Stockpile
+- Minimize
+
+Typhlosion-Hisui @ Life Orb
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Shadow Ball
+- Protect
+- Eruption
+- Lava Plume

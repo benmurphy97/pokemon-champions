@@ -1,0 +1,53 @@
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Trick Room
+- Expanding Force
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Wide Guard
+- U-turn
+- Aqua Jet
+- Iron Head
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Protect
+
+Dragapult @ Life Orb
+Ability: Infiltrator
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Thunderbolt
+- Shadow Ball
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Rock Slide
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Eruption
+- Weather Ball
+- Yawn
+- Protect

@@ -1,0 +1,53 @@
+Pidgeot-Mega @ Pidgeotite
+Ability: No Guard
+EVs: 7 HP / 27 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Hurricane
+- Roost
+- Protect
+
+Sableye @ Roseli Berry
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Careful Nature
+- Fake Out
+- Reflect
+- Sunny Day
+- Foul Play
+
+Espathra @ Leftovers
+Ability: Speed Boost
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Calm Nature
+- Protect
+- Calm Mind
+- Baton Pass
+- Lumina Crash
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Earthquake
+- Stomping Tantrum
+- Dragon Claw
+- Protect
+
+Torkoal @ Sitrus Berry
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Helping Hand
+- Weather Ball
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Close Combat
+- Dire Claw
+- Rock Slide

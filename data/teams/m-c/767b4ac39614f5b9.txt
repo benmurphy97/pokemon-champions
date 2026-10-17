@@ -1,0 +1,53 @@
+Absol-Mega-Z @ Absolite Z
+Ability: Sharpness
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Night Slash
+- Icy Wind
+- Close Combat
+- Detect
+
+Rillaboom @ Grassy Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Fake Out
+- Wood Hammer
+- U-turn
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Parting Shot
+- Fake Out
+- Flare Blitz
+- Throat Chop
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Garchomp @ Rocky Helmet
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Poison Jab
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Dazzling Gleam
+- Calm Mind
+- Protect

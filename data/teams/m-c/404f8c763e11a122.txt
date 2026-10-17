@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Weather Ball
+- Heat Wave
+- Solar Beam
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Expanding Force
+- Calm Mind
+- Protect
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Weather Ball
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Helping Hand
+- Psychic
+- Trick Room
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Throat Chop
+- Rock Slide
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Earthquake
+- Rock Slide

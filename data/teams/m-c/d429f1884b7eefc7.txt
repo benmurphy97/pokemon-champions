@@ -1,0 +1,53 @@
+Sableye @ Roseli Berry
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Sassy Nature
+- Light Screen
+- Reflect
+- Rain Dance
+- Disable
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Flash Cannon
+- Electro Shot
+- Dragon Pulse
+- Protect
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Jolly Nature
+- Wave Crash
+- High Horsepower
+- Ice Punch
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Tailwind
+- Weather Ball
+- Hurricane
+- Wide Guard
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Swords Dance
+- Leech Life
+- Iron Head
+- Protect
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Aura Sphere
+- Clanging Scales
+- Protect
+- Vacuum Wave

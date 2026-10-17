@@ -1,0 +1,53 @@
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Rock Slide
+- Play Rough
+- Iron Head
+- Protect
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Dazzling Gleam
+- Trick Room
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Earth Power
+- Protect
+
+Scrafty-Mega @ Scraftinite
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Fake Out
+- Knock Off
+- Close Combat
+- Rock Slide
+
+Indeedee-F @ Sitrus Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Terrain Pulse
+- Trick Room
+- Protect
+- Follow Me
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Frisk
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Eruption
+- Shadow Ball
+- Heat Wave
+- Focus Blast

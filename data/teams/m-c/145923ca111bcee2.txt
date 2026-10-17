@@ -1,0 +1,53 @@
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Weather Ball
+- Wide Guard
+- Protect
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Spirit Break
+- Light Screen
+- Reflect
+- Parting Shot
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Sucker Punch
+- Leech Life
+- Iron Head
+- Swords Dance
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Rock Tomb

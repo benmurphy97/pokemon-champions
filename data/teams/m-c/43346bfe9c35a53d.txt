@@ -1,0 +1,53 @@
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Armor Cannon
+- Expanding Force
+- Calm Mind
+- Protect
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Protect
+- Dazzling Gleam
+- Trick Room
+- Expanding Force
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Protect
+- Weather Ball
+- Heat Wave
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Follow Me
+- Helping Hand
+- Trick Room
+- Psychic
+
+Hydrapple @ Leftovers
+Ability: Supersweet Syrup
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Fickle Beam
+- Solar Beam
+- Sucker Punch
+- Grass Knot
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Liquidation
+- Iron Head
+- Leech Life

@@ -1,0 +1,53 @@
+Typhlosion-Hisui @ Choice Scarf
+Ability: Frisk
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Eruption
+- Overheat
+- Heat Wave
+- Shadow Ball
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Trick Room
+- Helping Hand
+- Psychic
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Rock Slide
+- Close Combat
+- Dire Claw
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Solar Beam
+- Helping Hand
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Hyper Voice
+- Expanding Force
+- Trick Room
+- Protect
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Sludge Bomb
+- Earth Power
+- Leaf Storm
+- Protect

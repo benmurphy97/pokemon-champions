@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+- U-turn
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Iron Head
+- Leech Life
+- Swords Dance
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Muddy Water
+- Coil
+- Hypnosis
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Earth Power
+- Flamethrower
+- Dragon Pulse
+- Protect
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Rock Tomb
+- Protect

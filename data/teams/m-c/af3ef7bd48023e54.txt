@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Iron Head
+- Drill Run
+- Protect
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Earthquake
+- Protect
+- Wave Crash
+- Ice Punch
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Weather Ball
+- Wide Guard
+- Helping Hand
+
+Basculegion @ Focus Sash
+Ability: Swift Swim
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Aqua Jet
+- Protect
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Electro Shot
+- Flash Cannon
+- Snarl
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Rock Slide
+- Dire Claw
+- Close Combat
+- Protect

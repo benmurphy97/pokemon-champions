@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Knock Off
+- Rock Slide
+- Dragon Dance
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Protect
+- High Horsepower
+- Rock Slide
+- Iron Head
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Protect
+- Hyper Voice
+- Tailwind
+- Draco Meteor
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Fake Out
+- Dire Claw
+- Close Combat
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Flare Blitz
+- Throat Chop
+- Parting Shot

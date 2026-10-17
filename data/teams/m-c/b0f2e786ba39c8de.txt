@@ -1,0 +1,53 @@
+Infernape @ Focus Sash
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Heat Wave
+- Fake Out
+- Aura Sphere
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Light of Ruin
+- Moonblast
+- Dazzling Gleam
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Aqua Jet
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+- U-turn
+
+Snorlax @ Leftovers
+Ability: Thick Fat
+EVs: 31 HP / 1 Atk / 32 Def / 2 SpD
+Brave Nature
+- Protect
+- Body Slam
+- Rock Slide
+- Yawn
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Draco Meteor
+- Hyper Voice
+- Flamethrower
+- Protect

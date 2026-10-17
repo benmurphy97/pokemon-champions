@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Protect
+- Focus Blast
+- Fake Out
+- Zap Cannon
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Protect
+- Shadow Ball
+- Nasty Plot
+- Make It Rain
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- High Horsepower
+- Grassy Glide
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Will-O-Wisp
+- Throat Chop
+- Parting Shot
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 24 HP / 10 SpA / 32 Spe
+Modest Nature
+- Protect
+- Shadow Ball
+- Blizzard
+- Aurora Veil
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Fake Out
+- Close Combat
+- Dire Claw

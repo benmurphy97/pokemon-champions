@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Protect
+- Flamethrower
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Protect
+- Fake Out
+
+Tyranitar @ Choice Scarf
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Rock Slide
+- Knock Off
+- Ice Punch
+- Low Kick
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Calm Nature
+- Make It Rain
+- Shadow Ball
+- Protect
+- Nasty Plot
+
+Sneasler @ Sitrus Berry
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Poison Jab
+- Protect
+- Fake Out
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Careful Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- U-turn

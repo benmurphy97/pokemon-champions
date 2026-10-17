@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Weather Ball
+- Heat Wave
+- Solar Beam
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Psychic
+- Thunderbolt
+- Trick Room
+- Gravity
+
+Wigglytuff @ Fairy Feather
+Ability: Competitive
+EVs: 18 HP / 11 Def / 32 SpA / 5 SpD
+Modest Nature
+- Moonblast
+- Grass Knot
+- Sing
+- Protect
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Fake Out
+- Parting Shot
+- Flare Blitz
+- Throat Chop
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Leaf Storm
+- Sludge Bomb
+- Sleep Powder
+- Protect
+
+Rhyperior @ Life Orb
+Ability: Lightning Rod
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- High Horsepower
+- Rock Slide
+- Ice Punch
+- Protect

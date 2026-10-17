@@ -1,0 +1,53 @@
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Head Smash
+- Extreme Speed
+- Protect
+
+Whimsicott @ Fairy Feather
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Tickle
+- Tailwind
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Protect
+- Fake Out
+- Focus Blast
+- Zap Cannon
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Hypnosis
+- Coil
+- Protect
+- Muddy Water

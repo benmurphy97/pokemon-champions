@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Shadow Ball
+- Sludge Wave
+- Disable
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Liquidation
+- Swords Dance
+- Protect
+
+Politoed @ Leftovers
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Weather Ball
+- Perish Song
+- Encore
+- Protect
+
+Archaludon @ White Herb
+Ability: Sturdy
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Electro Shot
+- Draco Meteor
+- Flash Cannon
+- Protect
+
+Rillaboom @ Focus Sash
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- Knock Off
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Aqua Jet
+- Last Respects
+- Flip Turn

@@ -1,0 +1,53 @@
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Protect
+- Follow Me
+- Helping Hand
+- Psychic
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Weather Ball
+- Protect
+- Heat Wave
+- Scorching Sands
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Tailwind
+- Sunny Day
+- Protect
+
+Basculegion @ Mystic Water
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Protect
+- Last Respects
+- Aqua Jet
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Hyper Voice
+- Calm Mind
+- Expanding Force
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Aura Sphere
+- Flamethrower
+- Clanging Scales

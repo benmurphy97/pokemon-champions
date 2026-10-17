@@ -1,0 +1,53 @@
+Sirfetchd @ Leek
+Ability: Scrappy
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Meteor Assault
+- Close Combat
+- Feint
+- Detect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Twin Beam
+- Thunderbolt
+- Trick Room
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Encore
+- Tailwind
+- Protect
+
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Power Gem
+- Sludge Bomb
+- Earth Power
+- Spiky Shield
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+- Fake Out
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Iron Head
+- Sucker Punch
+- Protect

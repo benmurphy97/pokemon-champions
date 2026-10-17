@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Wood Hammer
+- Fake Out
+- Grassy Glide
+- High Horsepower
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Tailwind
+- Flamethrower
+- Protect
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Ancient Power
+- Weather Ball
+- Protect
+- Heat Wave
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Rock Slide
+- Fake Out
+- Close Combat
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Quick Attack
+- Hyper Beam
+- Hyper Voice
+- Protect

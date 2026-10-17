@@ -1,0 +1,53 @@
+Cinderace @ Choice Scarf
+Ability: Libero
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Pyro Ball
+- Low Kick
+- Smack Down
+- Zen Headbutt
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- High Horsepower
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Tailwind
+- Protect
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Muddy Water
+- Coil
+- Hypnosis
+- Ice Beam
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect

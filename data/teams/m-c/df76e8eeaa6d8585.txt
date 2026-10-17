@@ -1,0 +1,53 @@
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draco Meteor
+- Earth Power
+- Power Gem
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+- Fake Out
+
+Sylveon @ Leftovers
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Calm Mind
+- Detect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+- High Horsepower
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Psychic
+- Sunny Day
+- Helping Hand
+- Trick Room

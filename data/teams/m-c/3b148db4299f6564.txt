@@ -1,0 +1,53 @@
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Psychic Fangs
+- Ice Punch
+- Protect
+- Steel Roller
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Grassy Glide
+- U-turn
+- Wood Hammer
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Ancient Power
+- Weather Ball
+- Protect
+- Solar Beam
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- X-Scissor
+- Close Combat
+- Dire Claw
+- Fake Out
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Modest Nature
+- Icy Wind
+- Scald
+- Alluring Voice
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Make It Rain
+- Nasty Plot
+- Protect
+- Shadow Ball

@@ -1,0 +1,53 @@
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Protect
+- Blizzard
+- Shadow Ball
+- Aurora Veil
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Parting Shot
+
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Spiky Shield
+- Power Gem
+- Earth Power
+- Sludge Bomb
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- High Horsepower
+- Grassy Glide
+- Fake Out
+
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Protect
+- Fiery Dance
+- Bug Buzz
+- Quiver Dance
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Phantom Force
+- Close Combat
+- Rock Tomb
+- U-turn

@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Weather Ball
+- Protect
+- Solar Beam
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 32 Atk / 32 SpA / 2 Spe
+Modest Nature
+- Draco Meteor
+- Earth Power
+- Protect
+- Fire Blast
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Darkest Lariat
+- Flare Blitz
+- Fake Out
+- Parting Shot
+
+Vivillon @ Focus Sash
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Tailwind
+- Protect
+- Sleep Powder
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Flip Turn
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Low Kick
+- Iron Head

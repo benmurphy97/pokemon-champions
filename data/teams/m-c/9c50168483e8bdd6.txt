@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Weather Ball
+- Heat Wave
+- Ancient Power
+- Protect
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Psychic Fangs
+- Stomping Tantrum
+- Ice Punch
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect
+
+Garchomp @ Sitrus Berry
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Low Kick
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Tailwind
+- Encore
+- Protect

@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Hyper Voice
+- Protect
+- Heat Wave
+- Tailwind
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Relaxed Nature
+- Matcha Gotcha
+- Life Dew
+- Rage Powder
+- Trick Room
+
+Overqwil @ Leftovers
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Acupressure
+- Barb Barrage
+- Protect
+- Minimize
+
+Eelektross-Mega @ Eelektrossite
+Ability: Eelevate
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Drain Punch
+- Protect
+- Muddy Water
+- Discharge
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Light Screen
+- Follow Me
+- Trick Room
+- Psychic
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Low Kick
+- Iron Head

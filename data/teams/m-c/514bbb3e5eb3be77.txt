@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 25 HP / 16 Atk / 25 Spe
+Impish Nature
+- Rock Slide
+- Low Kick
+- Protect
+- Knock Off
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- High Horsepower
+- Iron Head
+- Protect
+- Rock Slide
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Power Gem
+- Earth Power
+- Protect
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Dazzling Gleam
+- Helping Hand
+- Psychic
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Throat Chop
+- Protect
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Heat Wave
+- Giga Drain
+- Tailwind
+- Quiver Dance

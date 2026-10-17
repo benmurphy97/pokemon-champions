@@ -1,0 +1,53 @@
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 10 HP / 32 SpA / 24 Spe
+Modest Nature
+- Flash Cannon
+- Vacuum Wave
+- Aura Sphere
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Weather Ball
+- Tailwind
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Stomping Tantrum
+- Rock Slide
+- Dragon Claw
+- Poison Jab
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Helping Hand
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Focus Blast
+- Zap Cannon
+- Fake Out
+- Protect

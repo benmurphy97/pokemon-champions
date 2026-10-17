@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Kangaskhan-Mega @ Kangaskhanite
+Ability: Parental Bond
+EVs: 32 HP / 32 Atk / 1 Def / 1 SpD
+Adamant Nature
+- Double-Edge
+- Fake Out
+- Low Kick
+- Sucker Punch
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Psychic
+- Protect
+- Helping Hand
+- Trick Room
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Heat Wave
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+- Protect
+
+Aerodactyl @ Focus Sash
+Ability: Unnerve
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dual Wingbeat
+- Protect
+- Tailwind

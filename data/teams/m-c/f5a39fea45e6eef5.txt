@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Flare Blitz
+- Parting Shot
+- Taunt
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Power Gem
+- Dragon Pulse
+- Earth Power
+- Protect
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Quiver Dance
+- Rage Powder
+- Heat Wave
+- Struggle Bug
+
+Mimikyu @ Life Orb
+Ability: Disguise
+EVs: 9 HP / 30 Atk / 2 Def / 25 Spe
+Adamant Nature
+- Swords Dance
+- Play Rough
+- Shadow Ball
+- Trick Room

@@ -1,0 +1,51 @@
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Earth Power
+- Ancient Power
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Psychic
+- Thunderbolt
+- Trick Room
+- Nasty Plot
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Dazzling Gleam
+- Trick Room
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Trick
+
+Kangaskhan @ Silk Scarf
+Ability: Scrappy
+EVs: 32 HP / 32 Atk / 1 Def / 1 SpD
+Adamant Nature
+- Fake Out
+- Last Resort
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect

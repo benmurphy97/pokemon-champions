@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Protect
+- Shadow Ball
+- Disable
+- Perish Song
+
+Incineroar @ Rocky Helmet
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Relaxed Nature
+- Protect
+- Flare Blitz
+- Parting Shot
+- Fake Out
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Sassy Nature
+- Protect
+- Grassy Glide
+- U-turn
+- Fake Out
+
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Protect
+- Weather Ball
+- Encore
+- Perish Song
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Protect
+- Dragon Pulse
+- Electro Shot
+- Snarl
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Leech Life
+- Sucker Punch
+- Swords Dance

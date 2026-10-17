@@ -1,0 +1,53 @@
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Earthquake
+- Dragon Claw
+- Rock Slide
+- Stomping Tantrum
+
+Sylveon @ Life Orb
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Hyper Beam
+- Weather Ball
+- Protect
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Weather Ball
+- Wide Guard
+- Tailwind
+- Protect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 12 Def / 25 SpD
+Sassy Nature
+- Expanding Force
+- Trick Room
+- Sunny Day
+- Protect
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Sassy Nature
+- Fake Out
+- Reflect
+- Light Screen
+- Parting Shot

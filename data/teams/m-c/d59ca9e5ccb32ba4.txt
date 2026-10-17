@@ -1,0 +1,53 @@
+Espathra @ Life Orb
+Ability: Speed Boost
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Modest Nature
+- Expanding Force
+- Lumina Crash
+- Low Kick
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Helping Hand
+- Follow Me
+- Trick Room
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Tailwind
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Low Kick
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Sludge Bomb
+- Power Gem
+- Earth Power
+- Spiky Shield
+
+Pyroar-Mega @ Pyroarite
+Ability: Fire Mane
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Overheat
+- Scorching Sands
+- Protect

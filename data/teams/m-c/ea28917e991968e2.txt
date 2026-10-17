@@ -1,0 +1,53 @@
+Dragonite-Mega @ Dragoninite
+Ability: Multiscale
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Hurricane
+- Draco Meteor
+- Protect
+
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Glaive Rush
+- Icicle Crash
+- Ice Shard
+- Protect
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Expanding Force
+- Armor Cannon
+- Heat Wave
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Ice Beam
+- Protect
+- Haze
+- Scald
+
+Corviknight @ Sitrus Berry
+Ability: Mirror Armor
+EVs: 32 HP / 15 Atk / 19 SpD
+Careful Nature
+- Brave Bird
+- Iron Head
+- Roost
+- Tailwind
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Dazzling Gleam
+- Shadow Ball
+- Expanding Force
+- Energy Ball

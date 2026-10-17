@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Calm Mind
+- Dazzling Gleam
+- Protect
+- Moonblast
+
+Volcarona @ Charti Berry
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Bold Nature
+- Rage Powder
+- Tailwind
+- Overheat
+- Protect
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Swords Dance
+- Sucker Punch
+- Kowtow Cleave
+- Protect
+
+Rillaboom @ Sitrus Berry
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- U-turn
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+
+Garchomp @ Choice Scarf
+Ability: Sand Veil
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Rock Slide
+- Stomping Tantrum
+- Dragon Claw
+- Poison Jab
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Zap Cannon
+- Protect
+- Focus Blast

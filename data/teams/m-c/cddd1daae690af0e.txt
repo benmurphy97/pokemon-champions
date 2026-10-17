@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Shadow Ball
+- Sludge Bomb
+- Psych Up
+- Protect
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Clanging Scales
+- Aura Sphere
+- Clangorous Soul
+- Protect
+
+Swampert @ Sitrus Berry
+Ability: Torrent
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- High Horsepower
+- Flip Turn
+- Yawn
+- Protect
+
+Rillaboom @ Occa Berry
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+- Fake Out
+
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Heat Wave
+- Giga Drain
+- Quiver Dance
+- Protect
+
+Clefable @ Rocky Helmet
+Ability: Unaware
+EVs: 32 HP / 32 Def / 2 SpD
+Calm Nature
+- Moonblast
+- Follow Me
+- Helping Hand
+- Protect

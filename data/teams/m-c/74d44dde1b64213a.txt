@@ -1,0 +1,53 @@
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Head Smash
+- Flare Blitz
+- Protect
+- Extreme Speed
+
+Krookodile @ Choice Scarf
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Knock Off
+- Snarl
+- High Horsepower
+- Rock Tomb
+
+Altaria-Mega @ Altarianite
+Ability: Pixilate
+EVs: 12 Def / 32 SpA / 6 SpD / 16 Spe
+Modest Nature
+- Flamethrower
+- Protect
+- Hyper Voice
+- Draco Meteor
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- U-turn
+- Fake Out
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Fake Out
+- Dire Claw
+- Close Combat
+
+Milotic @ Grassy Seed
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Sassy Nature
+- Recover
+- Coil
+- Hypnosis
+- Muddy Water

@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Close Combat
+- Dire Claw
+- Coaching
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 13 Def / 21 SpD
+Sassy Nature
+- Fake Out
+- Flare Blitz
+- Helping Hand
+- Parting Shot
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dazzling Gleam
+- Draining Kiss
+- Calm Mind
+- Protect
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Garchomp-Mega @ Garchompite
+Ability: Sand Force
+EVs: 15 HP / 21 Atk / 1 Def / 25 SpD / 4 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Protect

@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Solar Beam
+- Weather Ball
+- Protect
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Sludge Bomb
+- Earth Power
+- Sleep Powder
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 Atk / 12 Def / 22 Spe
+Jolly Nature
+- Protect
+- Psychic Fangs
+- Iron Head
+- Ice Punch
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Hurricane
+- Wide Guard
+- Helping Hand
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Protect
+- Electro Shot
+- Aura Sphere
+- Dragon Pulse
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Dragon Claw
+- Rock Tomb
+- Stomping Tantrum

@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Roost
+- Close Combat
+- Brave Bird
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Rock Slide
+- Earthquake
+- Dragon Claw
+
+Whimsicott @ Occa Berry
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Tailwind
+- Charm
+- encore
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Protect
+- Psychic
+- Heat Wave
+- Substitute
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Spiky Shield
+- Sludge Bomb
+- Earth Power
+- Power Gem
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Low Kick
+- Iron Head
+- Kowtow Cleave

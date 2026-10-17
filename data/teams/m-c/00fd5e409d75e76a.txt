@@ -1,0 +1,53 @@
+Sceptile-Mega @ Sceptilite
+Ability: Lightning Rod
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dragon Pulse
+- Energy Ball
+- Earth Power
+- Detect
+
+Rotom-Heat @ Choice Scarf
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Discharge
+- Electroweb
+- Overheat
+- Trick
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Imprison
+- Trick Room
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Dire Claw
+- Rock Slide
+- Close Combat
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Tailwind
+- Brave Bird
+- Close Combat
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Nasty Plot
+- Shadow Ball
+- Make It Rain
+- Protect

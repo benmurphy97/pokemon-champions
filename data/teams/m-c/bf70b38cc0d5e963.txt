@@ -1,0 +1,53 @@
+Toxapex @ Binding Band
+Ability: Regenerator
+EVs: 32 HP / 18 Def / 16 SpD
+Bold Nature
+- Infestation
+- Toxic
+- Recover
+- Wide Guard
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Sludge Bomb
+- Power Gem
+- Earth Power
+- Spiky Shield
+
+Rillaboom @ Sitrus Berry
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Heat Wave
+- Weather Ball
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Drill Run
+- Leech Life
+- Iron Head
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Rock Slide
+- Dragon Claw
+- Stomping Tantrum
+- Rock Tomb

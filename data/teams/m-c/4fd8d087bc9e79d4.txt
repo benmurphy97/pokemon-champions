@@ -1,0 +1,53 @@
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Poison Jab
+- Rock Tomb
+- Fake Out
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 25 Def / 9 SpD
+Relaxed Nature
+- Fake Out
+- Flare Blitz
+- Darkest Lariat
+- Parting Shot
+
+Sinistcha @ Rocky Helmet
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Protect
+- Matcha Gotcha
+- Trick Room
+- Rage Powder
+
+Kommo-o @ Leftovers
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Clangorous Soul
+- Aura Sphere
+- Clanging Scales
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Low Kick
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Protect
+- Heat Wave
+- Psychic
+- Nasty Plot

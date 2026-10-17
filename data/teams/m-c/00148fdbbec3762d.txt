@@ -1,0 +1,53 @@
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Parting Shot
+- Fake Out
+- Darkest Lariat
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- U-turn
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Bold Nature
+- Overheat
+- Tailwind
+- Struggle Bug
+- Rage Powder
+
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Aura Sphere
+- Dark Pulse
+- Nasty Plot
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Psychic
+- Calm Mind
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Protect

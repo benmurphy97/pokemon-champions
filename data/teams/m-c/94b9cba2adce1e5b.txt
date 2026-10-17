@@ -1,0 +1,53 @@
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Protect
+- Psychic
+- Trick Room
+
+Cinderace @ Shuca Berry
+Ability: Blaze
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Pyro Ball
+- Will-O-Wisp
+- Coaching
+
+Basculegion @ Mystic Water
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Wave Crash
+- Aqua Jet
+- Last Respects
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Protect
+- Draco Meteor
+- Tailwind
+
+Gallade-Mega @ Galladite
+Ability: Inner Focus
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Psycho Cut
+- Ice Punch
+- Sacred Sword
+- Wide Guard
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Nasty Plot
+- Make It Rain
+- Protect
+- Shadow Ball

@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Mamoswine @ Focus Sash
+Ability: Oblivious
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Icicle Crash
+- Ice Shard
+- High Horsepower
+- Protect
+
+Venusaur @ Wide Lens
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Sleep Powder
+- Protect
+- Leaf Storm
+- Sludge Bomb
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Hyper Voice
+- Shadow Ball
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Protect
+
+Kommo-o @ Leftovers
+Ability: Bulletproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Clangorous Soul
+- Clanging Scales
+- Aura Sphere
+- Protect

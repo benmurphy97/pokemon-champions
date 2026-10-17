@@ -1,0 +1,53 @@
+Armarouge @ Passho Berry
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Armor Cannon
+- Expanding Force
+- Aura Sphere
+- Energy Ball
+
+Gallade @ Focus Sash
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Sacred Sword
+- Psycho Cut
+- Trick Room
+- Wide Guard
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Alluring Voice
+- Helping Hand
+- Trick Room
+- Follow Me
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Helping Hand
+- Psychic Noise
+- Trick Room
+- Roar
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Heat Wave
+- Protect
+- Ancient Power
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Dazzling Gleam
+- Psychic
+- Trick Room

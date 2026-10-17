@@ -1,0 +1,53 @@
+Gholdengo @ Grassy Seed
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Rillaboom @ Focus Sash
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Drum Beating
+- Grassy Glide
+- High Horsepower
+- Fake Out
+
+Incineroar @ Expert Belt
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Parting Shot
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Encore
+- Protect
+
+Aerodactyl-Mega @ Aerodactylite
+Ability: Tough Claws
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Dual Wingbeat
+- Rock Slide
+- Tailwind
+- Protect
+
+Kommo-o @ Leftovers
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Clanging Scales
+- Aura Sphere
+- Clangorous Soul
+- Protect

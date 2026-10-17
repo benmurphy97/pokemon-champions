@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Protect
+- Draco Meteor
+- Air Slash
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 5 HP / 5 Def / 32 SpA / 24 Spe
+Timid Nature
+- Ice Beam
+- Icy Wind
+- Scald
+- Protect
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Steel Roller
+- Psychic Fangs
+- Body Press
+- Protect
+
+Infernape @ Focus Sash
+Ability: Iron Fist
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Fake Out
+- Drain Punch
+- Fire Punch
+- Protect
+
+Sinistcha @ Coba Berry
+Ability: Hospitality
+EVs: 26 Def / 25 SpA / 15 SpD
+Modest Nature
+- Matcha Gotcha
+- Shadow Ball
+- Rage Powder
+- Protect
+
+Whimsicott @ Grassy Seed
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Encore
+- Protect
+- Moonblast

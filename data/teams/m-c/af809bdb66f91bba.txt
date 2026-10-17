@@ -1,0 +1,53 @@
+Milotic @ Leftovers
+Ability: Marvel Scale
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Coil
+- Muddy Water
+- Hypnosis
+- Protect
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Grassy Glide
+- Fake Out
+- Wood Hammer
+- High Horsepower
+
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Glaive Rush
+- Protect
+- Swords Dance
+- Ice Shard
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Aurora Veil
+- Moonblast
+- Blizzard
+- Protect
+
+Pawmot @ Focus Sash
+Ability: Iron Fist
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Double Shock
+- Protect
+- Revival Blessing
+
+Ceruledge @ Colbur Berry
+Ability: Flash Fire
+EVs: 31 HP / 25 Atk / 10 Def
+Adamant Nature
+- Bitter Blade
+- Shadow Ball
+- Bulk Up
+- Protect

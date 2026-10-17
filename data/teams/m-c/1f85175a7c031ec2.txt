@@ -1,0 +1,53 @@
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Protect
+- Acrobatics
+- Dire Claw
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Inteleon @ Scope Lens
+Ability: Sniper
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Snipe Shot
+- Protect
+- Vacuum Wave
+- Ice Beam
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Protect
+- Sucker Punch
+- Leech Life
+- Iron Head
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Grassy Glide
+- Protect
+- Wood Hammer
+- Knock Off
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Weather Ball
+- Hurricane
+- Wide Guard
+- Roost

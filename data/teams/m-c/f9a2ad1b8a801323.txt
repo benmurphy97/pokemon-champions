@@ -1,0 +1,53 @@
+Inteleon @ Scope Lens
+Ability: Sniper
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Snipe Shot
+- Ice Beam
+- Dark Pulse
+- Substitute
+
+Dragapult @ Focus Sash
+Ability: Clear Body
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Shadow Ball
+- Will-O-Wisp
+- Dragon Cheer
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Helping Hand
+- Psychic
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Keen Eye
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Weather Ball
+- Hurricane
+- Wide Guard
+- Tailwind
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Iron Head
+- Leech Life
+- Close Combat
+- Protect

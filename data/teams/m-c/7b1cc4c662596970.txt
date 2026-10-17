@@ -1,0 +1,53 @@
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Eruption
+- Heat Wave
+- Shadow Ball
+- Overheat
+
+Indeedee-F @ Sitrus Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Trick Room
+- Psychic
+- Helping Hand
+
+Dragapult @ Life Orb
+Ability: Clear Body
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Dragon Darts
+- Outrage
+- Phantom Force
+- U-turn
+
+Kangaskhan-Mega @ Kangaskhanite
+Ability: Parental Bond
+EVs: 32 HP / 32 Atk / 1 Def / 1 SpD
+Adamant Nature
+- Drain Punch
+- Crunch
+- Double-Edge
+- Fake Out
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Earth Power
+- Protect
+
+Aerodactyl-Mega @ Aerodactylite
+Ability: Tough Claws
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Dual Wingbeat
+- Rock Slide
+- Wide Guard
+- Tailwind

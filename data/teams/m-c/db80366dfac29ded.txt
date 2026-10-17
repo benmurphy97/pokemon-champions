@@ -1,0 +1,53 @@
+Dragonite-Mega @ Dragoninite
+Ability: Multiscale
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Heat Wave
+- Tailwind
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Parting Shot
+- Taunt
+- Fake Out
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- High Horsepower
+- Fake Out
+- Wood Hammer
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Flip Turn
+- Last Respects
+- Aqua Jet
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Knock Off
+- Low Kick
+- Protect
+
+Corviknight @ Occa Berry
+Ability: Mirror Armor
+EVs: 32 HP / 10 Atk / 13 SpD / 11 Spe
+Adamant Nature
+- Brave Bird
+- Iron Head
+- Bulk Up
+- Roost

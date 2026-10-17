@@ -1,0 +1,53 @@
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Modest Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Hurricane
+- Tailwind
+- Wide Guard
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Weather Ball
+- Hurricane
+- Protect
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Earth Power
+- Sludge Bomb
+- Sleep Powder
+- Protect
+
+Espathra @ Electric Seed
+Ability: Speed Boost
+EVs: 32 HP / 9 Def / 6 SpD / 19 Spe
+Timid Nature
+- Lumina Crash
+- Calm Mind
+- Baton Pass
+- Protect
+
+Raichu-Mega-X @ Raichunite X
+Ability: Electric Surge
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Volt Switch
+- Volt Tackle
+- Fake Out
+- Protect

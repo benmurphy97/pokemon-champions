@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Dazzling Gleam
+- Protect
+- Calm Mind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Darkest Lariat
+- Flare Blitz
+- Parting Shot
+- Fake Out
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect
+
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 10 HP / 32 SpA / 24 Spe
+Modest Nature
+- Aura Sphere
+- Dark Pulse
+- Protect
+- Flash Cannon
+
+Indeedee-F @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Rock Slide
+- Dire Claw
+- Close Combat
+- Protect

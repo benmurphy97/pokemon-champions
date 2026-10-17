@@ -1,0 +1,53 @@
+Pyroar-Mega @ Pyroarite
+Ability: Fire Mane
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Heat Wave
+- Overheat
+- Solar Beam
+
+Torkoal @ Heat Rock
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Helping Hand
+- Heat Wave
+- Overheat
+- Ancient Power
+
+Sableye @ Sitrus Berry
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Sassy Nature
+- Quash
+- Sunny Day
+- Helping Hand
+- Disable
+
+Mamoswine @ Choice Scarf
+Ability: Oblivious
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Double-Edge
+- Earthquake
+- Icicle Crash
+- Throat Chop
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Hyper Voice
+- Shadow Ball
+- Psychic
+
+Pincurchin @ Electric Seed
+Ability: Electric Surge
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Supercell Slam
+- Sucker Punch
+- Scald
+- Protect

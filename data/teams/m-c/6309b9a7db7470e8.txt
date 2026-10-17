@@ -1,0 +1,53 @@
+Ninetales-Alola @ Focus Sash
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Blizzard
+- Freeze-Dry
+- Moonblast
+
+Aerodactyl-Mega @ Aerodactylite
+Ability: Tough Claws
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Dual Wingbeat
+- Rock Slide
+- Tailwind
+- Wide Guard
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Close Combat
+- Shadow Claw
+- Ice Punch
+- Rock Tomb
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Parting Shot
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Encore
+- Protect

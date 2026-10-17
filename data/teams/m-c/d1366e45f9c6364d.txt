@@ -1,0 +1,53 @@
+Lucario @ Lucarionite Z
+Ability: Inner Focus
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Aura Sphere
+- Detect
+- Flash Cannon
+- Copycat
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Protect
+- Trick
+- Mystical Fire
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Quiet Nature
+- Moonblast
+- Hyper Voice
+- Aqua Jet
+- Protect
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Ancient Power
+- Earth Power
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Expanding Force
+- Imprison
+- Trick Room
+- Protect
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Bold Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot

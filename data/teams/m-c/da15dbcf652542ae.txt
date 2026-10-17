@@ -1,0 +1,53 @@
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Power Gem
+- Draco Meteor
+- Flamethrower
+- Protect
+
+Toxtricity @ Life Orb
+Ability: Punk Rock
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Boomburst
+- Overdrive
+- Sludge Bomb
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Quick Attack
+- Hyper Beam
+- Hyper Voice
+- Detect
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Modest Nature
+- Scald
+- Ice Beam
+- Icy Wind
+- Protect
+
+Talonflame @ None
+Ability: Gale Wings
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Acrobatics
+- Tailwind
+- Quick Guard
+
+Aegislash @ Focus Sash
+Ability: Stance Change
+EVs: 24 HP / 30 Atk / 12 Spe
+Adamant Nature
+- Wide Guard
+- Iron Head
+- Poltergeist
+- Close Combat

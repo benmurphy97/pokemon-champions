@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Ancient Power
+- Protect
+- Weather Ball
+
+Basculegion-F @ Sitrus Berry
+Ability: Adaptability
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Muddy Water
+- Shadow Ball
+- Ice Beam
+- Protect
+
+Rillaboom @ Grassy Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- U-turn
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Yawn
+- Hyper Voice
+- Quick Attack
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Earthquake
+- Rock Slide
+
+Aerodactyl @ Focus Sash
+Ability: Unnerve
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Tailwind
+- Rock Slide
+- Dual Wingbeat
+- Protect

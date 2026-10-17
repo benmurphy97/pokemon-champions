@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Tailwind
+- Protect
+- Encore
+
+Maushold @ Wide Lens
+Ability: Technician
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Population Bomb
+- Super Fang
+- Protect
+- Bite
+
+Malamar @ Roseli Berry
+Ability: Contrary
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Topsy-Turvy
+- Psycho Cut
+- Skill Swap
+- Superpower
+
+Toxtricity-Low-Key @ Payapa Berry
+Ability: Punk Rock
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Overdrive
+- Sludge Bomb
+- Boomburst
+- Protect
+
+Garchomp-Mega @ Garchompite
+Ability: Sand Force
+EVs: 32 Atk / 32 SpA / 2 Spe
+Mild Nature
+- Draco Meteor
+- Earthquake
+- Surf
+- Protect
+
+Steelix @ Chople Berry
+Ability: Sheer Force
+EVs: 3 HP / 32 Atk / 11 Def / 20 SpD
+Gentle Nature
+- Iron Head
+- Earthquake
+- Wide Guard
+- Thunder Fang

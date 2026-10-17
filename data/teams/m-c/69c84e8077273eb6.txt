@@ -1,0 +1,53 @@
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 10 HP / 32 SpA / 24 Spe
+Modest Nature
+- Aura Sphere
+- Calm Mind
+- Flash Cannon
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Earth Power
+- Power Gem
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+- Fake Out
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Grassy Glide
+- High Horsepower
+- Fake Out
+- Wood Hammer
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Swords Dance
+- Protect
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Aqua Jet
+- Flip Turn
+- Last Respects

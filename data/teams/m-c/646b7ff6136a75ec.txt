@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Knock Off
+- Low Kick
+- Protect
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- High Horsepower
+- Rock Slide
+- Protect
+- Iron Head
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Tailwind
+- Protect
+
+Corviknight @ Leftovers
+Ability: Mirror Armor
+EVs: 32 HP / 15 Atk / 19 SpD
+Careful Nature
+- Brave Bird
+- Tailwind
+- Roost
+- Bulk Up
+
+Sinistcha @ Kasib Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Rage Powder
+- Shadow Ball
+- Protect
+
+Rotom-Wash @ Sitrus Berry
+Ability: Levitate
+EVs: 31 HP / 23 Def / 10 SpD / 2 Spe
+Bold Nature
+- Thunderbolt
+- Will-O-Wisp
+- Hydro Pump
+- Protect

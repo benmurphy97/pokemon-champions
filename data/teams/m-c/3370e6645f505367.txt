@@ -1,0 +1,50 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Encore
+- Dazzling Gleam
+- Tailwind
+
+Rillaboom @ Expert Belt
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- High Horsepower
+- Grassy Glide
+- Wood Hammer
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Heat Wave
+- Giga Drain
+- Quiver Dance
+- Protect
+
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Earth Power
+- Power Gem
+- Sludge Bomb
+- Spiky Shield
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Flamethrower
+- Protect
+
+Ditto @ Quick Claw
+Ability: Imposter
+EVs: 32 HP / 2 SpD / 32 Spe
+Timid Nature
+- Transform

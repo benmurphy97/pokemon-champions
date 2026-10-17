@@ -1,0 +1,53 @@
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Trick Room
+- Follow Me
+- Helping Hand
+
+Armarouge @ Twisted Spoon
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Expanding Force
+- Trick Room
+- Wide Guard
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Trick Room
+- Dazzling Gleam
+- Protect
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Close Combat
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Earth Power
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Leech Life
+- Iron Head
+- Rock Slide
+- Close Combat

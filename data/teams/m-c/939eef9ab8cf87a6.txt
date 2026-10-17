@@ -1,0 +1,53 @@
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Protect
+- Quiver Dance
+- Heat Wave
+- Giga Drain
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- High Horsepower
+- Rock Slide
+- Iron Head
+- Protect
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Rock Slide
+- Knock Off
+- Low Kick
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Protect
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- U-turn
+- Close Combat
+- Ice Punch
+- Phantom Force
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Tailwind
+- Close Combat
+- Brave Bird
+- Protect

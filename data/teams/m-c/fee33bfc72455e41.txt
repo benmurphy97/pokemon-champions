@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Protect
+- Heat Wave
+- Weather Ball
+- Hurricane
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Close Combat
+- Roost
+- Dual Wingbeat
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Protect
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Sassy Nature
+- Reflect
+- Light Screen
+- Parting Shot
+- Spirit Break
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Helping Hand
+- Weather Ball
+- Hurricane
+- Tailwind
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Sludge Bomb
+- Leaf Storm
+- Sleep Powder

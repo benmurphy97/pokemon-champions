@@ -1,0 +1,53 @@
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Flip Turn
+- Aqua Jet
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Darkest Lariat
+- Close Combat
+- Flare Blitz
+- Fake Out
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Earth Power
+- Power Gem
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Beam
+- Hyper Voice
+- Quick Attack
+- Detect
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Focus Blast
+- Zap Cannon
+- Fake Out
+- Protect
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Giga Drain
+- Heat Wave
+- Quiver Dance
+- Protect

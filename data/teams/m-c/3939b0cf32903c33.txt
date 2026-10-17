@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Heat Wave
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Protect
+- Shadow Ball
+- Nasty Plot
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Rotom-Wash @ Leftovers
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Thunderbolt
+- Hydro Pump
+- Light Screen
+- Will-O-Wisp
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Thunderbolt
+- Psychic
+- Trick Room
+- Helping Hand
+
+Vanilluxe @ Icy Rock
+Ability: Snow Warning
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Blizzard
+- Freeze-Dry
+- Aurora Veil
+- Protect

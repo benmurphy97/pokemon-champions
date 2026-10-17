@@ -1,0 +1,53 @@
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Protect
+- Iron Head
+- Stomping Tantrum
+- Psychic Fangs
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Encore
+- Sunny Day
+- Moonblast
+- Tailwind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Snarl
+- Fake Out
+- Parting Shot
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+
+Ceruledge @ Colbur Berry
+Ability: Flash Fire
+EVs: 31 HP / 25 Atk / 10 Def
+Adamant Nature
+- Protect
+- Bitter Blade
+- Swords Dance
+- Shadow Sneak
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Hyper Voice
+- Flamethrower
+- Dragon Pulse
+- Protect

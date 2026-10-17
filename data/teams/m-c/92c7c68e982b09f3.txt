@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Protect
+- Iron Head
+- Swords Dance
+
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 21 Def / 13 SpD
+Bold Nature
+- Weather Ball
+- Protect
+- Icy Wind
+- Helping Hand
+
+Basculegion-F @ Focus Sash
+Ability: Swift Swim
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Muddy Water
+- Protect
+- Ice Beam
+- Shadow Ball
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Electro Shot
+- Protect
+- Aura Sphere
+- Dragon Pulse
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Trick Room
+- Helping Hand
+
+Alakazam-Mega @ Alakazite
+Ability: Trace
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Expanding Force
+- Protect
+- Nasty Plot
+- Dazzling Gleam

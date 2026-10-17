@@ -1,0 +1,53 @@
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Poison Jab
+- Close Combat
+- Fake Out
+- Quick Guard
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 26 HP / 3 Def / 11 SpA / 26 Spe
+Modest Nature
+- Heat Wave
+- Nasty Plot
+- Psychic
+- Protect
+
+Sinistcha @ Coba Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Life Dew
+- Rage Powder
+- Protect
+
+Maushold @ Chople Berry
+Ability: Friend Guard
+EVs: 32 HP / 12 Def / 22 SpD
+Impish Nature
+- Follow Me
+- Super Fang
+- Feint
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Skill Swap
+
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Water Spout
+- Dark Pulse
+- Shell Smash
+- Protect

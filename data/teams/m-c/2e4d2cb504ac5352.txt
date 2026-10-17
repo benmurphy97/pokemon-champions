@@ -1,0 +1,53 @@
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Protect
+- Nasty Plot
+- Psychic
+- Heat Wave
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Sucker Punch
+- Kowtow Cleave
+- Swords Dance
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Poison Jab
+- Close Combat
+- Fake Out
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 21 Def / 14 SpD
+Bold Nature
+- Protect
+- Twin Beam
+- Trick Room
+- Helping Hand
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Earth Power
+- Power Gem
+- Dragon Pulse

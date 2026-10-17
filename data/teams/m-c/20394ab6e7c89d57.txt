@@ -1,0 +1,53 @@
+Torkoal @ Eject Button
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Earth Power
+- Eruption
+- Helping Hand
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Trick Room
+- Energy Ball
+- Helping Hand
+- Protect
+
+Heliolisk @ Life Orb
+Ability: Solar Power
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Thunderbolt
+- Dragon Pulse
+- Shed Tail
+- Protect
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Aqua Jet
+- Last Respects
+- Wave Crash
+- Flip Turn
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Serious Nature
+- Heat Wave
+- Psychic
+- Solar Beam
+- Protect
+
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Play Rough
+- Iron Head
+- Sucker Punch
+- Protect

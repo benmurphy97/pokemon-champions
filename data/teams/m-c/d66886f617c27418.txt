@@ -1,0 +1,53 @@
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Trick Room
+- Helping Hand
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Expanding Force
+- Trick Room
+- Psychic
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Heat Wave
+- Earth Power
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Bulk Up
+- Iron Head
+- Leech Life
+- Liquidation
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Expanding Force
+- Helping Hand
+- Trick Room
+- Psychic Terrain
+
+Dragalge-Mega @ Dragalgite
+Ability: Regenerator
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Sludge Bomb
+- Flip Turn
+- Dragon Pulse
+- Protect

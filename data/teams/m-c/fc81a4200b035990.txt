@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Calm Mind
+- Dazzling Gleam
+- Draining Kiss
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Draco Meteor
+- Flamethrower
+- Power Gem
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- High Horsepower
+- Grassy Glide
+- U-turn
+
+Palafin @ Choice Scarf
+Ability: Zero to Hero
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Liquidation
+- Flip Turn
+- Close Combat
+- Ice Punch
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Swords Dance
+- Kowtow Kleave
+- Sucker Punch
+- Protect
+
+Ceruledge @ Colbur Berry
+Ability: Flash Fire
+EVs: 31 HP / 25 Atk / 10 Def
+Adamant Nature
+- Bitter Blade
+- Shadow Sneak
+- Bulk Up
+- Protect

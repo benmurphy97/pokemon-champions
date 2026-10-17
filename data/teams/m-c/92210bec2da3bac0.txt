@@ -1,0 +1,53 @@
+Milotic @ Quick Claw
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Mud Shot
+- Draining Kiss
+
+Malamar @ Light Clay
+Ability: Contrary
+EVs: 32 HP / 32 Atk / 2 SpD
+Bold Nature
+- Protect
+- Reflect
+- Light Screen
+- Skill Swap
+
+Grimmsnarl @ Leftovers
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Impish Nature
+- Spirit Break
+- Fake Tears
+- Parting Shot
+- Scary Face
+
+Noivern @ Wide Lens
+Ability: Telepathy
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Air Cutter
+- Heat Wave
+- Boomburst
+
+Skarmory-Mega @ Skarmorite
+Ability: Stalwart
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Iron Head
+- Drill Peck
+- Drill Run
+- Night Slash
+
+Eelektross-Mega @ Eelektrossite
+Ability: Eelevate
+EVs: 25 HP / 25 SpA / 16 Spe
+Bold Nature
+- Charge Beam
+- Giga Drain
+- Flamethrower
+- Muddy Water

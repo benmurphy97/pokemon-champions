@@ -1,0 +1,53 @@
+Slurpuff @ Psychic Seed
+Ability: Unburden
+EVs: 32 HP / 6 Def / 28 SpD
+Impish Nature
+- After You
+- Play Rough
+- Protect
+- Helping Hand
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Protect
+- Earth Power
+- Weather Ball
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Hyper Voice
+- Protect
+- Trick Room
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Tailwind
+- Protect
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Eruption
+- Shadow Ball
+- Overheat
+- Heat Wave
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Trick Room
+- Mystical Fire
+- Protect

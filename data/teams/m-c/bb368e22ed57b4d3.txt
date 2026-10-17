@@ -1,0 +1,50 @@
+Zoroark-Hisui @ Iron Ball
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Jolly Nature
+- Trick
+- Bitter Malice
+- Round
+- Nasty Plot
+
+Malamar-Mega @ Malamarite
+Ability: Contrary
+EVs: 30 HP / 28 Atk / 4 Def / 4 SpD
+Adamant Nature
+- Protect
+- Topsy-Turvy
+- Superpower
+- Psycho Cut
+
+Slowbro-Mega @ Slowbronite
+Ability: Shell Armor
+EVs: 31 HP / 2 Def / 21 SpA / 12 SpD
+Modest Nature
+- Round
+- Slack Off
+- Yawn
+- Scald
+
+Ditto @ Choice Scarf
+Ability: Imposter
+EVs: 32 HP / 32 SpA / 2 SpD
+Jolly Nature
+- Transform
+
+Espathra @ Chople Berry
+Ability: Speed Boost
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Modest Nature
+- Roost
+- Protect
+- Dazzling Gleam
+- Lumina Crash
+
+Raichu-Alola @ King's Rock
+Ability: Surge Surfer
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Round
+- Psychic
+- Thunderbolt
+- Protect

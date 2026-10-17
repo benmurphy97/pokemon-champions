@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Rock Slide
+- Knock Off
+- Low Kick
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Protect
+- Flamethrower
+- Draco Meteor
+- Hyper Voice
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- U-turn
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Protect
+- High Horsepower
+- Iron Head
+- Rock Slide
+
+Blaziken @ Life Orb
+Ability: Speed Boost
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Detect
+- Heat Wave
+- Aura Sphere
+- Vacuum Wave
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Protect
+- Haze
+- Icy Wind
+- Scald

@@ -1,0 +1,53 @@
+Blaziken-Mega @ Blazikenite
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Close Combat
+- Flare Blitz
+- Rock Slide
+- Protect
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Swords Dance
+- Kowtow Cleave
+- Sucker Punch
+- Protect
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Blizzard
+- Aurora Veil
+- Shadow Ball
+- Protect
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+- Fake Out
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 29 HP / 5 SpA / 32 Spe
+Timid Nature
+- Overheat
+- Struggle Bug
+- Rage Powder
+- Tailwind
+
+Basculegion @ Mystic Water
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect

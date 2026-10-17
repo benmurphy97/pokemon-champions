@@ -1,0 +1,53 @@
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Aura Sphere
+- Protect
+- Shell Smash
+- Water Spout
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Expanding Force
+- Protect
+- Hyper Voice
+- Calm Mind
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Helping Hand
+- Trick Room
+- Psychic
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Parting Shot
+- Fake Out
+- Throat Chop
+- Will-O-Wisp
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Weather Ball
+- Hurricane
+- Protect

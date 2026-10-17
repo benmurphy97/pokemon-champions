@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Flamethrower
+- Draco Meteor
+- Protect
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Knock Off
+- Protect
+- Ice Punch
+- Rock Slide
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Rock Slide
+- Iron Head
+- High Horsepower
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Trick Room
+- Helping Hand
+- Follow Me
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Rock Slide
+- Close Combat
+- Dire Claw
+
+Espeon @ Choice Scarf
+Ability: Magic Bounce
+EVs: 15 HP / 32 SpA / 19 Spe
+Modest Nature
+- Expanding Force
+- Hyper Beam
+- Shadow Ball
+- Dazzling Gleam

@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Drill Run
+- Iron Head
+- Leech Life
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Protect
+- Psychic
+- Trick Room
+- Grass Knot
+
+Politoed @ Mystic Water
+Ability: Drizzle
+EVs: 32 HP / 25 Def / 6 SpA / 3 SpD
+Modest Nature
+- Protect
+- Ice Beam
+- Muddy Water
+- Weather Ball
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Reflect
+- Light Screen
+- Parting Shot
+- Spirit Break
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Weather Ball
+- Hurricane
+- Heat Wave
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Protect
+- Electro Shot
+- Snarl
+- Dragon Pulse

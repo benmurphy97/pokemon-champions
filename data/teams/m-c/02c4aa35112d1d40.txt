@@ -1,0 +1,53 @@
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Leaf Storm
+- Sleep Powder
+- Sludge Bomb
+- Protect
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Mamoswine @ Life Orb
+Ability: Oblivious
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- High Horsepower
+- Ice Shard
+- Icicle Crash
+- Protect
+
+Hydreigon @ Choice Scarf
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Snarl
+- Dark Pulse
+- Draco Meteor
+- U-turn
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Darkest Lariat
+- Parting Shot
+- Fake Out
+
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 18 Def / 16 SpD
+Bold Nature
+- Baneful Bunker
+- Toxic
+- Infestation
+- Wide Guard

@@ -1,0 +1,53 @@
+Incineroar @ Leftovers
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Darkest Lariat
+- Parting Shot
+- Fake Out
+- Flare Blitz
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 12 Def / 25 SpD
+Sassy Nature
+- Psychic
+- Trick Room
+- Protect
+- Thunderbolt
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Ancient Power
+- Earth Power
+- Protect
+
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Rage Powder
+- Protect
+- Trick Room
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Low Kick
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Hyper Voice
+- Moonblast
+- Protect
+- Calm Mind

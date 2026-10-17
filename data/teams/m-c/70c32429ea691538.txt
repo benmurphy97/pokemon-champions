@@ -1,0 +1,53 @@
+Absol @ Absolite Z
+Ability: Super Luck
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Psycho Cut
+- Night Slash
+- Icy Wind
+- Will-O-Wisp
+
+Primarina @ Leftovers
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Protect
+- Hyper Voice
+- Moonblast
+- Calm Mind
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Close Combat
+- Dire Claw
+- Rock Slide
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- High Horsepower
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Parting Shot
+- Flare Blitz
+- Throat Chop
+- Fake Out
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Protect
+- Zap Cannon
+- Focus Blast
+- Substitute

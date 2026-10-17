@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Protect
+- Hyper Voice
+- Tailwind
+- Draco Meteor
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- U-turn
+
+Pelipper @ Life Orb
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Timid Nature
+- Weather Ball
+- Hurricane
+- Tailwind
+- Protect
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Flash Cannon
+- Electro Shot
+- Protect
+- Dragon Pulse
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Twin Beam
+- Thunderbolt
+- Protect
+- Trick Room
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Iron Head
+- Drill Run
+- Protect

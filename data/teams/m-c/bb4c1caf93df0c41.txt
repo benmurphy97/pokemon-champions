@@ -1,0 +1,52 @@
+Sirfetchd @ Leek
+Ability: Scrappy
+EVs: 32 HP / 32 SpD / 2 Spe
+Sassy Nature
+- Meteor Assault
+- Leaf Blade
+- First Impression
+- Night Slash
+
+Drampa-Mega @ Drampanite
+Ability: Berserk
+EVs: 32 HP / 10 SpA / 24 SpD
+Sassy Nature
+- Hyper Voice
+- Flamethrower
+- Ice Beam
+- Rock Slide
+
+Toxtricity-Low-Key @ Payapa Berry
+Ability: Punk Rock
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Overdrive
+- Thunderbolt
+- Sludge Bomb
+- Boomburst
+
+Machamp @ Expert Belt
+Ability: No Guard
+EVs: 32 HP / 32 Atk / 2 SpD
+Sassy Nature
+- Seismic Toss
+- Cross Chop
+- Thunder Punch
+- Throat Chop
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 30 HP / 21 Def / 15 SpD
+Relaxed Nature
+- Uproar
+- Helping Hand
+- Twin Beam
+- Trick Room
+
+Tinkaton @ Eject Button
+Ability: Mold Breaker
+Sassy Nature
+- Play Rough
+- Gigaton Hammer
+- Skitter Smack
+- Fake Out

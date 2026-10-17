@@ -1,0 +1,53 @@
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 5 Def / 29 SpD
+Relaxed Nature
+- Toxic
+- Infestation
+- Baneful Bunker
+- Wide Guard
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Stomping Tantrum
+- Rock Slide
+- Earthquake
+- Dragon Claw
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect
+
+Venusaur @ Life Orb
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Leaf Storm
+- Sleep Powder
+- Sludge Bomb
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Beam
+- Hyper Voice
+- Detect
+- Quick Attack
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+- Fake Out

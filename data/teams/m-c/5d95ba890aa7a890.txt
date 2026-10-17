@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Shadow Ball
+- Perish Song
+- Disable
+- Protect
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Relaxed Nature
+- Flare Blitz
+- Fake Out
+- Parting Shot
+- Protect
+
+Pawmot @ Focus Sash
+Ability: Volt Absorb
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Double Shock
+- Close Combat
+- Revival Blessing
+- Protect
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- Wood Hammer
+- U-turn
+- Fake Out
+- Protect
+
+Tinkaton @ Sitrus Berry
+Ability: Mold Breaker
+EVs: 1 HP / 32 Atk / 1 SpD / 32 Spe
+Jolly Nature
+- Play Rough
+- Encore
+- Fake Out
+- Protect
+
+Ninetales-Alola @ Never-Melt Ice
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Blizzard
+- Disable
+- Encore
+- Protect

@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Ancient Power
+- Heat Wave
+- Weather Ball
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Light of Ruin
+- Moonblast
+- Dazzling Gleam
+- Protect
+
+Garchomp @ Focus Sash
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Poison Jab
+- Rock Slide
+- Dragon Claw
+- Earthquake
+
+Meowscarada @ Choice Scarf
+Ability: Protean
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Triple Axel
+- Low Kick
+- Flower Trick
+- Sucker Punch
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Darkest Lariat
+- Parting Shot
+- Fake Out
+- Flare Blitz
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Helping Hand
+- Thunderbolt
+- Trick Room
+- Psychic

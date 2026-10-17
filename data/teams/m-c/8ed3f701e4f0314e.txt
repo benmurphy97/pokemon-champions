@@ -1,0 +1,53 @@
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Power Gem
+- Spiky Shield
+- Sludge Bomb
+- Earth Power
+
+Ceruledge @ Grassy Seed
+Ability: Flash Fire
+EVs: 31 HP / 25 Atk / 10 Def
+Adamant Nature
+- Swords Dance
+- Bitter Blade
+- Shadow Sneak
+- Protect
+
+Forretress @ Sitrus Berry
+Ability: Sturdy
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Struggle Bug
+- Iron Head
+- Protect
+- Thunder Wave
+
+Rillaboom @ Rocky Helmet
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Careful Nature
+- Fake Out
+- Drum Beating
+- Grassy Glide
+- High Horsepower
+
+Noivern @ Focus Sash
+Ability: Infiltrator
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Draco Meteor
+- Protect
+- Super Fang
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Coil
+- Hypnosis
+- Muddy Water
+- Protect

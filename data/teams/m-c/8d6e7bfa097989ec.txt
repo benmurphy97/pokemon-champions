@@ -1,0 +1,53 @@
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Water Spout
+- Dark Pulse
+- Shell Smash
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Helping Hand
+- Follow Me
+- Psychic
+- Heal Pulse
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Gunk Shot
+- Close Combat
+- Protect
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Protect
+- Matcha Gotcha
+- Trick Room
+- Rage Powder
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Moonblast
+- Dazzling Gleam
+- Calm Mind
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Protect
+- Wide Guard
+- Armor Cannon
+- Expanding Force

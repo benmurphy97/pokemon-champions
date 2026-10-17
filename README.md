@@ -46,7 +46,7 @@ tests/              Unit tests; tests/fixtures holds sample teams
 docs/               Notes and source links
 ```
 
-Planned, not yet created: `web/` (static site).
+`web/` is the static React site (see [web/README.md](web/README.md)); `src/champions/export_site.py` writes the JSON it reads.
 
 ## Setup and tests
 

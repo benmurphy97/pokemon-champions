@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Knock Off
+- Rock Slide
+- Low Kick
+- Protect
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- High Horsepower
+- Iron Head
+- Rock Slide
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Scald
+- Hypnosis
+- Ice Beam
+- Protect
+
+Rillaboom @ Expert Belt
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- Superpower
+
+Salamence @ Life Orb
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Heat Wave
+- Tailwind
+- Protect
+
+Espeon @ Twisted Spoon
+Ability: Magic Bounce
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Psychic
+- Shadow Ball
+- Power Gem
+- Detect

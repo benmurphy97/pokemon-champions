@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 10 HP / 32 SpA / 24 Spe
+Modest Nature
+- Detect
+- Aura Sphere
+- Flash Cannon
+- Calm Mind
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Draco Meteor
+- Power Gem
+- Flamethrower
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Parting Shot
+- Flare Blitz
+- Helping Hand
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Flip Turn
+- Wave Crash
+- Aqua Jet
+- Last Respects
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Rock Tomb
+- Close Combat
+- Dire Claw

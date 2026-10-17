@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Protect
+- Heat Wave
+- Solar Beam
+- Weather Ball
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Earthquake
+- Dragon Claw
+- Rock Slide
+
+Aerodactyl-Mega @ Aerodactylite
+Ability: Tough Claws
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Rock Slide
+- Dual Wingbeat
+- Tailwind
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Sludge Bomb
+- Giga Drain
+- Earth Power
+
+Aegislash @ Spell Tag
+Ability: Stance Change
+EVs: 24 HP / 30 Atk / 12 Spe
+Adamant Nature
+- King's Shield
+- Sacred Sword
+- Poltergeist
+- Shadow Sneak
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Detect
+- Hyper Voice
+- Yawn
+- Hyper Beam

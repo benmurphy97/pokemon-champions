@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 20 HP / 4 Def / 10 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Sludge Bomb
+- Perish Song
+- Protect
+
+Kommo-o @ Leftovers
+Ability: Bulletproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Aura Sphere
+- Clanging Scales
+- Clangorous Soul
+- Protect
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 13 Def / 21 SpD
+Sassy Nature
+- Flare Blitz
+- Fake Out
+- Parting Shot
+- Protect
+
+Ninetales-Alola @ Choice Scarf
+Ability: Snow Warning
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Blizzard
+- Freeze-Dry
+- Moonblast
+- Encore
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Rillaboom @ Occa Berry
+Ability: Grassy Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Fake Out
+- Grassy Glide
+- U-turn
+- Protect

@@ -1,0 +1,53 @@
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 22 Def / 10 SpD / 2 Spe
+Impish Nature
+- Spirit Break
+- Parting Shot
+- Reflect
+- Light Screen
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Flash Cannon
+- Electro Shot
+- Protect
+
+Scizor-Mega @ Scizorite
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Close Combat
+- Bullet Punch
+- Bug Bite
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Stomping Tantrum
+- Dragon Claw
+- Rock Slide
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Ancient Power
+- Hurricane
+- Weather Ball
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Tailwind
+- Hurricane
+- Weather Ball
+- Protect

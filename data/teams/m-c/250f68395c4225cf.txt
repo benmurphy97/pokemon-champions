@@ -1,0 +1,53 @@
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Rage Powder
+- Tailwind
+- Struggle Bug
+- Fiery Dance
+
+Rillaboom @ Kebia Berry
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- U-turn
+- Grassy Glide
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Flip Turn
+- Wave Crash
+- Aqua Jet
+- Last Respects
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Parting Shot
+- Darkest Lariat
+- Flare Blitz
+- Fake Out
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 21 Def / 14 SpD
+Bold Nature
+- Psychic
+- Helping Hand
+- Thunderbolt
+- Trick Room
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Moonblast
+- Calm Mind
+- Dazzling Gleam

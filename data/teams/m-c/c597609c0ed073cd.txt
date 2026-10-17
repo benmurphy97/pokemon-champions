@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Shadow Ball
+- Disable
+- Perish Song
+- Protect
+
+Dragonite @ Life Orb
+Ability: Inner Focus
+EVs: 29 HP / 32 Atk / 5 Spe
+Brave Nature
+- Superpower
+- Extreme Speed
+- Hurricane
+- Protect
+
+Politoed @ Leftovers
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Weather Ball
+- Perish Song
+- Encore
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Throat Chop
+- Parting Shot
+- Fake Out
+- Protect
+
+Sinistcha @ Eject Button
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Protect
+- Strength Sap
+- Rage Powder
+
+Archaludon @ Shell Bell
+Ability: Sturdy
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+- Protect

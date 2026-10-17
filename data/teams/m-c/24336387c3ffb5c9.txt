@@ -1,0 +1,53 @@
+Meganium-Mega @ Meganiumite
+Ability: Mega Sol
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Solar Beam
+- Protect
+- Dazzling Gleam
+- Weather Ball
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Aurora Veil
+- Blizzard
+- Freeze-Dry
+
+Volcarona @ Focus Sash
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Fiery Dance
+- Rage Powder
+- Protect
+- Heat Wave
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Rock Tomb
+- Close Combat
+- Fake Out
+
+Rillaboom @ Leftovers
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Drain Punch
+- Fake Out
+- U-turn
+- Grassy Glide
+
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 SpD / 2 Spe
+Careful Nature
+- Glaive Rush
+- Protect
+- Iron Head
+- Icicle Spear

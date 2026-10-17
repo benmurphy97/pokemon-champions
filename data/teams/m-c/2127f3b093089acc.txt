@@ -1,0 +1,53 @@
+Sneasler @ Focus Sash
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dire Claw
+- Close Combat
+- Rock Slide
+- Fake Out
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Shadow Ball
+- Eruption
+- Heat Wave
+- Curse
+
+Zoroark-Hisui @ Life Orb
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Shadow Ball
+- Hyper Voice
+- Icy Wind
+- Hyper Beam
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Protect
+- Expanding Force
+- Mystical Fire
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Shadow Ball
+- Helping Hand
+- Follow Me
+
+Whimsicott @ Coba Berry
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Sunny Day
+- Moonblast
+- Encore

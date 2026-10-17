@@ -1,0 +1,53 @@
+Whimsicott @ Fairy Feather
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Tailwind
+- Protect
+- Fake Tears
+
+Hydreigon @ Life Orb
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dark Pulse
+- Draco Meteor
+- Earth Power
+- Protect
+
+Glalie-Mega @ Glalitite
+Ability: Refrigerate
+EVs: 26 HP / 15 Atk / 1 Def / 1 SpD / 23 Spe
+Jolly Nature
+- Ice Shard
+- Body Slam
+- Earthquake
+- Protect
+
+Zoroark-Hisui @ Focus Sash
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Flamethrower
+- Shadow Ball
+- Protect
+
+Toxtricity @ Magnet
+Ability: Punk Rock
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Overdrive
+- Psychic Noise
+- Sludge Bomb
+- Protect
+
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Aura Sphere
+- Water Spout
+- Dark Pulse
+- Protect

@@ -1,0 +1,53 @@
+Quaquaval @ Mystic Water
+Ability: Moxie
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Aqua Step
+- Close Combat
+- Psych Up
+- Protect
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Impish Nature
+- Grassy Glide
+- Stomping Tantrum
+- Fake Out
+- U-turn
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Relaxed Nature
+- Fake Out
+- Parting Shot
+- Flare Blitz
+- Throat Chop
+
+Chimecho-Mega @ Chimechite
+Ability: Levitate
+EVs: 32 HP / 2 SpA / 32 SpD
+Relaxed Nature
+- Charge Beam
+- Cosmic Power
+- Stored Power
+- Recover
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Hypnosis
+- Muddy Water
+- Coil
+- Protect
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 24 HP / 10 SpA / 32 Spe
+Modest Nature
+- Blizzard
+- Shadow Ball
+- Nasty Plot
+- Protect

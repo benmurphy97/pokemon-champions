@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Calm Nature
+- Protect
+- Sunny Day
+- Moonblast
+- Tailwind
+
+Houndoom-Mega @ Houndoominite
+Ability: Solar Power
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Scorching Sands
+- Dark Pulse
+- Heat Wave
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- U-turn
+- Grassy Glide
+- High Horsepower
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Stomping Tantrum
+- Iron Head
+- Dragon Claw
+- Rock Slide
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Protect
+- Expanding Force
+- Mystical Fire
+- Hyper Voice
+
+Indeedee-F @ Sitrus Berry
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Trick Room
+- Helping Hand
+- Psychic
+- Follow Me

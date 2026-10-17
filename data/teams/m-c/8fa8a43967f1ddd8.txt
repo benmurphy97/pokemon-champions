@@ -1,0 +1,52 @@
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Psychic
+- Nasty Plot
+- Protect
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Poison Jab
+- Fake Out
+- Quick Guard
+
+Incineroar @ Sitrus Berry
+Ability: Blaze
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Rage Powder
+- Matcha Gotcha
+- Trick Room
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dazzling Gleam
+- Moonblast
+- Calm Mind
+- Protect

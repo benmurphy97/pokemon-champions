@@ -1,0 +1,53 @@
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dragon Pulse
+- Earth Power
+- Power Gem
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Make It Rain
+- Nasty Plot
+- Protect
+
+Clefable @ Rocky Helmet
+Ability: Unaware
+EVs: 32 HP / 32 Def / 2 SpD
+Calm Nature
+- Follow Me
+- Protect
+- Helping Hand
+- Moonblast
+
+Talonflame @ Sharp Beak
+Ability: Gale Wings
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Tailwind
+- Brave Bird
+- Quick Guard
+- Flare Blitz
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Hypnosis
+- Coil
+- Muddy Water
+- Ice Beam
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- Knock Off

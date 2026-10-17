@@ -1,0 +1,53 @@
+Absol-Mega-Z @ Absolite Z
+Ability: Sharpness
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Detect
+- Night Slash
+- Shadow Claw
+- Rock Slide
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 10 Def / 17 SpA / 7 SpD / 32 Spe
+Jolly Nature
+- Make it Rain
+- Protect
+- Shadow Ball
+- Nastly Plot
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Coaching
+- Fake Out
+- Dire Claw
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Protect
+- Psychic
+- Trick Room
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Head Smash
+- Flare Blitz
+- Protect
+- Extreme Speed
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draining Kiss
+- Moonblast
+- Synthesis
+- Calm Mind

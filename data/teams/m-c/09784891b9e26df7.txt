@@ -1,0 +1,53 @@
+Rampardos @ Life Orb
+Ability: Sheer Force
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Rock Slide
+- Hammer Arm
+- Ice Beam
+- Protect
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Earth Power
+- Ancient Power
+- Substitute
+
+Vivillon @ Choice Scarf
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Hurricane
+- Pollen Puff
+- Sleep Powder
+- Rage Powder
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+- High Horsepower
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Expanding Force
+- Trick Room
+- Imprison
+- Protect
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Sucker Punch
+- Low Kick
+- Swords Dance

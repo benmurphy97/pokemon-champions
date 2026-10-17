@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Modest Nature
+- Zap Cannon
+- Focus Blast
+- Protect
+- Fake Out
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Brave Bird
+- Blaze Kick
+- Roost
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Calm Nature
+- Protect
+- Encore
+- Tailwind
+- Charm
+
+Meowscarada @ Life Orb
+Ability: Protean
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flower Trick
+- Triple Axel
+- U-turn
+- Knock Off
+
+Tyranitar @ Leftovers
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Rock Slide
+- Fire Punch
+- Curse
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 21 HP / 18 Def / 27 SpD
+Modest Nature
+- Helping Hand
+- Psychic
+- Calm Mind
+- Trick Room

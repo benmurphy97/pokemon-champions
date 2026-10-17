@@ -1,0 +1,53 @@
+Garchomp-Mega @ Garchompite
+Ability: Sand Force
+EVs: 15 HP / 21 Atk / 1 Def / 25 SpD / 4 Spe
+Adamant Nature
+- Rock Slide
+- Scale Shot
+- Earthquake
+- Protect
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 16 HP / 18 Atk / 32 Spe
+Jolly Nature
+- Dragon Dance
+- Knock Off
+- Rock Slide
+- Protect
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Dazzling Gleam
+- Mystical Fire
+- Trick
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Rock Slide
+- Iron Head
+- High Horsepower
+- Protect
+
+Annihilape @ Leftovers
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Rage Fist
+- Drain Punch
+- Protect
+- Bulk Up
+
+Whimsicott @ Mental Herb
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Encore
+- Moonblast
+- Tailwind
+- Worry Seed

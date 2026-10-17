@@ -1,0 +1,53 @@
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Heat Wave
+- Protect
+- Solar Beam
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Protect
+- Twin Beam
+- Trick Room
+- Helping Hand
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Modest Nature
+- Focus Blast
+- Zap Cannon
+- Grass Knot
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Protect
+- Expanding Force
+- Hyper Voice
+- Trick Room
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Flip Turn
+- Last Respects
+- Aqua Jet
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Darkest Lariat
+- Close Combat
+- Flare Blitz
+- Fake Out

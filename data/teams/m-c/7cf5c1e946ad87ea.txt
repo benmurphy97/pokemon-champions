@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 20 HP / 4 Def / 10 SpA / 32 Spe
+Modest Nature
+- Perish Song
+- Shadow Ball
+- Sludge Bomb
+- Protect
+
+Snorlax @ Leftovers
+Ability: Thick Fat
+EVs: 22 HP / 32 Def / 12 SpD
+Relaxed Nature
+- Yawn
+- Encore
+- Fissure
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 25 Def / 9 SpD
+Relaxed Nature
+- Flare Blitz
+- Parting Shot
+- Fake Out
+- Protect
+
+Scrafty @ Focus Sash
+Ability: Intimidate
+EVs: 18 HP / 32 Def / 16 SpD
+Impish Nature
+- Close Combat
+- Knock Off
+- Fake Out
+- Protect
+
+Dragonite @ Life Orb
+Ability: Inner Focus
+EVs: 31 HP / 32 Atk / 3 SpD
+Adamant Nature
+- Dragon Claw
+- Low Kick
+- Extreme Speed
+- Protect
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Grassy Glide
+- U-turn
+- Fake Out
+- Protect

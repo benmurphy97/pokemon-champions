@@ -1,0 +1,53 @@
+Farigiraf @ Mental Herb
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Trick Room
+- Helping Hand
+- Expanding Force
+- Hyper Voice
+
+Indeedee-F @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Trick Room
+- Follow Me
+- Psychic Terrain
+- Helping Hand
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Armor Cannon
+- Expanding Force
+- Trick Room
+- Wide Guard
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Heat Wave
+- Ancient Power
+- Protect
+
+Crabominable-Mega @ Crabominite
+Ability: Iron Fist
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Drain Punch
+- Thunder Punch
+- Ice Punch
+- Protect
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Sucker Punch
+- Iron Head
+- Protect
+- Kowtow Cleave

@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Dazzling Gleam
+- Light of Ruin
+- Protect
+
+Talonflame @ Sharp Beak
+Ability: Gale Wings
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Brave Bird
+- Flare Blitz
+- Tailwind
+- Protect
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Helping Hand
+- Trick Room
+- Imprison
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Rock Tomb
+- Protect
+
+Pyroar-Mega @ Pyroarite
+Ability: Fire Mane
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Scorching Sands
+- Heat Wave
+- Overheat
+- Protect
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Low Kick
+- Protect

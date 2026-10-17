@@ -1,0 +1,53 @@
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Wide Guard
+- Weather Ball
+- Hurricane
+- Tailwind
+
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Protect
+- Rage Powder
+- Trick Room
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Protect
+- Make It Rain
+- Shadow Ball
+- Power Gem
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Brave Bird
+- Close Combat
+- Tailwind
+- Protect
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Earthquake
+- Wave Crash
+- Ice Punch
+- Protect

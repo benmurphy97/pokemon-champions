@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Shadow Ball
+- Sludge Bomb
+- Perish Song
+- Protect
+
+Politoed @ Leftovers
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Perish Song
+- Protect
+- Weather Ball
+- Encore
+
+Vivillon @ Focus Sash
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sleep Powder
+- Rage Powder
+- Protect
+- Hurricane
+
+Archaludon @ Choice Scarf
+Ability: Stalwart
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Electro Shot
+- Draco Meteor
+- Snarl
+- Flash Cannon
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Flare Blitz
+- Fake Out
+- Parting Shot
+- Throat Chop
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Earthquake
+- Ice Punch
+- Protect
+- Wave Crash

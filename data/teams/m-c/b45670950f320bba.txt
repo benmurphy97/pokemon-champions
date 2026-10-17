@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Icy Wind
+- Perish Song
+- Disable
+- Protect
+
+Sinistcha @ Bright Powder
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Rage Powder
+- Life Dew
+- Protect
+
+Vivillon @ Focus Sash
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Sleep Powder
+- Rage Powder
+- Protect
+
+Sableye @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Bold Nature
+- Fake Out
+- Reflect
+- Rain Dance
+- Encore
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- U-turn
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Light of Ruin
+- Dazzling Gleam
+- Moonblast
+- Protect

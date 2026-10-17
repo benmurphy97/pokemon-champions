@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Shadow Ball
+- Disable
+- Perish Song
+- Protect
+
+Incineroar @ Roseli Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Naughty Nature
+- Protect
+- Parting Shot
+- Thief
+- Fake Out
+
+Azumarill @ Sitrus Berry
+Ability: Sap Sipper
+EVs: 32 HP / 2 Atk / 32 SpA
+Modest Nature
+- Icy Wind
+- Whirlpool
+- Perish Song
+- Protect
+
+Sableye @ Chople Berry
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Modest Nature
+- Will-O-Wisp
+- Sucker Punch
+- Encore
+- Hex
+
+Rillaboom @ Occa Berry
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Impish Nature
+- Protect
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+
+Kommo-o @ Dragon Fang
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Clanging Scales
+- Clangorous Soul
+- Protect
+- Aura Sphere

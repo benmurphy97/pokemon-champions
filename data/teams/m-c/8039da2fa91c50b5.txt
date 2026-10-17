@@ -1,0 +1,53 @@
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Spirit Break
+- Parting Shot
+- Reflect
+- Light Screen
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Draining Kiss
+- Calm Mind
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Darkest Lariat
+- Flare Blitz
+- Fake Out
+- Parting Shot
+
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Relaxed Nature
+- Matcha Gotcha
+- Life Dew
+- Rage Powder
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Muddy Water
+- Hypnosis
+- Coil
+- Protect
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Psychic Fangs
+- Body Press
+- Psych Up
+- Protect

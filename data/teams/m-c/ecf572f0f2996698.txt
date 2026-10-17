@@ -1,0 +1,53 @@
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Aura Sphere
+- Draco Meteor
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Leech Life
+- Protect
+- Liquidation
+- Iron Head
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Wave Crash
+- High Horsepower
+- Ice Punch
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+- Fake Out
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Impish Nature
+- Light Screen
+- Reflect
+- Parting Shot
+- Spirit Break
+
+Pelipper @ Choice Scarf
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Soak
+- Icy Wind
+- Weather Ball
+- Hurricane

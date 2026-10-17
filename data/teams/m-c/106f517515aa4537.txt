@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Protect
+- Hyper Voice
+- Draco Meteor
+- Tailwind
+
+Incineroar @ Shuca Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Flare Blitz
+- Darkest Lariat
+- Parting Shot
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Dragon Claw
+- Rock Slide
+- Earthquake
+
+Corviknight @ Leftovers
+Ability: Mirror Armor
+EVs: 27 HP / 23 Atk / 16 Spe
+Adamant Nature
+- Bulk Up
+- Brave Bird
+- Roost
+- Tailwind
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Protect
+- Sludge Bomb
+- Shadow Ball
+- Taunt
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Bold Nature
+- Protect
+- Rage Powder
+- Overheat
+- Struggle Bug

@@ -1,0 +1,53 @@
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Flip Turn
+- Liquidation
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Iron Head
+- Psychic Fangs
+- Ice Punch
+
+Dragonite-Mega @ Dragoninite
+Ability: Multiscale
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Draco Meteor
+- Heat Wave
+- Air Slash
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Extreme Speed
+- Flare Blitz
+- Head Smash
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Dire Claw
+- Fake Out
+- Close Combat

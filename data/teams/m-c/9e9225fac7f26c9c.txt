@@ -1,0 +1,53 @@
+Milotic @ Psychic Seed
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Muddy Water
+- Recover
+- Coil
+- Hypnosis
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Trick Room
+- Helping Hand
+- Psychic
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Psychic Fangs
+- Psych Up
+- Protect
+- Iron Head
+
+Dragapult @ Life Orb
+Ability: Infiltrator
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Will-O-Wisp
+- Draco Meteor
+- Shadow Ball
+
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Expanding Force
+- Armor Cannon
+- Wide Guard
+- Ally Switch
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Protect
+- Brave Bird
+- Tailwind

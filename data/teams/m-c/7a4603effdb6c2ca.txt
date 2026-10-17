@@ -1,0 +1,53 @@
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Iron Head
+- Play Rough
+- Protect
+- Knock Off
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Protect
+- Earth Power
+- Ancient Power
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Twin Beam
+- Helping Hand
+- Trick Room
+- Foul Play
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Protect
+- Trick Room
+- Follow Me
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Armor Cannon
+- Wide Guard
+- Expanding Force
+- Protect
+
+Primarina @ Mystic Water
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Quiet Nature
+- Hyper Voice
+- Moonblast
+- Protect
+- Life Dew

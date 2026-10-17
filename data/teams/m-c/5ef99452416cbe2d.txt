@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Tailwind
+- Protect
+- Encore
+
+Maushold @ Wide Lens
+Ability: Technician
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Population Bomb
+- Protect
+- Bullet Seed
+- Bite
+
+Sableye @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Adamant Nature
+- Foul Play
+- Reflect
+- Light Screen
+- Gravity
+
+Inteleon @ Scope Lens
+Ability: Sniper
+EVs: 6 HP / 32 SpA / 28 Spe
+Modest Nature
+- Snipe Shot
+- Ice Beam
+- Protect
+- Dark Pulse
+
+Skarmory-Mega @ Skarmorite
+Ability: Stalwart
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Iron Head
+- Drill Peck
+- X-Scissor
+- Drill Run
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 Atk / 2 Spe
+Lonely Nature
+- Dragon Rush
+- Double-Edge
+- Hyper Voice
+- Temper Flare

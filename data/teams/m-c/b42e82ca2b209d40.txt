@@ -1,0 +1,53 @@
+Pelipper @ Sitrus Berry
+Ability: Keen Eye
+EVs: 31 HP / 1 SpA / 32 SpD / 2 Spe
+Calm Nature
+- Weather Ball
+- Tailwind
+- Wide Guard
+- Hurricane
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- U-turn
+- Stomping Tantrum
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Flash Cannon
+- Electro Shot
+- Dragon Pulse
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Flare Blitz
+- Head Smash
+- Double-Edge
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Iron Head
+- Leech Life
+- Swords Dance
+- Protect
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Nasty Plot
+- Trick Room
+- Hyper Voice
+- Psychic

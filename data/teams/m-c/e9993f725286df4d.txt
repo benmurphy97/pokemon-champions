@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Focus Blast
+- Zap Cannon
+- Protect
+- Fake Out
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Dual Wingbeat
+- Close Combat
+- Roost
+- Protect
+
+Rillaboom @ Rocky Helmet
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- U-turn
+- Grassy Glide
+- High Horsepower
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Hyper Voice
+- Moonblast
+- Ice Beam
+- Protect
+
+Gholdengo @ Grassy Seed
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Make It Rain
+- Nasty Plot
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Head Smash
+- Flare Blitz
+- Extreme Speed
+- Protect

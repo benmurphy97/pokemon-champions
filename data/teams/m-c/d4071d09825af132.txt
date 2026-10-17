@@ -1,0 +1,53 @@
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Glaive Rush
+- Ice Shard
+- Swords Dance
+- Protect
+
+Annihilape @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Coaching
+- Phantom Force
+- Rock Tomb
+
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Bug Buzz
+- Quiver Dance
+- Heat Wave
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- U-turn
+- Fake Out
+
+Samurott-Hisui @ Choice Scarf
+Ability: Sharpness
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Razor Shell
+- Flip Turn
+- Ceaseless Edge
+- Sacred Sword
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect

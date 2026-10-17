@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- High Horsepower
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Encore
+- Zap Cannon
+- Focus Blast
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect
+
+Primarina @ Grassy Seed
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Hyper Voice
+- Moonblast
+- Protect
+- Calm Mind
+
+Noivern @ Focus Sash
+Ability: Infiltrator
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Air Slash
+- Draco Meteor
+- Protect
+- Tailwind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Parting Shot
+- Helping Hand
+- Flare Blitz

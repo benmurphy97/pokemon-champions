@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Protect
+- Sucker Punch
+- Leech Life
+- Iron Head
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Trick Room
+- Imprison
+- Hyper Voice
+- Expanding Force
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Parting Shot
+- Fake Out
+- Flare Blitz
+- Throat Chop
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Draco Meteor
+- Earth Power
+- Power Gem
+
+Annihilape @ Leftovers
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Bulk Up
+- Rage Fist
+- Drain Punch

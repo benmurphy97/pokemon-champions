@@ -1,0 +1,53 @@
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Protect
+- Ice Punch
+- Earthquake
+- Wave Crash
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Electro Shot
+- Flash Cannon
+- Protect
+- Dragon Pulse
+
+Basculegion-F @ Life Orb
+Ability: Swift Swim
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Flip Turn
+- Muddy Water
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Encore
+- Tailwind
+- Charm
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Close Combat
+- Brave Bird
+- Roost
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Protect
+- Weather Ball
+- Tailwind

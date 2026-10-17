@@ -1,0 +1,53 @@
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Earth Power
+- Weather Ball
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Power Gem
+- Earth Power
+- Dragon Pulse
+- Protect
+
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 19 HP / 15 Atk / 2 Def / 30 SpD
+Sassy Nature
+- Play Rough
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 12 Def / 25 SpD
+Sassy Nature
+- Twin Beam
+- Helping Hand
+- Trick Room
+- Protect
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Snarl
+- Fake Out
+- Flare Blitz
+- Parting Shot
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- U-turn

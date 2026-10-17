@@ -1,0 +1,53 @@
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 Atk / 12 Def / 22 Spe
+Jolly Nature
+- Psychic Fangs
+- Iron Head
+- Bullet Punch
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- U-turn
+- Fake Out
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Weather Ball
+- Wide Guard
+- Tailwind
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Coaching
+- Dire Claw
+- Protect
+- Close Combat
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Jolly Nature
+- Earthquake
+- Liquidation
+- Ice Punch
+- Protect
+
+Perrserker @ Focus Sash
+Ability: Steely Spirit
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Helping Hand
+- Protect
+- Iron Head
+- Fake Out

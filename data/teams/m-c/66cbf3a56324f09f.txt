@@ -1,0 +1,53 @@
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Hurricane
+- Tailwind
+- Wide Guard
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Sleep Powder
+- Leaf Storm
+- Sludge Bomb
+- Protect
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Shadow Claw
+- Ice Punch
+- U-turn
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Electro Shot
+- Draco Meteor
+- Snarl
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 Spe
+Jolly Nature
+- Draco Meteor
+- Stomping Tantrum
+- Rock Tomb
+- Protect
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Ancient Power
+- Protect

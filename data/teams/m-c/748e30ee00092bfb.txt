@@ -1,0 +1,53 @@
+Basculegion @ Life Orb
+Ability: Swift Swim
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Aqua Jet
+- Last Respects
+- Protect
+
+Pelipper @ Choice Scarf
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Weather Ball
+- Muddy Water
+- Icy Wind
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Weather Ball
+- Hurricane
+- Protect
+
+Archaludon @ Sitrus Berry
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Dragon Pulse
+- Flash Cannon
+- Electro Shot
+- Protect
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Earth Power
+- Sludge Bomb
+- Energy Ball
+- Protect
+
+Raichu-Mega-X @ Raichunite X
+Ability: Electric Surge
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Fake Out
+- Volt Switch
+- Volt Tackle
+- Upper Hand

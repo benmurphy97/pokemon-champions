@@ -1,0 +1,53 @@
+Grapploct @ Black Belt
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Storm Throw
+- Mach Punch
+- Soak
+- Detect
+
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 25 Def / 6 SpA / 3 SpD
+Modest Nature
+- Muddy Water
+- Weather Ball
+- Ice Beam
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Leech Life
+- Iron Head
+- Liquidation
+- Protect
+
+Incineroar @ Life Orb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Flare Blitz
+- Throat Chop
+- Parting Shot
+- Fake Out
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 21 HP / 18 Def / 27 SpD
+Modest Nature
+- Expanding Force
+- Trick Room
+- Helping Hand
+- Protect
+
+Venusaur-Mega @ Venusaurite
+Ability: Thick Fat
+EVs: 30 HP / 18 SpA / 18 Spe
+Modest Nature
+- Sludge Bomb
+- Giga Drain
+- Earth Power
+- Protect

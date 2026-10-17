@@ -1,0 +1,53 @@
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Earth Power
+- Protect
+
+Kangaskhan @ Life Orb
+Ability: Scrappy
+EVs: 31 HP / 32 Atk / 3 Def
+Brave Nature
+- Fake Out
+- Double-Edge
+- Brick Break
+- Hammer Arm
+
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Play Rough
+- Rock Slide
+- Protect
+- Sucker Punch
+
+Vileplume @ Focus Sash
+Ability: Chlorophyll
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Modest Nature
+- Sleep Powder
+- Leaf Storm
+- After You
+- Sludge Bomb
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Protect
+- Imprison
+- Expanding Force
+- Trick Room
+
+Staraptor @ Choice Scarf
+Ability: Intimidate
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Final Gambit
+- Close Combat
+- Brave Bird
+- U-turn

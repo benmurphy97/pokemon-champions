@@ -1,0 +1,53 @@
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Close Combat
+- Dire Claw
+- Protect
+
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Ice Shard
+- Glaive Rush
+- Swords Dance
+- Protect
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Aurora Veil
+- Blizzard
+- Encore
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- U-turn
+- Grassy Glide
+- High Horsepower
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Fake Out
+- Parting Shot
+- Flare Blitz
+- Darkest Lariat
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+EVs: 32 HP / 2 SpD / 32 Spe
+Jolly Nature
+- Rock Slide
+- Gunk Shot
+- Close Combat
+- Throat Chop

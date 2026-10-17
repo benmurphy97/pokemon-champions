@@ -1,0 +1,53 @@
+Torkoal @ Life Orb
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Relaxed Nature
+- Body Press
+- Flare Blitz
+- Curse
+- Protect
+
+Pelipper @ Expert Belt
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Weather Ball
+- Protect
+- Wide Guard
+
+Oranguru @ Twisted Spoon
+Ability: Inner Focus
+EVs: 32 HP / 30 Def / 4 SpD
+Bold Nature
+- Expanding Force
+- Instruct
+- Trick Room
+- Protect
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Ancient Power
+- Earth Power
+- Heat Wave
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Imprison
+- Follow Me
+- Trick Room
+- Protect
+
+Meganium-Mega @ Meganiumite
+Ability: Mega Sol
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Solar Beam
+- Dazzling Gleam
+- Weather Ball
+- Protect

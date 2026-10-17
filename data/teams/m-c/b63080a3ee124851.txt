@@ -1,0 +1,53 @@
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Blizzard
+- Protect
+- Shadow Ball
+- Taunt
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- U-turn
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Modest Nature
+- Earth Power
+- Power Gem
+- Sludge Bomb
+- Spiky Shield
+
+Volcarona @ Grassy Seed
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Bug Buzz
+- Flamethrower
+- Protect
+- Quiver Dance
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Light Screen
+- Parting Shot
+- Reflect
+- Spirit Break
+
+Garchomp @ Garchompite Z
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Modest Nature
+- Earth Power
+- Dragon Pulse
+- Power Gem
+- Protect

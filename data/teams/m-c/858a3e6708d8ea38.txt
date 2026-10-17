@@ -1,0 +1,53 @@
+Emolga @ Focus Sash
+Ability: Motor Drive
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Charm
+- Defog
+- Electroweb
+- Protect
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Earthquake
+- Rock Slide
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Weather Ball
+- Heat Wave
+- Helping Hand
+- Protect
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Sassy Nature
+- Parting Shot
+- Light Screen
+- Reflect
+- Spirit Break
+
+Venusaur @ Life Orb
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Leaf Storm
+- Sludge Bomb
+- Earth Power
+- Protect

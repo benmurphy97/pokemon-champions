@@ -1,0 +1,53 @@
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Protect
+- Make It Rain
+- Power Gem
+
+Grimmsnarl @ Roseli Berry
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Careful Nature
+- Parting Shot
+- Spirit Break
+- Scary Face
+- Fake Tears
+
+Sinistcha @ Occa Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Relaxed Nature
+- Matcha Gotcha
+- Trick Room
+- Protect
+- Rage Powder
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Aurora Veil
+- Freeze-Dry
+- Protect
+- Icy Wind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Parting Shot
+- Throat Chop
+- Flare Blitz
+- Fake Out
+
+Malamar-Mega @ Malamarite
+Ability: Contrary
+EVs: 30 HP / 28 Atk / 4 Def / 4 SpD
+Adamant Nature
+- Knock Off
+- Psycho Cut
+- Protect
+- Superpower

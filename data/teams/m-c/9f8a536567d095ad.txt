@@ -1,0 +1,53 @@
+Greninja-Mega @ Greninjite
+Ability: Protean
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sludge Wave
+- Dark Pulse
+- Ice Beam
+- Protect
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Imprison
+- Trick Room
+- Hyper Voice
+- Expanding Force
+
+Arcanine-Hisui @ Choice Scarf
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Close Combat
+- Head Smash
+- Flare Blitz
+- Rock Slide
+
+Pawmot @ Leppa Berry
+Ability: Volt Absorb
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Supercell Slam
+- Fake Out
+- Close Combat
+- Revival Blessing
+
+Scizor @ Psychic Seed
+Ability: Technician
+EVs: 30 HP / 32 Atk / 3 SpD / 1 Spe
+Adamant Nature
+- Roost
+- Tailwind
+- Iron Head
+- Bug Bite
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Protect
+- Power Gem
+- Make It Rain
+- Shadow Ball

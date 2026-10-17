@@ -1,0 +1,53 @@
+Venusaur @ Life Orb
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Earth Power
+- Sludge Bomb
+- Solar Beam
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Moonblast
+- Tailwind
+- Sunny Day
+
+Houndoom-Mega @ Houndoominite
+Ability: Solar Power
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Heat Wave
+- Overheat
+- Dark Pulse
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Protect
+- Thunderbolt
+- Hyper Voice
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Trick
+- Mystical Fire
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Close Combat
+- Dire Claw
+- Rock Slide

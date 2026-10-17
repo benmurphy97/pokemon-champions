@@ -1,0 +1,51 @@
+Persian-Alola @ Life Orb
+Ability: Technician
+Mild Nature
+- Fake Out
+- Icy Wind
+- Power Gem
+- Snarl
+
+Starmie-Mega @ Starminite
+Ability: Huge Power
+Impish Nature
+- Ice Spinner
+- Protect
+- Liquidation
+- Aqua Jet
+
+Mamoswine @ Expert Belt
+Ability: Oblivious
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Ice Shard
+- High Horsepower
+- Protect
+- Stealth Rock
+
+Runerigus @ Grassy Seed
+Ability: Wandering Spirit
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Body Press
+- Iron Defense
+- Poltergeist
+- Trick Room
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Talonflame @ Wise Glasses
+Ability: Gale Wings
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Flamethrower
+- Tailwind
+- Rain Dance

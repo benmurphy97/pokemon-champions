@@ -1,0 +1,53 @@
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Flash Cannon
+- Aura Sphere
+- Nasty Plot
+- Detect
+
+Dragalge-Mega @ Dragalgite
+Ability: Regenerator
+EVs: 32 HP / 27 SpA / 7 SpD
+Sassy Nature
+- Draco Meteor
+- Sludge Bomb
+- Toxic
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Rillaboom @ Leftovers
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- High Horsepower
+- U-turn
+- Fake Out
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Sassy Nature
+- Spirit Break
+- Light Screen
+- Reflect
+- Parting Shot
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Make It Rain
+- Shadow Ball
+- Nasty Plot
+- Protect

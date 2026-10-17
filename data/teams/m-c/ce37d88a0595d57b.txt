@@ -1,0 +1,53 @@
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Weather Ball
+- Tailwind
+- Protect
+
+Archaludon @ Dragon Fang
+Ability: Sturdy
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Timid Nature
+- Electro Shot
+- Dragon Pulse
+- Aura Sphere
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Parting Shot
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Draco Meteor
+- Hyper Voice
+- Tailwind
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+- Fake Out
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Iron Head
+- Psychic Fangs
+- Substitute
+- Protect

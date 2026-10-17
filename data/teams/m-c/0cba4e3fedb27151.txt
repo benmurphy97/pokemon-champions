@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Tailwind
+- Protect
+- Encore
+
+Maushold @ Wide Lens
+Ability: Technician
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Population Bomb
+- Protect
+- Bullet Seed
+- Bite
+
+Pawmot @ Leppa Berry
+Ability: Iron Fist
+EVs: 32 Atk / 2 SpD / 32 Spe
+Careful Nature
+- Supercell Slam
+- Mach Punch
+- Ice Punch
+- Revival Blessing
+
+Inteleon @ Scope Lens
+Ability: Sniper
+EVs: 6 HP / 32 SpA / 28 Spe
+Modest Nature
+- Snipe Shot
+- Ice Beam
+- Protect
+- Dark Pulse
+
+Typhlosion-Hisui @ Charcoal
+Ability: Frisk
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Eruption
+- Heat Wave
+- Infernal Parade
+- Protect
+
+Glalie-Mega @ Glalitite
+Ability: Refrigerate
+EVs: 26 HP / 15 Atk / 1 Def / 1 SpD / 23 Spe
+Relaxed Nature
+- Freeze-Dry
+- Steel Roller
+- Protect
+- Explosion

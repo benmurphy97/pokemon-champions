@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Round
+- Draco Meteor
+- Protect
+- Tailwind
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Round
+- Hyper Voice
+- Quick Attack
+- Protect
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Frisk
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Eruption
+- Shadow Ball
+- Round
+- Heat Wave
+
+Rillaboom @ Leftovers
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- Protect
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Calm Nature
+- Make It Rain
+- Shadow Ball
+- Protect
+- Nasty Plot
+
+Tauros-Paldea-Aqua @ Sitrus Berry
+Ability: Cud Chew
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Close Combat
+- Wave Crash
+- High Horsepower
+- Protect

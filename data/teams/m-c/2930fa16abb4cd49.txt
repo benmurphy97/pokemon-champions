@@ -1,0 +1,53 @@
+Slurpuff @ Psychic Seed
+Ability: Unburden
+EVs: 32 HP / 11 Def / 23 SpD
+Modest Nature
+- Dazzling Gleam
+- After You
+- Fake Tears
+- Protect
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Mystical Fire
+- Trick
+- Energy Ball
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Armor Cannon
+- Expanding Force
+- Protect
+- Trick Room
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Ancient Power
+- Earth Power
+- Protect
+
+Sinistcha @ Rocky Helmet
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Sassy Nature
+- Rage Powder
+- Matcha Gotcha
+- Protect
+- Trick Room
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Swords Dance
+- Leech Life
+- Iron Head
+- Protect

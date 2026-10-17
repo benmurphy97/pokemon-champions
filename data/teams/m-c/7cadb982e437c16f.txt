@@ -1,0 +1,53 @@
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Expanding Force
+- Armor Cannon
+- Protect
+- Trick Room
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Dazzling Gleam
+- Trick Room
+- Follow Me
+- Helping Hand
+
+Gallade @ White Herb
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Sacred Sword
+- Psycho Cut
+- Wide Guard
+- Trick Room
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Flamethrower
+- Earth Power
+- Protect
+
+Vanilluxe @ Never-Melt Ice
+Ability: Snow Warning
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Freeze-Dry
+- Blizzard
+- Aurora Veil
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect

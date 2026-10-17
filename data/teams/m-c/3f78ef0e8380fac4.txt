@@ -1,0 +1,53 @@
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Water Spout
+- Dark Pulse
+- Shell Smash
+
+Maushold @ Chople Berry
+Ability: Friend Guard
+EVs: 32 HP / 12 Def / 22 SpD
+Impish Nature
+- Protect
+- Super Fang
+- Feint
+- Follow Me
+
+Sinistcha @ Occa Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Protect
+- Matcha Gotcha
+- Rage Powder
+- Life Dew
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Close Combat
+- Poison Jab
+- Quick Guard
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Flare Blitz
+- Snarl
+- Parting Shot
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Protect
+- Heat Wave
+- Psychic
+- Nasty Plot

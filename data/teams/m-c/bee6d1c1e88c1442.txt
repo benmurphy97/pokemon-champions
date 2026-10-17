@@ -1,0 +1,53 @@
+Basculegion @ Focus Sash
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Liquidation
+- Protect
+- Last Respects
+- Aqua Jet
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dragon Claw
+- Earthquake
+- Stomping Tantrum
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Dazzling Gleam
+- Heat Wave
+- Psychic
+- Protect
+
+Corviknight @ Sitrus Berry
+Ability: Mirror Armor
+EVs: 32 HP / 15 Atk / 19 SpD
+Careful Nature
+- Body Press
+- Brave Bird
+- Bulk Up
+- Protect
+
+Clefable @ Rocky Helmet
+Ability: Unaware
+EVs: 30 HP / 6 Def / 21 SpA / 9 Spe
+Modest Nature
+- Life Dew
+- Follow Me
+- Moonblast
+- Protect

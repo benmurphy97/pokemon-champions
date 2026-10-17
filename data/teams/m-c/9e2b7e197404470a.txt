@@ -1,0 +1,53 @@
+Hawlucha-Mega @ Hawluchanite
+Ability: No Guard
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Entrainment
+- Close Combat
+- Brave Bird
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Flare Blitz
+- Fake Out
+- Parting Shot
+- Snarl
+
+Snorlax @ Leftovers
+Ability: Thick Fat
+EVs: 22 HP / 32 Def / 12 SpD
+Relaxed Nature
+- Stockpile
+- Fissure
+- Protect
+- Smack Down
+
+Slowbro-Mega @ Slowbronite
+Ability: Shell Armor
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Body Press
+- Stored Power
+- Calm Mind
+- Slack Off
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- U-turn
+
+Sneasler @ Focus Sash
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Coaching
+- Close Combat
+- Dire Claw

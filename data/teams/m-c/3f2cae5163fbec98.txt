@@ -1,0 +1,53 @@
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Hyper Voice
+- Expanding Force
+- Psychic
+- Protect
+
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Sludge Wave
+- Power Gem
+- Spiky Shield
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Trick Room
+- Helping Hand
+- Terrain Pulse
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Protect
+- Weather Ball
+- Heat Wave
+
+Staraptor @ Choice Scarf
+Ability: Intimidate
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Final Gambit
+- Close Combat
+- Brave Bird
+- U-turn
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Low Kick
+- Iron Head
+- Protect

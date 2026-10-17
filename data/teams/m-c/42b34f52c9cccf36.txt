@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Iron Head
+- Leech Life
+- Swords Dance
+- Protect
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Dragon Pulse
+- Flash Cannon
+- Electro Shot
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Timid Nature
+- Weather Ball
+- Hurricane
+- Wide Guard
+- Protect
+
+Rillaboom @ Sitrus Berry
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Incineroar @ Wide Lens
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Timid Nature
+- Fake Out
+- Overheat
+- Snarl
+- Will-O-Wisp
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Brave Bird
+- Close Combat
+- Roost
+- Protect

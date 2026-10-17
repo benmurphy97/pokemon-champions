@@ -1,0 +1,50 @@
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Stomping Tantrum
+- Rock Slide
+- Dragon Claw
+- Protect
+
+Glimmora-Mega @ Glimmoranite
+Ability: Adaptability
+EVs: 2 HP / 16 Def / 21 SpA / 3 SpD / 24 Spe
+Modest Nature
+- Protect
+- Power Gem
+- Sludge Bomb
+- Earth Power
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Fake Tears
+- Moonblast
+- Tailwind
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Protect
+- Brave Bird
+- Roost
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Low Kick
+
+Ditto @ Choice Scarf
+Ability: Imposter
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Transform

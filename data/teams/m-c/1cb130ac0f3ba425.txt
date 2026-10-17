@@ -1,0 +1,53 @@
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 29 HP / 12 Def / 25 SpD
+Sassy Nature
+- Imprison
+- Protect
+- Psychic
+- Trick Room
+
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Quiet Nature
+- Fake Out
+- Dark Pulse
+- Aura Sphere
+- Water Spout
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Weather Ball
+- Eruption
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 31 HP / 25 Def / 10 SpA
+Quiet Nature
+- Detect
+- Hyper Beam
+- Calm Mind
+- Hyper Voice
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Protect
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+
+Vileplume @ Focus Sash
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sludge Bomb
+- Energy Ball
+- Sleep Powder
+- After You

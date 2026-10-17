@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Bold Nature
+- Calm Mind
+- Draining Kiss
+- Dazzling Gleam
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Throat Chop
+- Parting Shot
+- Flare Blitz
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- U-turn
+- Wood Hammer
+- Grassy Glide
+
+Sinistcha @ Focus Sash
+Ability: Hospitality
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Trick Room
+- Matcha Gotcha
+- Shadow Ball
+- Rage Powder
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Heat Wave
+- Earth Power
+- Ancient Power
+- Protect
+
+Kingambit @ Black Belt
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect

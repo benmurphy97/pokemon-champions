@@ -1,0 +1,53 @@
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Trick Room
+- Follow Me
+- Helping Hand
+- Psychic
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 32 HP / 12 Def / 20 SpA / 2 SpD
+Quiet Nature
+- Armor Cannon
+- Expanding Force
+- Trick Room
+- Wide Guard
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Helping Hand
+- Weather Ball
+- Heat Wave
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Quiet Nature
+- Hyper Voice
+- Expanding Force
+- Calm Mind
+- Trick Room
+
+Malamar-Mega @ Malamarite
+Ability: Contrary
+EVs: 32 HP / 2 Def / 32 SpD
+Relaxed Nature
+- Superpower
+- Throat Chop
+- Trick Room
+- Pluck
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Spiky Shield
+- Sludge Bomb
+- Earth Power
+- Power Gem

@@ -1,0 +1,53 @@
+Araquanid @ Mystic Water
+Ability: Water Bubble
+EVs: 32 HP / 6 Atk / 28 Def
+Impish Nature
+- Leech Life
+- Liquidation
+- Wide Guard
+- Protect
+
+Sneasler @ Focus Sash
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Fake Out
+- Coaching
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Protect
+- Trick Room
+- Rage Powder
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Drampa-Mega @ Drampanite
+Ability: Berserk
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Draco Meteor
+- Hyper Voice
+- Protect
+- Flamethrower
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Drill Run
+- Iron Head
+- Protect

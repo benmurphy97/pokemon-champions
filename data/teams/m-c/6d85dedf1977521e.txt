@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Flamethrower
+- Hyper Voice
+- Draco Meteor
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Trick Room
+- Helping Hand
+- Psychic
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Steel Roller
+- Psychic Fangs
+- Iron Head
+- Protect
+
+Gallade @ Focus Sash
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Sacred Sword
+- Psycho Cut
+- Ice Punch
+- Wide Guard
+
+Volcarona @ Leftovers
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Bold Nature
+- Quiver Dance
+- Heat Wave
+- Bug Buzz
+- Protect

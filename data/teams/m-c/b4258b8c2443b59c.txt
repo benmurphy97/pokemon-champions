@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Tailwind
+- Draco Meteor
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- Knock Off
+
+Alakazam-Mega @ Alakazite
+Ability: Trace
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Speed Swap
+- Expanding Force
+- Dazzling Gleam
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Protect
+- Parting Shot
+- Flare Blitz
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Eruption
+- Heat Wave
+- Earth Power
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Trick Room
+- Helping Hand
+- Follow Me
+- Protect

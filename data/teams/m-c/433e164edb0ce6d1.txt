@@ -1,0 +1,53 @@
+Aggron-Mega @ Aggronite
+Ability: Filter
+EVs: 32 HP / 4 Atk / 30 SpD
+Sassy Nature
+- Protect
+- Body Press
+- Iron Defense
+- Heavy Slam
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 12 Def / 25 SpD
+Sassy Nature
+- Protect
+- Light Screen
+- Psychic
+- Trick Room
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+- Fake Out
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 25 HP / 16 Atk / 25 Spe
+Adamant Nature
+- Rock Slide
+- Knock Off
+- Dragon Dance
+- Protect
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Darkest Lariat
+- Flare Blitz
+- Parting Shot
+- Fake Out
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Sassy Nature
+- Scald
+- Hypnosis
+- Recover
+- Coil

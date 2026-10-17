@@ -1,0 +1,53 @@
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Eruption
+- Ancient Power
+- Protect
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 28 HP / 1 Def / 14 SpA / 23 Spe
+Modest Nature
+- Haze
+- Moonblast
+- Hyper Voice
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- U-turn
+- Grassy Glide
+- Wood Hammer
+
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 21 HP / 18 Def / 27 SpD
+Modest Nature
+- Trick Room
+- Hyper Voice
+- Psychic
+- Helping Hand
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Rock Tomb
+- Protect
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect

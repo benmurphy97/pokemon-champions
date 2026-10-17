@@ -1,0 +1,53 @@
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Psychic
+- Protect
+- Substitute
+
+Sneasler @ Grassy Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Dire Claw
+- Close Combat
+- Protect
+
+Clefable-Mega @ Clefablite
+Ability: Magic Bounce
+EVs: 32 HP / 25 Def / 2 SpA / 7 SpD
+Relaxed Nature
+- Helping Hand
+- Follow Me
+- Life Dew
+- Moonblast
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Blizzard
+- Aurora Veil
+- Protect
+- Freeze-Dry
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Last Respects
+- Wave Crash
+- Flip Turn
+- Aqua Jet

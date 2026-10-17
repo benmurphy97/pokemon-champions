@@ -1,0 +1,53 @@
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Quiet Nature
+- Trick Room
+- Hypnosis
+- Protect
+- Hyper Voice
+
+Scrafty @ Life Orb
+Ability: Intimidate
+EVs: 32 HP / 10 Atk / 7 Def / 17 SpD
+Adamant Nature
+- Fake Out
+- Knock Off
+- Drain Punch
+- Protect
+
+Sableye @ Roseli Berry
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Sassy Nature
+- Encore
+- Gravity
+- Foul Play
+- Disable
+
+Absol @ Focus Sash
+Ability: Super Luck
+EVs: 32 Atk / 28 Def / 6 Spe
+Adamant Nature
+- Night Slash
+- Sucker Punch
+- Play Rough
+- Close Combat
+
+Goodra @ Leftovers
+Ability: Sap Sipper
+EVs: 32 HP / 20 Def / 14 SpD
+Quiet Nature
+- Sludge Bomb
+- Giga Drain
+- Blizzard
+- Dragon Pulse
+
+Serperior @ Sitrus Berry
+Ability: Contrary
+EVs: 32 HP / 5 Def / 1 SpA / 2 SpD / 26 Spe
+Modest Nature
+- Leaf Storm
+- Glare
+- Protect
+- Dragon Pulse

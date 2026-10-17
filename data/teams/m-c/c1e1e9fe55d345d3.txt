@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Iron Head
+- Protect
+- Close Combat
+- Leech Life
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect
+
+Gyarados @ Life Orb
+Ability: Intimidate
+EVs: 18 HP / 16 Atk / 9 SpD / 23 Spe
+Adamant Nature
+- Ice Fang
+- Helping Hand
+- Iron Head
+- Waterfall
+
+Ninetales-Alola @ Focus Sash
+Ability: Snow Cloak
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Blizzard
+- Aurora Veil
+- Freeze-Dry
+- Moonblast
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Trick Room
+- Helping Hand
+- Thunderbolt
+- Psychic
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Heat Wave
+- Eruption
+- Will-O-Wisp

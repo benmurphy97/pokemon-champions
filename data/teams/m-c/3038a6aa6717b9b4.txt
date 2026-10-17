@@ -1,0 +1,53 @@
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Brave Bird
+- Close Combat
+- Tailwind
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Protect
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Wide Guard
+- Hurricane
+- Weather Ball
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 17 Def / 15 SpD / 2 Spe
+Careful Nature
+- Fake Out
+- Spirit Break
+- Parting Shot
+- Light Screen
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Wave Crash
+- Earth Power
+- Ice Punch
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Fake Out
+- Flare Blitz
+- Snarl
+- Parting Shot

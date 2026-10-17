@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Encore
+- Protect
+
+Golisopod-Mega @ Golisopite
+Ability: Tough Claws
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Iron Head
+- Leech Life
+- Liquidation
+- Protect
+
+Rillaboom @ Grassy Seed
+Ability: Grassy Surge
+EVs: 32 HP / 6 Atk / 28 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 31 HP / 25 Def / 10 SpA
+Quiet Nature
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+- Detect
+
+Talonflame @ Focus Sash
+Ability: Gale Wings
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Flamethrower
+- Air Slash
+- Tailwind
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Psychic
+- Helping Hand
+- Trick Room
+- Protect

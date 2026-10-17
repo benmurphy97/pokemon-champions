@@ -1,0 +1,53 @@
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 24 HP / 10 SpA / 32 Spe
+Modest Nature
+- Protect
+- Blizzard
+- Shadow Ball
+- Aurora Veil
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Close Combat
+- Dire Claw
+- Fake Out
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Flare Blitz
+- Head Smash
+- Extreme Speed
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- U-turn
+- Grassy Glide
+
+Gliscor @ Grassy Seed
+Ability: Hyper Cutter
+EVs: 24 HP / 15 Atk / 8 Def / 7 SpD / 12 Spe
+Adamant Nature
+- Protect
+- High Horsepower
+- Acrobatics
+- Rock Tomb

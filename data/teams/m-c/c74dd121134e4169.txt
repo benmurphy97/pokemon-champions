@@ -1,0 +1,53 @@
+Absol-Mega-Z @ Absolite Z
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Shadow Claw
+- Night Slash
+- Protect
+- Close Combat
+
+Espathra @ Grassy Seed
+Ability: Speed Boost
+EVs: 32 HP / 9 Def / 6 SpD / 19 Spe
+Timid Nature
+- Calm Mind
+- Baton Pass
+- Lumina Crash
+- Protect
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Calm Mind
+- Draining Kiss
+- Protect
+- Dazzling Gleam
+
+Goodra-Hisui @ Leftovers
+Ability: Shell Armor
+EVs: 15 HP / 1 Def / 27 SpA / 23 SpD
+Modest Nature
+- Flamethrower
+- Flash Cannon
+- Dragon Pulse
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Wood Hammer
+- Grassy Glide
+- High Horsepower
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Throat Chop
+- Flare Blitz
+- Parting Shot

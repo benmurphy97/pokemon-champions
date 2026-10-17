@@ -25,3 +25,8 @@ results/
 *.log
 *.pt
 *.npz
+
+# Website
+web/node_modules/
+web/dist/
+web/public/data/

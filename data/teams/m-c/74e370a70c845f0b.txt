@@ -1,0 +1,53 @@
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Glaive Rush
+- High Horsepower
+- Ice Shard
+- Protect
+
+Pawmot @ Focus Sash
+Ability: Iron Fist
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Double Shock
+- Close Combat
+- Coaching
+- Protect
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Bold Nature
+- Overheat
+- Struggle Bug
+- Tailwind
+- Rage Powder
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect
+
+Kingambit @ Occa Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Protect
+
+Sinistcha @ Coba Berry
+Ability: Hospitality
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Matcha Gotcha
+- Rage Powder
+- Trick Room
+- Protect

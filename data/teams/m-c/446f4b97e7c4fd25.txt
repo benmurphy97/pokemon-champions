@@ -1,0 +1,53 @@
+Kingambit @ Occa Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Dragon Claw
+- Stomping Tantrum
+- Rock Slide
+- Protect
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Modest Nature
+- Sludge Bomb
+- Earth Power
+- Power Gem
+- Spiky Shield
+
+Whimsicott @ Fairy Feather
+Ability: Prankster
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Moonblast
+- Encore
+- Tailwind
+- Protect
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Bold Nature
+- Struggle Bug
+- Rage Powder
+- Overheat
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Draco Meteor
+- Tailwind
+- Protect

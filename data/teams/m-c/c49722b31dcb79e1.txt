@@ -1,0 +1,53 @@
+Golurk-Mega @ Golurkite
+Ability: Unseen Fist
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Headlong Rush
+- Poltergeist
+- Ice Punch
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Terrain Pulse
+- Trick Room
+- Follow Me
+- Helping Hand
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Trick Room
+- Expanding Force
+- Helping Hand
+- Thunderbolt
+
+Armarouge @ Life Orb
+Ability: Flash Fire
+EVs: 7 HP / 21 Def / 32 SpA / 6 Spe
+Modest Nature
+- Armor Cannon
+- Expanding Force
+- Trick Room
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Solar Beam
+- Eruption
+- Heat Wave
+- Protect
+
+Sneasler @ Iron Ball
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- Gunk Shot
+- Throat Chop
+- Fake Out
+- Close Combat

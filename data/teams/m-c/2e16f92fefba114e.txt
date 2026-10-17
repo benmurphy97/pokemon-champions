@@ -1,0 +1,53 @@
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 20 HP / 4 Def / 10 SpA / 32 Spe
+Modest Nature
+- Protect
+- Shadow Ball
+- Sludge Bomb
+- Perish Song
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Protect
+- Parting Shot
+- Throat Chop
+- Fake Out
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Sucker Punch
+- Kowtow Cleave
+- Swords Dance
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Protect
+- Grassy Glide
+- U-turn
+- Fake Out
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Draco Meteor
+- Earth Power
+- Power Gem
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Protect
+- Make It Rain
+- Shadow Ball
+- Nasty Plot

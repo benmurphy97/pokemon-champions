@@ -1,0 +1,53 @@
+Greninja-Mega @ Greninjite
+Ability: Protean
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dark Pulse
+- Ice Beam
+- Hydro Pump
+- Protect
+
+Aegislash @ Spell Tag
+Ability: Stance Change
+EVs: 24 HP / 30 Atk / 12 Spe
+Adamant Nature
+- Iron Head
+- King's Shield
+- Poltergeist
+- Sacred Sword
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Careful Nature
+- Protect
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Hurricane
+- Wide Guard
+- Tailwind
+- Weather Ball
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Fake Out
+- Grassy Glide
+- U-turn
+
+Espathra @ Focus Sash
+Ability: Speed Boost
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Modest Nature
+- Lumina Crash
+- Baton Pass
+- Calm Mind
+- Protect

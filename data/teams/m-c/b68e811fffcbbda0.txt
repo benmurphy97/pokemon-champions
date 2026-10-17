@@ -1,0 +1,53 @@
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Hyper Voice
+- Expanding Force
+- Thunderbolt
+- Protect
+
+Indeedee-F @ Eject Button
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Trick Room
+- Terrain Pulse
+- Helping Hand
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Protect
+- Earth Power
+- Weather Ball
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Dazzling Gleam
+- Trick Room
+- Protect
+
+Staraptor @ Choice Scarf
+Ability: Intimidate
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- U-turn
+- Final Gambit
+- Brave Bird
+- Close Combat
+
+Golurk-Mega @ Golurkite
+Ability: Unseen Fist
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Drain Punch
+- Poltergeist
+- Protect
+- Headlong Rush

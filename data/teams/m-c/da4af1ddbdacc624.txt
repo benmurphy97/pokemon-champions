@@ -1,0 +1,53 @@
+Hydreigon @ Choice Scarf
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Snarl
+- Draco Meteor
+- Flamethrower
+- Earth Power
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Mystical Fire
+- Follow Me
+- Protect
+- Trick Room
+
+Ceruledge @ Focus Sash
+Ability: Flash Fire
+EVs: 31 HP / 25 Atk / 10 Def
+Jolly Nature
+- Close Combat
+- Phantom Force
+- Bitter Blade
+- Protect
+
+Lopunny-Mega @ Lopunnite
+Ability: Scrappy
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Close Combat
+- Triple Axel
+- Thunder Punch
+- Fake Out
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Expanding Force
+- Hyper Voice
+- Calm Mind
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Throat Chop
+- Fake Out

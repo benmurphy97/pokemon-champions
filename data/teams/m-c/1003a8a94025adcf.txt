@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Hyper Voice
+- Dragon Pulse
+- Flamethrower
+- Protect
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Aurora Veil
+- Blizzard
+- Shadow Ball
+- Protect
+
+Aegislash @ Sitrus Berry
+Ability: Stance Change
+EVs: 32 HP / 32 SpA / 2 Spe
+Quiet Nature
+- King's Shield
+- Wide Guard
+- Shadow Ball
+- Flash Cannon
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dire Claw
+- Rock Tomb
+- Close Combat
+- Protect
+
+Pawmot @ Focus Sash
+Ability: Iron Fist
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Double Shock
+- Close Combat
+- Protect
+- Revival Blessing
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Trick
+- Expanding Force
+- Mystical Fire
+- Hyper Voice

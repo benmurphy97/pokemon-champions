@@ -1,0 +1,53 @@
+Espathra @ Grassy Seed
+Ability: Speed Boost
+EVs: 32 HP / 9 Def / 6 SpD / 19 Spe
+Timid Nature
+- Protect
+- Lumina Crash
+- Calm Mind
+- Baton Pass
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+- Fake Out
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Focus Blast
+- Protect
+
+Sylveon @ Fairy Feather
+Ability: Pixilate
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Modest Nature
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+- Protect
+
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Aura Sphere
+- Flash Cannon
+- Psych Up
+- Protect
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Icy Wind
+- Protect

@@ -1,0 +1,53 @@
+Grapploct @ Life Orb
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Storm Throw
+- Payback
+- Ice Punch
+- Protect
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Helping Hand
+- Follow Me
+- Trick Room
+- Psychic
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Ancient Power
+- Heat Wave
+- Earth Power
+- Protect
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Close Combat
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Expanding Force
+- Trick Room
+- Helping Hand
+- Thunderbolt
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Iron Head
+- Kowtow Cleave
+- Sucker Punch
+- Protect

@@ -1,0 +1,53 @@
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wave Crash
+- Last Respects
+- Flip Turn
+- Soak
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Leech Life
+- Iron Head
+- Protect
+- Liquidation
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Wide Guard
+- Tailwind
+- Hurricane
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Flash Cannon
+- Electro Shot
+- Dragon Pulse
+- Protect
+
+Sceptile-Mega @ Sceptilite
+Ability: Lightning Rod
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Energy Ball
+- Dragon Pulse
+- Earth Power
+- Protect
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 30 HP / 21 Def / 15 SpD
+Relaxed Nature
+- Psychic Noise
+- Helping Hand
+- Trick Room
+- Protect

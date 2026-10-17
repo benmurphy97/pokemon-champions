@@ -1,0 +1,53 @@
+Raichu-Mega-X @ Raichunite X
+Ability: Electric Surge
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Volt Tackle
+- Reflect
+- Fake Out
+- Light Screen
+
+Venusaur @ Focus Sash
+Ability: Overgrow
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Sleep Powder
+- Sludge Bomb
+- Leaf Storm
+
+Politoed @ Sitrus Berry
+Ability: Water Absorb
+EVs: 32 HP / 25 Def / 6 SpA / 3 SpD
+Modest Nature
+- Protect
+- Muddy Water
+- Ice Beam
+- Psych Up
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Weather Ball
+- Heat Crash
+- Hurricane
+
+Espathra @ Electric Seed
+Ability: Opportunist
+EVs: 32 HP / 9 Def / 6 SpD / 19 Spe
+Timid Nature
+- Protect
+- Lumina Crash
+- Baton Pass
+- Calm Mind
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Protect
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse

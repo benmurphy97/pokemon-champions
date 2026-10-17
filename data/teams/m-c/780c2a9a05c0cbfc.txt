@@ -1,0 +1,53 @@
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Swords Dance
+- Icicle Spear
+- Glaive Rush
+- Protect
+
+Blaziken-Mega @ Blazikenite
+Ability: Speed Boost
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Detect
+- Baton Pass
+- Blaze Kick
+- Rock Slide
+
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dark Pulse
+- Water Spout
+- Shell Smash
+- Flash Cannon
+
+Whimsicott @ Bright Powder
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Tailwind
+- Moonblast
+- Energy Ball
+- Leech Seed
+
+Pawmot @ Focus Sash
+Ability: Volt Absorb
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Entrainment
+- Supercell Slam
+- Revival Blessing
+- Brick Break
+
+Indeedee-F @ Leftovers
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Trick Room

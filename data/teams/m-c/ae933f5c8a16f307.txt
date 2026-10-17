@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Protect
+- Fake Out
+
+Basculegion-F @ Focus Sash
+Ability: Swift Swim
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Muddy Water
+- Ice Beam
+- Shadow Ball
+
+Politoed @ Mystic Water
+Ability: Drizzle
+EVs: 32 HP / 25 Def / 6 SpA / 3 SpD
+Modest Nature
+- Weather Ball
+- Muddy Water
+- Protect
+- Ice Beam
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Dragon Pulse
+- Aura Sphere
+- Electro Shot
+- Protect
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Iron Head
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Body Slam
+- Tailwind
+- Rock Slide

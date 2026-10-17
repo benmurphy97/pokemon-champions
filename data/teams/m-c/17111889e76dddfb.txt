@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Tailwind
+- Protect
+- Encore
+
+Maushold @ Wide Lens
+Ability: Technician
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Population Bomb
+- Protect
+- Bullet Seed
+- Bite
+
+Pawmot @ White Herb
+Ability: Natural Cure
+EVs: 32 Atk / 2 SpD / 32 Spe
+Careful Nature
+- Supercell Slam
+- Close Combat
+- Ice Punch
+- Revival Blessing
+
+Toxtricity-Low-Key @ Life Orb
+Ability: Punk Rock
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Overdrive
+- Sludge Bomb
+- Boomburst
+- Protect
+
+Skarmory-Mega @ Skarmorite
+Ability: Stalwart
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Iron Head
+- Drill Peck
+- X-Scissor
+- Drill Run
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Imprison
+- Trick Room
+- Protect
+- Foul Play

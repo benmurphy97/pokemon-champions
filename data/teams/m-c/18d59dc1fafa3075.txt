@@ -1,0 +1,53 @@
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Coaching
+- Dire Claw
+- Close Combat
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Mystical Fire
+- Trick
+- Helping Hand
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Knock Off
+- Rock Slide
+- High Horsepower
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Rock Slide
+- Iron Head
+- High Horsepower
+- Protect
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Dragon Pulse
+- Substitute
+- Earth Power
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 32 HP / 26 Def / 8 SpD
+Calm Nature
+- Tailwind
+- Rage Powder
+- Overheat
+- Struggle Bug

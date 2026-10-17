@@ -1,0 +1,53 @@
+Raichu-Mega-X @ Raichunite X
+Ability: Electric Surge
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Volt Tackle
+- Protect
+- Volt Switch
+- Fake Out
+
+Espathra @ Electric Seed
+Ability: Speed Boost
+EVs: 32 HP / 32 Def / 2 Spe
+Bold Nature
+- Lumina Crash
+- Baton Pass
+- Calm Mind
+- Protect
+
+Meganium-Mega @ Meganiumite
+Ability: Mega Sol
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Dazzling Gleam
+- Solar Beam
+- Weather Ball
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Fake Out
+- Protect
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Modest Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Hurricane
+- Tailwind
+- Weather Ball
+- Protect

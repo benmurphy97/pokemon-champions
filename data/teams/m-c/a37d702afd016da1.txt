@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Protect
+- Overheat
+- Solar Beam
+
+Meowscarada @ Choice Scarf
+Ability: Protean
+EVs: 32 Atk / 2 Def / 32 Spe
+Adamant Nature
+- Flower Trick
+- U-turn
+- Knock Off
+- Triple Axel
+
+Zoroark-Hisui @ Focus Sash
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Icy Wind
+- Shadow Ball
+- Hyper Voice
+- Protect
+
+Volcarona @ Rocky Helmet
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Fiery Dance
+- Protect
+- Struggle Bug
+- Rage Powder
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Protect
+- Wave Crash
+- Aqua Jet
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Fake Out
+- Protect
+- Focus Blast

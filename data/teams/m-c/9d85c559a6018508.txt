@@ -1,0 +1,53 @@
+Sylveon @ Black Glasses
+Ability: Cute Charm
+EVs: 9 HP / 22 Def / 20 SpA / 15 Spe
+Serious Nature
+- Dazzling Gleam
+- Calm Mind
+- Moonblast
+- Shadow Ball
+
+Vaporeon @ Quick Claw
+Ability: Water Absorb
+EVs: 32 HP / 30 Def / 4 SpD
+Serious Nature
+- Liquidation
+- Surf
+- Hydro Pump
+- Ice Beam
+
+Spiritomb @ Focus Band
+Ability: Pressure
+EVs: 32 HP / 18 Def / 16 SpD
+Serious Nature
+- Nasty Plot
+- Will-O-Wisp
+- Dark Pulse
+- Shadow Ball
+
+Staraptor @ Shell Bell
+Ability: Intimidate
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Serious Nature
+- Brave Bird
+- U-turn
+- Protect
+- Close Combat
+
+Zoroark-Hisui @ Black Belt
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Serious Nature
+- Flamethrower
+- Focus Blast
+- Bitter Malice
+- Dark Pulse
+
+Delphox @ Leftovers
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Serious Nature
+- Psychic
+- Dazzling Gleam
+- Fire Blast
+- Shadow Ball

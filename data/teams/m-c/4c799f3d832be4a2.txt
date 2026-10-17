@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Iron Head
+- Drill Run
+- Protect
+
+Indeedee @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 2 SpA / 32 SpD
+Sassy Nature
+- Expanding Force
+- Mystical Fire
+- Trick Room
+- Helping Hand
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Head Smash
+- Flare Blitz
+- Close Combat
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect
+
+Venusaur-Mega @ Venusaurite
+Ability: Thick Fat
+EVs: 30 HP / 18 SpA / 18 Spe
+Modest Nature
+- Energy Ball
+- Earth Power
+- Sleep Powder
+- Protect
+
+Glaceon @ Choice Scarf
+Ability: Snow Cloak
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Ice Beam
+- Freeze-Dry
+- Alluring Voice
+- Yawn

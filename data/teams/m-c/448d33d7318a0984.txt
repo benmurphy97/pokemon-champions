@@ -1,0 +1,53 @@
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Psychic Fangs
+- Stomping Tantrum
+- Iron Head
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Protect
+- Tailwind
+- Draco Meteor
+- Hyper Voice
+
+Blaziken @ Focus Sash
+Ability: Speed Boost
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Detect
+- Coaching
+- Heat Wave
+- Aura Sphere
+
+Ninetales-Alola @ Never-Melt Ice
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Protect
+- Encore
+- Freeze-Dry
+- Blizzard
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Flip Turn
+- Wave Crash
+- Last Respects
+- Aqua Jet
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Swords Dance
+- Protect
+- Kowtow Cleave
+- Sucker Punch

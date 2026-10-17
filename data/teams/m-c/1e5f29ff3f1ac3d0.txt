@@ -1,0 +1,53 @@
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Wave Crash
+- Earthquake
+- Ice Punch
+- Protect
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Hurricane
+- Wide Guard
+- Tailwind
+
+Archaludon @ Rocky Helmet
+Ability: Sturdy
+EVs: 27 HP / 5 Def / 5 SpA / 10 SpD / 19 Spe
+Modest Nature
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+- Protect
+
+Typhlosion-Hisui @ Choice Scarf
+Ability: Blaze
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Eruption
+- Shadow Ball
+- Heat Wave
+- Will-O-Wisp
+
+Sinistcha @ Coba Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Trick Room
+- Protect
+- Rage Powder
+
+Maushold @ Wide Lens
+Ability: Technician
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Population Bomb
+- Feint
+- Protect
+- Follow Me

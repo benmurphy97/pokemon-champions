@@ -1,0 +1,53 @@
+Malamar-Mega @ Malamarite
+Ability: Contrary
+EVs: 30 HP / 28 Atk / 4 Def / 4 SpD
+Adamant Nature
+- Superpower
+- Protect
+- Knock Off
+- Topsy-Turvy
+
+Corviknight @ Leftovers
+Ability: Mirror Armor
+EVs: 32 HP / 5 Def / 26 SpD / 3 Spe
+Impish Nature
+- Power Trip
+- Body Press
+- Iron Defense
+- Roost
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Dire Claw
+- Upper Hand
+- Close Combat
+- Fake Out
+
+Zoroark-Hisui @ Colbur Berry
+Ability: Illusion
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Bitter Malice
+- Snarl
+- Hyper Voice
+- Icy Wind
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Moonblast
+- Protect
+- Charm
+- Tailwind
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Protect
+- Sucker Punch

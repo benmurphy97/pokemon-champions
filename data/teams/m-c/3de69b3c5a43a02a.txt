@@ -1,0 +1,53 @@
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 31 HP / 1 Def / 5 SpA / 29 SpD
+Bold Nature
+- Protect
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Iron Head
+- Sucker Punch
+- Leech Life
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Bold Nature
+- Wide Guard
+- Weather Ball
+- Helping Hand
+- Hurricane
+
+Basculegion-F @ Focus Sash
+Ability: Swift Swim
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Muddy Water
+- Ice Beam
+- Shadow Ball
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Protect
+- Close Combat
+- Dire Claw
+- Rock Slide
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 2 Def / 32 Spe
+Serious Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect

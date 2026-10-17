@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Protect
+- Fake Out
+- Zap Cannon
+- Focus Blast
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Quick Guard
+- Rock Tomb
+- Close Combat
+- Dire Claw
+
+Pelipper @ Focus Sash
+Ability: Drizzle
+EVs: 31 HP / 25 SpD / 10 Spe
+Timid Nature
+- Protect
+- Tailwind
+- Hurricane
+- Weather Ball
+
+Meganium-Mega @ Meganiumite
+Ability: Mega Sol
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Protect
+- Dazzling Gleam
+- Solar Beam
+- Weather Ball
+
+Gholdengo @ Choice Scarf
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Psychic
+- Power Gem
+- Make It Rain
+- Shadow Ball
+
+Indeedee @ Life Orb
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Protect
+- Expanding Force
+- Trick Room
+- Imprison

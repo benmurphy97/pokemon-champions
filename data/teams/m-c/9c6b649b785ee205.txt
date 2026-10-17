@@ -1,0 +1,53 @@
+Meowstic-F @ Meowsticite
+Ability: Trace
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Expanding Force
+- Thunderbolt
+- Fake Out
+- Protect
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Weather Ball
+- Solar Beam
+- Protect
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Rock Slide
+- Poison Jab
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Iron Head
+- Kowtow Cleave
+- Sucker Punch
+- Protect
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Energy Ball
+- Trick Room
+- Imprison
+
+Kommo-o @ Leftovers
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Clanging Scales
+- Clangorous Soul
+- Aura Sphere
+- Protect

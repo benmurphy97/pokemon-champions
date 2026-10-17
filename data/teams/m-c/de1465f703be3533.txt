@@ -1,0 +1,53 @@
+Tinkaton @ Metal Coat
+Ability: Mold Breaker
+EVs: 1 HP / 32 Atk / 1 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Fake Out
+- Gigaton Hammer
+- Encore
+
+Sableye @ Focus Sash
+Ability: Prankster
+EVs: 32 HP / 9 Def / 25 SpD
+Impish Nature
+- Protect
+- Disable
+- Encore
+- Fake Out
+
+Rillaboom @ Eject Button
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Impish Nature
+- U-turn
+- Protect
+- Drum Beating
+- Fake Out
+
+Scrafty @ Coba Berry
+Ability: Intimidate
+EVs: 27 HP / 6 Atk / 2 Def / 31 SpD
+Careful Nature
+- Drain Punch
+- Knock Off
+- Detect
+- Fake Out
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Protect
+- Darkest Lariat
+- Fake Out
+- Parting Shot
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Disable
+- Protect
+- Shadow Ball
+- Perish Song

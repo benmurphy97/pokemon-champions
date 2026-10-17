@@ -1,0 +1,53 @@
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Trick Room
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Expanding Force
+- Dazzling Gleam
+- Trick Room
+- Protect
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 21 HP / 18 Def / 27 SpD
+Modest Nature
+- Expanding Force
+- Thunderbolt
+- Trick Room
+- Helping Hand
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Ancient Power
+- Heat Wave
+- Earth Power
+- Protect
+
+Incineroar @ Passho Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Flare Blitz
+- Fake Out
+- Darkest Lariat
+- Parting Shot
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Leech Life
+- Iron Head
+- Swords Dance
+- Protect

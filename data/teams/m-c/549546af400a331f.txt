@@ -1,0 +1,53 @@
+Armarouge @ Focus Sash
+Ability: Flash Fire
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Armor Cannon
+- Expanding Force
+- Wide Guard
+- Protect
+
+Dragapult @ Life Orb
+Ability: Infiltrator
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Shadow Ball
+- Draco Meteor
+- Will-O-Wisp
+- Protect
+
+Milotic @ Psychic Seed
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Recover
+- Hypnosis
+- Coil
+- Muddy Water
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Trick Room
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Adamant Nature
+- Roost
+- Protect
+- Close Combat
+- Brave Bird
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Swords Dance
+- Leech Life
+- Iron Head

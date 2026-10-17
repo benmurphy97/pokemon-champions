@@ -1,0 +1,53 @@
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Ancient Power
+- Solar Beam
+- Protect
+
+Swampert @ Sitrus Berry
+Ability: Torrent
+EVs: 25 HP / 26 Atk / 15 Spe
+Adamant Nature
+- Wide Guard
+- Ice Punch
+- Earthquake
+- Wave Crash
+
+Milotic @ Choice Scarf
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Timid Nature
+- Icy Wind
+- Ice Beam
+- Muddy Water
+- Haze
+
+Sneasler @ Focus Sash
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- U-turn
+- Rock Slide
+- Fake Out
+- Close Combat
+
+Drampa-Mega @ Drampanite
+Ability: Berserk
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Hyper Voice
+- Earth Power
+- Thunderbolt
+- Protect
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Sassy Nature
+- Trick Room
+- Helping Hand
+- Psychic Fangs
+- Hyper Voice

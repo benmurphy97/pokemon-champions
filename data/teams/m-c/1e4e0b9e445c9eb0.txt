@@ -1,0 +1,53 @@
+Sirfetchd @ Leek
+Ability: Scrappy
+EVs: 32 HP / 32 SpD / 2 Spe
+Sassy Nature
+- Meteor Assault
+- Leaf Blade
+- Poison Jab
+- Night Slash
+
+Tinkaton @ Eject Button
+Ability: Mold Breaker
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Play Rough
+- Gigaton Hammer
+- Endeavor
+- Fake Out
+
+Machamp @ Expert Belt
+Ability: No Guard
+EVs: 32 HP / 32 Atk / 2 SpD
+Sassy Nature
+- Seismic Toss
+- Cross Chop
+- Thunder Punch
+- Throat Chop
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 30 HP / 21 Def / 15 SpD
+Relaxed Nature
+- Uproar
+- Helping Hand
+- Twin Beam
+- Trick Room
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Leech Life
+- Liquidation
+- Rock Slide
+- Iron Head
+
+Snorlax @ Sitrus Berry
+Ability: Thick Fat
+EVs: 22 HP / 32 Def / 12 SpD
+Relaxed Nature
+- Body Slam
+- Belly Drum
+- Supercell Slam
+- Heavy Slam

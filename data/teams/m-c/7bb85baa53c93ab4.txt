@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Double-Edge
+- Dragon Claw
+- Dragon Dance
+- Protect
+
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 25 HP / 26 SpD / 15 Spe
+Timid Nature
+- Shadow Ball
+- Blizzard
+- Nasty Plot
+- Protect
+
+Infernape @ Focus Sash
+Ability: Blaze
+EVs: 2 Atk / 32 SpA / 32 Spe
+Hasty Nature
+- Flamethrower
+- Aura Sphere
+- Fake Out
+- Encore
+
+Rillaboom @ Leftovers
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- Protect
+
+Farigiraf @ Silk Scarf
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Hyper Voice
+- Psychic
+- Trick Room
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Last Respects
+- Aqua Jet
+- Protect

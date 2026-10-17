@@ -1,0 +1,53 @@
+Lopunny-Mega @ Lopunnite
+Ability: Scrappy
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Close Combat
+- Fake Out
+- Triple Axel
+- Thunder Punch
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Mystical Fire
+- Psychic
+- Trick Room
+- Follow Me
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Modest Nature
+- Hyper Voice
+- Calm Mind
+- Expanding Force
+- Protect
+
+Dragonite @ Life Orb
+Ability: Inner Focus
+EVs: 29 HP / 32 Atk / 5 Spe
+Adamant Nature
+- Scale Shot
+- Dragon Dance
+- Stomping Tantrum
+- Rock Slide
+
+Ceruledge @ Focus Sash
+Ability: Flash Fire
+EVs: 1 HP / 32 Atk / 1 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Bitter Blade
+- Poltergeist
+- Swords Dance
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Fake Out
+- Throat Chop
+- Close Combat

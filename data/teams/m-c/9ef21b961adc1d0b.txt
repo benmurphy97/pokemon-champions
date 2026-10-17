@@ -1,0 +1,53 @@
+Vileplume @ Focus Sash
+Ability: Chlorophyll
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Modest Nature
+- Leaf Storm
+- After You
+- Sleep Powder
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Psychic
+- Helping Hand
+- Trick Room
+
+Pyroar-Mega @ Pyroarite
+Ability: Fire Mane
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Overheat
+- Scorching Sands
+- Protect
+
+Gliscor @ Life Orb
+Ability: Hyper Cutter
+EVs: 24 HP / 15 Atk / 8 Def / 7 SpD / 12 Spe
+Adamant Nature
+- High Horsepower
+- Dual Wingbeat
+- Tailwind
+- Protect
+
+Mawile-Mega @ Mawilite
+Ability: Huge Power
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Iron Head
+- Play Rough
+- Rock Slide
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Weather Ball
+- Eruption
+- Earth Power
+- Protect

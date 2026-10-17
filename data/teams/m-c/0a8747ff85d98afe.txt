@@ -1,0 +1,53 @@
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Psychic
+- Follow Me
+- Helping Hand
+- Heal Pulse
+
+Dragapult @ Life Orb
+Ability: Infiltrator
+EVs: 32 HP / 32 SpA / 2 Spe
+Modest Nature
+- Draco Meteor
+- Shadow Ball
+- Will-O-Wisp
+- Protect
+
+Milotic @ Psychic Seed
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Muddy Water
+- Coil
+- Hypnosis
+- Recover
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Psychic Fangs
+- Body Press
+- Psych Up
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Head Smash
+- Flare Blitz
+- Rock Slide
+- Protect
+
+Altaria @ Haban Berry
+Ability: Cloud Nine
+EVs: 32 HP / 29 Def / 5 Spe
+Bold Nature
+- Ice Beam
+- Tailwind
+- Will-O-Wisp
+- Protect

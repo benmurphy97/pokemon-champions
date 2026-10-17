@@ -1,0 +1,53 @@
+Sableye @ Roseli Berry
+Ability: Prankster
+EVs: 32 HP / 4 Def / 30 SpD
+Calm Nature
+- Fake Out
+- Gravity
+- Quash
+- Foul Play
+
+Espathra @ Life Orb
+Ability: Speed Boost
+EVs: 32 HP / 9 Def / 6 SpD / 19 Spe
+Timid Nature
+- Hypnosis
+- Lumina Crash
+- Hex
+- Protect
+
+Indeedee @ Focus Sash
+Ability: Inner Focus
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Gravity
+- Expanding Force
+- Mystical Fire
+- Protect
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Hex
+- Sludge Bomb
+- Hypnosis
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Hypnosis
+- Ice Beam
+- Muddy Water
+- Protect
+
+Scovillain-Mega @ Scovillainite
+Ability: Spicy Spray
+EVs: 32 HP / 15 Def / 15 SpD / 4 Spe
+Calm Nature
+- Leech Seed
+- Rage Powder
+- Giga Drain
+- Protect

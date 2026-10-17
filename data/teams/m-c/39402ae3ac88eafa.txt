@@ -1,0 +1,53 @@
+Alakazam-Mega @ Alakazite
+Ability: Trace
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Speed Swap
+- Protect
+- Expanding Force
+- Nasty Plot
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Helping Hand
+- Protect
+
+Indeedee-F @ Colbur Berry
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Terrain Pulse
+- Follow Me
+- Trick Room
+- Imprison
+
+Grapploct @ Life Orb
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Storm Throw
+- Ice Punch
+- Payback
+- Circle Throw
+
+Slurpuff @ Psychic Seed
+Ability: Unburden
+EVs: 32 HP / 11 Def / 23 SpD
+Modest Nature
+- Dazzling Gleam
+- After You
+- Flamethrower
+- Thunderbolt
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Low Kick
+- Iron Head
+- Protect

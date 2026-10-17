@@ -1,0 +1,53 @@
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Psychic
+- Heat Wave
+- Nasty Plot
+- Protect
+
+Garchomp @ Choice Scarf
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Earthquake
+- Stomping Tantrum
+- Rock Slide
+- Dragon Claw
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Close Combat
+- Brave Bird
+- Roost
+- Protect
+
+Maushold @ Focus Sash
+Ability: Friend Guard
+EVs: 32 HP / 2 Atk / 32 Spe
+Jolly Nature
+- Follow Me
+- Charm
+- Protect
+- Feint
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Protect
+- Nasty Plot
+
+Milotic @ Sitrus Berry
+Ability: Marvel Scale
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Protect
+- Life Dew

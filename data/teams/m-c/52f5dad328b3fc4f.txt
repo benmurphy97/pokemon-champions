@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sunny Day
+- Protect
+- Tailwind
+- Moonblast
+
+Rillaboom @ Expert Belt
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- High Horsepower
+
+Houndoom-Mega @ Houndoominite
+Ability: Solar Power
+EVs: 1 HP / 32 SpA / 1 SpD / 32 Spe
+Timid Nature
+- Protect
+- Dark Pulse
+- Heat Wave
+- Scorching Sands
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 32 HP / 22 Def / 6 SpA / 1 SpD / 5 Spe
+Bold Nature
+- Protect
+- Shadow Ball
+- Hyper Voice
+- Expanding Force
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Protect
+- Clanging Scales
+- Flamethrower
+- Aura Sphere
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Trick Room
+- Imprison
+- Psychic
+- Follow Me

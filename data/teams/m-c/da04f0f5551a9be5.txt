@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Leech Life
+- First Impression
+- Iron Head
+- Protect
+
+Araquanid @ Mystic Water
+Ability: Water Bubble
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Liquidation
+- Leech Life
+- Protect
+- Wide Guard
+
+Volcarona @ Leftovers
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Fiery Dance
+- Quiver Dance
+- Giga Drain
+- Protect
+
+Forretress @ Iron Ball
+Ability: Sturdy
+EVs: 32 HP / 2 Def / 32 SpD
+Sassy Nature
+- Helping Hand
+- Protect
+- Struggle Bug
+- Gyro Ball
+
+Kleavor @ Choice Scarf
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- X-Scissor
+- Night Slash
+- Close Combat
+- Stone Axe
+
+Vivillon @ Focus Sash
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sleep Powder
+- Hurricane
+- Rage Powder
+- Protect

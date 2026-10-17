@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Leech Life
+- Liquidation
+- Protect
+- Sucker Punch
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Protect
+- Flash Cannon
+- Snarl
+- Electro Shot
+
+Pelipper @ Choice Scarf
+Ability: Drizzle
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hurricane
+- Muddy Water
+- Icy Wind
+- U-turn
+
+Sinistcha @ Kasib Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Matcha Gotcha
+- Trick Room
+- Shadow Ball
+- Calm Mind
+
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Earthquake
+- Wave Crash
+- Ice Punch
+- Protect
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 17 Def / 15 SpD / 2 Spe
+Careful Nature
+- Low Kick
+- Reflect
+- Light Screen
+- Parting Shot

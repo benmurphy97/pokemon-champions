@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Double-Edge
+- Dragon Dance
+- Protect
+- Roost
+
+Glimmora @ Focus Sash
+Ability: Toxic Debris
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Naive Nature
+- Power Gem
+- Spiky Shield
+- Earth Power
+- Sludge Bomb
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Make It Rain
+- Shadow Ball
+- Protect
+- Nasty Plot
+
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Light of Ruin
+- Moonblast
+- Protect
+- Dazzling Gleam
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Low Kick
+- Kowtow Cleave
+- Sucker Punch
+
+Volcarona @ Sitrus Berry
+Ability: Flame Body
+EVs: 12 HP / 31 Def / 5 SpA / 18 Spe
+Modest Nature
+- Rage Powder
+- Overheat
+- Struggle Bug
+- Protect

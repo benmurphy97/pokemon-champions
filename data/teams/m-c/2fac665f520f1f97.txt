@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Protect
+- Swords Dance
+- Leech Life
+- Liquidation
+
+Meganium-Mega @ Meganiumite
+Ability: Mega Sol
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Protect
+- Weather Ball
+- Solar Beam
+- Dazzling Gleam
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Fake Out
+- Parting Shot
+- Throat Chop
+- Flare Blitz
+
+Politoed @ Life Orb
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Quiet Nature
+- Protect
+- Weather Ball
+- Muddy Water
+- Ice Beam
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 29 HP / 14 Def / 23 SpD
+Calm Nature
+- Protect
+- Trick Room
+- Expanding Force
+- Helping Hand
+
+Grapploct @ Black Belt
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Detect
+- Mach Punch
+- Storm Throw
+- Soak

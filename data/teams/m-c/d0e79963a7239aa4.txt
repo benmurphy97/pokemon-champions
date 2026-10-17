@@ -1,0 +1,53 @@
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Rock Slide
+- Fake Out
+
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
+EVs: 25 HP / 26 Def / 15 SpD
+Bold Nature
+- Psychic
+- Thunderbolt
+- Helping Hand
+- Trick Room
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Life Dew
+- Protect
+
+Lucario @ Lucarionite Z
+Ability: Inner Focus
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Flash Cannon
+- Aura Sphere
+- Protect
+- Shadow Ball
+
+Scovillain-Mega @ Scovillainite
+Ability: Spicy Spray
+EVs: 32 HP / 15 Def / 15 SpD / 4 Spe
+Bold Nature
+- Flamethrower
+- Rage Powder
+- Giga Drain
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Eruption
+- Flamethrower
+- Earth Power
+- Protect

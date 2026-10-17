@@ -78,7 +78,17 @@ Test: our Trick Room teams against held-out real teams, most-likely-move play, 4
 - **Training-game win rate against greedy-blind rose slowly**: 38.8% to 41.6% over run 2. Held-out results did not follow.
 - **By team type (run 2):** on good tournament Trick Room teams the policy and the baseline are level (about 65% each, 8 teams, noisy). On our generated Trick Room teams the policy is consistently below the baseline (19–26% vs 30%).
 - **Team quality dominates.** Good tournament Trick Room teams win about 66% even with the rule-based pilot; our generated ones win 30%.
-- **Not yet tried:** more precise damage inputs (the greedy agent's edge is likely an accurate damage calculation), a denser reward than win/loss, self-play against earlier versions, a larger network.
+### Run 3: damage calculator inputs, 13,900 games (best model: iteration 20)
+
+New inputs (`damage.py`, checked against Showdown: median error 2%): damage as a share of each foe's health, sure/possible knockout flags, and incoming threat to our two active Pokémon. Imitation retrained on all 13,900 games: validation top-1 57.8% (was 53.1%), and 53.0% (48.1–57.8) against greedy-blind in the arena (was about 27%). Reinforcement learning from it (60 iterations, no reward shaping):
+
+| Iteration | Learned player | Rule-based baseline |
+|---|---|---|
+| 10 / 20 / 30 / 40 / 50 / 60 | 46.5 / 49.8 / 47.5 / 48.5 / 43.5 / 47.7% | 49.3% |
+
+On good tournament Trick Room teams it matches the baseline (64–71% vs 69%); on generated ones it is level (23–29% vs 30%). Reinforcement learning added nothing measurable over the imitation start; the gain came from the inputs and data. `--shaping` and `--gae-lambda` (health-lead reward) exist but have not been run.
+
+- **Not yet tried (before run 3):** more precise damage inputs (the greedy agent's edge is likely an accurate damage calculation), a denser reward than win/loss, self-play against earlier versions, a larger network.
 
 ## Running it
 

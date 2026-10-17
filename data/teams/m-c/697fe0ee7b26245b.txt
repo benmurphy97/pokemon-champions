@@ -1,0 +1,53 @@
+Ampharos-Mega @ Ampharosite
+Ability: Mold Breaker
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Thunderbolt
+- Protect
+- Dragon Pulse
+- Thunder Wave
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Psychic
+- Trick Room
+- Protect
+- Helping Hand
+
+Blaziken-Mega @ Blazikenite
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Close Combat
+- Flare Blitz
+- Detect
+- Knock Off
+
+Kingambit @ Life Orb
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch
+- Protect
+
+Rillaboom @ Grassy Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- U-turn
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Last Respects
+- Wave Crash
+- Psychic Fangs
+- Flip Turn

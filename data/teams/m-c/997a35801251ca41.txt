@@ -1,0 +1,53 @@
+Stunfisk @ Bright Powder
+Ability: Sand Veil
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Thunderbolt
+- Sandstorm
+- Stealth Rock
+
+Forretress @ Iron Ball
+Ability: Overcoat
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Gyro Ball
+- Body Press
+- Power Trick
+- Curse
+
+Mr. Mime @ Focus Band
+Ability: Filter
+EVs: 32 HP / 32 SpA / 2 Spe
+Quiet Nature
+- Psychic
+- Dazzling Gleam
+- Fake Out
+- Wide Guard
+
+Toxtricity-Low-Key @ Life Orb
+Ability: Punk Rock
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Overdrive
+- Sludge Bomb
+- Boomburst
+- Protect
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 31 HP / 24 Def / 11 SpD
+Relaxed Nature
+- Uproar
+- Protect
+- Helping Hand
+- Trick Room
+
+Steelix-Mega @ Steelixite
+Ability: Sand Force
+EVs: 32 HP / 32 Atk / 2 SpD
+Gentle Nature
+- Iron Head
+- Earthquake
+- Wide Guard
+- Thunder Fang

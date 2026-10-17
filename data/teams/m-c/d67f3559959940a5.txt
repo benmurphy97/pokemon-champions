@@ -1,0 +1,53 @@
+Pyroar-Mega @ Pyroarite
+Ability: Fire Mane
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Heat Wave
+- Overheat
+- Scorching Sands
+- Protect
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Helping Hand
+- Psychic
+- Protect
+
+Gardevoir-Mega @ Gardevoirite
+Ability: Pixilate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Hyper Voice
+- Expanding Force
+- Imprison
+- Protect
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Tailwind
+- Sunny Day
+- Moonblast
+- Protect
+
+Samurott-Hisui @ Scope Lens
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Night Slash
+- Aqua Cutter
+- Sacred Sword
+- Protect
+
+Kommo-o @ Life Orb
+Ability: Soundproof
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Clanging Scales
+- Flamethrower
+- Aura Sphere
+- Protect

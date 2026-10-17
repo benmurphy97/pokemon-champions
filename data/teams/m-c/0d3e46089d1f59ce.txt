@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Dazzling Gleam
+- Calm Mind
+- Protect
+
+Absol-Mega-Z @ Absolite Z
+Ability: Sharpness
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Shadow Claw
+- Close Combat
+- Substitute
+- Protect
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 SpD
+Sassy Nature
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Parting Shot
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- Fake Out
+- U-turn
+
+Milotic @ Grassy Seed
+Ability: Competitive
+EVs: 32 HP / 10 Def / 17 SpA / 5 SpD / 2 Spe
+Calm Nature
+- Scald
+- Ice Beam
+- Icy Wind
+- Protect
+
+Goodra-Hisui @ Leftovers
+Ability: Shell Armor
+EVs: 32 HP / 24 Def / 10 SpD
+Bold Nature
+- Flash Cannon
+- Body Press
+- Shelter
+- Protect

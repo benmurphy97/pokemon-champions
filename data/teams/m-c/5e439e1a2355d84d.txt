@@ -1,0 +1,53 @@
+Dragonite-Mega @ Dragoninite
+Ability: Multiscale
+EVs: 2 HP / 32 SpA / 32 Spe
+Calm Nature
+- Ice Beam
+- Dragon Pulse
+- Protect
+- Tailwind
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Grassy Glide
+- Protect
+- Knock Off
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Quiet Nature
+- Iron Head
+- Low Kick
+- Protect
+- Swords Dance
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Modest Nature
+- Thunder
+- Protect
+- Fake Out
+- Focus Blast
+
+Gholdengo @ Life Orb
+Ability: Good as Gold
+EVs: 7 HP / 14 Def / 9 SpA / 4 SpD / 32 Spe
+Timid Nature
+- Shadow Ball
+- Protect
+- Nasty Plot
+- Make It Rain
+
+Sneasler @ White Herb
+Ability: Poison Touch
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Poison Jab
+- Close Combat
+- Protect

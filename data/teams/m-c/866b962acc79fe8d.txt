@@ -1,0 +1,53 @@
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Fake Out
+- Focus Blast
+- Zap Cannon
+- Protect
+
+Baxcalibur @ Life Orb
+Ability: Thermal Exchange
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Glaive Rush
+- Ice Shard
+- Icicle Crash
+- Protect
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Flare Blitz
+- Head Smash
+- Extreme Speed
+- Protect
+
+Whimsicott @ Fairy Feather
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Moonblast
+- Encore
+- Tailwind
+- Fake Tears
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Sucker Punch
+- Kowtow Cleave
+- Low Kick
+- Swords Dance
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Wood Hammer
+- Grassy Glide
+- Fake Out
+- High Horsepower

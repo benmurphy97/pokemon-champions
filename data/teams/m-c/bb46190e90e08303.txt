@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Tailwind
+- Dragon Pulse
+- Protect
+
+Delphox-Mega @ Delphoxite
+Ability: Levitate
+EVs: 11 HP / 4 Def / 19 SpA / 32 Spe
+Timid Nature
+- Psychic
+- Heat Wave
+- Protect
+- Encore
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Close Combat
+- Fake Out
+- Protect
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Wood Hammer
+- Fake Out
+- U-turn
+- Grassy Glide
+
+Mamoswine @ Focus Sash
+Ability: Oblivious
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Icicle Crash
+- High Horsepower
+- Ice Shard
+- Protect
+
+Milotic @ Grassy Seed
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Modest Nature
+- Scald
+- Icy Wind
+- Recover
+- Protect

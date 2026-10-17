@@ -1,0 +1,53 @@
+Raichu-Alola @ Life Orb
+Ability: Surge Surfer
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Expanding Force
+- Protect
+- Rising Voltage
+- Volt Switch
+
+Pincurchin @ Magnet
+Ability: Electric Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Rising Voltage
+- Muddy Water
+- Sucker Punch
+- Protect
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Mystical Fire
+- Energy Ball
+- Trick
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Weather Ball
+- Wide Guard
+- Roost
+- Hurricane
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Quiet Nature
+- Protect
+- Dragon Pulse
+- Electro Shot
+- Flash Cannon
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Jolly Nature
+- Protect
+- Blaze Kick
+- Close Combat
+- Roost

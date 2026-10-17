@@ -1,0 +1,53 @@
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Glaive Rush
+- Ice Shard
+- Protect
+- Icicle Crash
+
+Lucario-Mega-Z @ Lucarionite Z
+Ability: Aura Guard
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Aura Sphere
+- Dark Pulse
+- Protect
+- Flash Cannon
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Blizzard
+- Moonblast
+- Aurora Veil
+- Protect
+
+Arcanine-Hisui @ Charti Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Flare Blitz
+- Rock Slide
+- Protect
+- Extreme Speed
+
+Indeedee-F @ Psychic Seed
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Follow Me
+- Imprison
+- Trick Room
+- Helping Hand
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 15 HP / 32 Atk / 3 Def / 2 SpD / 14 Spe
+Adamant Nature
+- Flip Turn
+- Wave Crash
+- Last Respects
+- Psychic Fangs

@@ -1,0 +1,53 @@
+Arcanine-Hisui @ Shuca Berry
+Ability: Intimidate
+EVs: 31 HP / 10 Def / 20 SpD / 5 Spe
+Careful Nature
+- Heat Crash
+- Rock Slide
+- Howl
+- Protect
+
+Gyarados-Mega @ Gyaradosite
+Ability: Mold Breaker
+EVs: 11 HP / 25 Atk / 30 Spe
+Adamant Nature
+- Dragon Dance
+- Waterfall
+- Earthquake
+- Protect
+
+Gogoat @ Grassy Seed
+Ability: Sap Sipper
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Horn Leech
+- High Horsepower
+- Megahorn
+- Milk Drink
+
+Arboliva @ Leftovers
+Ability: Seed Sower
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Dazzling Gleam
+- Earth Power
+- Giga Drain
+- Protect
+
+Gholdengo @ Shell Bell
+Ability: Good as Gold
+EVs: 17 HP / 17 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Make It Rain
+- Protect
+- Thunderbolt
+
+Absol-Mega @ Absolite
+Ability: Magic Bounce
+EVs: 2 HP / 23 Atk / 9 SpA / 32 Spe
+Naive Nature
+- Sucker Punch
+- Throat Chop
+- Ice Beam
+- Protect

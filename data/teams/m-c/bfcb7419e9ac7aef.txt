@@ -1,0 +1,53 @@
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Flamethrower
+- Draco Meteor
+- Hyper Voice
+- Protect
+
+Rillaboom @ Rocky Helmet
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Brave Nature
+- Fake Out
+- High Horsepower
+- U-turn
+- Grassy Glide
+
+Empoleon @ Grassy Seed
+Ability: Competitive
+EVs: 13 HP / 32 SpA / 21 Spe
+Modest Nature
+- Protect
+- Flash Cannon
+- Hydro Pump
+- Ice Beam
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Head Smash
+- Extreme Speed
+- Protect
+
+Metagross-Mega @ Metagrossite
+Ability: Tough Claws
+EVs: 20 HP / 6 Atk / 8 Def / 32 Spe
+Adamant Nature
+- Psychic Fangs
+- Protect
+- Body Press
+- Steel Roller
+
+Grimmsnarl @ Leftovers
+Ability: Prankster
+EVs: 32 HP / 19 Def / 15 SpD
+Adamant Nature
+- Taunt
+- Spirit Break
+- Fake Out
+- Parting Shot

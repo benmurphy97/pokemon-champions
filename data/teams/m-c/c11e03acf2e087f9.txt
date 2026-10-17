@@ -1,0 +1,53 @@
+Mr. Rime @ Choice Scarf
+Ability: Screen Cleaner
+EVs: 32 SpA / 2 SpD / 32 Spe
+Modest Nature
+- Blizzard
+- Freeze-Dry
+- Psychic
+- Expanding Force
+
+Staraptor-Mega @ Staraptite
+Ability: Contrary
+EVs: 29 HP / 1 Atk / 4 SpD / 32 Spe
+Careful Nature
+- Brave Bird
+- Protect
+- Close Combat
+- Tailwind
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Flare Blitz
+- Throat Chop
+- Fake Out
+- Parting Shot
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Trick Room
+- Follow Me
+- Helping Hand
+- Psychic
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Fake Out
+- Close Combat
+- Dire Claw
+- Protect
+
+Ninetales-Alola @ Light Clay
+Ability: Snow Warning
+EVs: 1 HP / 1 Def / 32 SpA / 32 Spe
+Timid Nature
+- Blizzard
+- Aurora Veil
+- Dazzling Gleam
+- Freeze-Dry

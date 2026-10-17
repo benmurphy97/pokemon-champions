@@ -1,0 +1,53 @@
+Venusaur-Mega @ Venusaurite
+Ability: Thick Fat
+EVs: 30 HP / 18 SpA / 18 Spe
+Modest Nature
+- Giga Drain
+- Sludge Wave
+- Protect
+- Leech Seed
+
+Umbreon @ Rocky Helmet
+Ability: Inner Focus
+EVs: 32 HP / 24 Def / 10 SpD
+Modest Nature
+- Snarl
+- Sunny Day
+- Moonlight
+- Toxic
+
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 25 Def / 9 SpD
+Careful Nature
+- Baneful Bunker
+- Recover
+- Toxic
+- Infestation
+
+Victreebel-Mega @ Victreebelite
+Ability: Innards Out
+EVs: 17 Atk / 32 Def / 17 Spe
+Bold Nature
+- Toxic
+- Strength Sap
+- Protect
+- Giga Drain
+
+Salazzle @ Focus Sash
+Ability: Corrosion
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Fake Out
+- Toxic
+- Encore
+- Heat Wave
+
+Sableye @ Light Clay
+Ability: Prankster
+EVs: 32 HP / 4 Def / 30 SpD
+Calm Nature
+- Snarl
+- Reflect
+- Light Screen
+- Will-O-Wisp

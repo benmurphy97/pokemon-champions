@@ -1,0 +1,53 @@
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Leech Life
+- Sucker Punch
+- Iron Head
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Trick Room
+- Expanding Force
+- Dazzling Gleam
+- Protect
+
+Indeedee-F @ Sitrus Berry
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Follow Me
+- Psychic
+- Trick Room
+- Helping Hand
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Heat Wave
+- Protect
+- Earth Power
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Protect
+- Iron Head
+- Kowtow Cleave
+- Sucker Punch
+
+Gallade @ Iron Ball
+Ability: Sharpness
+EVs: 32 HP / 32 Atk / 2 SpD
+Brave Nature
+- Sacred Sword
+- Trick Room
+- Psycho Cut
+- Wide Guard

@@ -1,0 +1,53 @@
+Floette-Mega @ Floettite
+Ability: Fairy Aura
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Draining Kiss
+- Moonblast
+- Protect
+- Calm Mind
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Heat Wave
+- Solar Beam
+- Weather Ball
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Earthquake
+- Dragon Claw
+- Rock Slide
+- Protect
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Bold Nature
+- Trick Room
+- Strength Sap
+- Matcha Gotcha
+- Rage Powder
+
+Incineroar @ Chople Berry
+Ability: Intimidate
+EVs: 32 HP / 32 Def / 2 SpD
+Impish Nature
+- Fake Out
+- Will-O-Wisp
+- Parting Shot
+- Throat Chop
+
+Toxapex @ Leftovers
+Ability: Regenerator
+EVs: 32 HP / 18 Def / 16 SpD
+Bold Nature
+- Wide Guard
+- Baneful Bunker
+- Toxic
+- Infestation

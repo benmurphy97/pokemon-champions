@@ -1,0 +1,53 @@
+Rillaboom @ Grassy Seed
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Careful Nature
+- Drain Punch
+- Swords Dance
+- Grassy Glide
+- Protect
+
+Oranguru @ Leftovers
+Ability: Symbiosis
+EVs: 32 HP / 32 Def / 2 SpD
+Relaxed Nature
+- Instruct
+- Trick Room
+- Psychic
+- Encore
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Hyper Voice
+- Flamethrower
+- Draco Meteor
+- Protect
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Rock Slide
+- Knock Off
+- Low Kick
+- Protect
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- High Horsepower
+- Rock Slide
+- Iron Head
+- Protect
+
+Primarina @ Life Orb
+Ability: Liquid Voice
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Hyper Voice
+- Moonblast
+- Aqua Jet
+- Protect

@@ -1,0 +1,53 @@
+Inteleon @ Scope Lens
+Ability: Sniper
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Snipe Shot
+- Icy Wind
+- Flip Turn
+- Protect
+
+Sceptile-Mega @ Sceptilite
+Ability: Lightning Rod
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Leaf Storm
+- Dragon Pulse
+- Dragon Cheer
+- Detect
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Trick Room
+- Imprison
+- Protect
+
+Rotom-Heat @ Choice Scarf
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Electroweb
+- Discharge
+- Overheat
+- Volt Switch
+
+Kommo-o @ Leftovers
+Ability: Overcoat
+EVs: 2 HP / 32 SpA / 32 Spe
+Impish Nature
+- Body Press
+- Shadow Claw
+- Iron Defense
+- Protect
+
+Pelipper @ Sitrus Berry
+Ability: Drizzle
+EVs: 31 HP / 1 Def / 5 SpA / 18 SpD / 11 Spe
+Modest Nature
+- Weather Ball
+- Hurricane
+- Tailwind
+- Wide Guard

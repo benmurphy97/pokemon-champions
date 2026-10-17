@@ -1,0 +1,53 @@
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 25 HP / 16 Atk / 25 Spe
+Adamant Nature
+- Rock Slide
+- Knock Off
+- Fire Punch
+- Protect
+
+Excadrill @ Focus Sash
+Ability: Sand Rush
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Iron Head
+- High Horsepower
+- Protect
+
+Salamence-Mega @ Salamencite
+Ability: Aerilate
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Draco Meteor
+- Hyper Voice
+- Tailwind
+- Protect
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Recover
+- Helping Hand
+
+Tsareena @ Wide Lens
+Ability: Queenly Majesty
+EVs: 10 HP / 23 Atk / 7 Def / 26 Spe
+Adamant Nature
+- Power Whip
+- Triple Axel
+- High Jump Kick
+- Protect
+
+Rotom-Heat @ Life Orb
+Ability: Levitate
+EVs: 11 HP / 3 Def / 25 SpA / 27 Spe
+Modest Nature
+- Discharge
+- Overheat
+- Thunderbolt
+- Will-O-Wisp

@@ -1,0 +1,53 @@
+Vivillon @ Focus Sash
+Ability: Compound Eyes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Sleep Powder
+- Hurricane
+- Protect
+- Tailwind
+
+Sharpedo-Mega @ Sharpedonite
+Ability: Strong Jaw
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Crunch
+- Psychic Fangs
+- Liquidation
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Protect
+- Perish Song
+- Substitute
+- Sludge Bomb
+
+Indeedee-F @ Rocky Helmet
+Ability: Psychic Surge
+EVs: 32 HP / 32 Def / 2 SpD
+Bold Nature
+- Follow Me
+- Psychic
+- Heal Pulse
+- Protect
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Stomping Tantrum
+- Dragon Claw
+- Rock Slide
+- Protect
+
+Rillaboom @ Leftovers
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Fake Out
+- Grassy Glide
+- Wood Hammer
+- Protect

@@ -1,0 +1,53 @@
+Farigiraf @ Grassy Seed
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Trick Room
+- Psychic Noise
+- Protect
+- Helping Hand
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- Fake Out
+- Wood Hammer
+- High Horsepower
+
+Camerupt-Mega @ Cameruptite
+Ability: Sheer Force
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Earth Power
+- Heat Wave
+- Protect
+- Ancient Power
+
+Kingambit @ Focus Sash
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+- Low Kick
+
+Araquanid @ Mystic Water
+Ability: Water Bubble
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Liquidation
+- Wide Guard
+- Leech Life
+- Protect
+
+Altaria-Mega @ Altarianite
+Ability: Pixilate
+EVs: 12 Def / 32 SpA / 6 SpD / 16 Spe
+Modest Nature
+- Hyper Voice
+- Draco Meteor
+- Protect
+- Will-O-Wisp

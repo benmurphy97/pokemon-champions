@@ -1,0 +1,53 @@
+Garchomp @ Life Orb
+Ability: Sand Veil
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Scale Shot
+- Rock Slide
+- Stomping Tantrum
+- Protect
+
+Milotic @ Psychic Seed
+Ability: Competitive
+EVs: 32 HP / 22 Def / 8 SpA / 4 Spe
+Bold Nature
+- Muddy Water
+- Coil
+- Hypnosis
+- Recover
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Knock Off
+- Protect
+- Dragon Dance
+- Rock Slide
+
+Corviknight @ Leftovers
+Ability: Mirror Armor
+EVs: 32 HP / 15 Atk / 19 SpD
+Careful Nature
+- Brave Bird
+- Bulk Up
+- Roost
+- Tailwind
+
+Indeedee @ Choice Scarf
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Dazzling Gleam
+- Expanding Force
+- Trick
+- Mystical Fire
+
+Sinistcha @ Eject Button
+Ability: Hospitality
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Matcha Gotcha
+- Life Dew
+- Rage Powder
+- Trick Room

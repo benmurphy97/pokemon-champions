@@ -1,0 +1,53 @@
+Swampert-Mega @ Swampertite
+Ability: Swift Swim
+EVs: 26 HP / 24 Atk / 3 Def / 13 Spe
+Adamant Nature
+- Protect
+- Rock Slide
+- Wave Crash
+- Earthquake
+
+Politoed @ Sitrus Berry
+Ability: Drizzle
+EVs: 32 HP / 24 Def / 7 SpD / 3 Spe
+Calm Nature
+- Protect
+- Muddy Water
+- Perish Song
+- Hypnosis
+
+Blaziken @ Focus Sash
+Ability: Speed Boost
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- Protect
+- Blaze Kick
+- Close Combat
+- Baton Pass
+
+Rillaboom @ Life Orb
+Ability: Grassy Surge
+EVs: 32 Atk / 2 SpD / 32 Spe
+Impish Nature
+- Fake Out
+- Grassy Glide
+- U-turn
+- Wood Hammer
+
+Steelix @ Lum Berry
+Ability: Sturdy
+EVs: 3 HP / 32 Atk / 11 Def / 20 SpD
+Bold Nature
+- Protect
+- Steel Roller
+- High Horsepower
+- Wide Guard
+
+Gengar-Mega @ Gengarite
+Ability: Shadow Tag
+EVs: 32 HP / 9 Def / 11 SpD / 14 Spe
+Timid Nature
+- Protect
+- Perish Song
+- Disable
+- Shadow Ball

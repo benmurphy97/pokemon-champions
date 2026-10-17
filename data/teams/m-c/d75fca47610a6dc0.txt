@@ -1,0 +1,53 @@
+Whimsicott @ Focus Sash
+Ability: Prankster
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Taunt
+- Tailwind
+- Moonblast
+- Encore
+
+Venusaur @ Occa Berry
+Ability: Chlorophyll
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Sludge Bomb
+- Sleep Powder
+- Earth Power
+
+Milotic @ Leftovers
+Ability: Competitive
+EVs: 32 HP / 21 Def / 11 SpA / 2 Spe
+Modest Nature
+- Scald
+- Hypnosis
+- Protect
+- Coil
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 21 HP / 18 Def / 27 SpD
+Modest Nature
+- Hyper Voice
+- Psychic
+- Trick Room
+- Helping Hand
+
+Charizard-Mega-Y @ Charizardite Y
+Ability: Drought
+EVs: 15 HP / 18 Def / 1 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Air Slash
+- Heat Wave
+- Protect
+
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Dark Pulse
+- Water Pulse
+- Dragon Pulse
+- Protect

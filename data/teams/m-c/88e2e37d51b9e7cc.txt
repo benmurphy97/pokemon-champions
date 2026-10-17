@@ -1,0 +1,53 @@
+Blastoise-Mega @ Blastoisinite
+Ability: Mega Launcher
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Water Spout
+- Flash Cannon
+- Shell Smash
+- Dark Pulse
+
+Baxcalibur-Mega @ Baxcalibrite
+Ability: Thermal Exchange
+EVs: 32 HP / 32 Atk / 2 Spe
+Adamant Nature
+- High Horsepower
+- Protect
+- Ice Shard
+- Icicle Spear
+
+Pawmot @ Focus Sash
+Ability: Volt Absorb
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Entrainment
+- Revival Blessing
+- Supercell Slam
+- Brick Break
+
+Chandelure @ Bright Powder
+Ability: Flash Fire
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Minimize
+- Calm Mind
+- Clear Smog
+- Heat Wave
+
+Indeedee @ Expert Belt
+Ability: Psychic Surge
+EVs: 32 HP / 32 SpA / 2 SpD
+Modest Nature
+- Expanding Force
+- Calm Mind
+- Protect
+- Dazzling Gleam
+
+Sinistcha @ Psychic Seed
+Ability: Hospitality
+EVs: 32 HP / 2 Def / 32 SpD
+Calm Nature
+- Trick Room
+- Matcha Gotcha
+- Rage Powder
+- Life Dew

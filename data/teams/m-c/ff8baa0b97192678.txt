@@ -1,0 +1,53 @@
+Grapploct @ Black Belt
+Ability: Technician
+EVs: 32 HP / 32 Atk / 2 Spe
+Brave Nature
+- Storm Throw
+- Feint
+- Payback
+- Detect
+
+Incineroar @ White Herb
+Ability: Intimidate
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Flare Blitz
+- Darkest Lariat
+- Close Combat
+- Fake Out
+
+Hatterene @ Life Orb
+Ability: Magic Bounce
+EVs: 32 HP / 2 Def / 32 SpA
+Quiet Nature
+- Psychic
+- Trick Room
+- Dazzling Gleam
+- Protect
+
+Farigiraf @ Colbur Berry
+Ability: Armor Tail
+EVs: 29 HP / 21 Def / 16 SpD
+Quiet Nature
+- Psychic
+- Trick Room
+- High Horsepower
+- Protect
+
+Torkoal @ Charcoal
+Ability: Drought
+EVs: 32 HP / 32 SpA / 2 SpD
+Quiet Nature
+- Eruption
+- Weather Ball
+- Ancient Power
+- Protect
+
+Lucario-Mega @ Lucarionite
+Ability: Adaptability
+EVs: 2 HP / 32 Atk / 32 Spe
+Hasty Nature
+- Close Combat
+- Steel Beam
+- Detect
+- Stone Edge

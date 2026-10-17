@@ -1,0 +1,53 @@
+Sinistcha @ Colbur Berry
+Ability: Hospitality
+EVs: 32 HP / 32 Def / 2 SpA
+Relaxed Nature
+- Trick Room
+- Rage Powder
+- Protect
+- Matcha Gotcha
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Rock Slide
+- Protect
+- Knock Off
+- Dragon Dance
+
+Farigiraf @ Mental Herb
+Ability: Armor Tail
+EVs: 31 HP / 21 Def / 14 SpD
+Bold Nature
+- Protect
+- Psychic
+- Helping Hand
+- Trick Room
+
+Incineroar @ Sitrus Berry
+Ability: Intimidate
+EVs: 32 HP / 2 Def / 32 SpD
+Careful Nature
+- Fake Out
+- Protect
+- Throat Chop
+- Parting Shot
+
+Garchomp-Mega-Z @ Garchompite Z
+Ability: Levitate
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Draco Meteor
+- Power Gem
+- Flamethrower
+- Protect
+
+Kingambit @ Chople Berry
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Swords Dance
+- Kowtow Cleave
+- Iron Head
+- Sucker Punch

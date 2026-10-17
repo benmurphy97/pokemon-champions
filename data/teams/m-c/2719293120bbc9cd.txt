@@ -1,0 +1,53 @@
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+EVs: 32 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Expanding Force
+- Trick Room
+- Imprison
+- Hyper Voice
+
+Sneasler @ Psychic Seed
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Dire Claw
+- Protect
+- Rock Slide
+- Close Combat
+
+Typhlosion @ Choice Scarf
+Ability: Flash Fire
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Flamethrower
+- Shadow Ball
+- Eruption
+- Scorching Sands
+
+Tyranitar-Mega @ Tyranitarite
+Ability: Sand Stream
+EVs: 25 HP / 16 Atk / 25 Spe
+Adamant Nature
+- Rock Slide
+- Knock Off
+- Protect
+- Low Kick
+
+Corviknight @ Sitrus Berry
+Ability: Mirror Armor
+EVs: 27 HP / 23 Atk / 16 Spe
+Adamant Nature
+- Brave Bird
+- Bulk Up
+- Body Press
+- Tailwind
+
+Garchomp @ Life Orb
+Ability: Rough Skin
+EVs: 32 Atk / 2 SpD / 32 Spe
+Jolly Nature
+- Rock Slide
+- Dragon Claw
+- Earthquake
+- Protect

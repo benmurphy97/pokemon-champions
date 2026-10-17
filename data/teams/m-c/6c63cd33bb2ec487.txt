@@ -1,0 +1,53 @@
+Politoed @ Choice Scarf
+Ability: Drizzle
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Weather Ball
+- Ice Beam
+- Muddy Water
+- Rain Dance
+
+Golisopod-Mega @ Golisopite
+Ability: Emergency Exit
+EVs: 32 HP / 32 Atk / 2 Def
+Brave Nature
+- Protect
+- Leech Life
+- Sucker Punch
+- Iron Head
+
+Archaludon @ Leftovers
+Ability: Stamina
+EVs: 32 HP / 1 Def / 2 SpA / 20 SpD / 11 Spe
+Calm Nature
+- Protect
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+
+Annihilape @ Sitrus Berry
+Ability: Defiant
+EVs: 25 HP / 6 Atk / 1 Def / 13 SpD / 21 Spe
+Careful Nature
+- Drain Punch
+- Protect
+- Rage Fist
+- Bulk Up
+
+Rillaboom @ Miracle Seed
+Ability: Grassy Surge
+EVs: 32 HP / 15 Atk / 19 SpD
+Adamant Nature
+- Grassy Glide
+- High Horsepower
+- Fake Out
+- Wood Hammer
+
+Raichu-Mega-Y @ Raichunite Y
+Ability: No Guard
+EVs: 32 HP / 11 Def / 23 Spe
+Timid Nature
+- Zap Cannon
+- Focus Blast
+- Fake Out
+- Protect

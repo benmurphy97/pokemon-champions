@@ -1,0 +1,53 @@
+Froslass-Mega @ Froslassite
+Ability: Snow Warning
+EVs: 24 HP / 10 SpA / 32 Spe
+Modest Nature
+- Blizzard
+- Shadow Ball
+- Aurora Veil
+- Protect
+
+Kingambit @ Black Glasses
+Ability: Defiant
+EVs: 32 HP / 32 Atk / 2 SpD
+Adamant Nature
+- Kowtow Cleave
+- Sucker Punch
+- Swords Dance
+- Protect
+
+Sneasler @ White Herb
+Ability: Unburden
+EVs: 32 Atk / 2 SpD / 32 Spe
+Adamant Nature
+- Close Combat
+- Dire Claw
+- Fake Out
+- Protect
+
+Basculegion @ Life Orb
+Ability: Adaptability
+EVs: 13 HP / 32 Atk / 4 Def / 3 SpD / 14 Spe
+Adamant Nature
+- Wave Crash
+- Aqua Jet
+- Last Respects
+- Protect
+
+Lycanroc-Dusk @ Focus Sash
+Ability: Tough Claws
+EVs: 1 HP / 32 Atk / 1 Def / 32 Spe
+Adamant Nature
+- Rock Slide
+- Accelerock
+- Close Combat
+- Protect
+
+Scovillain-Mega @ Scovillainite
+Ability: Spicy Spray
+EVs: 32 HP / 15 Def / 15 SpD / 4 Spe
+Bold Nature
+- Giga Drain
+- Overheat
+- Rage Powder
+- Protect

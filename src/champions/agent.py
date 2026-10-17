@@ -45,6 +45,12 @@ def own_team_info(state: BattleState, side: str, request: dict, team_index: list
     return info
 
 
+def lead(state: BattleState, side: str) -> float:
+    """How far ahead `side` is on health, from -1 to 1: its remaining health minus the foe's, over six Pokémon each."""
+    own, foe = state.sides[side], state.sides["p2" if side == "p1" else "p1"]
+    return (sum(m.hp for m in own.team[:6]) - sum(m.hp for m in foe.team[:6])) / 6
+
+
 class NeuralAgent:
     """Chooses actions with a trained policy.
 
@@ -83,8 +89,8 @@ class NeuralAgent:
         return target, float(log_probs[target])
 
     @staticmethod
-    def note(record, arrays, legal, action, logp, target=-1, target_mask=None):
-        record.append({"arrays": dict(arrays), "action": action, "logp": logp, "target": target,
+    def note(record, arrays, legal, action, logp, target=-1, target_mask=None, lead=0.0):
+        record.append({"arrays": dict(arrays), "action": action, "logp": logp, "target": target, "lead": lead,
                        "target_mask": np.zeros(4, dtype=bool) if target_mask is None else target_mask})
 
     def decide(self, state: BattleState, side: str, request: dict, record: list | None = None) -> str:
@@ -95,6 +101,7 @@ class NeuralAgent:
         own = own_team_info(state, side, request, team_index, self.usage)
         taken: set[int] = set()
         choices = []
+        ahead = lead(state, side)
 
         with torch.no_grad():
             if request.get("forceSwitch"):
@@ -110,7 +117,7 @@ class NeuralAgent:
                     logits, _ = self.net(to_tensors(arrays))
                     action, logp = self.pick(logits, legal)
                     if record is not None and len(options) > 1:
-                        self.note(record, arrays, legal, action, logp)
+                        self.note(record, arrays, legal, action, logp, lead=ahead)
                     chosen = action - SWITCH_BASE
                     taken.add(chosen)
                     choices.append(f"switch {position_of[chosen]}")
@@ -145,7 +152,7 @@ class NeuralAgent:
                 action, logp = self.pick(logits, legal)
                 if action >= SWITCH_BASE:
                     if record is not None and legal.sum() > 1:
-                        self.note(record, arrays, legal, action, logp)
+                        self.note(record, arrays, legal, action, logp, lead=ahead)
                     taken.add(action - SWITCH_BASE)
                     choices.append(f"switch {position_of[action - SWITCH_BASE]}")
                     continue
@@ -169,7 +176,7 @@ class NeuralAgent:
                 elif target_type == "adjacentAllyOrSelf":
                     choice += f" -{slot + 1}"
                 if record is not None and (legal.sum() > 1 or (target_mask is not None and target_mask.sum() > 1)):
-                    self.note(record, arrays, legal, action, logp, target, target_mask)
+                    self.note(record, arrays, legal, action, logp, target, target_mask, lead=ahead)
                 if active.get("canMegaEvo") and not mega_used:
                     choice += " mega"
                     mega_used = True

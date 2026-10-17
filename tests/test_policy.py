@@ -65,5 +65,41 @@ class DamageFeatureTest(unittest.TestCase):
                  if SPECIES[int(e["arrays"]["species"][int(e["arrays"]["actor"])])] == "Raichu")
         focus_blast, protect = features[i, MOVE_ID["Focus Blast"]], features[i, MOVE_ID["Protect"]]
         self.assertAlmostEqual(float(focus_blast[0]), 1.0)   # Fighting vs Psychic/Normal: 0.5 * 2
-        self.assertAlmostEqual(float(focus_blast[3]), 0.5)   # Fighting vs Psychic
-        self.assertEqual(float(protect[2]), 0.0)             # a status move deals no damage
+        self.assertAlmostEqual(float(focus_blast[5]), 0.5)   # Fighting vs Psychic
+        self.assertEqual(float(protect[1]), 0.0)             # a status move deals no damage
+
+
+@unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
+class DamageCalcTest(unittest.TestCase):
+    def hit(self, power=100, move_type="Normal", cat=1, target=1, weather=(0, 0, 0, 0), two=0.0, atk_over=None, dfn_over=None):
+        from champions.damage import DamageCalc, type_id
+        one = lambda *v, dtype=torch.float32: torch.tensor([list(v)], dtype=dtype)
+        attacker = {"types": one(type_id("Normal"), 0, dtype=torch.long), "stats": one(150, 150, 100, 150, 100, 100),
+                    "boosts": torch.zeros(1, 7), "item": torch.zeros(1, dtype=torch.long), "ability": torch.zeros(1, dtype=torch.long),
+                    "burn": torch.zeros(1), "statused": torch.zeros(1)}
+        defender = {"types": one(type_id("Water"), 0, dtype=torch.long), "stats": one(150, 100, 100, 100, 100, 100),
+                    "boosts": torch.zeros(1, 7), "item": torch.zeros(1, dtype=torch.long), "ability": torch.zeros(1, dtype=torch.long)}
+        attacker.update(atk_over or {}); defender.update(dfn_over or {})
+        out = DamageCalc()(attacker, defender, one(type_id(move_type), dtype=torch.long), one(cat, dtype=torch.long),
+                           one(power), one(target, dtype=torch.long), torch.tensor([two]), torch.tensor([weather], dtype=torch.float32), torch.zeros(1, 4))
+        return float(out[0, 0])
+
+    def test_matches_the_damage_formula(self):
+        # level 50, 100 power, attack 150 vs defence 100: (22*100*150/100/50 + 2) = 68, STAB 1.5, average roll 0.925
+        self.assertAlmostEqual(self.hit(), 68 * 1.5 * 0.925, places=3)
+
+    def test_modifiers(self):
+        base = self.hit()
+        self.assertAlmostEqual(self.hit(move_type="Fire", weather=(1, 0, 0, 0)) / self.hit(move_type="Fire"), 1.5, places=5)
+        self.assertAlmostEqual(self.hit(target=6, two=1.0) / base, 0.75, places=5)       # spread move, two targets
+        self.assertAlmostEqual(self.hit(target=6, two=0.0) / base, 1.0, places=5)
+        self.assertAlmostEqual(self.hit(atk_over={"burn": torch.ones(1), "statused": torch.ones(1)}) / base, 0.5, places=5)
+        self.assertEqual(self.hit(power=0), 0.0)
+        self.assertEqual(self.hit(cat=3), 0.0)                                  # status moves deal nothing
+        self.assertEqual(self.hit(dfn_over={"types": torch.tensor([[14, 0]])}), 0.0)   # Ghost takes nothing from Normal
+
+    def test_boosts_and_levitate(self):
+        from champions.vocab import ABILITY_ID
+        self.assertGreater(self.hit(atk_over={"boosts": torch.tensor([[2.0, 0, 0, 0, 0, 0, 0]])}), 1.9 * self.hit() * 0.9)
+        levitate = torch.tensor([ABILITY_ID["Levitate"]])
+        self.assertEqual(self.hit(move_type="Ground", dfn_over={"ability": levitate}), 0.0)

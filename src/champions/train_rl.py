@@ -81,8 +81,13 @@ def training_jobs(pool: list[dict], count: int, mix: dict, rng: random.Random, t
     return jobs
 
 
-def play_batch(net, jobs: list[dict], workers: int, seed: int) -> tuple[list[dict], dict]:
-    """Play `jobs` with the policy sampling its moves; returns the recorded decisions and win rates."""
+def play_batch(net, jobs: list[dict], workers: int, seed: int, shaping: float = 0.0) -> tuple[list[dict], dict]:
+    """Play `jobs` with the policy sampling its moves; returns the recorded decisions and win rates.
+
+    Each decision carries a reward: the game result on a game's last decision, plus `shaping` times
+    the change in health lead since the previous one (the lead counts as 0 once the game is over, so
+    the extra credit cancels out over a game and never changes which play is best).
+    """
     agent = NeuralAgent(net, temperature=1.0, seed=seed)
     trajectories: dict = {}
     results = run_jobs(jobs, agent, workers, trajectories=trajectories)
@@ -95,8 +100,11 @@ def play_batch(net, jobs: list[dict], workers: int, seed: int) -> tuple[list[dic
         outcome = 1.0 if won else (-1.0 if r["winner"] in ("A", "B") else 0.0)
         wins, games = record.get(job["opponent"], (0, 0))
         record[job["opponent"]] = (wins + (outcome > 0), games + 1)
-        for decision in trajectories.get((r["id"], side), []):
-            steps.append({**decision, "ret": outcome})
+        trajectory = trajectories.get((r["id"], side), [])
+        for i, decision in enumerate(trajectory):
+            last = i == len(trajectory) - 1
+            later = 0.0 if last else trajectory[i + 1]["lead"]
+            steps.append({**decision, "reward": shaping * (later - decision["lead"]) + (outcome if last else 0.0), "last": last})
     return steps, record
 
 
@@ -106,8 +114,23 @@ def to_batch(steps: list[dict]) -> dict:
     batch["target"] = torch.as_tensor([s["target"] for s in steps])
     batch["target_mask"] = torch.as_tensor(np.stack([s["target_mask"] for s in steps]))
     batch["old_logp"] = torch.as_tensor([s["logp"] for s in steps], dtype=torch.float32)
-    batch["ret"] = torch.as_tensor([s["ret"] for s in steps], dtype=torch.float32)
+    batch["reward"] = torch.as_tensor([s["reward"] for s in steps], dtype=torch.float32)
+    batch["last"] = torch.as_tensor([s["last"] for s in steps])
     return batch
+
+
+def advantages(reward: torch.Tensor, last: torch.Tensor, value: torch.Tensor, lam: float) -> torch.Tensor:
+    """Generalised advantage estimate. Steps are in game order and `last` marks each game's final one.
+
+    lam = 1 credits a decision with everything that happened after it (result minus the value
+    estimate); smaller values lean more on the value estimate, which is steadier but biased.
+    """
+    advantage, running = torch.zeros_like(value), 0.0
+    for t in reversed(range(len(value))):
+        following = 0.0 if last[t] else float(value[t + 1])
+        running = float(reward[t]) + following - float(value[t]) + (0.0 if last[t] else lam * running)
+        advantage[t] = running
+    return advantage
 
 
 def take(batch: dict, idx: torch.Tensor) -> dict:
@@ -116,11 +139,12 @@ def take(batch: dict, idx: torch.Tensor) -> dict:
 
 def ppo_update(net, reference, optimiser, batch: dict, args, value_only: bool) -> dict:
     """Several passes over one batch of recorded decisions."""
-    n = len(batch["ret"])
+    n = len(batch["reward"])
     with torch.no_grad():
         _, _, old_value, _ = net.evaluate(batch, batch["action"], batch["target"], batch["target_mask"])
         _, _, _, ref_log_probs = reference.evaluate(batch, batch["action"], batch["target"], batch["target_mask"])
-    advantage = batch["ret"] - old_value
+    advantage = advantages(batch["reward"], batch["last"], old_value, args.gae_lambda)
+    batch["ret"] = advantage + old_value
     advantage = (advantage - advantage.mean()) / (advantage.std() + 1e-6)
 
     stats = {"policy": 0.0, "value": 0.0, "entropy": 0.0, "kl": 0.0, "clipped": 0.0}
@@ -199,6 +223,10 @@ def main():
     parser.add_argument("--kl", type=float, default=0.1, help="penalty for drifting from the imitation policy")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--minibatch", type=int, default=512)
+    parser.add_argument("--shaping", type=float, default=0.0,
+                        help="extra reward per unit of health lead gained (0 = only the game result counts)")
+    parser.add_argument("--gae-lambda", type=float, default=1.0,
+                        help="1 = credit decisions with the whole game's result; lower leans on the value estimate")
     parser.add_argument("--value-warmup", type=int, default=1, help="iterations that train only the value estimate")
     parser.add_argument("--mix", default="greedy-blind:0.6,random:0.25,greedy:0.15", help="opponent agents")
     parser.add_argument("--opp-pools", default="ladder:0.45,web:0.2,webgood:0.15,gentr:0.1,general:0.1",
@@ -233,7 +261,7 @@ def main():
     for it in range(1, args.iterations + 1):
         t0 = time.time()
         jobs = training_jobs(pool, args.games, mix, rng, f"i{it}", opp_pools)
-        steps, record = play_batch(net, jobs, args.workers, seed=args.seed * 1000 + it)
+        steps, record = play_batch(net, jobs, args.workers, seed=args.seed * 1000 + it, shaping=args.shaping)
         t1 = time.time()
         stats = ppo_update(net, reference, optimiser, to_batch(steps), args, value_only=it <= args.value_warmup)
         entry = {"iteration": it, "decisions": len(steps), "rollout_seconds": round(t1 - t0, 1),

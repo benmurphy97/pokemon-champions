@@ -11,12 +11,19 @@ network handles any team.
 import torch
 from torch import nn
 
+from champions.damage import DamageCalc, boost_multiplier
 from champions.encoding import GLOBAL_NUM, MON_NUM, N_MOVE_SLOTS, N_TOKENS, N_ACTIONS, STAT_SCALE, SWITCH_BASE
 from champions.vocab import (ABILITIES, ITEMS, MOVE_CATS, MOVE_NUM, MOVES, NUM_ABILITIES, NUM_ITEMS,
                              NUM_MOVES, NUM_SPECIES, SPECIES_STATS, SPECIES_TYPES, TARGETS, TYPES, TYPE_CHART)
 
 N_TARGET_CLASSES = 4
-DAMAGE_FEATURES = 9
+DAMAGE_FEATURES = 13
+THREAT_FEATURES = 8
+# A foe's unknown spread, as stat points added to base stats (HP, atk, def, spa, spd, spe): a typical
+# spread, the most bulk it could have, and the least.
+FOE_SPREADS = {"mid": [91.0, 36, 36, 36, 36, 36], "bulky": [107.0, 52, 52, 52, 52, 52], "frail": [75.0, 20, 20, 20, 20, 20]}
+SURE_KO, MAYBE_KO = 0.85 / 0.925, 1.0 / 0.925   # lowest / highest damage roll relative to the average one
+GENERIC_POWER = 90.0   # stand-in for a foe's unrevealed STAB attack
 
 
 class PolicyNet(nn.Module):
@@ -29,6 +36,7 @@ class PolicyNet(nn.Module):
         self.register_buffer("move_cats", torch.as_tensor(MOVE_CATS))
         self.register_buffer("move_num", torch.as_tensor(MOVE_NUM))
         self.register_buffer("type_chart", torch.as_tensor(TYPE_CHART))
+        self.calc = DamageCalc()
 
         self.species_emb = nn.Embedding(NUM_SPECIES, dim)
         self.item_emb = nn.Embedding(NUM_ITEMS, dim)
@@ -42,6 +50,7 @@ class PolicyNet(nn.Module):
         self.mon_numbers = nn.Linear(MON_NUM, dim)
         self.stats_proj = nn.Linear(6, dim)      # your own Pokémon's real stats
         self.speed_proj = nn.Linear(2, dim)      # who outspeeds the two foes on the field
+        self.threat_proj = nn.Linear(THREAT_FEATURES, dim)   # how hard the foes can hit our two active Pokémon
         self.side_emb = nn.Embedding(2, dim)
         self.position_emb = nn.Embedding(6, dim)
         self.actor_emb = nn.Parameter(torch.zeros(dim))
@@ -117,13 +126,11 @@ class PolicyNet(nn.Module):
             present, which = flags.max(dim=1)
             foe = species[rows, 6 + which]
             foes.append({"present": (present > 0.5).float() * has_actor, "species": foe,
-                         "stats": self.estimate_stats(self.species_stats[foe] * 255),
+                         "token": 6 + which, "stats": self.estimate_stats(self.species_stats[foe] * 255),
                          "boosts": numbers[rows, 6 + which, 13:20] * 6})
         return a_species, a_stats, a_boosts, has_actor, foes
 
-    @staticmethod
-    def boost_multiplier(stage: torch.Tensor) -> torch.Tensor:
-        return torch.where(stage >= 0, (2 + stage) / 2, 2 / (2 - stage))
+    boost_multiplier = staticmethod(boost_multiplier)
 
     def speed_features(self, b: dict) -> torch.Tensor:
         """[B, 2]: log of (our speed / their speed) against the foe in slot a and slot b, boosts included."""
@@ -135,36 +142,93 @@ class PolicyNet(nn.Module):
             out.append(torch.log(ours / theirs) * foe["present"])
         return torch.stack(out, dim=-1)
 
+    def fighter(self, b: dict, rows: torch.Tensor, token: torch.Tensor, stats: torch.Tensor, boosts: torch.Tensor) -> dict:
+        """What the damage calculator needs to know about the Pokémon in `token`."""
+        status = b["numbers"][rows, token, 7:13]
+        return {"types": self.species_types[b["species"][rows, token]], "stats": stats, "boosts": boosts,
+                "item": b["items"][rows, token], "ability": b["abilities"][rows, token],
+                "burn": status[:, 1], "statused": status.sum(-1)}
+
     def damage_features(self, b: dict) -> torch.Tensor:
-        """[B, NUM_MOVES, DAMAGE_FEATURES]: how each move would fare against the two foes on the field."""
-        species = b["species"]
-        a_species, a_stats, _, has_actor, foes = self.actor_and_foes(b)
-        a_types = self.species_types[a_species]
+        """[B, NUM_MOVES, DAMAGE_FEATURES]: how each move would fare against the two foes on the field.
+
+        Per foe: type effectiveness, damage as a share of its full and of its current health, and
+        whether the move would surely / possibly knock it out given the foe's unknown stat spread.
+        """
+        numbers, batch = b["numbers"], b["species"].shape[0]
+        rows = torch.arange(batch, device=numbers.device)
+        a_species, a_stats, a_boosts, has_actor, foes = self.actor_and_foes(b)
+        actor = b["actor"].clamp(min=0)
+        attacker = self.fighter(b, rows, actor, a_stats, a_boosts)
 
         move_type, category = self.move_cats[:, 0], self.move_cats[:, 1]      # [M]
-        power = self.move_num[:, 0]
-        attacking = (category <= 2).float()                                   # physical or special
-        special = (category == 2).long()
+        spread_to = lambda t: t.unsqueeze(0).expand(batch, -1)
+        m_type, m_cat, m_target = spread_to(move_type), spread_to(category), spread_to(self.move_cats[:, 2])
+        m_power = spread_to(self.move_num[:, 0] * 150)
+        attacking = (category <= 2).float()
+        two_targets = ((foes[0]["present"] > 0.5) & (foes[1]["present"] > 0.5)).float()
+        weather, terrain = b["globals"][:, 1:5], b["globals"][:, 5:9]
+        a_types = self.species_types[a_species]
         stab = ((move_type[None, :] == a_types[:, :1]) | (move_type[None, :] == a_types[:, 1:])) & (move_type[None, :] > 0)
 
         feats = []
         for foe in foes:
-            f_types, f_stats = self.species_types[foe["species"]], foe["stats"]
-            eff = (self.type_chart[move_type[None, :, None], f_types[:, None, :]]).prod(-1)       # [B, M]
-            atk = torch.where(special[None, :] == 1, a_stats[:, 3:4], a_stats[:, 1:2])           # [B, M]
-            dfn = torch.where(special[None, :] == 1, f_stats[:, 4:5], f_stats[:, 2:3])
-            ratio = (atk / dfn.clamp(min=1.0)).clamp(0.2, 4.0)
-            damage = power[None, :] * (1 + 0.5 * stab.float()) * eff * ratio * attacking[None, :]
+            base = self.species_stats[foe["species"]] * 255
+            defender = self.fighter(b, rows, foe["token"], None, foe["boosts"])
+            damage, hp = {}, {}
+            for name, spread in FOE_SPREADS.items():
+                defender["stats"] = base + torch.tensor(spread, device=base.device)
+                damage[name] = self.calc(attacker, defender, m_type, m_cat, m_power, m_target, two_targets, weather, terrain)
+                hp[name] = defender["stats"][:, 0:1]
+            left = numbers[rows, foe["token"], 0:1]                            # share of its health it still has
+            eff = self.type_chart[move_type[None, :, None], defender["types"][:, None, :]].prod(-1)
             on = foe["present"][:, None]
-            feats += [eff * on, ratio * on / 4, damage * on]
-        feats += [stab.float() * has_actor[:, None], power[None, :].expand(species.shape[0], -1) * attacking[None, :],
-                  (1 - attacking)[None, :].expand(species.shape[0], -1)]
+            sure = SURE_KO * damage["bulky"] >= (left * hp["bulky"]).clamp(min=1.0)
+            maybe = MAYBE_KO * damage["frail"] >= (left * hp["frail"]).clamp(min=1.0)
+            feats += [eff * on, (damage["mid"] / hp["mid"]).clamp(max=1.5) * on,
+                      (damage["mid"] / (left * hp["mid"]).clamp(min=1.0)).clamp(max=3.0) / 3 * on,
+                      (sure & (damage["bulky"] > 0)).float() * on, (maybe & (damage["frail"] > 0)).float() * on]
+        feats += [stab.float() * has_actor[:, None], m_power / 150 * attacking[None, :], (1 - attacking)[None, :].expand(batch, -1)]
         return torch.stack(feats, dim=-1)
+
+    def threat_features(self, b: dict) -> torch.Tensor:
+        """[B, THREAT_FEATURES]: for each foe on the field and each of our two active Pokémon, how much of
+        its current health the foe's strongest revealed move takes, and a guess at its best unrevealed
+        same-type attack. Capped at 3 (three times over) and divided by 3.
+        """
+        numbers, batch = b["numbers"], b["species"].shape[0]
+        rows = torch.arange(batch, device=numbers.device)
+        _, _, _, _, foes = self.actor_and_foes(b)
+        mine = []                                                              # our active Pokémon, slot a then b
+        for slot in (0, 1):
+            flags = numbers[:, :6, 2 + slot] * (1 - numbers[:, :6, 1])
+            present, token = flags.max(dim=1)
+            true = b["stats"][rows, token] * STAT_SCALE
+            stats = torch.where(true[:, 1:2] > 0, true, self.estimate_stats(self.species_stats[b["species"][rows, token]] * 255))
+            mine.append((token, (present > 0.5).float(), stats, self.fighter(b, rows, token, stats, numbers[rows, token, 13:20] * 6)))
+        two_targets = (mine[0][1] * mine[1][1])
+        weather, terrain = b["globals"][:, 1:5], b["globals"][:, 5:9]
+
+        out = []
+        for foe in foes:
+            attacker = self.fighter(b, rows, foe["token"], foe["stats"], foe["boosts"])
+            ids = b["moves"][rows, foe["token"]]                               # [B, 4] revealed moves
+            real = (self.move_cats[ids, 0], self.move_cats[ids, 1], self.move_num[ids, 0] * 150, self.move_cats[ids, 2])
+            generic_cat = torch.where(foe["stats"][:, 3] > foe["stats"][:, 1], 2, 1)[:, None].expand(-1, 2)
+            guess = (attacker["types"], generic_cat, torch.full_like(attacker["types"], GENERIC_POWER, dtype=torch.float32),
+                     torch.ones_like(attacker["types"]))
+            for token, here, stats, defender in mine:
+                current = (numbers[rows, token, 0] * stats[:, 0]).clamp(min=1.0)[:, None]
+                for moves in (real, guess):
+                    hit = self.calc(attacker, defender, *moves, two_targets, weather, terrain)
+                    out.append((hit / current).max(dim=1).values.clamp(max=3.0) / 3 * foe["present"] * here)
+        return torch.stack(out, dim=-1)
 
     def trunk(self, b: dict):
         """Run the transformer; returns the decision token (B, D) and the own-team tokens (B, 6, D)."""
         mons = self.tokens(b)
-        query = (self.kind_emb(b["kind"]) + self.slot_emb(b["slot"]) + self.speed_proj(self.speed_features(b))).unsqueeze(1)
+        query = (self.kind_emb(b["kind"]) + self.slot_emb(b["slot"]) + self.speed_proj(self.speed_features(b))
+                 + self.threat_proj(self.threat_features(b))).unsqueeze(1)
         field = self.field(b["globals"]).unsqueeze(1)
         seq = torch.cat([query, field, mons], dim=1)
         pad = torch.cat([torch.zeros(seq.shape[0], 2, dtype=torch.bool, device=seq.device), ~b["present"]], dim=1)

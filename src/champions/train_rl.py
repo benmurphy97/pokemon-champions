@@ -43,6 +43,22 @@ RL_MODEL = ROOT / "models" / "rl_policy.pt"
 LOG = ROOT / "results" / "rl_log.jsonl"
 
 
+def load_pool(path: Path, **filters) -> list[dict]:
+    """Teams from a pool file, optionally only those whose fields match, e.g. split="train"."""
+    return [t for t in json.loads(path.read_text()) if all(t.get(k) == v for k, v in filters.items())]
+
+
+def named_pools() -> dict[str, list[dict]]:
+    """The team pools training can draw opponents from, by name."""
+    return {
+        "ladder": load_pool(LADDER_TRAIN),                       # real ladder teams of every kind
+        "web": load_pool(WEB_TEAMS, split="train"),              # tournament teams
+        "webgood": load_pool(WEB_TEAMS, split="train", good=True),   # tournament teams that placed well
+        "gentr": load_pool(TRAIN_POOL),                          # generated Trick Room teams
+        "general": load_pool(GENERAL_POOL),                      # generated meta teams
+    }
+
+
 def training_jobs(pool: list[dict], count: int, mix: dict, rng: random.Random, tag: str,
                   opp_pools: list[tuple[list[dict], float]] | None = None) -> list[dict]:
     """The policy plays a team from `pool` against a team drawn from `opp_pools` (default: `pool` itself).
@@ -140,17 +156,19 @@ def evaluate(net, games: int, workers: int, seed: int) -> dict:
     the policy and, as a baseline, with greedy-blind piloting our team, so the difference is the
     pilot. Each condition is played from both seats. Everything is deterministic (most likely move).
     """
-    ours, theirs = json.loads(EVAL_POOL.read_text()), json.loads(LADDER_EVAL.read_text())
+    own_pools = {"generated": load_pool(EVAL_POOL), "tournament": load_pool(WEB_TEAMS, split="eval", good=True, trick_room=True)}
+    opp_pools = [load_pool(LADDER_EVAL), load_pool(WEB_TEAMS, split="eval")]
     rng = random.Random(seed)
     jobs = []
     for n in range(games // 4):
-        t, o = rng.choice(ours), rng.choice(theirs)
+        source = "generated" if n % 2 == 0 else "tournament"
+        t, o = rng.choice(own_pools[source]), rng.choice(rng.choice(opp_pools))
         base = rng.randrange(10**6)
         for cond, pilot in (("policy", "neural"), ("baseline", "greedy-blind")):
             jobs.append({"id": f"{n}-{cond}-a", "a": t["text"], "b": o["text"], "seed": base, "agentA": pilot,
-                         "agentB": "greedy-blind", "cond": cond, "t_side": "A", "o_tr": o["trick_room"]})
+                         "agentB": "greedy-blind", "cond": cond, "t_side": "A", "o_tr": o["trick_room"], "source": source})
             jobs.append({"id": f"{n}-{cond}-b", "a": o["text"], "b": t["text"], "seed": base, "agentA": "greedy-blind",
-                         "agentB": pilot, "cond": cond, "t_side": "B", "o_tr": o["trick_room"]})
+                         "agentB": pilot, "cond": cond, "t_side": "B", "o_tr": o["trick_room"], "source": source})
     results = run_jobs(jobs, NeuralAgent(net, temperature=0.0), workers)
     by_id = {j["id"]: j for j in jobs}
     tally: dict = {}
@@ -158,14 +176,15 @@ def evaluate(net, games: int, workers: int, seed: int) -> dict:
     for r in results:
         job = by_id[r["id"]]
         fallbacks += r["fallbacks"]
-        for key in (job["cond"], f"{job['cond']}_vs_{'tr' if job['o_tr'] else 'other'}"):
+        for key in (job["cond"], f"{job['cond']}_vs_{'tr' if job['o_tr'] else 'other'}", f"{job['cond']}_on_{job['source']}"):
             wins, played = tally.get(key, (0, 0))
             tally[key] = (wins + (r["winner"] == job["t_side"]), played + (r["winner"] in ("A", "B")))
     rates = {k: round(w / p, 3) for k, (w, p) in tally.items() if p}
     wins, played = tally["policy"]
     low, high = wilson(wins, played)
     return {"policy": rates["policy"], "interval": [round(low, 3), round(high, 3)], "baseline": rates["baseline"],
-            "by_opponent": {k: v for k, v in rates.items() if "_vs_" in k}, "invalid_choices": fallbacks}
+            "by_opponent": {k: v for k, v in rates.items() if "_vs_" in k},
+            "by_team_source": {k: v for k, v in rates.items() if "_on_" in k}, "invalid_choices": fallbacks}
 
 
 def main():
@@ -174,19 +193,20 @@ def main():
     parser.add_argument("--games", type=int, default=256, help="games per iteration")
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--init", default=str(IL_MODEL))
-    parser.add_argument("--lr", type=float, default=1e-4)
+    parser.add_argument("--lr", type=float, default=5e-5)
     parser.add_argument("--clip", type=float, default=0.2)
     parser.add_argument("--entropy", type=float, default=0.01)
-    parser.add_argument("--kl", type=float, default=0.03, help="penalty for drifting from the imitation policy")
+    parser.add_argument("--kl", type=float, default=0.1, help="penalty for drifting from the imitation policy")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--minibatch", type=int, default=512)
     parser.add_argument("--value-warmup", type=int, default=1, help="iterations that train only the value estimate")
     parser.add_argument("--mix", default="greedy-blind:0.6,random:0.25,greedy:0.15", help="opponent agents")
-    parser.add_argument("--opp-pools", default=f"{LADDER_TRAIN}:0.5,{WEB_TEAMS}:0.3,{TRAIN_POOL}:0.1,{GENERAL_POOL}:0.1",
-                        help="opponent teams: path:weight,... (real ladder teams, then tournament teams, by default)")
-    parser.add_argument("--pool", default=str(TRAIN_POOL), help="the policy's own teams")
-    parser.add_argument("--eval-every", type=int, default=5)
-    parser.add_argument("--eval-games", type=int, default=400)
+    parser.add_argument("--opp-pools", default="ladder:0.45,web:0.2,webgood:0.15,gentr:0.1,general:0.1",
+                        help="opponent teams, name:weight,... from: ladder, web, webgood, gentr, general")
+    parser.add_argument("--web-own-weight", type=int, default=3,
+                        help="how many times good tournament Trick Room teams are repeated in the policy's own teams")
+    parser.add_argument("--eval-every", type=int, default=10)
+    parser.add_argument("--eval-games", type=int, default=1200)
     parser.add_argument("--seed", type=int, default=0)
     args = parser.parse_args()
 
@@ -194,9 +214,12 @@ def main():
     torch.manual_seed(args.seed)
     rng = random.Random(args.seed)
     mix = {k: float(v) for k, v in (item.split(":") for item in args.mix.split(","))}
-    pool = json.loads(Path(args.pool).read_text())
-    opp_pools = [(json.loads(Path(path).read_text()), float(w)) for path, w in
-                 (item.rsplit(":", 1) for item in args.opp_pools.split(","))]
+    named = named_pools()
+    web_tr = load_pool(WEB_TEAMS, split="train", good=True, trick_room=True)
+    pool = load_pool(TRAIN_POOL) + web_tr * args.web_own_weight       # our teams: generated, plus good tournament ones
+    opp_pools = [(named[name], float(w)) for name, w in (item.split(":") for item in args.opp_pools.split(","))]
+    print(f"own teams: {len(pool)} entries ({len(web_tr)} good tournament Trick Room teams x{args.web_own_weight}); "
+          f"opponent pools: {', '.join(f'{n} {len(named[n])}' for n, _ in (i.split(':') for i in args.opp_pools.split(',')))}", flush=True)
 
     net = load_policy(Path(args.init))
     reference = copy.deepcopy(net).eval()

@@ -63,6 +63,23 @@ Trained on 1,486 ladder games (41,000 decisions, rating 1300+), 8 epochs, about 
 
 - **Imitation alone is unlikely to beat greedy at this data size.** More data helps gradually; reinforcement learning in the simulator, using the win/loss result, is the route to going beyond what the replays show.
 
+## Reinforcement learning (Trick Room teams)
+
+PPO in `train_rl.py`, starting from the imitation policy, with a value estimate, a penalty for drifting from the starting policy, and the dense detail in the module docstring. Our teams each carry exactly two Trick Room setters (`meta.py --trick-room-setters 2`); the opponents are real ladder teams of every kind plus tournament teams from MetaVGC.
+
+Test: our Trick Room teams against held-out real teams, most-likely-move play, 400 to 1,200 games. The baseline is greedy-blind piloting the same teams against the same opponents.
+
+| Run | What changed | Best policy | Baseline | Result |
+|---|---|---|---|---|
+| Imitation only (6.7k games) | | 31.0% | 37.5% | below baseline |
+| RL run 1 (60 iterations, 256 games each) | ladder opponents, generated Trick Room teams | 39.5% (iterations 20 and 35), ended 33.5% | 37.5% | roughly level at best, unstable; interval about ±7 |
+| RL run 2 (80 iterations) | + tournament teams as opponents and as our teams, KL penalty 0.1, lr 5e-5, 1,200-game checks | 42–46% throughout | 48.2% | flat, about 4 points under the baseline |
+
+- **Training-game win rate against greedy-blind rose slowly**: 38.8% to 41.6% over run 2. Held-out results did not follow.
+- **By team type (run 2):** on good tournament Trick Room teams the policy and the baseline are level (about 65% each, 8 teams, noisy). On our generated Trick Room teams the policy is consistently below the baseline (19–26% vs 30%).
+- **Team quality dominates.** Good tournament Trick Room teams win about 66% even with the rule-based pilot; our generated ones win 30%.
+- **Not yet tried:** more precise damage inputs (the greedy agent's edge is likely an accurate damage calculation), a denser reward than win/loss, self-play against earlier versions, a larger network.
+
 ## Running it
 
 ```bash

@@ -9,7 +9,7 @@
     {
       "name": "Team preview (bring four, pick leads)",
       "status": "doing",
-      "note": "Built and trained by imitation, but it plays worse than the rule-based preview (-11 points on known teams). Not used yet; needs a better method (see learned-agent.md)."
+      "note": "Learned by imitation it plays 11 points worse than rule-based. Rule-based for self-play; learn it afterwards (step 7)."
     },
     {
       "name": "Bigger network (~2-3x)",
@@ -49,9 +49,9 @@
     },
     {
       "n": 5,
-      "name": "Short reinforcement learning pass, only if gate 2 is missed",
-      "status": "todo",
-      "note": "Gate 2 missed, so this is needed: reinforcement learning from il_policy_v3 on the 10 known-good teams (run 5 reached 59.2% from the older model)."
+      "name": "Self-play league trainer (pilot, then full run)",
+      "status": "doing",
+      "note": "Both sides draw teams of every kind. Opponents: latest self 40%, past snapshots 30%, greedy-blind 20%, imitation start model 10%. Rule-based preview. Judged against fixed yardsticks, not against itself."
     },
     {
       "n": 6,
@@ -61,6 +61,12 @@
     },
     {
       "n": 7,
+      "name": "Learn team preview (from the rule-based choices, then reinforcement learning)",
+      "status": "todo",
+      "note": "The imitation preview played 11 points worse than rule-based."
+    },
+    {
+      "n": 8,
       "name": "Team discovery with the finished player; add to the site",
       "status": "todo",
       "note": ""
@@ -74,9 +80,15 @@
       "threshold": 0.9
     },
     {
-      "id": "known",
+      "id": "general",
       "name": "Good",
-      "text": "Wins at least 60% piloting the 10 known-good Trick Room teams against held-out strong teams (1,200 paired games). Rule-based pilot scored 57%.",
+      "text": "Wins at least 55% against the rule-based player (greedy-blind) on held-out teams of every kind, paired games (each side pilots both teams) so 50% is parity: +5 points. 1,200 games. Trick Room teams and the 10 known teams are reported as sub-scores.",
+      "threshold": 0.55
+    },
+    {
+      "id": "known",
+      "name": "Sub-score: 10 known Trick Room teams",
+      "text": "Win rate piloting the 10 known-good Trick Room teams against held-out strong teams (rule-based pilot: 57.0%). Reported, not a gate.",
       "threshold": 0.6
     }
   ],

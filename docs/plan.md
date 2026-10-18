@@ -15,7 +15,18 @@ Changing the network's inputs or outputs forces a retrain from scratch, so these
 
 Imitation on every public ladder game rated 1300+ (13,900 games), weighted by rating so stronger players count more. No filtering of games.
 
-## Gates (what "playable" and "good" mean)
+## Update 2026-10-18: general player trained by self-play
+
+The imitation rebuild gave no gain and reinforcement learning on 10 teams only tunes to those teams, so the direction is a general player trained against itself:
+
+- **Teams of every kind** (Trick Room included): both sides draw from the pool of real tournament and ladder teams. The 10 known-good teams become a sub-score.
+- **A league, not pure self-play:** latest self 40%, past snapshots 30%, greedy-blind 20%, the imitation start model 10%. The fixed opponents stop it drifting into a private style.
+- **Judged against fixed yardsticks:** gate 1 (90% vs random) stays. Gate 2 is now at least 55% against greedy-blind on held-out teams of every kind (paired games, so 50% is parity). Trick Room and the known teams are reported as sub-scores.
+- **Preview:** rule-based during self-play; the learned preview is retrained afterwards, starting from the rule-based choices (the imitation preview was 11 points worse).
+
+Order of work now: 5 self-play league trainer (pilot, then full run), 6 search at play time, 7 learn preview, 8 team discovery.
+
+## Gates (original wording, superseded above for gate 2)
 
 1. **Playable:** wins at least 90% against the random player (400 paired games, any pair of teams).
 2. **Good:** wins at least 60% piloting the 10 known-good Trick Room teams against held-out strong tournament teams (1,200 paired games). For reference the rule-based greedy-blind pilot scored 57.0% on that test, so 60% is only just above it; read results against that baseline and the ±4 point noise.

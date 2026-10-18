@@ -14,6 +14,11 @@ a close loss and a rout, which makes each game say more about how well it played
 Progress is judged against fixed yardsticks on held-out teams, in paired games (each side pilots both
 teams, so team strength cancels): greedy-blind and the imitation model. It cannot be judged against
 itself, since that is 50% by definition.
+
+With --teams (a file with a train/test split, e.g. data/teams/m-c/training_teams.json) both sides draw
+from its training teams and evaluation uses its test teams. Each iteration logs every training team's
+record with the learner piloting it ("play" -> "teams": [wins, games, margin total]), so teams that
+keep losing can be swapped out.
 """
 
 import argparse
@@ -57,7 +62,7 @@ def make_jobs(count: int, rng: random.Random, pools: list, league: dict, snapsho
         opponent = {"self": "learner", "imitation": "imitation", "greedy-blind": "greedy-blind",
                     "snap": rng.choice(snapshots) if snapshots else ""}[kind]
         learner_first = kind == "self" or rng.random() < 0.5
-        jobs.append({"id": f"{tag}-{i}", "a": t1["text"], "b": t2["text"], "seed": rng.randrange(10**6),
+        jobs.append({"id": f"{tag}-{i}", "a": t1["text"], "b": t2["text"], "teamA": t1.get("id"), "teamB": t2.get("id"), "seed": rng.randrange(10**6),
                      "agentA": "learner" if learner_first else opponent, "agentB": opponent if learner_first else "learner",
                      "opponent": kind})
     return jobs
@@ -71,7 +76,7 @@ def play_batch(net, imitation, snapshot_agents: dict, jobs: list[dict], workers:
     trajectories: dict = {}
     results = run_jobs(jobs, None, workers, trajectories=trajectories, agents=agents, record_names={"learner"})
     by_id = {j["id"]: j for j in jobs}
-    steps, record = [], {}
+    steps, record, teams = [], {}, {}
     totals = {"turns": 0, "idle": 0, "timeouts": 0, "n": 0}
     for r in results:
         job = by_id[r["id"]]
@@ -85,6 +90,9 @@ def play_batch(net, imitation, snapshot_agents: dict, jobs: list[dict], workers:
             reward = (1 - margin_weight) * outcome + margin_weight * margin - idle_penalty * r["idleTurns"]
             if r["timeout"]:
                 reward = TIMEOUT_REWARD
+            team = job["teamA"] if side == "p1" else job["teamB"]
+            wins, games, total = teams.get(team, (0, 0, 0.0))
+            teams[team] = (wins + (outcome > 0), games + 1, total + margin)
             totals["turns"] += r["turns"]; totals["idle"] += r["idleTurns"]; totals["timeouts"] += r["timeout"]; totals["n"] += 1
             if job["opponent"] != "self":     # against itself the two seats cancel, so only count other opponents
                 wins, games, total = record.get(job["opponent"], (0, 0, 0.0))
@@ -96,7 +104,8 @@ def play_batch(net, imitation, snapshot_agents: dict, jobs: list[dict], workers:
     stall = sum(s["action"] in STALL_IDS for s in steps) / max(len(steps), 1)
     n = max(totals["n"], 1)
     return steps, record, {"stall_share": round(stall, 3), "turns": round(totals["turns"] / n, 1),
-                           "idle_turns": round(totals["idle"] / n, 2), "timeouts": totals["timeouts"], "seats": totals["n"]}
+                           "idle_turns": round(totals["idle"] / n, 2), "timeouts": totals["timeouts"], "seats": totals["n"],
+                           "teams": {k: [w, g, round(m, 3)] for k, (w, g, m) in teams.items() if k}}
 
 
 def evaluate(net, imitation, pool: list[dict], games: int, workers: int, seed: int) -> dict:
@@ -120,6 +129,9 @@ def parse_weights(text: str) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--teams", default=None,
+                        help="a team file with a train/test split (e.g. data/teams/m-c/training_teams.json): both sides draw from "
+                             "its train teams and evaluation uses its test teams; default: ladder and tournament pools")
     parser.add_argument("--init", default=str(ROOT / "models" / "il_policy_v3.pt"))
     parser.add_argument("--iterations", type=int, default=40)
     parser.add_argument("--games", type=int, default=256, help="games per iteration")
@@ -147,9 +159,13 @@ def main():
     torch.manual_seed(args.seed)
     rng = random.Random(args.seed)
     league = parse_weights(args.league)
-    train_pools = [(load_pool(LADDER_TRAIN), 0.5), (load_pool(WEB_TEAMS, split="train"), 0.5)]
-    eval_pool = load_pool(LADDER_EVAL)[:400] + load_pool(WEB_TEAMS, split="eval")
-    print(f"teams: ladder {len(train_pools[0][0])}, tournament {len(train_pools[1][0])}; evaluation pool {len(eval_pool)}; league {league}", flush=True)
+    if args.teams:
+        train_pools = [(load_pool(Path(args.teams), split="train"), 1.0)]
+        eval_pool = load_pool(Path(args.teams), split="test")
+    else:
+        train_pools = [(load_pool(LADDER_TRAIN), 0.5), (load_pool(WEB_TEAMS, split="train"), 0.5)]
+        eval_pool = load_pool(LADDER_EVAL)[:400] + load_pool(WEB_TEAMS, split="eval")
+    print(f"training teams {sum(len(p) for p, _ in train_pools)}; evaluation teams {len(eval_pool)}; league {league}", flush=True)
 
     net = load_policy(Path(args.init))
     imitation = copy.deepcopy(net).eval()

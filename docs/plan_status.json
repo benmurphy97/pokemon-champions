@@ -55,18 +55,36 @@
     },
     {
       "n": 6,
+      "name": "Faster games: profile, then batch the model's decisions across games",
+      "status": "done",
+      "note": "The slowdown was 8 worker threads fighting over Python's lock, not the model. One worker: 37,600 games/h vs 4,000 with 8 (9.4x), identical games on 120 paired seeds. One worker is now the default. Decision time is mostly the damage features (about 12 ms a decision)."
+    },
+    {
+      "n": 7,
+      "name": "Pick 50 strong training teams with real spreads (+15 held out)",
+      "status": "doing",
+      "note": "Good tournament teams ranked by gauntlet rating, spread across styles; Limitless (estimated spreads) only fills gaps."
+    },
+    {
+      "n": 8,
+      "name": "50-team run: model flies all 50 against the 50, greedy-blind pilots the opponent (pilot, then full)",
+      "status": "todo",
+      "note": "Batch updates, reward = result + health margin, idle penalty, repeat-Protect block."
+    },
+    {
+      "n": 9,
       "name": "Search at play time; measure with and without",
       "status": "todo",
       "note": ""
     },
     {
-      "n": 7,
+      "n": 10,
       "name": "Learn team preview (from the rule-based choices, then reinforcement learning)",
       "status": "todo",
       "note": "The imitation preview played 11 points worse than rule-based."
     },
     {
-      "n": 8,
+      "n": 11,
       "name": "Team discovery with the finished player; add to the site",
       "status": "todo",
       "note": ""

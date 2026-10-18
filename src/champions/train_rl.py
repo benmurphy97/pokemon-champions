@@ -238,7 +238,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--iterations", type=int, default=60)
     parser.add_argument("--games", type=int, default=256, help="games per iteration")
-    parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--init", default=str(IL_MODEL))
     parser.add_argument("--lr", type=float, default=5e-5)
     parser.add_argument("--clip", type=float, default=0.2)

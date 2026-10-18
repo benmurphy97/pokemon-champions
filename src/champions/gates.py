@@ -70,7 +70,7 @@ def main():
     parser.add_argument("--games", type=int, default=None, help="default: 400 for random, 1200 for known")
     parser.add_argument("--preview", choices=["rule", "learned"], default="rule",
                         help="who picks the four and the leads: the rule-based preview (default) or the model's own")
-    parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--workers", type=int, default=1)
     args = parser.parse_args()
     torch.set_num_threads(1)
     net, name = load_policy(Path(args.model)), Path(args.model).name

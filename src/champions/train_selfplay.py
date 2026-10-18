@@ -121,7 +121,7 @@ def main():
     parser.add_argument("--init", default=str(ROOT / "models" / "il_policy_v3.pt"))
     parser.add_argument("--iterations", type=int, default=40)
     parser.add_argument("--games", type=int, default=256, help="games per iteration")
-    parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--league", default=DEFAULT_LEAGUE)
     parser.add_argument("--margin-weight", type=float, default=0.5, help="share of the reward that is the health margin, not the result")
     parser.add_argument("--idle-penalty", type=float, default=0.03, help="reward lost per turn in which nothing changed (anti-stalling)")

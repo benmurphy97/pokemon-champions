@@ -32,10 +32,13 @@ def load_policy(path: Path = MODEL) -> PolicyNet:
     return load_model(path)
 
 
-def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_flight: int = 4,
+def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 1, in_flight: int = 4,
              trajectories: dict | None = None, observer=None, agents: dict | None = None,
              record_names: set | None = None) -> list[dict]:
     """Run battles across worker processes; neural decisions are answered by `agent`.
+
+    Use one worker when a neural agent plays: every decision runs in this process, and with more worker
+    threads they fight over Python's lock (8 workers measured 9.4x slower than 1, with identical games).
 
     If `trajectories` is a dict, each neural decision is recorded into it under (job id, side).
     `agents` maps a player name used in a job ("learner", "imitation", "snap12", ...) to the NeuralAgent that
@@ -178,7 +181,7 @@ def main():
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--model", default=str(MODEL))
     parser.add_argument("--seed", type=int, default=1)
-    parser.add_argument("--workers", type=int, default=6)
+    parser.add_argument("--workers", type=int, default=1)
     args = parser.parse_args()
 
     torch.set_num_threads(1)

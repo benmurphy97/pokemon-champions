@@ -26,6 +26,28 @@ The imitation rebuild gave no gain and reinforcement learning on 10 teams only t
 
 Order of work now: 5 self-play league trainer (pilot, then full run), 6 search at play time, 7 learn preview, 8 team discovery.
 
+## Update 2026-10-18 (later): train on 50 strong teams, faster games first
+
+Run 6 played only about 6,000 games in 3 hours (about 14 model decisions a second across all workers), and
+the league stayed flat. Learning from experience needs far more games, so speed comes before the next run.
+The repeat-Protect block (a play-time rule) is now on by default: 45.8% to 48.8% against greedy-blind, level within noise.
+
+Decided:
+
+- **Speed first:** profile a game, then score all running games' decisions in one batch. Target about 10x more
+  games per hour. Results must match before and after (same choices on the same seeds).
+- **50 training teams with real spreads only:** from the good tournament teams with exact pastes, ranked by
+  gauntlet rating, spread across styles (Trick Room, Tailwind, weather, Mega, balance). Limitless teams have
+  estimated spreads and only fill gaps. 15 more strong teams are held out for testing.
+- **The model flies all 50:** each game gives it a random team from the 50 and an opponent team from the 50.
+- **Opponent pilot: greedy-blind only.** Simpler and faster. Watch for it learning greedy-blind's quirks: the
+  held-out test and the gates are the check.
+- **Updates after batches of games** (as now, about every 200 games); reward stays result plus health margin
+  with the idle penalty.
+
+Order of work now: 6 speed, 7 pick the 50 (+15 held out), 8 50-team run (pilot, then full), 9 search at play
+time, 10 learn preview, 11 team discovery.
+
 ## Gates (original wording, superseded above for gate 2)
 
 1. **Playable:** wins at least 90% against the random player (400 paired games, any pair of teams).

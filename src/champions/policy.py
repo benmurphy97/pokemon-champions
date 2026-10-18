@@ -12,7 +12,7 @@ import torch
 from torch import nn
 
 from champions.damage import DamageCalc, boost_multiplier
-from champions.encoding import GLOBAL_NUM, MON_NUM, N_MOVE_SLOTS, N_TOKENS, N_ACTIONS, STAT_SCALE, SWITCH_BASE
+from champions.encoding import GLOBAL_NUM, MON_NUM, N_KINDS, N_MOVE_SLOTS, N_TOKENS, N_ACTIONS, STAT_SCALE, SWITCH_BASE
 from champions.vocab import (ABILITIES, ITEMS, MOVE_CATS, MOVE_NUM, MOVES, NUM_ABILITIES, NUM_ITEMS,
                              NUM_MOVES, NUM_SPECIES, SPECIES_STATS, SPECIES_TYPES, TARGETS, TYPES, TYPE_CHART)
 
@@ -63,7 +63,7 @@ class PolicyNet(nn.Module):
         self.position_emb = nn.Embedding(6, dim)
         self.actor_emb = nn.Parameter(torch.zeros(dim))
         self.field = nn.Linear(GLOBAL_NUM, dim)
-        self.kind_emb = nn.Embedding(2, dim)
+        self.kind_emb = nn.Embedding(N_KINDS, dim)
         self.slot_emb = nn.Embedding(2, dim)
 
         block = nn.TransformerEncoderLayer(dim, heads, 4 * dim, dropout, batch_first=True, norm_first=True)
@@ -79,6 +79,12 @@ class PolicyNet(nn.Module):
         self.damage_context = nn.Linear(DAMAGE_FEATURES, dim)
         self.value_head = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, 1))   # used by reinforcement learning
         self.target_head = nn.Sequential(nn.Linear(2 * dim, dim), nn.GELU(), nn.Linear(dim, N_TARGET_CLASSES))
+
+    def config(self) -> dict:
+        """Settings that rebuild this network (stored in checkpoints, see model_io)."""
+        layer = self.encoder.layers[0]
+        return {"dim": self.dim, "layers": len(self.encoder.layers), "heads": layer.self_attn.num_heads,
+                "dropout": layer.dropout.p}
 
     def move_table(self) -> torch.Tensor:
         """One vector per move for scoring: learned embedding plus its static description."""

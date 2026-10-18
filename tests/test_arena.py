@@ -29,6 +29,24 @@ class ArenaTest(unittest.TestCase):
         self.assertEqual(decided, 8)
         self.assertEqual(fallbacks, 0)   # every choice the policy made was accepted by the engine
 
+    def test_a_plugged_in_team_preview_chooses_the_lineup(self):
+        from champions.agent import NeuralAgent
+        from champions.arena import paired_jobs, run_jobs
+        from champions.policy import PolicyNet
+        torch.manual_seed(0)
+        pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
+        asked = []
+
+        def preview(state, side, request):
+            asked.append(len(request["side"]["pokemon"]))
+            return "team 5612"          # bring Pokémon 5, 6, 1 and 2; the first two listed lead
+
+        agent = NeuralAgent(PolicyNet(dim=32, layers=1, heads=2), preview=preview)
+        results = run_jobs(paired_jobs(pool, 4, "neural", "random", seed=2), agent, workers=1)
+        self.assertEqual(len(results), 4)
+        self.assertEqual(set(asked), {6})        # shown all six of its own team
+        self.assertEqual(sum(r["fallbacks"] for r in results), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

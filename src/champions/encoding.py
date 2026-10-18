@@ -12,7 +12,15 @@ import numpy as np
 from champions.battle_state import BOOSTS, SIDE_CONDITIONS, STATUSES, BattleState, Mon
 from champions.vocab import (ABILITY_ID, ITEM_ID, LEARNABLE, MOVE_ID, NUM_MOVES, SPECIES_ID)
 
-MOVE_PHASE, REPLACEMENT = 0, 1   # kinds of decision: normal turn action, or forced switch-in
+# Bump when the arrays from encode() change meaning or shape: cached training examples are stamped with it.
+ENCODING_VERSION = 2
+# Kinds of decision. Room is kept for team preview (bring four, pick two leads) and one spare, so adding
+# them later does not change the network's shape.
+MOVE_PHASE, REPLACEMENT, PREVIEW_BRING, PREVIEW_LEAD, SPARE_KIND_A, SPARE_KIND_B = range(6)
+N_KINDS = 6
+# Every array a network input needs, in one place (training batches, the live agent and the cache all use it).
+ARRAY_KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind",
+              "actor", "mask", "partner_action", "partner_target"]
 N_TOKENS, N_MOVE_SLOTS = 12, 4
 STAT_SCALE = 250.0   # own stats are given to the network divided by this
 WEATHERS = ["sun", "rain", "sand", "snow"]

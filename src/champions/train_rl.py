@@ -29,6 +29,7 @@ import numpy as np
 import torch
 
 from champions.agent import KEYS, NeuralAgent
+from champions.model_io import save_policy
 from champions.rate_teams import RATINGS
 from champions.arena import challenger_wins, load_policy, paired_jobs, run_jobs, wilson
 
@@ -299,12 +300,10 @@ def main():
         if it % args.eval_every == 0 or it == args.iterations:
             result = evaluate(net, args.eval_games, args.workers, seed=7, known=known)
             entry["eval"] = result
-            checkpoint = {"state": net.state_dict(), "dim": net.dim, "layers": len(net.encoder.layers),
-                          "iteration": it, "eval": result}
-            torch.save(checkpoint, RL_MODEL.with_name("rl_latest.pt"))
+            save_policy(net, RL_MODEL.with_name("rl_latest.pt"), iteration=it, eval=result)
             if result["policy"] > best:
                 best = result["policy"]
-                torch.save(checkpoint, RL_MODEL)
+                save_policy(net, RL_MODEL, iteration=it, eval=result)
         with LOG.open("a") as f:
             f.write(json.dumps(entry) + "\n")
         print(json.dumps(entry), flush=True)

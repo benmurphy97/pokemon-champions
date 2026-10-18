@@ -19,6 +19,7 @@ import torch
 
 from champions.agent import NeuralAgent
 from champions.battle_state import BattleState
+from champions.model_io import load_policy as load_model
 from champions.policy import PolicyNet
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -28,10 +29,7 @@ MODEL = ROOT / "models" / "il_policy.pt"
 
 
 def load_policy(path: Path = MODEL) -> PolicyNet:
-    saved = torch.load(path, map_location="cpu")
-    net = PolicyNet(dim=saved["dim"], layers=saved["layers"])
-    net.load_state_dict(saved["state"], strict=False)   # older checkpoints have no value head
-    return net.eval()
+    return load_model(path)
 
 
 def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_flight: int = 4,

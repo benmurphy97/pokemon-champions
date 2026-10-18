@@ -49,13 +49,18 @@ class NeuralPlayer extends GreedyPlayer {
 
 	receiveRequest(request) {
 		if (request.wait) return;
-		if (request.teamPreview) return super.receiveRequest(request); // greedy team preview
 		this.lastRequest = request;
 		const seq = ++this.requestSeq;
 		const lines = this.lines;
 		this.lines = [];
 		// Ignore an answer if a newer request has arrived since (the engine re-asks after some errors).
-		ask(this.id, this.side, lines, request).then(choice => { if (seq === this.requestSeq) this.choose(choice); });
+		// Team preview is asked too: Python answers "default" unless a learned preview is plugged in,
+		// and "default" means the greedy agent's bring-four / lead choice.
+		ask(this.id, this.side, lines, request).then(choice => {
+			if (seq !== this.requestSeq) return;
+			if (request.teamPreview && choice === 'default') return super.receiveRequest(request);
+			this.choose(choice);
+		});
 	}
 
 	// A genuinely invalid choice from Python must not stall the battle: fall back to the engine default.

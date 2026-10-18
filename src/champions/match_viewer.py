@@ -103,6 +103,8 @@ class Viewer(NeuralAgent):
         self.lines += lines
 
     def decide(self, state, side, request, record=None, thoughts=None):
+        if request.get("teamPreview"):
+            return super().decide(state, side, request, record)
         thoughts = []
         plans = self.plan(state, side, request)
         choice = super().decide(state, side, request, record, thoughts=thoughts)

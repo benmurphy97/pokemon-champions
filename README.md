@@ -36,6 +36,7 @@ src/champions/      Python package: team format, config, (later) search and anal
   vocab.py / encoding.py   Names -> ids, and a battle state -> arrays for the network
   decisions.py      Pulls each player's choices out of a replay log (training examples)
   policy.py         The policy network (small transformer; scores moves and switches)
+  model_io.py       Save/load policies; old checkpoints keep working when the model grows (see docs/extending.md)
   train_il.py       Imitation learning: train the policy on replay decisions
   import_stats.py   Download Smogon ladder stats into data/meta/ (usage, sets, spreads, teammates)
   meta.py           Build realistic opponent teams from those stats

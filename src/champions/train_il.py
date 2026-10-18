@@ -19,7 +19,9 @@ import torch
 import torch.nn.functional as F
 
 from champions.decisions import extract
-from champions.encoding import SWITCH_BASE
+from champions.encoding import ARRAY_KEYS as KEYS
+from champions.encoding import ENCODING_VERSION, SWITCH_BASE
+from champions.model_io import load_policy, save_policy
 from champions.meta import load_usage
 from champions.policy import PolicyNet
 from champions.vocab import NUM_MOVES
@@ -28,7 +30,6 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "cache" / "raw"
 CACHE = ROOT / "cache" / "il_examples.npz"
 MODEL_PATH = ROOT / "models" / "il_policy.pt"
-KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask", "partner_action", "partner_target"]
 
 
 def build_examples(min_rating: int, limit: int | None) -> dict:
@@ -61,10 +62,13 @@ def build_examples(min_rating: int, limit: int | None) -> dict:
 def load_examples(min_rating: int, limit: int | None, rebuild: bool) -> dict:
     if CACHE.exists() and not rebuild:
         data = dict(np.load(CACHE))
+        if int(data.get("encoding_version", 0)) != ENCODING_VERSION:
+            raise SystemExit(f"{CACHE.name} was built with encoding version {int(data.get('encoding_version', 0))}, "
+                             f"the code is at {ENCODING_VERSION}: rerun with --rebuild")
     else:
         data = build_examples(min_rating, limit)
         CACHE.parent.mkdir(exist_ok=True)
-        np.savez_compressed(CACHE, **data)
+        np.savez_compressed(CACHE, **data, encoding_version=np.array(ENCODING_VERSION))
     # The move actually played is always allowed, even if the learnset table did not list it.
     data["mask"][np.arange(len(data["action"])), data["action"]] = True
     return data
@@ -113,6 +117,7 @@ def main():
     parser.add_argument("--winners-only", action="store_true", help="learn only from the winning player's decisions")
     parser.add_argument("--tr-weight", type=int, default=1, help="train this many times on decisions by players with a Trick Room team")
     parser.add_argument("--out", default=str(MODEL_PATH), help="where to save the model")
+    parser.add_argument("--init", help="start from this checkpoint (weights are adapted if the model has grown)")
     parser.add_argument("--dim", type=int, default=128)
     parser.add_argument("--layers", type=int, default=3)
     args = parser.parse_args()
@@ -134,6 +139,9 @@ def main():
 
     device = torch.device("cpu")
     net = PolicyNet(dim=args.dim, layers=args.layers).to(device)
+    if args.init:      # carry an earlier model's weights over (see model_io): new parts start inert
+        net, report = load_policy(Path(args.init), report=True)
+        print(f"warm start from {args.init}: {report['copied']} tensors copied, {len(report['padded'])} padded, {len(report['new'])} new, {len(report['unfit'])} unfit")
     print(f"{sum(p.numel() for p in net.parameters()) / 1e6:.2f}M parameters")
     optimiser = torch.optim.AdamW(net.parameters(), lr=args.lr, weight_decay=0.01)
     steps = args.epochs * (len(train_idx) // args.batch_size + 1)
@@ -165,7 +173,7 @@ def main():
         if m["top1"] > best:
             best = m["top1"]
             Path(args.out).parent.mkdir(exist_ok=True)
-            torch.save({"state": net.state_dict(), "dim": args.dim, "layers": args.layers, "metrics": m}, args.out)
+            save_policy(net, Path(args.out), metrics=m)
 
     # Baseline for context: always predict the most common legal action seen in training.
     counts = np.bincount(data["action"][train_idx], minlength=NUM_MOVES + 6)

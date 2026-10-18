@@ -11,13 +11,13 @@ import numpy as np
 import torch
 
 from champions.battle_state import BattleState, base_species
+from champions.encoding import ARRAY_KEYS as KEYS
 from champions.encoding import (MOVE_PHASE, N_ACTIONS, REPLACEMENT, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A,
                                 TARGET_FOE_B, TARGET_NONE, encode)
 from champions.hindsight import complete_sets
 from champions.meta import load_usage
 from champions.vocab import MOVE_ID, MOVES, NAME_BY_ID
 
-KEYS = ["species", "items", "abilities", "moves", "numbers", "present", "stats", "globals", "slot", "kind", "actor", "mask", "partner_action", "partner_target"]
 SINGLE_TARGET = {"normal", "any", "adjacentFoe"}
 
 
@@ -59,7 +59,10 @@ class NeuralAgent:
     choice that had alternatives, with the log-probability it was taken with, for training.
     """
 
-    def __init__(self, net, temperature: float = 0.0, seed: int = 0):
+    def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None):
+        # `preview(state, side, request) -> "team 1234"` plugs in a team-preview policy (bring four,
+        # first two lead); None keeps the greedy agent's rule-based preview.
+        self.preview = preview
         self.usage = load_usage()
         self.net = net.eval()
         self.temperature = temperature
@@ -217,6 +220,8 @@ class NeuralAgent:
 
     def decide(self, state: BattleState, side: str, request: dict, record: list | None = None,
                thoughts: list | None = None) -> str:
+        if request.get("teamPreview"):
+            return self.preview(state, side, request) if self.preview else "default"
         pokemon = request["side"]["pokemon"]
         team_index = [state._index_of(side, base_species(p["details"])) for p in pokemon]
         position_of = {ti: j + 1 for j, ti in enumerate(team_index)}

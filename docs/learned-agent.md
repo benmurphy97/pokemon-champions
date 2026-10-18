@@ -129,3 +129,18 @@ Full imitation run on 13,900 games (log `results/il_v3.log`, model `il_policy_v3
 - The model overfits: validation loss was lowest at epoch 3 (1.11) and rose to 1.20 by epoch 10 while training loss fell to 0.90.
 - The learned preview (copying players' picks, 46% bring-four and lead accuracy) plays about 11 points worse than the rule-based preview. Copying what players pick does not copy why; the rule-based preview scores matchups directly.
 - Reinforcement learning on the known teams is what moved gate 2 (59.2%), by training on those teams.
+
+### Run 6: self-play league, teams of every kind (2026-10-18)
+
+30 iterations x 128 games from il_policy_v3; league latest self 40% / past snapshots 30% / greedy-blind 20% / imitation start 10%; reward half result, half health margin, minus 0.03 per idle turn, -0.5 for a game past 30 turns. Held-out checks (paired games, 600 vs greedy-blind):
+
+| Iteration | win vs greedy-blind | health margin | win vs imitation start |
+|---|---|---|---|
+| 10 | 41.0% | -0.098 | 52% |
+| 20 | 45.8% | -0.062 | 54% |
+| 30 | 41.8% | -0.080 | 54% |
+
+Gates on the best model (iteration 20), rule-based preview: vs random 82.2% (82.5% for the imitation start), general 43.5% (40.7-46.3, margin -0.078 +- 0.013; gate 55%), known Trick Room teams 50.3% (rule-based 57.0%). Neither gate met.
+
+- Stalling guards worked: protect/heal share 12-14% (humans 11%), 6.3 turns per game, no timeouts. A first pilot hung because some games never ended (and idle workers waited forever when there were fewer games than workers x 4); both fixed.
+- Self-play moved the model slightly past its imitation start (54% against it) but not towards the rule-based player, and it lost a few points against random. Four different training routes (imitation, RL on Trick Room teams, self-play) now all land between 41% and 50% on the held-out checks against greedy-blind.

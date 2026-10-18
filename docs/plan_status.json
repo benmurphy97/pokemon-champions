@@ -50,8 +50,8 @@
     {
       "n": 5,
       "name": "Self-play league trainer (pilot, then full run)",
-      "status": "doing",
-      "note": "Pilot done (3 iterations; found and fixed a hang with few games and added anti-stalling guards: 30-turn cap, idle-turn penalty, protect/heal share tracked). Speed: about 85-95 s per 48 games, so 128 games x 30 iterations is about 2 hours. Reward = half win/loss + half health margin. Full run next. Full run started 2026-10-18: 30 iterations x 128 games, from il_policy_v3, log results/selfplay_run6.log."
+      "status": "done",
+      "note": "Full run done (30 iterations x 128 games, 171 min, from il_policy_v3). No stalling (protect/heal share 12-14%, 6.3 turns per game, 0 timeouts). Held-out checks vs greedy-blind flat at 41-46% win, margin -0.06 to -0.10; slightly ahead of the imitation start (54%, +0.05). Gates on the best model (iteration 20): vs random 82.2% (gate 90: missed, below the imitation start 86.2%), general 43.5% (gate 55: missed), known teams 50.3% (sub-score; rule-based 57.0%)."
     },
     {
       "n": 6,

@@ -51,7 +51,7 @@
       "n": 5,
       "name": "Self-play league trainer (pilot, then full run)",
       "status": "doing",
-      "note": "Both sides draw teams of every kind. Opponents: latest self 40%, past snapshots 30%, greedy-blind 20%, imitation start model 10%. Rule-based preview. Judged against fixed yardsticks, not against itself."
+      "note": "Pilot done (3 iterations; found and fixed a hang with few games and added anti-stalling guards: 30-turn cap, idle-turn penalty, protect/heal share tracked). Speed: about 85-95 s per 48 games, so 128 games x 30 iterations is about 2 hours. Reward = half win/loss + half health margin. Full run next."
     },
     {
       "n": 6,

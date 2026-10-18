@@ -108,7 +108,7 @@ function Monitors({ run }) {
         />
       </div>
       <div className="panel">
-        <h3>Held-out check <small>(1,200 games, shaded = 95% range)</small></h3>
+        <h3>Held-out check <small>(shaded = 95% range)</small></h3>
         <Chart
           yMin={0.3} yMax={0.8} format={(v) => `${Math.round(v * 100)}%`}
           series={[

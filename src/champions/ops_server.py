@@ -25,7 +25,7 @@ RESULTS = ROOT / "results"
 KNOWN = ROOT / "data" / "teams" / "m-c" / "known_good_tr.json"
 RATINGS = ROOT / "data" / "ratings" / "m-c" / "teams.json"
 PORT = 8765
-WATCHED = {"train_rl": "reinforcement learning", "train_il": "imitation learning", "import_teams": "team importer",
+WATCHED = {"train_selfplay": "self-play training", "train_rl": "reinforcement learning", "train_il": "imitation learning", "import_teams": "team importer",
            "rate_teams": "team rating", "import_replays": "replay download", "arena": "arena test"}
 
 
@@ -49,7 +49,7 @@ def processes() -> list[dict]:
             continue
         pid, elapsed, cpu, rss, command = match.groups()
         for key, label in WATCHED.items():
-            if f"champions.{key}" in command:
+            if f"champions.{key} " in command + " ":
                 found.append({"pid": int(pid), "kind": key, "label": label, "elapsed": elapsed, "cpu": float(cpu),
                               "memoryMb": round(int(rss) / 1024), "command": command.split("champions.", 1)[1]})
     return found
@@ -72,11 +72,14 @@ def status() -> dict:
         runs.append(run_summary("current", current, live=True))
 
     jobs = processes()
-    training = next((p for p in jobs if p["kind"] == "train_rl"), None)
+    training = next((p for p in jobs if p["kind"] in ("train_selfplay", "train_rl")), None)
     total = 60
     if training:
         match = re.search(r"--iterations (\d+)", training["command"])
         total = int(match.group(1)) if match else 60
+    league = []
+    for path in sorted((MODELS / "league").glob("snap*.pt"), key=lambda p: int(re.search(r"\d+", p.name).group(0))):
+        league.append({"name": path.stem, "iteration": int(re.search(r"\d+", path.name).group(0)), "modified": path.stat().st_mtime})
     known = json.loads(KNOWN.read_text()) if KNOWN.exists() else []
     ratings = json.loads(RATINGS.read_text())["teams"] if RATINGS.exists() else {}
     roster = [{"id": t["id"], "species": t["species"], "placement": t["placement"], "tournament": t["tournament"],
@@ -84,7 +87,7 @@ def status() -> dict:
     return {"now": time.time(), "load": os.getloadavg(), "cores": os.cpu_count(), "jobs": jobs,
             "training": {"running": training is not None, "totalIterations": total,
                          "command": training["command"] if training else None},
-            "runs": runs, "roster": roster}
+            "runs": runs, "roster": roster, "league": league}
 
 
 MODELS = ROOT / "models"

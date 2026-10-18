@@ -6,7 +6,9 @@ import Sprite from './Sprite.jsx'
 import { winRate } from './rating.js'
 import './ops.css'
 
-const GAMES_PER_ITERATION = 256
+const DEFAULT_GAMES = 256
+const gamesPerIteration = (command) => Number((command || '').match(/--games (\d+)/)?.[1] ?? DEFAULT_GAMES)
+const option = (command, name, fallback) => (command || '').match(new RegExp(`--${name} (\\S+)`))?.[1] ?? fallback
 const COLORS = { blind: '#4dd4ac', greedy: '#ffb347', random: '#7aa2ff', bad: '#ff6b6b', good: '#4dd4ac', warn: '#ffb347' }
 
 const duration = (seconds) => {
@@ -59,11 +61,26 @@ function alerts(run, training, now) {
   const last = rows[rows.length - 1]
   if (training.running && last && now - run.updated > 20 * 60) out.push({ level: 'bad', text: `No new iteration for ${Math.round((now - run.updated) / 60)} min: training may be stuck.` })
   for (const e of run.evals.slice(-3)) {
-    const gap = (e.policy - e.baseline) * 100
-    const text = `Check at iteration ${e.iteration}: ${(e.policy * 100).toFixed(1)}% vs rule-based ${(e.baseline * 100).toFixed(1)}% (${gap >= 0 ? '+' : ''}${gap.toFixed(1)} pts, 95% range ${(e.interval[0] * 100).toFixed(0)}–${(e.interval[1] * 100).toFixed(0)})`
-    const lowBeats = e.interval[0] > e.baseline, highBelow = e.interval[1] < e.baseline
-    out.push({ level: lowBeats ? 'good' : highBelow ? 'bad' : 'warn', text: text + (lowBeats ? ': clearly ahead.' : highBelow ? ': clearly behind.' : ': within noise.') })
+    if (e.margin != null) {            // self-play checks: paired games vs the rule-based player, judged by health margin and wins
+      const low = e.margin - 1.96 * e.margin_se, high = e.margin + 1.96 * e.margin_se
+      const level = low > 0 ? 'good' : high < 0 ? 'bad' : 'warn'
+      const imitation = e.vs_imitation ? `; vs its imitation start: win ${(e.vs_imitation.win * 100).toFixed(0)}%, margin ${e.vs_imitation.margin >= 0 ? '+' : ''}${e.vs_imitation.margin.toFixed(2)}` : ''
+      out.push({ level, text: `Check at iteration ${e.iteration} vs rule-based (paired games): win ${(e.policy * 100).toFixed(1)}%, health margin ${e.margin >= 0 ? '+' : ''}${e.margin.toFixed(3)} ± ${(1.96 * e.margin_se).toFixed(3)}${imitation}: ${level === 'good' ? 'clearly ahead' : level === 'bad' ? 'clearly behind' : 'within noise'}.` })
+    } else {
+      const gap = (e.policy - e.baseline) * 100
+      const text = `Check at iteration ${e.iteration}: ${(e.policy * 100).toFixed(1)}% vs rule-based ${(e.baseline * 100).toFixed(1)}% (${gap >= 0 ? '+' : ''}${gap.toFixed(1)} pts, 95% range ${(e.interval[0] * 100).toFixed(0)}–${(e.interval[1] * 100).toFixed(0)})`
+      const lowBeats = e.interval[0] > e.baseline, highBelow = e.interval[1] < e.baseline
+      out.push({ level: lowBeats ? 'good' : highBelow ? 'bad' : 'warn', text: text + (lowBeats ? ': clearly ahead.' : highBelow ? ': clearly behind.' : ': within noise.') })
+    }
     if (e.invalid_choices > 5) out.push({ level: 'warn', text: `${e.invalid_choices} invalid choices at iteration ${e.iteration}.` })
+    if (e.timeouts > 0) out.push({ level: 'warn', text: `${e.timeouts} games at iteration ${e.iteration}'s check hit the turn cap.` })
+  }
+  const play = last && last.play
+  if (play) {
+    if (play.stall_share > 0.3) out.push({ level: 'bad', text: `Stalling: ${(play.stall_share * 100).toFixed(0)}% of its choices are Protect or healing moves (humans: 11%).` })
+    else if (play.stall_share > 0.2) out.push({ level: 'warn', text: `Protect/heal share is ${(play.stall_share * 100).toFixed(0)}% (humans: 11%): watch for stalling.` })
+    if (play.timeouts > 0) out.push({ level: 'warn', text: `${play.timeouts} games in the last iteration hit the 30-turn cap.` })
+    if (play.turns > 14) out.push({ level: 'warn', text: `Games are averaging ${play.turns} turns (humans: about 7-9): possible stalling.` })
   }
   if (last && last.kl > 0.2) out.push({ level: 'warn', text: `KL ${last.kl.toFixed(2)}: drifting far from the starting policy.` })
   if (last && last.entropy < 0.3) out.push({ level: 'warn', text: `Entropy ${last.entropy.toFixed(2)}: the policy is becoming very deterministic.` })
@@ -136,12 +153,47 @@ function Watch({ run }) {
           <h3>Health margin vs rule-based <small>(held-out check; above 0 = ahead; shaded = 95% range)</small></h3>
           <Chart
             yMin={-0.3} yMax={0.3} format={(v) => v.toFixed(2)}
-            series={[{ name: 'learned player', color: COLORS.blind, dots: true, points: marginChecks.map((e) => [e.iteration, e.margin]) }]}
+            series={[
+              { name: 'vs rule-based', color: COLORS.blind, dots: true, points: marginChecks.map((e) => [e.iteration, e.margin]) },
+              ...(marginChecks.some((e) => e.vs_imitation) ? [{ name: 'vs imitation start', color: COLORS.random, dots: true, points: marginChecks.filter((e) => e.vs_imitation).map((e) => [e.iteration, e.vs_imitation.margin]) }] : []),
+            ]}
             band={{ color: COLORS.blind, points: marginChecks.map((e) => [e.iteration, e.margin - 1.96 * e.margin_se, e.margin + 1.96 * e.margin_se]) }}
             refs={[{ y: 0, label: 'level', color: '#6b7a86' }]}
           />
         </div>
       )}
+    </div>
+  )
+}
+
+function League({ run, command, snapshots }) {
+  const rows = run.iterations.filter((r) => r.margin)
+  if (!rows.length) return null
+  const recent = rows.slice(-10)
+  const kinds = [...new Set(recent.flatMap((r) => Object.keys(r.margin)))]
+  const average = (kind, key) => {
+    const values = recent.filter((r) => r[key][kind] != null).map((r) => r[key][kind])
+    return values.length ? values.reduce((a, b) => a + b, 0) / values.length : null
+  }
+  const label = { 'greedy-blind': 'rule-based player (greedy-blind)', imitation: 'imitation start model', snap: 'its own past versions (snapshots)' }
+  return (
+    <div className="panel">
+      <h3>League <small>(who it trains against; last {recent.length} iterations)</small></h3>
+      <table>
+        <thead><tr><th>Opponent</th><th>Win rate</th><th>Health margin</th></tr></thead>
+        <tbody>
+          {kinds.map((k) => (
+            <tr key={k}>
+              <td>{label[k] ?? k}</td>
+              <td>{average(k, 'win_rate') != null ? `${(average(k, 'win_rate') * 100).toFixed(0)}%` : '–'}</td>
+              <td className={average(k, 'margin') > 0 ? 'okc' : ''}>{average(k, 'margin') != null ? `${average(k, 'margin') >= 0 ? '+' : ''}${average(k, 'margin').toFixed(2)}` : '–'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p className="note">Also plays its latest self (40% of games; the two seats cancel, so no score is shown). Mix: {option(command, 'league', 'self 40% · snapshots 30% · rule-based 20% · imitation 10%')}.
+        Reward: {Math.round((1 - Number(option(command, 'margin-weight', 0.5))) * 100)}% game result, {Math.round(Number(option(command, 'margin-weight', 0.5)) * 100)}% health margin, minus {option(command, 'idle-penalty', 0.03)} per idle turn; a game past 30 turns counts −0.5.</p>
+      <p className="note">Saved past versions in the league: {snapshots.length ? snapshots.map((s) => `iteration ${s.iteration}`).join(', ') : 'none yet (first at iteration 5)'}.</p>
     </div>
   )
 }
@@ -249,14 +301,14 @@ export default function Ops() {
 
       <div className="vitals">
         <Vital label="Iteration" value={`${rows.length}/${total}`} sub={<span className="bar"><i style={{ width: `${progress * 100}%` }} /></span>} />
-        <Vital label="Games played" value={(rows.length * GAMES_PER_ITERATION).toLocaleString()} sub={`${last ? last.decisions.toLocaleString() : 0} decisions last iteration`} />
+        <Vital label="Games played" value={(rows.length * (live ? gamesPerIteration(data.training.command) : DEFAULT_GAMES)).toLocaleString()} sub={`${last ? last.decisions.toLocaleString() : 0} decisions last iteration`} />
         <Vital label="Pace" value={recent.length ? `${Math.round(mean(recent))}s` : '–'} sub="per iteration" />
         <Vital label={live ? 'Time left' : 'Run time'} value={live ? duration(remaining * perIteration) : duration(rows.reduce((a, r) => a + r.rollout_seconds + r.update_seconds, 0))} sub={live ? `last update ${ago(data.now - run.updated)}` : 'in total'} />
         <Vital
           label="Latest check"
           value={run.evals.length ? `${(run.evals[run.evals.length - 1].policy * 100).toFixed(1)}%` : '–'}
-          sub={run.evals.length ? `rule-based ${(run.evals[run.evals.length - 1].baseline * 100).toFixed(1)}%` : 'none yet'}
-          tone={run.evals.length && run.evals[run.evals.length - 1].interval[0] > run.evals[run.evals.length - 1].baseline ? 'good' : ''}
+          sub={run.evals.length ? (run.evals[run.evals.length - 1].margin != null ? `margin ${run.evals[run.evals.length - 1].margin >= 0 ? '+' : ''}${run.evals[run.evals.length - 1].margin.toFixed(2)} · paired vs rule-based` : `rule-based ${(run.evals[run.evals.length - 1].baseline * 100).toFixed(1)}%`) : 'none yet'}
+          tone={run.evals.length && (run.evals[run.evals.length - 1].margin != null ? run.evals[run.evals.length - 1].margin - 1.96 * run.evals[run.evals.length - 1].margin_se > 0 : run.evals[run.evals.length - 1].interval[0] > run.evals[run.evals.length - 1].baseline) ? 'good' : ''}
         />
       </div>
 
@@ -269,6 +321,8 @@ export default function Ops() {
 
       <Monitors run={run} />
       <Watch run={run} />
+      {live && <League run={run} command={data.training.command} snapshots={data.league} />}
+      {!live && <League run={run} command={null} snapshots={[]} />}
       <Compare runs={data.runs} />
       <Roster roster={data.roster} />
       <Theatre jobs={data.jobs} load={data.load} cores={data.cores} />

@@ -1,30 +1,91 @@
 {
   "updated": "2026-10-18",
   "frozen": [
-    {"name": "Joint choice for both active Pokémon", "status": "done", "note": "Second slot is scored knowing the first slot's action."},
-    {"name": "Team preview (bring four, pick leads)", "status": "doing", "note": "Copy players first, then reinforcement learning. Preview hook and reserved decision kinds are in place."},
-    {"name": "Bigger network (~2-3x)", "status": "todo", "note": "Depth can grow in place; width needs a retrain. Under ~2 hours per run."},
-    {"name": "Search at play time", "status": "todo", "note": "Play time only; no training changes. Measured with and without."}
+    {
+      "name": "Joint choice for both active Pok\u00e9mon",
+      "status": "done",
+      "note": "Second slot is scored knowing the first slot's action."
+    },
+    {
+      "name": "Team preview (bring four, pick leads)",
+      "status": "doing",
+      "note": "Copy players first, then reinforcement learning. Preview hook and reserved decision kinds are in place."
+    },
+    {
+      "name": "Bigger network (~2-3x)",
+      "status": "todo",
+      "note": "Depth can grow in place; width needs a retrain. Under ~2 hours per run."
+    },
+    {
+      "name": "Search at play time",
+      "status": "todo",
+      "note": "Play time only; no training changes. Measured with and without."
+    }
   ],
   "steps": [
-    {"n": 1, "name": "Team-preview labels from replays (pilot)", "status": "done", "note": "400 games: both leads found in 100% of sides; all four brought Pokémon seen in 81.5% (partial sides: use known subset)."},
-    {"n": 2, "name": "Time candidate network sizes", "status": "todo", "note": ""},
-    {"n": 3, "name": "Preview head and loss added to the policy; tests", "status": "todo", "note": ""},
-    {"n": 4, "name": "Pilot imitation run (10% data), then full run; check both gates", "status": "todo", "note": ""},
-    {"n": 5, "name": "Short reinforcement learning pass, only if gate 2 is missed", "status": "todo", "note": ""},
-    {"n": 6, "name": "Search at play time; measure with and without", "status": "todo", "note": ""},
-    {"n": 7, "name": "Team discovery with the finished player; add to the site", "status": "todo", "note": ""}
+    {
+      "n": 1,
+      "name": "Team-preview labels from replays (pilot)",
+      "status": "done",
+      "note": "400 games: both leads found in 100% of sides; all four brought Pok\u00e9mon seen in 81.5% (partial sides: use known subset)."
+    },
+    {
+      "n": 2,
+      "name": "Time candidate network sizes",
+      "status": "done",
+      "note": "Measured at batch 256 with other jobs running (so times are upper bounds): 1M params 4.8 min/epoch; 2.5M (dim 192, 4 layers) 7.3 min; 3.4M (192 x 6) 10 min; 4.2M (256 x 4) 10 min. Decision latency is about 5-6 ms for all (feature calculation dominates). Chosen: 192 x 4 layers, about 1.2 h for 10 epochs."
+    },
+    {
+      "n": 3,
+      "name": "Preview head and loss added to the policy; tests",
+      "status": "todo",
+      "note": ""
+    },
+    {
+      "n": 4,
+      "name": "Pilot imitation run (10% data), then full run; check both gates",
+      "status": "todo",
+      "note": ""
+    },
+    {
+      "n": 5,
+      "name": "Short reinforcement learning pass, only if gate 2 is missed",
+      "status": "todo",
+      "note": ""
+    },
+    {
+      "n": 6,
+      "name": "Search at play time; measure with and without",
+      "status": "todo",
+      "note": ""
+    },
+    {
+      "n": 7,
+      "name": "Team discovery with the finished player; add to the site",
+      "status": "todo",
+      "note": ""
+    }
   ],
   "gates": [
-    {"id": "random", "name": "Playable", "text": "Wins at least 90% against the random player (400 paired games)", "threshold": 0.9},
-    {"id": "known", "name": "Good", "text": "Wins at least 60% piloting the 10 known-good Trick Room teams against held-out strong teams (1,200 paired games). Rule-based pilot scored 57%.", "threshold": 0.6}
+    {
+      "id": "random",
+      "name": "Playable",
+      "text": "Wins at least 90% against the random player (400 paired games)",
+      "threshold": 0.9
+    },
+    {
+      "id": "known",
+      "name": "Good",
+      "text": "Wins at least 60% piloting the 10 known-good Trick Room teams against held-out strong teams (1,200 paired games). Rule-based pilot scored 57%.",
+      "threshold": 0.6
+    }
   ],
   "rules": [
     "A 5-minute pilot on a tenth of the data before every full run",
     "One change at a time; no input or output changes in the middle of a run",
     "Up to about 2 hours per run",
     "Archive each run's log and model under a run name and write the result into docs/learned-agent.md the same day",
-    "Results within about ±4 points are noise: report them as level",
+    "Results within about \u00b14 points are noise: report them as level",
     "Tests pass before any full run"
   ]
 }

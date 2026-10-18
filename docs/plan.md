@@ -8,7 +8,7 @@ Changing the network's inputs or outputs forces a retrain from scratch, so these
 
 1. **Joint choice for both active Pokémon** (done): the second slot is scored knowing the first slot's move, target or switch.
 2. **Team preview** (to build): learn which four of six to bring and which two lead. Copy players first (replays show who was brought and who led), then refine with reinforcement learning. The player sees both teams' six species and nothing more, as in a real match.
-3. **Bigger network**: about 2-3x the current ~1M parameters, sized so a full imitation run stays under about 2 hours.
+3. **Bigger network**: 192 wide x 4 layers (2.5M parameters, 2.5x), measured at about 7 minutes per epoch, so about 1.2 hours for a 10-epoch imitation run. The 256 x 4 option (4.2M) is about 1.7 hours. Per-decision latency is about 5-6 ms at every size, since the damage features dominate.
 4. **Search at play time** (no training change): sample plausible hidden opponent sets, simulate ahead with the learned policy choosing moves, pick the best-scoring plan. Measured with and without; not used to make training data for now.
 
 ## Data

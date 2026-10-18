@@ -68,8 +68,8 @@
     {
       "n": 8,
       "name": "50-team run: model flies all 50 against the 50, greedy-blind pilots the opponent (pilot, then full)",
-      "status": "doing",
-      "note": "Joint head + opponent head + 90-plan preview retrained (il_joint_v4): gates met with rule preview, random 92.2%, general 57.2% (margin +0.050). Learned preview 6 points worse. Next: 50-team self-play pilot."
+      "status": "done",
+      "note": "Run 7 (61k games self-play on the 50 teams, from il_joint_v4): random 93.2%, general 63.2% (margin +0.121), up from 57.2%. models/rl_run7_best.pt."
     },
     {
       "n": 9,

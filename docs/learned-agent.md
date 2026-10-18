@@ -163,3 +163,22 @@ Gates (first time both met):
 
 The joint choice is the change that moved play: same data, same trunk. The learned preview is still about 6 points
 worse than the rule-based one (was 11), so self-play keeps the rule-based preview.
+
+
+### Run 7 (2026-10-19): self-play on the 50 built teams, greedy-blind opponent
+
+From il_joint_v4; 60 iterations x 1,024 games (about 61,000 games, 92 min), both sides drawn from the 50 training
+teams, rule-based preview, reward 0.5 result + 0.5 health margin - 0.03 per idle turn, KL to the start.
+Held-out 15 test teams (600 paired games vs greedy-blind) rose steadily: 58.8% / +0.084 (iteration 5) to
+64.5% / +0.130 (iteration 60, best). Against the imitation start: 50-61%. Protect/heal share 13-15% throughout.
+
+Gates on rl_run7_best (iteration 60), rule preview:
+
+| Model | vs random (90%) | vs greedy-blind, held-out (55%) | margin |
+|---|---|---|---|
+| rl_run7_best | 93.2% (90.4-95.3) | **63.2% (60.4-65.8)** | +0.121 +/- 0.013 |
+| il_joint_v4 (start) | 92.2% | 57.2% | +0.050 |
+
+General gate +6.0 points over the start, outside noise; first RL run that improved held-out play.
+Weakest training teams with the learner piloting (last 20 iterations, sampled play): built-2-356 48%,
+built-2-115 53%, built-2-317 55%, built-2-334 56%, built-2-098 56%. All are at or above 48%; candidates to swap.

@@ -144,3 +144,22 @@ Gates on the best model (iteration 20), rule-based preview: vs random 82.2% (82.
 
 - Stalling guards worked: protect/heal share 12-14% (humans 11%), 6.3 turns per game, no timeouts. A first pilot hung because some games never ended (and idle workers waited forever when there were fewer games than workers x 4); both fixed.
 - Self-play moved the model slightly past its imitation start (54% against it) but not towards the rule-based player, and it lost a few points against random. Four different training routes (imitation, RL on Trick Room teams, self-play) now all land between 41% and 50% on the held-out checks against greedy-blind.
+
+
+### Step 8a (2026-10-18): joint action head, opponent head, 90-plan preview (il_joint_v4)
+
+Encoding v3, one example per side per turn (243,398 decisions from 13,900 games; 27,722 previews). Warm start
+from il_policy_v3, 6 epochs, rating-weighted; best validation loss at epoch 3 (1.824). Validation: exact pair
+41.2%, per slot 60.4%, opponent top-1 42.1% / top-3 76.6%, preview exact plan (four fully seen) 24.0% (chance 1.1%),
+value MSE 0.842. 0.2% of labels (moves outside a learnset, e.g. Struggle) dropped from the loss.
+
+Gates (first time both met):
+
+| Model | vs random (90%) | vs greedy-blind, held-out (55%) | margin |
+|---|---|---|---|
+| il_joint_v4, rule preview | 92.2% (89.2-94.5) | 57.2% (54.3-59.9) | +0.050 +/- 0.013 |
+| il_joint_v4, learned preview | 88.5% | 51.4% | +0.005 |
+| il_policy_v3 (sequential slots) | 86.2% | ~49-50% | |
+
+The joint choice is the change that moved play: same data, same trunk. The learned preview is still about 6 points
+worse than the rule-based one (was 11), so self-play keeps the rule-based preview.

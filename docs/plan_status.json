@@ -69,7 +69,7 @@
       "n": 8,
       "name": "50-team run: model flies all 50 against the 50, greedy-blind pilots the opponent (pilot, then full)",
       "status": "doing",
-      "note": "Batch updates, reward = result + health margin, idle penalty, repeat-Protect block."
+      "note": "Joint head + opponent head + 90-plan preview retrained (il_joint_v4): gates met with rule preview, random 92.2%, general 57.2% (margin +0.050). Learned preview 6 points worse. Next: 50-team self-play pilot."
     },
     {
       "n": 9,

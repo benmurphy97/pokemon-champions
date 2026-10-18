@@ -561,23 +561,6 @@
   }
  },
  {
-  "id": "built-2-115",
-  "species": [
-   "Archaludon",
-   "Gengar",
-   "Grimmsnarl",
-   "Pelipper",
-   "Politoed",
-   "Venusaur"
-  ],
-  "text": "Venusaur @ Focus Sash\nAbility: Chlorophyll\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Sludge Bomb\n- Protect\n- Sleep Powder\n- Leaf Storm\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nGengar @ Gengarite\nAbility: Cursed Body\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Shadow Ball\n- Protect\n- Sludge Bomb\n- Perish Song\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nPolitoed @ Mystic Water\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n",
-  "split": "train",
-  "rating": {
-   "wins": 293,
-   "games": 480
-  }
- },
- {
   "id": "built-2-403",
   "species": [
    "Golisopod",
@@ -744,23 +727,6 @@
   "split": "train",
   "rating": {
    "wins": 282,
-   "games": 480
-  }
- },
- {
-  "id": "built-2-356",
-  "species": [
-   "Basculegion",
-   "Charizard",
-   "Incineroar",
-   "Pyroar",
-   "Staraptor",
-   "Steelix"
-  ],
-  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nPyroar @ Pyroarite\nAbility: Unnerve\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Heat Wave\n- Overheat\n- Scorching Sands\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nSteelix @ Leftovers\nAbility: Sturdy\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Heavy Slam\n- Wide Guard\n- High Horsepower\n- Protect\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nStaraptor @ Sharp Beak\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n",
-  "split": "train",
-  "rating": {
-   "wins": 281,
    "games": 480
   }
  },
@@ -1103,5 +1069,41 @@
    "wins": 258,
    "games": 480
   }
+ },
+ {
+  "id": "built-2-761",
+  "species": [
+   "Baxcalibur",
+   "Camerupt",
+   "Incineroar",
+   "Politoed",
+   "Rillaboom",
+   "Slowking"
+  ],
+  "text": "Slowking @ Sitrus Berry\nAbility: Regenerator\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Trick Room\n- Scald\n- Expanding Force\n- Chilly Reception\n\nBaxcalibur @ Baxcalibrite\nAbility: Thermal Exchange\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Glaive Rush\n- Protect\n- Ice Shard\n- Icicle Crash\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nCamerupt @ Cameruptite\nAbility: Solid Rock\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Earth Power\n- Protect\n- Heat Wave\n- Ancient Power\n\nPolitoed @ Mystic Water\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "train",
+  "rating": {
+   "wins": 257,
+   "games": 480
+  },
+  "replaced": "built-2-115"
+ },
+ {
+  "id": "built-2-259",
+  "species": [
+   "Archaludon",
+   "Meganium",
+   "Overqwil",
+   "Politoed",
+   "Victreebel",
+   "Volcarona"
+  ],
+  "text": "Overqwil @ Leftovers\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Throat Chop\n- Minimize\n- Protect\n- Stockpile\n\nPolitoed @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n\nVolcarona @ Rocky Helmet\nAbility: Flame Body\nLevel: 50\nEVs: 13 HP / 30 Def / 23 Spe\nTimid Nature\n- Rage Powder\n- Struggle Bug\n- Tailwind\n- Protect\n\nArchaludon @ Chople Berry\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nMeganium @ Meganiumite\nAbility: Leaf Guard\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 Spe\nModest Nature\n- Weather Ball\n- Solar Beam\n- Protect\n- Dazzling Gleam\n\nVictreebel @ Victreebelite\nAbility: Chlorophyll\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Sleep Powder\n- Sludge Bomb\n- Protect\n- Strength Sap\n",
+  "split": "train",
+  "rating": {
+   "wins": 256,
+   "games": 480
+  },
+  "replaced": "built-2-356"
  }
 ]

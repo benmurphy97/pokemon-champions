@@ -113,6 +113,39 @@ function Monitors({ run }) {
   )
 }
 
+function Watch({ run }) {
+  const rows = run.iterations.filter((r) => r.play)
+  const marginChecks = run.evals.filter((e) => e.margin != null)
+  if (!rows.length && !marginChecks.length) return null
+  const last = rows[rows.length - 1]
+  return (
+    <div className="grid2">
+      {rows.length > 0 && (
+        <div className="panel">
+          <h3>Stalling watch <small>(share of its choices that are Protect or healing moves)</small></h3>
+          <Chart
+            yMin={0} yMax={0.5} format={(v) => `${Math.round(v * 100)}%`}
+            series={[{ name: 'protect / heal share', color: COLORS.warn, points: rolling(rows.map((r) => [r.iteration, r.play.stall_share]), 3) }]}
+            refs={[{ y: 0.3, label: 'alarm', color: COLORS.bad }]}
+          />
+          <p className="note">Last iteration: {last.play.turns} turns per game, {last.play.idle_turns} idle turns per game (nothing changed), {last.play.timeouts} games ended at the turn cap.</p>
+        </div>
+      )}
+      {marginChecks.length > 0 && (
+        <div className="panel">
+          <h3>Health margin vs rule-based <small>(held-out check; above 0 = ahead; shaded = 95% range)</small></h3>
+          <Chart
+            yMin={-0.3} yMax={0.3} format={(v) => v.toFixed(2)}
+            series={[{ name: 'learned player', color: COLORS.blind, dots: true, points: marginChecks.map((e) => [e.iteration, e.margin]) }]}
+            band={{ color: COLORS.blind, points: marginChecks.map((e) => [e.iteration, e.margin - 1.96 * e.margin_se, e.margin + 1.96 * e.margin_se]) }}
+            refs={[{ y: 0, label: 'level', color: '#6b7a86' }]}
+          />
+        </div>
+      )}
+    </div>
+  )
+}
+
 function Compare({ runs }) {
   const palette = ['#7aa2ff', '#c792ea', '#ffb347', '#ff7ab6', '#4dd4ac', '#e6e6e6']
   const withEvals = runs.filter((r) => r.evals.length)
@@ -235,6 +268,7 @@ export default function Ops() {
       </div>
 
       <Monitors run={run} />
+      <Watch run={run} />
       <Compare runs={data.runs} />
       <Roster roster={data.roster} />
       <Theatre jobs={data.jobs} load={data.load} cores={data.cores} />

@@ -47,6 +47,45 @@ class ArenaTest(unittest.TestCase):
         self.assertEqual(set(asked), {6})        # shown all six of its own team
         self.assertEqual(sum(r["fallbacks"] for r in results), 0)
 
+    def test_results_report_margin_idle_turns_and_timeouts_and_few_jobs_do_not_hang(self):
+        from champions.agent import NeuralAgent
+        from champions.arena import challenger_margin, paired_jobs, run_jobs
+        from champions.policy import PolicyNet
+        torch.manual_seed(4)
+        pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
+        # 4 games on 6 workers: fewer jobs than workers must still finish (idle workers used to wait forever)
+        results = run_jobs(paired_jobs(pool, 4, "neural", "random", seed=5), NeuralAgent(PolicyNet(dim=32, layers=1, heads=2)), workers=6)
+        for r in results:
+            self.assertTrue(-1.0 <= r["margin"] <= 1.0)
+            self.assertIn(r["timeout"], (True, False))
+            self.assertGreaterEqual(r["idleTurns"], 0)
+        mean, se = challenger_margin(results)
+        self.assertTrue(-1.0 <= mean <= 1.0 and se >= 0)
+
+    def test_a_game_past_the_turn_cap_is_ended_and_flagged(self):
+        from champions.agent import NeuralAgent
+        from champions.arena import run_jobs
+        from champions.policy import PolicyNet
+        text = (FIXTURES / "team_tr_alpha.txt").read_text()
+        job = {"id": "cap", "a": text, "b": text, "seed": 1, "agentA": "neural", "agentB": "random", "maxTurns": 1}
+        torch.manual_seed(0)
+        result = run_jobs([job], NeuralAgent(PolicyNet(dim=32, layers=1, heads=2)), workers=1)[0]
+        self.assertTrue(result["timeout"])
+        self.assertEqual(result["winner"], "tie")
+
+    def test_two_different_networks_can_play_each_other(self):
+        from champions.agent import NeuralAgent
+        from champions.arena import run_jobs
+        from champions.policy import PolicyNet
+        text = (FIXTURES / "team_tr_alpha.txt").read_text()
+        torch.manual_seed(1)
+        agents = {"learner": NeuralAgent(PolicyNet(dim=32, layers=1, heads=2)), "snap3": NeuralAgent(PolicyNet(dim=32, layers=1, heads=2))}
+        jobs = [{"id": f"g{i}", "a": text, "b": text, "seed": i, "agentA": "learner", "agentB": "snap3"} for i in range(3)]
+        trajectories: dict = {}
+        results = run_jobs(jobs, None, 2, trajectories=trajectories, agents=agents, record_names={"learner"})
+        self.assertEqual(sum(r["fallbacks"] for r in results), 0)
+        self.assertTrue(all(side == "p1" for _, side in trajectories))     # only the learner's seat was recorded
+
     def test_games_complete_with_the_learned_preview_even_when_untrained(self):
         from champions.agent import NeuralAgent
         from champions.arena import challenger_wins, paired_jobs, run_jobs

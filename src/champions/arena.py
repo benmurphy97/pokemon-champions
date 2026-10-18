@@ -33,13 +33,18 @@ def load_policy(path: Path = MODEL) -> PolicyNet:
 
 
 def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_flight: int = 4,
-             trajectories: dict | None = None, observer=None) -> list[dict]:
+             trajectories: dict | None = None, observer=None, agents: dict | None = None,
+             record_names: set | None = None) -> list[dict]:
     """Run battles across worker processes; neural decisions are answered by `agent`.
 
     If `trajectories` is a dict, each neural decision is recorded into it under (job id, side).
+    `agents` maps a player name used in a job ("learner", "imitation", "snap12", ...) to the NeuralAgent that
+    answers for it, so one game can pit two different networks against each other; `agent` answers for the
+    rest. Decisions are recorded only for names in `record_names` (default: every neural seat).
     `observer(job id, side, lines)` is called with the new log lines before each neural decision.
     """
     todo: queue.Queue = queue.Queue()
+    by_id = {job["id"]: job for job in jobs}
     for job in jobs:
         todo.put(job)
     results: list[dict] = []
@@ -71,6 +76,11 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
 
         done: list = []
         feed()
+        if sent == 0:      # other workers took every job: nothing will ever arrive from this one
+            proc.stdin.close()
+            proc.wait()
+            proc.stdout.close()
+            return
         for raw in proc.stdout:
             message = json.loads(raw)
             if message["t"] == "decide":
@@ -79,8 +89,12 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
                     state.update(line)
                 if observer:
                     observer(message["id"], message["side"], message["lines"])
-                record = trajectories.setdefault((message["id"], message["side"]), []) if trajectories is not None else None
-                choice = agent.decide(state, message["side"], message["request"], record=record)
+                job = by_id[message["id"]]
+                name = job["agentA"] if message["side"] == "p1" else job["agentB"]
+                recording = trajectories is not None and (record_names is None or name in record_names)
+                record = trajectories.setdefault((message["id"], message["side"]), []) if recording else None
+                seat_agent = (agents or {}).get(name, agent)
+                choice = seat_agent.decide(state, message["side"], message["request"], record=record)
                 proc.stdin.write(json.dumps({"t": "act", "key": message["key"], "choice": choice}) + "\n")
                 proc.stdin.flush()
             elif message["t"] == "result":
@@ -112,6 +126,18 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 6, in_f
     if len(results) != len(jobs):
         raise RuntimeError(f"only {len(results)} of {len(jobs)} games finished")
     return results
+
+
+def challenger_margin(results: list[dict]) -> tuple[float, float]:
+    """(mean, standard error) of the challenger's end-of-game health lead, from -1 to 1 (see arena_worker.js).
+
+    Unlike win/loss this credits a close loss and a dominant win differently, so it needs fewer games to
+    tell two players apart.
+    """
+    values = [r["margin"] * (1 if r["id"].endswith("a") else -1) for r in results if "margin" in r]
+    mean = sum(values) / len(values)
+    var = sum((v - mean) ** 2 for v in values) / max(len(values) - 1, 1)
+    return mean, math.sqrt(var / len(values))
 
 
 def paired_jobs(pool: list[dict], games: int, challenger: str, opponent: str, seed: int) -> list[dict]:

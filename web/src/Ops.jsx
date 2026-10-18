@@ -124,9 +124,9 @@ function Watch({ run }) {
         <div className="panel">
           <h3>Stalling watch <small>(share of its choices that are Protect or healing moves)</small></h3>
           <Chart
-            yMin={0} yMax={0.5} format={(v) => `${Math.round(v * 100)}%`}
+            yMin={0} yMax={0.4} format={(v) => `${Math.round(v * 100)}%`}
             series={[{ name: 'protect / heal share', color: COLORS.warn, points: rolling(rows.map((r) => [r.iteration, r.play.stall_share]), 3) }]}
-            refs={[{ y: 0.3, label: 'alarm', color: COLORS.bad }]}
+            refs={[{ y: 0.113, label: 'human players 11%', color: '#6b7a86' }, { y: 0.2, label: 'alarm', color: COLORS.bad }]}
           />
           <p className="note">Last iteration: {last.play.turns} turns per game, {last.play.idle_turns} idle turns per game (nothing changed), {last.play.timeouts} games ended at the turn cap.</p>
         </div>

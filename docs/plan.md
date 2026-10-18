@@ -1,0 +1,42 @@
+# Plan and rules for the learned player
+
+Agreed 2026-10-18 after the joint-choice change forced a retrain. Written so we stop redoing runs.
+
+## What is frozen before the next full training run
+
+Changing the network's inputs or outputs forces a retrain from scratch, so these go in together, once:
+
+1. **Joint choice for both active Pokémon** (done): the second slot is scored knowing the first slot's move, target or switch.
+2. **Team preview** (to build): learn which four of six to bring and which two lead. Copy players first (replays show who was brought and who led), then refine with reinforcement learning. The player sees both teams' six species and nothing more, as in a real match.
+3. **Bigger network**: about 2-3x the current ~1M parameters, sized so a full imitation run stays under about 2 hours.
+4. **Search at play time** (no training change): sample plausible hidden opponent sets, simulate ahead with the learned policy choosing moves, pick the best-scoring plan. Measured with and without; not used to make training data for now.
+
+## Data
+
+Imitation on every public ladder game rated 1300+ (13,900 games), weighted by rating so stronger players count more. No filtering of games.
+
+## Gates (what "playable" and "good" mean)
+
+1. **Playable:** wins at least 90% against the random player (400 paired games, any pair of teams).
+2. **Good:** wins at least 60% piloting the 10 known-good Trick Room teams against held-out strong tournament teams (1,200 paired games). For reference the rule-based greedy-blind pilot scored 57.0% on that test, so 60% is only just above it; read results against that baseline and the ±4 point noise.
+
+Both are checked with `champions.arena` (gate 1) and the held-out check in `train_rl.evaluate` with `--known` (gate 2).
+
+## Process rules
+
+- **Pilot before every full run:** a 5-minute run on a tenth of the data to catch bugs, then one full run.
+- **One change at a time**, so a result can be attributed. No input or output changes in the middle of a run.
+- **Budget:** up to about 2 hours per run. Longer runs only with a reason written down first.
+- Keep each run's log and best model under a run name (`rl_log_runN.jsonl`, `rl_runN_best.pt`) and write the result into `docs/learned-agent.md` the same day.
+- Results inside about ±4 points are noise: report them as level, not as wins or losses.
+- Tests pass before any full run (`python -m unittest discover -s tests`).
+
+## Order of work
+
+1. Team-preview labels from replays: pilot extraction on a few hundred games, check they look right.
+2. Network size: time one training step at the candidate sizes.
+3. Preview head and loss added to the policy; tests.
+4. Pilot imitation run (10% data), then the full imitation run. Check gate 1 and gate 2.
+5. Short reinforcement learning pass only if gate 2 is not met.
+6. Search at play time; measure with and without.
+7. Team discovery with the finished player; add results to the site.

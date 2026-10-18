@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from champions.teams import check_team, parse_team, serialise_team
+from champions.teams.parse import check_team, parse_team, serialise_team
 
 FIXTURES = Path(__file__).parent / "fixtures"
 

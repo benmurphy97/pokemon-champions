@@ -1,5 +1,9 @@
 """Single place for regulation-specific settings. Change these when a new regulation starts."""
 
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]   # the repository
+
 REGULATION = "M-C"
 REGULATION_START = "2026-09-09"  # live until 2026-12-02; teams from earlier dates are ignored
 

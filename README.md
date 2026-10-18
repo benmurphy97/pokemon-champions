@@ -7,14 +7,16 @@ Find the strongest teams for the current Pokémon Champions regulation (VGC doub
 ## How it works
 
 ```
-data  →  simulate battles  →  search for teams  →  analyse  →  website
+1 pick 50 teams  →  2 imitation learning  →  3 self-play (100,000s of games)  →  4 evaluate as we go
+        ▲                                                                              │
+        └──────────── 5 swap out teams that keep losing ◄──────────────────────────────┘
 ```
 
-1. **Data** — reference tables (Pokémon, moves, items) plus current meta teams and usage.
-2. **Simulate** — run Pokémon Showdown's battle engine locally, with no network round-trips.
-3. **Search** — try team variations against the meta, keep what wins, with enough battles to trust the result.
-4. **Analyse** — matchup tables, key Pokémon, how to pilot each team.
-5. **Website** — a static page that reads the results as JSON.
+1. **Teams** — scrape usage and tournament teams, then pick 50 strong training teams plus held-out test teams.
+2. **Imitation** — the policy network first copies human players from Showdown replays.
+3. **Self-play** — it then plays those teams against each other in Showdown's engine, learning from results (PPO).
+4. **Evaluate** — paired games against fixed yardsticks (random, greedy-blind) on teams it never trained on.
+5. **Replace** — teams that keep losing are swapped for new ones.
 
 No paid APIs. No GPU needed.
 
@@ -28,33 +30,55 @@ bash scripts/setup_showdown.sh                                        # builds t
 ## Layout
 
 ```
-src/champions/      Python package: team format, config, (later) search and analysis
-  config.py         Regulation, format ID, stat-point rules — the one place to edit per regulation
-  teams.py          Read/write Showdown team text, check structural rules
-  simulate.py       Python wrapper: run_battles(), validate_team()
-  battle_state.py   Reads battle protocol lines (replays or live sim) into what a player can see
-  vocab.py / encoding.py   Names -> ids, and a battle state -> arrays for the network
-  decisions.py      Pulls each player's choices out of a replay log (training examples)
-  policy.py         The policy network (small transformer; scores moves and switches)
-  model_io.py       Save/load policies; old checkpoints keep working when the model grows (see docs/extending.md)
-  train_il.py       Imitation learning: train the policy on replay decisions
-  import_stats.py   Download Smogon ladder stats into data/meta/ (usage, sets, spreads, teammates)
-  meta.py           Build realistic opponent teams from those stats
-  calibrate.py      Compare simulated strength with ladder popularity
-  import_teams.py   Collect tournament teams from MetaVGC (parked: site is slow to crawl)
-sim/run.js          Node runner: plays battles on Showdown's engine in-process
-sim/agents/greedy.js   Scripted player: damage estimates, support-move rules, bring/lead choice
-sim/tournament.js   Round-robin between many teams, in-process (~9,700 games/min)
-sim/export_reference.js   Writes data/reference/ from the engine's own data
-scripts/            setup_showdown.sh clones and builds the pinned engine into vendor/
-data/reference/     Pokémon, moves, items for M-C, generated from Showdown
-data/meta/m-c/      Ladder usage summary (Smogon stats): sets, spreads, teammates per Pokémon
-results/            Generated pools and tournament output (gitignored)
-tests/              Unit tests; tests/fixtures holds sample teams
-docs/               Notes and source links
+src/champions/
+  config.py            Regulation, format ID, paths — the one place to edit per regulation
+  scrapers/            Download from the internet
+    battledata.py        In-game Ranked Battle usage incl. stat spreads (championsbattledata.com)
+    showdown_stats.py    Showdown ladder usage (Smogon stats)
+    replays.py           Showdown ladder replays (for imitation learning)
+    metavgc.py           Tournament teams with exact pastes (MetaVGC + pokepast.es)
+    labmaus.py           Top online-tournament teams (LabMaus)
+    limitless.py         Regional teams (Limitless VGC; spreads estimated)
+  teams/               Team files, legality, pools and ratings
+    parse.py             Read/write Showdown team text, check structural rules
+    stats.py             Battle stats from base stats, nature and stat points
+    spreads.py           Estimate a missing nature and spread
+    tournament_pool.py   Imported tournament teams -> results/web_teams.json
+    ladder_pool.py       Real ladder teams rebuilt from replays
+    generate.py          Build teams from usage stats
+    pools.py             Pool file paths and loading
+    rate.py              Rate teams against a fixed gauntlet
+  sim/                 Python side of the simulator
+    simulate.py          Run battles / validate teams via sim/run.js
+    arena.py             Many games with the learned player in the loop; paired-game scoring
+  model/               The learned player
+    battle_state.py      What a player can see, from protocol lines
+    vocab.py, encoding.py   Names -> ids, battle state -> arrays
+    damage.py            Damage maths used as network inputs
+    policy.py            The policy network (transformer; joint choice for both active Pokémon)
+    agent.py             Plays a live battle with a policy (incl. the repeat-Protect block)
+    preview.py           Learned team preview (bring four, lead two)
+    model_io.py          Save/load; old checkpoints keep working as the model grows
+  training/
+    decisions.py, hindsight.py, preview_labels.py   Training examples from replays
+    imitation.py         Imitation learning on replays
+    ppo.py               The PPO update
+    selfplay.py          Self-play league training
+  evaluation/
+    gates.py             The agreed gates (vs random, vs greedy-blind on held-out teams)
+  site/
+    ops_server.py        Live API for the operating room
+    match_viewer.py      One match with every decision recorded
+    export_site.py       JSON for the static site
+sim/                   Node: Showdown engine runners (run.js, arena_worker.js, matchups.js, agents/)
+vendor/                The pinned Showdown engine (scripts/setup_showdown.sh builds it)
+data/                  reference/ (Pokémon, moves, items), meta/ (usage), teams/ (pastes + index), ratings/
+models/  results/  cache/   Trained weights, logs and pools, downloads (all gitignored)
+web/                   React site: operating room and team browser (see web/README.md)
+tests/  docs/
 ```
 
-`web/` is the static React site (see [web/README.md](web/README.md)); `src/champions/export_site.py` writes the JSON it reads, and `src/champions/ops_server.py` feeds its live operating-room tab.
+Run any module with `PYTHONPATH=src .venv/bin/python -m champions.<folder>.<module>`, e.g. `champions.training.selfplay`.
 
 ## Setup and tests
 
@@ -66,22 +90,14 @@ python3 -m venv .venv && .venv/bin/pip install torch numpy   # once: for the lea
 PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v
 
 # play 1,000 battles between two teams (greedy agent by default; --agent-a/--agent-b random|greedy)
-PYTHONPATH=src python3 -m champions.simulate tests/fixtures/team_tr_alpha.txt tests/fixtures/team_cybertron.txt --battles 1000
+PYTHONPATH=src python3 -m champions.sim.simulate tests/fixtures/team_tr_alpha.txt tests/fixtures/team_cybertron.txt --battles 1000
 ```
 
 Speed on the Mac mini M5: about 5,800 battles per minute on one core.
 
-## Roadmap
+## Plan
 
-| Phase | What | Status |
-|---|---|---|
-| 0 | Clean out the old RL code, new layout | done |
-| 1 | Local Showdown simulator, M-C data refresh | done (ladder stats from Smogon; MetaVGC tournament import parked) |
-| 2 | Baseline agent | greedy rule-based agent kept only as a yardstick to beat; its predictions did not match real results (docs/calibration.md) |
-| 2b | Learned agent, imitation learning | in progress: tracker, encoding, network and trainer built; training on replays next |
-| 3 | Team search with confidence intervals | |
-| 4 | Static website | |
-| 5 | Learned play from replays (optional) | |
+The current plan, rules and gates are in [docs/plan.md](docs/plan.md); results of every run are in [docs/learned-agent.md](docs/learned-agent.md).
 
 ## History
 

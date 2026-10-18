@@ -8,7 +8,7 @@ try:
 except ImportError:
     HAVE_TORCH = False
 
-from champions.simulate import RUNNER
+from champions.sim.simulate import RUNNER
 
 FIXTURES = Path(__file__).parent / "fixtures"
 SHOWDOWN_BUILT = (RUNNER.parent.parent / "vendor" / "pokemon-showdown" / "dist" / "sim").exists()
@@ -17,9 +17,9 @@ SHOWDOWN_BUILT = (RUNNER.parent.parent / "vendor" / "pokemon-showdown" / "dist" 
 @unittest.skipUnless(HAVE_TORCH and SHOWDOWN_BUILT, "needs torch (.venv) and the built Showdown engine")
 class ArenaTest(unittest.TestCase):
     def test_untrained_policy_finishes_games_with_legal_choices(self):
-        from champions.agent import NeuralAgent
-        from champions.arena import challenger_wins, paired_jobs, run_jobs
-        from champions.policy import PolicyNet
+        from champions.model.agent import NeuralAgent
+        from champions.sim.arena import challenger_wins, paired_jobs, run_jobs
+        from champions.model.policy import PolicyNet
         torch.manual_seed(0)
         pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
         agent = NeuralAgent(PolicyNet(dim=32, layers=1, heads=2))
@@ -30,9 +30,9 @@ class ArenaTest(unittest.TestCase):
         self.assertEqual(fallbacks, 0)   # every choice the policy made was accepted by the engine
 
     def test_a_plugged_in_team_preview_chooses_the_lineup(self):
-        from champions.agent import NeuralAgent
-        from champions.arena import paired_jobs, run_jobs
-        from champions.policy import PolicyNet
+        from champions.model.agent import NeuralAgent
+        from champions.sim.arena import paired_jobs, run_jobs
+        from champions.model.policy import PolicyNet
         torch.manual_seed(0)
         pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
         asked = []
@@ -48,9 +48,9 @@ class ArenaTest(unittest.TestCase):
         self.assertEqual(sum(r["fallbacks"] for r in results), 0)
 
     def test_results_report_margin_idle_turns_and_timeouts_and_few_jobs_do_not_hang(self):
-        from champions.agent import NeuralAgent
-        from champions.arena import challenger_margin, paired_jobs, run_jobs
-        from champions.policy import PolicyNet
+        from champions.model.agent import NeuralAgent
+        from champions.sim.arena import challenger_margin, paired_jobs, run_jobs
+        from champions.model.policy import PolicyNet
         torch.manual_seed(4)
         pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
         # 4 games on 6 workers: fewer jobs than workers must still finish (idle workers used to wait forever)
@@ -63,9 +63,9 @@ class ArenaTest(unittest.TestCase):
         self.assertTrue(-1.0 <= mean <= 1.0 and se >= 0)
 
     def test_a_game_past_the_turn_cap_is_ended_and_flagged(self):
-        from champions.agent import NeuralAgent
-        from champions.arena import run_jobs
-        from champions.policy import PolicyNet
+        from champions.model.agent import NeuralAgent
+        from champions.sim.arena import run_jobs
+        from champions.model.policy import PolicyNet
         text = (FIXTURES / "team_tr_alpha.txt").read_text()
         job = {"id": "cap", "a": text, "b": text, "seed": 1, "agentA": "neural", "agentB": "random", "maxTurns": 1}
         torch.manual_seed(0)
@@ -74,9 +74,9 @@ class ArenaTest(unittest.TestCase):
         self.assertEqual(result["winner"], "tie")
 
     def test_two_different_networks_can_play_each_other(self):
-        from champions.agent import NeuralAgent
-        from champions.arena import run_jobs
-        from champions.policy import PolicyNet
+        from champions.model.agent import NeuralAgent
+        from champions.sim.arena import run_jobs
+        from champions.model.policy import PolicyNet
         text = (FIXTURES / "team_tr_alpha.txt").read_text()
         torch.manual_seed(1)
         agents = {"learner": NeuralAgent(PolicyNet(dim=32, layers=1, heads=2)), "snap3": NeuralAgent(PolicyNet(dim=32, layers=1, heads=2))}
@@ -87,10 +87,10 @@ class ArenaTest(unittest.TestCase):
         self.assertTrue(all(side == "p1" for _, side in trajectories))     # only the learner's seat was recorded
 
     def test_games_complete_with_the_learned_preview_even_when_untrained(self):
-        from champions.agent import NeuralAgent
-        from champions.arena import challenger_wins, paired_jobs, run_jobs
-        from champions.policy import PolicyNet
-        from champions.preview import LearnedPreview
+        from champions.model.agent import NeuralAgent
+        from champions.sim.arena import challenger_wins, paired_jobs, run_jobs
+        from champions.model.policy import PolicyNet
+        from champions.model.preview import LearnedPreview
         torch.manual_seed(3)
         pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
         net = PolicyNet(dim=32, layers=1, heads=2)
@@ -107,9 +107,9 @@ if __name__ == "__main__":
 @unittest.skipUnless(HAVE_TORCH, "needs torch (.venv)")
 class ForcedMoveTest(unittest.TestCase):
     def test_locked_or_recharging_pokemon_just_plays_move_1(self):
-        from champions.agent import NeuralAgent
-        from champions.battle_state import BattleState
-        from champions.policy import PolicyNet
+        from champions.model.agent import NeuralAgent
+        from champions.model.battle_state import BattleState
+        from champions.model.policy import PolicyNet
         state = BattleState()
         for line in ["|poke|p1|Rillaboom, L50, M|", "|poke|p1|Incineroar, L50, M|", "|poke|p2|Sneasler, L50, M|",
                      "|switch|p1a: R|Rillaboom, L50, M|100/100", "|switch|p2a: S|Sneasler, L50, M|100/100", "|turn|2"]:

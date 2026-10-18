@@ -53,7 +53,7 @@ time, 10 learn preview, 11 team discovery.
 1. **Playable:** wins at least 90% against the random player (400 paired games, any pair of teams).
 2. **Good:** wins at least 60% piloting the 10 known-good Trick Room teams against held-out strong tournament teams (1,200 paired games). For reference the rule-based greedy-blind pilot scored 57.0% on that test, so 60% is only just above it; read results against that baseline and the ±4 point noise.
 
-Both are checked with `champions.arena` (gate 1) and the held-out check in `train_rl.evaluate` with `--known` (gate 2).
+Both are checked with `champions.sim.arena` (gate 1) and the held-out check in `train_rl.evaluate` with `--known` (gate 2).
 
 ## Process rules
 

@@ -16,10 +16,10 @@ FIXTURE = Path(__file__).parent / "fixtures" / "replay_sample.json"
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class PolicyTest(unittest.TestCase):
     def setUp(self):
-        from champions.decisions import extract
-        from champions.encoding import SWITCH_BASE
-        from champions.policy import PolicyNet
-        from champions.train_il import KEYS
+        from champions.training.decisions import extract
+        from champions.model.encoding import SWITCH_BASE
+        from champions.model.policy import PolicyNet
+        from champions.training.imitation import KEYS
         torch.manual_seed(0)
         examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
         self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in examples])) for k in KEYS}
@@ -53,10 +53,10 @@ if __name__ == "__main__":
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class DamageFeatureTest(unittest.TestCase):
     def test_type_effectiveness_features_match_the_type_chart(self):
-        from champions.decisions import extract
-        from champions.policy import PolicyNet
-        from champions.train_il import KEYS
-        from champions.vocab import MOVE_ID, SPECIES
+        from champions.training.decisions import extract
+        from champions.model.policy import PolicyNet
+        from champions.training.imitation import KEYS
+        from champions.model.vocab import MOVE_ID, SPECIES
         examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
         batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in examples])) for k in KEYS}
         features = PolicyNet(dim=32, layers=1, heads=2).damage_features(batch)
@@ -72,7 +72,7 @@ class DamageFeatureTest(unittest.TestCase):
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class DamageCalcTest(unittest.TestCase):
     def hit(self, power=100, move_type="Normal", cat=1, target=1, weather=(0, 0, 0, 0), two=0.0, atk_over=None, dfn_over=None):
-        from champions.damage import DamageCalc, type_id
+        from champions.model.damage import DamageCalc, type_id
         one = lambda *v, dtype=torch.float32: torch.tensor([list(v)], dtype=dtype)
         attacker = {"types": one(type_id("Normal"), 0, dtype=torch.long), "stats": one(150, 150, 100, 150, 100, 100),
                     "boosts": torch.zeros(1, 7), "item": torch.zeros(1, dtype=torch.long), "ability": torch.zeros(1, dtype=torch.long),
@@ -99,7 +99,7 @@ class DamageCalcTest(unittest.TestCase):
         self.assertEqual(self.hit(dfn_over={"types": torch.tensor([[14, 0]])}), 0.0)   # Ghost takes nothing from Normal
 
     def test_boosts_and_levitate(self):
-        from champions.vocab import ABILITY_ID
+        from champions.model.vocab import ABILITY_ID
         self.assertGreater(self.hit(atk_over={"boosts": torch.tensor([[2.0, 0, 0, 0, 0, 0, 0]])}), 1.9 * self.hit() * 0.9)
         levitate = torch.tensor([ABILITY_ID["Levitate"]])
         self.assertEqual(self.hit(move_type="Ground", dfn_over={"ability": levitate}), 0.0)
@@ -108,14 +108,14 @@ class DamageCalcTest(unittest.TestCase):
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class PartnerTest(unittest.TestCase):
     def setUp(self):
-        from champions.decisions import extract
-        from champions.train_il import KEYS
+        from champions.training.decisions import extract
+        from champions.training.imitation import KEYS
         torch.manual_seed(0)
         self.examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
         self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in self.examples])) for k in KEYS}
 
     def test_second_slot_examples_carry_the_first_slots_action(self):
-        from champions.encoding import SWITCH_BASE
+        from champions.model.encoding import SWITCH_BASE
         linked = [e for e in self.examples if e["arrays"]["partner_action"] > 0]
         self.assertTrue(linked)
         for e in linked:
@@ -126,7 +126,7 @@ class PartnerTest(unittest.TestCase):
                 self.assertFalse(e["arrays"]["mask"][mate["action"]])   # cannot switch in the same teammate
 
     def test_partner_input_starts_inert_then_matters_once_trained(self):
-        from champions.policy import PolicyNet
+        from champions.model.policy import PolicyNet
         net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0).eval()
         other = dict(self.batch)
         other["partner_action"] = torch.zeros_like(self.batch["partner_action"])
@@ -144,9 +144,9 @@ class PartnerTest(unittest.TestCase):
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class PreviewTest(unittest.TestCase):
     def setUp(self):
-        from champions.meta import load_usage
-        from champions.preview_labels import preview_examples
-        from champions.encoding import ARRAY_KEYS
+        from champions.teams.generate import load_usage
+        from champions.training.preview_labels import preview_examples
+        from champions.model.encoding import ARRAY_KEYS
         torch.manual_seed(0)
         self.examples = preview_examples(json.loads(FIXTURE.read_text())["log"].split("\n"), load_usage())
         self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in self.examples])) for k in ARRAY_KEYS}
@@ -155,7 +155,7 @@ class PreviewTest(unittest.TestCase):
         self.batch["lead_ok"] = torch.as_tensor(np.array([e["lead_ok"] for e in self.examples]))
 
     def test_labels_are_consistent(self):
-        from champions.policy import PAIRS, SUBSETS
+        from champions.model.policy import PAIRS, SUBSETS
         for e in self.examples:
             self.assertEqual(len(e["lead_ok"]), 15)
             if e["bring"] >= 0:                      # a full four: the lead pair is inside it
@@ -163,8 +163,8 @@ class PreviewTest(unittest.TestCase):
                 self.assertTrue(e["lead_ok"][e["lead"]])
 
     def test_a_net_can_learn_one_game_of_previews(self):
-        from champions.policy import PolicyNet
-        from champions.preview import preview_loss
+        from champions.model.policy import PolicyNet
+        from champions.model.preview import preview_loss
         net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0)
         optimiser = torch.optim.AdamW(net.parameters(), lr=3e-3)
         losses = []
@@ -178,9 +178,9 @@ class PreviewTest(unittest.TestCase):
         self.assertEqual(logits_lead.shape, (len(self.examples), 15))
 
     def test_learned_preview_returns_a_valid_team_string(self):
-        from champions.battle_state import BattleState
-        from champions.policy import PolicyNet
-        from champions.preview import LearnedPreview
+        from champions.model.battle_state import BattleState
+        from champions.model.policy import PolicyNet
+        from champions.model.preview import LearnedPreview
         state = BattleState()
         names = ["Rillaboom", "Incineroar", "Sneasler", "Indeedee-F", "Farigiraf", "Torkoal", "Sinistcha"]
         for n in names[:6]:

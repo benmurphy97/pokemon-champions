@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from champions.import_replays import base_species, parse_replay
+from champions.scrapers.replays import base_species, parse_replay
 
 FIXTURE = Path(__file__).parent / "fixtures" / "replay_sample.json"
 
@@ -38,15 +38,9 @@ if __name__ == "__main__":
     unittest.main()
 
 
-class ReplayCheckTest(unittest.TestCase):
-    def test_auc_extremes_and_ties(self):
-        from champions.replay_check import auc
-        self.assertEqual(auc([0.9, 0.8, 0.2, 0.1], [1, 1, 0, 0]), 1.0)
-        self.assertEqual(auc([0.1, 0.2, 0.8, 0.9], [1, 1, 0, 0]), 0.0)
-        self.assertEqual(auc([0.5, 0.5, 0.5, 0.5], [1, 1, 0, 0]), 0.5)
-
+class UsageKeyTest(unittest.TestCase):
     def test_usage_key_prefers_common_mega_form(self):
-        from champions.replay_check import usage_key
+        from champions.teams.generate import usage_key
         usage = {"Salamence": {"usage": 0.003}, "Salamence-Mega": {"usage": 0.28},
                  "Floette-Mega": {"usage": 0.1}, "Rillaboom": {"usage": 0.46}}
         self.assertEqual(usage_key("Salamence", False, usage), "Salamence-Mega")

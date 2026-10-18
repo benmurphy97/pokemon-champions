@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Sprite from './Sprite.jsx'
 
 const pct = (x) => `${Math.round(x * 100)}%`
-const NO_FEED = 'The match feed needs the venv Python: PYTHONPATH=src .venv/bin/python -m champions.ops_server'
+const NO_FEED = 'The match feed needs the venv Python: PYTHONPATH=src .venv/bin/python -m champions.site.ops_server'
 
 function Side({ title, mons, hidden }) {
   return (

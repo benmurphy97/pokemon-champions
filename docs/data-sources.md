@@ -3,9 +3,9 @@
 | Data | Source | How |
 |---|---|---|
 | Pokémon, moves, items, learnsets | Showdown's `champions` mod | `node sim/export_reference.js` (pinned engine commit in `scripts/setup_showdown.sh`) |
-| Ladder usage, sets, spreads, teammates (M-C) | [Smogon monthly stats](https://www.smogon.com/stats/) (official Showdown ladder, ~1.6M battles in 2026-09) | `python3 -m champions.import_stats` |
+| Ladder usage, sets, spreads, teammates (M-C) | [Smogon monthly stats](https://www.smogon.com/stats/) (official Showdown ladder, ~1.6M battles in 2026-09) | `python3 -m champions.scrapers.showdown_stats` |
 | Ladder results by team (not yet used) | Showdown replay search, `replay.pokemonshowdown.com/search.json?format=gen9championsvgc2026regmc` | planned: win rates by species, lead and bring |
-| Tournament teams (parked) | [MetaVGC](https://metavgc.com) team pages, which link to pokepast.es | `python3 -m champions.import_teams` |
+| Tournament teams (parked) | [MetaVGC](https://metavgc.com) team pages, which link to pokepast.es | `python3 -m champions.scrapers.metavgc` |
 
 ## Notes
 

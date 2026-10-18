@@ -26,7 +26,7 @@ export default function Best({ teams }) {
         </select>
       </div>
       {ranked.map((t, i) => <Team key={t.id} team={t} rank={i + 1} />)}
-      {!ranked.length && <p className="notice">No rated teams yet. Run champions.rate_teams, then the exporter.</p>}
+      {!ranked.length && <p className="notice">No rated teams yet. Run champions.teams.rate, then the exporter.</p>}
     </section>
   )
 }

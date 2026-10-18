@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from champions.battle_state import BattleState, parse_hp, parse_position
+from champions.model.battle_state import BattleState, parse_hp, parse_position
 
 FIXTURE = Path(__file__).parent / "fixtures" / "replay_sample.json"
 
@@ -95,8 +95,8 @@ class HpColourTest(unittest.TestCase):
 
 class HindsightTest(unittest.TestCase):
     def test_sets_are_rebuilt_from_the_whole_game(self):
-        from champions.hindsight import complete_sets
-        from champions.meta import load_usage
+        from champions.training.hindsight import complete_sets
+        from champions.teams.generate import load_usage
         state = play(json.loads(FIXTURE.read_text())["log"].split("\n"))
         info = complete_sets(state, "p1", load_usage())
         raichu = info[3]

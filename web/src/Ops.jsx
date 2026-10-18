@@ -257,7 +257,7 @@ export default function Ops() {
   const [view, setView] = useState('vitals')
 
   if (offline && !data) {
-    return <section className="ops"><div className="panel"><h3>Feed offline</h3><p>Start the monitor feed from the repo root:</p><code>PYTHONPATH=src python3 -m champions.ops_server</code></div></section>
+    return <section className="ops"><div className="panel"><h3>Feed offline</h3><p>Start the monitor feed from the repo root:</p><code>PYTHONPATH=src python3 -m champions.site.ops_server</code></div></section>
   }
   if (!data) return <section className="ops"><p className="note">Connecting to the ward…</p></section>
 

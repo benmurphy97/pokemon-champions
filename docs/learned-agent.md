@@ -93,9 +93,9 @@ On good tournament Trick Room teams it matches the baseline (64–71% vs 69%); o
 ## Running it
 
 ```bash
-PYTHONPATH=src python3 -u -m champions.import_replays --days 21 --step-hours 0.5 --min-rating 1300 --max-games 15000 --delay 0.6
-PYTHONPATH=src .venv/bin/python -m champions.train_il --epochs 8 --rebuild
-PYTHONPATH=src .venv/bin/python -m champions.arena --vs greedy --games 400
+PYTHONPATH=src python3 -u -m champions.scrapers.replays --days 21 --step-hours 0.5 --min-rating 1300 --max-games 15000 --delay 0.6
+PYTHONPATH=src .venv/bin/python -m champions.training.imitation --epochs 8 --rebuild
+PYTHONPATH=src .venv/bin/python -m champions.sim.arena --vs greedy --games 400
 ```
 
 The arena plays every sampled pair of teams twice, so each agent pilots both teams; team strength cancels out. It stops with an error if any game is lost, rather than reporting a smaller sample.
@@ -116,7 +116,7 @@ Own teams: only the 10 known-good Trick Room teams (`known_teams.py`); opponents
 
 ### Step 4 (2026-10-18): joint choice, 192x4, team preview, rating-weighted imitation
 
-Full imitation run on 13,900 games (log `results/il_v3.log`, model `il_policy_v3.pt`). Gates (`champions.gates`):
+Full imitation run on 13,900 games (log `results/il_v3.log`, model `il_policy_v3.pt`). Gates (`champions.evaluation.gates`):
 
 | Model | Preview | vs random (gate 1: 90%) | Known 10 teams (gate 2: 60%; rule-based pilot 57.0%) |
 |---|---|---|---|

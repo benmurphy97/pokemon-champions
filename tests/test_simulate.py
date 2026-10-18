@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from champions.simulate import RUNNER, run_battles, validate_team
+from champions.sim.simulate import RUNNER, run_battles, validate_team
 
 FIXTURES = Path(__file__).parent / "fixtures"
 SHOWDOWN_BUILT = (RUNNER.parent.parent / "vendor" / "pokemon-showdown" / "dist" / "sim").exists()

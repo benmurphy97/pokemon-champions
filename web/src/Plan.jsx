@@ -40,7 +40,7 @@ function Gates({ plan }) {
           </div>
         )
       })}
-      <p className="note">Record a model: <code>PYTHONPATH=src .venv/bin/python -m champions.gates --model models/NAME.pt</code></p>
+      <p className="note">Record a model: <code>PYTHONPATH=src .venv/bin/python -m champions.evaluation.gates --model models/NAME.pt</code></p>
     </div>
   )
 }
@@ -97,7 +97,7 @@ export default function Plan() {
     const id = setInterval(load, 10000)
     return () => { live = false; clearInterval(id) }
   }, [])
-  if (error && !plan) return <div className="panel"><h3>Plan unavailable</h3><p>{error}. Start the feed with the venv Python: <code>PYTHONPATH=src .venv/bin/python -m champions.ops_server</code></p></div>
+  if (error && !plan) return <div className="panel"><h3>Plan unavailable</h3><p>{error}. Start the feed with the venv Python: <code>PYTHONPATH=src .venv/bin/python -m champions.site.ops_server</code></p></div>
   if (!plan) return <p className="note">Loading the plan…</p>
   return (
     <div>

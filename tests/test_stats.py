@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from champions.stats import compute_stats
+from champions.teams.stats import compute_stats
 
 FIXTURE = Path(__file__).parent / "fixtures" / "engine_stats.json"
 

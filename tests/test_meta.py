@@ -1,19 +1,10 @@
 import unittest
 
-from champions.calibrate import ranks, spearman
-from champions.meta import generate_pool, load_usage
-from champions.simulate import RUNNER
+from champions.teams.generate import generate_pool, load_usage
+from champions.sim.simulate import RUNNER
 
 SHOWDOWN_BUILT = (RUNNER.parent.parent / "vendor" / "pokemon-showdown" / "dist" / "sim").exists()
 
-
-class CalibrateTest(unittest.TestCase):
-    def test_ranks_share_ties(self):
-        self.assertEqual(ranks([10, 20, 20, 30]), [1.0, 2.5, 2.5, 4.0])
-
-    def test_spearman_extremes(self):
-        self.assertAlmostEqual(spearman([1, 2, 3, 4], [10, 20, 30, 40]), 1.0)
-        self.assertAlmostEqual(spearman([1, 2, 3, 4], [40, 30, 20, 10]), -1.0)
 
 
 class UsageDataTest(unittest.TestCase):
@@ -39,8 +30,8 @@ class GeneratePoolTest(unittest.TestCase):
 @unittest.skipUnless(SHOWDOWN_BUILT, "run scripts/setup_showdown.sh first")
 class TrickRoomPoolTest(unittest.TestCase):
     def test_every_team_has_exactly_two_trick_room_setters(self):
-        from champions.meta import SETTER_MIN_SHARE, TRICK_ROOM, trick_room_share
-        from champions.teams import parse_team
+        from champions.teams.generate import SETTER_MIN_SHARE, TRICK_ROOM, trick_room_share
+        from champions.teams.parse import parse_team
         usage = load_usage()
         pool = generate_pool(8, seed=2, setters=2)
         self.assertEqual(len(pool), 8)

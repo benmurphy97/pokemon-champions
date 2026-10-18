@@ -3,7 +3,7 @@
 A small static React site (Vite) that lists tournament teams with their strategies and shows ladder usage per Pokémon.
 
 ```bash
-PYTHONPATH=src python3 -m champions.export_site   # from the repo root: writes web/public/data/*.json
+PYTHONPATH=src python3 -m champions.site.export_site   # from the repo root: writes web/public/data/*.json
 cd web && npm install && npm run dev               # develop at http://localhost:5173
 npm run build                                      # static site in web/dist
 ```
@@ -15,7 +15,7 @@ The site reads only the JSON files in `public/data/`, so any static host works. 
 The first tab is a live monitor for training. It polls a small feed that reads the logs in `results/` and the running processes:
 
 ```bash
-PYTHONPATH=src .venv/bin/python -m champions.ops_server   # serves http://localhost:8765/api/ops (venv: the match viewer uses PyTorch)
+PYTHONPATH=src .venv/bin/python -m champions.site.ops_server   # serves http://localhost:8765/api/ops (venv: the match viewer uses PyTorch)
 cd web && npm run dev                            # the dev server forwards /api to it
 ```
 

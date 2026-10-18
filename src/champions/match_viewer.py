@@ -119,9 +119,10 @@ def find_model() -> Path:
     return next(p for p in MODEL_CANDIDATES if p.exists())
 
 
-def run_match(ours: str, theirs: str, seed: int = 1, temperature: float = 0.0, opponent: str = "greedy-blind") -> dict:
+def run_match(ours: str, theirs: str, seed: int = 1, temperature: float = 0.0, opponent: str = "greedy-blind",
+              model: Path | None = None) -> dict:
     """Play one game (team texts, our side piloted by the learned player) and return every step."""
-    model = find_model()
+    model = model or find_model()
     viewer = Viewer(load_policy(model), temperature=temperature, seed=seed)
     job = {"id": "viewer", "a": ours, "b": theirs, "seed": seed, "agentA": "neural", "agentB": opponent}
     result = run_jobs([job], viewer, workers=1, observer=viewer.observe)[0]

@@ -87,6 +87,42 @@ def status() -> dict:
             "runs": runs, "roster": roster}
 
 
+MODELS = ROOT / "models"
+PLAN = ROOT / "docs" / "plan_status.json"
+GATES = RESULTS / "gates.json"
+_model_cache: dict = {}
+
+
+def models_info() -> list[dict]:
+    """Every saved model: its settings, what it was trained with, and its recorded scores."""
+    import torch      # only the venv Python has it
+    out = []
+    for path in sorted(MODELS.glob("*.pt"), key=lambda p: -p.stat().st_mtime):
+        key = (path.name, path.stat().st_mtime)
+        if key not in _model_cache:
+            saved = torch.load(path, map_location="cpu")
+            state = saved["state"]
+            config = saved.get("config") or {"dim": saved.get("dim"), "layers": saved.get("layers")}
+            partner = state.get("partner_move.weight")
+            metrics = saved.get("metrics") or {}
+            check = saved.get("eval") or {}
+            _model_cache[key] = {
+                "name": path.name, "sizeMb": round(path.stat().st_size / 1e6, 1), "modified": path.stat().st_mtime,
+                "config": config, "parameters": sum(t.numel() for t in state.values() if t.dtype.is_floating_point),
+                "encodingVersion": saved.get("encoding_version"),
+                "jointChoice": bool(partner is not None and float(partner.abs().sum()) > 0),
+                "imitationTop1": metrics.get("top1"), "iteration": saved.get("iteration"),
+                "heldOut": {"policy": check.get("policy"), "baseline": check.get("baseline")} if check else None}
+        out.append(_model_cache[key])
+    return out
+
+
+def plan_status() -> dict:
+    plan = json.loads(PLAN.read_text()) if PLAN.exists() else {"frozen": [], "steps": [], "gates": [], "rules": []}
+    plan["results"] = json.loads(GATES.read_text()) if GATES.exists() else []
+    return plan
+
+
 WEB_TEAMS = RESULTS / "web_teams.json"
 match_lock = threading.Lock()      # one simulated match at a time
 
@@ -104,7 +140,9 @@ def match_teams() -> tuple[list[dict], list[dict]]:
 def match_options() -> dict:
     ours, opponents = match_teams()
     brief = lambda t: {"id": t["id"], "species": t["species"], "label": f"{t['placement'] or '–'} · {t['tournament']}"}
-    return {"ours": [brief(t) for t in ours], "opponents": [brief(t) for t in opponents]}
+    models = [m["name"] for m in models_info()]
+    return {"ours": [brief(t) for t in ours], "opponents": [brief(t) for t in opponents], "models": models,
+            "previews": [{"id": "rule", "label": "Rule-based (greedy)"}]}
 
 
 def match(query: dict) -> dict:
@@ -114,7 +152,8 @@ def match(query: dict) -> dict:
     a, b = by_id[query["ours"][0]], by_id[query["opp"][0]]
     seed = int(query.get("seed", ["1"])[0])
     with match_lock:
-        result = run_match(a["text"], b["text"], seed=seed, temperature=float(query.get("temp", ["0"])[0]))
+        result = run_match(a["text"], b["text"], seed=seed, temperature=float(query.get("temp", ["0"])[0]),
+                           model=(MODELS / query["model"][0]) if "model" in query else None)
     return {**result, "ours": a["species"], "theirs": b["species"]}
 
 
@@ -124,6 +163,8 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if url.path == "/api/ops":
                 payload = status()
+            elif url.path == "/api/plan":
+                payload = {**plan_status(), "models": models_info()}
             elif url.path == "/api/match/options":
                 payload = match_options()
             elif url.path == "/api/match":

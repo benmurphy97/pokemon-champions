@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Chart, rolling } from './charts.jsx'
 import Match from './Match.jsx'
+import Plan from './Plan.jsx'
 import Sprite from './Sprite.jsx'
 import { winRate } from './rating.js'
 import './ops.css'
@@ -194,16 +195,17 @@ export default function Ops() {
             <i /> {live ? (stalled ? 'STALLED?' : 'TRAINING LIVE') : 'NO ACTIVE SURGERY'}
           </span>
           <h2>Operating room</h2>
-          <p className="note">{live ? data.training.command : `Showing finished run ${run.name}.`}</p>
+          <p className="note">{live ? data.training.command : `Showing ${run.name === 'current' ? 'the latest run (finished)' : `finished run ${run.name}`}.`}</p>
         </div>
         <Heartbeat running={live} stalled={stalled} />
       </div>
 
       <div className="tabs views">
         <button className={view === 'vitals' ? 'on' : ''} onClick={() => setView('vitals')}>Vitals & monitors</button>
+        <button className={view === 'plan' ? 'on' : ''} onClick={() => setView('plan')}>Plan, gates & models</button>
         <button className={view === 'surgery' ? 'on' : ''} onClick={() => setView('surgery')}>Live surgery (match viewer)</button>
       </div>
-      {view === 'surgery' ? <Match /> : <>
+      {view === 'surgery' ? <Match /> : view === 'plan' ? <Plan /> : <>
       <div className="tabs">
         {data.runs.map((r) => (
           <button key={r.name} className={r.name === run.name ? 'on' : ''} onClick={() => setPicked(r.name)}>

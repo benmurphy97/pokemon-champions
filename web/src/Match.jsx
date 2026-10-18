@@ -111,6 +111,7 @@ export default function Match() {
   const [opp, setOpp] = useState('')
   const [seed, setSeed] = useState(1)
   const [sample, setSample] = useState(false)
+  const [model, setModel] = useState('')
   const [match, setMatch] = useState(null)
   const [step, setStep] = useState(0)
   const [busy, setBusy] = useState(false)
@@ -120,6 +121,7 @@ export default function Match() {
     fetch('/api/match/options').then((r) => r.json()).then((o) => {
       if (o.error) throw new Error(o.error)
       setOptions(o); setOurs(o.ours[0]?.id ?? ''); setOpp(o.opponents[0]?.id ?? '')
+      setModel(o.models.includes('rl_policy.pt') ? 'rl_policy.pt' : o.models[0] ?? '')
     }).catch(() => setError(NO_FEED))
   }, [])
 
@@ -135,7 +137,7 @@ export default function Match() {
 
   const simulate = (nextSeed = seed) => {
     setBusy(true); setError(null)
-    fetch(`/api/match?ours=${ours}&opp=${opp}&seed=${nextSeed}&temp=${sample ? 1 : 0}`)
+    fetch(`/api/match?ours=${ours}&opp=${opp}&seed=${nextSeed}&temp=${sample ? 1 : 0}${model ? `&model=${model}` : ''}`)
       .then((r) => r.json())
       .then((m) => { if (m.error) throw new Error(m.error); setMatch(m); setStep(0) })
       .catch((e) => setError(String(e.message || e)))
@@ -164,6 +166,18 @@ export default function Match() {
             {options.opponents.map((t) => <option key={t.id} value={t.id}>{t.species.join(' / ')} ({t.label})</option>)}
           </select>
         </label>
+        <div className="row">
+          <label>Model (which saved player pilots our team)
+            <select value={model} onChange={(e) => setModel(e.target.value)}>
+              {options.models.map((m) => <option key={m}>{m}</option>)}
+            </select>
+          </label>
+          <label>Team preview (bring four, pick leads)
+            <select disabled title="A learned preview will appear here once one is trained">
+              {options.previews.map((p) => <option key={p.id}>{p.label}</option>)}
+            </select>
+          </label>
+        </div>
         <div className="row">
           <label>Seed <input type="number" value={seed} onChange={(e) => setSeed(Number(e.target.value))} /></label>
           <label><input type="checkbox" checked={sample} onChange={(e) => setSample(e.target.checked)} /> sample from its scores instead of always playing the top choice</label>

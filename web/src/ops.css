@@ -98,3 +98,15 @@
 .plan-row { display: grid; grid-template-columns: minmax(200px, 1.6fr) 1fr 56px; gap: 8px; align-items: center; font-size: .8rem; padding: 3px 0; }
 .plan-row b { color: var(--o-dim); font-weight: 400; margin: 0 4px; }
 .note.given { color: var(--o-warn); }
+.badge { font-size: .7rem; padding: 2px 9px; border-radius: 10px; border: 1px solid var(--o-line); color: var(--o-dim); }
+.badge.ok { color: var(--o-bg); background: var(--o-good); border-color: var(--o-good); font-weight: 700; } .badge.no { color: var(--o-warn); border-color: var(--o-warn); }
+.gate { padding: 8px 0; border-top: 1px solid var(--o-line); } .gate:first-of-type { border-top: 0; }
+.gate-head { display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
+.meter { position: relative; height: 10px; background: var(--o-line); border-radius: 5px; margin: 8px 0; } .meter i { display: block; height: 100%; background: var(--o-dim); border-radius: 5px; }
+.meter b { position: absolute; top: -4px; width: 2px; height: 18px; background: var(--o-good); }
+.ops table { width: 100%; border-collapse: collapse; font-size: .76rem; } .ops th, .ops td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--o-line); vertical-align: top; } .ops th { color: var(--o-dim); font-weight: 600; }
+.okc { color: var(--o-good); font-weight: 700; } .scroll { overflow-x: auto; }
+.checklist { list-style: none; margin: 0; padding: 0; } .checklist li { display: flex; gap: 10px; padding: 6px 0; border-top: 1px solid var(--o-line); font-size: .82rem; }
+.checklist .icon { width: 18px; color: var(--o-dim); } .checklist .done .icon { color: var(--o-good); } .checklist .doing .icon { color: var(--o-warn); }
+.checklist .done strong { color: var(--o-dim); } .checklist p { margin: 2px 0 0; }
+.rules { margin: 0; padding-left: 18px; font-size: .82rem; } .rules li { margin: 3px 0; }

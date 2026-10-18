@@ -31788,5 +31788,1347 @@
   "placement": "60th",
   "trick_room": false,
   "problems": []
+ },
+ {
+  "id": "lim-7203",
+  "source": "https://limitlessvgc.com/teams/7203",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "1st",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7204",
+  "source": "https://limitlessvgc.com/teams/7204",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "2nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7205",
+  "source": "https://limitlessvgc.com/teams/7205",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "3rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7206",
+  "source": "https://limitlessvgc.com/teams/7206",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "4th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7207",
+  "source": "https://limitlessvgc.com/teams/7207",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "5th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7208",
+  "source": "https://limitlessvgc.com/teams/7208",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "6th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-6999",
+  "source": "https://limitlessvgc.com/teams/6999",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "7th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7209",
+  "source": "https://limitlessvgc.com/teams/7209",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "8th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7210",
+  "source": "https://limitlessvgc.com/teams/7210",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "9th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7211",
+  "source": "https://limitlessvgc.com/teams/7211",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "10th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7212",
+  "source": "https://limitlessvgc.com/teams/7212",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "11th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7213",
+  "source": "https://limitlessvgc.com/teams/7213",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "13th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7214",
+  "source": "https://limitlessvgc.com/teams/7214",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "14th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7192",
+  "source": "https://limitlessvgc.com/teams/7192",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "15th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7215",
+  "source": "https://limitlessvgc.com/teams/7215",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "16th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7216",
+  "source": "https://limitlessvgc.com/teams/7216",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "17th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7217",
+  "source": "https://limitlessvgc.com/teams/7217",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "19th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7218",
+  "source": "https://limitlessvgc.com/teams/7218",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "20th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7219",
+  "source": "https://limitlessvgc.com/teams/7219",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "21st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7220",
+  "source": "https://limitlessvgc.com/teams/7220",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "22nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7221",
+  "source": "https://limitlessvgc.com/teams/7221",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "23rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7222",
+  "source": "https://limitlessvgc.com/teams/7222",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "24th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7223",
+  "source": "https://limitlessvgc.com/teams/7223",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "25th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7224",
+  "source": "https://limitlessvgc.com/teams/7224",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "26th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7225",
+  "source": "https://limitlessvgc.com/teams/7225",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "28th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7226",
+  "source": "https://limitlessvgc.com/teams/7226",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "29th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7227",
+  "source": "https://limitlessvgc.com/teams/7227",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "30th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7228",
+  "source": "https://limitlessvgc.com/teams/7228",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "31st",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7229",
+  "source": "https://limitlessvgc.com/teams/7229",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "32nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7230",
+  "source": "https://limitlessvgc.com/teams/7230",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "33rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7231",
+  "source": "https://limitlessvgc.com/teams/7231",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "34th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7232",
+  "source": "https://limitlessvgc.com/teams/7232",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "36th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7233",
+  "source": "https://limitlessvgc.com/teams/7233",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "38th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7234",
+  "source": "https://limitlessvgc.com/teams/7234",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "39th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": [
+   "\"helditem\" is an invalid item."
+  ]
+ },
+ {
+  "id": "lim-7235",
+  "source": "https://limitlessvgc.com/teams/7235",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "40th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7236",
+  "source": "https://limitlessvgc.com/teams/7236",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "41st",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7237",
+  "source": "https://limitlessvgc.com/teams/7237",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "42nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7238",
+  "source": "https://limitlessvgc.com/teams/7238",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "43rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7239",
+  "source": "https://limitlessvgc.com/teams/7239",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "44th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7240",
+  "source": "https://limitlessvgc.com/teams/7240",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "45th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7241",
+  "source": "https://limitlessvgc.com/teams/7241",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "46th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7242",
+  "source": "https://limitlessvgc.com/teams/7242",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "47th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7243",
+  "source": "https://limitlessvgc.com/teams/7243",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "48th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7244",
+  "source": "https://limitlessvgc.com/teams/7244",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "49th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7245",
+  "source": "https://limitlessvgc.com/teams/7245",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "50th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7246",
+  "source": "https://limitlessvgc.com/teams/7246",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "51st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7247",
+  "source": "https://limitlessvgc.com/teams/7247",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "52nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7248",
+  "source": "https://limitlessvgc.com/teams/7248",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "53rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7249",
+  "source": "https://limitlessvgc.com/teams/7249",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "54th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7250",
+  "source": "https://limitlessvgc.com/teams/7250",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "55th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7251",
+  "source": "https://limitlessvgc.com/teams/7251",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "56th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7252",
+  "source": "https://limitlessvgc.com/teams/7252",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "57th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7130",
+  "source": "https://limitlessvgc.com/teams/7130",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "58th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7253",
+  "source": "https://limitlessvgc.com/teams/7253",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "59th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7254",
+  "source": "https://limitlessvgc.com/teams/7254",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "60th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7255",
+  "source": "https://limitlessvgc.com/teams/7255",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "61st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7256",
+  "source": "https://limitlessvgc.com/teams/7256",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "63rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7257",
+  "source": "https://limitlessvgc.com/teams/7257",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "64th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7258",
+  "source": "https://limitlessvgc.com/teams/7258",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "65th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7259",
+  "source": "https://limitlessvgc.com/teams/7259",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "66th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7260",
+  "source": "https://limitlessvgc.com/teams/7260",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "67th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7261",
+  "source": "https://limitlessvgc.com/teams/7261",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "69th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7262",
+  "source": "https://limitlessvgc.com/teams/7262",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "70th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7263",
+  "source": "https://limitlessvgc.com/teams/7263",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "71st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7264",
+  "source": "https://limitlessvgc.com/teams/7264",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "72nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7265",
+  "source": "https://limitlessvgc.com/teams/7265",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "73rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7266",
+  "source": "https://limitlessvgc.com/teams/7266",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "74th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7267",
+  "source": "https://limitlessvgc.com/teams/7267",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "75th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7268",
+  "source": "https://limitlessvgc.com/teams/7268",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "76th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7269",
+  "source": "https://limitlessvgc.com/teams/7269",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "77th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7270",
+  "source": "https://limitlessvgc.com/teams/7270",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "78th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7271",
+  "source": "https://limitlessvgc.com/teams/7271",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "79th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7272",
+  "source": "https://limitlessvgc.com/teams/7272",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "80th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7273",
+  "source": "https://limitlessvgc.com/teams/7273",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "81st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7274",
+  "source": "https://limitlessvgc.com/teams/7274",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "82nd",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7275",
+  "source": "https://limitlessvgc.com/teams/7275",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "83rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7276",
+  "source": "https://limitlessvgc.com/teams/7276",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "84th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7277",
+  "source": "https://limitlessvgc.com/teams/7277",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "85th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7278",
+  "source": "https://limitlessvgc.com/teams/7278",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "86th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7279",
+  "source": "https://limitlessvgc.com/teams/7279",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "87th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7280",
+  "source": "https://limitlessvgc.com/teams/7280",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "88th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7281",
+  "source": "https://limitlessvgc.com/teams/7281",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "89th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7282",
+  "source": "https://limitlessvgc.com/teams/7282",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "90th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7283",
+  "source": "https://limitlessvgc.com/teams/7283",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "91st",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7284",
+  "source": "https://limitlessvgc.com/teams/7284",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "94th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-6866",
+  "source": "https://limitlessvgc.com/teams/6866",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "95th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7285",
+  "source": "https://limitlessvgc.com/teams/7285",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "96th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7286",
+  "source": "https://limitlessvgc.com/teams/7286",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "97th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7287",
+  "source": "https://limitlessvgc.com/teams/7287",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "98th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7288",
+  "source": "https://limitlessvgc.com/teams/7288",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "99th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7289",
+  "source": "https://limitlessvgc.com/teams/7289",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "101st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7290",
+  "source": "https://limitlessvgc.com/teams/7290",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "102nd",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7291",
+  "source": "https://limitlessvgc.com/teams/7291",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "103rd",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7292",
+  "source": "https://limitlessvgc.com/teams/7292",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "104th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-6895",
+  "source": "https://limitlessvgc.com/teams/6895",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "105th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7293",
+  "source": "https://limitlessvgc.com/teams/7293",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "106th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7294",
+  "source": "https://limitlessvgc.com/teams/7294",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "107th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7295",
+  "source": "https://limitlessvgc.com/teams/7295",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "108th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7296",
+  "source": "https://limitlessvgc.com/teams/7296",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "109th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7297",
+  "source": "https://limitlessvgc.com/teams/7297",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "110th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7298",
+  "source": "https://limitlessvgc.com/teams/7298",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "111th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7299",
+  "source": "https://limitlessvgc.com/teams/7299",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "112th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7300",
+  "source": "https://limitlessvgc.com/teams/7300",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "113th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7301",
+  "source": "https://limitlessvgc.com/teams/7301",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "114th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7302",
+  "source": "https://limitlessvgc.com/teams/7302",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "115th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7303",
+  "source": "https://limitlessvgc.com/teams/7303",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "116th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7304",
+  "source": "https://limitlessvgc.com/teams/7304",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "117th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7038",
+  "source": "https://limitlessvgc.com/teams/7038",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "118th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7305",
+  "source": "https://limitlessvgc.com/teams/7305",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "119th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7306",
+  "source": "https://limitlessvgc.com/teams/7306",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "120th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7307",
+  "source": "https://limitlessvgc.com/teams/7307",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "121st",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7308",
+  "source": "https://limitlessvgc.com/teams/7308",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "122nd",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7309",
+  "source": "https://limitlessvgc.com/teams/7309",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "123rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7310",
+  "source": "https://limitlessvgc.com/teams/7310",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "124th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7311",
+  "source": "https://limitlessvgc.com/teams/7311",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "125th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7312",
+  "source": "https://limitlessvgc.com/teams/7312",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "126th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7313",
+  "source": "https://limitlessvgc.com/teams/7313",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "127th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7314",
+  "source": "https://limitlessvgc.com/teams/7314",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "128th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7315",
+  "source": "https://limitlessvgc.com/teams/7315",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "129th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7316",
+  "source": "https://limitlessvgc.com/teams/7316",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "130th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7317",
+  "source": "https://limitlessvgc.com/teams/7317",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "131st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7318",
+  "source": "https://limitlessvgc.com/teams/7318",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "133rd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7319",
+  "source": "https://limitlessvgc.com/teams/7319",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "134th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7320",
+  "source": "https://limitlessvgc.com/teams/7320",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "135th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7321",
+  "source": "https://limitlessvgc.com/teams/7321",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "136th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7322",
+  "source": "https://limitlessvgc.com/teams/7322",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "137th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7000",
+  "source": "https://limitlessvgc.com/teams/7000",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "138th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7323",
+  "source": "https://limitlessvgc.com/teams/7323",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "139th",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7324",
+  "source": "https://limitlessvgc.com/teams/7324",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "140th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7325",
+  "source": "https://limitlessvgc.com/teams/7325",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "141st",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7326",
+  "source": "https://limitlessvgc.com/teams/7326",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "142nd",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7327",
+  "source": "https://limitlessvgc.com/teams/7327",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "143rd",
+  "trick_room": true,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7328",
+  "source": "https://limitlessvgc.com/teams/7328",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "144th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
+ },
+ {
+  "id": "lim-7329",
+  "source": "https://limitlessvgc.com/teams/7329",
+  "tournament": "Regional Louisville, KY (Limitless #445)",
+  "date": "2026-10-10",
+  "placement": "145th",
+  "trick_room": false,
+  "estimated_spreads": true,
+  "problems": []
  }
 ]

@@ -63,6 +63,7 @@ class Mon:
     mega: bool = False
     turns_active: int = 0
     last_move: str | None = None
+    last_move_turn: int = -1    # the turn counter when it was used
 
 
 @dataclass
@@ -278,6 +279,7 @@ class BattleState:
             if p[3] not in mon.moves:
                 mon.moves.append(p[3])
             mon.last_move = p[3]
+            mon.last_move_turn = self.turn
 
     def _on_turn(self, p):
         self.turn = int(p[2])

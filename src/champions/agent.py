@@ -51,6 +51,10 @@ def lead(state: BattleState, side: str) -> float:
     return (sum(m.hp for m in own.team[:6]) - sum(m.hp for m in foe.team[:6])) / 6
 
 
+PROTECT_MOVES = {"Protect", "Detect", "Spiky Shield", "King's Shield", "Baneful Bunker", "Silk Trap", "Burning Bulwark",
+                 "Obstruct", "Max Guard", "Wide Guard", "Quick Guard", "Mat Block", "Crafty Shield"}
+
+
 class NeuralAgent:
     """Chooses actions with a trained policy.
 
@@ -59,7 +63,9 @@ class NeuralAgent:
     choice that had alternatives, with the log-probability it was taken with, for training.
     """
 
-    def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None):
+    def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None, block_repeat_protect: bool = True):
+        # A Protect-type move used on the previous turn almost always fails, so it is left out of the legal set.
+        self.block_repeat_protect = block_repeat_protect
         # `preview(state, side, request) -> "team 1234"` plugs in a team-preview policy (bring four,
         # first two lead); None keeps the greedy agent's rule-based preview.
         self.preview = preview
@@ -97,12 +103,18 @@ class NeuralAgent:
                        "target_mask": np.zeros(4, dtype=bool) if target_mask is None else target_mask})
 
     @staticmethod
-    def slot_legal(active: dict, bench: list[int], taken: set[int]) -> tuple[np.ndarray, dict]:
-        """Legal action mask for one active Pokémon, and {move id: (move slot, target type)}."""
+    def slot_legal(active: dict, bench: list[int], taken: set[int], repeat_block: bool = False) -> tuple[np.ndarray, dict]:
+        """Legal action mask for one active Pokémon, and {move id: (move slot, target type)}.
+
+        `repeat_block` drops Protect-type moves (they would fail) unless they are the only moves left.
+        """
         legal = np.zeros(N_ACTIONS, dtype=bool)
         slot_of_move = {}
         for k, move in enumerate(active["moves"]):
             move_id = MOVE_ID.get(move["move"], 0)
+            if repeat_block and move["move"] in PROTECT_MOVES and any(
+                    m["move"] not in PROTECT_MOVES and not m.get("disabled") for m in active["moves"]):
+                continue
             if not move.get("disabled") and move_id:
                 legal[move_id] = True
                 slot_of_move[move_id] = (k + 1, move.get("target"))
@@ -111,6 +123,14 @@ class NeuralAgent:
                 if ti not in taken:
                     legal[SWITCH_BASE + ti] = True
         return legal, slot_of_move
+
+    def repeat_block(self, state: BattleState, side: str, pokemon: dict) -> bool:
+        """True when this Pokémon used a Protect-type move last turn."""
+        if not self.block_repeat_protect:
+            return False
+        index = state._index_of(side, base_species(pokemon["details"]))
+        mon = state.sides[side].team[index]
+        return mon.last_move in PROTECT_MOVES and mon.last_move_turn == state.turn - 1
 
     def plan(self, state: BattleState, side: str, request: dict, combos: int = 8) -> list[dict]:
         """The most likely joint plans for both active Pokémon: P(first slot) x P(second slot | first).
@@ -131,7 +151,7 @@ class NeuralAgent:
             return []
 
         def scores(slot, active, partner, taken):
-            legal, slot_of_move = self.slot_legal(active, bench, taken)
+            legal, slot_of_move = self.slot_legal(active, bench, taken, self.repeat_block(state, side, pokemon[slot]))
             arrays = encode(state, side, slot, MOVE_PHASE, own_info=own, partner=partner)
             arrays["mask"] = legal
             with torch.no_grad():
@@ -262,7 +282,7 @@ class NeuralAgent:
                     continue
 
                 arrays = encode(state, side, slot, MOVE_PHASE, own_info=own, partner=partner)
-                legal, slot_of_move = self.slot_legal(active, bench, taken)
+                legal, slot_of_move = self.slot_legal(active, bench, taken, self.repeat_block(state, side, mon))
                 if not slot_of_move:
                     # Forced: recharging, locked into a move, or Struggle. The engine decides the details.
                     choices.append("move 1")

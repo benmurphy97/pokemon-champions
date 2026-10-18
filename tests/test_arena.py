@@ -47,6 +47,19 @@ class ArenaTest(unittest.TestCase):
         self.assertEqual(set(asked), {6})        # shown all six of its own team
         self.assertEqual(sum(r["fallbacks"] for r in results), 0)
 
+    def test_games_complete_with_the_learned_preview_even_when_untrained(self):
+        from champions.agent import NeuralAgent
+        from champions.arena import challenger_wins, paired_jobs, run_jobs
+        from champions.policy import PolicyNet
+        from champions.preview import LearnedPreview
+        torch.manual_seed(3)
+        pool = [{"text": (FIXTURES / name).read_text()} for name in ("team_tr_alpha.txt", "team_cybertron.txt")]
+        net = PolicyNet(dim=32, layers=1, heads=2)
+        agent = NeuralAgent(net, preview=LearnedPreview(net, temperature=1.0, seed=1))
+        results = run_jobs(paired_jobs(pool, 6, "neural", "random", seed=3), agent, workers=2)
+        wins, decided, fallbacks = challenger_wins(results)
+        self.assertEqual((decided, fallbacks), (6, 0))     # every lineup it picked was accepted by the engine
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -10,14 +10,23 @@ for the leads.
 """
 
 import argparse
+import copy
 import gzip
 import json
 from collections import Counter
 from pathlib import Path
 
-from champions.battle_state import BattleState
+import numpy as np
 
-RAW_DIR = Path(__file__).resolve().parents[2] / "cache" / "raw"
+from champions.battle_state import BattleState
+from champions.encoding import ARRAY_KEYS, PREVIEW_BRING, encode
+from champions.hindsight import complete_sets
+from champions.meta import load_usage
+from champions.policy import PAIRS, SUBSETS
+
+ROOT = Path(__file__).resolve().parents[2]
+RAW_DIR = ROOT / "cache" / "raw"
+CACHE = ROOT / "cache" / "preview_examples.npz"
 
 
 def extract_preview(lines: list[str]) -> dict[str, dict]:
@@ -36,10 +45,66 @@ def extract_preview(lines: list[str]) -> dict[str, dict]:
     return out
 
 
+def preview_examples(lines: list[str], usage: dict) -> list[dict]:
+    """One training example per side: the team-preview view and what the player did.
+
+    The view is both teams' six species and the player's own full sets (reconstructed from the whole
+    game, as in decisions.extract), with nothing revealed. Labels: `bring` is the index of the four
+    brought among the 15 possible sets (-1 if not all four were seen), `lead` the index of the lead
+    pair among the 15 pairs, and `lead_ok` marks the pairs the lead could have been (those inside the
+    seen Pokémon when the four is complete, else all 15).
+    """
+    labels = extract_preview(lines)
+    state, at_preview, final = BattleState(), None, BattleState()
+    for line in lines:
+        if line.startswith("|teampreview") and at_preview is None:
+            at_preview = copy.deepcopy(state)
+        state.update(line)
+        final.update(line)
+    if at_preview is None:
+        return []
+    out = []
+    for side, info in labels.items():
+        if len(info["six"]) != 6 or len(info["leads"]) != 2:
+            continue
+        own = complete_sets(final, side, usage)
+        arrays = encode(at_preview, side, 0, PREVIEW_BRING, own_info=own)
+        seen = tuple(info["brought_seen"])
+        bring = SUBSETS.index(seen) if info["complete"] else -1
+        lead = PAIRS.index(tuple(sorted(info["leads"])))
+        allowed = [set(p) <= set(seen) for p in PAIRS] if info["complete"] else [True] * len(PAIRS)
+        out.append({"arrays": arrays, "bring": bring, "lead": lead, "lead_ok": allowed, "side": side})
+    return out
+
+
+def build_examples(limit: int | None = None, min_rating: int = 1300) -> dict:
+    usage = load_usage()
+    arrays: dict[str, list] = {k: [] for k in ARRAY_KEYS}
+    meta = {"bring": [], "lead": [], "lead_ok": [], "game": [], "rating": []}
+    for g, path in enumerate(sorted(RAW_DIR.glob("*.json.gz"))[:limit]):
+        replay = json.load(gzip.open(path, "rt"))
+        if (replay.get("rating") or 0) < min_rating:
+            continue
+        for example in preview_examples(replay["log"].split("\n"), usage):
+            for k in ARRAY_KEYS:
+                arrays[k].append(example["arrays"][k])
+            for k in ("bring", "lead", "lead_ok"):
+                meta[k].append(example[k])
+            meta["game"].append(g)
+            meta["rating"].append(replay.get("rating") or 0)
+    return {**{k: np.stack(v) for k, v in arrays.items()}, **{k: np.array(v) for k, v in meta.items()}}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--games", type=int, default=400)
+    parser.add_argument("--build", action="store_true", help="build cache/preview_examples.npz from all raw games (training uses it)")
     args = parser.parse_args()
+    if args.build:
+        data = build_examples()
+        np.savez_compressed(CACHE, **data)
+        print(f"{len(data['bring'])} preview examples ({int((data['bring'] >= 0).sum())} with a full four) -> {CACHE}")
+        return
     seen_counts, lead_ok, sides, examples = Counter(), 0, 0, []
     for path in sorted(RAW_DIR.glob("*.json.gz"))[: args.games]:
         replay = json.load(gzip.open(path, "rt"))

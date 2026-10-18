@@ -22,6 +22,7 @@ from champions.decisions import extract
 from champions.encoding import ARRAY_KEYS as KEYS
 from champions.encoding import ENCODING_VERSION, SWITCH_BASE
 from champions.model_io import load_policy, save_policy
+from champions.preview import preview_loss
 from champions.meta import load_usage
 from champions.policy import PolicyNet
 from champions.vocab import NUM_MOVES
@@ -74,6 +75,12 @@ def load_examples(min_rating: int, limit: int | None, rebuild: bool) -> dict:
     return data
 
 
+def preview_batch(pv: dict, idx: np.ndarray) -> dict:
+    batch = {k: torch.as_tensor(pv[k][idx]) for k in KEYS}
+    batch.update({k: torch.as_tensor(pv[k][idx]) for k in ("bring", "lead", "lead_ok")})
+    return batch
+
+
 def to_batch(data: dict, idx: np.ndarray, device) -> dict:
     return {k: torch.as_tensor(data[k][idx]).to(device) for k in KEYS}
 
@@ -117,6 +124,11 @@ def main():
     parser.add_argument("--winners-only", action="store_true", help="learn only from the winning player's decisions")
     parser.add_argument("--tr-weight", type=int, default=1, help="train this many times on decisions by players with a Trick Room team")
     parser.add_argument("--out", default=str(MODEL_PATH), help="where to save the model")
+    parser.add_argument("--preview", action="store_true",
+                        help="also learn team preview (bring four, pick leads) from cache/preview_examples.npz, built if missing")
+    parser.add_argument("--preview-weight", type=float, default=0.3)
+    parser.add_argument("--rating-weight", action="store_true",
+                        help="sample stronger players' decisions more often (weight 1 at rating 1350, up to 4 at 1800)")
     parser.add_argument("--init", help="start from this checkpoint (weights are adapted if the model has grown)")
     parser.add_argument("--dim", type=int, default=128)
     parser.add_argument("--layers", type=int, default=3)
@@ -137,6 +149,20 @@ def main():
         print(f"Trick Room decisions: {len(extra)} ({len(extra) / max(len(train_idx) - (args.tr_weight - 1) * len(extra), 1):.0%} of training), weighted x{args.tr_weight}")
     print(f"{n} decisions from {len(games)} games: {len(train_idx)} train, {len(val_idx)} validation")
 
+    pv = None
+    if args.preview:
+        from champions.preview_labels import CACHE as PREVIEW_CACHE, build_examples
+        if not PREVIEW_CACHE.exists() or args.rebuild:
+            np.savez_compressed(PREVIEW_CACHE, **build_examples(args.limit, args.min_rating))
+        pv = dict(np.load(PREVIEW_CACHE))
+        pv_val = np.array([g in held_out for g in pv["game"]])
+        pv_train, pv_val = np.flatnonzero(~pv_val), np.flatnonzero(pv_val)
+        print(f"{len(pv['bring'])} preview examples: {len(pv_train)} train, {len(pv_val)} validation")
+    sample_weight = None
+    if args.rating_weight:
+        sample_weight = np.clip((data["rating"][train_idx] - 1200) / 150, 0.5, 4.0)
+        sample_weight = sample_weight / sample_weight.sum()
+
     device = torch.device("cpu")
     net = PolicyNet(dim=args.dim, layers=args.layers).to(device)
     if args.init:      # carry an earlier model's weights over (see model_io): new parts start inert
@@ -150,7 +176,7 @@ def main():
     best = 0.0
     for epoch in range(1, args.epochs + 1):
         net.train()
-        order = rng.permutation(train_idx)
+        order = rng.choice(train_idx, size=len(train_idx), p=sample_weight) if sample_weight is not None else rng.permutation(train_idx)
         start, total, count = time.time(), 0.0, 0
         for i in range(0, len(order), args.batch_size):
             chunk = order[i:i + args.batch_size]
@@ -162,6 +188,8 @@ def main():
             moves = action < SWITCH_BASE
             if moves.any():
                 loss = loss + 0.3 * F.cross_entropy(target_logits[moves], target[moves])
+            if pv is not None:
+                loss = loss + args.preview_weight * preview_loss(net, preview_batch(pv, rng.choice(pv_train, 64)))[0]
             optimiser.zero_grad(); loss.backward()
             torch.nn.utils.clip_grad_norm_(net.parameters(), 1.0)
             optimiser.step(); schedule.step()
@@ -170,6 +198,12 @@ def main():
         print(f"epoch {epoch}: train loss {total / count:.3f} | val loss {m['loss']:.3f}  top1 {m['top1']:.1%}  "
               f"top3 {m['top3']:.1%}  move/switch {m['move_vs_switch']:.1%}  target {m['target']:.1%}  "
               f"({time.time() - start:.0f}s)", flush=True)
+        if pv is not None:
+            net.eval()
+            with torch.no_grad():
+                pm = preview_loss(net, preview_batch(pv, pv_val))[1]
+            print(f"   preview (validation): bring four {pm['bring'] / max(pm['bring_n'], 1):.1%} (chance 6.7%), "
+                  f"leads {pm['lead'] / pm['lead_n']:.1%}", flush=True)
         if m["top1"] > best:
             best = m["top1"]
             Path(args.out).parent.mkdir(exist_ok=True)

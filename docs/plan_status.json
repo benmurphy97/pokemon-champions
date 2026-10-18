@@ -9,7 +9,7 @@
     {
       "name": "Team preview (bring four, pick leads)",
       "status": "doing",
-      "note": "Copy players first, then reinforcement learning. Preview hook and reserved decision kinds are in place."
+      "note": "Head, data, loss and agent hook are built and tested. Not yet trained (step 4)."
     },
     {
       "name": "Bigger network (~2-3x)",
@@ -38,8 +38,8 @@
     {
       "n": 3,
       "name": "Preview head and loss added to the policy; tests",
-      "status": "todo",
-      "note": ""
+      "status": "done",
+      "note": "Preview head (bring four = sum of per-Pok\u00e9mon scores over the 15 sets of four; leads = scored pairs), preview_labels.py builds the training data, preview.py has the loss and LearnedPreview for the agent hook. train_il --preview trains it alongside the battle policy. 54 tests pass, including full games with an untrained learned preview."
     },
     {
       "n": 4,

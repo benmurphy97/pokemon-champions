@@ -139,3 +139,58 @@ class PartnerTest(unittest.TestCase):
             differs = not torch.allclose(net(self.batch)[0], net(other)[0])
         self.assertTrue(same)
         self.assertTrue(differs)
+
+
+@unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
+class PreviewTest(unittest.TestCase):
+    def setUp(self):
+        from champions.meta import load_usage
+        from champions.preview_labels import preview_examples
+        from champions.encoding import ARRAY_KEYS
+        torch.manual_seed(0)
+        self.examples = preview_examples(json.loads(FIXTURE.read_text())["log"].split("\n"), load_usage())
+        self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in self.examples])) for k in ARRAY_KEYS}
+        self.batch["bring"] = torch.as_tensor([e["bring"] for e in self.examples])
+        self.batch["lead"] = torch.as_tensor([e["lead"] for e in self.examples])
+        self.batch["lead_ok"] = torch.as_tensor(np.array([e["lead_ok"] for e in self.examples]))
+
+    def test_labels_are_consistent(self):
+        from champions.policy import PAIRS, SUBSETS
+        for e in self.examples:
+            self.assertEqual(len(e["lead_ok"]), 15)
+            if e["bring"] >= 0:                      # a full four: the lead pair is inside it
+                self.assertTrue(set(PAIRS[e["lead"]]) <= set(SUBSETS[e["bring"]]))
+                self.assertTrue(e["lead_ok"][e["lead"]])
+
+    def test_a_net_can_learn_one_game_of_previews(self):
+        from champions.policy import PolicyNet
+        from champions.preview import preview_loss
+        net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0)
+        optimiser = torch.optim.AdamW(net.parameters(), lr=3e-3)
+        losses = []
+        for _ in range(60):
+            loss, _ = preview_loss(net, self.batch)
+            optimiser.zero_grad(); loss.backward(); optimiser.step()
+            losses.append(loss.item())
+        self.assertLess(losses[-1], 0.5 * losses[0])
+        logits_bring, logits_lead = net.preview_logits(self.batch)
+        self.assertEqual(logits_bring.shape, (len(self.examples), 15))
+        self.assertEqual(logits_lead.shape, (len(self.examples), 15))
+
+    def test_learned_preview_returns_a_valid_team_string(self):
+        from champions.battle_state import BattleState
+        from champions.policy import PolicyNet
+        from champions.preview import LearnedPreview
+        state = BattleState()
+        names = ["Rillaboom", "Incineroar", "Sneasler", "Indeedee-F", "Farigiraf", "Torkoal", "Sinistcha"]
+        for n in names[:6]:
+            state.update(f"|poke|p1|{n}, L50|")
+        for n in ("Gholdengo", "Garchomp", "Kingambit", "Whimsicott", "Basculegion", "Pelipper"):
+            state.update(f"|poke|p2|{n}, L50|")
+        request = {"side": {"pokemon": [{"details": f"{n}, L50", "condition": "100/100", "active": False,
+                                         "moves": ["protect"], "item": "leftovers", "baseAbility": "intimidate"} for n in names[:6]]}}
+        choice = LearnedPreview(PolicyNet(dim=32, layers=1, heads=2))(state, "p1", request)
+        digits = choice.removeprefix("team ")
+        self.assertEqual(len(digits), 4)
+        self.assertEqual(len(set(digits)), 4)
+        self.assertTrue(set(digits) <= set("123456"))

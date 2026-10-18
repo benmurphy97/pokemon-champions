@@ -8,6 +8,8 @@ network handles any team.
     logits, target_logits = net(batch)       # batch: dict of tensors from encoding.encode
 """
 
+from itertools import combinations
+
 import torch
 from torch import nn
 
@@ -17,6 +19,8 @@ from champions.vocab import (ABILITIES, ITEMS, MOVE_CATS, MOVE_NUM, MOVES, NUM_A
                              NUM_MOVES, NUM_SPECIES, SPECIES_STATS, SPECIES_TYPES, TARGETS, TYPES, TYPE_CHART)
 
 N_TARGET_CLASSES = 4
+SUBSETS = list(combinations(range(6), 4))     # the 15 ways to bring four of six
+PAIRS = list(combinations(range(6), 2))       # the 15 ways to pick two leads
 DAMAGE_FEATURES = 13
 THREAT_FEATURES = 8
 # A foe's unknown spread, as stat points added to base stats (HP, atk, def, spa, spd, spe): a typical
@@ -77,6 +81,16 @@ class PolicyNet(nn.Module):
         # bonus, attack-vs-defence ratio) are inputs; what to do with them is learned.
         self.damage_scalar = nn.Sequential(nn.Linear(DAMAGE_FEATURES, 32), nn.GELU(), nn.Linear(32, 1))
         self.damage_context = nn.Linear(DAMAGE_FEATURES, dim)
+        # Team preview. Each own Pokémon gets a "bring" score (a four's score is the sum of its members')
+        # and a "lead" score; a lead pair also gets a term for how the two work together.
+        self.bring_query = nn.Linear(dim, dim)
+        self.bring_own = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, 1))
+        self.lead_query = nn.Linear(dim, dim)
+        self.lead_own = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, 1))
+        self.lead_pair = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, 1))
+        self.register_buffer("subset_members", torch.tensor([[float(i in s) for s in SUBSETS] for i in range(6)]), persistent=False)
+        self.register_buffer("pair_members", torch.tensor([[float(i in p) for p in PAIRS] for i in range(6)]), persistent=False)
+        self.register_buffer("pair_index", torch.tensor(PAIRS), persistent=False)
         self.value_head = nn.Sequential(nn.Linear(dim, dim), nn.GELU(), nn.Linear(dim, 1))   # used by reinforcement learning
         self.target_head = nn.Sequential(nn.Linear(2 * dim, dim), nn.GELU(), nn.Linear(dim, N_TARGET_CLASSES))
 
@@ -256,6 +270,17 @@ class PolicyNet(nn.Module):
         pad = torch.cat([torch.zeros(seq.shape[0], 2, dtype=torch.bool, device=seq.device), ~b["present"]], dim=1)
         out = self.out_norm(self.encoder(seq, src_key_padding_mask=pad))
         return out[:, 0], out[:, 2:8]
+
+    def preview_logits(self, b: dict) -> tuple[torch.Tensor, torch.Tensor]:
+        """Team preview: (logits over the 15 sets of four to bring, logits over the 15 lead pairs), from the own six.
+
+        Lead logits are not restricted to the chosen four; the caller masks them (see preview.py).
+        """
+        q, own = self.trunk(b)
+        bring = self.bring_own(own).squeeze(-1) + torch.einsum("bd,bkd->bk", self.bring_query(q), own)     # [B, 6]
+        lead = self.lead_own(own).squeeze(-1) + torch.einsum("bd,bkd->bk", self.lead_query(q), own)
+        pair = self.lead_pair(own[:, self.pair_index[:, 0]] * own[:, self.pair_index[:, 1]]).squeeze(-1)    # [B, 15]
+        return bring @ self.subset_members, lead @ self.pair_members + pair
 
     def action_logits(self, b: dict, q: torch.Tensor, own: torch.Tensor) -> torch.Tensor:
         damage = self.damage_features(b)

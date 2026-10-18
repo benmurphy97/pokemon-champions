@@ -3,7 +3,8 @@
     PYTHONPATH=src python3 -m champions.import_limitless 445          # Regional Louisville, KY
 
 A Limitless team page lists species, item, ability, nature and moves but NOT stat points, so each
-Pokémon gets the most popular ladder spread for its nature (data/meta usage). Those teams are
+Pokémon gets an estimated spread that fits its nature and moves (champions.spreads: in-game Ranked
+Battle data first). Those teams are
 marked "estimated_spreads" in data/teams/<regulation>/index.json: the sets are real, the spreads are
 a guess. Writes data/teams/<regulation>/lim-<team id>.txt beside the MetaVGC imports.
 Player names are not kept. Requests are one per second.
@@ -15,10 +16,11 @@ import json
 import re
 import subprocess
 import time
+from datetime import datetime
 
-from champions.config import REGULATION, REGULATION_START
+from champions.config import REGULATION
 from champions.import_teams import INDEX, OUT_DIR
-from champions.meta import load_usage
+from champions.spreads import estimate
 from champions.teams import serialise_team
 
 SITE = "https://limitlessvgc.com"
@@ -42,16 +44,7 @@ def standings(page: str) -> list[tuple[int, int]]:
     return [(int(rank), int(team)) for rank, team in rows]
 
 
-def estimate_spread(usage: dict, name: str, nature: str | None) -> dict:
-    """Most popular ladder spread for this Pokémon and nature, else its most popular spread."""
-    spreads = usage.get(name, {}).get("spreads") or usage.get(name.split("-")[0], {}).get("spreads") or []
-    for spread_nature, points, _ in spreads:
-        if spread_nature == nature:
-            return points
-    return spreads[0][1] if spreads else {"HP": 32, "Atk": 0, "Def": 0, "SpA": 0, "SpD": 0, "Spe": 2}
-
-
-def parse_page(page: str, usage: dict) -> list[dict]:
+def parse_page(page: str) -> list[dict]:
     mons = []
     for block in page.split('<div class="pkmn"')[1:]:
         grab = lambda pattern: (m.group(1).strip() if (m := re.search(pattern, block, flags=re.S)) else None)
@@ -61,10 +54,10 @@ def parse_page(page: str, usage: dict) -> list[dict]:
             name = "-".join(part.capitalize() for part in slug.split("-"))
         nature = grab(r'<div class="nature">(\w+) Nature')
         ability = grab(r'<div class="ability">Ability:\s*(.*?)</div>')
+        moves = [html.unescape(m.strip()) for m in re.findall(r"<li>(.*?)</li>", block.split('<ul class="moves">')[-1].split("</ul>")[0])]
+        nature, points = estimate(name, nature, moves)
         mons.append({"name": name, "item": html.unescape(grab(r'<div class="item">(.*?)</div>') or "") or None,
-                     "ability": html.unescape(ability or ""), "nature": nature,
-                     "evs": estimate_spread(usage, name, nature),
-                     "moves": [html.unescape(m.strip()) for m in re.findall(r"<li>(.*?)</li>", block.split('<ul class="moves">')[-1].split("</ul>")[0])]})
+                     "ability": html.unescape(ability or ""), "nature": nature, "evs": points, "moves": moves})
     return mons
 
 
@@ -77,21 +70,22 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index = json.loads(INDEX.read_text()) if INDEX.exists() else []
     seen = {entry["source"] for entry in index}
-    usage = load_usage()
 
     page = fetch(f"{SITE}/tournaments/{args.tournament}")
     title = re.search(r"<title>(.*?)</title>", page, flags=re.S)
-    date = re.search(r"(\d{4}-\d{2}-\d{2})", page)
+    if f"Regulation Set {REGULATION}" not in page:
+        raise SystemExit(f"tournament {args.tournament} is not {REGULATION}")
+    day = re.search(r"(\d{1,2})(?:st|nd|rd|th) ([A-Z][a-z]+) (\d{4})", page)
     name = re.sub(r"\s*[–-]\s*Limitless VGC", "", title.group(1)).strip() if title else ""
     tournament = f"{html.unescape(name)} (Limitless #{args.tournament})"
-    date = (date.group(1) if date else None) or "2026-10-10"
+    date = datetime.strptime(" ".join(day.groups()), "%d %B %Y").strftime("%Y-%m-%d") if day else None
     added = 0
     for rank, team in standings(page)[: args.top]:
         source = f"{SITE}/teams/{team}"
         if source in seen:
             continue
         time.sleep(0.8)
-        mons = parse_page(fetch(source), usage)
+        mons = parse_page(fetch(source))
         text = serialise_team(mons)
         team_id = f"lim-{team}"
         (OUT_DIR / f"{team_id}.txt").write_text(text)

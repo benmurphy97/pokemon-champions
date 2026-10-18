@@ -96,25 +96,35 @@ def joint_nll(pair_logits: torch.Tensor, label: torch.Tensor) -> torch.Tensor:
     return -torch.where((a >= 0) & (b >= 0), both, torch.where(a >= 0, by_a, by_b))
 
 
+ILLEGAL = 1e6   # a label on a masked option has a loss near 1e9: such labels (about 0.2%, e.g. Struggle or a move Ditto copied) are dropped
+
+
 def losses(net, batch: dict) -> tuple[torch.Tensor, dict]:
     pair_logits, value, foe_logits = net(batch)
-    action = joint_nll(pair_logits, batch["label"]).mean()
+    nll = joint_nll(pair_logits, batch["label"])
+    ok = nll < ILLEGAL
+    action = nll[ok].mean() if ok.any() else pair_logits.sum() * 0
     foe_label = batch["foe_label"].flatten()
-    foe = F.cross_entropy(foe_logits.flatten(0, 1), foe_label, ignore_index=-1) if (foe_label >= 0).any() else pair_logits.sum() * 0
+    flat = foe_logits.flatten(0, 1)
+    seen = foe_label >= 0
+    legal = seen & (flat.gather(1, foe_label.clamp(min=0)[:, None]).squeeze(1) > -ILLEGAL)
+    foe = F.cross_entropy(flat[legal], foe_label[legal]) if legal.any() else pair_logits.sum() * 0
     value_loss = ((value - batch["won"].float()) ** 2).mean()
-    return action + 0.3 * foe + 0.25 * value_loss, {"action": action.item(), "foe": foe.item(), "value": value_loss.item()}
+    return action + 0.3 * foe + 0.25 * value_loss, {"action": action.item(), "foe": foe.item(), "value": value_loss.item(),
+                                                    "dropped": int((~ok).sum() + (seen & ~legal).sum())}
 
 
 def evaluate(net, data: dict, idx: np.ndarray, batch_size: int = 512) -> dict:
     """Validation: joint loss, exact-pair accuracy (both slots known), per-slot accuracy, opponent top-1 and top-3."""
     net.eval()
-    sums = {"loss": 0.0, "pair": 0, "pair_n": 0, "slot": 0, "slot_n": 0, "foe": 0, "foe3": 0, "foe_n": 0, "value": 0.0}
+    sums = {"loss": 0.0, "dropped": 0, "pair": 0, "pair_n": 0, "slot": 0, "slot_n": 0, "foe": 0, "foe3": 0, "foe_n": 0, "value": 0.0}
     with torch.no_grad():
         for start in range(0, len(idx), batch_size):
             batch = to_batch(data, idx[start:start + batch_size])
             pair_logits, value, foe_logits = net(batch)
             label = batch["label"]
-            sums["loss"] += joint_nll(pair_logits, label).sum().item()
+            nll = joint_nll(pair_logits, label)
+            sums["loss"] += nll[nll < ILLEGAL].sum().item(); sums["dropped"] += int((nll >= ILLEGAL).sum())
             best = pair_logits.argmax(-1)
             guess = torch.stack([best // N_ATOMS, best % N_ATOMS], dim=1)
             both = (label >= 0).all(1)
@@ -128,7 +138,7 @@ def evaluate(net, data: dict, idx: np.ndarray, batch_size: int = 512) -> dict:
             sums["foe3"] += (top == fl[..., None]).any(-1)[seen].sum().item(); sums["foe_n"] += seen.sum().item()
             sums["value"] += ((value - batch["won"].float()) ** 2).sum().item()
     n = len(idx)
-    return {"loss": sums["loss"] / n, "pair": sums["pair"] / max(sums["pair_n"], 1), "slot": sums["slot"] / max(sums["slot_n"], 1),
+    return {"loss": sums["loss"] / max(n - sums["dropped"], 1), "dropped": sums["dropped"], "pair": sums["pair"] / max(sums["pair_n"], 1), "slot": sums["slot"] / max(sums["slot_n"], 1),
             "foe": sums["foe"] / max(sums["foe_n"], 1), "foe3": sums["foe3"] / max(sums["foe_n"], 1), "value_mse": sums["value"] / n}
 
 
@@ -200,7 +210,7 @@ def main():
     for epoch in range(1, args.epochs + 1):
         net.train()
         order = rng.choice(train_idx, size=len(train_idx), p=sample_weight) if sample_weight is not None else rng.permutation(train_idx)
-        start, total, count = time.time(), {"action": 0.0, "foe": 0.0, "value": 0.0}, 0
+        start, total, count, dropped = time.time(), {"action": 0.0, "foe": 0.0, "value": 0.0}, 0, 0
         for i in range(0, len(order), args.batch_size):
             chunk = order[i:i + args.batch_size]
             loss, parts = losses(net, to_batch(data, chunk))
@@ -211,11 +221,13 @@ def main():
             optimiser.step(); schedule.step()
             for k in total:
                 total[k] += parts[k] * len(chunk)
+            dropped += parts["dropped"]
             count += len(chunk)
         m = evaluate(net, data, val_idx)
         print(f"epoch {epoch}: train action {total['action'] / count:.3f} foe {total['foe'] / count:.3f} value {total['value'] / count:.3f} | "
               f"val action loss {m['loss']:.3f}  exact pair {m['pair']:.1%}  per slot {m['slot']:.1%}  "
-              f"opponent top-1 {m['foe']:.1%} top-3 {m['foe3']:.1%}  value mse {m['value_mse']:.3f}  ({time.time() - start:.0f}s)", flush=True)
+              f"opponent top-1 {m['foe']:.1%} top-3 {m['foe3']:.1%}  value mse {m['value_mse']:.3f}  "
+              f"labels dropped: train {dropped}, val {m['dropped']}  ({time.time() - start:.0f}s)", flush=True)
         if pv is not None and len(pv_val):
             net.eval()
             with torch.no_grad():

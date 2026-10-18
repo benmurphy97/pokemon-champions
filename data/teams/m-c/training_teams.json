@@ -1,0 +1,1107 @@
+[
+ {
+  "id": "built-2-062",
+  "species": [
+   "Archaludon",
+   "Charizard",
+   "Feraligatr",
+   "Garchomp",
+   "Golisopod",
+   "Pelipper"
+  ],
+  "text": "Archaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nFeraligatr @ Life Orb\nAbility: Sheer Force\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Liquidation\n- Protect\n- Ice Punch\n- Dragon Dance\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n",
+  "split": "train",
+  "rating": {
+   "wins": 354,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-496",
+  "species": [
+   "Aerodactyl",
+   "Basculegion-F",
+   "Charizard",
+   "Garchomp",
+   "Gholdengo",
+   "Incineroar"
+  ],
+  "text": "Basculegion-F @ Focus Sash\nAbility: Swift Swim\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Shadow Ball\n- Muddy Water\n- Ice Beam\n- Protect\n\nAerodactyl @ Aerodactylite\nAbility: Unnerve\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Rock Slide\n- Tailwind\n- Dual Wingbeat\n- Wide Guard\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "train",
+  "rating": {
+   "wins": 346,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-934",
+  "species": [
+   "Garchomp",
+   "Gholdengo",
+   "Milotic",
+   "Ninetales-Alola",
+   "Staraptor",
+   "Whimsicott"
+  ],
+  "text": "Staraptor @ Staraptite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n\nWhimsicott @ Focus Sash\nAbility: Prankster\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Tailwind\n- Moonblast\n- Encore\n- Protect\n\nMilotic @ Leftovers\nAbility: Competitive\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Scald\n- Ice Beam\n- Icy Wind\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nNinetales-Alola @ Light Clay\nAbility: Snow Warning\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Blizzard\n- Aurora Veil\n- Protect\n- Freeze-Dry\n",
+  "split": "test",
+  "rating": {
+   "wins": 345,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-604",
+  "species": [
+   "Armarouge",
+   "Basculegion-F",
+   "Garchomp",
+   "Gholdengo",
+   "Indeedee-F",
+   "Sneasler"
+  ],
+  "text": "Gholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nArmarouge @ Focus Sash\nAbility: Flash Fire\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Expanding Force\n- Armor Cannon\n- Protect\n- Wide Guard\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nBasculegion-F @ Choice Scarf\nAbility: Swift Swim\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Shadow Ball\n- Muddy Water\n- Ice Beam\n- Hydro Pump\n\nIndeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Follow Me\n- Helping Hand\n- Psychic\n- Trick Room\n",
+  "split": "train",
+  "rating": {
+   "wins": 344,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-589",
+  "species": [
+   "Arboliva",
+   "Floette-Eternal",
+   "Garchomp",
+   "Indeedee-F",
+   "Kingambit",
+   "Staraptor"
+  ],
+  "text": "Arboliva @ Sitrus Berry\nAbility: Seed Sower\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Giga Drain\n- Protect\n- Earth Power\n- Pollen Puff\n\nStaraptor @ Staraptite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n\nFloette-Eternal @ Floettite\nAbility: Flower Veil\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Dazzling Gleam\n- Calm Mind\n- Moonblast\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n\nIndeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Follow Me\n- Helping Hand\n- Psychic\n- Trick Room\n",
+  "split": "train",
+  "rating": {
+   "wins": 339,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-703",
+  "species": [
+   "Alcremie",
+   "Archaludon",
+   "Basculegion",
+   "Garchomp",
+   "Rotom-Heat",
+   "Sneasler"
+  ],
+  "text": "Rotom-Heat @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Overheat\n- Volt Switch\n- Discharge\n- Thunderbolt\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nAlcremie @ Sitrus Berry\nAbility: Aroma Veil\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nBold Nature\n- Decorate\n- Dazzling Gleam\n- Mystical Fire\n- Helping Hand\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nBasculegion @ Life Orb\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Protect\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n",
+  "split": "train",
+  "rating": {
+   "wins": 339,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-459",
+  "species": [
+   "Delphox",
+   "Garchomp",
+   "Golisopod",
+   "Grimmsnarl",
+   "Incineroar",
+   "Rotom-Wash"
+  ],
+  "text": "Garchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nRotom-Wash @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hydro Pump\n- Thunderbolt\n- Volt Switch\n- Electroweb\n\nDelphox @ Life Orb\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Heat Wave\n- Protect\n- Psychic\n- Nasty Plot\n",
+  "split": "test",
+  "rating": {
+   "wins": 335,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-966",
+  "species": [
+   "Archaludon",
+   "Garchomp",
+   "Grimmsnarl",
+   "Overqwil",
+   "Pelipper",
+   "Rotom-Wash"
+  ],
+  "text": "Overqwil @ Leftovers\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Throat Chop\n- Minimize\n- Protect\n- Stockpile\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nArchaludon @ Sitrus Berry\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nRotom-Wash @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hydro Pump\n- Thunderbolt\n- Volt Switch\n- Electroweb\n\nPelipper @ Focus Sash\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n",
+  "split": "train",
+  "rating": {
+   "wins": 332,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-146",
+  "species": [
+   "Charizard",
+   "Garchomp",
+   "Grimmsnarl",
+   "Incineroar",
+   "Kingambit",
+   "Sceptile"
+  ],
+  "text": "Charizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nSceptile @ Sceptilite\nAbility: Overgrow\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Dragon Pulse\n- Earth Power\n- Energy Ball\n- Detect\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n",
+  "split": "train",
+  "rating": {
+   "wins": 327,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-309",
+  "species": [
+   "Charizard",
+   "Garchomp",
+   "Gholdengo",
+   "Incineroar",
+   "Milotic",
+   "Raichu"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nMilotic @ Leftovers\nAbility: Competitive\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Scald\n- Ice Beam\n- Icy Wind\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nRaichu @ Focus Sash\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Fake Out\n- Protect\n- Zap Cannon\n- Focus Blast\n",
+  "split": "train",
+  "rating": {
+   "wins": 326,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-479",
+  "species": [
+   "Floette-Eternal",
+   "Garchomp",
+   "Incineroar",
+   "Pelipper",
+   "Sneasler",
+   "Stunfisk"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nPelipper @ Focus Sash\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nFloette-Eternal @ Floettite\nAbility: Flower Veil\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Dazzling Gleam\n- Calm Mind\n- Moonblast\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nStunfisk @ Leftovers\nAbility: Static\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Earth Power\n- Thunderbolt\n- Protect\n- Sludge Bomb\n",
+  "split": "test",
+  "rating": {
+   "wins": 326,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-711",
+  "species": [
+   "Annihilape",
+   "Garchomp",
+   "Incineroar",
+   "Kingambit",
+   "Sneasler",
+   "Tauros"
+  ],
+  "text": "Garchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nTauros @ Life Orb\nAbility: Sheer Force\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Rock Slide\n- Throat Chop\n- Iron Head\n- Raging Bull\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nAnnihilape @ Choice Scarf\nAbility: Defiant\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Rage Fist\n- Ice Punch\n- Drain Punch\n",
+  "split": "train",
+  "rating": {
+   "wins": 326,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-981",
+  "species": [
+   "Basculegion",
+   "Charizard",
+   "Cinderace",
+   "Garchomp",
+   "Musharna",
+   "Sneasler"
+  ],
+  "text": "Cinderace @ Life Orb\nAbility: Libero\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Pyro Ball\n- High Jump Kick\n- Sucker Punch\n- U-turn\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nMusharna @ Sitrus Berry\nAbility: Telepathy\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Trick Room\n- Expanding Force\n- Ally Switch\n- Psychic\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n",
+  "split": "train",
+  "rating": {
+   "wins": 325,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-385",
+  "species": [
+   "Archaludon",
+   "Farfetch\u2019d",
+   "Garchomp",
+   "Indeedee-F",
+   "Milotic",
+   "Sneasler"
+  ],
+  "text": "Milotic @ Leftovers\nAbility: Competitive\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Scald\n- Ice Beam\n- Icy Wind\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nArchaludon @ Sitrus Berry\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nFarfetch\u2019d @ Leek\nAbility: Inner Focus\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Brave Bird\n- Simple Beam\n- Close Combat\n- Protect\n\nIndeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Follow Me\n- Helping Hand\n- Psychic\n- Trick Room\n",
+  "split": "train",
+  "rating": {
+   "wins": 323,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-789",
+  "species": [
+   "Blastoise",
+   "Charizard",
+   "Garchomp",
+   "Mawile",
+   "Pyroar",
+   "Spiritomb"
+  ],
+  "text": "Blastoise @ Blastoisinite\nAbility: Rain Dish\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Water Spout\n- Protect\n- Shell Smash\n- Dark Pulse\n\nMawile @ Mawilite\nAbility: Hyper Cutter\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Play Rough\n- Sucker Punch\n- Protect\n- Iron Head\n\nSpiritomb @ Roseli Berry\nAbility: Infiltrator\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpD\nSassy Nature\n- Trick Room\n- Snarl\n- Foul Play\n- Will-O-Wisp\n\nCharizard @ Charcoal\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n\nPyroar @ Life Orb\nAbility: Unnerve\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Heat Wave\n- Overheat\n- Scorching Sands\n",
+  "split": "train",
+  "rating": {
+   "wins": 322,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-149",
+  "species": [
+   "Archaludon",
+   "Charizard",
+   "Garchomp",
+   "Manectric",
+   "Pelipper",
+   "Salamence"
+  ],
+  "text": "Manectric @ Manectite\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Snarl\n- Thunderbolt\n- Volt Switch\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nSalamence @ Haban Berry\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Hyper Voice\n- Tailwind\n- Draco Meteor\n",
+  "split": "test",
+  "rating": {
+   "wins": 321,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-001",
+  "species": [
+   "Corviknight",
+   "Garchomp",
+   "Gholdengo",
+   "Indeedee-F",
+   "Kingambit",
+   "Sneasler"
+  ],
+  "text": "Corviknight @ Psychic Seed\nAbility: Mirror Armor\nLevel: 50\nEVs: 32 HP / 1 Atk / 1 Def / 15 SpD / 17 Spe\nCareful Nature\n- Brave Bird\n- Roost\n- Bulk Up\n- Power Trip\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nIndeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Follow Me\n- Helping Hand\n- Psychic\n- Trick Room\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n",
+  "split": "train",
+  "rating": {
+   "wins": 320,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-083",
+  "species": [
+   "Archaludon",
+   "Garchomp",
+   "Golisopod",
+   "Heliolisk",
+   "Rillaboom",
+   "Slowbro-Galar"
+  ],
+  "text": "Rillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nSlowbro-Galar @ Quick Claw\nAbility: Quick Draw\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Shell Side Arm\n- Ice Beam\n- Expanding Force\n- Psychic\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nHeliolisk @ Choice Scarf\nAbility: Dry Skin\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Thunderbolt\n- Volt Switch\n- Hyper Voice\n- Electroweb\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n",
+  "split": "train",
+  "rating": {
+   "wins": 320,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-148",
+  "species": [
+   "Farigiraf",
+   "Froslass",
+   "Garchomp",
+   "Golisopod",
+   "Incineroar",
+   "Sneasler"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nFroslass @ Froslassite\nAbility: Cursed Body\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Blizzard\n- Protect\n- Shadow Ball\n- Aurora Veil\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Earthquake\n- Dragon Claw\n- Stomping Tantrum\n\nFarigiraf @ Colbur Berry\nAbility: Armor Tail\nLevel: 50\nEVs: 27 HP / 20 Def / 19 SpD\nBold Nature\n- Trick Room\n- Helping Hand\n- Psychic\n- Protect\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n",
+  "split": "train",
+  "rating": {
+   "wins": 320,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-793",
+  "species": [
+   "Charizard",
+   "Floette-Eternal",
+   "Garchomp",
+   "Gardevoir",
+   "Hydreigon",
+   "Pinsir"
+  ],
+  "text": "Hydreigon @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Dark Pulse\n- Draco Meteor\n- Earth Power\n- Snarl\n\nGardevoir @ Gardevoirite\nAbility: Trace\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hyper Voice\n- Protect\n- Expanding Force\n- Mystical Fire\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nGarchomp @ Life Orb\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nPinsir @ Quick Claw\nAbility: Hyper Cutter\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Storm Throw\n- Feint\n- Body Slam\n- Detect\n\nFloette-Eternal @ Fairy Feather\nAbility: Flower Veil\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Dazzling Gleam\n- Calm Mind\n- Moonblast\n",
+  "split": "test",
+  "rating": {
+   "wins": 320,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-429",
+  "species": [
+   "Archaludon",
+   "Basculegion-F",
+   "Hydreigon",
+   "Pelipper",
+   "Raichu",
+   "Starmie"
+  ],
+  "text": "Starmie @ Starminite\nAbility: Natural Cure\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Liquidation\n- Protect\n- Ice Spinner\n- Aqua Jet\n\nBasculegion-F @ Focus Sash\nAbility: Swift Swim\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Shadow Ball\n- Muddy Water\n- Ice Beam\n- Protect\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nHydreigon @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Dark Pulse\n- Draco Meteor\n- Earth Power\n- Snarl\n\nRaichu @ Raichunite Y\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Fake Out\n- Protect\n- Zap Cannon\n- Focus Blast\n",
+  "split": "train",
+  "rating": {
+   "wins": 318,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-839",
+  "species": [
+   "Absol",
+   "Basculegion",
+   "Charizard",
+   "Garchomp",
+   "Glimmora",
+   "Politoed"
+  ],
+  "text": "Glimmora @ Life Orb\nAbility: Toxic Debris\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Power Gem\n- Spiky Shield\n- Earth Power\n- Sludge Bomb\n\nPolitoed @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nAbsol @ Scope Lens\nAbility: Justified\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Night Slash\n- Shadow Claw\n- Detect\n- Close Combat\n",
+  "split": "train",
+  "rating": {
+   "wins": 316,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-586",
+  "species": [
+   "Aerodactyl",
+   "Annihilape",
+   "Cinderace",
+   "Garchomp",
+   "Golisopod",
+   "Pelipper"
+  ],
+  "text": "Cinderace @ Life Orb\nAbility: Libero\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Pyro Ball\n- High Jump Kick\n- Sucker Punch\n- U-turn\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nAnnihilape @ Choice Scarf\nAbility: Defiant\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Rage Fist\n- Ice Punch\n- Drain Punch\n\nAerodactyl @ Focus Sash\nAbility: Unnerve\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Rock Slide\n- Tailwind\n- Dual Wingbeat\n- Wide Guard\n",
+  "split": "train",
+  "rating": {
+   "wins": 315,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-204",
+  "species": [
+   "Garchomp",
+   "Indeedee-F",
+   "Kingambit",
+   "Raichu",
+   "Sneasler",
+   "Staraptor"
+  ],
+  "text": "Sneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nRaichu @ Raichunite Y\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Fake Out\n- Protect\n- Zap Cannon\n- Focus Blast\n\nStaraptor @ Choice Scarf\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Dual Wingbeat\n- Final Gambit\n\nIndeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Follow Me\n- Helping Hand\n- Psychic\n- Trick Room\n",
+  "split": "test",
+  "rating": {
+   "wins": 313,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-047",
+  "species": [
+   "Archaludon",
+   "Azumarill",
+   "Charizard",
+   "Garchomp",
+   "Swampert",
+   "Typhlosion-Hisui"
+  ],
+  "text": "Typhlosion-Hisui @ Choice Scarf\nAbility: Frisk\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Eruption\n- Shadow Ball\n- Heat Wave\n- Focus Blast\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nAzumarill @ Sitrus Berry\nAbility: Huge Power\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Play Rough\n- Aqua Jet\n- Protect\n- Belly Drum\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nSwampert @ Swampertite\nAbility: Torrent\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Wave Crash\n- Ice Punch\n- Earthquake\n\nCharizard @ Charcoal\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n",
+  "split": "train",
+  "rating": {
+   "wins": 311,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-437",
+  "species": [
+   "Archaludon",
+   "Garchomp",
+   "Gengar",
+   "Incineroar",
+   "Rotom-Wash",
+   "Whimsicott"
+  ],
+  "text": "Rotom-Wash @ Sitrus Berry\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hydro Pump\n- Will-O-Wisp\n- Thunderbolt\n- Protect\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nGengar @ Gengarite\nAbility: Cursed Body\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Shadow Ball\n- Protect\n- Sludge Bomb\n- Perish Song\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nWhimsicott @ Focus Sash\nAbility: Prankster\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Tailwind\n- Moonblast\n- Encore\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 311,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-490",
+  "species": [
+   "Farigiraf",
+   "Garchomp",
+   "Gholdengo",
+   "Hydreigon",
+   "Incineroar",
+   "Sinistcha"
+  ],
+  "text": "Gholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nSinistcha @ Sitrus Berry\nAbility: Hospitality\nLevel: 50\nEVs: 32 HP / 14 Def / 20 SpD\nBold Nature\n- Matcha Gotcha\n- Rage Powder\n- Trick Room\n- Protect\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nHydreigon @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Dark Pulse\n- Draco Meteor\n- Earth Power\n- Snarl\n\nFarigiraf @ Colbur Berry\nAbility: Armor Tail\nLevel: 50\nEVs: 27 HP / 20 Def / 19 SpD\nBold Nature\n- Trick Room\n- Helping Hand\n- Psychic\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 311,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-733",
+  "species": [
+   "Charizard",
+   "Garchomp",
+   "Hippowdon",
+   "Incineroar",
+   "Kingambit",
+   "Toxtricity"
+  ],
+  "text": "Toxtricity @ Life Orb\nAbility: Punk Rock\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Overdrive\n- Sludge Bomb\n- Protect\n- Boomburst\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nHippowdon @ Leftovers\nAbility: Sand Stream\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpD\nCareful Nature\n- Yawn\n- High Horsepower\n- Protect\n- Stone Edge\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 311,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-225",
+  "species": [
+   "Archaludon",
+   "Garchomp",
+   "Grimmsnarl",
+   "Pelipper",
+   "Reuniclus",
+   "Runerigus"
+  ],
+  "text": "Grimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nRunerigus @ Sitrus Berry\nAbility: Wandering Spirit\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Trick Room\n- Ally Switch\n- Will-O-Wisp\n- Body Press\n\nReuniclus @ Life Orb\nAbility: Magic Guard\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Trick Room\n- Expanding Force\n- Protect\n- Focus Blast\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Rock Slide\n- Earthquake\n- Dragon Claw\n\nPelipper @ Focus Sash\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n",
+  "split": "test",
+  "rating": {
+   "wins": 310,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-531",
+  "species": [
+   "Gholdengo",
+   "Milotic",
+   "Rotom-Wash",
+   "Sneasler",
+   "Tyranitar",
+   "Volcarona"
+  ],
+  "text": "Volcarona @ Rocky Helmet\nAbility: Flame Body\nLevel: 50\nEVs: 13 HP / 30 Def / 23 Spe\nTimid Nature\n- Rage Powder\n- Struggle Bug\n- Tailwind\n- Protect\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nMilotic @ Leftovers\nAbility: Competitive\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Scald\n- Ice Beam\n- Icy Wind\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nRotom-Wash @ Sitrus Berry\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hydro Pump\n- Will-O-Wisp\n- Thunderbolt\n- Protect\n\nTyranitar @ Tyranitarite\nAbility: Sand Stream\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Knock Off\n- Protect\n- Low Kick\n",
+  "split": "train",
+  "rating": {
+   "wins": 310,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-463",
+  "species": [
+   "Archaludon",
+   "Golisopod",
+   "Kingambit",
+   "Passimian",
+   "Pelipper",
+   "Sneasler"
+  ],
+  "text": "Golisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nPassimian @ Choice Scarf\nAbility: Defiant\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Knock Off\n- Rock Slide\n- Drain Punch\n",
+  "split": "train",
+  "rating": {
+   "wins": 309,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-398",
+  "species": [
+   "Archaludon",
+   "Farigiraf",
+   "Goodra-Hisui",
+   "Hippowdon",
+   "Incineroar",
+   "Sneasler"
+  ],
+  "text": "Goodra-Hisui @ Leftovers\nAbility: Shell Armor\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nQuiet Nature\n- Body Press\n- Shelter\n- Protect\n- Flash Cannon\n\nArchaludon @ Sitrus Berry\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nHippowdon @ Rocky Helmet\nAbility: Sand Stream\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpD\nCareful Nature\n- Yawn\n- High Horsepower\n- Protect\n- Stone Edge\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nFarigiraf @ Colbur Berry\nAbility: Armor Tail\nLevel: 50\nEVs: 27 HP / 20 Def / 19 SpD\nBold Nature\n- Trick Room\n- Helping Hand\n- Psychic\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 301,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-542",
+  "species": [
+   "Blastoise",
+   "Farigiraf",
+   "Incineroar",
+   "Rillaboom",
+   "Sableye",
+   "Sneasler"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nFarigiraf @ Colbur Berry\nAbility: Armor Tail\nLevel: 50\nEVs: 27 HP / 20 Def / 19 SpD\nBold Nature\n- Trick Room\n- Helping Hand\n- Psychic\n- Protect\n\nSableye @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 9 Def / 25 SpD\nCareful Nature\n- Light Screen\n- Encore\n- Rain Dance\n- Reflect\n\nBlastoise @ Blastoisinite\nAbility: Rain Dish\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Water Spout\n- Protect\n- Shell Smash\n- Dark Pulse\n",
+  "split": "test",
+  "rating": {
+   "wins": 295,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-115",
+  "species": [
+   "Archaludon",
+   "Gengar",
+   "Grimmsnarl",
+   "Pelipper",
+   "Politoed",
+   "Venusaur"
+  ],
+  "text": "Venusaur @ Focus Sash\nAbility: Chlorophyll\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Sludge Bomb\n- Protect\n- Sleep Powder\n- Leaf Storm\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nGengar @ Gengarite\nAbility: Cursed Body\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Shadow Ball\n- Protect\n- Sludge Bomb\n- Perish Song\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nPolitoed @ Mystic Water\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n",
+  "split": "train",
+  "rating": {
+   "wins": 293,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-403",
+  "species": [
+   "Golisopod",
+   "Incineroar",
+   "Oranguru",
+   "Slurpuff",
+   "Sneasler",
+   "Tyranitar"
+  ],
+  "text": "Oranguru @ Colbur Berry\nAbility: Inner Focus\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Trick Room\n- Instruct\n- Protect\n- Psychic\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nTyranitar @ Tyranitarite\nAbility: Sand Stream\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Knock Off\n- Protect\n- Low Kick\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nSlurpuff @ Psychic Seed\nAbility: Unburden\nLevel: 50\nEVs: 32 SpA / 2 SpD / 32 Spe\nTimid Nature\n- After You\n- Dazzling Gleam\n- Flamethrower\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 293,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-913",
+  "species": [
+   "Arcanine-Hisui",
+   "Incineroar",
+   "Raichu",
+   "Rillaboom",
+   "Rotom",
+   "Sneasler"
+  ],
+  "text": "Raichu @ Raichunite Y\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Fake Out\n- Protect\n- Zap Cannon\n- Focus Blast\n\nArcanine-Hisui @ Focus Sash\nAbility: Rock Head\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Flare Blitz\n- Head Smash\n- Protect\n- Extreme Speed\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nRotom @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Shadow Ball\n- Discharge\n- Volt Switch\n- Electroweb\n",
+  "split": "train",
+  "rating": {
+   "wins": 292,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-110",
+  "species": [
+   "Chandelure",
+   "Charizard",
+   "Kingambit",
+   "Sneasler",
+   "Staraptor",
+   "Whimsicott"
+  ],
+  "text": "Sneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nWhimsicott @ Focus Sash\nAbility: Prankster\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Tailwind\n- Moonblast\n- Encore\n- Protect\n\nChandelure @ Chandelurite\nAbility: Flash Fire\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Shadow Ball\n- Heat Wave\n- Protect\n- Trick Room\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nStaraptor @ Staraptite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n\nCharizard @ Charcoal\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n",
+  "split": "test",
+  "rating": {
+   "wins": 291,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-424",
+  "species": [
+   "Dragapult",
+   "Farigiraf",
+   "Kingambit",
+   "Sneasler",
+   "Torkoal",
+   "Vanilluxe"
+  ],
+  "text": "Vanilluxe @ Choice Scarf\nAbility: Snow Warning\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Blizzard\n- Freeze-Dry\n- Ice Shard\n- Icy Wind\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nTorkoal @ Charcoal\nAbility: Drought\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Eruption\n- Protect\n- Weather Ball\n- Earth Power\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nDragapult @ Life Orb\nAbility: Clear Body\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Draco Meteor\n- Shadow Ball\n- Will-O-Wisp\n\nFarigiraf @ Sitrus Berry\nAbility: Armor Tail\nLevel: 50\nEVs: 27 HP / 20 Def / 19 SpD\nBold Nature\n- Trick Room\n- Helping Hand\n- Psychic\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 290,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-008",
+  "species": [
+   "Charizard",
+   "Clawitzer",
+   "Kingambit",
+   "Meowscarada",
+   "Salamence",
+   "Sneasler"
+  ],
+  "text": "Salamence @ Salamencite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Hyper Voice\n- Tailwind\n- Draco Meteor\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nClawitzer @ Life Orb\nAbility: Mega Launcher\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Aura Sphere\n- Water Pulse\n- Dark Pulse\n- Protect\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nMeowscarada @ Choice Scarf\nAbility: Protean\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Flower Trick\n- Triple Axel\n- Knock Off\n- U-turn\n",
+  "split": "train",
+  "rating": {
+   "wins": 289,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-371",
+  "species": [
+   "Dragonite",
+   "Gliscor",
+   "Golisopod",
+   "Kingambit",
+   "Sneasler",
+   "Zoroark-Hisui"
+  ],
+  "text": "Sneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nZoroark-Hisui @ Focus Sash\nAbility: Illusion\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Icy Wind\n- Bitter Malice\n- Hyper Voice\n- Shadow Ball\n\nGliscor @ Psychic Seed\nAbility: Hyper Cutter\nLevel: 50\nEVs: 15 HP / 25 Atk / 26 Spe\nAdamant Nature\n- High Horsepower\n- Tailwind\n- Protect\n- Acrobatics\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nDragonite @ Dragoninite\nAbility: Multiscale\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Dragon Pulse\n- Tailwind\n- Heat Wave\n",
+  "split": "train",
+  "rating": {
+   "wins": 289,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-334",
+  "species": [
+   "Barbaracle",
+   "Charizard",
+   "Florges",
+   "Mamoswine",
+   "Musharna",
+   "Venusaur"
+  ],
+  "text": "Musharna @ Sitrus Berry\nAbility: Telepathy\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Trick Room\n- Expanding Force\n- Ally Switch\n- Psychic\n\nVenusaur @ Focus Sash\nAbility: Chlorophyll\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Sludge Bomb\n- Protect\n- Sleep Powder\n- Leaf Storm\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nMamoswine @ Life Orb\nAbility: Oblivious\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Ice Shard\n- High Horsepower\n- Protect\n- Icicle Crash\n\nBarbaracle @ Barbaracite\nAbility: Tough Claws\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Protect\n- Close Combat\n- Shell Smash\n\nFlorges @ Leftovers\nAbility: Flower Veil\nLevel: 50\nEVs: 2 Def / 32 SpA / 32 SpD\nBold Nature\n- Moonblast\n- Pollen Puff\n- Protect\n- Dazzling Gleam\n",
+  "split": "train",
+  "rating": {
+   "wins": 285,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-021",
+  "species": [
+   "Arcanine-Hisui",
+   "Chesnaught",
+   "Excadrill",
+   "Mimikyu",
+   "Scizor",
+   "Venusaur"
+  ],
+  "text": "Mimikyu @ Life Orb\nAbility: Disguise\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Def\nAdamant Nature\n- Play Rough\n- Shadow Sneak\n- Trick Room\n- Shadow Claw\n\nExcadrill @ Focus Sash\nAbility: Sand Rush\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Iron Head\n- Protect\n- High Horsepower\n- Rock Slide\n\nChesnaught @ Chesnaughtite\nAbility: Bulletproof\nLevel: 50\nEVs: 28 HP / 4 Atk / 15 Def / 19 SpD\nAdamant Nature\n- Spiky Shield\n- Drain Punch\n- Belly Drum\n- Grassy Glide\n\nArcanine-Hisui @ Choice Scarf\nAbility: Rock Head\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Flare Blitz\n- Head Smash\n- Extreme Speed\n- Rock Slide\n\nScizor @ Scizorite\nAbility: Technician\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Bullet Punch\n- Bug Bite\n- Protect\n- Close Combat\n\nVenusaur @ Wide Lens\nAbility: Chlorophyll\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Sludge Bomb\n- Protect\n- Sleep Powder\n- Leaf Storm\n",
+  "split": "test",
+  "rating": {
+   "wins": 284,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-051",
+  "species": [
+   "Armarouge",
+   "Basculegion",
+   "Cinderace",
+   "Grapploct",
+   "Ninetales-Alola",
+   "Rillaboom"
+  ],
+  "text": "Grapploct @ Life Orb\nAbility: Technician\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Storm Throw\n- Detect\n- Mach Punch\n- Stomping Tantrum\n\nArmarouge @ Focus Sash\nAbility: Flash Fire\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Expanding Force\n- Armor Cannon\n- Protect\n- Wide Guard\n\nNinetales-Alola @ Light Clay\nAbility: Snow Warning\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Blizzard\n- Aurora Veil\n- Protect\n- Freeze-Dry\n\nCinderace @ Wide Lens\nAbility: Libero\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Pyro Ball\n- High Jump Kick\n- Sucker Punch\n- U-turn\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n",
+  "split": "train",
+  "rating": {
+   "wins": 282,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-127",
+  "species": [
+   "Archaludon",
+   "Gholdengo",
+   "Incineroar",
+   "Musharna",
+   "Salamence",
+   "Sneasler"
+  ],
+  "text": "Salamence @ Salamencite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Hyper Voice\n- Tailwind\n- Draco Meteor\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nMusharna @ Sitrus Berry\nAbility: Telepathy\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Trick Room\n- Expanding Force\n- Ally Switch\n- Psychic\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "train",
+  "rating": {
+   "wins": 282,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-356",
+  "species": [
+   "Basculegion",
+   "Charizard",
+   "Incineroar",
+   "Pyroar",
+   "Staraptor",
+   "Steelix"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nPyroar @ Pyroarite\nAbility: Unnerve\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Heat Wave\n- Overheat\n- Scorching Sands\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nSteelix @ Leftovers\nAbility: Sturdy\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Heavy Slam\n- Wide Guard\n- High Horsepower\n- Protect\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nStaraptor @ Sharp Beak\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n",
+  "split": "train",
+  "rating": {
+   "wins": 281,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-565",
+  "species": [
+   "Alakazam",
+   "Basculegion",
+   "Ceruledge",
+   "Excadrill",
+   "Incineroar",
+   "Torkoal"
+  ],
+  "text": "Excadrill @ Focus Sash\nAbility: Sand Rush\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Iron Head\n- Protect\n- High Horsepower\n- Rock Slide\n\nCeruledge @ Grassy Seed\nAbility: Flash Fire\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Bitter Blade\n- Shadow Sneak\n- Protect\n- Swords Dance\n\nAlakazam @ Alakazite\nAbility: Inner Focus\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Expanding Force\n- Protect\n- Focus Blast\n- Shadow Ball\n\nTorkoal @ Charcoal\nAbility: Drought\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Eruption\n- Protect\n- Weather Ball\n- Earth Power\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n",
+  "split": "test",
+  "rating": {
+   "wins": 281,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-217",
+  "species": [
+   "Charizard",
+   "Incineroar",
+   "Rillaboom",
+   "Rotom-Heat",
+   "Staraptor",
+   "Tyranitar"
+  ],
+  "text": "Tyranitar @ Tyranitarite\nAbility: Sand Stream\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Knock Off\n- Protect\n- Low Kick\n\nStaraptor @ Staraptite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nRotom-Heat @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Overheat\n- Volt Switch\n- Discharge\n- Thunderbolt\n\nCharizard @ Charcoal\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "train",
+  "rating": {
+   "wins": 280,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-728",
+  "species": [
+   "Archaludon",
+   "Basculegion",
+   "Grimmsnarl",
+   "Rillaboom",
+   "Salamence",
+   "Sylveon"
+  ],
+  "text": "Basculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nSalamence @ Salamencite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Hyper Voice\n- Tailwind\n- Draco Meteor\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n\nSylveon @ Fairy Feather\nAbility: Pixilate\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Hyper Voice\n- Detect\n- Hyper Beam\n- Quick Attack\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n",
+  "split": "train",
+  "rating": {
+   "wins": 280,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-098",
+  "species": [
+   "Archaludon",
+   "Charizard",
+   "Golisopod",
+   "Incineroar",
+   "Rhyperior",
+   "Swampert"
+  ],
+  "text": "Rhyperior @ Life Orb\nAbility: Solid Rock\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Rock Slide\n- Protect\n- High Horsepower\n- Ice Punch\n\nGolisopod @ Golisopite\nAbility: Emergency Exit\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Leech Life\n- Iron Head\n- Protect\n- Sucker Punch\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nSwampert @ Sitrus Berry\nAbility: Torrent\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Wave Crash\n- Ice Punch\n- Earthquake\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "train",
+  "rating": {
+   "wins": 279,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-037",
+  "species": [
+   "Archaludon",
+   "Basculegion-F",
+   "Charizard",
+   "Incineroar",
+   "Rillaboom",
+   "Sneasler"
+  ],
+  "text": "Sneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nBasculegion-F @ Focus Sash\nAbility: Swift Swim\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Shadow Ball\n- Muddy Water\n- Ice Beam\n- Protect\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "test",
+  "rating": {
+   "wins": 278,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-133",
+  "species": [
+   "Basculegion",
+   "Grimmsnarl",
+   "Incineroar",
+   "Rillaboom",
+   "Rotom-Wash",
+   "Sneasler"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nRotom-Wash @ Leftovers\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hydro Pump\n- Will-O-Wisp\n- Thunderbolt\n- Protect\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nGrimmsnarl @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 19 Def / 15 SpD\nCareful Nature\n- Light Screen\n- Parting Shot\n- Reflect\n- Spirit Break\n",
+  "split": "train",
+  "rating": {
+   "wins": 278,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-428",
+  "species": [
+   "Archaludon",
+   "Charizard",
+   "Gengar",
+   "Incineroar",
+   "Lopunny",
+   "Rillaboom"
+  ],
+  "text": "Gengar @ Gengarite\nAbility: Cursed Body\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Shadow Ball\n- Protect\n- Sludge Bomb\n- Perish Song\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nLopunny @ Chople Berry\nAbility: Limber\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Fake Out\n- Close Combat\n- Triple Axel\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 278,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-903",
+  "species": [
+   "Aegislash",
+   "Incineroar",
+   "Rillaboom",
+   "Slowbro-Galar",
+   "Sneasler",
+   "Torkoal"
+  ],
+  "text": "Slowbro-Galar @ Quick Claw\nAbility: Quick Draw\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Shell Side Arm\n- Ice Beam\n- Expanding Force\n- Psychic\n\nAegislash @ Leftovers\nAbility: Stance Change\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Def\nAdamant Nature\n- King's Shield\n- Iron Head\n- Poltergeist\n- Wide Guard\n\nTorkoal @ Charcoal\nAbility: Drought\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 SpD\nQuiet Nature\n- Eruption\n- Protect\n- Weather Ball\n- Earth Power\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n",
+  "split": "train",
+  "rating": {
+   "wins": 273,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-879",
+  "species": [
+   "Archaludon",
+   "Eelektross",
+   "Farigiraf",
+   "Gholdengo",
+   "Rotom-Heat",
+   "Salamence"
+  ],
+  "text": "Farigiraf @ Sitrus Berry\nAbility: Armor Tail\nLevel: 50\nEVs: 27 HP / 20 Def / 19 SpD\nBold Nature\n- Trick Room\n- Helping Hand\n- Psychic\n- Protect\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nRotom-Heat @ Choice Scarf\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Overheat\n- Volt Switch\n- Discharge\n- Thunderbolt\n\nSalamence @ Salamencite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Hyper Voice\n- Tailwind\n- Draco Meteor\n\nEelektross @ Eelektrossite\nAbility: Levitate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Flamethrower\n- Thunderbolt\n- Giga Drain\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n",
+  "split": "train",
+  "rating": {
+   "wins": 269,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-061",
+  "species": [
+   "Archaludon",
+   "Bastiodon",
+   "Gholdengo",
+   "Incineroar",
+   "Oranguru",
+   "Sneasler"
+  ],
+  "text": "Bastiodon @ Leftovers\nAbility: Soundproof\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpD\nSassy Nature\n- Body Press\n- Wide Guard\n- Iron Defense\n- Foul Play\n\nArchaludon @ Sitrus Berry\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nGholdengo @ Life Orb\nAbility: Good as Gold\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Make It Rain\n- Shadow Ball\n- Protect\n- Nasty Plot\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nOranguru @ Colbur Berry\nAbility: Inner Focus\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Trick Room\n- Instruct\n- Protect\n- Psychic\n",
+  "split": "test",
+  "rating": {
+   "wins": 266,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-307",
+  "species": [
+   "Archaludon",
+   "Charizard",
+   "Incineroar",
+   "Mamoswine",
+   "Raichu",
+   "Rillaboom"
+  ],
+  "text": "Incineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nMamoswine @ Focus Sash\nAbility: Oblivious\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Ice Shard\n- High Horsepower\n- Protect\n- Icicle Crash\n\nRaichu @ Raichunite Y\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Fake Out\n- Protect\n- Zap Cannon\n- Focus Blast\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n",
+  "split": "train",
+  "rating": {
+   "wins": 266,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-101",
+  "species": [
+   "Arcanine-Hisui",
+   "Chandelure",
+   "Incineroar",
+   "Rillaboom",
+   "Sneasler",
+   "Whimsicott"
+  ],
+  "text": "Chandelure @ Chandelurite\nAbility: Flash Fire\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Shadow Ball\n- Heat Wave\n- Protect\n- Trick Room\n\nWhimsicott @ Focus Sash\nAbility: Prankster\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Tailwind\n- Moonblast\n- Encore\n- Protect\n\nArcanine-Hisui @ Choice Scarf\nAbility: Rock Head\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Flare Blitz\n- Head Smash\n- Extreme Speed\n- Rock Slide\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n",
+  "split": "train",
+  "rating": {
+   "wins": 264,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-670",
+  "species": [
+   "Archaludon",
+   "Charizard",
+   "Kingambit",
+   "Primarina",
+   "Salamence",
+   "Tyranitar"
+  ],
+  "text": "Charizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nSalamence @ Salamencite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Protect\n- Hyper Voice\n- Tailwind\n- Draco Meteor\n\nArchaludon @ Leftovers\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nTyranitar @ Choice Scarf\nAbility: Sand Stream\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Rock Slide\n- Knock Off\n- Low Kick\n- Ice Punch\n\nPrimarina @ Life Orb\nAbility: Liquid Voice\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Hyper Voice\n- Protect\n- Moonblast\n- Calm Mind\n",
+  "split": "train",
+  "rating": {
+   "wins": 264,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-192",
+  "species": [
+   "Basculegion",
+   "Charizard",
+   "Conkeldurr",
+   "Indeedee-F",
+   "Lycanroc-Dusk",
+   "Meowstic-F"
+  ],
+  "text": "Meowstic-F @ Meowsticite\nAbility: Competitive\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Expanding Force\n- Protect\n- Thunderbolt\n- Fake Out\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nConkeldurr @ Life Orb\nAbility: Iron Fist\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nBrave Nature\n- Drain Punch\n- Ice Punch\n- Mach Punch\n- Thunder Punch\n\nLycanroc-Dusk @ Focus Sash\nAbility: Tough Claws\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Accelerock\n- Protect\n- Close Combat\n- Rock Slide\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nIndeedee-F @ Rocky Helmet\nAbility: Psychic Surge\nLevel: 50\nEVs: 32 HP / 32 Def / 2 SpD\nRelaxed Nature\n- Follow Me\n- Helping Hand\n- Psychic\n- Trick Room\n",
+  "split": "test",
+  "rating": {
+   "wins": 262,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-317",
+  "species": [
+   "Basculegion",
+   "Dragalge",
+   "Kingambit",
+   "Klefki",
+   "Milotic",
+   "Raichu"
+  ],
+  "text": "Dragalge @ Dragalgite\nAbility: Adaptability\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nQuiet Nature\n- Protect\n- Sludge Bomb\n- Draco Meteor\n- Dragon Pulse\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n\nKlefki @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 21 Def / 13 SpD\nBold Nature\n- Light Screen\n- Reflect\n- Rain Dance\n- Dazzling Gleam\n\nRaichu @ Raichunite Y\nAbility: Lightning Rod\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Fake Out\n- Protect\n- Zap Cannon\n- Focus Blast\n\nMilotic @ Leftovers\nAbility: Competitive\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Scald\n- Ice Beam\n- Icy Wind\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n",
+  "split": "train",
+  "rating": {
+   "wins": 262,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-916",
+  "species": [
+   "Arcanine-Hisui",
+   "Corviknight",
+   "Incineroar",
+   "Rillaboom",
+   "Sneasler",
+   "Typhlosion-Hisui"
+  ],
+  "text": "Rillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nArcanine-Hisui @ Focus Sash\nAbility: Rock Head\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Flare Blitz\n- Head Smash\n- Protect\n- Extreme Speed\n\nTyphlosion-Hisui @ Choice Scarf\nAbility: Frisk\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Eruption\n- Shadow Ball\n- Heat Wave\n- Focus Blast\n\nCorviknight @ Psychic Seed\nAbility: Mirror Armor\nLevel: 50\nEVs: 32 HP / 1 Atk / 1 Def / 15 SpD / 17 Spe\nCareful Nature\n- Brave Bird\n- Roost\n- Bulk Up\n- Power Trip\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n",
+  "split": "train",
+  "rating": {
+   "wins": 261,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-222",
+  "species": [
+   "Charizard",
+   "Excadrill",
+   "Incineroar",
+   "Milotic",
+   "Rillaboom",
+   "Staraptor"
+  ],
+  "text": "Charizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nStaraptor @ Staraptite\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Close Combat\n- Brave Bird\n- Protect\n- Roost\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nLevel: 50\nEVs: 30 HP / 20 Def / 14 SpD / 2 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Parting Shot\n- Darkest Lariat\n\nExcadrill @ Focus Sash\nAbility: Sand Rush\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Iron Head\n- Protect\n- High Horsepower\n- Rock Slide\n\nMilotic @ Leftovers\nAbility: Competitive\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Scald\n- Ice Beam\n- Icy Wind\n",
+  "split": "train",
+  "rating": {
+   "wins": 260,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-362",
+  "species": [
+   "Basculegion",
+   "Charizard",
+   "Cinderace",
+   "Gardevoir",
+   "Spiritomb",
+   "Zoroark-Hisui"
+  ],
+  "text": "Gardevoir @ Gardevoirite\nAbility: Trace\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hyper Voice\n- Protect\n- Expanding Force\n- Mystical Fire\n\nSpiritomb @ Roseli Berry\nAbility: Infiltrator\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpD\nSassy Nature\n- Trick Room\n- Snarl\n- Foul Play\n- Will-O-Wisp\n\nZoroark-Hisui @ Focus Sash\nAbility: Illusion\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nTimid Nature\n- Icy Wind\n- Bitter Malice\n- Hyper Voice\n- Shadow Ball\n\nCinderace @ Life Orb\nAbility: Libero\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nJolly Nature\n- Pyro Ball\n- High Jump Kick\n- Sucker Punch\n- U-turn\n\nCharizard @ Charizardite Y\nAbility: Blaze\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Protect\n- Heat Wave\n- Weather Ball\n- Solar Beam\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n",
+  "split": "test",
+  "rating": {
+   "wins": 259,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-394",
+  "species": [
+   "Pelipper",
+   "Politoed",
+   "Rillaboom",
+   "Sableye",
+   "Sneasler",
+   "Swampert"
+  ],
+  "text": "Pelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nSwampert @ Swampertite\nAbility: Torrent\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Protect\n- Wave Crash\n- Ice Punch\n- Earthquake\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nPolitoed @ Mystic Water\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nSableye @ Light Clay\nAbility: Prankster\nLevel: 50\nEVs: 32 HP / 9 Def / 25 SpD\nCareful Nature\n- Light Screen\n- Encore\n- Rain Dance\n- Reflect\n",
+  "split": "train",
+  "rating": {
+   "wins": 258,
+   "games": 480
+  }
+ },
+ {
+  "id": "built-2-955",
+  "species": [
+   "Basculegion",
+   "Kingambit",
+   "Lucario",
+   "Pelipper",
+   "Rillaboom",
+   "Sneasler"
+  ],
+  "text": "Rillaboom @ Miracle Seed\nAbility: Grassy Surge\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 Spe\nAdamant Nature\n- Grassy Glide\n- Fake Out\n- Wood Hammer\n- High Horsepower\n\nKingambit @ Chople Berry\nAbility: Defiant\nLevel: 50\nEVs: 32 HP / 32 Atk / 2 SpD\nAdamant Nature\n- Kowtow Cleave\n- Sucker Punch\n- Iron Head\n- Protect\n\nPelipper @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Hurricane\n- Weather Ball\n- Tailwind\n- Wide Guard\n\nSneasler @ White Herb\nAbility: Unburden\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Close Combat\n- Dire Claw\n- Protect\n- Fake Out\n\nLucario @ Lucarionite Z\nAbility: Inner Focus\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Aura Sphere\n- Flash Cannon\n- Detect\n- Protect\n\nBasculegion @ Choice Scarf\nAbility: Adaptability\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Last Respects\n- Wave Crash\n- Aqua Jet\n- Flip Turn\n",
+  "split": "train",
+  "rating": {
+   "wins": 258,
+   "games": 480
+  }
+ }
+]

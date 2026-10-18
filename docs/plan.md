@@ -48,6 +48,18 @@ Decided:
 Order of work now: 6 speed, 7 pick the 50 (+15 held out), 8 50-team run (pilot, then full), 9 search at play
 time, 10 learn preview, 11 team discovery.
 
+## Update 2026-10-18 (later still): teams built from in-game usage
+
+Decided: the 50 training teams are built from in-game Ranked Battle usage (championsbattledata.com),
+not picked from tournaments. teams/build.py drew 1,000 teams; all were rated against the fixed gauntlet
+(greedy-blind on both sides, 120 games each), the best 300 re-rated (480 games each), and the top 65 kept,
+with no Pokémon on more than 28 of them. Every 13th-ish team by rank goes to the test split, so test teams
+are as strong as training teams. Result: data/teams/m-c/training_teams.json, 50 train (mean 62.4%, range
+53.8-73.8%) and 15 test (mean 62.3%); 106 species, 23 with Trick Room, 23 with a weather setter. For
+comparison: all built teams average 46.7%, all tournament teams 50.3%, the best 50 tournament teams about 67-70%.
+
+Flow from here: imitation start -> self-play on the 50 -> evaluate as we go -> swap out teams that keep losing.
+
 ## Gates (original wording, superseded above for gate 2)
 
 1. **Playable:** wins at least 90% against the random player (400 paired games, any pair of teams).

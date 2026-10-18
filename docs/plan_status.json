@@ -61,14 +61,14 @@
     },
     {
       "n": 7,
-      "name": "Pick 50 strong training teams with real spreads (+15 held out)",
-      "status": "doing",
-      "note": "Good tournament teams ranked by gauntlet rating, spread across styles; Limitless (estimated spreads) only fills gaps."
+      "name": "Pick 50 training teams (+15 held out), built from in-game usage",
+      "status": "done",
+      "note": "Built 1,000 from in-game usage, rated all, re-rated the best 300, kept 65 (no Pok\u00e9mon on more than 28). 50 train (62.4% vs gauntlet), 15 test (62.3%). data/teams/m-c/training_teams.json."
     },
     {
       "n": 8,
       "name": "50-team run: model flies all 50 against the 50, greedy-blind pilots the opponent (pilot, then full)",
-      "status": "todo",
+      "status": "doing",
       "note": "Batch updates, reward = result + health margin, idle penalty, repeat-Protect block."
     },
     {

@@ -58,11 +58,10 @@ function Option({ option, chosen, max }) {
 function Plans({ plans, thoughts }) {
   if (!plans || !plans.length) return null
   const max = Math.max(...plans.map((p) => p.prob), 0.01)
-  const [t0, t1] = thoughts
-  const picked = (p) => t0 && t1 && (p.first.includes(t0.chosen) || p.first === t0.chosen) && p.second.includes(t1.chosen)
+  const picked = (p) => p.chosen
   return (
     <div className="plans">
-      <h3>Joint plans <small>(both Pokémon choose together: chance of the first × chance of the second given the first)</small></h3>
+      <h3>Joint plans <small>(both Pokémon are scored as one pair: softmax over every legal pair)</small></h3>
       {plans.map((p, i) => (
         <div key={i} className={`option ${picked(p) ? 'chosen' : ''}`}>
           <div className="plan-row">
@@ -85,11 +84,18 @@ function Thought({ t }) {
         <strong>{t.kind === 'replacement' ? 'Choosing a replacement' : `${t.actor} (slot ${'AB'[t.slot]})`}</strong>
         <span className="win" title="The value head's estimate of our chance to win from here">win chance {pct(t.winChance)}<i style={{ width: pct(t.winChance) }} /></span>
       </div>
-      {t.givenPartner && <p className="note given">Scored knowing its partner chose: <strong>{t.givenPartner}</strong></p>}
+      <p className="note">Bars: this Pokémon's share of the joint probability (summed over its partner's options).</p>
       <p className="note">Foes on the field: {t.foes.filter(Boolean).join(' and ') || 'none'}. Scores are the policy's probabilities over legal actions{damaging ? '; click a move for the damage numbers it was shown' : ''}.</p>
       {t.options.map((o) => <Option key={o.label} option={o} chosen={o.label === t.chosen} max={max} />)}
       {t.target && (
         <p className="target">Target: {t.target.options.map((o) => `${o.foe} ${pct(o.prob)}`).join(' · ')} → <strong>{t.target.chosen ?? 'n/a'}</strong></p>
+      )}
+      {t.foePrediction && t.foePrediction.length > 0 && (
+        <ul className="threat">
+          {t.foePrediction.map((f) => (
+            <li key={f.foe}>Expects {f.foe}: {f.top.map((x) => `${x.label} ${pct(x.prob)}`).join(' · ')}</li>
+          ))}
+        </ul>
       )}
       {t.threat.length > 0 && (
         <details>

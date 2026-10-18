@@ -106,8 +106,9 @@ class Viewer(NeuralAgent):
         if request.get("teamPreview"):
             return super().decide(state, side, request, record)
         thoughts = []
-        plans = self.plan(state, side, request)
+        self.last_plans = []
         choice = super().decide(state, side, request, record, thoughts=thoughts)
+        plans = self.last_plans
         brought = [state._index_of(side, base_species(p["details"])) for p in request["side"]["pokemon"]]
         self.steps.append({"turn": state.turn, "events": describe(self.lines), "board": snapshot(state, side, brought),
                            "thoughts": thoughts, "plans": plans, "choice": choice})

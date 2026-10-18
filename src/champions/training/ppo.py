@@ -14,8 +14,6 @@ from champions.model.agent import KEYS
 def to_batch(steps: list[dict]) -> dict:
     batch = {k: torch.as_tensor(np.stack([np.asarray(s["arrays"][k]) for s in steps])) for k in KEYS}
     batch["action"] = torch.as_tensor([s["action"] for s in steps])
-    batch["target"] = torch.as_tensor([s["target"] for s in steps])
-    batch["target_mask"] = torch.as_tensor(np.stack([s["target_mask"] for s in steps]))
     batch["old_logp"] = torch.as_tensor([s["logp"] for s in steps], dtype=torch.float32)
     batch["reward"] = torch.as_tensor([s["reward"] for s in steps], dtype=torch.float32)
     batch["last"] = torch.as_tensor([s["last"] for s in steps])
@@ -44,8 +42,8 @@ def ppo_update(net, reference, optimiser, batch: dict, args, value_only: bool) -
     """Several passes over one batch of recorded decisions."""
     n = len(batch["reward"])
     with torch.no_grad():
-        _, _, old_value, _ = net.evaluate(batch, batch["action"], batch["target"], batch["target_mask"])
-        _, _, _, ref_log_probs = reference.evaluate(batch, batch["action"], batch["target"], batch["target_mask"])
+        _, _, old_value, _ = net.evaluate(batch, batch["action"])
+        _, _, _, ref_log_probs = reference.evaluate(batch, batch["action"])
     advantage = advantages(batch["reward"], batch["last"], old_value, args.gae_lambda)
     batch["ret"] = advantage + old_value
     advantage = (advantage - advantage.mean()) / (advantage.std() + 1e-6)
@@ -57,12 +55,12 @@ def ppo_update(net, reference, optimiser, batch: dict, args, value_only: bool) -
         for start in range(0, n, args.minibatch):
             idx = order[start:start + args.minibatch]
             b = take(batch, idx)
-            logp, entropy, value, log_probs = net.evaluate(b, b["action"], b["target"], b["target_mask"])
+            logp, entropy, value, log_probs = net.evaluate(b, b["action"])
             ratio = (logp - b["old_logp"]).exp()
             adv = advantage[idx]
             policy_loss = -torch.min(ratio * adv, ratio.clamp(1 - args.clip, 1 + args.clip) * adv).mean()
             value_loss = ((value - b["ret"]) ** 2).mean()
-            kl = (log_probs.exp() * (log_probs - ref_log_probs[idx])).sum(-1).mean()
+            kl = (log_probs.exp() * (log_probs - ref_log_probs[idx]).clamp(min=-30, max=30)).sum(-1).mean()
             loss = 0.5 * value_loss if value_only else (policy_loss + 0.5 * value_loss
                                                          - args.entropy * entropy.mean() + args.kl * kl)
             optimiser.zero_grad()

@@ -60,6 +60,41 @@ comparison: all built teams average 46.7%, all tournament teams 50.3%, the best 
 
 Flow from here: imitation start -> self-play on the 50 -> evaluate as we go -> swap out teams that keep losing.
 
+## Update 2026-10-18 (latest): joint action head, opponent head, set-level preview (one retrain)
+
+Why: the policy was an autoregressive factorisation pi(a_A) pi(a_B | a_A) decoded greedily (argmax a_A, then
+argmax a_B | a_A), which is not the joint argmax and forces pi(a_A) to marginalise over a_B. Nothing modelled
+the opponent's action, although a turn is a simultaneous-move game. Team preview scored each Pokémon
+independently (additive over the four). All three are output changes, so they go in together, once.
+
+Design (encoding version 3; one forward pass per side per turn instead of one per slot):
+
+- **Atoms.** Each slot's options are a fixed layout of K = 24 "atoms": move slot k (0-3) x target class
+  (foe A, foe B, ally, none) = 16, switch to own team index 0-5 = 6, pass, locked (forced move). The legal
+  atoms per slot come from the request (single-target moves: present foes; ally moves: ally; spread and
+  self moves: none).
+- **Joint head.** Trunk runs once with both actors marked. Each atom gets an embedding from the actor's
+  trunk output, the move embedding plus that move's damage features (actor-specific), the target, or the
+  switch-in's trunk output. Pair score S(a, b) = u_A(a) + u_B(b) + w(a, b), with w a low-rank bilinear
+  interaction gated by the decision token. Masked softmax over the 24 x 24 = 576 pairs (illegal atoms and
+  both slots switching to the same Pokémon removed). Decoding: joint argmax (evaluation) or a sample (RL).
+  PPO uses the pair log-probability.
+- **Opponent head (auxiliary).** For each foe on the field: a distribution over its move (vocabulary,
+  masked to its learnset plus revealed moves) or switch (their team index). Trained with cross-entropy on
+  the opponent's actual actions in replays (weight 0.3). Shapes the shared representation towards
+  anticipating the opponent, and gives search (step 9) its top-k opponent actions.
+- **Set-level preview.** A plan = (four to bring, lead pair inside them) = 15 x 6 = 90 plans, scored
+  jointly: set embedding of the four (mean and max of their trunk outputs, so interactions are nonlinear),
+  lead-pair embedding, and the decision token (which attends to the opponent's six). Trained by marginal
+  likelihood over the plans consistent with what the replay shows (the four is only partly seen in 18.5%
+  of sides).
+- **Labels from replays.** One example per side per turn: both slots' atoms. A slot whose choice the log
+  hides (flinch, sleep, full paralysis, locked move) is marginalised out: loss = -log sum_b P(a_label, b).
+- Warm start from il_policy_v3 (trunk and embeddings carry over; the new heads start fresh).
+
+Order: implement and test -> rebuild the example cache -> imitation pilot (10% of games) -> full imitation
+run -> gates -> 50-team self-play pilot -> full self-play run.
+
 ## Gates (original wording, superseded above for gate 2)
 
 1. **Playable:** wins at least 90% against the random player (400 paired games, any pair of teams).

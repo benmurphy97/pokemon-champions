@@ -56,7 +56,7 @@ class PpoUpdateTest(unittest.TestCase):
         steps, _, _ = play_batch(net, net, {}, jobs, workers=1, seed=1, margin_weight=0.5)
         batch = to_batch(steps)
         with torch.no_grad():
-            logp, _, _, _ = net.evaluate(batch, batch["action"], batch["target"], batch["target_mask"])
+            logp, _, _, _ = net.evaluate(batch, batch["action"])
         self.assertTrue(torch.allclose(logp, batch["old_logp"], atol=1e-4), (logp - batch["old_logp"]).abs().max())
 
 

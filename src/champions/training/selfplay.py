@@ -101,7 +101,8 @@ def play_batch(net, imitation, snapshot_agents: dict, jobs: list[dict], workers:
             for i, decision in enumerate(trajectory):
                 last = i == len(trajectory) - 1
                 steps.append({**decision, "reward": reward if last else 0.0, "last": last})
-    stall = sum(s["action"] in STALL_IDS for s in steps) / max(len(steps), 1)
+    used = [m for s in steps for m in s["moves_used"]]
+    stall = sum(m in STALL_IDS for m in used) / max(len(used), 1)
     n = max(totals["n"], 1)
     return steps, record, {"stall_share": round(stall, 3), "turns": round(totals["turns"] / n, 1),
                            "idle_turns": round(totals["idle"] / n, 2), "timeouts": totals["timeouts"], "seats": totals["n"],

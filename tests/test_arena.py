@@ -119,3 +119,25 @@ class ForcedMoveTest(unittest.TestCase):
                                         {"details": "Incineroar, L50, M", "condition": "100/100", "active": False}]}}
         agent = NeuralAgent(PolicyNet(dim=32, layers=1, heads=2))
         self.assertEqual(agent.decide(state, "p1", request), "move 1")
+
+
+@unittest.skipUnless(HAVE_TORCH, "needs torch (.venv)")
+class ForcedDoubleSwitchTest(unittest.TestCase):
+    def test_two_forced_switches_with_one_pokemon_left_send_it_in_once(self):
+        from champions.model.agent import NeuralAgent
+        from champions.model.battle_state import BattleState
+        from champions.model.policy import PolicyNet
+        state = BattleState()
+        for line in ["|poke|p1|Rillaboom, L50, M|", "|poke|p1|Incineroar, L50, M|", "|poke|p1|Sneasler, L50, M|",
+                     "|poke|p2|Garchomp, L50, M|", "|switch|p1a: R|Rillaboom, L50, M|100/100",
+                     "|switch|p1b: I|Incineroar, L50, M|100/100", "|switch|p2a: G|Garchomp, L50, M|100/100",
+                     "|faint|p1a: R", "|faint|p1b: I", "|turn|3"]:
+            state.update(line)
+        request = {"forceSwitch": [True, True],
+                   "side": {"pokemon": [{"details": "Rillaboom, L50, M", "condition": "0 fnt", "active": True},
+                                        {"details": "Incineroar, L50, M", "condition": "0 fnt", "active": True},
+                                        {"details": "Sneasler, L50, M", "condition": "100/100", "active": False}]}}
+        for seed in range(5):
+            torch.manual_seed(seed)
+            choice = NeuralAgent(PolicyNet(dim=32, layers=1, heads=2)).decide(state, "p1", request)
+            self.assertEqual(sorted(choice.split(", ")), ["pass", "switch 3"])

@@ -5,8 +5,8 @@
 A log shows both sides' six Pokémon (in the order they were listed), the two that start on the
 field, and every Pokémon that ever appeared. A brought Pokémon that never appears cannot be seen,
 so a side's four may be only partly known: `brought_seen` holds the ones seen and `complete` says
-whether all four were. Training should use complete sides for the bring-four labels and any side
-for the leads.
+whether all four were. The label is the set of plans (four, lead pair; see policy.PLANS) consistent
+with what was seen, and training maximises their total probability (marginal likelihood).
 """
 
 import argparse
@@ -19,10 +19,10 @@ from pathlib import Path
 import numpy as np
 
 from champions.model.battle_state import BattleState
-from champions.model.encoding import ARRAY_KEYS, PREVIEW_BRING, encode
+from champions.model.encoding import ARRAY_KEYS, PREVIEW, encode
 from champions.training.hindsight import complete_sets
 from champions.teams.generate import load_usage
-from champions.model.policy import PAIRS, SUBSETS
+from champions.model.policy import PAIRS, PLANS, SUBSETS
 
 ROOT = Path(__file__).resolve().parents[3]
 RAW_DIR = ROOT / "cache" / "raw"
@@ -49,10 +49,9 @@ def preview_examples(lines: list[str], usage: dict) -> list[dict]:
     """One training example per side: the team-preview view and what the player did.
 
     The view is both teams' six species and the player's own full sets (reconstructed from the whole
-    game, as in decisions.extract), with nothing revealed. Labels: `bring` is the index of the four
-    brought among the 15 possible sets (-1 if not all four were seen), `lead` the index of the lead
-    pair among the 15 pairs, and `lead_ok` marks the pairs the lead could have been (those inside the
-    seen Pokémon when the four is complete, else all 15).
+    game, as in decisions.extract), with nothing revealed. Label: `plan_ok` [90] marks the plans the
+    player could have chosen given what the log shows: the lead pair as seen, and a four that contains
+    every brought Pokémon seen. `complete` says whether all four were seen (exactly one plan is then ok).
     """
     labels = extract_preview(lines)
     state, at_preview, final = BattleState(), None, BattleState()
@@ -68,19 +67,19 @@ def preview_examples(lines: list[str], usage: dict) -> list[dict]:
         if len(info["six"]) != 6 or len(info["leads"]) != 2:
             continue
         own = complete_sets(final, side, usage)
-        arrays = encode(at_preview, side, 0, PREVIEW_BRING, own_info=own)
-        seen = tuple(info["brought_seen"])
-        bring = SUBSETS.index(seen) if info["complete"] else -1
-        lead = PAIRS.index(tuple(sorted(info["leads"])))
-        allowed = [set(p) <= set(seen) for p in PAIRS] if info["complete"] else [True] * len(PAIRS)
-        out.append({"arrays": arrays, "bring": bring, "lead": lead, "lead_ok": allowed, "side": side})
+        arrays = encode(at_preview, side, PREVIEW, own_info=own)
+        seen, lead = set(info["brought_seen"]) | set(info["leads"]), tuple(sorted(info["leads"]))
+        plan_ok = [seen <= set(SUBSETS[s]) and PAIRS[p] == lead for s, p in PLANS]
+        if not any(plan_ok):
+            continue
+        out.append({"arrays": arrays, "plan_ok": plan_ok, "complete": info["complete"], "side": side})
     return out
 
 
 def build_examples(limit: int | None = None, min_rating: int = 1300) -> dict:
     usage = load_usage()
     arrays: dict[str, list] = {k: [] for k in ARRAY_KEYS}
-    meta = {"bring": [], "lead": [], "lead_ok": [], "game": [], "rating": []}
+    meta = {"plan_ok": [], "complete": [], "game": [], "rating": []}
     for g, path in enumerate(sorted(RAW_DIR.glob("*.json.gz"))[:limit]):
         replay = json.load(gzip.open(path, "rt"))
         if (replay.get("rating") or 0) < min_rating:
@@ -88,7 +87,7 @@ def build_examples(limit: int | None = None, min_rating: int = 1300) -> dict:
         for example in preview_examples(replay["log"].split("\n"), usage):
             for k in ARRAY_KEYS:
                 arrays[k].append(example["arrays"][k])
-            for k in ("bring", "lead", "lead_ok"):
+            for k in ("plan_ok", "complete"):
                 meta[k].append(example[k])
             meta["game"].append(g)
             meta["rating"].append(replay.get("rating") or 0)
@@ -103,7 +102,7 @@ def main():
     if args.build:
         data = build_examples()
         np.savez_compressed(CACHE, **data)
-        print(f"{len(data['bring'])} preview examples ({int((data['bring'] >= 0).sum())} with a full four) -> {CACHE}")
+        print(f"{len(data['plan_ok'])} preview examples ({int(data['complete'].sum())} with the full four seen) -> {CACHE}")
         return
     seen_counts, lead_ok, sides, examples = Counter(), 0, 0, []
     for path in sorted(RAW_DIR.glob("*.json.gz"))[: args.games]:

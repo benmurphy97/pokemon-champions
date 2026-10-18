@@ -13,60 +13,100 @@ except ImportError:
 FIXTURE = Path(__file__).parent / "fixtures" / "replay_sample.json"
 
 
+def sample_batch():
+    from champions.model.encoding import ARRAY_KEYS
+    from champions.teams.generate import load_usage
+    from champions.training.decisions import extract, stack
+    examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"), load_usage())
+    return examples, {k: torch.as_tensor(v) for k, v in stack(examples).items()}
+
+
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class PolicyTest(unittest.TestCase):
     def setUp(self):
-        from champions.training.decisions import extract
-        from champions.model.encoding import SWITCH_BASE
         from champions.model.policy import PolicyNet
-        from champions.training.imitation import KEYS
         torch.manual_seed(0)
-        examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
-        self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in examples])) for k in KEYS}
-        self.action = torch.as_tensor([e["action"] for e in examples])
-        self.target = torch.as_tensor([e["target"] for e in examples])
-        self.batch["mask"][torch.arange(len(self.action)), self.action] = True
+        self.examples, self.batch = sample_batch()
         self.net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0)
-        self.SWITCH_BASE = SWITCH_BASE
 
-    def test_output_shapes_and_masking(self):
-        logits, target_logits = self.net(self.batch, target_for_move=self.action)
-        self.assertEqual(logits.shape, (len(self.action), self.batch["mask"].shape[1]))
-        self.assertEqual(target_logits.shape, (len(self.action), 4))
-        self.assertTrue((logits[~self.batch["mask"]] < -1e8).all())
+    def test_output_shapes_masking_and_labels(self):
+        from champions.model.encoding import N_ACTIONS, N_ATOMS, N_PAIRS
+        pair_logits, value, foe_logits = self.net(self.batch)
+        n = len(self.examples)
+        self.assertEqual(pair_logits.shape, (n, N_PAIRS))
+        self.assertEqual(value.shape, (n,))
+        self.assertEqual(foe_logits.shape, (n, 2, N_ACTIONS))
+        mask = self.batch["atom_mask"]
+        legal = (mask[:, 0, :, None] & mask[:, 1, None, :]).flatten(1)
+        self.assertTrue((pair_logits[~legal] < -1e8).all())
+        label = self.batch["label"]
+        both = (label >= 0).all(1)
+        idx = label[both, 0] * N_ATOMS + label[both, 1]
+        self.assertTrue((pair_logits[both].gather(1, idx[:, None]) > -1e8).all())     # what players did is legal
+        foe = self.batch["foe_label"]
+        seen = foe >= 0
+        self.assertTrue(seen.any())
+        self.assertTrue((foe_logits[seen].gather(1, foe[seen][:, None]) > -1e8).all())
+
+    def test_both_slots_never_switch_to_the_same_pokemon(self):
+        from champions.model.encoding import ATOM_SWITCH, N_ATOMS
+        pair_logits, _, _ = self.net(self.batch)
+        for i in range(6):
+            self.assertTrue((pair_logits[:, (ATOM_SWITCH + i) * N_ATOMS + ATOM_SWITCH + i] < -1e8).all())
+
+    def test_pair_scores_are_not_additive_once_the_interaction_is_used(self):
+        """S(a, b) - S(a, b') must depend on a: the second slot's best answer can change with the first slot's choice."""
+        from champions.model.encoding import N_ATOMS
+        with torch.no_grad():
+            for module in (self.net.pair_left, self.net.pair_right, self.net.pair_gate):
+                module.weight.normal_()
+            q, mons = self.net.trunk(self.batch)
+            scores = self.net.pair_logits(self.batch, q, mons).reshape(-1, N_ATOMS, N_ATOMS)
+        mask = self.batch["atom_mask"][0]
+        a = torch.nonzero(mask[0]).flatten()[:2]
+        b = torch.nonzero(mask[1]).flatten()[:2]
+        diff = scores[0, a, b[0]] - scores[0, a, b[1]]
+        self.assertGreater(float((diff[0] - diff[1]).abs()), 1e-4)
+
+    def test_a_hidden_slot_is_summed_out(self):
+        from champions.model.encoding import N_ATOMS
+        from champions.training.imitation import joint_nll
+        logits = torch.randn(1, N_ATOMS * N_ATOMS)
+        logp = torch.log_softmax(logits, -1).reshape(N_ATOMS, N_ATOMS)
+        self.assertAlmostEqual(float(joint_nll(logits, torch.tensor([[3, -1]]))), float(-torch.logsumexp(logp[3], 0)), places=4)
+        self.assertAlmostEqual(float(joint_nll(logits, torch.tensor([[-1, 5]]))), float(-torch.logsumexp(logp[:, 5], 0)), places=4)
+        self.assertAlmostEqual(float(joint_nll(logits, torch.tensor([[3, 5]]))), float(-logp[3, 5]), places=4)
 
     def test_can_overfit_one_game(self):
+        from champions.training.imitation import joint_nll
         optimiser = torch.optim.AdamW(self.net.parameters(), lr=3e-3)
         losses = []
         for _ in range(80):
-            logits, _ = self.net(self.batch, target_for_move=self.action)
-            loss = F.cross_entropy(logits, self.action)
+            loss = joint_nll(self.net(self.batch)[0], self.batch["label"]).mean()
             optimiser.zero_grad(); loss.backward(); optimiser.step()
             losses.append(loss.item())
         self.assertLess(losses[-1], 0.3 * losses[0])
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class DamageFeatureTest(unittest.TestCase):
     def test_type_effectiveness_features_match_the_type_chart(self):
-        from champions.training.decisions import extract
         from champions.model.policy import PolicyNet
-        from champions.training.imitation import KEYS
         from champions.model.vocab import MOVE_ID, SPECIES
-        examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
-        batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in examples])) for k in KEYS}
-        features = PolicyNet(dim=32, layers=1, heads=2).damage_features(batch)
+        examples, batch = sample_batch()
+        net = PolicyNet(dim=32, layers=1, heads=2)
         # Raichu (Electric) facing Indeedee-F (Psychic/Normal) and Meowstic-F (Psychic) on turn 1
-        i = next(n for n, e in enumerate(examples)
-                 if SPECIES[int(e["arrays"]["species"][int(e["arrays"]["actor"])])] == "Raichu")
-        focus_blast, protect = features[i, MOVE_ID["Focus Blast"]], features[i, MOVE_ID["Protect"]]
-        self.assertAlmostEqual(float(focus_blast[0]), 1.0)   # Fighting vs Psychic/Normal: 0.5 * 2
-        self.assertAlmostEqual(float(focus_blast[5]), 0.5)   # Fighting vs Psychic
-        self.assertEqual(float(protect[1]), 0.0)             # a status move deals no damage
+        for n, e in enumerate(examples):
+            for slot in (0, 1):
+                actor = int(e["arrays"]["actors"][slot])
+                if actor >= 0 and SPECIES[int(e["arrays"]["species"][actor])] == "Raichu":
+                    features = net.damage_features(batch, slot)
+                    focus_blast, protect = features[n, MOVE_ID["Focus Blast"]], features[n, MOVE_ID["Protect"]]
+                    self.assertAlmostEqual(float(focus_blast[0]), 1.0)   # Fighting vs Psychic/Normal: 0.5 * 2
+                    self.assertAlmostEqual(float(focus_blast[5]), 0.5)   # Fighting vs Psychic
+                    self.assertEqual(float(protect[1]), 0.0)             # a status move deals no damage
+                    return
+        self.fail("no Raichu decision in the sample")
 
 
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
@@ -106,42 +146,6 @@ class DamageCalcTest(unittest.TestCase):
 
 
 @unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
-class PartnerTest(unittest.TestCase):
-    def setUp(self):
-        from champions.training.decisions import extract
-        from champions.training.imitation import KEYS
-        torch.manual_seed(0)
-        self.examples = extract(json.loads(FIXTURE.read_text())["log"].split("\n"))
-        self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in self.examples])) for k in KEYS}
-
-    def test_second_slot_examples_carry_the_first_slots_action(self):
-        from champions.model.encoding import SWITCH_BASE
-        linked = [e for e in self.examples if e["arrays"]["partner_action"] > 0]
-        self.assertTrue(linked)
-        for e in linked:
-            self.assertEqual(int(e["arrays"]["slot"]), 1)
-            mate = next(m for m in self.examples if m["turn"] == e["turn"] and m["side"] == e["side"] and m["arrays"]["slot"] == 0)
-            self.assertEqual(int(e["arrays"]["partner_action"]), mate["action"])
-            if mate["action"] >= SWITCH_BASE:
-                self.assertFalse(e["arrays"]["mask"][mate["action"]])   # cannot switch in the same teammate
-
-    def test_partner_input_starts_inert_then_matters_once_trained(self):
-        from champions.model.policy import PolicyNet
-        net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0).eval()
-        other = dict(self.batch)
-        other["partner_action"] = torch.zeros_like(self.batch["partner_action"])
-        other["partner_target"] = torch.zeros_like(self.batch["partner_target"])
-        with torch.no_grad():
-            same = torch.allclose(net(self.batch)[0], net(other)[0])
-            for p in (net.partner_move, net.partner_switch, net.partner_target):
-                for w in p.parameters():
-                    w.normal_()
-            differs = not torch.allclose(net(self.batch)[0], net(other)[0])
-        self.assertTrue(same)
-        self.assertTrue(differs)
-
-
-@unittest.skipUnless(HAVE_TORCH, "run with .venv/bin/python (needs torch)")
 class PreviewTest(unittest.TestCase):
     def setUp(self):
         from champions.teams.generate import load_usage
@@ -150,17 +154,20 @@ class PreviewTest(unittest.TestCase):
         torch.manual_seed(0)
         self.examples = preview_examples(json.loads(FIXTURE.read_text())["log"].split("\n"), load_usage())
         self.batch = {k: torch.as_tensor(np.stack([e["arrays"][k] for e in self.examples])) for k in ARRAY_KEYS}
-        self.batch["bring"] = torch.as_tensor([e["bring"] for e in self.examples])
-        self.batch["lead"] = torch.as_tensor([e["lead"] for e in self.examples])
-        self.batch["lead_ok"] = torch.as_tensor(np.array([e["lead_ok"] for e in self.examples]))
+        self.batch["plan_ok"] = torch.as_tensor(np.array([e["plan_ok"] for e in self.examples]))
+        self.batch["complete"] = torch.as_tensor([e["complete"] for e in self.examples])
 
     def test_labels_are_consistent(self):
-        from champions.model.policy import PAIRS, SUBSETS
+        from champions.model.policy import PAIRS, PLANS, SUBSETS
+        self.assertEqual(len(PLANS), 90)
         for e in self.examples:
-            self.assertEqual(len(e["lead_ok"]), 15)
-            if e["bring"] >= 0:                      # a full four: the lead pair is inside it
-                self.assertTrue(set(PAIRS[e["lead"]]) <= set(SUBSETS[e["bring"]]))
-                self.assertTrue(e["lead_ok"][e["lead"]])
+            ok = [PLANS[i] for i, v in enumerate(e["plan_ok"]) if v]
+            self.assertTrue(ok)
+            self.assertEqual(len({p for _, p in ok}), 1)              # the leads are always seen
+            for s, p in ok:
+                self.assertTrue(set(PAIRS[p]) <= set(SUBSETS[s]))
+            if e["complete"]:
+                self.assertEqual(len(ok), 1)
 
     def test_a_net_can_learn_one_game_of_previews(self):
         from champions.model.policy import PolicyNet
@@ -173,9 +180,7 @@ class PreviewTest(unittest.TestCase):
             optimiser.zero_grad(); loss.backward(); optimiser.step()
             losses.append(loss.item())
         self.assertLess(losses[-1], 0.5 * losses[0])
-        logits_bring, logits_lead = net.preview_logits(self.batch)
-        self.assertEqual(logits_bring.shape, (len(self.examples), 15))
-        self.assertEqual(logits_lead.shape, (len(self.examples), 15))
+        self.assertEqual(net.preview_logits(self.batch).shape, (len(self.examples), 90))
 
     def test_learned_preview_returns_a_valid_team_string(self):
         from champions.model.battle_state import BattleState
@@ -194,3 +199,7 @@ class PreviewTest(unittest.TestCase):
         self.assertEqual(len(digits), 4)
         self.assertEqual(len(set(digits)), 4)
         self.assertTrue(set(digits) <= set("123456"))
+
+
+if __name__ == "__main__":
+    unittest.main()

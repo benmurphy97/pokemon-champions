@@ -14,11 +14,10 @@ class ModelIoTest(unittest.TestCase):
     def batch(self):
         import json
         import numpy as np
-        from champions.training.decisions import extract
-        from champions.model.encoding import ARRAY_KEYS
+        from champions.training.decisions import extract, stack
         sample = Path(__file__).parent / "fixtures" / "replay_sample.json"
         examples = extract(json.loads(sample.read_text())["log"].split("\n"))
-        return {k: torch.as_tensor(np.stack([e["arrays"][k] for e in examples])) for k in ARRAY_KEYS}
+        return {k: torch.as_tensor(v) for k, v in stack(examples).items()}
 
     def test_round_trip_keeps_the_model_identical(self):
         from champions.model.model_io import load_policy, save_policy
@@ -50,12 +49,12 @@ class ModelIoTest(unittest.TestCase):
         from champions.model.policy import PolicyNet
         torch.manual_seed(2)
         net = PolicyNet(dim=32, layers=1, heads=2, dropout=0.0).eval()
-        saved = {k: v for k, v in net.state_dict().items() if not k.startswith("partner_")}
+        saved = {k: v for k, v in net.state_dict().items() if not k.startswith("pair_")}
         saved["kind_emb.weight"] = saved["kind_emb.weight"][:2].clone()      # a model from before the spare kinds existed
         adapted, report = adapt_state(net, saved)
         self.assertIn("kind_emb.weight", report["padded"])
         self.assertTrue(torch.equal(adapted["kind_emb.weight"][:2], saved["kind_emb.weight"]))
-        self.assertTrue(any(n.startswith("partner_") for n in report["new"]))
+        self.assertTrue(any(n.startswith("pair_") for n in report["new"]))
 
 
 if __name__ == "__main__":

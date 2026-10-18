@@ -1,10 +1,11 @@
 """Use a trained policy to choose actions in a live battle.
 
     agent = NeuralAgent(net)
-    choice = agent.decide(state, "p1", request)    # e.g. "move 2 1, switch 4"
+    choice = agent.decide(state, "p1", request)    # e.g. "move 2 1 mega, switch 4"
 
-`state` is a BattleState fed with every log line the player has received; `request` is the
-simulator's decision request. Only legal actions are considered.
+`state` is a BattleState fed with every log line the player has received; `request` is the simulator's
+decision request. Both active Pokémon are chosen together: the network scores every legal pair of atoms
+(see encoding) and the agent takes the best pair (temperature 0) or samples one (temperature > 0).
 """
 
 import numpy as np
@@ -12,13 +13,15 @@ import torch
 
 from champions.model.battle_state import BattleState, base_species
 from champions.model.encoding import ARRAY_KEYS as KEYS
-from champions.model.encoding import (MOVE_PHASE, N_ACTIONS, REPLACEMENT, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A,
-                                TARGET_FOE_B, TARGET_NONE, encode)
+from champions.model.encoding import (ATOM_LOCKED, ATOM_PASS, ATOM_SWITCH, MOVE_PHASE, N_ATOMS, N_MOVE_SLOTS,
+                                      N_TARGETS, REPLACEMENT, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A, TARGET_FOE_B,
+                                      atom_move, encode, pair_mask, target_classes)
 from champions.training.hindsight import complete_sets
 from champions.teams.generate import load_usage
 from champions.model.vocab import MOVE_ID, MOVES, NAME_BY_ID
 
-SINGLE_TARGET = {"normal", "any", "adjacentFoe"}
+PROTECT_MOVES = {"Protect", "Detect", "Spiky Shield", "King's Shield", "Baneful Bunker", "Silk Trap", "Burning Bulwark",
+                 "Obstruct", "Max Guard", "Wide Guard", "Quick Guard", "Mat Block", "Crafty Shield"}
 
 
 def to_tensors(arrays: dict) -> dict:
@@ -51,16 +54,12 @@ def lead(state: BattleState, side: str) -> float:
     return (sum(m.hp for m in own.team[:6]) - sum(m.hp for m in foe.team[:6])) / 6
 
 
-PROTECT_MOVES = {"Protect", "Detect", "Spiky Shield", "King's Shield", "Baneful Bunker", "Silk Trap", "Burning Bulwark",
-                 "Obstruct", "Max Guard", "Wide Guard", "Quick Guard", "Mat Block", "Crafty Shield"}
-
-
 class NeuralAgent:
-    """Chooses actions with a trained policy.
+    """Chooses both active Pokémon's actions together with a trained policy.
 
-    temperature 0 plays the single most likely legal action (for evaluation); temperature 1 samples
-    from the policy (for reinforcement learning). Pass `record=[]` to `decide` to keep every
-    choice that had alternatives, with the log-probability it was taken with, for training.
+    temperature 0 plays the most likely legal pair (for evaluation); temperature 1 samples from the policy
+    (for reinforcement learning). Pass `record=[]` to `decide` to keep every decision that had alternatives,
+    with the log-probability it was taken with, for training.
     """
 
     def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None, block_repeat_protect: bool = True):
@@ -74,56 +73,6 @@ class NeuralAgent:
         self.temperature = temperature
         self.rng = np.random.default_rng(seed)
 
-    def pick(self, logits: torch.Tensor, legal: np.ndarray) -> tuple[int, float]:
-        """(chosen action, its log-probability under the policy at temperature 1)."""
-        scores = logits[0].clone()
-        scores[~torch.as_tensor(legal)] = -1e9
-        log_probs = torch.log_softmax(scores, dim=-1)
-        if self.temperature <= 0:
-            action = int(scores.argmax())
-        else:
-            probs = torch.softmax(scores / self.temperature, dim=-1).numpy().astype(np.float64)
-            action = int(self.rng.choice(len(probs), p=probs / probs.sum()))
-        return action, float(log_probs[action])
-
-    def pick_target(self, target_logits: torch.Tensor, allowed: np.ndarray) -> tuple[int, float]:
-        scores = target_logits[0].clone()
-        scores[~torch.as_tensor(allowed)] = -1e9
-        log_probs = torch.log_softmax(scores, dim=-1)
-        if self.temperature <= 0:
-            target = int(scores.argmax())
-        else:
-            probs = torch.softmax(scores / self.temperature, dim=-1).numpy().astype(np.float64)
-            target = int(self.rng.choice(len(probs), p=probs / probs.sum()))
-        return target, float(log_probs[target])
-
-    @staticmethod
-    def note(record, arrays, legal, action, logp, target=-1, target_mask=None, lead=0.0):
-        record.append({"arrays": dict(arrays), "action": action, "logp": logp, "target": target, "lead": lead,
-                       "target_mask": np.zeros(4, dtype=bool) if target_mask is None else target_mask})
-
-    @staticmethod
-    def slot_legal(active: dict, bench: list[int], taken: set[int], repeat_block: bool = False) -> tuple[np.ndarray, dict]:
-        """Legal action mask for one active Pokémon, and {move id: (move slot, target type)}.
-
-        `repeat_block` drops Protect-type moves (they would fail) unless they are the only moves left.
-        """
-        legal = np.zeros(N_ACTIONS, dtype=bool)
-        slot_of_move = {}
-        for k, move in enumerate(active["moves"]):
-            move_id = MOVE_ID.get(move["move"], 0)
-            if repeat_block and move["move"] in PROTECT_MOVES and any(
-                    m["move"] not in PROTECT_MOVES and not m.get("disabled") for m in active["moves"]):
-                continue
-            if not move.get("disabled") and move_id:
-                legal[move_id] = True
-                slot_of_move[move_id] = (k + 1, move.get("target"))
-        if slot_of_move and not active.get("trapped"):
-            for ti in bench:
-                if ti not in taken:
-                    legal[SWITCH_BASE + ti] = True
-        return legal, slot_of_move
-
     def repeat_block(self, state: BattleState, side: str, pokemon: dict) -> bool:
         """True when this Pokémon used a Protect-type move last turn."""
         if not self.block_repeat_protect:
@@ -132,111 +81,60 @@ class NeuralAgent:
         mon = state.sides[side].team[index]
         return mon.last_move in PROTECT_MOVES and mon.last_move_turn == state.turn - 1
 
-    def plan(self, state: BattleState, side: str, request: dict, combos: int = 8) -> list[dict]:
-        """The most likely joint plans for both active Pokémon: P(first slot) x P(second slot | first).
+    def options(self, state: BattleState, side: str, request: dict, arrays: dict) -> list[dict]:
+        """For each slot, {atom: choice string}; also writes the request's exact options into `arrays`.
 
-        The first slot's most likely target is assumed when it picks a single-target move; the second
-        slot's target is not enumerated. Empty unless both Pokémon have a real decision.
+        `arrays["actor_moves"]` becomes the request's move list for each active Pokémon, so move atom k is
+        "move k+1" (this matters when locked into one move, where the request lists only that move).
         """
         pokemon = request["side"]["pokemon"]
-        if request.get("forceSwitch") or len(request.get("active", [])) < 2:
-            return []
         team_index = [state._index_of(side, base_species(p["details"])) for p in pokemon]
+        position_of = {ti: j + 1 for j, ti in enumerate(team_index)}
         bench = [ti for ti, p in zip(team_index, pokemon) if not p["active"] and not p["condition"].endswith(" fnt")]
-        own = own_team_info(state, side, request, team_index, self.usage)
-        foes = state.sides["p2" if side == "p1" else "p1"].active
-        name = lambda s, i: s.team[i].form or s.team[i].species
-        first, second = request["active"]
-        if any(pokemon[i]["condition"].endswith(" fnt") or pokemon[i].get("commanding") for i in (0, 1)):
-            return []
-
-        def scores(slot, active, partner, taken):
-            legal, slot_of_move = self.slot_legal(active, bench, taken, self.repeat_block(state, side, pokemon[slot]))
-            arrays = encode(state, side, slot, MOVE_PHASE, own_info=own, partner=partner)
-            arrays["mask"] = legal
-            with torch.no_grad():
-                logits, _ = self.net(to_tensors(arrays))
-            probs = torch.softmax(logits[0].masked_fill(~torch.as_tensor(legal), -1e9), dim=-1)
-            return probs, slot_of_move, arrays
-
-        def label(slot, action, target=None):
-            if action >= SWITCH_BASE:
-                return f"Switch to {name(state.sides[side], action - SWITCH_BASE)}"
-            mon = name(state.sides[side], state.sides[side].active[slot])
-            return f"{mon}: {MOVES[action]}" + (f" → {name(state.sides[other], foes[target]) }" if target is not None and foes[target] is not None else "")
-
-        other = "p2" if side == "p1" else "p1"
-        if not (scores(0, first, None, set())[1] and scores(1, second, None, set())[1]):
-            return []
-        p0, moves0, arrays0 = scores(0, first, None, set())
-        out = []
-        for a0 in torch.argsort(p0, descending=True)[:4].tolist():
-            if p0[a0] < 0.01:
-                break
-            target0 = None
-            if a0 < SWITCH_BASE and moves0[a0][1] in SINGLE_TARGET:
-                with torch.no_grad():
-                    _, tl = self.net(to_tensors(arrays0), target_for_move=torch.tensor([a0]))
-                allowed = np.array([foes[0] is not None, foes[1] is not None, False, False])
-                target0 = int(tl[0].masked_fill(~torch.as_tensor(allowed), -1e9).argmax()) if allowed.any() else None
-            partner = (a0, target0 if target0 is not None else TARGET_NONE)
-            taken = {a0 - SWITCH_BASE} if a0 >= SWITCH_BASE else set()
-            p1, _, _ = scores(1, second, partner, taken)
-            for a1 in torch.argsort(p1, descending=True)[:3].tolist():
-                if p1[a1] < 0.01:
-                    break
-                out.append({"first": label(0, a0, target0), "second": label(1, a1), "prob": float(p0[a0] * p1[a1])})
-        return sorted(out, key=lambda o: -o["prob"])[:combos]
-
-    def think(self, state: BattleState, side: str, arrays: dict, legal: np.ndarray, logits: torch.Tensor,
-              action: int, slot: int, kind: int, target: tuple | None = None) -> dict:
-        """Everything the network 'saw' and 'felt' for one decision, for the match viewer.
-
-        `target` is (allowed mask, target logits, chosen class) when a single-target move was chosen.
-        """
-        net, batch = self.net, to_tensors(arrays)
-        with torch.no_grad():
-            q, _ = net.trunk(batch)
-            value = float(net.value_head(q))
-            damage = net.damage_features(batch)[0]
-            threat = net.threat_features(batch)[0]
-        scores = logits[0].clone()
-        scores[~torch.as_tensor(legal)] = -1e9
-        probs = torch.softmax(scores, dim=-1)
-        mine, foe = state.sides[side], state.sides["p2" if side == "p1" else "p1"]
-        name = lambda s, i: (s.team[i].form or s.team[i].species) if i is not None else None
-        foes = [name(foe, i) for i in foe.active]
-
-        def label(a):
-            return MOVES[a] if a < SWITCH_BASE else f"Switch to {name(mine, a - SWITCH_BASE)}"
-
-        options = []
-        for a in torch.argsort(probs, descending=True)[:8].tolist():
-            if not legal[a]:
-                continue
-            entry = {"label": label(a), "kind": "move" if a < SWITCH_BASE else "switch", "prob": float(probs[a]),
-                     "logit": float(scores[a])}
-            if a < SWITCH_BASE:
-                f = damage[a].tolist()
-                entry["damage"] = [{"foe": foes[i], "effectiveness": f[i * 5], "pctOfFullHp": f[i * 5 + 1],
-                                    "pctOfCurrentHp": f[i * 5 + 2] * 3, "sureKo": bool(f[i * 5 + 3]), "maybeKo": bool(f[i * 5 + 4])}
-                                   for i in (0, 1) if foes[i]]
-            options.append(entry)
-        thought = {"kind": "replacement" if kind == REPLACEMENT else "move", "slot": slot,
-                   "actor": name(mine, mine.active[slot]) if kind == MOVE_PHASE else None, "foes": foes,
-                   "winChance": (value + 1) / 2, "options": options, "chosen": label(action), "target": None,
-                   "threat": [{"foe": foes[fi], "target": name(mine, mine.active[ti]), "revealedMove": threat[fi * 4 + ti * 2].item() * 3,
-                               "guess": threat[fi * 4 + ti * 2 + 1].item() * 3}
-                              for fi in (0, 1) for ti in (0, 1) if foes[fi] and mine.active[ti] is not None]}
-        pa, pt = int(arrays["partner_action"]), int(arrays["partner_target"])
-        if pa > 0:      # this slot was scored knowing what its partner had already chosen
-            thought["givenPartner"] = label(pa) + (f" on {foes[pt - 1]}" if pt in (1, 2) and foes[pt - 1] else "")
-        if target is not None:
-            allowed, target_logits, chosen = target
-            tp = torch.softmax(target_logits[0].masked_fill(~torch.as_tensor(allowed), -1e9), dim=-1)
-            thought["target"] = {"options": [{"foe": foes[c], "prob": float(tp[c])} for c in (TARGET_FOE_A, TARGET_FOE_B) if allowed[c] and foes[c]],
-                                 "chosen": foes[chosen] if chosen in (TARGET_FOE_A, TARGET_FOE_B) else None}
-        return thought
+        foe_side = state.sides["p2" if side == "p1" else "p1"]
+        foes_present = tuple(i is not None and not foe_side.team[i].fainted for i in (foe_side.active + [None, None])[:2])
+        force = request.get("forceSwitch")
+        slots = [{}, {}]
+        mask = np.zeros((2, N_ATOMS), dtype=bool)
+        for slot in (0, 1):
+            mon = pokemon[slot] if slot < len(pokemon) else None
+            fainted = mon is None or mon["condition"].endswith(" fnt") or mon.get("commanding")
+            if force is not None:
+                if slot < len(force) and force[slot] and bench:
+                    slots[slot] = {ATOM_SWITCH + ti: f"switch {position_of[ti]}" for ti in bench}
+                    # Fewer Pokémon left than slots to fill: the second slot may pass (never both, so one switch is made).
+                    if slot == 1 and len(bench) < sum(bool(f) for f in force[:2]):
+                        slots[slot][ATOM_PASS] = "pass"
+                else:
+                    slots[slot] = {ATOM_PASS: "pass"}
+            elif fainted or slot >= len(request.get("active", [])):
+                slots[slot] = {ATOM_PASS: "pass"}
+            else:
+                active = request["active"][slot]
+                ids = np.zeros(N_MOVE_SLOTS, dtype=np.int64)
+                blocked = self.repeat_block(state, side, mon)
+                usable = [m for m in active["moves"] if not m.get("disabled")]
+                only_protect = all(m["move"] in PROTECT_MOVES for m in usable)
+                for k, move in enumerate(active["moves"][:N_MOVE_SLOTS]):
+                    move_id = MOVE_ID.get(move["move"], 0)
+                    ids[k] = move_id
+                    if not move_id or move.get("disabled") or (blocked and move["move"] in PROTECT_MOVES and not only_protect):
+                        continue
+                    for t in target_classes(move.get("target"), foes_present):
+                        suffix = {TARGET_FOE_A: " 1", TARGET_FOE_B: " 2", TARGET_ALLY: f" -{(slot ^ 1) + 1}"}.get(t, "")
+                        slots[slot][atom_move(k, t)] = f"move {k + 1}{suffix}"
+                arrays["actor_moves"][slot] = ids
+                if not slots[slot]:
+                    slots[slot] = {ATOM_LOCKED: "move 1"}       # recharging, locked in, or Struggle
+                elif not active.get("trapped"):
+                    slots[slot].update({ATOM_SWITCH + ti: f"switch {position_of[ti]}" for ti in bench})
+                if active.get("canMegaEvo"):
+                    slots[slot]["mega"] = True
+            for atom in slots[slot]:
+                if atom != "mega":
+                    mask[slot, atom] = True
+        arrays["atom_mask"] = mask
+        return slots
 
     def decide(self, state: BattleState, side: str, request: dict, record: list | None = None,
                thoughts: list | None = None) -> str:
@@ -244,91 +142,108 @@ class NeuralAgent:
             return self.preview(state, side, request) if self.preview else "default"
         pokemon = request["side"]["pokemon"]
         team_index = [state._index_of(side, base_species(p["details"])) for p in pokemon]
-        position_of = {ti: j + 1 for j, ti in enumerate(team_index)}
-        bench = [ti for ti, p in zip(team_index, pokemon) if not p["active"] and not p["condition"].endswith(" fnt")]
         own = own_team_info(state, side, request, team_index, self.usage)
-        taken: set[int] = set()
-        choices = []
-        ahead = lead(state, side)
+        kind = REPLACEMENT if request.get("forceSwitch") else MOVE_PHASE
+        arrays = encode(state, side, kind, own_info=own)
+        slots = self.options(state, side, request, arrays)
+        legal = pair_mask(arrays["atom_mask"])
 
         with torch.no_grad():
-            if request.get("forceSwitch"):
-                for slot, needed in enumerate(request["forceSwitch"]):
-                    options = [ti for ti in bench if ti not in taken]
-                    if not needed or not options:
-                        choices.append("pass")
-                        continue
-                    arrays = encode(state, side, slot, REPLACEMENT, own_info=own)
-                    legal = np.zeros(N_ACTIONS, dtype=bool)
-                    legal[[SWITCH_BASE + ti for ti in options]] = True
-                    arrays["mask"] = legal
-                    logits, _ = self.net(to_tensors(arrays))
-                    action, logp = self.pick(logits, legal)
-                    if thoughts is not None:
-                        thoughts.append(self.think(state, side, arrays, legal, logits, action, slot, REPLACEMENT))
-                    if record is not None and len(options) > 1:
-                        self.note(record, arrays, legal, action, logp, lead=ahead)
-                    chosen = action - SWITCH_BASE
-                    taken.add(chosen)
-                    choices.append(f"switch {position_of[chosen]}")
-                return ", ".join(choices)
+            batch = to_tensors(arrays)
+            q, mons = self.net.trunk(batch)
+            logits = self.net.pair_logits(batch, q, mons)[0]
+        log_probs = torch.log_softmax(logits, dim=-1)
+        if self.temperature <= 0:
+            pair = int(logits.argmax())
+        else:
+            probs = torch.softmax(logits / self.temperature, dim=-1).numpy().astype(np.float64)
+            pair = int(self.rng.choice(len(probs), p=probs / probs.sum()))
+        atoms = divmod(pair, N_ATOMS)
 
-            mega_used = False
-            partner = None      # what the first slot decided, which the second slot is told
-            for slot, active in enumerate(request["active"]):
-                mon = pokemon[slot]
-                if mon["condition"].endswith(" fnt") or mon.get("commanding"):
-                    choices.append("pass")
+        choices, mega_used = [], False
+        for slot, atom in enumerate(atoms):
+            choice = slots[slot][atom]
+            if choice.startswith("move") and slots[slot].get("mega") and not mega_used and atom != ATOM_LOCKED:
+                choice += " mega"
+                mega_used = True
+            choices.append(choice)
+        if record is not None and legal.sum() > 1:
+            used = [int(arrays["actor_moves"][s][a // N_TARGETS]) for s, a in enumerate(atoms) if a < ATOM_SWITCH]
+            record.append({"arrays": arrays, "action": pair, "logp": float(log_probs[pair]), "lead": lead(state, side),
+                           "moves_used": used})
+        if thoughts is not None:
+            self.think(state, side, arrays, batch, q, mons, logits, atoms, thoughts)
+        n = len(request.get("forceSwitch") or request.get("active") or [0, 0])
+        return ", ".join(choices[:max(n, 1)])
+
+    # ------------------------------------------------------------------ for the match viewer
+
+    def atom_label(self, state: BattleState, side: str, arrays: dict, slot: int, atom: int) -> str:
+        mine, foe = state.sides[side], state.sides["p2" if side == "p1" else "p1"]
+        name = lambda s, i: (s.team[i].form or s.team[i].species) if i is not None and i >= 0 else None
+        if atom >= ATOM_SWITCH and atom < ATOM_PASS:
+            return f"Switch to {name(mine, atom - ATOM_SWITCH)}"
+        if atom == ATOM_PASS:
+            return "Pass"
+        if atom == ATOM_LOCKED:
+            return "Locked move"
+        k, t = divmod(atom, N_TARGETS)
+        move = MOVES[int(arrays["actor_moves"][slot][k])]
+        target = {TARGET_FOE_A: name(foe, int(arrays["foes"][0])), TARGET_FOE_B: name(foe, int(arrays["foes"][1])),
+                  TARGET_ALLY: "ally"}.get(t)
+        return f"{move} → {target}" if target else move
+
+    def think(self, state, side, arrays, batch, q, mons, logits, atoms, thoughts: list) -> None:
+        """What the network saw and scored for this decision: per-slot marginals, top joint plans, the
+        opponent prediction, value and threat. Appends one entry per slot that had a choice to `thoughts`
+        and keeps the plans in `self.last_plans`."""
+        net = self.net
+        with torch.no_grad():
+            value = float(net.value_head(q))
+            threat = net.threat_features(batch)[0]
+            damage = [net.damage_features(batch, s)[0] for s in (0, 1)]
+            foe_probs = torch.softmax(net.foe_logits(batch, q, mons)[0], dim=-1)
+        probs = torch.softmax(logits, dim=-1).reshape(N_ATOMS, N_ATOMS)
+        marginal = [probs.sum(1), probs.sum(0)]
+        mine, foe = state.sides[side], state.sides["p2" if side == "p1" else "p1"]
+        name = lambda s, i: (s.team[i].form or s.team[i].species) if i is not None and i >= 0 else None
+        foes = [name(foe, int(i)) for i in arrays["foes"]]
+
+        top = torch.argsort(probs.flatten(), descending=True)[:8].tolist()
+        self.last_plans = [{"first": self.atom_label(state, side, arrays, 0, p // N_ATOMS),
+                            "second": self.atom_label(state, side, arrays, 1, p % N_ATOMS),
+                            "prob": float(probs.flatten()[p]), "chosen": divmod(p, N_ATOMS) == tuple(atoms)}
+                           for p in top if probs.flatten()[p] > 0.005]
+
+        prediction = []
+        for f in (0, 1):
+            if foes[f] is None:
+                continue
+            best = torch.argsort(foe_probs[f], descending=True)[:4].tolist()
+            label = lambda a: MOVES[a] if a < SWITCH_BASE else f"Switch to {name(foe, a - SWITCH_BASE)}"
+            prediction.append({"foe": foes[f], "top": [{"label": label(a), "prob": float(foe_probs[f][a])} for a in best]})
+
+        legal = arrays["atom_mask"]
+        for slot in (0, 1):
+            if legal[slot].sum() <= 1:
+                continue
+            options = []
+            for atom in torch.argsort(marginal[slot], descending=True).tolist():
+                if not legal[slot][atom] or len(options) >= 8:
                     continue
-
-                arrays = encode(state, side, slot, MOVE_PHASE, own_info=own, partner=partner)
-                legal, slot_of_move = self.slot_legal(active, bench, taken, self.repeat_block(state, side, mon))
-                if not slot_of_move:
-                    # Forced: recharging, locked into a move, or Struggle. The engine decides the details.
-                    choices.append("move 1")
-                    forced = MOVE_ID.get(active["moves"][0]["move"], 0) if active["moves"] else 0
-                    partner = (forced, TARGET_NONE) if forced else partner
-                    continue
-
-                arrays["mask"] = legal
-                logits, _ = self.net(to_tensors(arrays))
-                action, logp = self.pick(logits, legal)
-                if action >= SWITCH_BASE:
-                    if thoughts is not None:
-                        thoughts.append(self.think(state, side, arrays, legal, logits, action, slot, MOVE_PHASE))
-                    if record is not None and legal.sum() > 1:
-                        self.note(record, arrays, legal, action, logp, lead=ahead)
-                    taken.add(action - SWITCH_BASE)
-                    choices.append(f"switch {position_of[action - SWITCH_BASE]}")
-                    partner = (action, TARGET_NONE)
-                    continue
-
-                move_slot, target_type = slot_of_move[action]
-                choice = f"move {move_slot}"
-                target, target_mask, target_view = -1, None, None
-                if target_type in SINGLE_TARGET:
-                    _, target_logits = self.net(to_tensors(arrays), target_for_move=torch.tensor([action]))
-                    foes = state.sides["p2" if side == "p1" else "p1"].active
-                    target_mask = np.zeros(4, dtype=bool)
-                    for cls, foe_slot in ((TARGET_FOE_A, 0), (TARGET_FOE_B, 1)):
-                        target_mask[cls] = foes[foe_slot] is not None
-                    if not target_mask.any():
-                        target_mask[TARGET_FOE_A] = True
-                    target, target_logp = self.pick_target(target_logits, target_mask)
-                    logp += target_logp
-                    target_view = (target_mask, target_logits, target)
-                    choice += f" {target + 1}"
-                elif target_type == "adjacentAlly":
-                    choice += f" -{(slot ^ 1) + 1}"
-                elif target_type == "adjacentAllyOrSelf":
-                    choice += f" -{slot + 1}"
-                partner = (action, target if target >= 0 else TARGET_ALLY if target_type == "adjacentAlly" else TARGET_NONE)
-                if thoughts is not None:
-                    thoughts.append(self.think(state, side, arrays, legal, logits, action, slot, MOVE_PHASE, target_view))
-                if record is not None and (legal.sum() > 1 or (target_mask is not None and target_mask.sum() > 1)):
-                    self.note(record, arrays, legal, action, logp, target, target_mask, lead=ahead)
-                if active.get("canMegaEvo") and not mega_used:
-                    choice += " mega"
-                    mega_used = True
-                choices.append(choice)
-        return ", ".join(choices)
+                entry = {"label": self.atom_label(state, side, arrays, slot, atom),
+                         "kind": "switch" if ATOM_SWITCH <= atom < ATOM_PASS else "move", "prob": float(marginal[slot][atom])}
+                if atom < ATOM_SWITCH:
+                    f = damage[slot][int(arrays["actor_moves"][slot][atom // N_TARGETS])].tolist()
+                    entry["damage"] = [{"foe": foes[i], "effectiveness": f[i * 5], "pctOfFullHp": f[i * 5 + 1],
+                                        "pctOfCurrentHp": f[i * 5 + 2] * 3, "sureKo": bool(f[i * 5 + 3]), "maybeKo": bool(f[i * 5 + 4])}
+                                       for i in (0, 1) if foes[i]]
+                options.append(entry)
+            thoughts.append({
+                "kind": "replacement" if int(arrays["kind"]) == REPLACEMENT else "move", "slot": slot,
+                "actor": name(mine, int(arrays["actors"][slot])), "foes": foes, "winChance": (value + 1) / 2,
+                "options": options, "chosen": self.atom_label(state, side, arrays, slot, atoms[slot]), "target": None,
+                "foePrediction": prediction if slot == 0 else [],
+                "threat": [{"foe": foes[fi], "target": name(mine, int(arrays["actors"][ti])),
+                            "revealedMove": threat[fi * 4 + ti * 2].item() * 3, "guess": threat[fi * 4 + ti * 2 + 1].item() * 3}
+                           for fi in (0, 1) for ti in (0, 1) if foes[fi] and arrays["actors"][ti] >= 0]})

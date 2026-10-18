@@ -44,8 +44,8 @@
     {
       "n": 4,
       "name": "Pilot imitation run (10% data), then full run; check both gates",
-      "status": "todo",
-      "note": ""
+      "status": "doing",
+      "note": "Pilot done (10% data, 3 epochs, 192x4 with preview and rating weighting): no errors; 49.8% top-1, 72.0% vs random. Control (128x3, no preview, no weighting, same data): 50.5%, 75.5%: level, so nothing in the bundle is hurting. Preview learns (bring four 37.9% vs 6.7% chance; leads 48.6%) but with the learned preview the pilot scored 59.5% vs random against 72.0% with the rule-based preview: watch this in the full run. Full run next."
     },
     {
       "n": 5,

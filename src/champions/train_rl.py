@@ -189,7 +189,8 @@ def ppo_update(net, reference, optimiser, batch: dict, args, value_only: bool) -
     return {k: v / max(passes, 1) for k, v in stats.items()}
 
 
-def evaluate(net, games: int, workers: int, seed: int, known: list[dict] | None = None) -> dict:
+def evaluate(net, games: int, workers: int, seed: int, known: list[dict] | None = None,
+             learned_preview: bool = False) -> dict:
     """How well the policy pilots Trick Room teams against real teams of every kind.
 
     Each of our evaluation teams meets a held-out real ladder team. The same pairing is played with
@@ -213,7 +214,9 @@ def evaluate(net, games: int, workers: int, seed: int, known: list[dict] | None 
                          "agentB": "greedy-blind", "cond": cond, "t_side": "A", "o_tr": o["trick_room"], "source": source})
             jobs.append({"id": f"{n}-{cond}-b", "a": o["text"], "b": t["text"], "seed": base, "agentA": "greedy-blind",
                          "agentB": pilot, "cond": cond, "t_side": "B", "o_tr": o["trick_room"], "source": source})
-    results = run_jobs(jobs, NeuralAgent(net, temperature=0.0), workers)
+    from champions.preview import LearnedPreview
+    agent = NeuralAgent(net, temperature=0.0, preview=LearnedPreview(net) if learned_preview else None)
+    results = run_jobs(jobs, agent, workers)
     by_id = {j["id"]: j for j in jobs}
     tally: dict = {}
     fallbacks = 0

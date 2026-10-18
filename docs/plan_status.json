@@ -9,12 +9,12 @@
     {
       "name": "Team preview (bring four, pick leads)",
       "status": "doing",
-      "note": "Head, data, loss and agent hook are built and tested. Not yet trained (step 4)."
+      "note": "Built and trained by imitation, but it plays worse than the rule-based preview (-11 points on known teams). Not used yet; needs a better method (see learned-agent.md)."
     },
     {
       "name": "Bigger network (~2-3x)",
-      "status": "todo",
-      "note": "Depth can grow in place; width needs a retrain. Under ~2 hours per run."
+      "status": "done",
+      "note": "192 x 4 trained: no gain over the 1M model at the imitation stage, and it overfits after epoch 3."
     },
     {
       "name": "Search at play time",
@@ -44,14 +44,14 @@
     {
       "n": 4,
       "name": "Pilot imitation run (10% data), then full run; check both gates",
-      "status": "doing",
-      "note": "Pilot done (10% data, 3 epochs, 192x4 with preview and rating weighting): no errors; 49.8% top-1, 72.0% vs random. Control (128x3, no preview, no weighting, same data): 50.5%, 75.5%: level, so nothing in the bundle is hurting. Preview learns (bring four 37.9% vs 6.7% chance; leads 48.6%) but with the learned preview the pilot scored 59.5% vs random against 72.0% with the rule-based preview: watch this in the full run. Full run next."
+      "status": "done",
+      "note": "Full run done (192x4, 10 epochs, 13,900 games): 56.2% top-1 (older 128x3: 57.8%); overfits after epoch 3. Gates, rule-based preview: vs random 86.2% (not 90), known teams 49.3% (older model 50.0%, rule-based pilot 57.0%): level with the older model. Learned preview is much worse: 75.8% vs random and 38.0% on known teams, about 11 points below the rule-based preview. Keep the rule-based preview until the learned one beats it."
     },
     {
       "n": 5,
       "name": "Short reinforcement learning pass, only if gate 2 is missed",
       "status": "todo",
-      "note": ""
+      "note": "Gate 2 missed, so this is needed: reinforcement learning from il_policy_v3 on the 10 known-good teams (run 5 reached 59.2% from the older model)."
     },
     {
       "n": 6,

@@ -113,3 +113,19 @@ Held-out checks at iterations 10 to 60: 51.3 / 49.0 / 50.0 / 48.5 / 48.3 / 48.3%
 ### Run 5: 10 known-good Trick Room teams against strong tournament teams (stopped at iteration 51)
 
 Own teams: only the 10 known-good Trick Room teams (`known_teams.py`); opponents 80% the 317 best-rated tournament teams, 20% ladder. Held-out checks against held-out strong teams (baseline greedy-blind piloting the same teams, 57.0%): 51.8 / 50.7 / 47.8 / 59.2 / 57.8% at iterations 10 to 50 (interval about ±4). Mixed: ahead at iterations 40 and 50, behind at 20 and 30, so about level. Stopped early because the network inputs changed (joint two-Pokémon choice); this run used the older inputs.
+
+### Step 4 (2026-10-18): joint choice, 192x4, team preview, rating-weighted imitation
+
+Full imitation run on 13,900 games (log `results/il_v3.log`, model `il_policy_v3.pt`). Gates (`champions.gates`):
+
+| Model | Preview | vs random (gate 1: 90%) | Known 10 teams (gate 2: 60%; rule-based pilot 57.0%) |
+|---|---|---|---|
+| il_policy_v2 (128x3, no joint choice) | rule-based | 88.8% | 50.0% |
+| il_policy_v3 (192x4, joint choice) | rule-based | 86.2% | 49.3% |
+| il_policy_v3 | learned | 75.8% | 38.0% |
+| rl_run5_best (older inputs, RL on the known teams) | rule-based | 85.8% | 59.2% |
+
+- Joint choice, the bigger network and rating-weighted sampling gave no measurable gain at the imitation stage (49.3% vs 50.0%, level).
+- The model overfits: validation loss was lowest at epoch 3 (1.11) and rose to 1.20 by epoch 10 while training loss fell to 0.90.
+- The learned preview (copying players' picks, 46% bring-four and lead accuracy) plays about 11 points worse than the rule-based preview. Copying what players pick does not copy why; the rule-based preview scores matchups directly.
+- Reinforcement learning on the known teams is what moved gate 2 (59.2%), by training on those teams.

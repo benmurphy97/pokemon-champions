@@ -4,7 +4,8 @@
 // One JSON object per line.
 //   Python -> worker: {t:"job", id, a, b, agentA, agentB, seed}      teams are Showdown text
 //                     {t:"act", key, choice, candidates?}             reply to a decision; with candidates
-//                                                                    [{choice, prior}], search.js picks among them
+//                                                                    [{choice, prior}], search.js picks among them,
+//                                                                    with foeSets (our belief) in place of their real sets
 //   worker -> Python: {t:"decide", key, id, side, lines, request}    lines = log lines since last decision
 //                     {t:"result", id, winner: "A"|"B"|"tie", turns, fallbacks}
 //
@@ -60,7 +61,7 @@ class NeuralPlayer extends GreedyPlayer {
 		// and "default" means the greedy agent's bring-four / lead choice.
 		ask(this.id, this.side, lines, request).then(answer => {
 			if (seq !== this.requestSeq) return;
-			const choice = answer.candidates ? search(this.battle, this.side, answer.candidates) : answer.choice;
+			const choice = answer.candidates ? search(this.battle, this.side, answer.candidates, answer.foeSets) : answer.choice;
 			if (request.teamPreview && choice === 'default') return super.receiveRequest(request);
 			this.choose(choice);
 		});

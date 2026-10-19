@@ -200,3 +200,27 @@ built-2-115 53%, built-2-317 55%, built-2-334 56%, built-2-098 56%. All are at o
 - vs snapshots: 48–56%, as expected for near-copies.
 - Gates: random 93.8%, general 64.4% margin +0.151 (run 8: 62.9%, +0.132). Within noise.
 - Conclusion: more PPO against this league has plateaued. The next gain needs a different lever (search at play time with the opponent head, or a better team pool), not more of the same training.
+
+## Search at play time (2026-10-19): one-turn look-ahead
+
+`sim/search.js`, switched on with `NeuralAgent(search_k=8)` or `gates --search-k 8`. No retraining.
+
+- In the move phase the policy proposes its top 8 joint choices. The worker copies the battle and plays each
+  against the opponent's likely joint replies (greedy agent's top 3 per slot, so up to 9), one turn each,
+  with the same fresh random seed in every cell. Payoff per cell = health margin after the turn.
+  Score = 0.5 mean + 0.5 worst over replies + 0.02 log prior. About 0.75 ms per cell, ~55 ms per decision.
+- Fair version (default): the opponent's Pokémon in the copy get our belief (`complete_sets`: revealed moves,
+  item, ability; the rest from usage, with the top usage spread), not their real sets. Their pending choice
+  is cleared. Still visible to the copy: which four they brought, and whether their request is locked or can Mega.
+- Oracle version (`--oracle`): real sets in the copy. Upper bound only.
+
+| rl_run9_best.pt | random gate | general gate (1200 games) | margin | vs imitation (400 games) |
+|---|---|---|---|---|
+| no search | 93.8% | 64.4% | +0.151 | 54.9%, +0.055 |
+| search 8, fair | 94.8% | **71.9%** | +0.252 | 62.0%, +0.161 |
+| search 8, oracle | 95.0% | 74.2% | +0.272 | — |
+
+- Fair search adds 7.5 points on the general gate; hidden information is worth only 2.3 more.
+- The reply model is the greedy agent, the same family as the gate opponent, so the general-gate gain may flatter
+  search. The imitation head-to-head (a different opponent) also improves by 7 points, so the gain is not only that.
+- Known weakness: one turn of health margin scores "nothing happens" (double Protect) at 0, above trading damage.

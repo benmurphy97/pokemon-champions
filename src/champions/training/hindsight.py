@@ -36,10 +36,12 @@ def complete_sets(state: BattleState, side: str, usage: dict) -> dict:
 
         ability = mon.ability or (entry["abilities"][0][0] if entry else None)
 
-        stats = None   # the most common ladder spread for this Pokémon, on its pre-Mega form
+        stats = nature = points = None   # the most common ladder spread for this Pokémon, on its pre-Mega form
         base = _BASE_STATS.get(mon.species)
         if entry and base:
             nature, spread, _ = entry["spreads"][0]
-            stats = compute_stats(base, nature, {_POINTS_KEY[k]: v for k, v in spread.items()})
-        info[index] = {"moves": moves, "item": item, "ability": ability, "brought": mon.revealed, "stats": stats}
+            points = {_POINTS_KEY[k]: v for k, v in spread.items()}
+            stats = compute_stats(base, nature, points)
+        info[index] = {"moves": moves, "item": item, "ability": ability, "brought": mon.revealed, "stats": stats,
+                       "nature": nature, "points": points}
     return info

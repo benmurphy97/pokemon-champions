@@ -101,6 +101,7 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 1, in_f
                 reply = {"t": "act", "key": message["key"], "choice": choice}
                 if getattr(seat_agent, "last_candidates", None):
                     reply["candidates"] = seat_agent.last_candidates
+                    reply["foeSets"] = seat_agent.last_foe_sets
                 proc.stdin.write(json.dumps(reply) + "\n")
                 proc.stdin.flush()
             elif message["t"] == "result":

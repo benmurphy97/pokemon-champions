@@ -63,11 +63,12 @@ class NeuralAgent:
     """
 
     def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None, block_repeat_protect: bool = True,
-                 search_k: int = 0):
+                 search_k: int = 0, search_fair: bool = True):
         # search_k > 0: in the move phase, hand the top-k joint choices to the worker's one-turn look-ahead
         # (sim/search.js) through `last_candidates`; the worker picks among them.
-        self.search_k = search_k
-        self.last_candidates = None
+        # search_fair: the copies get our estimate of the opponent's sets (`last_foe_sets`), not their real ones.
+        self.search_k, self.search_fair = search_k, search_fair
+        self.last_candidates = self.last_foe_sets = None
         # A Protect-type move used on the previous turn almost always fails, so it is left out of the legal set.
         self.block_repeat_protect = block_repeat_protect
         # `preview(state, side, request) -> "team 1234"` plugs in a team-preview policy (bring four,
@@ -143,7 +144,7 @@ class NeuralAgent:
 
     def decide(self, state: BattleState, side: str, request: dict, record: list | None = None,
                thoughts: list | None = None) -> str:
-        self.last_candidates = None
+        self.last_candidates = self.last_foe_sets = None
         if request.get("teamPreview"):
             return self.preview(state, side, request) if self.preview else "default"
         pokemon = request["side"]["pokemon"]
@@ -170,6 +171,11 @@ class NeuralAgent:
             top = torch.argsort(logits, descending=True)[:self.search_k].tolist()
             self.last_candidates = [{"choice": self.pair_choice(slots, divmod(p, N_ATOMS), n), "prior": float(log_probs[p].exp())}
                                     for p in top if legal.flatten()[p]]
+            if self.search_fair:     # what we believe the opponent has: revealed details, the rest from usage
+                foe_side = "p2" if side == "p1" else "p1"
+                foe = complete_sets(state, foe_side, self.usage)
+                self.last_foe_sets = [{"species": state.sides[foe_side].team[i].species, **{k: foe[i][k] for k in
+                                       ("moves", "item", "ability", "nature", "points")}} for i in foe]
         if record is not None and legal.sum() > 1:
             used = [int(arrays["actor_moves"][s][a // N_TARGETS]) for s, a in enumerate(atoms) if a < ATOM_SWITCH]
             record.append({"arrays": arrays, "action": pair, "logp": float(log_probs[pair]), "lead": lead(state, side),

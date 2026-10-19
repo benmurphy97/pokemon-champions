@@ -191,3 +191,12 @@ built-2-115 53%, built-2-317 55%, built-2-334 56%, built-2-098 56%. All are at o
 - Gates: random 94.2% (run 7: 93.2), general 62.9% margin +0.132 (run 7: 63.2%, +0.121). No change on the general gate.
 - Weakest training teams: built-2-259 (new, worst in pool), built-2-083, built-2-334, built-2-001. built-2-761 (new) is fine.
 - Next: add self-play snapshots to the league so the opponent is not only greedy-blind.
+
+## Run 9 (2026-10-19): add self-play snapshots to the league
+
+- League self 0.2, snapshots 0.4, greedy-blind 0.4; init `rl_run8_best.pt`; 49 training teams (built-2-259 dropped, no stronger eligible replacement). 60 × 1024 games, 143 min (over the 2-hour budget: self games are slower). Best model `models/rl_run9_best.pt`.
+- Held-out vs greedy-blind: 67–70.5% throughout, flat from iteration 5 (run 8 ended 70.2%).
+- vs imitation (300 games): 49–57%, peak 57% at iteration 30, 51% at the end. Not distinguishable from run 8.
+- vs snapshots: 48–56%, as expected for near-copies.
+- Gates: random 93.8%, general 64.4% margin +0.151 (run 8: 62.9%, +0.132). Within noise.
+- Conclusion: more PPO against this league has plateaued. The next gain needs a different lever (search at play time with the opponent head, or a better team pool), not more of the same training.

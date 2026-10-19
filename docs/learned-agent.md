@@ -182,3 +182,12 @@ Gates on rl_run7_best (iteration 60), rule preview:
 General gate +6.0 points over the start, outside noise; first RL run that improved held-out play.
 Weakest training teams with the learner piloting (last 20 iterations, sampled play): built-2-356 48%,
 built-2-115 53%, built-2-317 55%, built-2-334 56%, built-2-098 56%. All are at or above 48%; candidates to swap.
+
+## Run 8 (2026-10-19): continue from run 7 after swapping two weak teams
+
+- 60 iterations × 1024 games (~61k), 89 min, league greedy-blind only, init `rl_run7_best.pt`. Best model `models/rl_run8_best.pt`.
+- Held-out 15 teams vs greedy-blind (600 games, ±3.7): 62.8 → 69.7 (it 30) → 73.2 (it 55) → 70.2 (it 60). Gain over run 7's end (64.5) is real; curve flat from about iteration 45.
+- Head-to-head against the imitation model stays at 48–56% (300 games): the gains are mostly exploiting greedy-blind.
+- Gates: random 94.2% (run 7: 93.2), general 62.9% margin +0.132 (run 7: 63.2%, +0.121). No change on the general gate.
+- Weakest training teams: built-2-259 (new, worst in pool), built-2-083, built-2-334, built-2-001. built-2-761 (new) is fine.
+- Next: add self-play snapshots to the league so the opponent is not only greedy-blind.

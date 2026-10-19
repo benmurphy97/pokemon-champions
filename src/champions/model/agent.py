@@ -62,7 +62,12 @@ class NeuralAgent:
     with the log-probability it was taken with, for training.
     """
 
-    def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None, block_repeat_protect: bool = True):
+    def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None, block_repeat_protect: bool = True,
+                 search_k: int = 0):
+        # search_k > 0: in the move phase, hand the top-k joint choices to the worker's one-turn look-ahead
+        # (sim/search.js) through `last_candidates`; the worker picks among them.
+        self.search_k = search_k
+        self.last_candidates = None
         # A Protect-type move used on the previous turn almost always fails, so it is left out of the legal set.
         self.block_repeat_protect = block_repeat_protect
         # `preview(state, side, request) -> "team 1234"` plugs in a team-preview policy (bring four,
@@ -138,6 +143,7 @@ class NeuralAgent:
 
     def decide(self, state: BattleState, side: str, request: dict, record: list | None = None,
                thoughts: list | None = None) -> str:
+        self.last_candidates = None
         if request.get("teamPreview"):
             return self.preview(state, side, request) if self.preview else "default"
         pokemon = request["side"]["pokemon"]
@@ -159,7 +165,22 @@ class NeuralAgent:
             probs = torch.softmax(logits / self.temperature, dim=-1).numpy().astype(np.float64)
             pair = int(self.rng.choice(len(probs), p=probs / probs.sum()))
         atoms = divmod(pair, N_ATOMS)
+        n = len(request.get("forceSwitch") or request.get("active") or [0, 0])
+        if self.search_k and kind == MOVE_PHASE and legal.sum() > 1:
+            top = torch.argsort(logits, descending=True)[:self.search_k].tolist()
+            self.last_candidates = [{"choice": self.pair_choice(slots, divmod(p, N_ATOMS), n), "prior": float(log_probs[p].exp())}
+                                    for p in top if legal.flatten()[p]]
+        if record is not None and legal.sum() > 1:
+            used = [int(arrays["actor_moves"][s][a // N_TARGETS]) for s, a in enumerate(atoms) if a < ATOM_SWITCH]
+            record.append({"arrays": arrays, "action": pair, "logp": float(log_probs[pair]), "lead": lead(state, side),
+                           "moves_used": used})
+        if thoughts is not None:
+            self.think(state, side, arrays, batch, q, mons, logits, atoms, thoughts)
+        return self.pair_choice(slots, atoms, n)
 
+    @staticmethod
+    def pair_choice(slots: list[dict], atoms: tuple, n: int) -> str:
+        """The simulator choice string for a pair of atoms; the first move that can Mega Evolve does."""
         choices, mega_used = [], False
         for slot, atom in enumerate(atoms):
             choice = slots[slot][atom]
@@ -167,13 +188,6 @@ class NeuralAgent:
                 choice += " mega"
                 mega_used = True
             choices.append(choice)
-        if record is not None and legal.sum() > 1:
-            used = [int(arrays["actor_moves"][s][a // N_TARGETS]) for s, a in enumerate(atoms) if a < ATOM_SWITCH]
-            record.append({"arrays": arrays, "action": pair, "logp": float(log_probs[pair]), "lead": lead(state, side),
-                           "moves_used": used})
-        if thoughts is not None:
-            self.think(state, side, arrays, batch, q, mons, logits, atoms, thoughts)
-        n = len(request.get("forceSwitch") or request.get("active") or [0, 0])
         return ", ".join(choices[:max(n, 1)])
 
     # ------------------------------------------------------------------ for the match viewer

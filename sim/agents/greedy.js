@@ -154,7 +154,14 @@ class GreedyPlayer extends RandomPlayerAI {
 	// ---- move choice -----------------------------------------------------------------------
 
 	chooseMove(active, moves) {
-		const slot = this.request.active.indexOf(active);
+		const options = this.rankMoves(this.request.active.indexOf(active), moves);
+		const best = options[0];
+		this.recordPlan(this.me.active[this.request.active.indexOf(active)], best);
+		return best.choice;
+	}
+
+	// Every legal move-and-target for the Pokémon in `slot`, best score first.
+	rankMoves(slot, moves) {
 		const mon = this.me.active[slot];
 		const ally = this.me.active[slot ^ 1];
 		const options = [];
@@ -178,9 +185,7 @@ class GreedyPlayer extends RandomPlayerAI {
 		}
 
 		options.sort((a, b) => b.score - a.score);
-		const best = options[0];
-		this.recordPlan(mon, best);
-		return best.choice;
+		return options;
 	}
 
 	// Remember planned damage so the partner doesn't also spend its attack on a target already dying.

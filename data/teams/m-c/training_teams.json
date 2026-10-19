@@ -1087,23 +1087,5 @@
    "games": 480
   },
   "replaced": "built-2-115"
- },
- {
-  "id": "built-2-259",
-  "species": [
-   "Archaludon",
-   "Meganium",
-   "Overqwil",
-   "Politoed",
-   "Victreebel",
-   "Volcarona"
-  ],
-  "text": "Overqwil @ Leftovers\nAbility: Intimidate\nLevel: 50\nEVs: 2 HP / 32 Atk / 32 Spe\nAdamant Nature\n- Throat Chop\n- Minimize\n- Protect\n- Stockpile\n\nPolitoed @ Sitrus Berry\nAbility: Drizzle\nLevel: 50\nEVs: 32 HP / 2 Def / 32 SpA\nModest Nature\n- Protect\n- Weather Ball\n- Muddy Water\n- Ice Beam\n\nVolcarona @ Rocky Helmet\nAbility: Flame Body\nLevel: 50\nEVs: 13 HP / 30 Def / 23 Spe\nTimid Nature\n- Rage Powder\n- Struggle Bug\n- Tailwind\n- Protect\n\nArchaludon @ Chople Berry\nAbility: Stamina\nLevel: 50\nEVs: 30 HP / 1 Def / 1 SpA / 19 SpD / 15 Spe\nModest Nature\n- Electro Shot\n- Protect\n- Dragon Pulse\n- Flash Cannon\n\nMeganium @ Meganiumite\nAbility: Leaf Guard\nLevel: 50\nEVs: 32 HP / 32 SpA / 2 Spe\nModest Nature\n- Weather Ball\n- Solar Beam\n- Protect\n- Dazzling Gleam\n\nVictreebel @ Victreebelite\nAbility: Chlorophyll\nLevel: 50\nEVs: 2 HP / 32 SpA / 32 Spe\nModest Nature\n- Sleep Powder\n- Sludge Bomb\n- Protect\n- Strength Sap\n",
-  "split": "train",
-  "rating": {
-   "wins": 256,
-   "games": 480
-  },
-  "replaced": "built-2-356"
  }
 ]

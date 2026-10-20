@@ -12,9 +12,12 @@ import json
 import re
 from pathlib import Path
 
-from champions.model.agent import NeuralAgent
+from champions.model.agent import NAME_BY_ID, NeuralAgent
 from champions.sim.arena import load_policy, run_jobs
 from champions.model.battle_state import BattleState, base_species
+from champions.teams.generate import usage_key
+from champions.teams.stats import compute_stats
+from champions.training.hindsight import _BASE_STATS, _POINTS_KEY
 
 ROOT = Path(__file__).resolve().parents[3]
 MODEL_CANDIDATES = [ROOT / "models" / "rl_run9_best.pt", ROOT / "models" / "rl_policy.pt", ROOT / "models" / "il_policy_v2.pt"]
@@ -96,6 +99,42 @@ def snapshot(state: BattleState, side: str, brought: list[int]) -> dict:
             "ourConditions": sorted(state.sides[side].conditions), "foeConditions": sorted(state.sides[other].conditions)}
 
 
+def ranked(known, guesses, rows: int):
+    """Known facts first (probability 1), then the ladder's most common alternatives with their usage share."""
+    out = [{"name": name, "p": 1.0, "known": True} for name in known if name]
+    out += [{"name": name, "p": round(share, 3), "known": False} for name, share in guesses if name not in known]
+    return out[:rows]
+
+
+def beliefs(state: BattleState, side: str, usage: dict) -> list[dict]:
+    """What we believe about each of `side`'s six: revealed facts at 100%, the rest from ladder usage."""
+    out = []
+    for mon in state.sides[side].team[:6]:
+        entry = usage.get(usage_key(mon.species, mon.mega, usage) or "")
+        known = {"moves": mon.moves, "items": [mon.item], "abilities": [mon.ability]}
+        guess = {k: (entry[k] if entry else []) for k in ("moves", "items", "abilities")}
+        spread = None
+        base = _BASE_STATS.get(mon.species)
+        if entry and base:
+            nature, points, share = entry["spreads"][0]
+            points = {_POINTS_KEY[k]: v for k, v in points.items()}
+            spread = {"nature": nature, "points": points, "p": round(share, 3), "stats": compute_stats(base, nature, points)}
+        out.append({"moves": ranked(known["moves"], guess["moves"], 8), "items": ranked(known["items"], guess["items"], 3),
+                    "abilities": ranked(known["abilities"], guess["abilities"], 2), "spread": spread})
+    return out
+
+
+def own_sets(request: dict) -> list[dict]:
+    """Our four, exactly as the request gives them (nothing is hidden from us)."""
+    out = []
+    for p in request["side"]["pokemon"]:
+        hp = p["condition"].split(" ")[0].split("/")
+        out.append({"name": p["details"].split(",")[0], "moves": [NAME_BY_ID.get(m, m) for m in p.get("moves", [])], "item": NAME_BY_ID.get(p.get("item", ""), None),
+                    "ability": NAME_BY_ID.get(p.get("baseAbility") or "", None),
+                    "stats": {**(p.get("stats") or {}), "hp": int(hp[1]) if len(hp) == 2 else None}})
+    return out
+
+
 class Viewer(NeuralAgent):
     """Plays like the evaluated agent (policy, then search over its top choices) and keeps every step."""
 
@@ -125,6 +164,8 @@ class Viewer(NeuralAgent):
         step = {"turn": state.turn, "events": describe(self.lines, side), "board": snapshot(state, side, brought),
                 "thoughts": thoughts, "plans": self.last_plans, "policyChoice": policy_choice, "analysis": analysis,
                 "choice": analysis["choice"] if analysis and analysis["rows"] else policy_choice}
+        other = "p2" if side == "p1" else "p1"
+        step["board"]["oursSets"], step["board"]["foeSets"] = own_sets(request), beliefs(state, other, self.usage)
         self.lines = []
         return step
 

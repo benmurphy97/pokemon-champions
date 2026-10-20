@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="common2.css"><title>Option D · Two rosters</title>
+<style>
+.app { height:100%; display:grid; grid-template-columns:300px minmax(0,1fr) 340px; gap:8px; padding:8px; }
+.col > .card { flex:none; } .col { display:flex; flex-direction:column; gap:6px; min-height:0; overflow:auto; }
+.mid { display:grid; grid-template-rows:auto auto auto minmax(0,1fr); gap:8px; min-height:0; }
+.bar2 { display:flex; align-items:center; gap:12px; } .bar2 .winbar { flex:1; }
+.foecol .unit { padding:6px 8px; } .foecol .stats { display:none; } .foecol .unit.live .stats, .foecol .unit.seen .stats { display:grid; }
+</style></head><body><div class="app" id="app"></div>
+<script src="data3.js"></script><script src="common.js"></script><script src="common2.js"></script>
+<script>
+let tab='look', at=1;
+document.addEventListener('click',e=>{const t=e.target.closest('[data-tab]'); if(t){tab=t.dataset.tab; render(at);}});
+function render(i){
+  at=i; const s=S[i], b=s.board;
+  const ours=[...b.ours].sort((x,y)=>(y.active!=null)-(x.active!=null)||(x.fainted-y.fainted));
+  const foes=b.foe.map((m,k)=>({m,k})).sort((x,y)=>(y.m.active!=null)-(x.m.active!=null)||(y.m.seen-x.m.seen)||(x.m.fainted-y.m.fainted));
+  const mid = tab==='log' ? `<ul class="log">${logUpTo(i).map(eventLine).join('')}</ul>` : `<h3><span>Candidate plans</span><span>policy vs one-turn search</span></h3>${candidates(s,5)}<h3 style="margin-top:10px"><span>Payoff matrix</span><span>health margin after 1 turn, ours − theirs</span></h3>${matrix(s,{rows:6})}`;
+  document.getElementById('app').innerHTML=`
+  <div class="col"><h3><span>Your four</span><span>moves: model's odds</span></h3>${ours.map(m=>ourCard(s,m)).join('')}</div>
+  <div class="mid"><div class="bar2">${stepper(i)}${winBar(winOf(s))}</div>${stage(s,{height:250})}
+    <div class="card" style="display:none"></div>
+    <div class="card scroll" style="grid-row:4">${tabs(tab,[['look','1-turn look-ahead'],['log','Battle log']])}${mid}</div></div>
+  <div class="col foecol"><h3><span>Their six</span><span>solid = revealed</span></h3>${foes.map(({m,k})=>foeCard(s,m,k,{moves:5})).join('')}</div>`;
+}
+mount(render,1);
+</script></body></html>

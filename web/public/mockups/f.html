@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="common2.css"><title>Option F · Actives docked</title>
+<style>
+.app { height:100%; display:grid; grid-template-columns:320px minmax(0,1fr) 340px; gap:8px; padding:8px; }
+.col { display:flex; flex-direction:column; gap:6px; min-height:0; overflow:auto; } .col > .card { flex:none; }
+.mid { display:flex; flex-direction:column; gap:8px; min-height:0; overflow:auto; } .mid > * { flex:none; }
+.bar2 { display:flex; align-items:center; gap:12px; } .bar2 .winbar { flex:1; }
+.bench { display:flex; gap:10px; align-items:center; flex-wrap:wrap; } .bench .lab { font:500 10px 'IBM Plex Mono'; text-transform:uppercase; color:var(--dim); }
+.rc { position:relative; width:54px; border:1px solid var(--line); background:var(--card); border-radius:8px; padding:3px 4px 4px; cursor:pointer; text-align:center; } .rc .ico { width:30px; height:30px; } .rc.sel { box-shadow:0 0 0 2px var(--blue); } .rc.out { opacity:.35; filter:grayscale(1); } .rc.unseen { border-style:dashed; background:#fafbfc; } .rc.unseen .ico { filter:brightness(0) opacity(.35); } .rc .hp { margin:1px 0 0; } .rc.foe.seen::after { content:''; position:absolute; right:3px; top:3px; width:7px; height:7px; border-radius:50%; background:var(--bad); } .rc small { display:block; font-size:9.5px; color:var(--dim); }
+.pair { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+</style></head><body><div class="app" id="app"></div>
+<script src="data3.js"></script><script src="common.js"></script><script src="common2.js"></script>
+<script>
+let tab='look', sel=null, at=1;
+document.addEventListener('click',e=>{const t=e.target.closest('[data-tab]'); if(t){tab=t.dataset.tab; render(at);} const p=e.target.closest('[data-pick]'); if(p){sel=sel===p.dataset.pick?null:p.dataset.pick; render(at);} });
+const chip=(m,key,side)=>{const sw=side==='us'?switchIn(S[at],m):null; return `<div class="rc ${side} ${m.seen||side==='us'?'seen':'unseen'} ${m.fainted?'out':''} ${sel===key?'sel':''}" data-pick="${key}" title="${esc(m.name)}">${icon(m.name)}${m.seen||side==='us'?hpBar(m.hp):'<div class="hp"></div>'}${sw!=null&&!m.fainted?`<small>in ${pct(sw)}</small>`:''}</div>`;};
+function detail(s){
+  if(!sel) return '';
+  const [side,id]=sel.split('|');
+  if(side==='us'){const m=s.board.ours.find(x=>x.name===id); return m?`<div class="card">${ourCard(s,m)}</div>`:'';}
+  const k=Number(id); return `<div class="card">${foeCard(s,s.board.foe[k],k,{moves:8})}</div>`;
+}
+function render(i){
+  at=i; const s=S[i], b=s.board;
+  const usA=actives(b.ours).filter(Boolean), foA=actives(b.foe).map((m,k)=>m?{m,k:b.foe.indexOf(m)}:null).filter(Boolean);
+  const benchUs=b.ours.filter(m=>m.active==null), benchFoe=b.foe.map((m,k)=>({m,k})).filter(x=>x.m.active==null);
+  document.getElementById('app').innerHTML=`
+  <div class="col"><h3><span>On the field: you</span><span>model's odds per move</span></h3>${usA.map(m=>ourCard(s,m)).join('')||'<p class="quiet">Nobody on the field.</p>'}</div>
+  <div class="mid"><div class="bar2">${stepper(i)}${winBar(winOf(s))}</div>${stage(s,{height:230})}
+   <div class="card bench"><span class="lab">Your bench</span>${benchUs.map(m=>chip(m,'us|'+m.name,'us')).join('')}<span class="lab" style="margin-left:14px">Their bench and unseen</span>${benchFoe.map(({m,k})=>chip(m,'foe|'+k,'foe')).join('')}<span class="sub">click one to open its card</span></div>
+   ${detail(s)}
+   <div class="card">${tabs(tab,[['look','1-turn look-ahead'],['log','Battle log']])}${tab==='log'?`<ul class="log">${logUpTo(i).map(eventLine).join('')}</ul>`:`${candidates(s,5)}<div style="margin-top:8px">${matrix(s,{rows:6})}</div>`}</div></div>
+  <div class="col"><h3><span>On the field: them</span><span>has it · uses it now</span></h3>${foA.map(({m,k})=>foeCard(s,m,k,{moves:8})).join('')}</div>`;
+}
+mount(render,1);
+</script></body></html>

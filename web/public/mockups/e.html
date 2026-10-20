@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="common2.css"><title>Option E · Field and inspector</title>
+<style>
+.app { height:100%; display:grid; grid-template-columns:minmax(0,1fr) 430px; grid-template-rows:auto minmax(0,1fr); gap:8px; padding:8px; }
+.top { grid-column:1 / span 2; display:flex; gap:14px; align-items:center; }
+.rost { display:flex; gap:4px; align-items:center; } .rost .lab { font:500 10px 'IBM Plex Mono'; text-transform:uppercase; color:var(--dim); margin-right:4px; }
+.rc { position:relative; width:56px; border:1px solid var(--line); background:var(--card); border-radius:8px; padding:3px 4px 4px; cursor:pointer; text-align:center; } .rc .ico { width:32px; height:32px; } .rc.sel { box-shadow:0 0 0 2px var(--blue); } .rc.live { border-color:var(--ink); border-width:2px; padding:2px 3px 3px; } .rc.out { opacity:.35; filter:grayscale(1); } .rc.unseen { border-style:dashed; background:#fafbfc; } .rc.unseen .ico { filter:brightness(0) opacity(.35); } .rc .hp { margin:1px 0 0; } .rc.foe.seen::after { content:''; position:absolute; right:3px; top:3px; width:7px; height:7px; border-radius:50%; background:var(--bad); }
+.left { display:grid; grid-template-rows:auto minmax(0,1fr); gap:8px; min-height:0; }
+.field3 { display:grid; grid-template-columns:230px minmax(0,1fr) 230px; gap:8px; align-items:stretch; } .docks { display:flex; flex-direction:column; gap:6px; } .dec { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:6px 8px; font-size:11.5px; } .dec.us { border-left:4px solid var(--blue); } .dec.foe { border-left:4px solid var(--bad); }
+.dec .r { display:grid; grid-template-columns:minmax(0,1fr) 40px 32px; gap:6px; align-items:center; } .dec .r b { font:500 11px 'IBM Plex Mono'; text-align:right; } .dec.foe .bar i { background:var(--bad); } .dec .r.pick span:first-child { font-weight:600; }
+.dec h6 { margin:0 0 2px; font:500 9.5px 'IBM Plex Mono'; text-transform:uppercase; letter-spacing:.05em; color:var(--dim); }
+</style></head><body><div class="app" id="app"></div>
+<script src="data3.js"></script><script src="common.js"></script><script src="common2.js"></script>
+<script>
+let tab='mon', sel=null, at=1;
+document.addEventListener('click',e=>{const t=e.target.closest('[data-tab]'); if(t){tab=t.dataset.tab; render(at);} const p=e.target.closest('[data-pick]'); if(p){sel=p.dataset.pick; tab='mon'; render(at);} });
+function chip(m,key,side){ return `<div class="rc ${side} ${m.seen||side==='us'?'seen':'unseen'} ${m.fainted?'out':m.active!=null?'live':''} ${sel===key?'sel':''}" data-pick="${key}" title="${esc(m.name)}">${icon(m.name)}${m.seen||side==='us'?hpBar(m.hp):'<div class="hp"></div>'}</div>`; }
+function dock(s){
+  // decision boxes beside the field: ours on the left, their expected moves on the right
+  const us=actives(s.board.ours), fo=actives(s.board.foe);
+  const ourBox=us.map(m=>{ const d=m&&ourDecision(s,m); if(!d) return ''; const set=ourSet(s,m)||{moves:[]};
+    const rows=set.moves.map(n=>{const g=d.groups.find(x=>x.name===n); return {n,p:g?g.prob:0};});
+    const sw=d.groups.filter(g=>g.kind==='switch').map(g=>`${g.name.replace('Switch to ','→ ')} ${pct(g.prob)}`).join(' · ');
+    return `<div class="dec us"><h6>${esc(m.name)}: should play</h6>${rows.map(r=>`<div class="r ${r.n===d.chosen?'pick':''}"><span>${r.n===d.chosen?'▶ ':''}${esc(r.n)}</span><span class="bar"><i style="width:${r.p*100}%"></i></span><b>${pct(r.p)}</b></div>`).join('')}${sw?`<div class="sub">${esc(sw)}</div>`:''}</div>`; }).join('');
+  const foeBox=fo.map(m=>{ const p=m&&foePred(s,m); if(!p) return ''; return `<div class="dec foe"><h6>${esc(m.name)}: expected</h6>${p.top.slice(0,4).map((x,j)=>`<div class="r ${j===0?'pick':''}"><span>${esc(x.label)}</span><span class="bar"><i style="width:${x.prob*100}%"></i></span><b>${pct(x.prob)}</b></div>`).join('')}</div>`; }).join('');
+  return [ourBox||'<div class="quiet">Replacement: no move to pick.</div>',foeBox];
+}
+function inspector(s,i){
+  if(tab==='log') return `<ul class="log">${logUpTo(i).map(eventLine).join('')}</ul>`;
+  let key=sel; if(!key){ const f=actives(s.board.foe).find(Boolean); key=f?`foe|${s.board.foe.indexOf(f)}`:'us|'+s.board.ours[0].name; }
+  const [side,id]=key.split('|');
+  if(side==='us'){ const m=s.board.ours.find(x=>x.name===id); return m?ourCard(s,m):''; }
+  const k=Number(id); return foeCard(s,s.board.foe[k],k,{moves:8});
+}
+function render(i){
+  at=i; const s=S[i], b=s.board;
+  document.getElementById('app').innerHTML=`
+  <div class="top">${stepper(i)}<div class="rost"><span class="lab">You</span>${b.ours.map(m=>chip(m,'us|'+m.name,'us')).join('')}</div><div class="rost"><span class="lab">Them</span>${b.foe.map((m,k)=>chip(m,'foe|'+k,'foe')).join('')}</div><div style="flex:1;max-width:340px;margin-left:auto">${winBar(winOf(s))}</div></div>
+  <div class="left"><div class="field3">${(()=>{const [o,f]=dock(s); return `<div class="docks">${o}</div>${stage(s,{height:300})}<div class="docks">${f}</div>`;})()}</div>
+   <div class="card scroll"><h3><span>1-turn look-ahead</span><span>candidate plans, then the payoff matrix (ours − theirs)</span></h3>${candidates(s,4)}<div style="margin-top:8px">${matrix(s,{rows:5})}</div></div></div>
+  <div class="card scroll">${tabs(tab,[['mon','Selected Pokémon'],['log','Battle log']])}${inspector(s,i)}<p class="quiet">Click any Pokémon in the top strip to inspect it.</p></div>`;
+}
+mount(render,1);
+</script></body></html>

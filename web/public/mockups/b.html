@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Option B · Champions console</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
+<style>
+:root { --ink:#16213e; --dim:#5d6a8a; --white:#fff; --blue:#2a6cff; --sky1:#52c7ff; --sky2:#8b7bff; --good:#19b36b; --warn:#f5a524; --bad:#f0443e; --line:#e3e8f5; }
+* { box-sizing:border-box; } html,body { height:100%; margin:0; }
+body { font:14px/1.4 'Nunito',system-ui,sans-serif; color:var(--ink); font-variant-numeric:tabular-nums;
+  background:linear-gradient(135deg,var(--sky1),var(--sky2)); overflow:hidden; }
+body::before { content:''; position:fixed; inset:0; background:repeating-linear-gradient(115deg,rgba(255,255,255,.07) 0 60px,transparent 60px 120px); pointer-events:none; }
+.app { position:relative; height:100%; display:grid; grid-template-columns:minmax(0,1fr) 400px; grid-template-rows:auto minmax(0,1fr) auto; gap:12px; padding:12px; }
+.topbar { grid-column:1 / span 2; display:flex; align-items:center; gap:16px; color:#fff; }
+.turn { font:700 30px 'Fredoka',sans-serif; letter-spacing:.02em; text-shadow:0 2px 0 rgba(0,0,0,.15); } .turn small { font-size:14px; opacity:.85; margin-left:8px; }
+.tug { flex:1; max-width:560px; margin:0 auto; } .tug .lab { display:flex; justify-content:space-between; font:600 13px 'Fredoka'; text-shadow:0 1px 0 rgba(0,0,0,.2); } .tug .bar { height:14px; border-radius:7px; background:rgba(240,68,62,.9); overflow:hidden; border:2px solid #fff; } .tug .bar i { display:block; height:100%; background:var(--good); }
+.nav { display:flex; gap:6px; align-items:center; } .nav button { border:0; border-radius:99px; background:#fff; color:var(--ink); font:700 13px 'Nunito'; padding:6px 14px; cursor:pointer; box-shadow:0 2px 0 rgba(0,0,0,.15); } .nav button.on { background:var(--ink); color:#fff; }
+.pill { background:rgba(255,255,255,.9); color:var(--ink); border-radius:99px; padding:3px 12px; font:700 12px 'Fredoka'; }
+.stage { position:relative; min-height:0; }
+.mon { position:absolute; transform:translate(-50%,-100%); z-index:2; } .mon .spr { max-height:150px; filter:drop-shadow(0 8px 6px rgba(20,30,80,.25)); } .mon.back .spr { max-height:190px; }
+.shadow { position:absolute; width:150px; height:26px; transform:translate(-50%,-50%); background:radial-gradient(ellipse,rgba(20,30,80,.35),transparent 70%); }
+.plate { position:absolute; z-index:4; background:#fff; border-radius:14px; padding:6px 12px; width:200px; box-shadow:0 3px 0 rgba(20,30,80,.18); }
+.plate b { font:600 15px 'Fredoka'; } .plate .pc { float:right; font-weight:800; color:var(--dim); } .plate .hp { height:10px; background:#e6ebf6; border-radius:5px; margin-top:4px; overflow:hidden; } .plate .hp i { display:block; height:100%; border-radius:5px; }
+.plate.foe { border-top:5px solid var(--bad); } .plate.us { border-top:5px solid var(--blue); }
+.callout { position:absolute; z-index:5; background:var(--blue); color:#fff; font:600 13px 'Fredoka'; padding:3px 12px; border-radius:99px; box-shadow:0 2px 0 rgba(0,0,0,.2); white-space:nowrap; }
+.sheet { grid-column:1; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.slotbox { background:#fff; border-radius:18px; padding:10px 12px 12px; box-shadow:0 4px 0 rgba(20,30,80,.2); }
+.slotbox h4 { margin:0 0 8px; font:600 16px 'Fredoka'; display:flex; justify-content:space-between; } .slotbox h4 span { font:700 12px 'Nunito'; color:var(--dim); }
+.moves { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+.mv { position:relative; border:2px solid var(--line); border-radius:12px; background:#f6f8ff; padding:8px 10px; text-align:left; cursor:pointer; overflow:hidden; font:inherit; color:var(--ink); }
+.mv i { position:absolute; left:0; top:0; bottom:0; background:rgba(42,108,255,.14); } .mv span { position:relative; display:flex; justify-content:space-between; gap:8px; font-weight:800; } .mv em { position:relative; font-style:normal; font-size:11px; color:var(--dim); }
+.mv.pick { border-color:var(--blue); background:#eaf0ff; } .mv.pick i { background:rgba(42,108,255,.3); } .mv.focus { outline:3px solid var(--warn); }
+.mv.sw { background:#fff; border-style:dashed; }
+.drawer { grid-column:2; grid-row:2 / span 2; background:#fff; border-radius:18px; box-shadow:0 4px 0 rgba(20,30,80,.2); display:flex; flex-direction:column; min-height:0; }
+.tabs { display:flex; padding:8px 8px 0; gap:4px; border-bottom:2px solid var(--line); } .tabs button { border:0; background:none; font:600 14px 'Fredoka'; color:var(--dim); padding:8px 12px; cursor:pointer; border-bottom:4px solid transparent; margin-bottom:-2px; } .tabs button.on { color:var(--ink); border-bottom-color:var(--blue); }
+.pane { padding:12px 14px; overflow:auto; min-height:0; flex:1; } .pane h5 { margin:12px 0 4px; font:600 13px 'Fredoka'; color:var(--dim); letter-spacing:.04em; text-transform:uppercase; } .pane h5:first-child { margin-top:0; }
+.why { background:#fff8e6; border-radius:10px; padding:8px 10px; margin-bottom:10px; font-size:13px; } .why b { font-family:'Fredoka'; }
+.pred { margin-bottom:10px; } .pred .row { display:grid; grid-template-columns:1fr 44px; gap:6px; align-items:center; font-size:13px; } .pred .bar { height:8px; background:#e6ebf6; border-radius:4px; overflow:hidden; grid-column:1 / span 2; margin-bottom:4px; } .pred .bar i { display:block; height:100%; background:var(--bad); }
+ul.log { list-style:none; margin:0; padding:0; font-size:13px; } ul.log li { padding:3px 8px; margin:2px 0; border-radius:8px; background:#f6f8ff; } ul.log li.turn { background:var(--ink); color:#fff; font:600 13px 'Fredoka'; margin-top:10px; } ul.log li.foe { background:#fff0ef; } ul.log li.ours { background:#eaf0ff; } ul.log li.field { background:none; color:var(--dim); }
+.mx table { border-collapse:collapse; font-size:11px; width:100%; } .mx th,.mx td { padding:3px 4px; text-align:right; white-space:nowrap; border-bottom:1px solid var(--line); } .mx td.plan { text-align:left; white-space:normal; min-width:130px; } .mx th { color:var(--dim); } .mx tr.pick td.plan { font-weight:800; color:var(--blue); } .mx { overflow:auto; } .strong { font-weight:800; } .quiet { color:var(--dim); font-size:12px; }
+</style></head>
+<body><div class="app" id="app"></div>
+<script src="data.js"></script><script src="common.js"></script>
+<script>
+let tab = 'why', focus = null, at = 3;
+const FOE = [[42, 30], [68, 40]], US = [[20, 80], [56, 74]];
+function plate(m, pos, side) {
+  if (!m) return '';
+  const us = side === 'us';
+  return `<div class="plate ${side}" style="left:${pos[0]}%;top:${pos[1] + 2}%;transform:translateX(-50%)"><b>${esc(m.name)}</b><span class="pc">${pct(m.hp)}</span><div class="hp"><i style="width:${m.hp * 100}%;background:${hpColor(m.hp)}"></i></div></div>`;
+}
+function mon(m, pos, back) { return m ? `<div class="shadow" style="left:${pos[0]}%;top:${pos[1]}%"></div><div class="mon ${back ? 'back' : ''}" style="left:${pos[0]}%;top:${pos[1]}%">${sprite(m.name, back)}</div>` : ''; }
+function slotBox(s, t, k, pk) {
+  const groups = moveGroups(t), chosen = split(t.chosen)[0];
+  const moves = groups.filter((g) => g.kind !== 'switch' && g.kind !== 'replacement').slice(0, 4), sw = groups.filter((g) => g.kind === 'switch').slice(0, 2);
+  const btn = (g) => `<button class="mv ${g.name === chosen ? 'pick' : ''} ${focus && focus.k === k && focus.name === g.name ? 'focus' : ''} ${g.kind === 'switch' ? 'sw' : ''}" data-focus="${k}|${esc(g.name)}"><i style="width:${g.prob * 100}%"></i><span>${esc(g.name)}<b>${pct(g.prob)}</b></span>${g.targets.length ? `<em>mostly → ${esc(g.targets.sort((a, b) => b.prob - a.prob)[0].foe)}</em>` : '<em>&nbsp;</em>'}</button>`;
+  return `<div class="slotbox"><h4>${esc(t.actor || 'Choose a replacement')}<span>MODEL PICKS ${esc(split(t.chosen)[0].toUpperCase())}</span></h4><div class="moves">${[...moves, ...sw].map(btn).join('')}</div></div>`;
+}
+function whyPane(s) {
+  const f = focus || (() => { const t = s.thoughts[0]; return t && t.actor ? { k: 0, name: split(t.chosen)[0] } : null; })();
+  if (!f) return '<p class="quiet">Replacement: no move to explain.</p>';
+  const t = s.thoughts[f.k], g = moveGroups(t).find((x) => x.name === f.name);
+  const rows = g && g.targets.length ? g.targets.sort((a, b) => b.prob - a.prob).map((x) => {
+    const d = x.damage && x.damage.find((y) => y.foe === x.foe);
+    return `<div class="row"><span>→ ${esc(x.foe)} ${d ? `<span class="quiet">${pct(d.pctOfCurrentHp)} of its HP${d.sureKo ? ' · sure KO' : d.maybeKo ? ' · may KO' : ''}${d.effectiveness !== 1 ? ` · ×${d.effectiveness}` : ''}</span>` : ''}</span><b>${pct(x.prob)}</b></div><div class="bar"><i style="width:${x.prob * 100}%;background:var(--blue)"></i></div>`;
+  }).join('') : '<p class="quiet">No target.</p>';
+  return `<div class="why"><b>${esc(t.actor)} → ${esc(f.name)}</b><br>The policy gives it ${pct(g ? g.prob : 0)}. Targets it considered:</div><div class="pred">${rows}</div>`;
+}
+function pane(s, i) {
+  if (tab === 'opp') {
+    const pred = s.thoughts.find((t) => t.foePrediction && t.foePrediction.length);
+    return pred ? `<h5>What it thinks they will do</h5>` + pred.foePrediction.map((f) => `<div class="pred"><b>${esc(f.foe)}</b>${f.top.slice(0, 4).map((x) => `<div class="row"><span>${esc(x.label)}</span><b>${pct(x.prob)}</b></div><div class="bar"><i style="width:${x.prob * 100}%"></i></div>`).join('')}</div>`).join('') : '<p class="quiet">Nothing to predict this step.</p>';
+  }
+  if (tab === 'search') return `<h5>One-turn look-ahead</h5>${matrix(s, { rows: 6, short: true })}<p class="quiet">Cells are health margin after one turn (ours − theirs). R1–R9 are their likely replies; hover a header.</p>`;
+  if (tab === 'log') return `<ul class="log">${logUpTo(i).map(eventLine).join('')}</ul>`;
+  return `<h5>Why this move</h5>${whyPane(s)}<p class="quiet">Click any move below the field to see its targets and damage.</p>`;
+}
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('[data-tab]'); if (t) { tab = t.dataset.tab; render(at); }
+  const f = e.target.closest('[data-focus]'); if (f) { const [k, name] = f.dataset.focus.split('|'); focus = { k: Number(k), name }; tab = 'why'; render(at); }
+});
+function render(i) {
+  at = i; const s = S[i], b = s.board, fo = actives(b.foe), us = actives(b.ours), w = s.thoughts[0] ? s.thoughts[0].winChance : 0.5;
+  document.getElementById('app').innerHTML = `
+  <div class="topbar"><div class="turn">TURN ${s.turn}<small>${s.forced ? 'replacement' : ''}</small></div>
+   <div class="tug"><div class="lab"><span>YOU ${pct(w)}</span><span>THEM ${pct(1 - w)}</span></div><div class="bar"><i style="width:${w * 100}%"></i></div></div>
+   ${b.weather ? `<span class="pill">☀ ${esc(b.weather)}</span>` : ''}${b.trickRoom ? '<span class="pill">Trick Room</span>' : ''}
+   <div class="nav"><button data-step="prev">‹</button>${S.map((x, j) => `<button data-step="${j}" class="${j === i ? 'on' : ''}">${x.forced ? '↳' : x.turn}</button>`).join('')}<button data-step="next">›</button></div></div>
+  <div class="stage">${fo.map((m, k) => mon(m, FOE[k], false) + plate(m, FOE[k], 'foe')).join('')}${us.map((m, k) => mon(m, US[k], true) + plate(m, US[k], 'us')).join('')}</div>
+  <div class="sheet">${s.thoughts.map((t, k) => slotBox(s, t, k)).join('')}</div>
+  <div class="drawer"><div class="tabs">${[['why', 'Thinking'], ['opp', 'Opponent'], ['search', 'Look-ahead'], ['log', 'Log']].map(([k, n]) => `<button data-tab="${k}" class="${tab === k ? 'on' : ''}">${n}</button>`).join('')}</div><div class="pane" id="pane">${pane(s, i)}</div></div>`;
+  const p = document.getElementById('pane'); if (tab === 'log') p.scrollTop = p.scrollHeight;
+}
+document.addEventListener('click', (e) => { if (e.target.closest('[data-step]')) focus = null; }, true);
+mount(render, 3);
+</script></body></html>

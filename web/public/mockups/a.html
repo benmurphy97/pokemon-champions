@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Option A · Showdown classic</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap">
+<style>
+:root { --bg:#eef3f7; --card:#fff; --ink:#1d2b36; --dim:#6b7c8a; --line:#d8e1e8; --blue:#2f6fed; --good:#2ea05a; --warn:#e0a028; --bad:#d6423c; }
+* { box-sizing:border-box; } html,body { height:100%; margin:0; }
+body { background:var(--bg); color:var(--ink); font:14px/1.4 'Nunito Sans',system-ui,sans-serif; font-variant-numeric:tabular-nums; }
+.app { height:100%; display:grid; grid-template-rows:auto 1fr; gap:10px; padding:10px 14px; }
+.top { display:flex; align-items:center; gap:14px; }
+.top h1 { font-size:15px; margin:0; font-weight:800; } .top .grow { flex:1; }
+.steps { display:flex; gap:4px; } .steps button, .nav button { border:1px solid var(--line); background:var(--card); color:var(--ink); font:inherit; font-size:12px; padding:4px 10px; border-radius:6px; cursor:pointer; }
+.steps button.on { background:var(--ink); color:#fff; border-color:var(--ink); }
+.layout { min-height:0; display:grid; grid-template-columns:minmax(0,1fr) 340px; grid-template-rows:auto auto minmax(0,1fr); gap:10px; }
+.stage { grid-column:1; position:relative; aspect-ratio:16/8.2; max-height:56vh; width:100%; border-radius:10px; overflow:hidden; border:1px solid var(--line);
+  background:linear-gradient(#bfe2f8 0%,#e6f4fc 46%,#a6d983 46.2%,#86c564 100%); }
+.stage.sun::after { content:''; position:absolute; inset:0; background:radial-gradient(circle at 92% -10%,rgba(255,214,90,.55),transparent 55%); pointer-events:none; }
+.field-tag { position:absolute; left:10px; top:10px; display:flex; gap:6px; z-index:3; } .tag { background:rgba(255,255,255,.85); border-radius:99px; padding:2px 10px; font-size:12px; font-weight:800; }
+.mon { position:absolute; width:150px; transform:translate(-50%,-100%); text-align:center; }
+.mon .spr { max-height:110px; image-rendering:auto; position:relative; z-index:2; } .mon.back .spr { max-height:130px; }
+.mon .pad { position:absolute; left:50%; bottom:-6px; width:130px; height:26px; transform:translateX(-50%); background:radial-gradient(ellipse,rgba(40,80,30,.35),transparent 70%); }
+.plate { position:absolute; z-index:4; width:170px; background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:8px; padding:5px 8px; font-size:12px; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+.plate b { font-weight:800; } .plate .hpbar { height:6px; background:#dfe7ec; border-radius:3px; margin:4px 0 2px; overflow:hidden; } .plate .hpbar i { display:block; height:100%; }
+.chip { display:inline-block; font-size:10px; padding:0 6px; border-radius:4px; background:#e8eef3; margin-right:3px; font-weight:800; } .chip.up { background:#ffe9b8; }
+.picked { position:absolute; z-index:5; font-size:11px; font-weight:800; background:var(--blue); color:#fff; padding:2px 8px; border-radius:99px; transform:translate(-50%,0); white-space:nowrap; }
+.bench { grid-column:1; display:flex; gap:20px; align-items:center; font-size:12px; color:var(--dim); } .bench .group { display:flex; gap:2px; align-items:center; } .ico { width:34px; height:34px; object-fit:contain; } .ico.down { filter:grayscale(1); opacity:.35; } .ico.dim { opacity:.45; }
+.below { grid-column:1; display:grid; grid-template-columns:1.1fr 1fr 1.5fr; gap:10px; min-height:0; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; min-height:0; overflow:auto; }
+.card h3 { margin:0 0 6px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:800; }
+.log { grid-column:2; grid-row:1 / span 3; overflow:auto; } .log ul { list-style:none; margin:0; padding:0; font-size:13px; } .log li { padding:2px 0 2px 8px; border-left:3px solid var(--line); margin:2px 0; } .log li.ours { border-color:var(--blue); } .log li.foe { border-color:var(--bad); } .log li.turn { border-color:var(--ink); font-weight:800; margin-top:10px; } .log li.field { color:var(--dim); }
+.slot { margin-bottom:10px; } .slot h4 { margin:0 0 4px; font-size:13px; } .mv { display:grid; grid-template-columns:120px 1fr 40px; gap:6px; align-items:center; font-size:12.5px; padding:1px 0; } .mv .bar { height:8px; background:#e8eef3; border-radius:4px; overflow:hidden; } .mv .bar i { display:block; height:100%; background:#b8c6d1; } .mv.pick { font-weight:800; } .mv.pick .bar i { background:var(--blue); } .mv .p { text-align:right; color:var(--dim); }
+.why { font-size:12px; color:var(--dim); margin:2px 0 0 0; }
+.win { height:10px; border-radius:5px; background:var(--bad); overflow:hidden; margin:4px 0 2px; } .win i { display:block; height:100%; background:var(--good); }
+.mx { overflow:auto; } .mx table { border-collapse:collapse; font-size:11px; } .mx th,.mx td { border:1px solid var(--line); padding:2px 5px; text-align:right; white-space:nowrap; } .mx th { color:var(--dim); font-weight:600; max-width:90px; overflow:hidden; text-overflow:ellipsis; } .mx td.plan { text-align:left; white-space:normal; min-width:190px; max-width:240px; } .mx tr.pick td.plan { font-weight:800; box-shadow:inset 3px 0 var(--blue); } .strong { font-weight:800; }
+.quiet { color:var(--dim); font-size:12px; }
+</style></head>
+<body><div class="app" id="app"></div>
+<script src="data.js"></script><script src="common.js"></script>
+<script>
+const POS = { foe: [[56, 40], [78, 46]], ours: [[16, 94], [50, 86]] };
+function mon(m, pos, side) {
+  if (!m) return '';
+  const back = side === 'ours';
+  const boosts = Object.entries(m.boosts || {}).map(([k, v]) => `<span class="chip up">${k} ${v > 0 ? '+' : ''}${v}</span>`).join('');
+  return `<div class="mon ${back ? 'back' : ''}" style="left:${pos[0]}%;top:${pos[1]}%">${sprite(m.name, back)}<div class="pad"></div></div>
+  <div class="plate" style="left:${pos[0] + (back ? 9 : 7)}%;top:${pos[1] - (back ? 14 : 22)}%;${back ? '' : 'transform:translate(-50%,0)'}">
+    <b>${esc(m.name)}</b> <span style="float:right;color:var(--dim)">${pct(m.hp)}</span><div class="hpbar"><i style="width:${m.hp * 100}%;background:${hpColor(m.hp)}"></i></div>
+    ${m.status ? `<span class="chip">${esc(m.status)}</span>` : ''}${boosts}</div>`;
+}
+function bench(side, title, hidden) {
+  return `<div class="group"><span>${title}</span>${side.map((m) => `<span class="${m.fainted ? 'down' : ''}">${icon(m.name).replace('class="ico"', `class="ico ${m.fainted ? 'down' : !m.seen && hidden ? 'dim' : ''}"`)}</span>`).join('')}</div>`;
+}
+function render(i) {
+  const s = S[i], b = s.board, pk = picks(s);
+  const fo = actives(b.foe), us = actives(b.ours);
+  const weather = b.weather ? `<span class="tag">☀ ${esc(b.weather)}</span>` : '';
+  const stage = `<div class="stage ${b.weather === 'sun' ? 'sun' : ''}"><div class="field-tag"><span class="tag">${stepName(s)}</span>${weather}${b.trickRoom ? '<span class="tag">Trick Room</span>' : ''}</div>
+    ${fo.map((m, k) => mon(m, POS.foe[k], 'foe')).join('')}${us.map((m, k) => mon(m, POS.ours[k], 'ours')).join('')}
+    ${us.map((m, k) => (m && pk[k] ? `<div class="picked" style="left:${POS.ours[k][0] + 15}%;top:${POS.ours[k][1] - 4}%">model: ${esc(split(pk[k])[0])}</div>` : '')).join('')}</div>`;
+  const slots = s.thoughts.map((t, k) => {
+    const groups = moveGroups(t), chosen = split(t.chosen)[0];
+    const dmg = (groups.find((g) => g.name === chosen) || { targets: [] }).targets.sort((x, y) => y.prob - x.prob)[0];
+    const hit = dmg && dmg.damage && dmg.damage.find((d) => split(t.chosen)[1] === d.foe);
+    return `<div class="slot"><h4>${esc(t.actor || 'Replacement')} <span class="quiet">chose ${esc(t.chosen)}</span></h4>${groups.slice(0, 5).map((g) => `<div class="mv ${g.name === chosen ? 'pick' : ''}"><span>${esc(g.name)}</span><span class="bar"><i style="width:${g.prob * 100}%"></i></span><span class="p">${pct(g.prob)}</span></div>`).join('')}
+      ${hit ? `<p class="why">Expected: ${esc(hit.foe)} takes ~${pct(hit.pctOfCurrentHp)} of its HP${hit.sureKo ? ' (sure KO)' : hit.maybeKo ? ' (may KO)' : ''}.</p>` : ''}</div>`;
+  }).join('');
+  const w = s.thoughts[0] ? s.thoughts[0].winChance : 0.5;
+  const pred = s.thoughts.find((t) => t.foePrediction && t.foePrediction.length);
+  document.getElementById('app').innerHTML = `
+  <div class="top"><h1>Match · Kingambit/Torkoal vs Cinderace/Basculegion</h1><span class="grow"></span>
+   <div class="steps">${S.map((x, j) => `<button data-step="${j}" class="${j === i ? 'on' : ''}">${x.forced ? '↳' : 'T' + x.turn}</button>`).join('')}</div></div>
+  <div class="layout">${stage}
+   <div class="bench">${bench(b.ours, 'Your four', false)}${bench(b.foe, 'Their six', true)}</div>
+   <div class="below">
+    <div class="card"><h3>What the model is considering</h3>${slots}</div>
+    <div class="card"><h3>Win chance</h3><b>${pct(w)}</b> <span class="quiet">for you, from the value head</span><div class="win"><i style="width:${w * 100}%"></i></div>
+      <h3 style="margin-top:14px">What it expects them to do</h3>${pred ? pred.foePrediction.map((f) => `<div class="mv" style="grid-template-columns:100px 1fr"><b>${esc(f.foe)}</b><span class="quiet">${f.top.slice(0, 3).map((x) => `${esc(x.label)} ${pct(x.prob)}`).join(' · ')}</span></div>`).join('') : '<p class="quiet">Nothing to predict.</p>'}</div>
+    <div class="card"><h3>One-turn look-ahead (health margin, ours − theirs)</h3>${matrix(s, { rows: 5, short: true })}<p class="quiet">Columns R1–R9 are their likely replies; hover a header for the words.</p></div>
+   </div>
+   <div class="card log"><h3>Battle log</h3><ul>${logUpTo(i).map(eventLine).join('')}</ul></div>
+  </div>`;
+  const l = document.querySelector('.log'); l.scrollTop = l.scrollHeight;
+}
+mount(render, 3);
+</script></body></html>

@@ -4,7 +4,8 @@
 
 Used by the operating room's "live surgery" panel through ops_server. The learned player pilots
 team A against a rule-based opponent (greedy-blind); each decision is stored with the board, the
-scores it gave every option, the damage numbers it was shown, and which target it preferred.
+scores it gave every option, the damage numbers it was shown, the opponent prediction, and the one-turn
+search table (our top joint choices against their likely replies) that made the final pick.
 """
 
 import json
@@ -16,7 +17,8 @@ from champions.sim.arena import load_policy, run_jobs
 from champions.model.battle_state import BattleState, base_species
 
 ROOT = Path(__file__).resolve().parents[3]
-MODEL_CANDIDATES = [ROOT / "models" / "rl_policy.pt", ROOT / "models" / "il_policy_v2.pt"]
+MODEL_CANDIDATES = [ROOT / "models" / "rl_run9_best.pt", ROOT / "models" / "rl_policy.pt", ROOT / "models" / "il_policy_v2.pt"]
+SEARCH_K = 8
 
 
 def mon_name(token: str) -> str:
@@ -42,7 +44,7 @@ def describe(lines: list[str], me: str = "p1") -> list[dict]:
                 hp = p[3].split(" ")[0]
                 num, _, den = hp.partition("/")
                 pct = f"{round(100 * int(num) / int(den))}%" if den else "0%"
-                out.append({"text": f"{mon_name(p[2])} → {pct} HP" + (f" ({p[4].strip('[]').replace('from: ', '')})" if len(p) > 4 and p[4] else ""), "tone": tone(p[2])})
+                out.append({"text": f"{mon_name(p[2])} → {pct} HP" + (f" ({p[4].replace('[from] ', '').replace('[from]', '').strip('[]').replace('from: ', '')})" if len(p) > 4 and p[4] else ""), "tone": tone(p[2])})
             elif kind == "-heal":
                 out.append({"text": f"{mon_name(p[2])} healed", "tone": tone(p[2])})
             elif kind == "faint":
@@ -95,25 +97,43 @@ def snapshot(state: BattleState, side: str, brought: list[int]) -> dict:
 
 
 class Viewer(NeuralAgent):
-    def __init__(self, net, temperature: float = 0.0, seed: int = 0):
-        super().__init__(net, temperature, seed)
+    """Plays like the evaluated agent (policy, then search over its top choices) and keeps every step."""
+
+    def __init__(self, net, temperature: float = 0.0, seed: int = 0, search_k: int = SEARCH_K):
+        super().__init__(net, temperature, seed, search_k=search_k)
         self.steps, self.lines = [], []
 
     def observe(self, job_id, side, lines):
         self.lines += lines
 
+    def options(self, state, side, request, arrays):
+        slots = super().options(state, side, request, arrays)
+        self.last_options = (arrays, slots)
+        return slots
+
+    def look(self, state, side, request) -> dict:
+        """One decision in full: board, recent events, the policy's view, and the search table. step["choice"] is
+        what the agent would play (the search pick when there was a search, else the policy's top pair)."""
+        thoughts = []
+        self.last_plans = []
+        policy_choice = super().decide(state, side, request, thoughts=thoughts)
+        analysis = None
+        if self.last_candidates:
+            analysis = self.analyze(self.last_candidates, self.last_foe_sets)
+            self.last_candidates = None          # chosen here: the worker must not search again
+        brought = [state._index_of(side, base_species(p["details"])) for p in request["side"]["pokemon"]]
+        step = {"turn": state.turn, "events": describe(self.lines, side), "board": snapshot(state, side, brought),
+                "thoughts": thoughts, "plans": self.last_plans, "policyChoice": policy_choice, "analysis": analysis,
+                "choice": analysis["choice"] if analysis and analysis["rows"] else policy_choice}
+        self.lines = []
+        return step
+
     def decide(self, state, side, request, record=None, thoughts=None):
         if request.get("teamPreview"):
             return super().decide(state, side, request, record)
-        thoughts = []
-        self.last_plans = []
-        choice = super().decide(state, side, request, record, thoughts=thoughts)
-        plans = self.last_plans
-        brought = [state._index_of(side, base_species(p["details"])) for p in request["side"]["pokemon"]]
-        self.steps.append({"turn": state.turn, "events": describe(self.lines), "board": snapshot(state, side, brought),
-                           "thoughts": thoughts, "plans": plans, "choice": choice})
-        self.lines = []
-        return choice
+        step = self.look(state, side, request)
+        self.steps.append(step)
+        return step["choice"]
 
 
 def find_model() -> Path:
@@ -121,15 +141,15 @@ def find_model() -> Path:
 
 
 def run_match(ours: str, theirs: str, seed: int = 1, temperature: float = 0.0, opponent: str = "greedy-blind",
-              model: Path | None = None) -> dict:
+              model: Path | None = None, search_k: int = SEARCH_K) -> dict:
     """Play one game (team texts, our side piloted by the learned player) and return every step."""
     model = model or find_model()
-    viewer = Viewer(load_policy(model), temperature=temperature, seed=seed)
+    viewer = Viewer(load_policy(model), temperature=temperature, seed=seed, search_k=search_k)
     job = {"id": "viewer", "a": ours, "b": theirs, "seed": seed, "agentA": "neural", "agentB": opponent}
     result = run_jobs([job], viewer, workers=1, observer=viewer.observe)[0]
     final = describe(result.get("tail", []))
     winner = {"A": "us", "B": "foe"}.get(result["winner"], "draw")
-    return {"model": model.name, "seed": seed, "temperature": temperature, "opponent": opponent, "winner": winner,
+    return {"model": model.name, "seed": seed, "temperature": temperature, "opponent": opponent, "winner": winner, "searchK": search_k,
             "turns": result["turns"], "steps": viewer.steps, "finalEvents": final}
 
 

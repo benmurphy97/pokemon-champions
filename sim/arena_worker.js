@@ -3,10 +3,12 @@
 //
 // One JSON object per line.
 //   Python -> worker: {t:"job", id, a, b, agentA, agentB, seed}      teams are Showdown text
+//                     {t:"analyze", key, candidates, foeSets}      the search table for a pending decision
 //                     {t:"act", key, choice, candidates?}             reply to a decision; with candidates
 //                                                                    [{choice, prior}], search.js picks among them,
 //                                                                    with foeSets (our belief) in place of their real sets
 //   worker -> Python: {t:"decide", key, id, side, lines, request}    lines = log lines since last decision
+//                     {t:"analysis", key, table}                    (see search.js analyse)
 //                     {t:"result", id, winner: "A"|"B"|"tie", turns, fallbacks}
 //
 // Agents: neural (decisions from Python; team preview from the greedy agent so that every
@@ -17,18 +19,20 @@ const readline = require('readline');
 const {BattleStream, getPlayerStreams, Teams} = require(path.join(__dirname, '..', 'vendor', 'pokemon-showdown', 'dist', 'sim'));
 const {RandomPlayerAI} = require(path.join(__dirname, '..', 'vendor', 'pokemon-showdown', 'dist', 'sim', 'tools', 'random-player-ai'));
 const {GreedyPlayer} = require('./agents/greedy');
-const {search} = require('./search');
+const {analyse, search} = require('./search');
 
 const FORMAT = 'gen9championsvgc2026regmc';
 const pending = new Map(); // decision key -> resolve
+const asking = new Map();  // decision key -> the player waiting on it
 let nextKey = 0;
 
 function send(message) {
 	process.stdout.write(JSON.stringify(message) + '\n');
 }
 
-function ask(id, side, lines, request) {
+function ask(id, side, lines, request, player) {
 	const key = String(nextKey++);
+	asking.set(key, player);
 	return new Promise(resolve => {
 		pending.set(key, resolve);
 		send({t: 'decide', key, id, side, lines, request});
@@ -59,7 +63,7 @@ class NeuralPlayer extends GreedyPlayer {
 		// Ignore an answer if a newer request has arrived since (the engine re-asks after some errors).
 		// Team preview is asked too: Python answers "default" unless a learned preview is plugged in,
 		// and "default" means the greedy agent's bring-four / lead choice.
-		ask(this.id, this.side, lines, request).then(answer => {
+		ask(this.id, this.side, lines, request, this).then(answer => {
 			if (seq !== this.requestSeq) return;
 			const choice = answer.candidates ? search(this.battle, this.side, answer.candidates, answer.foeSets) : answer.choice;
 			if (request.teamPreview && choice === 'default') return super.receiveRequest(request);
@@ -158,7 +162,11 @@ input.on('line', line => {
 	if (message.t === 'act') {
 		const resolve = pending.get(message.key);
 		pending.delete(message.key);
+		asking.delete(message.key);
 		resolve(message);
+	} else if (message.t === 'analyze') {
+		const player = asking.get(message.key);
+		send({t: 'analysis', key: message.key, table: analyse(player.battle, player.side, message.candidates, message.foeSets)});
 	} else if (message.t === 'job') {
 		running++;
 		play(message).catch(err => send({t: 'error', id: message.id, message: String(err.stack || err)}))

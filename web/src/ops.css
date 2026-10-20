@@ -110,3 +110,15 @@
 .checklist .icon { width: 18px; color: var(--o-dim); } .checklist .done .icon { color: var(--o-good); } .checklist .doing .icon { color: var(--o-warn); }
 .checklist .done strong { color: var(--o-dim); } .checklist p { margin: 2px 0 0; }
 .rules { margin: 0; padding-left: 18px; font-size: .82rem; } .rules li { margin: 3px 0; }
+
+/* search payoff matrix and play mode */
+.decision { font-size: .85rem; margin: 4px 0 10px; } .decision .changed { color: var(--o-warn); }
+.search { margin: 8px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--o-line); }
+.search-scroll { overflow-x: auto; }
+.search table { border-collapse: collapse; font-size: .72rem; font-variant-numeric: tabular-nums; }
+.search th, .search td { padding: 3px 6px; border: 1px solid var(--o-line); text-align: right; white-space: nowrap; }
+.search th { color: var(--o-dim); font-weight: 600; cursor: help; }
+.search td.pair { text-align: left; max-width: 340px; white-space: normal; }
+.search tr.chosen td.pair { color: var(--o-good); font-weight: 700; }
+.replies { font-size: .72rem; color: var(--o-dim); columns: 2 280px; margin: 6px 0 0; padding-left: 0; list-style: none; }
+.history { border-top: 1px solid var(--o-line); padding: 6px 0; }

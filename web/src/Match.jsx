@@ -4,7 +4,7 @@ import Sprite from './Sprite.jsx'
 const pct = (x) => `${Math.round(x * 100)}%`
 const NO_FEED = 'The match feed needs the venv Python: PYTHONPATH=src .venv/bin/python -m champions.site.ops_server'
 
-function Side({ title, mons, hidden }) {
+export function Side({ title, mons, hidden }) {
   return (
     <div className={`side ${hidden ? 'theirs' : 'ours'}`}>
       <h4>{title}</h4>
@@ -23,7 +23,7 @@ function Side({ title, mons, hidden }) {
   )
 }
 
-function Field({ board }) {
+export function Field({ board }) {
   const chips = [board.trickRoom && 'Trick Room', board.weather, board.terrain && `${board.terrain} terrain`,
     ...board.ourConditions.map((c) => `ours: ${c}`), ...board.foeConditions.map((c) => `theirs: ${c}`)].filter(Boolean)
   return <div className="chips">{chips.length ? chips.map((c) => <span key={c} className={`chip ${c === 'Trick Room' ? 'tr' : ''}`}>{c}</span>) : <span className="note">no field effects</span>}</div>
@@ -55,13 +55,13 @@ function Option({ option, chosen, max }) {
   )
 }
 
-function Plans({ plans, thoughts }) {
+export function Plans({ plans }) {
   if (!plans || !plans.length) return null
   const max = Math.max(...plans.map((p) => p.prob), 0.01)
   const picked = (p) => p.chosen
   return (
     <div className="plans">
-      <h3>Joint plans <small>(both Pokémon are scored as one pair: softmax over every legal pair)</small></h3>
+      <h3>Policy: joint plans <small>(both Pokémon scored as one pair: softmax over every legal pair; ▶ = the policy's top pair)</small></h3>
       {plans.map((p, i) => (
         <div key={i} className={`option ${picked(p) ? 'chosen' : ''}`}>
           <div className="plan-row">
@@ -75,7 +75,41 @@ function Plans({ plans, thoughts }) {
   )
 }
 
-function Thought({ t }) {
+const signed = (x) => (x == null ? '–' : `${x >= 0 ? '+' : ''}${x.toFixed(2)}`)
+const shade = (x) => (x == null ? 'transparent' : x >= 0 ? `rgba(80, 200, 120, ${Math.min(0.6, x * 1.5)})` : `rgba(230, 80, 80, ${Math.min(0.6, -x * 1.5)})`)
+
+// The one-turn search: our top joint choices (rows) played against their likely replies (columns) in copies of
+// the battle; each cell is the health margin after that turn, from -1 to 1.
+export function SearchTable({ analysis, policyChoice }) {
+  if (!analysis || !analysis.rows.length) return <p className="note">No search this decision (forced, or only one legal pair).</p>
+  const best = analysis.rows.find((r) => r.choice === analysis.choice)
+  return (
+    <div className="search">
+      <h3>Search: payoff matrix <small>(our top {analysis.rows.length} pairs × their {analysis.replies.length} likely replies, one turn each)</small></h3>
+      <p className="note">Each cell is (our health − their health) / 4 after that turn, from −1 to 1, over the four brought on each side. Score = ½ mean + ½ worst + 0.02 log prior. The opponent's sets in the copies are our estimate (revealed details, the rest from usage), not their real ones.</p>
+      <div className="search-scroll">
+        <table>
+          <thead>
+            <tr><th>our pair</th><th>prior</th>{analysis.replies.map((r, i) => <th key={i} title={r.label}>R{i + 1}</th>)}<th>mean</th><th>worst</th><th>score</th></tr>
+          </thead>
+          <tbody>
+            {analysis.rows.map((r) => (
+              <tr key={r.choice} className={r === best ? 'chosen' : ''}>
+                <td className="pair">{r === best ? '▶ ' : ''}{r.label}{r.choice === policyChoice ? ' ·policy' : ''}</td>
+                <td>{(r.prior * 100).toFixed(0)}%</td>
+                {r.payoffs.map((x, i) => <td key={i} style={{ background: shade(x) }}>{signed(x)}</td>)}
+                <td>{signed(r.mean)}</td><td>{signed(r.worst)}</td><td><b>{signed(r.score)}</b></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <ol className="replies">{analysis.replies.map((r, i) => <li key={i}><b>R{i + 1}</b> {r.label}</li>)}</ol>
+    </div>
+  )
+}
+
+export function Thought({ t }) {
   const max = Math.max(...t.options.map((o) => o.prob), 0.01)
   const damaging = t.options.filter((o) => o.damage).length
   return (
@@ -117,6 +151,7 @@ export default function Match() {
   const [opp, setOpp] = useState('')
   const [seed, setSeed] = useState(1)
   const [sample, setSample] = useState(false)
+  const [search, setSearch] = useState(true)
   const [model, setModel] = useState('')
   const [match, setMatch] = useState(null)
   const [step, setStep] = useState(0)
@@ -127,7 +162,7 @@ export default function Match() {
     fetch('/api/match/options').then((r) => r.json()).then((o) => {
       if (o.error) throw new Error(o.error)
       setOptions(o); setOurs(o.ours[0]?.id ?? ''); setOpp(o.opponents[0]?.id ?? '')
-      setModel(o.models.includes('rl_policy.pt') ? 'rl_policy.pt' : o.models[0] ?? '')
+      setModel(['rl_run9_best.pt', 'rl_policy.pt'].find((m) => o.models.includes(m)) ?? o.models[0] ?? '')
     }).catch(() => setError(NO_FEED))
   }, [])
 
@@ -143,7 +178,7 @@ export default function Match() {
 
   const simulate = (nextSeed = seed) => {
     setBusy(true); setError(null)
-    fetch(`/api/match?ours=${ours}&opp=${opp}&seed=${nextSeed}&temp=${sample ? 1 : 0}${model ? `&model=${model}` : ''}`)
+    fetch(`/api/match?ours=${ours}&opp=${opp}&seed=${nextSeed}&temp=${sample ? 1 : 0}&search=${search ? 8 : 0}${model ? `&model=${model}` : ''}`)
       .then((r) => r.json())
       .then((m) => { if (m.error) throw new Error(m.error); setMatch(m); setStep(0) })
       .catch((e) => setError(String(e.message || e)))
@@ -187,6 +222,7 @@ export default function Match() {
         <div className="row">
           <label>Seed <input type="number" value={seed} onChange={(e) => setSeed(Number(e.target.value))} /></label>
           <label><input type="checkbox" checked={sample} onChange={(e) => setSample(e.target.checked)} /> sample from its scores instead of always playing the top choice</label>
+          <label><input type="checkbox" checked={search} onChange={(e) => setSearch(e.target.checked)} /> one-turn search over the top 8 pairs (how the evaluated agent plays)</label>
         </div>
         <div className="row">
           <button className="go" disabled={busy || !ours || !opp} onClick={() => simulate()}>{busy ? 'Operating…' : 'Simulate match'}</button>
@@ -232,8 +268,10 @@ export default function Match() {
                 </div>
               )}
               <div className="panel">
-                <h3>What the model is thinking <small>(chose: {current.choice})</small></h3>
-                <Plans plans={current.plans} thoughts={current.thoughts} />
+                <h3>What the model is deciding</h3>
+                <p className="decision">Policy's top pair: <b>{current.policyChoice ?? current.choice}</b>{current.analysis && current.analysis.rows.length > 0 && <> → after search: <b className={current.choice !== current.policyChoice ? 'changed' : ''}>{current.analysis.rows.find((r) => r.choice === current.analysis.choice)?.label}</b>{current.choice !== current.policyChoice ? ' (search changed it)' : ' (search agreed)'}</>}</p>
+                {current.analysis && <SearchTable analysis={current.analysis} policyChoice={current.policyChoice} />}
+                <Plans plans={current.plans} />
                 {current.thoughts.map((t, i) => <Thought key={i} t={t} />)}
                 {!current.thoughts.length && <p className="note">Nothing to decide (forced moves).</p>}
               </div>

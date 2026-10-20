@@ -7,6 +7,7 @@ so both agents pilot both teams: team strength cancels out and the result reflec
 """
 
 import argparse
+import collections
 import json
 import math
 import queue
@@ -45,6 +46,8 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 1, in_f
     answers for it, so one game can pit two different networks against each other; `agent` answers for the
     rest. Decisions are recorded only for names in `record_names` (default: every neural seat).
     `observer(job id, side, lines)` is called with the new log lines before each neural decision.
+    During `decide`, an agent can call `self.analyze(candidates, foe_sets)` to get the worker's search table for
+    that decision (sim/search.js analyse) before choosing.
     """
     todo: queue.Queue = queue.Queue()
     by_id = {job["id"]: job for job in jobs}
@@ -78,14 +81,35 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 1, in_f
                 sent += 1
 
         done: list = []
+        backlog: collections.deque = collections.deque()     # messages that arrived while an agent awaited an analysis
+
+        def analyze(key, candidates, foe_sets):
+            proc.stdin.write(json.dumps({"t": "analyze", "key": key, "candidates": candidates, "foeSets": foe_sets}) + "\n")
+            proc.stdin.flush()
+            for raw in proc.stdout:
+                message = json.loads(raw)
+                if message["t"] == "analysis" and message["key"] == key:
+                    return message["table"]
+                backlog.append(message)
+            raise RuntimeError("worker closed while analysing")
+
+        def messages():
+            while True:
+                if backlog:
+                    yield backlog.popleft()
+                    continue
+                raw = proc.stdout.readline()
+                if not raw:
+                    return
+                yield json.loads(raw)
+
         feed()
         if sent == 0:      # other workers took every job: nothing will ever arrive from this one
             proc.stdin.close()
             proc.wait()
             proc.stdout.close()
             return
-        for raw in proc.stdout:
-            message = json.loads(raw)
+        for message in messages():
             if message["t"] == "decide":
                 state = states.setdefault((message["id"], message["side"]), BattleState())
                 for line in message["lines"]:
@@ -97,6 +121,7 @@ def run_jobs(jobs: list[dict], agent: NeuralAgent | None, workers: int = 1, in_f
                 recording = trajectories is not None and (record_names is None or name in record_names)
                 record = trajectories.setdefault((message["id"], message["side"]), []) if recording else None
                 seat_agent = (agents or {}).get(name, agent)
+                seat_agent.analyze = lambda candidates, foe_sets, key=message["key"]: analyze(key, candidates, foe_sets)
                 choice = seat_agent.decide(state, message["side"], message["request"], record=record)
                 reply = {"t": "act", "key": message["key"], "choice": choice}
                 if getattr(seat_agent, "last_candidates", None):

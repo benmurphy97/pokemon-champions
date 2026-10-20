@@ -157,8 +157,34 @@ def match(query: dict) -> dict:
     seed = int(query.get("seed", ["1"])[0])
     with match_lock:
         result = run_match(a["text"], b["text"], seed=seed, temperature=float(query.get("temp", ["0"])[0]),
-                           model=(MODELS / query["model"][0]) if "model" in query else None)
+                           model=(MODELS / query["model"][0]) if "model" in query else None,
+                           search_k=int(query.get("search", ["8"])[0]))
     return {**result, "ours": a["species"], "theirs": b["species"]}
+
+
+session = None      # the one game being played by hand (site/play.py)
+
+
+def play(path: str, query: dict) -> dict:
+    """/api/play/start?ours&opp&seed&model starts a game (replacing any other), /api/play/move?choice plays
+    your choice, /api/play/state reads where things are. Each returns the session state."""
+    global session
+    from champions.site.play import Session        # imports PyTorch, so only when asked
+    if path == "/api/play/start":
+        ours, opponents = match_teams()
+        by_id = {t["id"]: t for t in ours + opponents}
+        a, b = by_id[query["ours"][0]], by_id[query["opp"][0]]
+        if session:
+            session.abandon()
+        session = Session(a["text"], b["text"], seed=int(query.get("seed", ["1"])[0]),
+                          model=(MODELS / query["model"][0]) if "model" in query else None)
+        session.teams = {"ours": a["species"], "theirs": b["species"]}
+        return {**session.wait(), **session.teams}
+    if session is None:
+        return {"pending": None, "result": None, "error": None, "history": []}
+    if path == "/api/play/move":
+        return {**session.move(query["choice"][0]), **session.teams}
+    return {**session.state(), **session.teams}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -173,6 +199,8 @@ class Handler(BaseHTTPRequestHandler):
                 payload = match_options()
             elif url.path == "/api/match":
                 payload = match(parse_qs(url.query))
+            elif url.path.startswith("/api/play/"):
+                payload = play(url.path, parse_qs(url.query))
             else:
                 self.send_error(404)
                 return

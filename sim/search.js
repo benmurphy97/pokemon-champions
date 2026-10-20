@@ -86,9 +86,27 @@ function replies(battle, foe) {
 	return joint;
 }
 
-function search(battle, side, candidates, foeSets) {
+// A choice string in words, for the viewer: "move 2 1, switch 3" -> "Ice Beam → Garchomp + switch to Rotom-Wash".
+function label(battle, sideId, choice) {
+	const side = battle[sideId], foe = battle[sideId === 'p1' ? 'p2' : 'p1'];
+	return choice.split(', ').map((part, slot) => {
+		const words = part.split(' ');
+		const mon = side.active[slot];
+		if (words[0] === 'switch') return `switch to ${side.pokemon[Number(words[1]) - 1].name}`;
+		if (words[0] !== 'move' || !mon) return words[0];
+		const move = mon.moveSlots[Number(words[1]) - 1];
+		const target = Number(words[2]);
+		const on = target > 0 ? foe.active[target - 1] : target < 0 ? side.active[-target - 1] : null;
+		return `${move ? move.move : 'move ' + words[1]}${on ? ' → ' + on.name : ''}${words.includes('mega') ? ' (Mega)' : ''}`;
+	}).join(' + ');
+}
+
+// The full payoff table behind a search: our candidates (rows) against their replies (columns).
+//   {choice, replies: [{choice, label}], rows: [{choice, label, prior, payoffs: [number|null], mean, worst, score}]}
+function analyse(battle, side, candidates, foeSets) {
 	const foeId = side === 'p1' ? 'p2' : 'p1';
-	if (candidates.length < 2) return candidates[0].choice;
+	const empty = {choice: candidates[0].choice, replies: [], rows: []};
+	if (candidates.length < 2) return empty;
 	// toJSON shares arrays (the log among them) with the live battle: detach, or every copy writes into the real game.
 	let snapshot = JSON.parse(JSON.stringify(battle.toJSON()));
 	if (foeSets) {
@@ -98,10 +116,11 @@ function search(battle, side, candidates, foeSets) {
 	}
 	const view = fresh(snapshot);
 	const theirs = replies(view, view[foeId]);
-	if (!theirs) return candidates[0].choice;
+	if (!theirs) return empty;
 	const seed = [0, 1, 2, 3].map(() => Math.floor(Math.random() * 0x10000));   // fresh rolls, shared by every cell
 	const total = candidates.reduce((s, c) => s + c.prior, 0);
 	let best = candidates[0], bestScore = -Infinity;
+	const rows = [];
 	for (const ours of candidates) {
 		const payoffs = [];
 		for (const reply of theirs) {
@@ -109,20 +128,29 @@ function search(battle, side, candidates, foeSets) {
 			copy.resetRNG(seed);
 			const [mine, other] = [copy[side], copy[foeId]];
 			mine.clearChoice(); other.clearChoice();
-			if (!mine.choose(ours.choice) || !other.choose(reply)) continue;
-			try {
-				copy.commitChoices();
-			} catch (err) {
-				continue;
+			let payoff = null;
+			if (mine.choose(ours.choice) && other.choose(reply)) {
+				try {
+					copy.commitChoices();
+					payoff = (healthLeft(mine) - healthLeft(other)) / mine.pokemon.length;
+				} catch (err) {}
 			}
-			payoffs.push((healthLeft(mine) - healthLeft(other)) / mine.pokemon.length);
+			payoffs.push(payoff);
 		}
-		if (!payoffs.length) continue;
-		const mean = payoffs.reduce((a, b) => a + b, 0) / payoffs.length;
-		const score = (1 - WORST_WEIGHT) * mean + WORST_WEIGHT * Math.min(...payoffs) + PRIOR_WEIGHT * Math.log(ours.prior / total);
-		if (score > bestScore) { bestScore = score; best = ours; }
+		const valid = payoffs.filter(p => p !== null);
+		const row = {choice: ours.choice, label: label(view, side, ours.choice), prior: ours.prior / total, payoffs};
+		rows.push(row);
+		if (!valid.length) continue;
+		row.mean = valid.reduce((a, b) => a + b, 0) / valid.length;
+		row.worst = Math.min(...valid);
+		row.score = (1 - WORST_WEIGHT) * row.mean + WORST_WEIGHT * row.worst + PRIOR_WEIGHT * Math.log(row.prior);
+		if (row.score > bestScore) { bestScore = row.score; best = ours; }
 	}
-	return best.choice;
+	return {choice: best.choice, replies: theirs.map(c => ({choice: c, label: label(view, foeId, c)})), rows};
 }
 
-module.exports = {search, believe, fresh, replies};
+function search(battle, side, candidates, foeSets) {
+	return analyse(battle, side, candidates, foeSets).choice;
+}
+
+module.exports = {search, analyse, believe, fresh, replies};

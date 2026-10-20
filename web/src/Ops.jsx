@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Chart, rolling } from './charts.jsx'
 import Match from './Match.jsx'
+import Play from './Play.jsx'
 import Plan from './Plan.jsx'
 import Sprite from './Sprite.jsx'
 import { winRate } from './rating.js'
@@ -289,8 +290,9 @@ export default function Ops() {
         <button className={view === 'vitals' ? 'on' : ''} onClick={() => setView('vitals')}>Vitals & monitors</button>
         <button className={view === 'plan' ? 'on' : ''} onClick={() => setView('plan')}>Plan, gates & models</button>
         <button className={view === 'surgery' ? 'on' : ''} onClick={() => setView('surgery')}>Live surgery (match viewer)</button>
+        <button className={view === 'play' ? 'on' : ''} onClick={() => setView('play')}>Play (model coaches you)</button>
       </div>
-      {view === 'surgery' ? <Match /> : view === 'plan' ? <Plan /> : <>
+      {view === 'surgery' ? <Match /> : view === 'play' ? <Play /> : view === 'plan' ? <Plan /> : <>
       <div className="tabs">
         {data.runs.map((r) => (
           <button key={r.name} className={r.name === run.name ? 'on' : ''} onClick={() => setPicked(r.name)}>

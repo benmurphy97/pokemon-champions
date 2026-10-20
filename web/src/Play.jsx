@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Field, Plans, SearchTable, Side } from './Match.jsx'
+import Sprite from './Sprite.jsx'
 
 const NO_FEED = 'Play mode needs the venv Python: PYTHONPATH=src .venv/bin/python -m champions.site.ops_server'
 const pct = (x) => `${Math.round(x * 100)}%`
@@ -33,6 +34,58 @@ function YourMove({ step, busy, onPlay }) {
         <button disabled={busy} onClick={() => onPlay(step.choice)}>Play the suggestion</button>
       </div>
     </div>
+  )
+}
+
+// Team preview: mark two of your six to lead and two to sit at the back; the other two stay home.
+function Preview({ step, busy, onPlay }) {
+  const fromPlan = (plan) => Object.fromEntries([...plan.lead.map((p) => [p, 'lead']), ...plan.back.map((p) => [p, 'back'])])
+  const [roles, setRoles] = useState(fromPlan(step.plans[0]))
+  const count = (r) => Object.values(roles).filter((x) => x === r).length
+  const ok = count('lead') === 2 && count('back') === 2
+  const order = (r) => step.ours.filter((m) => roles[m.position] === r).map((m) => m.position)
+  const choice = `team ${[...order('lead'), ...order('back')].join('')}`
+  const name = (p) => step.ours[p - 1].name
+  const set = (position, role) => setRoles({ ...roles, [position]: roles[position] === role ? undefined : role })
+
+  return (
+    <>
+      <div className="panel">
+        <h3>Team preview <small>(choose your four: two to lead, two at the back)</small></h3>
+        <p className="note">Their six: {step.theirs.join(' · ')}</p>
+        <div className="preview-grid">
+          {step.ours.map((m) => (
+            <div key={m.position} className={`preview-mon ${roles[m.position] ?? 'home'}`}>
+              <Sprite name={m.name} />
+              <b>{m.name}</b>
+              <small>{[m.item, m.ability].filter(Boolean).join(' · ')}</small>
+              <small>{m.moves.join(', ')}</small>
+              <div className="row">
+                <button className={roles[m.position] === 'lead' ? 'on' : ''} onClick={() => set(m.position, 'lead')}>Lead</button>
+                <button className={roles[m.position] === 'back' ? 'on' : ''} onClick={() => set(m.position, 'back')}>Back</button>
+              </div>
+            </div>
+          ))}
+        </div>
+        {!ok && <p className="bad">Pick exactly two leads and two at the back (now {count('lead')} and {count('back')}).</p>}
+        <div className="row">
+          <button className="go" disabled={busy || !ok} onClick={() => onPlay(choice)}>{busy ? 'Starting…' : 'Bring these four'}</button>
+          <button disabled={busy} onClick={() => onPlay(step.plans[0].choice)}>Use the model's top plan</button>
+          <button disabled={busy} onClick={() => onPlay('default')}>Use the rule-based pick</button>
+        </div>
+      </div>
+      <div className="panel">
+        <h3>Coach: preview plans <small>(the model scores all 90 plans, a set of four and a lead pair inside it, against their six)</small></h3>
+        <p className="note">Click a plan to load it. In testing the learned preview is still a few points weaker than the rule-based one.</p>
+        {step.plans.map((p) => (
+          <button key={p.choice} className="plan-pick" onClick={() => setRoles(fromPlan(p))}>
+            <span>Lead <b>{p.lead.map(name).join(' + ')}</b> · back {p.back.map(name).join(' + ')}</span>
+            <span className="barwrap"><i style={{ width: pct(p.prob / step.plans[0].prob) }} /></span>
+            <span className="prob">{(p.prob * 100).toFixed(1)}%</span>
+          </button>
+        ))}
+      </div>
+    </>
   )
 }
 
@@ -111,7 +164,6 @@ export default function Play() {
           </label>
           <label>Seed <input type="number" value={seed} onChange={(e) => setSeed(Number(e.target.value))} /></label>
         </div>
-        <p className="note">Team preview (which four, which two lead) uses the rule-based preview for now.</p>
         <button className="go" disabled={busy || !ours || !opp} onClick={start}>{busy && !game ? 'Dealing…' : game ? 'New game' : 'Start game'}</button>
         {error && <p className="bad">{error}</p>}
       </div>
@@ -122,13 +174,16 @@ export default function Play() {
           {game.history.map((h, i) => (
             <div key={i} className="history">
               <ul className="events">{h.events.map((e, j) => <li key={j} className={e.tone}>{e.text}</li>)}</ul>
+              {h.turn === 0 && <p className="note">Team preview</p>}
               {h.played && <p className="note">You played <b>{h.played}</b>{h.played === h.suggested ? ' (the suggestion)' : ` · coach suggested ${h.suggested}`}</p>}
             </div>
           ))}
         </div>
       )}
 
-      {step && (
+      {step && step.kind === 'preview' && <Preview key={`preview-${game.history.length}`} step={step} busy={busy} onPlay={play} />}
+
+      {step && step.kind !== 'preview' && (
         <>
           <div className="panel">
             <p className="note">Turn {step.board.turn}</p>

@@ -122,3 +122,12 @@
 .search tr.chosen td.pair { color: var(--o-good); font-weight: 700; }
 .replies { font-size: .72rem; color: var(--o-dim); columns: 2 280px; margin: 6px 0 0; padding-left: 0; list-style: none; }
 .history { border-top: 1px solid var(--o-line); padding: 6px 0; }
+
+.preview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin: 8px 0; }
+.preview-mon { display: flex; flex-direction: column; gap: 3px; padding: 8px; border: 1px solid var(--o-line); border-radius: 8px; font-size: .78rem; }
+.preview-mon small { color: var(--o-dim); }
+.preview-mon.lead { border-color: var(--o-good); box-shadow: inset 0 0 0 1px var(--o-good); }
+.preview-mon.back { border-color: var(--o-warn); }
+.preview-mon.home { opacity: .55; }
+.preview-mon button.on { background: var(--o-good); color: var(--o-bg); }
+.plan-pick { display: grid; grid-template-columns: 1fr 120px 56px; gap: 8px; align-items: center; width: 100%; background: none; border: 0; border-bottom: 1px solid var(--o-line); color: var(--o-text); text-align: left; padding: 4px 0; cursor: pointer; font-size: .8rem; }

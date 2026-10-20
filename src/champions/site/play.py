@@ -13,6 +13,10 @@ import queue
 import threading
 from pathlib import Path
 
+import torch
+
+from champions.model.policy import PAIRS, PLANS, SUBSETS
+from champions.model.preview import LearnedPreview
 from champions.sim.arena import load_policy, run_jobs
 from champions.site.match_viewer import SEARCH_K, Viewer, describe, find_model
 
@@ -25,6 +29,25 @@ class Coach(Viewer):
     def __init__(self, net, session, search_k: int = SEARCH_K):
         super().__init__(net, search_k=search_k)
         self.session = session
+        self.learned_preview = LearnedPreview(net)
+
+    def preview_step(self, state, side, request, top: int = 8) -> dict:
+        """Team preview: our six (request order), their six, and the model's best plans (bring four, two lead)."""
+        logits, team_index = self.learned_preview.scores(state, side, request)
+        probs = torch.softmax(logits, dim=-1)
+        position = {ti: j + 1 for j, ti in enumerate(team_index)}
+        plans = []
+        for plan in torch.argsort(probs, descending=True)[:top].tolist():
+            subset, pair = SUBSETS[PLANS[plan][0]], PAIRS[PLANS[plan][1]]
+            lead = [position[i] for i in pair]
+            back = [position[i] for i in subset if i not in pair]
+            plans.append({"lead": lead, "back": back, "prob": float(probs[plan]),
+                          "choice": "team " + "".join(map(str, lead + back))})
+        foe = state.sides["p2" if side == "p1" else "p1"].team[:6]
+        ours = [{"position": j + 1, "name": p["details"].split(",")[0], "item": p.get("item"), "ability": p.get("baseAbility"),
+                 "moves": p.get("moves", [])} for j, p in enumerate(request["side"]["pokemon"])]
+        return {"kind": "preview", "turn": 0, "events": [], "ours": ours, "theirs": [m.form or m.species for m in foe],
+                "plans": plans, "choice": plans[0]["choice"]}
 
     def menu(self, state, side, request) -> list[dict]:
         """Per slot: the legal options in words, and whether that slot may Mega Evolve."""
@@ -41,7 +64,9 @@ class Coach(Viewer):
 
     def decide(self, state, side, request, record=None, thoughts=None):
         if request.get("teamPreview"):
-            return "default"          # the rule-based preview brings four and picks the leads
+            step = self.preview_step(state, side, request)
+            self.steps.append(step)
+            return self.session.ask(step)      # "default" asks the rule-based preview to choose
         step = self.look(state, side, request)
         step["menu"] = self.menu(state, side, request)
         step["slots"] = len(request.get("forceSwitch") or request.get("active") or [0, 0])

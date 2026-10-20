@@ -15,13 +15,12 @@ from pathlib import Path
 from champions.model.agent import NAME_BY_ID, NeuralAgent
 from champions.sim.arena import load_policy, run_jobs
 from champions.model.battle_state import BattleState, base_species
-from champions.teams.generate import usage_key
-from champions.teams.stats import compute_stats
-from champions.training.hindsight import _BASE_STATS, _POINTS_KEY
+from champions.model.belief import infer, observed_from, shared_corpus
 
 ROOT = Path(__file__).resolve().parents[3]
 MODEL_CANDIDATES = [ROOT / "models" / "rl_run9_best.pt", ROOT / "models" / "rl_policy.pt", ROOT / "models" / "il_policy_v2.pt"]
 SEARCH_K = 8
+BELIEF_SAMPLES = 4      # sets sampled from the posterior for the search to play against
 
 
 def mon_name(token: str) -> str:
@@ -99,29 +98,10 @@ def snapshot(state: BattleState, side: str, brought: list[int]) -> dict:
             "ourConditions": sorted(state.sides[side].conditions), "foeConditions": sorted(state.sides[other].conditions)}
 
 
-def ranked(known, guesses, rows: int):
-    """Known facts first (probability 1), then the ladder's most common alternatives with their usage share."""
-    out = [{"name": name, "p": 1.0, "known": True} for name in known if name]
-    out += [{"name": name, "p": round(share, 3), "known": False} for name, share in guesses if name not in known]
-    return out[:rows]
-
-
 def beliefs(state: BattleState, side: str, usage: dict) -> list[dict]:
-    """What we believe about each of `side`'s six: revealed facts at 100%, the rest from ladder usage."""
-    out = []
-    for mon in state.sides[side].team[:6]:
-        entry = usage.get(usage_key(mon.species, mon.mega, usage) or "")
-        known = {"moves": mon.moves, "items": [mon.item], "abilities": [mon.ability]}
-        guess = {k: (entry[k] if entry else []) for k in ("moves", "items", "abilities")}
-        spread = None
-        base = _BASE_STATS.get(mon.species)
-        if entry and base:
-            nature, points, share = entry["spreads"][0]
-            points = {_POINTS_KEY[k]: v for k, v in points.items()}
-            spread = {"nature": nature, "points": points, "p": round(share, 3), "stats": compute_stats(base, nature, points)}
-        out.append({"moves": ranked(known["moves"], guess["moves"], 8), "items": ranked(known["items"], guess["items"], 3),
-                    "abilities": ranked(known["abilities"], guess["abilities"], 2), "spread": spread})
-    return out
+    """What we believe about each of `side`'s six: the posterior over their sets (belief.py), revealed facts at 100%."""
+    six, observed = observed_from(state, side)
+    return infer(shared_corpus(), usage, six, observed)
 
 
 def own_sets(request: dict) -> list[dict]:
@@ -139,7 +119,7 @@ class Viewer(NeuralAgent):
     """Plays like the evaluated agent (policy, then search over its top choices) and keeps every step."""
 
     def __init__(self, net, temperature: float = 0.0, seed: int = 0, search_k: int = SEARCH_K):
-        super().__init__(net, temperature, seed, search_k=search_k)
+        super().__init__(net, temperature, seed, search_k=search_k, belief_samples=BELIEF_SAMPLES if search_k else 0)
         self.steps, self.lines = [], []
 
     def observe(self, job_id, side, lines):

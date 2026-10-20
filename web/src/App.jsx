@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Best from './Best.jsx'
 import Model from './Model.jsx'
+import Match from './Match.jsx'
 import Ops from './Ops.jsx'
 import Play from './Play.jsx'
 import Strategies from './Strategies.jsx'
@@ -24,12 +25,13 @@ export default function App() {
   if (!data) return <p className="notice">Loading…</p>
 
   return (
-    <main>
+    <main className={tab === 'watch' || tab === 'play' ? 'wide' : ''}>
       <header>
         <h1>Pokémon Champions teams</h1>
         <p className="muted">Regulation {data.meta.regulation} · {data.meta.teams} tournament teams</p>
         <nav>
           <button className={tab === 'ops' ? 'on' : ''} onClick={() => setTab('ops')}>Operating room</button>
+          <button className={tab === 'watch' ? 'on' : ''} onClick={() => setTab('watch')}>Watch a match</button>
           <button className={tab === 'play' ? 'on' : ''} onClick={() => setTab('play')}>Play with the coach</button>
           <button className={tab === 'best' ? 'on' : ''} onClick={() => setTab('best')}>Best teams</button>
           <button className={tab === 'teams' ? 'on' : ''} onClick={() => setTab('teams')}>All teams</button>
@@ -39,6 +41,7 @@ export default function App() {
         </nav>
       </header>
       {tab === 'ops' && <Ops />}
+      {tab === 'watch' && <section className="ops"><Match /></section>}
       {tab === 'play' && <section className="ops"><Play /></section>}
       {tab === 'best' && <Best teams={data.teams} />}
       {tab === 'teams' && <Teams teams={data.teams} />}

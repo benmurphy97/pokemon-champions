@@ -103,50 +103,69 @@ function label(battle, sideId, choice) {
 
 // The full payoff table behind a search: our candidates (rows) against their replies (columns).
 //   {choice, replies: [{choice, label}], rows: [{choice, label, prior, payoffs: [number|null], mean, worst, score}]}
+// `foeSets` is one belief (an array of sets) or several (an array of arrays, each a sample from our posterior over
+// their sets). With several, every candidate is played against each sample's replies; mean and worst are taken over
+// all those cells, and a column is a reply averaged over the samples that offer it.
 function analyse(battle, side, candidates, foeSets) {
 	const foeId = side === 'p1' ? 'p2' : 'p1';
 	const empty = {choice: candidates[0].choice, replies: [], rows: []};
 	if (candidates.length < 2) return empty;
 	// toJSON shares arrays (the log among them) with the live battle: detach, or every copy writes into the real game.
-	let snapshot = JSON.parse(JSON.stringify(battle.toJSON()));
-	if (foeSets) {
-		const believed = fresh(snapshot);
-		believe(believed, believed[foeId], foeSets);
-		snapshot = JSON.parse(JSON.stringify(believed.toJSON()));
+	const real = JSON.parse(JSON.stringify(battle.toJSON()));
+	const beliefs = !foeSets ? [null] : Array.isArray(foeSets[0]) ? foeSets : [foeSets];
+	const worlds = [];
+	for (const sets of beliefs) {
+		let snapshot = real;
+		if (sets) {
+			const believed = fresh(real);
+			believe(believed, believed[foeId], sets);
+			snapshot = JSON.parse(JSON.stringify(believed.toJSON()));
+		}
+		const view = fresh(snapshot);
+		const theirs = replies(view, view[foeId]);
+		if (theirs) worlds.push({snapshot, view, theirs});
 	}
-	const view = fresh(snapshot);
-	const theirs = replies(view, view[foeId]);
-	if (!theirs) return empty;
+	if (!worlds.length) return empty;
 	const seed = [0, 1, 2, 3].map(() => Math.floor(Math.random() * 0x10000));   // fresh rolls, shared by every cell
 	const total = candidates.reduce((s, c) => s + c.prior, 0);
+	const columns = new Map();       // reply choice -> {label, sums, count} (one entry per distinct reply across the worlds)
+	for (const world of worlds) {
+		for (const reply of world.theirs) {
+			if (!columns.has(reply)) columns.set(reply, {label: label(world.view, foeId, reply)});
+		}
+	}
 	let best = candidates[0], bestScore = -Infinity;
 	const rows = [];
 	for (const ours of candidates) {
-		const payoffs = [];
-		for (const reply of theirs) {
-			const copy = fresh(snapshot);
-			copy.resetRNG(seed);
-			const [mine, other] = [copy[side], copy[foeId]];
-			mine.clearChoice(); other.clearChoice();
-			let payoff = null;
-			if (mine.choose(ours.choice) && other.choose(reply)) {
-				try {
-					copy.commitChoices();
-					payoff = (healthLeft(mine) - healthLeft(other)) / mine.pokemon.length;
-				} catch (err) {}
+		const cells = [], sums = new Map();
+		for (const world of worlds) {
+			for (const reply of world.theirs) {
+				const copy = fresh(world.snapshot);
+				copy.resetRNG(seed);
+				const [mine, other] = [copy[side], copy[foeId]];
+				mine.clearChoice(); other.clearChoice();
+				if (mine.choose(ours.choice) && other.choose(reply)) {
+					try {
+						copy.commitChoices();
+						const payoff = (healthLeft(mine) - healthLeft(other)) / mine.pokemon.length;
+						cells.push(payoff);
+						const entry = sums.get(reply) || {sum: 0, count: 0};
+						entry.sum += payoff; entry.count += 1;
+						sums.set(reply, entry);
+					} catch (err) {}
+				}
 			}
-			payoffs.push(payoff);
 		}
-		const valid = payoffs.filter(p => p !== null);
-		const row = {choice: ours.choice, label: label(view, side, ours.choice), prior: ours.prior / total, payoffs};
+		const payoffs = [...columns.keys()].map(reply => sums.has(reply) ? sums.get(reply).sum / sums.get(reply).count : null);
+		const row = {choice: ours.choice, label: label(worlds[0].view, side, ours.choice), prior: ours.prior / total, payoffs};
 		rows.push(row);
-		if (!valid.length) continue;
-		row.mean = valid.reduce((a, b) => a + b, 0) / valid.length;
-		row.worst = Math.min(...valid);
+		if (!cells.length) continue;
+		row.mean = cells.reduce((a, b) => a + b, 0) / cells.length;
+		row.worst = Math.min(...cells);
 		row.score = (1 - WORST_WEIGHT) * row.mean + WORST_WEIGHT * row.worst + PRIOR_WEIGHT * Math.log(row.prior);
 		if (row.score > bestScore) { bestScore = row.score; best = ours; }
 	}
-	return {choice: best.choice, replies: theirs.map(c => ({choice: c, label: label(view, foeId, c)})), rows};
+	return {choice: best.choice, replies: [...columns].map(([choice, c]) => ({choice, label: c.label})), rows};
 }
 
 function search(battle, side, candidates, foeSets) {

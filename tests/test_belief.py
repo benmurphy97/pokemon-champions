@@ -1,6 +1,8 @@
 import unittest
 
-from champions.model.belief import Corpus, infer
+import random
+
+from champions.model.belief import Corpus, infer, sample_assignments, with_mega_items
 
 
 def mon(name, item, moves, ability="A", nature="Jolly", evs=None):
@@ -44,6 +46,21 @@ class BeliefTest(unittest.TestCase):
     def test_item_clause(self):
         out = infer(CORPUS, {}, SIX, [{}, {"item": "Life Orb"}] + [{} for _ in range(4)])
         self.assertEqual(out[0]["items"][0]["name"], "Choice Scarf")
+
+    def test_samples_keep_revealed_facts_and_the_item_clause(self):
+        observed = [{"moves": ["Stomping Tantrum"], "item": None, "ability": None}] + [{} for _ in range(5)]
+        for assignment in sample_assignments(CORPUS, {}, SIX, observed, 20, random.Random(0)):
+            first = assignment[0]
+            self.assertIn("Stomping Tantrum", first["moves"])
+            self.assertEqual(first["item"], "Choice Scarf")
+            self.assertLessEqual(len(first["moves"]), 4)
+            items = [m["item"] for m in assignment]
+            self.assertEqual(len(items), len(set(items)))        # Item Clause
+
+    def test_a_mega_form_reveals_its_stone(self):
+        corpus = Corpus([team(mon("Garchomp-Mega-Z", "Garchompite Z", ["Earthquake", "Protect", "Dragon Claw", "Rock Slide"]))])
+        out = with_mega_items(corpus, [{"form": "Garchomp-Mega-Z", "moves": []}])
+        self.assertEqual(out[0]["item"], "Garchompite Z")
 
 
 if __name__ == "__main__":

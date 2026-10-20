@@ -16,6 +16,9 @@ from champions.model.encoding import ARRAY_KEYS as KEYS
 from champions.model.encoding import (ATOM_LOCKED, ATOM_PASS, ATOM_SWITCH, MOVE_PHASE, N_ATOMS, N_MOVE_SLOTS,
                                       N_TARGETS, REPLACEMENT, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A, TARGET_FOE_B,
                                       atom_move, encode, pair_mask, target_classes)
+import random
+
+from champions.model.belief import observed_from, sample_assignments, shared_corpus
 from champions.training.hindsight import complete_sets
 from champions.teams.generate import load_usage
 from champions.model.vocab import MOVE_ID, MOVES, NAME_BY_ID
@@ -63,11 +66,14 @@ class NeuralAgent:
     """
 
     def __init__(self, net, temperature: float = 0.0, seed: int = 0, preview=None, block_repeat_protect: bool = True,
-                 search_k: int = 0, search_fair: bool = True):
+                 search_k: int = 0, search_fair: bool = True, belief_samples: int = 0):
         # search_k > 0: in the move phase, hand the top-k joint choices to the worker's one-turn look-ahead
         # (sim/search.js) through `last_candidates`; the worker picks among them.
         # search_fair: the copies get our estimate of the opponent's sets (`last_foe_sets`), not their real ones.
-        self.search_k, self.search_fair = search_k, search_fair
+        # belief_samples > 0: the copies get that many sets drawn from the posterior over their sets (belief.py)
+        # instead of the single best guess, and the search averages over them.
+        self.search_k, self.search_fair, self.belief_samples = search_k, search_fair, belief_samples
+        self.belief_rng = random.Random(seed)
         self.last_candidates = self.last_foe_sets = None
         # A Protect-type move used on the previous turn almost always fails, so it is left out of the legal set.
         self.block_repeat_protect = block_repeat_protect
@@ -173,9 +179,13 @@ class NeuralAgent:
                                     for p in top if legal.flatten()[p]]
             if self.search_fair:     # what we believe the opponent has: revealed details, the rest from usage
                 foe_side = "p2" if side == "p1" else "p1"
-                foe = complete_sets(state, foe_side, self.usage)
-                self.last_foe_sets = [{"species": state.sides[foe_side].team[i].species, **{k: foe[i][k] for k in
-                                       ("moves", "item", "ability", "nature", "points")}} for i in foe]
+                if self.belief_samples:
+                    six, observed = observed_from(state, foe_side)
+                    self.last_foe_sets = sample_assignments(shared_corpus(), self.usage, six, observed, self.belief_samples, self.belief_rng)
+                else:
+                    foe = complete_sets(state, foe_side, self.usage)
+                    self.last_foe_sets = [{"species": state.sides[foe_side].team[i].species, **{k: foe[i][k] for k in
+                                           ("moves", "item", "ability", "nature", "points")}} for i in foe]
         if record is not None and legal.sum() > 1:
             used = [int(arrays["actor_moves"][s][a // N_TARGETS]) for s, a in enumerate(atoms) if a < ATOM_SWITCH]
             record.append({"arrays": arrays, "action": pair, "logp": float(log_probs[pair]), "lead": lead(state, side),

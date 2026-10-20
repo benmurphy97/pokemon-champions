@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Best from './Best.jsx'
 import Model from './Model.jsx'
 import Ops from './Ops.jsx'
+import Play from './Play.jsx'
 import Strategies from './Strategies.jsx'
 import Teams from './Teams.jsx'
 import Usage from './Usage.jsx'
@@ -29,6 +30,7 @@ export default function App() {
         <p className="muted">Regulation {data.meta.regulation} · {data.meta.teams} tournament teams</p>
         <nav>
           <button className={tab === 'ops' ? 'on' : ''} onClick={() => setTab('ops')}>Operating room</button>
+          <button className={tab === 'play' ? 'on' : ''} onClick={() => setTab('play')}>Play with the coach</button>
           <button className={tab === 'best' ? 'on' : ''} onClick={() => setTab('best')}>Best teams</button>
           <button className={tab === 'teams' ? 'on' : ''} onClick={() => setTab('teams')}>All teams</button>
           <button className={tab === 'strategies' ? 'on' : ''} onClick={() => setTab('strategies')}>Strategies</button>
@@ -37,6 +39,7 @@ export default function App() {
         </nav>
       </header>
       {tab === 'ops' && <Ops />}
+      {tab === 'play' && <section className="ops"><Play /></section>}
       {tab === 'best' && <Best teams={data.teams} />}
       {tab === 'teams' && <Teams teams={data.teams} />}
       {tab === 'strategies' && <Strategies strategies={data.strategies} />}

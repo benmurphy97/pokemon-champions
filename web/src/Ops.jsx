@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Chart, rolling } from './charts.jsx'
 import Match from './Match.jsx'
-import Play from './Play.jsx'
 import Plan from './Plan.jsx'
 import Sprite from './Sprite.jsx'
 import { winRate } from './rating.js'
@@ -10,7 +9,7 @@ import './ops.css'
 const DEFAULT_GAMES = 256
 const gamesPerIteration = (command) => Number((command || '').match(/--games (\d+)/)?.[1] ?? DEFAULT_GAMES)
 const option = (command, name, fallback) => (command || '').match(new RegExp(`--${name} (\\S+)`))?.[1] ?? fallback
-const COLORS = { blind: '#4dd4ac', greedy: '#ffb347', random: '#7aa2ff', bad: '#ff6b6b', good: '#4dd4ac', warn: '#ffb347' }
+const COLORS = { blind: '#111111', greedy: '#e3000f', random: '#9a9a9a', bad: '#e3000f', good: '#111111', warn: '#111111' }
 
 const duration = (seconds) => {
   if (!isFinite(seconds)) return '–'
@@ -105,7 +104,7 @@ function Monitors({ run }) {
             { name: 'vs greedy', color: COLORS.greedy, points: series('greedy') },
             { name: 'vs random', color: COLORS.random, points: series('random') },
           ]}
-          refs={[{ y: 0.5, label: '50%', color: '#6b7a86' }]}
+          refs={[{ y: 0.5, label: '50%', color: '#6b6b6b' }]}
         />
       </div>
       <div className="panel">
@@ -144,7 +143,7 @@ function Watch({ run }) {
           <Chart
             yMin={0} yMax={0.4} format={(v) => `${Math.round(v * 100)}%`}
             series={[{ name: 'protect / heal share', color: COLORS.warn, points: rolling(rows.map((r) => [r.iteration, r.play.stall_share]), 3) }]}
-            refs={[{ y: 0.113, label: 'human players 11%', color: '#6b7a86' }, { y: 0.2, label: 'alarm', color: COLORS.bad }]}
+            refs={[{ y: 0.113, label: 'human players 11%', color: '#6b6b6b' }, { y: 0.2, label: 'alarm', color: COLORS.bad }]}
           />
           <p className="note">Last iteration: {last.play.turns} turns per game, {last.play.idle_turns} idle turns per game (nothing changed), {last.play.timeouts} games ended at the turn cap.</p>
         </div>
@@ -159,7 +158,7 @@ function Watch({ run }) {
               ...(marginChecks.some((e) => e.vs_imitation) ? [{ name: 'vs imitation start', color: COLORS.random, dots: true, points: marginChecks.filter((e) => e.vs_imitation).map((e) => [e.iteration, e.vs_imitation.margin]) }] : []),
             ]}
             band={{ color: COLORS.blind, points: marginChecks.map((e) => [e.iteration, e.margin - 1.96 * e.margin_se, e.margin + 1.96 * e.margin_se]) }}
-            refs={[{ y: 0, label: 'level', color: '#6b7a86' }]}
+            refs={[{ y: 0, label: 'level', color: '#6b6b6b' }]}
           />
         </div>
       )}
@@ -200,7 +199,7 @@ function League({ run, command, snapshots }) {
 }
 
 function Compare({ runs }) {
-  const palette = ['#7aa2ff', '#c792ea', '#ffb347', '#ff7ab6', '#4dd4ac', '#e6e6e6']
+  const palette = ['#9a9a9a', '#555555', '#e3000f', '#b8b8b8', '#111111', '#7a7a7a']
   const withEvals = runs.filter((r) => r.evals.length)
   const baseline = mean(withEvals.flatMap((r) => r.evals.map((e) => e.baseline)))
   return (
@@ -209,7 +208,7 @@ function Compare({ runs }) {
       <Chart
         yMin={0.3} yMax={0.8} format={(v) => `${Math.round(v * 100)}%`}
         series={withEvals.map((r, i) => ({ name: r.name === 'current' ? 'current run' : r.name, color: palette[i % palette.length], dots: true, points: r.evals.map((e) => [e.iteration, e.policy]) }))}
-        refs={[{ y: baseline, label: 'rule-based', color: '#6b7a86' }]}
+        refs={[{ y: baseline, label: 'rule-based', color: '#6b6b6b' }]}
       />
       <p className="note">Runs differ in setup (see docs/learned-agent.md); the "current" run may use different test teams from older ones, so compare each run with its own baseline.</p>
     </div>
@@ -290,9 +289,8 @@ export default function Ops() {
         <button className={view === 'vitals' ? 'on' : ''} onClick={() => setView('vitals')}>Vitals & monitors</button>
         <button className={view === 'plan' ? 'on' : ''} onClick={() => setView('plan')}>Plan, gates & models</button>
         <button className={view === 'surgery' ? 'on' : ''} onClick={() => setView('surgery')}>Live surgery (match viewer)</button>
-        <button className={view === 'play' ? 'on' : ''} onClick={() => setView('play')}>Play (model coaches you)</button>
       </div>
-      {view === 'surgery' ? <Match /> : view === 'play' ? <Play /> : view === 'plan' ? <Plan /> : <>
+      {view === 'surgery' ? <Match /> : view === 'plan' ? <Plan /> : <>
       <div className="tabs">
         {data.runs.map((r) => (
           <button key={r.name} className={r.name === run.name ? 'on' : ''} onClick={() => setPicked(r.name)}>

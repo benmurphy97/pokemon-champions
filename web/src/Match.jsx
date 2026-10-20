@@ -76,7 +76,7 @@ export function Plans({ plans }) {
 }
 
 const signed = (x) => (x == null ? '–' : `${x >= 0 ? '+' : ''}${x.toFixed(2)}`)
-const shade = (x) => (x == null ? 'transparent' : x >= 0 ? `rgba(80, 200, 120, ${Math.min(0.6, x * 1.5)})` : `rgba(230, 80, 80, ${Math.min(0.6, -x * 1.5)})`)
+const shade = (x) => (x == null ? 'transparent' : x >= 0 ? `rgba(17, 17, 17, ${Math.min(0.3, x * 0.8)})` : `rgba(227, 0, 15, ${Math.min(0.35, -x * 0.9)})`)
 
 // The one-turn search: our top joint choices (rows) played against their likely replies (columns) in copies of
 // the battle; each cell is the health margin after that turn, from -1 to 1.
